@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-04 18:30</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-04 18:30</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场整体情绪谨慎，欧洲通胀数据走弱引发政策宽松预期，但地缘政治紧张、美国政策不确定性及企业盈利压力共同构成下行风险。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>欧元区通胀降至1.7%加剧通缩担忧，欧央行政策转向预期升温</div>
+                <div class="topic-title-en">Eurozone inflation falls to 1.7%, fueling deflation concerns and ECB pivot expectations</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    欧元区1月通胀率降至1.7%，低于预期，增加了欧央行提前降息的压力。结合诺和诺德预警销售下滑及百事可乐降价等企业行为，显示消费需求疲软与定价权减弱，欧洲经济可能正面临通缩风险而非单纯的价格稳定。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.ft.com/content/6b6284a7-8d46-477b-94b3-ca5f9ddb38cf" target="_blank" rel="noopener">[FT] Eurozone inflation falls to 1.7% in January</a>
+                    <a href="https://www.ft.com/content/d148ce25-fa76-468b-b9ac-95c62a994a55" target="_blank" rel="noopener">[FT] Novo Nordisk shares plunge after warning of double-digit sales fall</a>
+                    <a href="https://www.washingtonpost.com/business/2026/02/03/pepsico-snacks-price-cuts/" target="_blank" rel="noopener">[Washington Post] PepsiCo cuts prices on Lay’s, Doritos after cost complaints from shoppers</a>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">制药</span>
+                    <span class="sector-tag">欧洲央行</span>
+                    <span class="sector-tag">消费者 discretionary</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>Amundi拟削减美国资产敞口，凸显全球资本对美国政策与美元的信心动摇</div>
+                <div class="topic-title-en">Amundi plans to cut exposure to US, highlighting waning global confidence in US policy and dollar assets</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    欧洲最大资管公司Amundi计划在未来一年削减对美国资产的敞口，直接反映了国际资本对美国财政可持续性、政治极化及潜在贸易政策的担忧。此举可能引发其他大型机构效仿，加剧美元资产的抛售压力，并推动资本流向欧洲或新兴市场。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.ft.com/content/20d0d30f-c36d-4839-ba56-351327b7410f" target="_blank" rel="noopener">[FT] Amundi says it will cut exposure to US over coming year</a>
+                    <span class="sector-tag">美国国债</span>
+                    <span class="sector-tag">美元资产</span>
+                    <span class="sector-tag">全球资产管理</span>
+                    <span class="sector-tag">外汇</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>美联储主席人选不确定性叠加政策警告，全球货币政策前景迷雾重重</div>
+                <div class="topic-title-en">Uncertainty over next Fed chair and policy warnings cloud global monetary policy outlook</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    关于下一任美联储主席人选的争议（“Warsh Fed”）以及来自澳大利亚的“警告”，增加了美国货币政策路径的不确定性。与此同时，全球贸易信用保险商Atradius强调货币政策稳定性对贸易信心的依赖，暗示主要央行任何的政策误判都可能破坏脆弱的全球经济复苏。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.ft.com/content/93b4c72a-0ceb-4839-bf72-06de3870d407" target="_blank" rel="noopener">[FT] Reading the runes on a Warsh Fed</a>
+                    <a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPaE9sbkZ5aDE2SzFVeXppcld5Q3RuTXpKWHlBRW9nNXg2QkxiaGhaaDI0Umg2dW9jWFNLZ25XYjFvRUFhMjc0WGJ3MHRXcHYxMEN4UFJLS2t4WERlNWVucFhES3NLd3JxMkpWWWlqMTlGalZJM3liQTBFdkc1LXdCR2tBVk9WUQ?oc=5" target="_blank" rel="noopener">[Google Finance] Warning from 'Down Under' may unsettle the Fed - Reuters</a>
+                    <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9rdkVrNXlqcDJ2cU9SSTVfOUVmdlQ4V3ByMTJrT3piV3hIai1raXhyT3ZaaUUtS01DR19GLV9WMEZ0ZXdhYU9KMERhYXNhRERVeXpqdHRvQWNkNUp3c21VOUtYUnNNLUZSaXhOTnNNRmVSSUFtRUtPdUZGZ09BcEE?oc=5" target="_blank" rel="noopener">[Google Finance] Atradius N.V.: Global trade depends on confidence in monetary policy stability</a>
+                    <span class="sector-tag">全球银行业</span>
+                    <span class="sector-tag">外汇市场</span>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">债券市场</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>地缘政治风险升级：俄欧太空对峙、中东冲突及美伊核谈紧张</div>
+                <div class="topic-title-en">Geopolitical risks escalate: Russia-Europe space confrontation, Middle East conflict, and tense US-Iran nuclear talks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    俄罗斯被指拦截欧洲卫星通信，加剧了太空领域的安全与军事化竞争。同时，加沙停火破裂及美伊在阿曼的核谈前景不明，推高地缘政治风险溢价。这些事件可能刺激国防和安全支出，但会破坏供应链稳定并推高能源价格。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.ft.com/content/cd08c49c-658e-49c9-9a15-234f2bfc2074" target="_blank" rel="noopener">[FT] Russian spy spacecraft have intercepted Europe’s key satellites, officials believe</a>
+                    <a href="https://www.scmp.com/news/world/middle-east/article/3342381/israeli-strikes-kill-17-palestinians-mostly-women-and-children-gaza-ceasefire-crumbles?utm_source=rss_feed" target="_blank" rel="noopener">[SCMP] Israeli strikes kill 17 Palestinians, mostly women and children as Gaza ceasefire crumbles</a>
+                    <a href="https://www.scmp.com/news/world/middle-east/article/3342377/us-and-iran-now-eyeing-oman-nuclear-talks-tensions-run-high?utm_source=rss_feed" target="_blank" rel="noopener">[SCMP] US and Iran now eyeing Oman for nuclear talks as tensions run high</a>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">航空航天</span>
+                    <span class="sector-tag">网络安全</span>
+                    <span class="sector-tag">能源</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>AI应用泡沫化警告与Oracle巨额发债，凸显科技扩张的融资与盈利挑战</div>
+                <div class="topic-title-en">Warnings of AI application bubble and Oracle's massive bond sale highlight financing and profitability challenges in tech expansion</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    市场对AI应用泛滥发出泡沫警告，暗示行业可能从基础设施建设转向无序竞争阶段。与此同时，Oracle成功发行250亿美元债券为AI投资融资，虽暂时缓解了对AI债务潮的担忧，但也揭示了科技巨头为保持竞争力对巨额资本的持续依赖，其未来盈利能力面临考验。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.ft.com/content/837b4b5d-a67b-4fde-98d9-e4c3a516f8d0" target="_blank" rel="noopener">[FT] Everyone and their mother is peddling an AI application</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQanFFcS14cERPZFY4blFkaXU2cTVrYTkyN0xDRjF4YXRQRWVnak1JZ2tNWlJtcjA1emhVVmU4UG9UcW9TeFJBU1NuSlIwMWNONExzSENJaTV2R2pCeHlXeXVxUnBHY1dTTVpoa1ZzT2wxWWd3QWpiYjhVT3ZiQnhtUkpITE9fajQ3Mkhpd1JId3dQRGtuVXllX1BCWThiclczVl9nQUFOVjFVc0g0WHJwOVlrT2Q?oc=5" target="_blank" rel="noopener">[Bloomberg] Oracle $25 Billion Bond Sale Helps Ease Fears of AI Debt Wave</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">软件服务</span>
+                    <span class="sector-tag">企业债</span>
+                    <span class="sector-tag">科技硬件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>欧洲防务巨头Rheinmetall积极扩张，地缘紧张推动国防工业整合与增长</div>
+                <div class="topic-title-en">European defense giant Rheinmetall aggressively expands, as geopolitical tensions drive defense industry consolidation and growth</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    德国莱茵金属公司高调宣布争取巨额欧洲防务订单，反映了在地缘政治紧张背景下，欧洲正加速推进国防自主化和军备升级。这可能导致欧洲防务板块出现并购潮和估值重估，但对传统的美国防务承包商构成竞争压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.ft.com/content/a326b178-4389-40f7-9979-a1b878e94c3d" target="_blank" rel="noopener">[FT] From arms to orbit: Rheinmetall’s expansion unsettles rivals</a>
+                    <span class="sector-tag">欧洲国防军工</span>
+                    <span class="sector-tag">航空航天</span>
+                    <span class="sector-tag">机械制造</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>中国外交多线推进：深化中俄关系、拉拢欧洲西班牙、主导APEC议程</div>
+                <div class="topic-title-en">China's multi-front diplomatic push: Deepening China-Russia ties, courting European Spain, and leading APEC agenda</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    中国领导人强调中俄关系处于“正确轨道”，同时与西班牙商讨领导人互访，并在APEC平台上倡导多边主义。这一系列动作为对冲美国压力、确保能源与贸易通道安全、并塑造有利于自身的全球经济治理规则。可能利好与中国关系密切的欧洲企业及“一带一路”相关板块，但加剧与美国的战略竞争。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.scmp.com/news/china/diplomacy/article/3342384/xi-tells-putin-china-russia-ties-are-right-trajectory?utm_source=rss_feed" target="_blank" rel="noopener">[SCMP] Xi tells Putin that China-Russia ties are on ‘right trajectory’ and need ‘grand plan’</a>
+                    <a href="https://www.scmp.com/news/china/diplomacy/article/3342352/china-and-spain-talks-pm-pedro-sanchez-visit-beijing-again?utm_source=rss_feed" target="_blank" rel="noopener">[SCMP] China and Spain in talks for PM Pedro Sanchez to visit Beijing – again</a>
+                    <a href="https://www.scmp.com/economy/global-economy/article/3342353/new-apec-chair-china-positions-global-defender-pivotal-juncture-while-us-retreats?utm_source=rss_feed" target="_blank" rel="noopener">[SCMP] New Apec chair China positions as global defender at ‘pivotal juncture’ while US retreats</a>
+                    <span class="sector-tag">中俄贸易</span>
+                    <span class="sector-tag">欧洲对华出口</span>
+                    <span class="sector-tag">基础设施建设</span>
+                    <span class="sector-tag">人民币国际化</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>香港市场吸引力受关注，国际并购活跃（桑坦德收购Webster）</div>
+                <div class="topic-title-en">Hong Kong market appeal in focus, international M&A active (Santander acquires Webster)</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    香港市场因高倍数超额认购案例被看好吸引更多海外上市，巩固其国际金融中心地位。同时，西班牙桑坦德银行以122亿美元收购美国Webster银行，显示欧洲金融机构看好美国区域银行市场并积极进行跨境整合。这两者均指向全球资本在不同市场间寻找机会，市场深度和估值吸引力是关键。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.scmp.com/business/article/3342363/vibrant-hong-kong-market-attract-more-listings-abroad-bankers-say?utm_source=rss_feed" target="_blank" rel="noopener">[SCMP] ‘Vibrant’ Hong Kong market to attract more listings from abroad, bankers say</a>
+                    <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxOR3czRGNRYWs0ZWN0S1JVcC1pMVM4WkJKSXI1MDAxNUhSVnY4dmpMOWFiZHh0NTQwVnZtbnhsazM5MklleEhrdVdNVFZYd2I2WUc2T1gzemFZTzlzdVVLWkMxLXVibUtERzVhYUVlUXBCY0U0NDNfSm5CZEJ0a3QxTGQzc0llRnhtUFcwM2MyZmxsZTJKdFl6X3BsQUVyQjJjUGpMMThjUmw5dw?oc=5" target="_blank" rel="noopener">[Bloomberg] Santander Agrees to Buy US-Based Webster for $12.2 Billion</a>
+                    <span class="sector-tag">香港交易所及券商</span>
+                    <span class="sector-tag">跨国银行</span>
+                    <span class="sector-tag">区域性银行</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>欧元区1月通胀率降至1.7%</li>
+                <li>Amundi管理资产规模2.4万亿欧元拟减配美国</li>
+                <li>诺和诺德预警两位数销售下滑</li>
+                <li>美国住房短缺达200万至2000万套</li>
+                <li>桑坦德银行以122亿美元收购Webster银行</li>
+                <li>Oracle发行250亿美元债券</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>

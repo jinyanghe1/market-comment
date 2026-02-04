@@ -7,3 +7,4 @@ daily_job.log
 __pycache__/
 venv/
 .todo
+.env
