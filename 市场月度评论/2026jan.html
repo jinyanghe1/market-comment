@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026年1月 · 资本市场月度评论</title>
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --accent: #c0392b;
+            --accent-light: #e74c3c;
+            --gold: #d4a843;
+            --green: #27ae60;
+            --red: #e74c3c;
+            --bg: #fafafa;
+            --card-bg: #ffffff;
+            --text: #2c3e50;
+            --text-light: #7f8c8d;
+            --border: #ecf0f1;
+            --gradient-start: #1a1a2e;
+            --gradient-end: #16213e;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── Hero Section ── */
+        .hero {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            color: #fff;
+            padding: 80px 24px 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(192,57,43,0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(212,168,67,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        .hero .label {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 4px 14px;
+            border-radius: 2px;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: clamp(28px, 5vw, 48px);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+        .hero .subtitle {
+            font-size: clamp(14px, 2vw, 18px);
+            opacity: 0.8;
+            max-width: 680px;
+            line-height: 1.6;
+        }
+        .hero .meta-bar {
+            margin-top: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            font-size: 13px;
+            opacity: 0.7;
+        }
+        .hero .meta-bar span { display: flex; align-items: center; gap: 6px; }
+
+        /* ── Key Metrics Strip ── */
+        .metrics-strip {
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            padding: 0 24px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .metrics-strip::-webkit-scrollbar { height: 0; }
+        .metrics-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            gap: 0;
+        }
+        .metric-item {
+            flex: 1;
+            min-width: 160px;
+            padding: 20px 16px;
+            border-right: 1px solid var(--border);
+            text-align: center;
+        }
+        .metric-item:last-child { border-right: none; }
+        .metric-item .metric-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-light);
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        .metric-item .metric-value {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .metric-item .metric-change {
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 2px;
+        }
+        .metric-item .metric-change.up { color: var(--red); }
+        .metric-item .metric-change.down { color: var(--green); }
+
+        /* ── Layout ── */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        /* ── Section ── */
+        .section {
+            margin-bottom: 48px;
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--primary);
+        }
+        .section-header .section-number {
+            background: var(--primary);
+            color: #fff;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .section-header h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* ── Cards ── */
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 28px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+            transition: box-shadow 0.2s;
+        }
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .card h3 .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .card p {
+            font-size: 14px;
+            color: var(--text);
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+        .card p:last-child { margin-bottom: 0; }
+
+        /* ── Data Table ── */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        .data-table th {
+            text-align: left;
+            padding: 10px 12px;
+            background: #f7f8fa;
+            color: var(--text-light);
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid var(--border);
+        }
+        .data-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: middle;
+        }
+        .data-table tr:last-child td { border-bottom: none; }
+        .data-table .ticker {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        .data-table .num {
+            font-variant-numeric: tabular-nums;
+            text-align: right;
+        }
+
+        /* ── Bar Chart (CSS-only) ── */
+        .bar-chart { margin: 16px 0; }
+        .bar-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            gap: 10px;
+        }
+        .bar-label {
+            width: 100px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text);
+            text-align: right;
+            flex-shrink: 0;
+        }
+        .bar-track {
+            flex: 1;
+            height: 28px;
+            background: #f0f2f5;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+        .bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+            transition: width 1s ease;
+        }
+        .bar-fill.positive { background: linear-gradient(90deg, #e74c3c, #c0392b); }
+        .bar-fill.negative { background: linear-gradient(90deg, #27ae60, #1e8449); }
+        .bar-fill.gold-bar { background: linear-gradient(90deg, #d4a843, #b8860b); }
+        .bar-fill.blue-bar { background: linear-gradient(90deg, #3498db, #2980b9); }
+
+        /* ── Callout Box ── */
+        .callout {
+            background: linear-gradient(135deg, #fff8e1, #fff3cd);
+            border-left: 4px solid var(--gold);
+            padding: 20px 24px;
+            border-radius: 0 8px 8px 0;
+            margin: 24px 0;
+        }
+        .callout.red {
+            background: linear-gradient(135deg, #fdecea, #f8d7da);
+            border-left-color: var(--accent);
+        }
+        .callout.blue {
+            background: linear-gradient(135deg, #e8f4fd, #d1ecf1);
+            border-left-color: #3498db;
+        }
+        .callout .callout-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+        .callout p {
+            font-size: 14px;
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* ── Timeline ── */
+        .timeline { position: relative; padding-left: 28px; }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 4px;
+            bottom: 4px;
+            width: 2px;
+            background: var(--border);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 2px var(--accent);
+        }
+        .timeline-item .tl-date {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .timeline-item .tl-text {
+            font-size: 14px;
+            color: var(--text);
+            margin-top: 4px;
+            line-height: 1.7;
+        }
+
+        /* ── Gauge / Donut (CSS) ── */
+        .gauge-row {
+            display: flex;
+            justify-content: center;
+            gap: 36px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .gauge-item { text-align: center; }
+        .gauge-circle {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            position: relative;
+        }
+        .gauge-circle::before {
+            content: '';
+            position: absolute;
+            inset: 6px;
+            background: #fff;
+            border-radius: 50%;
+        }
+        .gauge-circle .gauge-val {
+            position: relative;
+            z-index: 1;
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        .gauge-label {
+            font-size: 12px;
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        /* ── Outlook Cards ── */
+        .outlook-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .outlook-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            text-align: center;
+            border-top: 4px solid var(--primary);
+        }
+        .outlook-card.bullish { border-top-color: var(--red); }
+        .outlook-card.neutral { border-top-color: var(--gold); }
+        .outlook-card.bearish { border-top-color: var(--green); }
+        .outlook-card .outlook-icon {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .outlook-card h4 {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+        .outlook-card p {
+            font-size: 13px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        .outlook-card .outlook-tag {
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 12px;
+        }
+        .outlook-tag.tag-bull { background: #fdecea; color: var(--red); }
+        .outlook-tag.tag-neutral { background: #fff8e1; color: #b8860b; }
+        .outlook-tag.tag-bear { background: #d5f5e3; color: var(--green); }
+
+        /* ── Prose ── */
+        .prose { max-width: 780px; }
+        .prose p {
+            font-size: 15px;
+            line-height: 1.9;
+            color: var(--text);
+            margin-bottom: 16px;
+        }
+        .prose strong { color: var(--primary); }
+
+        /* ── Footer ── */
+        .footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.6);
+            padding: 40px 24px;
+            font-size: 12px;
+            line-height: 1.8;
+            text-align: center;
+        }
+        .footer a { color: var(--gold); text-decoration: none; }
+        .footer .disclaimer {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* ── Navigation ── */
+        .back-nav {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+            background: rgba(26, 26, 46, 0.9);
+            backdrop-filter: blur(8px);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .back-nav:hover { background: var(--accent); }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            .grid-2 { grid-template-columns: 1fr; }
+            .hero { padding: 60px 20px 40px; }
+            .metric-item { min-width: 130px; padding: 14px 10px; }
+            .metric-item .metric-value { font-size: 18px; }
+            .bar-label { width: 72px; font-size: 12px; }
+            .gauge-row { gap: 20px; }
+            .outlook-grid { grid-template-columns: 1fr; }
+            .section-header h2 { font-size: 18px; }
+            .container { padding: 28px 16px; }
+            .back-nav { top: 10px; left: 10px; padding: 6px 12px; font-size: 12px; }
+        }
+
+        /* ── Sparkline (Mini inline chart) ── */
+        .sparkline-container {
+            display: flex;
+            align-items: flex-end;
+            gap: 2px;
+            height: 40px;
+        }
+        .spark-bar {
+            flex: 1;
+            background: var(--accent);
+            border-radius: 2px 2px 0 0;
+            min-width: 4px;
+            opacity: 0.7;
+        }
+        .spark-bar:last-child { opacity: 1; }
+
+        /* ── Heatmap ── */
+        .heatmap {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 8px;
+            margin: 16px 0;
+        }
+        .heat-cell {
+            padding: 14px 10px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .heat-cell .heat-name {
+            margin-bottom: 4px;
+            opacity: 0.9;
+        }
+        .heat-cell .heat-val {
+            font-size: 16px;
+            font-weight: 800;
+        }
+        .heat-hot { background: rgba(231,76,60,0.15); color: #c0392b; }
+        .heat-warm { background: rgba(231,76,60,0.08); color: #e67e22; }
+        .heat-cool { background: rgba(39,174,96,0.08); color: #27ae60; }
+        .heat-cold { background: rgba(39,174,96,0.15); color: #1e8449; }
+        .heat-neutral { background: #f0f2f5; color: var(--text-light); }
+
+        /* ── Print styles ── */
+        @media print {
+            .back-nav { display: none; }
+            .hero { background: #1a1a2e !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .card { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+<a href="../index.html" class="back-nav">&larr; 返回首页</a>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<header class="hero">
+    <div class="hero-inner">
+        <span class="label">Monthly Review</span>
+        <h1>2026年1月 · 资本市场月度评论</h1>
+        <p class="subtitle">
+            沪指17连阳破十年纪录，港股月涨近7%——AI与资源双主线交辉，春季攻势强势启幕
+        </p>
+        <div class="meta-bar">
+            <span>发布日期：2026-02-04</span>
+            <span>分析师：市场策略研究团队</span>
+            <span>分类：宏观 · 权益 · 大宗</span>
+        </div>
+    </div>
+</header>
+
+<!-- ═══════════════════════ KEY METRICS ═══════════════════════ -->
+<div class="metrics-strip">
+    <div class="metrics-inner">
+        <div class="metric-item">
+            <div class="metric-label">上证综指</div>
+            <div class="metric-value">4,117.95</div>
+            <div class="metric-change up">+3.76%</div>
+        </div>
+        <div class="metric-item">
+            <div class="metric-label">深证成指</div>
+            <div class="metric-value">13,824</div>
+            <div class="metric-change up">+5.03%</div>
+        </div>
+        <div class="metric-item">
+            <div class="metric-label">恒生指数</div>
+            <div class="metric-value">27,387</div>
+            <div class="metric-change up">+6.85%</div>
+        </div>
+        <div class="metric-item">
+            <div class="metric-label">COMEX黄金</div>
+            <div class="metric-value">$4,604</div>
+            <div class="metric-change up">+5.2%</div>
+        </div>
+        <div class="metric-item">
+            <div class="metric-label">WTI原油</div>
+            <div class="metric-value">$59.12</div>
+            <div class="metric-change down">-6.8%</div>
+        </div>
+        <div class="metric-item">
+            <div class="metric-label">COMEX铜</div>
+            <div class="metric-value">$5.92</div>
+            <div class="metric-change up">+3.1%</div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+<!-- ═══════════════════════ 1. 市场全景 ═══════════════════════ -->
+<section class="section">
+    <div class="section-header">
+        <span class="section-number">1</span>
+        <h2>市场全景：开门红后的结构分化</h2>
+    </div>
+
+    <div class="prose">
+        <p>
+            2026年1月，A股市场延续2025年强势收官势头，以<strong>沪指17连阳</strong>的历史性走势拉开全年帷幕。上证综指自3,822点稳步攀升至4,165点，刷新逾十年新高，单月涨幅3.76%。深证成指站上14,000点关口，创业板指月涨4.47%。全市场近4,000只个股录得正收益，占比超七成，展现出典型的增量资金入场特征。
+        </p>
+        <p>
+            月内两市成交额于1月12日突破<strong>3.6万亿元</strong>，刷新2024年10月8日创下的历史记录。值得注意的是，月末受春节效应及获利回吐压力影响，1月30日沪指回调0.96%至4,117.95点，日内呈现"深V"走势，技术面进入短期修正窗口。
+        </p>
+    </div>
+
+    <!-- Heatmap: sector performance -->
+    <h3 style="font-size:15px; font-weight:700; color:var(--primary); margin:24px 0 12px;">申万一级行业月度涨跌幅速览</h3>
+    <div class="heatmap">
+        <div class="heat-cell heat-hot">
+            <div class="heat-name">有色金属</div>
+            <div class="heat-val">+23.4%</div>
+        </div>
+        <div class="heat-cell heat-hot">
+            <div class="heat-name">计算机</div>
+            <div class="heat-val">+16.2%</div>
+        </div>
+        <div class="heat-cell heat-hot">
+            <div class="heat-name">电子</div>
+            <div class="heat-val">+14.7%</div>
+        </div>
+        <div class="heat-cell heat-warm">
+            <div class="heat-name">非银金融</div>
+            <div class="heat-val">+9.8%</div>
+        </div>
+        <div class="heat-cell heat-warm">
+            <div class="heat-name">通信</div>
+            <div class="heat-val">+8.6%</div>
+        </div>
+        <div class="heat-cell heat-warm">
+            <div class="heat-name">国防军工</div>
+            <div class="heat-val">+7.3%</div>
+        </div>
+        <div class="heat-cell heat-neutral">
+            <div class="heat-name">银行</div>
+            <div class="heat-val">+2.1%</div>
+        </div>
+        <div class="heat-cell heat-neutral">
+            <div class="heat-name">食品饮料</div>
+            <div class="heat-val">+0.8%</div>
+        </div>
+        <div class="heat-cell heat-cool">
+            <div class="heat-name">房地产</div>
+            <div class="heat-val">-1.2%</div>
+        </div>
+        <div class="heat-cell heat-cool">
+            <div class="heat-name">煤炭</div>
+            <div class="heat-val">-2.4%</div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════ 2. A股重点回顾 ═══════════════════════ -->
+<section class="section">
+    <div class="section-header">
+        <span class="section-number">2</span>
+        <h2>A股：连阳纪录与双主线交辉</h2>
+    </div>
+
+    <!-- Timeline -->
+    <div class="card" style="margin-bottom:24px;">
+        <h3><span class="dot" style="background:var(--accent);"></span>月内关键事件时间线</h3>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="tl-date">1月2日</div>
+                <div class="tl-text">A股开门红，沪指十二连阳，重回4,000点上方。全市场4,200只个股上涨，成交量放大至2.57万亿元。</div>
+            </div>
+            <div class="timeline-item">
+                <div class="tl-date">1月6日</div>
+                <div class="tl-text">沪指实现日线<strong>十三连阳</strong>，收报4,083.67点，打破尘封33年的纪录。科创50涨幅居前。</div>
+            </div>
+            <div class="timeline-item">
+                <div class="tl-date">1月8日</div>
+                <div class="tl-text">智谱（"全球大模型第一股"）在港交所挂牌上市，首日涨幅显著，AI产业链情绪升温。</div>
+            </div>
+            <div class="timeline-item">
+                <div class="tl-date">1月12日</div>
+                <div class="tl-text">沪指豪取<strong>17连阳</strong>至4,165点；两市成交额突破3.6万亿元刷新历史。深证成指站上14,000点。</div>
+            </div>
+            <div class="timeline-item">
+                <div class="tl-date">1月下旬</div>
+                <div class="tl-text">获利盘出逃叠加春节效应，矿业与科技股领跌。沪指1月30日收于4,117.95点，日内走出"深V"形态。</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-2">
+        <!-- 主线1: AI -->
+        <div class="card">
+            <h3><span class="dot" style="background:#3498db;"></span>主线一：AI产业链全面爆发</h3>
+            <p>
+                智谱与Minimax先后上市、豆包登陆春晚舞台、马斯克宣布开源X推荐算法，多重催化剂推动AI应用方向全线走强。Wind人工智能指数开年6个交易日即涨超16%。
+            </p>
+            <p>
+                DeepSeek持续迭代V3/R1模型，虽受限于算力瓶颈尚未发布全新旗舰模型，但中国"AI四小龙"（摩尔线程、沐曦、壁仞、燧原）密集登陆资本市场，国产算力替代逻辑持续强化。
+            </p>
+            <div class="callout blue">
+                <div class="callout-title">策略观点</div>
+                <p>AI产业链正从"概念炒作"向"商业化兑现"过渡。建议关注拥有明确场景落地能力的应用层标的，同时警惕纯主题炒作在高位的回调风险。</p>
+            </div>
+        </div>
+        <!-- 主线2: 资源 -->
+        <div class="card">
+            <h3><span class="dot" style="background:var(--gold);"></span>主线二：贵金属与有色金属强势领涨</h3>
+            <p>
+                申万有色金属板块1月涨幅超过23%，为全行业之首。细分来看，白银概念月涨幅超175%，黄金概念涨超73%。紫金矿业涨6%，中国钼业涨4.7%，湖南黄金涨10%。
+            </p>
+            <p>
+                COMEX黄金站稳4,600美元/盎司上方，创历史新高。驱动力来自三方面：美联储降息周期延续降低持有成本、全球央行购金量自2022年翻倍、地缘避险情绪升温。
+            </p>
+            <div class="callout">
+                <div class="callout-title">数据亮点</div>
+                <p>1月十大牛股中4只为金银概念：志特新材（+234%）、锋龙股份（+214%、连续17个涨停）、湖南白银、四川黄金。资源板块的赚钱效应显著。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Movers Table -->
+    <div class="card" style="margin-top:24px;">
+        <h3><span class="dot" style="background:var(--accent);"></span>1月十大牛股</h3>
+        <div style="overflow-x:auto;">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>股票名称</th>
+                        <th>所属板块</th>
+                        <th style="text-align:right">月涨幅</th>
+                        <th style="text-align:right">核心逻辑</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td class="ticker">志特新材</td><td>建材</td><td class="num" style="color:var(--red)">+234%</td><td>低空经济+资产重组</td></tr>
+                    <tr><td>2</td><td class="ticker">锋龙股份</td><td>机械</td><td class="num" style="color:var(--red)">+214%</td><td>连续17日涨停</td></tr>
+                    <tr><td>3</td><td class="ticker">湖南白银</td><td>有色金属</td><td class="num" style="color:var(--red)">+185%</td><td>白银价格飙升</td></tr>
+                    <tr><td>4</td><td class="ticker">普冉股份</td><td>半导体</td><td class="num" style="color:var(--red)">+152%</td><td>AI芯片需求</td></tr>
+                    <tr><td>5</td><td class="ticker">四川黄金</td><td>有色金属</td><td class="num" style="color:var(--red)">+143%</td><td>黄金价格新高</td></tr>
+                    <tr><td>6</td><td class="ticker">白银有色</td><td>有色金属</td><td class="num" style="color:var(--red)">+138%</td><td>白银概念龙头</td></tr>
+                    <tr><td>7</td><td class="ticker">通源石油</td><td>油服</td><td class="num" style="color:var(--red)">+127%</td><td>资源重估</td></tr>
+                    <tr><td>8</td><td class="ticker">连城数控</td><td>设备</td><td class="num" style="color:var(--red)">+119%</td><td>光伏设备反弹</td></tr>
+                    <tr><td>9</td><td class="ticker">晓程科技</td><td>芯片</td><td class="num" style="color:var(--red)">+115%</td><td>国产替代</td></tr>
+                    <tr><td>10</td><td class="ticker">可川科技</td><td>电子</td><td class="num" style="color:var(--red)">+110%</td><td>消费电子复苏</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════ 3. 港股 ═══════════════════════ -->
+<section class="section">
+    <div class="section-header">
+        <span class="section-number">3</span>
+        <h2>港股：估值修复进入第二阶段</h2>
+    </div>
+
+    <div class="prose">
+        <p>
+            恒生指数1月录得<strong>6.85%</strong>的月涨幅，报收27,387点，月内一度触及28,056点——4年半以来的新高。恒生科技指数涨3.67%至5,718点，国企指数涨4.53%至9,317点。此轮升势主要由<strong>内险股、香港金融股及资源股</strong>带动，三大板块涨幅均超一成。
+        </p>
+        <p>
+            1月2日港股首个交易日即迎来开门红，恒指收复26,000点关口。离岸人民币盘中升破6.97、壁仞科技("港股GPU第一股")上市大涨等多重利好形成共振。智谱累计涨幅94.66%成为月度最亮眼新股，市场对其AGI技术路径的认可度持续提升。
+        </p>
+    </div>
+
+    <div class="grid-2" style="margin-top:20px;">
+        <div class="card">
+            <h3><span class="dot" style="background:var(--green);"></span>港股指数月度表现</h3>
+            <div class="bar-chart">
+                <div class="bar-row">
+                    <span class="bar-label">恒生指数</span>
+                    <div class="bar-track"><div class="bar-fill positive" style="width:68.5%">+6.85%</div></div>
+                </div>
+                <div class="bar-row">
+                    <span class="bar-label">国企指数</span>
+                    <div class="bar-track"><div class="bar-fill positive" style="width:45.3%">+4.53%</div></div>
+                </div>
+                <div class="bar-row">
+                    <span class="bar-label">恒生科技</span>
+                    <div class="bar-track"><div class="bar-fill positive" style="width:36.7%">+3.67%</div></div>
+                </div>
+                <div class="bar-row">
+                    <span class="bar-label">上证综指</span>
+                    <div class="bar-track"><div class="bar-fill blue-bar" style="width:37.6%">+3.76%</div></div>
+                </div>
+                <div class="bar-row">
+                    <span class="bar-label">深证成指</span>
+                    <div class="bar-track"><div class="bar-fill blue-bar" style="width:50.3%">+5.03%</div></div>
+                </div>
+                <div class="bar-row">
+                    <span class="bar-label">创业板指</span>
+                    <div class="bar-track"><div class="bar-fill blue-bar" style="width:44.7%">+4.47%</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h3><span class="dot" style="background:#9b59b6;"></span>资金与估值</h3>
+            <p>
+                <strong>南向资金：</strong>1月净流入持续活跃，港股通日均成交额维持在高位，反映内地增量资金对港股低估值标的的配置需求。
+            </p>
+            <p>
+                <strong>估值水平：</strong>恒生指数市盈率(TTM)约10.2倍，仍处于过去十年均值下方，相较A股和全球主要市场保持明显的估值折价。
+            </p>
+            <p>
+                <strong>汇率因素：</strong>离岸人民币走强至6.97一线，降低了港股对内地投资者的汇率风险敞口，构成额外利好。
+            </p>
+            <div class="callout blue">
+                <div class="callout-title">机构观点</div>
+                <p>中信证券认为2026年港股将迎来"第二轮估值修复"，内外因素共振：内部"十五五"政策落地+AI商业化提速，外部美国中期选举年叠加降息构成双宽松格局。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════ 4. 大宗商品 ═══════════════════════ -->
+<section class="section">
+    <div class="section-header">
+        <span class="section-number">4</span>
+        <h2>大宗商品与期货市场</h2>
+    </div>
+
+    <div class="grid-2">
+        <div class="card">
+            <h3><span class="dot" style="background:var(--gold);"></span>贵金属：黄金续创新高</h3>
+            <p>
+                COMEX黄金期货1月中旬触及<strong>4,604美元/盎司</strong>，再创历史新高。花旗将0-3个月金价预期上调至4,000美元。核心驱动：
+            </p>
+            <ul style="margin:12px 0; padding-left:20px; font-size:14px; line-height:2;">
+                <li>美联储及全球央行降息周期延续，实际利率下行</li>
+                <li>全球央行购金量自2022年翻倍，形成价格底部支撑</li>
+                <li>地缘不确定性（乌俄和谈、美委局势）推升避险需求</li>
+                <li>世界银行预测2026年贵金属价格再涨5%</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3><span class="dot" style="background:#2c3e50;"></span>能源：油价承压下行</h3>
+            <p>
+                WTI原油在1月中旬交投于<strong>59.12美元/桶</strong>附近，布伦特在63.65美元。供给端OPEC+增产预期叠加非OPEC国家产量增长，需求端全球增长不足1 mb/d。
+            </p>
+            <p>
+                路透调查的35位分析师预测2026年布伦特均价约62.23美元/桶，较2025年进一步回落。高盛在年度大宗商品展望中将油价列为看空品种。
+            </p>
+            <div class="callout red">
+                <div class="callout-title">风险提示</div>
+                <p>地缘政治变量（乌克兰和谈进展、委内瑞拉产量扰动）可能导致油价出现阶段性波动，但中期供需格局偏弱的判断不变。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:24px;">
+        <div class="card">
+            <h3><span class="dot" style="background:#e67e22;"></span>工业金属：铜铝韧性显现</h3>
+            <p>
+                COMEX铜期货交投于<strong>5.92美元/磅</strong>左右，维持相对强势。花旗给出中期12,000美元/吨的基准预期（约+20%），牛市情境可达14,000美元/吨（+40%）。
+            </p>
+            <p>
+                中国限制电解铝产能天花板，新能源基建对铜、铝、锡的需求形成结构性支撑。2025年全年铜涨28.8%，铝涨12.5%，锌涨7.0%。
+            </p>
+        </div>
+        <div class="card">
+            <h3><span class="dot" style="background:#1abc9c;"></span>期指期货与碳酸锂</h3>
+            <p>
+                股指期货方面，1月随现货指数强势上行，IF主力合约升水扩大，反映市场情绪偏多。期权隐含波动率月中冲高后月末回落，与"深V"走势形成联动。
+            </p>
+            <p>
+                碳酸锂期货成为月内最显著的空头品种。价格从189,440元/吨暴跌至148,200元/吨，跌幅近22%。产业链压力传导至赣锋锂业等锂矿股，赣锋月跌16.46%。
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════ 5. 宏观动态 ═══════════════════════ -->
+<section class="section">
+    <div class="section-header">
+        <span class="section-number">5</span>
+        <h2>宏观动态与政策环境</h2>
+    </div>
+
+    <div class="grid-2">
+        <div class="card">
+            <h3><span class="dot" style="background:#e74c3c;"></span>中国宏观</h3>
+            <p><strong>制造业PMI 50.3</strong>（财新口径），较前值50.1小幅回升，创去年10月以来最高，指向制造业景气度温和扩张。企业加速生产并提前发货以应对春节假期。</p>
+            <p><strong>GDP增速预期：</strong>IMF、瑞银、德勤等一致预测2026年GDP增速约<strong>4.5%</strong>。十五五规划即将公布，政策重心转向科技创新与制造业升级。</p>
+            <p><strong>财政政策：</strong>中央政府已从特别国债中拨付625亿元支持消费品以旧换新，并提前下达约2,950亿元中央预算内投资。</p>
+            <p><strong>货币政策：</strong>LPR维持不变，先锋领航预计全年仅有20bp的小幅降息空间。流动性保持合理充裕，但信贷需求偏弱仍是制约。</p>
+        </div>
+        <div class="card">
+            <h3><span class="dot" style="background:#3498db;"></span>全球宏观</h3>
+            <p><strong>美联储：</strong>持续处于降息通道中，实际利率下行利好新兴市场资产与贵金属。市场预期2026年仍有2-3次降息空间。</p>
+            <p><strong>美元指数：</strong>高位震荡但趋势走弱，离岸人民币走强至6.97，对港股和A股外资回流形成正向推动。</p>
+            <p><strong>贸易环境：</strong>中美科技博弈延续，AI芯片出口管制仍是核心变量。中国加速推进国产替代（"四小龙"密集上市），形成逆向投资机遇。</p>
+            <p><strong>地缘政治：</strong>乌克兰和谈出现进展迹象，委内瑞拉局势存在不确定性。美国中期选举年历史上倾向于财政扩张，构成全球流动性宽松预期。</p>
+        </div>
+    </div>
+
+    <!-- Key Macro Gauges -->
+    <div class="card" style="margin-top:24px;">
+        <h3><span class="dot" style="background:var(--accent);"></span>核心宏观指标一览</h3>
+        <div class="gauge-row">
+            <div class="gauge-item">
+                <div class="gauge-circle" style="background:conic-gradient(var(--accent) 0% 50%, #ecf0f1 50% 100%);">
+                    <span class="gauge-val">50.3</span>
+                </div>
+                <div class="gauge-label">财新制造业PMI</div>
+            </div>
+            <div class="gauge-item">
+                <div class="gauge-circle" style="background:conic-gradient(#3498db 0% 45%, #ecf0f1 45% 100%);">
+                    <span class="gauge-val">4.5%</span>
+                </div>
+                <div class="gauge-label">2026E GDP增速</div>
+            </div>
+            <div class="gauge-item">
+                <div class="gauge-circle" style="background:conic-gradient(var(--gold) 0% 60%, #ecf0f1 60% 100%);">
+                    <span class="gauge-val">18.1x</span>
+                </div>
+                <div class="gauge-label">上证PE(TTM)</div>
+            </div>
+            <div class="gauge-item">
+                <div class="gauge-circle" style="background:conic-gradient(#27ae60 0% 35%, #ecf0f1 35% 100%);">
+                    <span class="gauge-val">14.9x</span>
+                </div>
+                <div class="gauge-label">上证PE(FWD)</div>
+            </div>
+            <div class="gauge-item">
+                <div class="gauge-circle" style="background:conic-gradient(#9b59b6 0% 40%, #ecf0f1 40% 100%);">
+                    <span class="gauge-val">6.97</span>
+                </div>
+                <div class="gauge-label">USD/CNH</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════ 6. 后续展望 ═══════════════════════ -->
+<section class="section">
+    <div class="section-header">
+        <span class="section-number">6</span>
+        <h2>2月展望与配置建议</h2>
+    </div>
+
+    <div class="prose">
+        <p>
+            综合来看，1月市场以<strong>"AI+资源"双主线</strong>驱动形成了典型的牛市初期格局——增量资金充裕、赚钱效应扩散、风险偏好上移。但月末的调整也提示，短期过热后需要消化浮盈。春节后的交易热度回升将是2月的核心关注点。
+        </p>
+        <p>
+            <strong>高盛</strong>在亚太范围内建议高配A股和港股，预计2026-2027年中国股市每年上涨15%-20%，分别由14%和12%的盈利增长以及约10%的估值重估支撑。<strong>瑞银</strong>认为先进制造业和科技自立自强将成为新的增长引擎。
+        </p>
+    </div>
+
+    <div class="outlook-grid" style="margin-top:24px;">
+        <div class="outlook-card bullish">
+            <div class="outlook-icon">&#9650;</div>
+            <h4>A股权益</h4>
+            <p>春节后交易热度有望回升，AI产业链与人形机器人方向具备持续催化。建议持股过节，关注业绩兑现能力强的标的。</p>
+            <span class="outlook-tag tag-bull">看多</span>
+        </div>
+        <div class="outlook-card bullish">
+            <div class="outlook-icon">&#9650;</div>
+            <h4>港股市场</h4>
+            <p>估值修复由资金驱动转向业绩驱动，恒指PE仍在10x附近具备安全边际。关注科技、消费、金融三大方向。</p>
+            <span class="outlook-tag tag-bull">看多</span>
+        </div>
+        <div class="outlook-card bullish">
+            <div class="outlook-icon">&#9650;</div>
+            <h4>贵金属</h4>
+            <p>黄金结构性多头逻辑不变：降息+央行购金+地缘避险。花旗预期短期看向4,000美元，中期仍有上行空间。</p>
+            <span class="outlook-tag tag-bull">看多</span>
+        </div>
+        <div class="outlook-card neutral">
+            <div class="outlook-icon">&#9644;</div>
+            <h4>工业金属</h4>
+            <p>铜铝受益新能源基建需求，但全球增长放缓形成对冲。中期偏多，短期需观察中国需求数据验证。</p>
+            <span class="outlook-tag tag-neutral">中性偏多</span>
+        </div>
+        <div class="outlook-card bearish">
+            <div class="outlook-icon">&#9660;</div>
+            <h4>原油</h4>
+            <p>供给端宽松格局短期难以逆转，需求增长疲软。布伦特中枢下移至60美元附近，地缘事件或带来脉冲但不改趋势。</p>
+            <span class="outlook-tag tag-bear">看空</span>
+        </div>
+        <div class="outlook-card neutral">
+            <div class="outlook-icon">&#9644;</div>
+            <h4>碳酸锂</h4>
+            <p>价格暴跌后进入磨底区间，产能出清仍需时日。短期反弹空间有限，但新能源车销量增长或提供中期支撑。</p>
+            <span class="outlook-tag tag-neutral">中性</span>
+        </div>
+    </div>
+
+    <!-- Risk Matrix -->
+    <div class="card" style="margin-top:28px;">
+        <h3><span class="dot" style="background:var(--accent);"></span>2月核心风险与机遇清单</h3>
+        <div style="overflow-x:auto;">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>类别</th>
+                        <th>风险因素</th>
+                        <th>潜在影响</th>
+                        <th>概率评估</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="ticker">政策</td><td>两会政策预期博弈（3月初）</td><td>板块轮动加速，主题投资窗口</td><td>高</td></tr>
+                    <tr><td class="ticker">流动性</td><td>春节后资金回流节奏</td><td>决定短期反弹力度</td><td>高</td></tr>
+                    <tr><td class="ticker">地缘</td><td>中美科技博弈升级</td><td>科技股短期承压但加速国产替代</td><td>中</td></tr>
+                    <tr><td class="ticker">业绩</td><td>年报预告集中披露期</td><td>业绩不达预期个股面临杀估值</td><td>中</td></tr>
+                    <tr><td class="ticker">外围</td><td>美股AI板块回调传导</td><td>港股科技指数联动下跌</td><td>中低</td></tr>
+                    <tr><td class="ticker" style="color:var(--green)">机遇</td><td>DeepSeek新旗舰模型发布</td><td>AI板块新一轮催化</td><td>中</td></tr>
+                    <tr><td class="ticker" style="color:var(--green)">机遇</td><td>十五五规划细则出台</td><td>战略新兴产业获政策加持</td><td>高</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════ 7. 配置策略总结 ═══════════════════════ -->
+<section class="section">
+    <div class="section-header">
+        <span class="section-number">7</span>
+        <h2>配置策略总结</h2>
+    </div>
+
+    <div class="callout blue">
+        <div class="callout-title">核心结论</div>
+        <p>
+            维持对中国权益资产的<strong>超配</strong>判断。结构上建议"科技成长为矛、资源周期为盾"的杠铃策略：
+            一端配置AI产业链（大模型应用、国产算力、人形机器人）等高弹性方向；
+            另一端配置受益于全球降息周期的贵金属及高股息红利资产。
+            港股因估值洼地优势，建议维持标配以上权重。
+        </p>
+    </div>
+
+    <div class="grid-2" style="margin-top:20px;">
+        <div class="card">
+            <h3><span class="dot" style="background:var(--accent);"></span>建议超配方向</h3>
+            <ul style="padding-left:20px; font-size:14px; line-height:2.2;">
+                <li><strong>AI产业链：</strong>大模型应用、AI Agent、国产算力芯片</li>
+                <li><strong>人形机器人：</strong>核心零部件、系统集成</li>
+                <li><strong>贵金属：</strong>黄金ETF、白银概念、矿业龙头</li>
+                <li><strong>港股科技：</strong>互联网平台、SaaS、半导体</li>
+                <li><strong>军工：</strong>十五五装备列装高峰</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3><span class="dot" style="background:var(--green);"></span>建议低配/回避方向</h3>
+            <ul style="padding-left:20px; font-size:14px; line-height:2.2;">
+                <li><strong>房地产：</strong>基本面仍在筑底，反弹持续性存疑</li>
+                <li><strong>煤炭：</strong>供给宽松、需求替代压力加大</li>
+                <li><strong>碳酸锂产业链：</strong>产能过剩短期难解</li>
+                <li><strong>纯概念炒作标的：</strong>警惕高位回调风险</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+</div><!-- /.container -->
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="footer">
+    <div class="disclaimer">
+        <p style="margin-bottom:12px;"><strong style="color:var(--gold);">免责声明</strong></p>
+        <p>
+            本报告仅供参考，不构成任何投资建议或承诺。报告中的信息来源于公开数据与第三方研究，编者不对其准确性、完整性作出保证。
+            投资有风险，入市需谨慎。过往表现不代表未来收益。读者应根据自身风险承受能力独立判断，并在必要时咨询专业顾问。
+        </p>
+        <p style="margin-top:16px; opacity:0.7;">&copy; 2026 资本市场研究 · 月度评论 | 数据截至 2026-01-31</p>
+    </div>
+</footer>
+
+</body>
+</html>
