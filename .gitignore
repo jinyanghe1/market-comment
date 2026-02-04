@@ -6,3 +6,4 @@ auto_publish.sh
 daily_job.log
 __pycache__/
 venv/
+.todo
