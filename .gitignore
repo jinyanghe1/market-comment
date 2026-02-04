@@ -1,1 +1,8 @@
 .claude
+*.py
+*.txt
+*.sh
+auto_publish.sh
+daily_job.log
+__pycache__/
+venv/
