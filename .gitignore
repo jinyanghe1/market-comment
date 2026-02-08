@@ -2,6 +2,7 @@
 *.py
 *.txt
 *.sh
+*.db
 auto_publish.sh
 daily_job.log
 __pycache__/

@@ -384,6 +384,94 @@
             color: #fff;
         }
 
+        /* ── Subscription Section ── */
+        .subscribe-section {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+            padding: 48px 24px;
+            text-align: center;
+        }
+        .subscribe-inner {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .subscribe-inner h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .subscribe-inner .sub-desc {
+            font-size: 14px;
+            opacity: 0.7;
+            margin-bottom: 24px;
+            line-height: 1.7;
+        }
+        .subscribe-form {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            align-items: center;
+        }
+        .subscribe-form input[type="email"] {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 16px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 4px;
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .subscribe-form input[type="email"]::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+        .subscribe-form input[type="email"]:focus {
+            border-color: var(--wp-gold);
+        }
+        .subscribe-categories {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .subscribe-categories label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            opacity: 0.9;
+        }
+        .subscribe-categories input[type="checkbox"] {
+            accent-color: var(--wp-gold);
+            width: 16px;
+            height: 16px;
+        }
+        .subscribe-btn {
+            display: inline-block;
+            background: var(--wp-accent);
+            color: #fff;
+            border: none;
+            padding: 12px 36px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .subscribe-btn:hover {
+            background: #a93226;
+        }
+        .subscribe-msg {
+            font-size: 13px;
+            margin-top: 8px;
+            min-height: 20px;
+        }
+        .subscribe-msg.success { color: #27ae60; }
+        .subscribe-msg.error { color: #e74c3c; }
+
         /* ── Footer ── */
         .site-footer {
             background: var(--wp-primary);
@@ -592,45 +680,45 @@
   <div class="widget-body" style="padding:16px 20px;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
       <span style="font-size:12px;font-weight:700;color:#f39c12;">&#9679; 谨慎</span>
-      <span style="font-size:11px;color:#999;">2026-02-04 18:30</span>
+      <span style="font-size:11px;color:#999;">2026-02-08 21:26</span>
     </div>
-    <p style="font-size:13px;color:#555;margin-bottom:14px;line-height:1.6;">市场整体情绪谨慎，欧洲通胀数据走弱引发政策宽松预期，但地缘政治紧张、美国政策不确定性及企业盈利压力共同构成下行风险。</p>
+    <p style="font-size:13px;color:#555;margin-bottom:14px;line-height:1.6;">全球市场受日本大选结果、美国关键经济数据预期及AI主题投资情绪交织影响，呈现谨慎分化格局。</p>
     <div style="border-top:1px solid #e2e4e7;padding-top:12px;">
       <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
         <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
-          <span style="color:#999;margin-right:4px;">1.</span>欧元区通胀降至1.7%加剧通缩担忧，欧央行政策转向预期升温
+          <span style="color:#e74c3c;margin-right:4px;">1.</span>日本大选自民党大胜，预计利好股市压制日元
         </div>
-        <div style="font-size:11px;color:#999;"><a href="https://www.ft.com/content/6b6284a7-8d46-477b-94b3-ca5f9ddb38cf" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">FT</a> | <a href="https://www.ft.com/content/d148ce25-fa76-468b-b9ac-95c62a994a55" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">FT</a></div>
+        <div style="font-size:11px;color:#999;"><a href="https://www.cnbc.com/2026/02/08/japans-ruling-ldp-seen-winning-outright-majority-in-snap-poll-nhk.html" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">CNBC</a> | <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPZTlXY2FxZjZSbi03SVJ5b2dpT0VaUDM2T28yYlJ6Vy1Hek9jUGtXeGxCaDdQMnFLRzEzZy1yNXotVzBTYkRrb1ZKZzBNemVEWGFYRjY0NEJFOW5MclRWNzJUQzhMd2lNdjlKM09yWDVtV053NUVndVQ0NTVlRUV0b1J6Y2lQVVlGd2d6Y0xLVUt6Z2g1YXZnSFNWYktibVZsRUhreU1qNTIyM3owcVRMaFlxTQ" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Bloomberg</a></div>
       </div>
       <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
         <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
-          <span style="color:#27ae60;margin-right:4px;">2.</span>Amundi拟削减美国资产敞口，凸显全球资本对美国政策与美元的信心动摇
+          <span style="color:#999;margin-right:4px;">2.</span>AI投资热潮与风险并存，引发市场板块轮动
         </div>
-        <div style="font-size:11px;color:#999;"><a href="https://www.ft.com/content/20d0d30f-c36d-4839-ba56-351327b7410f" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">FT</a></div>
+        <div style="font-size:11px;color:#999;"><a href="https://www.cnbc.com/2026/02/08/wall-street-analysts-like-these-stocks-for-long-term-growth-potential.html" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">CNBC</a> | <a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPZnp2el9ldXZMb0FLbmVwT0pMSkhvU3MyNTk3Nld4Y1VnZTF4eXRJVkd2M2J0TkJnWGlDVGxmODhmOFg1eWxEOWJkWERQMnJQWjltb1JUYmE2NkRlV25RbTFYREdmb2FnZ203TWZiWXRsalVaN25LeDNzOGlqa3Nnd0Q5V2hxMVRZR090dHg2bU5paTlfX1Bic1d2a3dhMktfbE83NWpTbS1zR3ZPZTJWNl9NaWJKWGtiZms0d25iVThRM0JKcjhj" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Reuters</a></div>
       </div>
       <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
         <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
-          <span style="color:#27ae60;margin-right:4px;">3.</span>美联储主席人选不确定性叠加政策警告，全球货币政策前景迷雾重重
+          <span style="color:#999;margin-right:4px;">3.</span>美国关键就业与通胀数据前夕，市场情绪紧张
         </div>
-        <div style="font-size:11px;color:#999;"><a href="https://www.ft.com/content/93b4c72a-0ceb-4839-bf72-06de3870d407" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">FT</a> | <a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPaE9sbkZ5aDE2SzFVeXppcld5Q3RuTXpKWHlBRW9nNXg2QkxiaGhaaDI0Umg2dW9jWFNLZ25XYjFvRUFhMjc0WGJ3MHRXcHYxMEN4UFJLS2t4WERlNWVucFhES3NLd3JxMkpWWWlqMTlGalZJM3liQTBFdkc1LXdCR2tBVk9WUQ?oc=5" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Google Finance</a></div>
+        <div style="font-size:11px;color:#999;"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQTGdhcTB6c2pmdGVaZml1TFl5WEZ0T3MwUHZWalBBbzhZU3p3RE5OR2pUcHpPWHJkY3RfdkpiZzBOemxuM0VSdF9pc2Y3Ylg1U3hYTW1CcWI4U09zTno4TXB1YWhPUkozOF9tT3BKX0pKSkROZWVib1RRUkU5dWJlWkpMWHBReEc2Umdrb1h6TFAzeE9Tb3B5MjJoUmpfa01YaXVZaHNB" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Bloomberg</a> | <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BSDVvUnlQdmpUWDZqR1RuV1VmbjcyYUlXTUFTNHdBQVpqS1M5OVlXQ1dyVTI2OVIwd0FwSFQ5T2dzRzdqcjctMV9VdW1zV0NPVFNUa0ppOEtUSDgxS0ZEWQ" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">财新</a></div>
       </div>
       <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
         <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
-          <span style="color:#27ae60;margin-right:4px;">4.</span>地缘政治风险升级：俄欧太空对峙、中东冲突及美伊核谈紧张
+          <span style="color:#27ae60;margin-right:4px;">4.</span>加密货币市场崩跌，杠杆投资者遭受重创
         </div>
-        <div style="font-size:11px;color:#999;"><a href="https://www.ft.com/content/cd08c49c-658e-49c9-9a15-234f2bfc2074" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">FT</a> | <a href="https://www.scmp.com/news/world/middle-east/article/3342381/israeli-strikes-kill-17-palestinians-mostly-women-and-children-gaza-ceasefire-crumbles?utm_source=rss_feed" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">SCMP</a></div>
+        <div style="font-size:11px;color:#999;"><a href="https://www.marketwatch.com/story/as-bitcoin-crashes-pity-those-wildly-enthusiastic-investors-who-borrowed-billions-against-crypto-794164bb?mod=mw_rss_topstories" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">MarketWatch</a> | <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5yQ1A0eFlUU0duWm9HM25qbW5qRENQWGhxZTlEMmVFYmdXRzVfVmwtYzRTcFhJSGZrTVdfc0hiMm5fXzlreV9wYlBRQUlvUFlYd1NpQVJ2NlBuYndraVAxbzJEWlplX2p0YWtYaVlQcTY" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Financial Times</a></div>
       </div>
       <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
         <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
-          <span style="color:#999;margin-right:4px;">5.</span>AI应用泡沫化警告与Oracle巨额发债，凸显科技扩张的融资与盈利挑战
+          <span style="color:#27ae60;margin-right:4px;">5.</span>地缘政治风险升温：乌克兰局势、伊朗核谈判与中美博弈
         </div>
-        <div style="font-size:11px;color:#999;"><a href="https://www.ft.com/content/837b4b5d-a67b-4fde-98d9-e4c3a516f8d0" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">FT</a> | <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQanFFcS14cERPZFY4blFkaXU2cTVrYTkyN0xDRjF4YXRQRWVnak1JZ2tNWlJtcjA1emhVVmU4UG9UcW9TeFJBU1NuSlIwMWNONExzSENJaTV2R2pCeHlXeXVxUnBHY1dTTVpoa1ZzT2wxWWd3QWpiYjhVT3ZiQnhtUkpITE9fajQ3Mkhpd1JId3dQRGtuVXllX1BCWThiclczVl9nQUFOVjFVc0g0WHJwOVlrT2Q?oc=5" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Bloomberg</a></div>
+        <div style="font-size:11px;color:#999;"><a href="https://www.investing.com/news/world-news/ukraine-urges-acceleration-of-peace-talks-says-only-trump-can-broker-deal-4492418" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Investing.com</a> | <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPSEV3WVRTWGtfN250WWpHQ0R6NGpObkdLVEJUc2t0X2htX2ZSdnRtYXdEcGdfelIzM0tQYks3ZDNvT0RtbVFpb0JORDJURkM5UWRvbVBLWGN5aXNVYzhPSFNWMXZBeVVjMUxnTkNfVWVEVDN2UUJKaUZWRVdSUWNPbHp5S1dCXzdfci1sSV9MXy1CNEFNUUJaeXJIMEF0LS1hTnFXX3BEdUJjVWsyMjdkV1Fn" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Bloomberg</a></div>
       </div>
       <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
         <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
-          <span style="color:#e74c3c;margin-right:4px;">6.</span>欧洲防务巨头Rheinmetall积极扩张，地缘紧张推动国防工业整合与增长
+          <span style="color:#999;margin-right:4px;">6.</span>企业裁员与成本控制成趋势，关注运营效率
         </div>
-        <div style="font-size:11px;color:#999;"><a href="https://www.ft.com/content/a326b178-4389-40f7-9979-a1b878e94c3d" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">FT</a></div>
+        <div style="font-size:11px;color:#999;"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNZFhzVXMyajdUM19mTG1mS1d1azd1UVN2Q0duYUdsZXpjelQwUFVkV2FPcVVoQ1dWaFNES3N0UndqaVFQLVYwRlNBdWJ3VEVvZUd1UmJRdjV5WU9WckVnRG1TU0tMX1BvVmdSNjZWbDRJbEdqdWR4dVBXMTBjenROVG43TXpJQ0ljUmthaUZwbGMxbzFuanBZZzkwQTZGYTRmN1RSUzNScUdHc0dWU0Nj" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Bloomberg</a> | <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNWnlmb0JNaEU0UkhLdll4Z2wwZzA2aDVkbjVFLW5rYVBzOWZlRndsSTZXWUticmZTb1NTVTFGV3hyVk1KMzhKZHFIbWNxc2Uwdk1yT214RnJiYkQtU3RhX192Q016dEVNN0hBQ1puNG9rN20wV096QTZQR1JhYkphRnhGeDFILTBwdl92T0k3VEk4cXdCN3VocFpVUFp4RTZ5SzRUZW9XQ045bmF2ampFdUgzLTg" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Bloomberg</a></div>
       </div>
     </div>
   </div>
@@ -748,6 +836,70 @@
         </div>
     </aside>
 </div>
+
+<!-- ── Subscribe Section ── -->
+<section class="subscribe-section">
+    <div class="subscribe-inner">
+        <h2>订阅财经新闻</h2>
+        <p class="sub-desc">订阅我们的邮件服务，获取每日财经新闻热点摘要或实时更新通知，直达您的邮箱。</p>
+        <form class="subscribe-form" id="subscribeForm" onsubmit="return handleSubscribe(event)">
+            <input type="email" id="subEmail" placeholder="请输入您的邮箱地址" required>
+            <div class="subscribe-categories">
+                <label><input type="checkbox" name="cat" value="daily" checked> 每日摘要</label>
+                <label><input type="checkbox" name="cat" value="realtime"> 实时更新</label>
+            </div>
+            <button type="submit" class="subscribe-btn">订阅</button>
+            <div class="subscribe-msg" id="subscribeMsg"></div>
+        </form>
+    </div>
+</section>
+
+<script>
+function handleSubscribe(e) {
+    e.preventDefault();
+    var email = document.getElementById('subEmail').value.trim();
+    var msgEl = document.getElementById('subscribeMsg');
+    var checks = document.querySelectorAll('input[name="cat"]:checked');
+    var cats = [];
+    checks.forEach(function(c) { cats.push(c.value); });
+
+    if (!email) { msgEl.textContent = '请输入邮箱地址'; msgEl.className = 'subscribe-msg error'; return false; }
+    if (cats.length === 0) { msgEl.textContent = '请至少选择一个订阅栏目'; msgEl.className = 'subscribe-msg error'; return false; }
+
+    var subUrl = (window.SUBSCRIPTION_SERVER || 'http://localhost:8888') +
+        '/subscribe?email=' + encodeURIComponent(email) +
+        '&categories=' + encodeURIComponent(cats.join(','));
+
+    msgEl.textContent = '正在提交...';
+    msgEl.className = 'subscribe-msg';
+
+    // Try API first, fallback to redirect
+    fetch((window.SUBSCRIPTION_SERVER || 'http://localhost:8888') + '/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, categories: cats.join(',') })
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+        if (data.success) {
+            msgEl.textContent = '订阅成功！您将通过邮件收到财经新闻更新。';
+            msgEl.className = 'subscribe-msg success';
+            document.getElementById('subEmail').value = '';
+        } else {
+            msgEl.textContent = data.message || '订阅失败，请稍后重试。';
+            msgEl.className = 'subscribe-msg error';
+        }
+    })
+    .catch(function() {
+        // Fallback: redirect to subscribe page
+        window.open(subUrl, '_blank');
+        msgEl.textContent = '已在新窗口中打开订阅页面。';
+        msgEl.className = 'subscribe-msg success';
+    });
+
+    return false;
+}
+</script>
 
 <!-- ── Footer ── -->
 <footer class="site-footer">

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-08 21:26</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-08 21:26</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">全球市场受日本大选结果、美国关键经济数据预期及AI主题投资情绪交织影响，呈现谨慎分化格局。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>日本大选自民党大胜，预计利好股市压制日元</div>
+                <div class="topic-title-en">Japan's Ruling LDP Wins Landslide Election Victory, Boosting Stocks and Weakening Yen</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    日本首相高市早苗领导的执政党自民党在突然大选中赢得压倒性多数席位，为延续其政策铺平道路。市场预计选举结果将增强政策连续性，有利于股市（特别是金融和出口板块），并可能继续施压日元汇率与国债收益率。这标志着日本政治稳定，市场将密切关注后续财政与货币政策的协同。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/08/japans-ruling-ldp-seen-winning-outright-majority-in-snap-poll-nhk.html" target="_blank" rel="noopener">[CNBC] Japanese Prime Minister Takaichi's ruling LDP seen winning outright majority in snap election: NHK</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPZTlXY2FxZjZSbi03SVJ5b2dpT0VaUDM2T28yYlJ6Vy1Hek9jUGtXeGxCaDdQMnFLRzEzZy1yNXotVzBTYkRrb1ZKZzBNemVEWGFYRjY0NEJFOW5MclRWNzJUQzhMd2lNdjlKM09yWDVtV053NUVndVQ0NTVlRUV0b1J6Y2lQVVlGd2d6Y0xLVUt6Z2g1YXZnSFNWYktibVZsRUhreU1qNTIyM3owcVRMaFlxTQ" target="_blank" rel="noopener">[Bloomberg] Takaichi Win Primes Japan Stocks for Gains, Damps Yen and Bonds</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9MUkhvS0R4T1JYWDA3UEo0UVNKaU9YUUN5NFk0c2RLVkl1MVpibFpKRzJsTTJmNlk4NDdIcmRTUDhsN09wUHA4ZEw0WWhJbGJRYkJ3b2F1MjhxTEktekF3a3pMcmYtazBVYTYxVGpXbzA" target="_blank" rel="noopener">[Financial Times] Liberal Democratic Party on course for large majority in Japan election</a>
+                    <span class="sector-tag">日本股市</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">出口贸易</span>
+                    <span class="sector-tag">外汇</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>AI投资热潮与风险并存，引发市场板块轮动</div>
+                <div class="topic-title-en">AI Investment Boom and Risks Coexist, Triggering Market Rotation</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    华尔街分析师继续推荐受益于AI增长的长期股票，显示AI主题仍是市场核心驱动力。然而，市场出现风险规避迹象，部分资金从大型科技股流向更便宜的小盘股和欧洲股市。同时，关于AI和机器人将取代人类工作的警告，以及科技巨头天量资本开支可能耗尽现金流的担忧，引发了投资者对AI估值可持续性的反思。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/08/wall-street-analysts-like-these-stocks-for-long-term-growth-potential.html" target="_blank" rel="noopener">[CNBC] Top Wall Street analysts like these stocks for long-term growth potential</a>
+                    <a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPZnp2el9ldXZMb0FLbmVwT0pMSkhvU3MyNTk3Nld4Y1VnZTF4eXRJVkd2M2J0TkJnWGlDVGxmODhmOFg1eWxEOWJkWERQMnJQWjltb1JUYmE2NkRlV25RbTFYREdmb2FnZ203TWZiWXRsalVaN25LeDNzOGlqa3Nnd0Q5V2hxMVRZR090dHg2bU5paTlfX1Bic1d2a3dhMktfbE83NWpTbS1zR3ZPZTJWNl9NaWJKWGtiZms0d25iVThRM0JKcjhj" target="_blank" rel="noopener">[Reuters] Investors chase cheaper, smaller companies as risk aversion hits tech sector</a>
+                    <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9hSFNzRklYZUN2dHBGdGhTcGE1cEJCY0lyQkNFZnU5R09wZ0YweWltcHVVZzdhM29zTklvRjlGU0tmQzdMS29IYVhvQVdfQW9mV0dn" target="_blank" rel="noopener">[华尔街见闻] 美银Hartnett：小盘股比科技股更值得押注，科技巨头不再是赢家</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">科技股</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">欧洲股市</span>
+                    <span class="sector-tag">小盘股</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>美国关键就业与通胀数据前夕，市场情绪紧张</div>
+                <div class="topic-title-en">Market Jitters Ahead of Key US Jobs and Inflation Data</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    市场即将迎来美国非农就业报告和通胀数据的“双重打击”，这些数据将直接影响美联储的利率政策路径。在特朗普政府被指希望经济过热以迎合中期选举的背景下，强劲的数据可能加剧市场对紧缩政策的担忧，而疲软数据则引发对经济健康的质疑。投资者正屏息以待，以判断美国经济的真实强度和政策的可能转向。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQTGdhcTB6c2pmdGVaZml1TFl5WEZ0T3MwUHZWalBBbzhZU3p3RE5OR2pUcHpPWHJkY3RfdkpiZzBOemxuM0VSdF9pc2Y3Ylg1U3hYTW1CcWI4U09zTno4TXB1YWhPUkozOF9tT3BKX0pKSkROZWVib1RRUkU5dWJlWkpMWHBReEc2Umdrb1h6TFAzeE9Tb3B5MjJoUmpfa01YaXVZaHNB" target="_blank" rel="noopener">[Bloomberg] Get Ready for Double Whammy of US Jobs and Inflation</a>
+                    <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BSDVvUnlQdmpUWDZqR1RuV1VmbjcyYUlXTUFTNHdBQVpqS1M5OVlXQ1dyVTI2OVIwd0FwSFQ5T2dzRzdqcjctMV9VdW1zV0NPVFNUa0ppOEtUSDgxS0ZEWQ" target="_blank" rel="noopener">[财新] 专栏｜特朗普为何要让美国经济过热</a>
+                    <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ObWlmZVc3M1JQY0I1R3RqemVMNkhUdWQtUFF0QnNJbkhKdHA4UTdVY0dyejRQSkxxNmxBd1N6UkFBei1qSVZoM0NnYkR2amMzeXZv" target="_blank" rel="noopener">[华尔街见闻] 美股本周大波动，投资者在担心：美国经济真的强吗？AI成利空了？避险资产炒成风险资产了？</a>
+                    <span class="sector-tag">美国国债</span>
+                    <span class="sector-tag">美元</span>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">周期性股票</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>加密货币市场崩跌，杠杆投资者遭受重创</div>
+                <div class="topic-title-en">Cryptocurrency Market Plunge Hits Leveraged Investors Hard</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    比特币价格大幅下跌，粉碎了此前看涨至20万美元的预期，导致大量使用加密货币作为抵押品进行借贷的投资者面临巨额损失。金融时报评论指出比特币价格仍被严重高估。此轮暴跌不仅打击了加密货币市场本身，也引发了市场对更广泛投机领域风险传导的担忧，突显了高杠杆投资在波动市场中的脆弱性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/as-bitcoin-crashes-pity-those-wildly-enthusiastic-investors-who-borrowed-billions-against-crypto-794164bb?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] After bitcoin’s fall, pity those wildly enthusiastic investors who borrowed billions against crypto</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5yQ1A0eFlUU0duWm9HM25qbW5qRENQWGhxZTlEMmVFYmdXRzVfVmwtYzRTcFhJSGZrTVdfc0hiMm5fXzlreV9wYlBRQUlvUFlYd1NpQVJ2NlBuYndraVAxbzJEWlplX2p0YWtYaVlQcTY" target="_blank" rel="noopener">[Financial Times] Bitcoin is still about $69,000 too high</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">区块链</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>地缘政治风险升温：乌克兰局势、伊朗核谈判与中美博弈</div>
+                <div class="topic-title-en">Geopolitical Risks Escalate: Ukraine, Iran Nuclear Talks, and US-China Rivalry</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    乌克兰呼吁加速和平谈判，并表示只有特朗普能斡旋协议，增加了未来美国外交政策的不确定性。伊朗在核谈判中称取得进展但仍保持谨慎，同时威胁导弹攻击，显示中东紧张局势持续。美国海军加强在澳大利亚的基地部署，作为对华潜在冲突的“保险政策”，凸显大国竞争背景下军事和供应链安全的长期投资逻辑。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/world-news/ukraine-urges-acceleration-of-peace-talks-says-only-trump-can-broker-deal-4492418" target="_blank" rel="noopener">[Investing.com] Ukraine urges acceleration of peace talks, says only Trump can broker deal</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPSEV3WVRTWGtfN250WWpHQ0R6NGpObkdLVEJUc2t0X2htX2ZSdnRtYXdEcGdfelIzM0tQYks3ZDNvT0RtbVFpb0JORDJURkM5UWRvbVBLWGN5aXNVYzhPSFNWMXZBeVVjMUxnTkNfVWVEVDN2UUJKaUZWRVdSUWNPbHp5S1dCXzdfci1sSV9MXy1CNEFNUUJaeXJIMEF0LS1hTnFXX3BEdUJjVWsyMjdkV1Fn" target="_blank" rel="noopener">[Bloomberg] Iran Calls US Nuclear Talks a ‘Step Forward’ as Caution Lingers</a>
+                    <a href="https://news.google.com/rss/articles/CBMitANBVV95cUxPUUVZd0Q0Yjd6emIyNzlZS09JUV9KZEt4M2dhejlfdFg3dFZidTZqTDJnYnFydk1jWG1BVzYzZGl2RFFxNTg0QnlSTG1idnJNWXJ1WDZNZ0xLQXRpVVJjcGhwSTVQUjBVQTdiQ1lLamlPNmVVMXMxd0JwN1Y1MjZablpnajhUYmVIQXRGcmZVZHVQVWFMTE8yLTY3MTRRMWhwX2NRNkdDbnZHMWRoWmhNQ2V2ZXptUUN6ekhXQjc3ME8tXzdfV05ScHRLS0F6TmI2cDhGd011d1RNM3FLX1dQZWJGOEZxcDlZSUJ3R29pVGFlcTYtM2Y0TVE0SHBSRlNvS1VNNkxUenpJckotdmhrOXpTZlJ0dGExcDJ1Ny0wQTRMeTAwSTZ2NllPemZfaGZmcmNRUGg0MXFWUXZpUzZTNU9UWEZwSFdZZXlXRV92c3ZUb0VwZ0lNU3NzSko3UmZzYkdiYjEzSWdJR3EzelZrV2V5WDRHQkVJNmVSc05NRHhOV0g3MzRiLW0yRzBDenJNOEVhRVB5a2JRVFRmNnhRNXhGV014SmxPcW1tOXdld0V1MC1T" target="_blank" rel="noopener">[WSJ] The U.S. Navy’s New Insurance Policy for War With China Is an Australian Base</a>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">大宗商品</span>
+                    <span class="sector-tag">供应链安全</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>企业裁员与成本控制成趋势，关注运营效率</div>
+                <div class="topic-title-en">Corporate Layoffs and Cost Control Become Trend, Focusing on Operational Efficiency</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    杰克·多西旗下的Block计划裁员至多10%，以推动效率提升，这是继多家科技和媒体公司裁员后的又一例证。华盛顿邮报CEO在引发贝佐斯不满的裁员后辞职，凸显了传统媒体在转型中的阵痛。这些事件表明，在经济前景不确定和增长压力下，企业正积极通过削减成本和提高运营效率来应对挑战，这可能短期利好利润率，但折射出需求端的潜在疲软。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNZFhzVXMyajdUM19mTG1mS1d1azd1UVN2Q0duYUdsZXpjelQwUFVkV2FPcVVoQ1dWaFNES3N0UndqaVFQLVYwRlNBdWJ3VEVvZUd1UmJRdjV5WU9WckVnRG1TU0tMX1BvVmdSNjZWbDRJbEdqdWR4dVBXMTBjenROVG43TXpJQ0ljUmthaUZwbGMxbzFuanBZZzkwQTZGYTRmN1RSUzNScUdHc0dWU0Nj" target="_blank" rel="noopener">[Bloomberg] Dorsey’s Block Cutting Up to 10% of Staff in Efficiency Push</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNWnlmb0JNaEU0UkhLdll4Z2wwZzA2aDVkbjVFLW5rYVBzOWZlRndsSTZXWUticmZTb1NTVTFGV3hyVk1KMzhKZHFIbWNxc2Uwdk1yT214RnJiYkQtU3RhX192Q016dEVNN0hBQ1puNG9rN20wV096QTZQR1JhYkphRnhGeDFILTBwdl92T0k3VEk4cXdCN3VocFpVUFp4RTZ5SzRUZW9XQ045bmF2ampFdUgzLTg" target="_blank" rel="noopener">[Bloomberg] Washington Post CEO Quits After Cuts That Led to Bezos Backlash</a>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">媒体</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">消费者服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>全球贸易格局演变：印度寻求多元化，欧洲农业承压</div>
+                <div class="topic-title-en">Evolution of Global Trade Patterns: India Seeks Diversification, European Agriculture Under Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    印度炼油商为争取与美国达成贸易协议而避免购买俄罗斯石油，同时印度与马来西亚重申加强贸易合作，反映了印度在全球贸易中寻求平衡与多元化的战略。另一方面，意大利橄榄油农民指责进口激增导致价格崩溃，突显了欧盟内部市场开放与本土农业保护之间的矛盾。这些动态预示着全球供应链和贸易流正在持续重塑，带来新的投资机会与风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/commodities-news/indian-refiners-avoid-russian-oil-in-push-for-us-trade-deal-4492404" target="_blank" rel="noopener">[Investing.com] Indian refiners avoid Russian oil in push for US trade deal</a>
+                    <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxONUhRR19ha3hMR1NPTmxHMGh5R2RYTTRfckxRWS1USWlGcm1QYkxCeHV3SGhxTlZTMk15TVE5aFNXUmRPR25hTmxnVW9EZUdBOGplcmNQUGJUbE8tRjhPcmxEbDRHa2dBajQ0ZGQ1VGFuaFR1YVRueUNsQXFiRmtGZ2MxQXA5bE5qQ193cmtkUng3ZGRDV2ZRajJxZGpzSWlyZlh2ZS1BQVFZYWQ1" target="_blank" rel="noopener">[Reuters] India, Malaysia renew pledges to boost trade, collaboration</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBJMTNOalRqb2EyVFJuLXhWVEtTZzFFdTdZaW0zXzRBNUZINUZBaWlUbWRCdjNvc0otRWREWFJrSWx3ZVh5NHdZbFpEVmtFXzB0MndRbEx3QkpLQ1RzbHZabFhtNml3czdFNFFRWnpLdVU" target="_blank" rel="noopener">[Financial Times] Italian olive oil farmers say flood of imports is causing price collapse</a>
+                    <span class="sector-tag">石油化工</span>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">农业</span>
+                    <span class="sector-tag">食品饮料</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>日本自民党选举大胜，预计获274-328席</li>
+                <li>美国即将公布非农就业与通胀数据</li>
+                <li>比特币价格暴跌，杠杆投资者损失惨重</li>
+                <li>印度1月末外汇储备规模为33991亿美元</li>
+                <li>沙特Tadawul全股指数收盘上涨0.25%</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
