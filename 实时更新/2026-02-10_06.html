@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-10 06:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-10 06:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场呈现分化态势，科技股反弹与软件股下跌并存，同时宏观经济数据与地缘政治事件影响投资者情绪。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>科技板块波动与人工智能颠覆</div>
+                <div class="topic-title-en">Tech Sector Volatility and AI Disruption</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    科技巨头如甲骨文和微软股价反弹，表明市场对AI投资持乐观态度，但Monday.com等软件公司因AI颠覆担忧而下跌，显示行业分化。Alphabet发行债券以资助AI建设，同时警告相关风险，投资者需谨慎评估AI企业的长期价值与潜在监管挑战。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/alphabet-highlights-new-ai-related-risks-in-tapping-debt-market.html" target="_blank" rel="noopener">[CNBC] Alphabet calls out new AI-related risks, as it taps debt market to fund buildout</a>
+                    <a href="https://www.cnbc.com/2026/02/09/big-tech-stocks-post-selloff-week.html" target="_blank" rel="noopener">[CNBC] Oracle gains 9%, Microsoft climbs 3% as tech tries to bounce back from $1 trillion sell-off</a>
+                    <a href="https://www.marketwatch.com/story/mondays-stock-slides-as-earnings-signal-more-pain-for-the-poster-child-of-ai-disruption-fears-3aeb9ea9" target="_blank" rel="noopener">[MarketWatch] Monday’s stock slides as earnings signal more pain for the ‘poster child’ of AI-disruption fears</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">半导体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>宏观经济数据与政策应对</div>
+                <div class="topic-title-en">Macroeconomic Data and Policy Responses</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国住房可负担性方案在国会推进，以缓解房价压力，但超过百万房主抵押贷款溺水，创七年新高，显示房地产市场脆弱性。即将公布的就业和通胀数据将影响美联储政策，日本增加债务可能对全球市场产生溢出效应，投资者需关注宏观风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/housing-affordability-prices-congress.html" target="_blank" rel="noopener">[CNBC] Housing affordability package set to advance in Congress amid home-cost concerns</a>
+                    <a href="https://www.marketwatch.com/story/is-the-u-s-economy-creating-any-jobs-is-inflation-really-slowing-investors-are-about-to-find-out-7b04a5be" target="_blank" rel="noopener">[MarketWatch] Is the U.S. economy creating any jobs? Is inflation really slowing? Investors are about to find out.</a>
+                    <a href="https://news.google.com/rss/articles/CBMikANBVV95cUxON0hDdUgzbjNkc3REX3NxTFhZZFBlR0VJT21icHRRTFkxRnFBNWlHWndsNGFSZWI2aXRpRlR0QUJWbi1uMHRvakdpdnpsU2hzaVd1cVJSY3duSnVQRGVlSmNSeEpiSlVZdzRLTVVKUHM0ck5VcGxqVW5hV1hjc3ZkaHV1Rk5keThXMmtROXprQjdnNDdFRkxUMjNKc2ZIQ3dsUlAyQTJzb3B0b2szRDZCSExmbGlvczk3djhEN2VsM3huSjFGNWx6djFhdjl0dVN1TGw3d3VJM2p1ZFVoLVFHNXdDS2tUMWZHWjJndThMa1QzdFN3VU1VMl85cm9WbkFNZDBrN1Y2VkZuWTE3UzQ5STJ2U25xUlY4VTJVaXp3SVVqdnZObmFfdkRQQURQa3NRQ2tZcjl1ZWs0OUdndWtyTUZhUlYyRGZoTXlzVHhHNVV3MGFBdTNrUUhSUHJCc2RNYUhqRjBidmlDWTBqU0JKWkZJN1c1Y2h6MlM1dml0WjJvbG9BYng0TWJxTE04ZXAz" target="_blank" rel="noopener">[Barrons] Japan Says Yes to More Debt. Global Markets Will Feel the Effects.</a>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">宏观经济</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>制药行业挫折与监管审查</div>
+                <div class="topic-title-en">Pharmaceutical Setbacks and Regulatory Scrutiny</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    FDA指责诺和诺德肥胖药广告误导，显示监管趋严，可能影响减肥药市场增长。Hims & Hers因减肥药策略失败股价暴跌24%，同时AI健康建议不可靠，加剧投资者对医疗AI的担忧，制药行业面临创新与合规双重压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/fda-novo-nordisk-wegovy-tv-ad.html" target="_blank" rel="noopener">[CNBC] FDA says Novo Nordisk's TV ad for obesity pill includes 'false or misleading' claims</a>
+                    <a href="https://news.google.com/rss/articles/CBMirwNBVV95cUxQSjYwSTRwNmFacnFoVUhjeUI3SGNYaUotVWVabjlxeDFLbU0ybGtrVW9TcGZSWmxHbFpWWXdOQXZzMXJaMWN4RTFHUVM4LXhUN2drcFlGMzJkamlKQko3eG5OYlVOcTRGWnpHcXdnZGpRelNqWTdXOXhrMlJ5d2ZCWFo1QUlGODBMajBfbEwtcEI3MkxkYzdybG4tTHN2Rm1oZzA5QnFvU2haQ211UHFMbGpwczlLYVVrbTVOMFdMU3FxYUJ3UWpQRE9nRm5SZm5Db242dUg1T1VodFNzdGdDWUtPbGZhOWNYdVprZUJrRFpOYW9seF9wcktZMEZQX0ZxTXdDWWxCVDFjb29WNHVPUDNNbU9WSldhUGliTHdVOWpoemR2Zkc3bEhqVHNYQjE2WFNPaVRaUU9pUHFDbHctTHBXMmtsNU1CRDY1QTFCbDZaaTFMNzVfeG43b1ZtMzVnYUR5Wkp5cmNYdmNtSi0wYjNNYzBocS1XLUZaZnpGM1pCMnhoZXpBbE5KUThEZVBOUXpWWUh6Ynd2Vy1tRGxpVUJNMnh1cE5hUVpPUzJOTQ" target="_blank" rel="noopener">[Barrons] Hims & Hers Stock Plunges 24%. Its Weight-Loss Drug Strategy Backfired.</a>
+                    <a href="https://news.google.com/rss/articles/CBMilgNBVV95cUxPdlAzdVhxVU1BbTZFc29VY18yOWZrN1duaGhONjduR1k0QUpaMFI1clZtbDNEMWhDMmZLcFpYaGtIMlRrczNOZDE1dzBuYjhXdjdjSUJNc1NuVWk0RGUtOHBSeldWOWE2TWNMSFpGRXhtY3BnbG1vUnpGR25nODZZT0ZhYmZ0ZzY3QzVmOHI1QUxhNlFURVpwcjJaUHNBcHlreWFIa3FiUGNvdEFuTWx1cEtPOVFobHRsdW1tRkwtZ3V3MHZsd252ZXF0Mnhld3BWUkhfTEFBai1ZMDFXeVVtVVotUW9FY1QxTzJhVTFfclBiRkh5bi1uVkJlX1E4LUZkS1VzTXAzbTl5SElWQk9MQWpsTWQweUpqWXBkcVR5dGRwcENUaG5nclRHd285QXhERnhjbUpST2RGRFlCcDVZbzZFOFVHdElYYVJPZzVjMXA3c1BxeVZNTVRIcEtJYy1hYmgyUlBJRUxnVElBM1VpX2tocWFWSTAxY0lQU05ST0dGRUxSMHN6bjZIZjVGdW44MDZSMkNn" target="_blank" rel="noopener">[Barrons] AI Chatbots Give Bad Health Advice, Research Finds</a>
+                    <span class="sector-tag">制药</span>
+                    <span class="sector-tag">医疗保健</span>
+                    <span class="sector-tag">人工智能</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>地缘政治变化与市场反应</div>
+                <div class="topic-title-en">Geopolitical Shifts and Market Reactions</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    日本首相历史性选举胜利推动日股大涨，显示政治稳定对市场的积极影响。特朗普政府对古巴施加压力导致航空公司无法加油，以及干预媒体并购，加剧地缘政治不确定性，影响航空和媒体行业，投资者需关注政策风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cjd9k852zdjo" target="_blank" rel="noopener">[BBC Business] Japanese stocks surge as Takaichi secures historic election victory</a>
+                    <a href="https://www.cnbc.com/2026/02/09/cuba-airlines-fuel-energy-oil-us-trump-pressure.html" target="_blank" rel="noopener">[CNBC] Cuba says international airlines can no longer refuel there as Trump turns up the pressure</a>
+                    <a href="https://www.marketwatch.com/story/nexstar-tegna-shares-soar-after-trump-puts-his-thumb-on-the-scale-in-contentious-merger-515f31d6" target="_blank" rel="noopener">[MarketWatch] Nexstar, Tegna shares soar after Trump puts his thumb on the scale in contentious merger</a>
+                    <span class="sector-tag">日本股市</span>
+                    <span class="sector-tag">航空</span>
+                    <span class="sector-tag">媒体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>企业财报与领导层变动</div>
+                <div class="topic-title-en">Corporate Updates and Stock Movements</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Target增加门店员工投资但削减其他职位，以改善客户体验，反映零售业数字化转型。Kyndryl因财报不佳和会计问题股价暴跌55%，Workday CEO变更引发担忧，显示企业治理和执行力对股价的直接影响，投资者应关注基本面变化。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/target-store-investment-job-cuts-customer-experience.html" target="_blank" rel="noopener">[CNBC] Target steps up investment in store staffing, cuts about 500 other roles to help fix customer experience</a>
+                    <a href="https://www.marketwatch.com/story/why-kyndryls-stock-is-sinking-after-earnings-2cc935a8" target="_blank" rel="noopener">[MarketWatch] Kyndryl’s stock tumbles more than 50%. Here’s what’s gone wrong at the IT provider.</a>
+                    <a href="https://www.cnbc.com/2026/02/09/workday-stock-carl-eschenbach-aneel-bhusri.html" target="_blank" rel="noopener">[CNBC] Workday CEO Carl Eschenbach is stepping down, co-founder Aneel Bhusri to take over</a>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">IT服务</span>
+                    <span class="sector-tag">软件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>环境风险与企业可持续性</div>
+                <div class="topic-title-en">Environmental Risks and Business Sustainability</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    主要报告警告企业若不保护自然将面临灭绝，强调ESG因素日益重要，长期可能影响公司估值。投资者需关注企业环境实践，可持续业务模式可能获得市场溢价，但短期市场反应可能有限，需结合行业特定风险评估。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cq8g20xgdjwo" target="_blank" rel="noopener">[BBC Business] Businesses face extinction unless they protect nature, major report warns</a>
+                    <span class="sector-tag">所有行业</span>
+                    <span class="sector-tag">ESG投资</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>日本股市因选举胜利大涨</li>
+                <li>超过百万房主抵押贷款溺水，创七年新高</li>
+                <li>甲骨文股价上涨9%，微软上涨3%</li>
+                <li>Kyndryl股价暴跌55%</li>
+                <li>美国住房可负担性方案在国会推进</li>
+                <li>FDA对诺和诺德肥胖药广告发出警告</li>
+                <li>Alphabet发行150亿美元债券资助AI建设</li>
+                <li>Hims & Hers股价因减肥药策略失败暴跌24%</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
