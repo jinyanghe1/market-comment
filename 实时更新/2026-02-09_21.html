@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-09 21:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-09 21:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">日本股市因高市早苗历史性胜选而大涨，但科技股经历万亿抛售后走势疲软，中国经济放缓与地缘政治紧张加剧市场波动。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>日本选举引发市场狂欢，伯克希尔获巨额收益</div>
+                <div class="topic-title-en">Japanese Election Spurs Market Rally, Berkshire Hathaway Scores Big</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    高市早苗的历史性胜选推动日本股市大幅上涨，市场预期其政策将带来结构性改革。伯克希尔·哈撒韦因重仓日本商社股而获得数十亿美元账面收益，这或将吸引更多外资流入日本市场，同时日元可能进一步走弱。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cjd9k852zdjo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Japanese stocks surge as Takaichi secures historic election victory</a>
+                    <a href="https://www.marketwatch.com/story/takaichis-victory-in-japanese-election-means-a-billion-dollar-payday-for-berkshire-hathaway-00674bab?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Takaichi’s victory in Japanese election means a billion dollar payday for Berkshire Hathaway</a>
+                    <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNX3Z1VnpaVUItb1IwQXJDTVlLaHFTU3J0R3BOQjI1V25uRXNETU1laVVIOXhDZmZWc2h0T3ZQNWNFYkRaUDVzLVBqUWxJTERkRWNVM3l3R0FoZjgxeXMtUVNXaDY1ZDNyMjlBMHBtckh1dU1yRVg4LXBkYlowS3FpelEyc0F1VFVrcFotckhIZnBfcXROWUJqLTZjWExnTVEtcWN2eGdTdjAyanF0MEQtUFJNS2QtbzVmSERscjJ4OUhiQQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Yen Steady as Japan’s Takaichi Poised for Landslide Election Win</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNMHpuYW55eUE1c3pXd05zUGdyamwwU1VVMVNOblVVSmU1OUZNZkxXRzhYNVVpT1BLVkl2YjJKLUNTVmI5ZmFrRGFObUlTWW14WWFVVG93LUoxUFhQLUxvQUpoQUxONHBLcXEzMVd0Qjl2aElydjZoM28xbjVpV04tU0hLd0lyc2c0NnpzOUlGcC1TZVd5SGVBNC1Ic3hGNkV3R0xkd25FSWdBdzVrOFNyeWhXaThBQQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Historic Win Pits Takaichi’s Vision of Japan Against the Markets</a>
+                    <span class="sector-tag">日本股市</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">贸易公司</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>科技股万亿抛售后步履维艰，高盛警告抛售尚未结束</div>
+                <div class="topic-title-en">Big Tech Stocks Struggle After $1 Trillion Sell-Off, Goldman Warns More Selling Ahead</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    科技股在经历一周内市值蒸发万亿美元后走势疲软，高盛交易员警告在市场波动中抛售可能持续。这反映出投资者对高估值和利率前景的担忧，科技板块短期可能继续承压。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/big-tech-stocks-post-selloff-week.html" target="_blank" rel="noopener">[CNBC] Big Tech stocks are treading water after $1 trillion sell-off week</a>
+                    <a href="https://www.marketwatch.com/story/heres-why-goldman-sachs-is-warning-of-more-selling-for-stocks-this-week-94731adb?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Here’s why Goldman Sachs is warning of more selling for stocks this week</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOQ1g3RzVBQklnNmlBblFmTEcyYndNNzhUVWRFMmhacXZmelh1MjB4TnluUXJabmdpbjJRVVV0TGZ0b1ZrSEpvU1MxMldGZXR6VlVndHhiNktKczY2OTNDakNOMnZvVE4zMUJZU05IWnJ5bk1QQ1l0MjcxYU96VXFfZ19fWUlYZ0RGNERNaFFLSl9PXzRkVXFRMXY3dkhmLWdvd25McWpDSWM1NVJudmo4QmZPUQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Goldman Traders Warn Stock Selling Isn’t Over in Choppy Market</a>
+                    <span class="sector-tag">科技股</span>
+                    <span class="sector-tag">纳斯达克</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>中国经济面临多重挑战：房地产低迷加剧、对美出口骤降、流动性短缺</div>
+                <div class="topic-title-en">China's Economy Faces Multiple Challenges: Worsening Property Slump, Plunging Exports to US, Liquidity Shortfall</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    标普警告中国房地产低迷将比预期更严重，同时1月中国对美进口下降22.7%，反映贸易紧张和内部需求疲软。中国正注入资金以填补4560亿美元的流动性缺口，凸显政策制定者稳定经济的压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/sp-i-china-property-slump-worse-than-expected.html" target="_blank" rel="noopener">[CNBC] S&P is already predicting China's property slump will be worse than it expected this year</a>
+                    <a href="https://www.investing.com/news/economy-news/china-imports-to-us-drop-227-in-january-amid-tariff-impact-93CH-4493518" target="_blank" rel="noopener">[Investing.com] China imports to U.S. drop 22.7% in January amid tariff impact</a>
+                    <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOWHIzSkk4dkNSYjdlVF91Q3RVcXFuN0tRMDJuMjdTNXU1N0ZNM1c0V0NMLWFGQlVNMlFwOTBmMmZMUmVJbFA1RGVwYWJkaVE3VnFaSjBJODNTWXVoMWNSLXJxX19IM01zTFpQamFKUEJuRHBSRVJESnpJZjhxSmJadlpaLWVIS0FZcXBhd29IRFhwMk1IYTFhQUd2RFllczJRTWNub0xEWWFYekZ2SjNNRExUNTdER0tJWjFnSGpjMA?oc=5" target="_blank" rel="noopener">[Bloomberg] China Is Pumping Cash to Fill a $456 Billion Liquidity Shortfall</a>
+                    <span class="sector-tag">中国房地产</span>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">大宗商品</span>
+                    <span class="sector-tag">出口贸易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>古巴燃料危机加剧地缘紧张，航空公司运营受挫</div>
+                <div class="topic-title-en">Cuba Fuel Crisis Escalates Geopolitical Tensions, Disrupts Airline Operations</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    在美国特朗普政府加大压力下，古巴告知国际航空公司无法提供燃油，导致航班运营面临中断。墨西哥已派遣船只提供人道主义援助，但危机可能推高航空成本并影响加勒比地区旅游业。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/cuba-airlines-fuel-energy-oil-us-trump-pressure.html" target="_blank" rel="noopener">[CNBC] Cuba says international airlines can no longer refuel there as Trump turns up the pressure</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPbGxfWFFpeDNjV08wX2VHYUN2NUZOWWhLU1k4OXNEU2pWdXEyU0xMSzMwZHRTLTlINWR0cVgxc1JBeUtxR1RtVlVhbVBJVjVmZVpZNE83bmhYYU9rMTBVNGNnVjdCc2RuYjRzNW9xNFZoMXo5eWdSQzdraWJXOXIzSnZZYlRvOVN5aWYwQVJwUHJGYjJ6Y3AxdkVjbUJ2UERWYVlORVo1TWtudE5ZcEhhTUJKaXhmUQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Cuba Tells Airlines It’s Running Out of Fuel After Trump Tariff Threats</a>
+                    <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQRElULWV4aHg1bGdacXgtWXNSUHZGVU9hcWVXcjNGRldWb3hVRjhUWllyNHlGbHhMMElKbmNhN01GbGdwNHBodGh2NUVaZDFnY1F3OXc3ZGVhQzdvZ3JxVkRoZnp2VTBKRmJnZDdJaWVVTDhnQU1kazZmZWo3a3ZMNTdWWElXUmJpRVZrejFPcGpBTHdheEVEUUY4NVlFZ3RzYXI1V0FxcWJzYmlE?oc=5" target="_blank" rel="noopener">[Bloomberg] Mexico Dispatches Two Ships to Cuba With Humanitarian Aid</a>
+                    <span class="sector-tag">航空</span>
+                    <span class="sector-tag">旅游</span>
+                    <span class="sector-tag">能源</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>诺和诺德起诉Hims & Hers，减肥药市场竞争白热化</div>
+                <div class="topic-title-en">Novo Nordisk Sues Hims & Hers, Intensifying Competition in Weight-Loss Drug Market</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    诺和诺德起诉Hims & Hers销售Wegovy的仿制版本，而Hims & Hers已撤回口服药计划。这凸显了减肥药市场的专利争夺战激烈，诺和诺德试图维护其市场主导地位，可能延缓廉价替代品进入市场。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/novo-nordisk-sues-hims-hers-compounded-obesity-drugs.html" target="_blank" rel="noopener">[CNBC] Novo Nordisk sues Hims & Hers over cheaper copycat versions of Wegovy pill, injections</a>
+                    <a href="https://www.marketwatch.com/story/hims-hers-stock-poised-for-heavy-losses-after-quick-u-turn-on-plan-for-oral-wegovy-competitor-c859798e?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Hims & Hers reverses plan for oral Wegovy, and now Novo Nordisk sues to stop injectable weight-loss drugs</a>
+                    <span class="sector-tag">制药</span>
+                    <span class="sector-tag">生物技术</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>美股成债市重大风险，银行警告资金可能从债券流向股票</div>
+                <div class="topic-title-en">Stock Market Poses Major Risk to Bonds, Banks Warn of Potential Fund Flows from Bonds to Stocks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国银行警告，股市可能成为债券市场的重大风险，因为股票收益率上升可能吸引资金从债市流出。与此同时，美联储与财政部的政策协调辩论也在进行，债券市场面临流动性压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/bank-of-america-flags-a-really-big-risk-to-bonds-the-stock-market-8caa41ad?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Bank of America flags a really big risk to bonds — the stock market</a>
+                    <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQQVhaUUt1TDl0RWc3MGVDdEJaYWZZakprek9uanNsM1hwdlMtN05veDQ4NmVFcUhrMVZLaVh2b3FraEx5UG9xY3dlOWVCbFlDWmlYcEtmeFN3bE5xSzhoNFV1N3pVejc5SFlydHQ2MDYyOEZLdFJnZk1nd2hDeFpacWEwRjFKZG04VmpTUTlHSjRPcU9KMUI4Z1IwYmIzWWt1OEljckx5LVBHcjhxMU9n?oc=5" target="_blank" rel="noopener">[Bloomberg] Warsh Call for Fed-Treasury Accord Stirs Debate in $30 Trillion Bond Market</a>
+                    <span class="sector-tag">债券市场</span>
+                    <span class="sector-tag">股市</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>美国历史最悠久的银行斥资数十亿美元进行数字化转型</div>
+                <div class="topic-title-en">America's Oldest Bank Spends Billions on Digital Transformation</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    美国历史最悠久的银行（可能是美国银行）正在投资数十亿美元用于技术升级，包括数字员工和AI训练营。这反映了银行业通过自动化和人工智能提升效率与客户体验的趋势，可能带来成本节约和竞争优势。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/digital-employees-ai-bootcamps-americas-oldest-bank-spends-billions-on-tech.html" target="_blank" rel="noopener">[CNBC] Digital employees, AI bootcamps: America's oldest bank is spending billions on tech</a>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">人工智能</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>Z世代怀旧潮推动美容股上涨，e.l.f.和Ulta受益</div>
+                <div class="topic-title-en">Gen Z Nostalgia Wave Boosts Beauty Stocks, Benefiting e.l.f. and Ulta</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    Z世代对2016年的怀旧情绪正推动美容股票如e.l.f.和Ulta上涨，这显示了社交媒体和代际营销在美容行业的影响力。利用怀旧趋势的公司有望获得销售增长和股价表现。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/gen-z-is-obsessed-with-2016-and-beauty-stocks-like-e-l-f-and-ulta-are-riding-the-nostalgia-wave-581dd031?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Gen Z is obsessed with 2016, and beauty stocks like e.l.f. and Ulta are riding the nostalgia wave</a>
+                    <span class="sector-tag">消费品</span>
+                    <span class="sector-tag">美容化妆品</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>日本股市因选举结果大涨</li>
+                <li>科技股一周内市值蒸发1万亿美元</li>
+                <li>中国1月对美进口下降22.7%</li>
+                <li>中国注入4560亿美元填补流动性缺口</li>
+                <li>伯克希尔哈撒韦因日本持股获益数十亿美元</li>
+                <li>古巴燃料危机导致航空公司无法加油</li>
+                <li>诺和诺德起诉Hims & Hers侵犯Wegovy专利</li>
+                <li>美国银行警告股市对债市构成风险</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
