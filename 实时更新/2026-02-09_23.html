@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-09 23:05</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-09 23:05</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在科技增长与地缘政治风险、美债收益率压力及医疗行业变局等多重因素影响下谨慎前行。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>中国敦促银行限制美债敞口，引发全球债市动荡</div>
+                <div class="topic-title-en">China Urges Banks to Curb Exposure to US Treasuries, Sparking Global Bond Market Turmoil</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    中国官方敦促商业银行限制对美国国债的风险敞口，此举直接导致美债价格下跌、收益率攀升。这不仅增加了美国政府的融资成本，也可能引发全球资本流动的重新配置，对美元资产构成长期结构性压力。投资者需警惕固定收益市场的波动加剧，以及新兴市场货币可能受到的连带影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPVFJKa19CbEFTcnVtLVBfcG9rcmthVDhTRko1RGFia0NvcVFKRDI2OXE2OVd6SnZaWnhaTUIydi1BVTBueGJiOW1WcDJ2bXBYQWlCY09WdDZxM1NRb3lOa3JBMk9uMVlOWUJTcFk1TjRJWmNGN3ZUOWhRY0k0Nk1EMDE4ZGVCSWJxZDFDMTh0cThWc3BIRV9JdkxoQjBMMFg3bFNhVXdGY05hU1BKRzJ6RDFLNmdFRE5EWFJELVdIVjJWS3pSc1VF?oc=5" target="_blank" rel="noopener">[Bloomberg] China Urges Banks to Curb Exposure to US Treasuries</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOa2N1cjhacV83MWg1TkZYeXJGZVo2RnQxZVdHOUJMNHZGLXV0dktVQkwtSXMwR0JiRDZiTk5PNV9CMlZfdExxaUhqOEdmbXBUaWt1dVZHdktEa2lkWDAzbjEyeUFZM21Sa1ZKOTV5endrTF9wN2dsVXFHZ2dQN212TkRCN3EzQXpuekgzTVFlM1c0Z2oxcmZyMVFIVnpJelhfV2c4ZGRKRENIVXFOYnFHUnVTMGhYQQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Treasuries Decline on News Chinese Banks Asked to Limit US Bonds</a>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">债券市场</span>
+                    <span class="sector-tag">外汇市场</span>
+                    <span class="sector-tag">出口行业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>数字经济与AI投资热潮持续，OpenAI融资与科技支出引关注</div>
+                <div class="topic-title-en">Digital Economy and AI Investment Boom Continues, OpenAI Funding and Tech Spending in Spotlight</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    OpenAI接近完成1000亿美元巨额融资，同时美国历史最悠久的银行也在数字员工和AI培训上投入数十亿美元，显示AI已从概念渗透至核心生产力工具。中国数字服务出口在阿里巴巴和腾讯带领下激增，标志着全球数字经济的竞争进入新阶段。这巩固了科技板块的长期增长叙事，但巨大的资本开支也预示着行业内部竞争将日趋白热化。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/sam-altman-touts-chatgpt-growth-as-openai-nears-100-billion-funding.html" target="_blank" rel="noopener">[CNBC] Sam Altman touts ChatGPT's reaccelerating growth to employees as OpenAI closes in on $100 billion funding</a>
+                    <a href="https://www.cnbc.com/2026/02/09/digital-employees-ai-bootcamps-americas-oldest-bank-spends-billions-on-tech.html" target="_blank" rel="noopener">[CNBC] Digital employees, AI bootcamps: America's oldest bank is spending billions on tech</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOQnAxWXBqRDl2RUpJYnBzRk5ldGxhUTBOME5KSWlwRXpSQ0dGQkZvTThrSHhIbmtOWnFwRzRWQ2xfZHA1NklqcVBhVzNtTDA1aktfR2Y4MktBeEM2aVFrWFpLb1pyTHRrSnFuY1NCaW9sdEdlOEJXUndnNGlPNTktZUdqdHg4WlBQWFB6OEUxZU55bFVYa2NyQnhMak9wU21oVnJjbW93a1U3b3BrbUs2NVlxODc?oc=5" target="_blank" rel="noopener">[Bloomberg] China Digital Exports Surge As Alibaba, Tencent Lead Global Push</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">软件服务</span>
+                    <span class="sector-tag">互联网平台</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>日本自民党赢得历史性胜利，日股大涨提振亚太市场情绪</div>
+                <div class="topic-title-en">Japan's LDP Wins Historic Election Victory, Boosting Japanese Stocks and Asia-Pacific Market Sentiment</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    高市早苗领导的自民党在选举中获得历史性胜利，市场预期其将继续推行积极的财政与货币政策以对抗通缩，并可能在国防开支上更为强硬。这一明确的政治结果消除了短期不确定性，直接推动日股大涨，并可能吸引更多国际资金流入日本市场。然而，这也将中国置于两难境地，考验中日双边关系与区域稳定。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cjd9k852zdjo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Japanese stocks surge as Takaichi secures historic election victory</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOZzQtU1NUeVkwVlVjQ2dzYXIwMmVINTdtX3Nsa0cxZ201U1R0SzNncWRWaW44RVlDRjVBZmIxbGNNMzVqSWRmWk05QjdQLUZlUkcxMVVSTzdkSG1JNlFtTzc1VUNmaGtzSnF3UzNwUlZITkliUGVmSDE0dDJVTnJVUS1mNjlpdzVRbGU1Y2R5WWsyUjNoWTJFbm9vSUF3NG9qNFBkZGptNy1UWVk3VlIwSm02UjdUQQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Xi Faces Dilemma Over Japan After Takaichi Wins Historic Mandate</a>
+                    <span class="sector-tag">日本股市</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">基础设施</span>
+                    <span class="sector-tag">出口贸易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>泰国保守派意外大胜，地缘政治格局与投资流向或生变</div>
+                <div class="topic-title-en">Thailand's Conservatives Win Surprise Landslide Victory, Potentially Altering Geopolitics and Investment Flows</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    泰国保守派联盟在选举中获得压倒性胜利，预示着该国政治可能转向更为民族主义和保守的路线。这一结果可能影响外资在泰国的投资信心，尤其是在涉及敏感行业和大型基建项目时。从地缘政治角度看，泰国与美国等传统盟友的关系可能得到加强，从而在东南亚地区形成新的力量平衡，影响区域供应链布局。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxNb2NLQUUzWl8xOEtmbHJ4eWg5enlEN01ITEhFSm9QWWZYQjR4ZUhhQW4wQ3VzVlRXOV92WHJhYmx6S0xHZGwtSzVwM2RVN3Q3SFZiM2xxUjNtZzZzYlptMWlSOTZ0NVZFeEc0THFmdTVrZzRTMnVGVzMtRXNNcWJ6UTVWZUNDUE1FLVBYUGxLNzlCS1U?oc=5" target="_blank" rel="noopener">[The Economist] Thailand’s conservatives win a shock big victory</a>
+                    <a href="https://news.google.com/rss/articles/CBMipgNBVV95cUxOOEpEWXdxUHNQY3JtNkpsREQ2ZDd1M25ncVcxd2Flb2RJTUhweUFXTEVuQlZDbEJRNU9LbUFkaHY5c1RkVEk2X1ZQN0VDbmpZNXhTYU85QVA1ZGtHMHpZcXNhUHMzVVpwWmtHNVVXbEUyUkxOX1RnLTliUTU2SDFEeGhZUlhKVEhTUm9sVElsWHowQWVzZEM0aHlESDEzbXA1NVVIb0xJc1dEanBNS1B1UDgxaTZUV3MtS2M0R1ZYUUR6U2ozcDJzVHpJZjZ3VlctR1A3bzhwUVQyU2VqWFlSUmtfakNwSGVnZ013NHFvQUtseUVtRjZJVjlNcllDdXdoR0dFOUt2T2hGOFQyUElBaEJCenhrZ3hGUXNIQk1USzQ2WHZfaU5YX3J4N0FseVExSXotMFVPVm9XOUlHdm9UOUQ0SHpXZm1DdDVGdWg4Y2h6WF9vQjNGZXFOY01ocHg1RWdOM3pqbEoxdVpCZS1kNDJIbmNLa19YQVNLX2NScTRET01lWG0tdUNXOW5HOWQzRUdReVVtNmFOSk9XY3l0VXlwbVhIQQ?oc=5" target="_blank" rel="noopener">[WSJ] Conservatives Surge to Surprise Victory in Thai Elections</a>
+                    <span class="sector-tag">东南亚投资</span>
+                    <span class="sector-tag">旅游业</span>
+                    <span class="sector-tag">基础设施</span>
+                    <span class="sector-tag">制造业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>诺和诺德起诉仿制药企，减肥药市场专利战升级</div>
+                <div class="topic-title-en">Novo Nordisk Sues Copycat Drugmakers, Escalating Patent Wars in Obesity Drug Market</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    诺和诺德对Hims & Hers等公司提起专利诉讼，旨在阻止其提供Wegovy的复合仿制版本。这表明GLP-1类减肥药市场的利润空间已引发激烈争夺，原研药企正全力捍卫其定价权和市场份额。这场法律战的结果将直接影响未来仿制药进入市场的速度和方式，可能延缓药品降价进程，但对控制医疗成本不利。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/novo-nordisk-sues-hims-hers-compounded-obesity-drugs.html" target="_blank" rel="noopener">[CNBC] Novo Nordisk sues Hims & Hers over cheaper copycat versions of Wegovy pill, injections</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQdUJqQXJpWXd6WlJ6UTJIc1Z0RTJheHZnN0ZUdFZBVi1rNG1ZbUNYOTF1N1hmT3FJaWg1YVJiUWttTldjS2FfQWpYYTZGV055b0VfalZiVHUybHpGZ2pwa3l4Rm1tTjliUmhwVUU2TWVPU2ZCR3VqaGJuQzNtZE93NW9aZkdTUHlCUzVOdmZjSkdhemxqbHA5cjRTMUIwZFA3bVlvSXpuWkRhcHFsUWJ4VVc3R2s?oc=5" target="_blank" rel="noopener">[Bloomberg] Novo Nordisk Says It’s Suing Hims to Halt Obesity Drug Copycats</a>
+                    <span class="sector-tag">生物制药</span>
+                    <span class="sector-tag">医疗健康</span>
+                    <span class="sector-tag">保险业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>地缘政治紧张冲击航空业，古巴燃料禁令与美航管理层承压</div>
+                <div class="topic-title-en">Geopolitical Tensions Hit Aviation Industry, Cuba Fuel Ban and American Airlines Management Under Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普政府加大施压导致古巴宣布禁止国际航班在其境内加油，直接增加了往返加勒比及南美地区航班的运营成本和复杂性。与此同时，美国航空CEO因公司业绩落后于竞争对手而面临越来越大的压力。这两件事凸显了航空业在应对不可控的地缘政治风险和激烈的内部竞争时所面临的巨大挑战，可能引发行业新一轮整合或航线网络调整。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/cuba-airlines-fuel-energy-oil-us-trump-pressure.html" target="_blank" rel="noopener">[CNBC] Cuba says international airlines can no longer refuel there as Trump turns up the pressure</a>
+                    <a href="https://www.cnbc.com/2026/02/07/american-airlines-ceo-robert-isom.html" target="_blank" rel="noopener">[CNBC] Pressure mounts on American Airlines CEO as carrier lags rivals</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPbGxfWFFpeDNjV08wX2VHYUN2NUZOWWhLU1k4OXNEU2pWdXEyU0xMSzMwZHRTLTlINWR0cVgxc1JBeUtxR1RtVlVhbVBJVjVmZVpZNE83bmhYYU9rMTBVNGNnVjdCc2RuYjRzNW9xNFZoMXo5eWdSQzdraWJXOXIzSnZZYlRvOVN5aWYwQVJwUHJGYjJ6Y3AxdkVjbUJ2UERWYVlORVo1TWtudE5ZcEhhTUJKaXhmUQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Cuba Warns Airlines They Can’t Refuel After Trump Tariff Threat</a>
+                    <span class="sector-tag">航空运输</span>
+                    <span class="sector-tag">旅游业</span>
+                    <span class="sector-tag">能源（航油）</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>企业高层更迭与财报季动态，影响个股与板块走势</div>
+                <div class="topic-title-en">Corporate Leadership Changes and Earnings Season Dynamics Impact Individual Stocks and Sectors</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Workday CEO换帅由联合创始人重新掌舵，克罗格任命前沃尔玛高管为新CEO，以及Kyndryl CFO因会计审查离职，这些变动反映了企业面对增长压力或运营挑战时进行战略调整的迫切性。同时，Dynatrace因财报超预期并上调指引而股价大涨，而Robinhood因加密货币担忧被下调目标价，凸显了财报季中业绩指引和分析师评级对个股价格的巨大影响力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/workday-stock-carl-eschenbach-aneel-bhusri.html" target="_blank" rel="noopener">[CNBC] Workday CEO Carl Eschenbach is stepping down, co-founder Aneel Bhusri to take over</a>
+                    <a href="https://news.google.com/rss/articles/CBMihANBVV95cUxNVmZYRjVhODBpeFZ4OW9tTXpVd2YwUWJqZ25CaUt0aE83V1Z0Y2dPOHBINi1qN29fbHBpcTQ2a1NLY1J3d2diZE0yZUhfTkd0SEtWcElRc3IzeGY5cUZNMUxTZDdNS0ZHNTAwRGxmVnZMbFVhRzlMSkVtZURKekVrNkZCSkswTndDeWVrVXByWW91VGlXZEpKOWZ4VU5UYWpKRlZpb2U0akVpSEhtZUcxMWRuWExxNE5VYkYxRGg5bjIyQW8xWEtKUDgwT0prUTkyN2pFVU8yUElqQnFWcnZ3YXpLNGNUZU1nY2YxUkREZ1BtekhQMlNNYXpTdDVFREZwQmx5VjdncUJHX3ZWcW9TRHpUM0Z2VFlLTnhPeFNJdXdGZjM2aElQeGR5MHJGT1NucGVHOG94MDNSNXhnSzdxdWpnN1o4Wl92X0dsOTBncXJ2WUJFd1FQMC1tMjZURDNqR3YzZTdtZjFxcW94YV9tRzNVNjlKVnhLSzdacVRhVWs4Sjhf?oc=5" target="_blank" rel="noopener">[WSJ] Kroger Names Ex-Walmart Executive as Its Next CEO</a>
+                    <a href="https://news.google.com/rss/articles/CBMirgNBVV95cUxQczlvR1VJVWpuOUg2MjRfWmQ5NG5GMFltdHc2MGNsRk5EekQyTy1KM3NXbHNUOTd0elFTYmxmRXRFdDNNQWxVekQyb1AzcHVwMGZIMzh3djRFX2tJb2lGcE5EQkhPSHpwaWtrOFY5NG0zbHppakg5RGRrQ1NOMEswcy0tdEtOWnA0a1JveHZsMEhxbU0tY19yNHE0VEZJWGRKc1ZGRWVzc0F3bzMyWjIxU0g1VWk4LUdSRTlNTUxkY0pFTEZPYXZZVEFqeHQwS3NrdUo2QTlBRDRuM2dBbWxBVXZtR1JQMm5jNVdJUHhydlg0czdMSE5IOG9UcXFGeVJWMU9ENHJvcWttbk9ITHctYjJiaHBBNjY3ZlZPZGpXUjhOcVBPWml4ZDFJNE4tVkdaeV8xQ2g4al9sQUVabDA1aEZ1ZTBrcjU3OW9WamlaTFUxd2g3bWVqSUhYSFA3dDNQNWFBMFN1Mm5idGlBRzUyQVBWVk9oS1hyZHRTNjdFR1ZPSVJ0RHh6LV9qbmpHdzN0Nmt5X0R0ZHFLa3IxeGYwTVIyenhLbW13YTdxSEd3?oc=5" target="_blank" rel="noopener">[WSJ] Kyndryl Finance Chief Wyshner Leaves Amid Accounting Review</a>
+                    <a href="https://www.investing.com/news/earnings/dynatrace-leaps-10-after-raising-annual-outlook-beating-fq3-estimates-4493186" target="_blank" rel="noopener">[Investing.com] Dynatrace surges 10% after raising annual outlook, beating FQ3 estimates</a>
+                    <span class="sector-tag">企业软件</span>
+                    <span class="sector-tag">零售业</span>
+                    <span class="sector-tag">IT服务</span>
+                    <span class="sector-tag">金融科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>美国政治与政策不确定性持续，影响贸易与市场信心</div>
+                <div class="topic-title-en">U.S. Political and Policy Uncertainties Persist, Affecting Trade and Market Confidence</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普政府时期风格的关税威胁重现（针对古巴），叠加乔治亚州选举案文件即将公开等政治事件，持续为市场带来不确定性。IMF总裁淡化美元短期波动，但《经济学人》文章警示美元面临长期危险，加之特朗普民调数据受关注，这些因素共同作用，可能影响跨国企业的战略规划、全球贸易流向以及投资者对美元资产的长期信心。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQT2pEaXpBQjc4R1lubHFlN1RxaFF1Z05udmt3c2xFMWNTbWlhTFBzX2VHV04yVU5sUHdCQk9QZ0I1WWh5X1NmNW5abGlLT2QwZVRpUEcwM09WVEVkdlpTekpLNEtQMkU4cmREWHRNSTdfd0V1UlQ3ZFlxdF9MQjd5bmdMaS1QZGtLLTRmeEFlUWhRNXpO?oc=5" target="_blank" rel="noopener">[The Economist] Greenbacksliding: why the dollar is in danger</a>
+                    <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQkZoWmIwVU5qUVliYjB0YTlRcmRnSDkxZ21IMTVVbk45enozb0R3eGtKaG0zcVR2djdWMlh3UmhUekZvQ3dBODBicnRJZkdDYTZRckVkRFo4VU1ITFV1czc0RHlUSUZzZm41T2N6LUw4QWJLV2t4Y1BrR01RVGRxOXdjbzRyanNROWxMZzlBV2x3dDJtV3dZNU9wSHBaOW53TUlxMi1CMzN2QQ?oc=5" target="_blank" rel="noopener">[Bloomberg] IMF Chief Plays Down the Dollar’s ‘Short Term Variations’</a>
+                    <a href="https://www.cnbc.com/2026/02/08/georgia-trump-election-case-judge-federal-unsealed.html" target="_blank" rel="noopener">[CNBC] Federal judge orders Fulton County Georgia election case documents unsealed by Tuesday</a>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">跨国企业</span>
+                    <span class="sector-tag">外汇市场</span>
+                    <span class="sector-tag">大宗商品</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国国债收益率因中国减持担忧而上升</li>
+                <li>OpenAI融资目标接近1000亿美元</li>
+                <li>日本股市因选举结果大涨</li>
+                <li>Dynatrace股价因财报超预期大涨10%</li>
+                <li>Robinhood目标价被KeyBanc因加密担忧下调至130美元</li>
+                <li>北欧电力价格跃升至2022年能源危机以来最高水平</li>
+                <li>Hamptons房地产价格创历史新高</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
