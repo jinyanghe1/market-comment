@@ -1,0 +1,29 @@
+[
+    {
+        "file": "the_Sanaeconomics_is_back.html",
+        "title": "The Sanaeconomics is Back",
+        "subtitle": "高市早苗经济学深度解构",
+        "date": "2026-02-09",
+        "readTime": "15分钟",
+        "excerpt": "日本首位女首相高市早苗以战后最大胜选纪录横扫众议院，获得推行其激进经济议程的绝对授权。日经指数突破57,000创历史新高，日元跌至156，40年期国债收益率飙破4%。",
+        "tags": ["Japan", "Macro", "Fiscal Policy", "JGB", "Nikkei"]
+    },
+    {
+        "file": "how_moltbook_and_fed_crushed_the_saas.html",
+        "title": "The SaaSpocalypse",
+        "subtitle": "当AI代理和美联储联手碾压SaaS",
+        "date": "2026-02-08",
+        "readTime": "12分钟",
+        "excerpt": "当150万AI代理在72小时内涌入一个社交网络，当美联储将利率悬在高位不放——一场价值2850亿美元的软件股灾难就此拉开序幕。",
+        "tags": ["SaaS", "AI Agents", "Fed", "Tech"]
+    },
+    {
+        "file": "The_Big_golden_bust.html",
+        "title": "The Big Golden Bust",
+        "subtitle": "贵金属市场深度分析",
+        "date": "2026-02-08",
+        "readTime": "8分钟",
+        "excerpt": "从历史新高到惊魂暴跌：贵金属市场一周多空博弈全景透视。黄金在触及$5,400后暴跌超20%，白银单日跌幅一度超30%。",
+        "tags": ["Gold", "Silver", "Commodities", "Precious Metals"]
+    }
+]

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日评论 - 2026年02月09日</title>
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --primary-light: #16213e;
+            --accent: #c0392b;
+            --gold: #d4a843;
+            --bg: #f4f5f7;
+            --card-bg: #ffffff;
+            --text: #2c3e50;
+            --text-light: #6c757d;
+            --border: #e2e8f0;
+            --up: #e74c3c;
+            --down: #27ae60;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        a { color: #0073aa; text-decoration: none; }
+        a:hover { color: #005177; text-decoration: underline; }
+
+        /* ── Header ── */
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: #fff;
+            padding: 40px 24px 32px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(212,168,67,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .header h1 {
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            font-weight: 800;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        .header .date {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-bottom: 16px;
+        }
+        .header .sentiment-badge {
+            display: inline-block;
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(4px);
+        }
+
+        /* ── Container ── */
+        .container {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 24px 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+        /* Article Nav */
+        .article-nav {
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+            padding: 0 24px;
+        }
+        .article-nav-inner {
+            max-width: 920px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            height: 40px;
+            font-size: 13px;
+        }
+        .article-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 4px 12px;
+            color: var(--text-light);
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.15s;
+            text-decoration: none;
+        }
+        .article-nav a:hover {
+            color: var(--accent);
+            background: rgba(192,57,43,0.06);
+            text-decoration: none;
+        }
+        .article-nav .nav-sep {
+            color: var(--border);
+            user-select: none;
+        }
+
+        /* ── Overview Card ── */
+        .overview-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 28px 32px;
+            margin-bottom: 28px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-left: 5px solid var(--gold);
+        }
+        .overview-card h2 {
+            font-size: 18px;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+        .overview-card p {
+            font-size: 16px;
+            line-height: 1.9;
+            color: var(--text);
+        }
+
+        /* ── Section Title ── */
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 32px 0 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--accent);
+        }
+        .section-title .icon {
+            font-size: 24px;
+        }
+        .section-count {
+            font-size: 13px;
+            font-weight: 600;
+            color: #fff;
+            background: var(--accent);
+            padding: 2px 10px;
+            border-radius: 12px;
+            margin-left: auto;
+        }
+
+        /* ── News Cards ── */
+        .news-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .news-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            transform: translateY(-1px);
+        }
+        .news-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        .news-rank {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .news-cat {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            color: #fff;
+            padding: 3px 10px;
+            border-radius: 4px;
+        }
+        .news-impact {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 3px;
+        }
+        .news-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .news-content {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 10px;
+        }
+        .news-sources {
+            font-size: 12px;
+            color: var(--text-light);
+        }
+        .news-sources a {
+            margin-right: 10px;
+            font-size: 12px;
+            color: #0073aa;
+        }
+
+        /* ── Data Grid ── */
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+        .data-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 18px 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .data-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            transform: translateY(-1px);
+        }
+        .data-cat {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .data-label {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+        .data-value {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--text);
+            font-variant-numeric: tabular-nums;
+            margin-bottom: 2px;
+        }
+        .data-change {
+            font-size: 15px;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            margin-bottom: 6px;
+        }
+        .data-note {
+            font-size: 12px;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        /* ── Outlook Card ── */
+        .outlook-card {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: #fff;
+            border-radius: 12px;
+            padding: 28px 32px;
+            margin-bottom: 28px;
+            position: relative;
+            overflow: hidden;
+        }
+        .outlook-card::before {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(212,168,67,0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .outlook-card h2 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: var(--gold);
+            position: relative;
+        }
+        .outlook-card p {
+            font-size: 15px;
+            line-height: 1.9;
+            opacity: 0.95;
+            position: relative;
+        }
+
+        /* ── Footer ── */
+        .footer {
+            text-align: center;
+            padding: 32px 20px;
+            font-size: 12px;
+            color: var(--text-light);
+            border-top: 1px solid var(--border);
+            margin-top: 20px;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            .header { padding: 28px 16px 24px; }
+            .container { padding: 16px 14px; }
+            .overview-card, .outlook-card { padding: 20px; }
+            .news-card { padding: 16px 18px; }
+            .data-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+            .data-value { font-size: 18px; }
+            .section-title { font-size: 18px; }
+        }
+        @media (max-width: 480px) {
+            .data-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+            .data-card { padding: 14px 12px; }
+            .data-value { font-size: 16px; }
+            .news-title { font-size: 15px; }
+            .section-title { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>每日评论</h1>
+    <div class="date">2026年02月09日</div>
+    <span class="sentiment-badge" style="border: 1px solid #3498db; color: #3498db;">
+        ◆ 市场情绪：分化
+    </span>
+</div>
+
+<!-- Article Navigation -->
+<nav class="article-nav">
+    <div class="article-nav-inner">
+        <a href="../index.html">&#8962; 首页</a>
+        <span class="nav-sep">/</span>
+        <a href="index.html">&#8592; 每日评论</a>
+    </div>
+</nav>
+
+<div class="container">
+    <!-- 市场总览 -->
+    <div class="overview-card">
+        <h2>📰 市场总览</h2>
+        <p>全球市场情绪分化，亚洲股市在激进政策预期下强势领涨，而美国市场在关键数据前保持谨慎，日元与黄金等避险资产波动加剧。</p>
+    </div>
+
+    <!-- 15 条新闻 -->
+    <div class="section-title">
+        <span class="icon">📋</span> 今日要闻
+        <span class="section-count">15 条</span>
+    </div>
+    
+        <div class="news-card" style="border-left: 4px solid #e67e22; background: #fef5e7;">
+            <div class="news-header">
+                <span class="news-rank">1</span>
+                <span class="news-cat" style="background:#e67e22;">🌍 地缘政治</span>
+                <span class="news-impact" style="background:#e74c3c;">利好</span>
+            </div>
+            <h3 class="news-title">日本首相高市早苗获历史性授权，市场押注大规模财政刺激</h3>
+            <p class="news-content">日本执政党自民党在众议院选举中赢得绝对多数席位，为首相高市早苗推行其以财政扩张为核心的经济议程扫清道路。市场预期日本将推出远超GDP 2%的额外预算，推动日经指数突破57000点历史高位，但激进的支出计划也引发了对日元贬值和债务可持续性的担忧。</p>
+            <div class="news-sources"><a href="https://www.cnbc.com/2026/02/09/japan-stocks-set-to-soar-after-takaichi-secures-historic-mandate.html" target="_blank" rel="noopener">CNBC</a> <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNMHpuYW55eUE1c3pXd05zUGdyamwwU1VVMVNOblVVSmU1OUZNZkxXRzhYNVVpT1BLVkl2YjJKLUNTVmI5ZmFrRGFObUlTWW14WWFVVG93LUoxUFhQLUxvQUpoQUxONHBLcXEzMVd0Qjl2aElydjZoM28xbjVpV04tU0hLd0lyc2c0NnpzOUlGcC1TZVd5SGVBNC1Ic3hGNkV3R0xkd25FSWdBdzVrOFNyeWhXaThBQQ?oc=5" target="_blank" rel="noopener">Bloomberg</a> </div>
+        </div>
+        <div class="news-card" style="border-left: 4px solid #c0392b; background: #fdedec;">
+            <div class="news-header">
+                <span class="news-rank">2</span>
+                <span class="news-cat" style="background:#c0392b;">📈 市场走势</span>
+                <span class="news-impact" style="background:#e74c3c;">利好</span>
+            </div>
+            <h3 class="news-title">黄金突破5000美元大关，市场波动中避险情绪升温</h3>
+            <p class="news-content">金价在震荡市场中强势上涨，突破每盎司5000美元的关键心理关口。这反映出在地缘政治不确定性（如美伊谈判）和美联储政策路径不明的背景下，投资者寻求避险资产。黄金的强劲表现也对其他贵金属和矿业股产生了提振效应。</p>
+            <div class="news-sources"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOT182UktTb0lPSlFzenp2ZWhvanpzclJUNm9LcEk1aDJGUmFsa0xrVnN5MDZtVHlPZWwxcHhqY0NJWVJrRmhoUnh2NHdsMmFUUWZ1TEJhZ3k1Y3VWQk9DME40NnBFbENubV9wQ09ISzNjOXJiUkZoSi1RRkdTUVp3Znlva0RjYnVmZmVxVjNtdXRJeEl6WXkwWkhPa25wTGRUM0NRV0NQbkhKTFJSNmJDOXVfOUM?oc=5" target="_blank" rel="noopener">Bloomberg</a> </div>
+        </div>
+        <div class="news-card" style="border-left: 4px solid #16a085; background: #e8f8f5;">
+            <div class="news-header">
+                <span class="news-rank">3</span>
+                <span class="news-cat" style="background:#16a085;">🏢 公司要闻</span>
+                <span class="news-impact" style="background:#e74c3c;">利好</span>
+            </div>
+            <h3 class="news-title">中国芯片设计公司澜起科技香港上市首日暴涨超50%</h3>
+            <p class="news-content">澜起科技（Montage Technology）在香港交易所上市首日股价飙升超过50%，显示出尽管全球半导体行业竞争激烈，但市场对具有核心技术竞争力的中国芯片公司仍抱有高度热情。此次成功上市可能提振整个中国半导体板块的投资情绪。</p>
+            <div class="news-sources"><a href="https://www.cnbc.com/2026/02/09/chinese-chipmaker-montage-technology-hong-kong-ipo-debut.html" target="_blank" rel="noopener">CNBC</a> </div>
+        </div>
+        <div class="news-card" style="border-left: 4px solid #2980b9; background: #ebf5fb;">
+            <div class="news-header">
+                <span class="news-rank">4</span>
+                <span class="news-cat" style="background:#2980b9;">📊 宏观经济</span>
+                <span class="news-impact" style="background:#27ae60;">利空</span>
+            </div>
+            <h3 class="news-title">美联储与财政部政策协调提议，搅动30万亿美元债市</h3>
+            <p class="news-content">前美联储官员沃什（Kevin Warsh）呼吁建立正式的“美联储-财政部协议”，以确保货币政策与财政政策的更好协调。这一提议在规模达30万亿美元的债券市场引发激烈辩论，支持者认为能增强政策有效性，批评者则担忧这会损害央行独立性并加剧长期通胀风险。</p>
+            <div class="news-sources"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQQVhaUUt1TDl0RWc3MGVDdEJaYWZZakprek9uanNsM1hwdlMtN05veDQ4NmVFcUhrMVZLaVh2b3FraEx5UG9xY3dlOWVCbFlDWmlYcEtmeFN3bE5xSzhoNFV1N3pVejc5SFlydHQ2MDYyOEZLdFJnZk1nd2hDeFpacWEwRjFKZG04VmpTUTlHSjRPcU9KMUI4Z1IwYmIzWWt1OEljckx5LVBHcjhxMU9n?oc=5" target="_blank" rel="noopener">Bloomberg</a> </div>
+        </div>
+        <div class="news-card" style="border-left: 4px solid #8e44ad; background: #f5eef8;">
+            <div class="news-header">
+                <span class="news-rank">5</span>
+                <span class="news-cat" style="background:#8e44ad;">🏭 行业动态</span>
+                <span class="news-impact" style="background:#e74c3c;">利好</span>
+            </div>
+            <h3 class="news-title">三星电子股价上涨，据报将开始大规模生产AI芯片</h3>
+            <p class="news-content">有报道称三星电子即将开始大规模生产专用于人工智能的芯片，推动其股价上扬。这表明在英伟达主导的AI芯片市场，传统半导体巨头正加速布局以争夺份额，可能加剧行业竞争并影响未来供应链格局。</p>
+            <div class="news-sources"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNbU5TUXFVUXEtcUJSV3pLZkMwdHNHakpjRFpYNDQweXlIN1o1OE00WE1MWmhtTGhkNUVkNVlfT1FiTWJscmZBNXFMVS0wbVhqOXg5cllodHZEWDVrZ0lVQVVEcHBOSjhNMEVJN1AySV9wVWt3M3hsWjRYSFlvQjBYUDR0MGVSZ2pIQTJOeW5CNWhnZGhGMks5QlZqU1c4S3EwR0JUNDRPNTlNbkFmUEFieTBlS0M?oc=5" target="_blank" rel="noopener">Bloomberg</a> </div>
+        </div>
+        <div class="news-card" style="border-left: 4px solid #e67e22; background: #fef5e7;">
+            <div class="news-header">
+                <span class="news-rank">6</span>
+                <span class="news-cat" style="background:#e67e22;">🌍 地缘政治</span>
+                <span class="news-impact" style="background:#27ae60;">利空</span>
+            </div>
+            <h3 class="news-title">美伊谈判取得进展，国际油价承压下跌</h3>
+            <p class="news-content">美国与伊朗官员均表示在核问题谈判上取得进展，缓解了中东地区的紧张局势，导致国际油价下跌。若谈判最终达成协议，伊朗石油可能重返国际市场，增加全球供应，对油价构成长期下行压力。</p>
+            <div class="news-sources"><a href="https://www.investing.com/news/commodities-news/oil-prices-dip-as-us-iran-flag-progress-in-talks-4492556" target="_blank" rel="noopener">Investing.com</a> </div>
+        </div>
+        <div class="news-card" style="border-left: 4px solid #16a085; background: #e8f8f5;">
+            <div class="news-header">
+                <span class="news-rank">7</span>
+                <span class="news-cat" style="background:#16a085;">🏢 公司要闻</span>
+                <span class="news-impact" style="background:#e74c3c;">利好</span>
+            </div>
+            <h3 class="news-title">安踏体育收购彪马股份，挑战耐克与阿迪达斯</h3>
+            <p class="news-content">中国运动服装巨头安踏体育正寻求收购德国品牌彪马（Puma）的股份，此举旨在增强其全球影响力，直接与行业领导者耐克和阿迪达斯竞争。若交易成功，将显著改变全球运动服饰市场的竞争格局。</p>
+            <div class="news-sources"><a href="https://www.investing.com/news/stock-market-news/with-puma-stake-chinas-anta-seeks-to-enter-the-arena-with-nike-and-adidas-4492521" target="_blank" rel="noopener">Investing.com</a> </div>
+        </div>
+        <div class="news-card" style="border-left: 4px solid #8e44ad; background: #f5eef8;">
+            <div class="news-header">
+                <span class="news-rank">8</span>
+                <span class="news-cat" style="background:#8e44ad;">🏭 行业动态</span>
+                <span class="news-impact" style="background:#7f8c8d;">中性</span>
+            </div>
+            <h3 class="news-title">台湾官方称芯片产能40%转移至美国“不可能”</h3>
+            <p class="news-content">台湾相关部门表示，将尖端半导体产能的40%转移至美国是“不可能的”，这直接回应了美国要求加强本土芯片供应的压力。这一表态凸显了全球芯片供应链重塑的复杂性与地缘政治风险，台积电等企业的战略布局将继续成为焦点。</p>
+            <div class="news-sources"><a href="https://www.investing.com/news/stock-market-news/taiwan-says-40-shift-of-chip-capacity-to-us-is-impossible-4492557" target="_blank" rel="noopener">Investing.com</a> </div>
+        </div>
+        <div class="news-card" style="border-left: 4px solid #c0392b; background: #fdedec;">
+            <div class="news-header">
+                <span class="news-rank">9</span>
+                <span class="news-cat" style="background:#c0392b;">📈 市场走势</span>
+                <span class="news-impact" style="background:#27ae60;">利空</span>
+            </div>
+            <h3 class="news-title">高盛交易员警告：股市抛售在波动市中尚未结束</h3>
+            <p class="news-content">高盛集团交易部门发出警告，认为在当前震荡的市场环境中，股票抛售压力尚未完全释放。他们指出，对通胀粘性、经济增长放缓和央行政策失误的担忧仍在持续，建议投资者为市场进一步波动做好准备。</p>
+            <div class="news-sources"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOQ1g3RzVBQklnNmlBblFmTEcyYndNNzhUVWRFMmhacXZmelh1MjB4TnluUXJabmdpbjJRVVV0TGZ0b1ZrSEpvU1MxMldGZXR6VlVndHhiNktKczY2OTNDakNOMnZvVE4zMUJZU05IWnJ5bk1QQ1l0MjcxYU96VXFfZ19fWUlYZ0RGNERNaFFLSl9PXzRkVXFRMXY3dkhmLWdvd25McWpDSWM1NVJudmo4QmZPUQ?oc=5" target="_blank" rel="noopener">Bloomberg</a> </div>
+        </div>
+        <div class="news-card" style="border-left: 4px solid #2980b9; background: #ebf5fb;">
+            <div class="news-header">
+                <span class="news-rank">10</span>
+                <span class="news-cat" style="background:#2980b9;">📊 宏观经济</span>
+                <span class="news-impact" style="background:#27ae60;">利空</span>
+            </div>
+            <h3 class="news-title">美国国会再度面临资金截止日期，政府停摆风险隐现</h3>
+            <p class="news-content">美国国会在新一轮联邦资金截止日期前仍未达成协议，政府机构面临再次停摆的风险。政治僵局不仅可能扰乱政府服务，还会加剧市场对美国财政纪律和治理能力的担忧，影响投资者信心。</p>
+            <div class="news-sources"><a href="https://news.google.com/rss/articles/CBMi5wJBVV95cUxNNHh0Y0luS3BmTkxTNElIMlluWmFaNk96dUJCM0ZCamZsZ2I2a3RKa253MnBYdGhsWVVYYW52bHJZN3A5UWN3ZXVfUi1la0lMQXBRamJRejZaTUlfUGw3d3JMV2l6WUJiWHdDZUZ3YlZnWWR2Z19PM29nR0tEcXBPdnNHdVc3dF9DS3RXS2sxa1cwSjFybXBienl0bG80RTFDeHVtREczVWFqcm1hNlMzR0NwODJUQURuLU5WUU1iY2VKU2tKSXRhOTUwcGFRVVFHeWZNeHRBeVlVVU9qQmNBeWtfZzVDU0Z0eXpFaW5GQ0tRMjVUTUtWT2JoQ2djNDYyb201ZndnNTZ0UjBnckIxSDBHd2cyQnVBOU5lVDZHb0pKcGppODNTZ256RUpRbFp5Wm5La01mcFczaTJydGpSV181SmVhWHJqR204NUswTlh2Q3RnS1YzbUR5N3pvRkhvWm8zN3hWdw?oc=5" target="_blank" rel="noopener">Barron's</a> </div>
+        </div>
+        <div class="news-card" style="border-left: 4px solid #c0392b; background: #fdedec;">
+            <div class="news-header">
+                <span class="news-rank">11</span>
+                <span class="news-cat" style="background:#c0392b;">📈 市场走势</span>
+                <span class="news-impact" style="background:#7f8c8d;">中性</span>
+            </div>
+            <h3 class="news-title">美国股指期货上涨，市场聚焦就业与通胀报告</h3>
+            <p class="news-content">在经历了一周的剧烈波动后，美国股指期货于周一盘前上涨。投资者正在等待本周晚些时候公布的关键就业和通胀数据，这些数据将为美联储的利率路径提供重要线索，并可能决定市场短期的方向。</p>
+            <div class="news-sources"><a href="https://www.marketwatch.com/story/u-s-stock-futures-rise-after-a-wild-week-on-wall-street-ahead-of-key-jobs-and-inflation-reports-60e29ed8?mod=mw_rss_topstories" target="_blank" rel="noopener">MarketWatch</a> </div>
+        </div>
+        <div class="news-card" style="border-left: 4px solid #16a085; background: #e8f8f5;">
+            <div class="news-header">
+                <span class="news-rank">12</span>
+                <span class="news-cat" style="background:#16a085;">🏢 公司要闻</span>
+                <span class="news-impact" style="background:#7f8c8d;">中性</span>
+            </div>
+            <h3 class="news-title">“特朗普账户”亮相超级碗，新型儿童投资产品引关注</h3>
+            <p class="news-content">一种名为“特朗普账户”的新型儿童投资工具在超级碗期间进行广告宣传，旨在为未成年人提供税收优惠的投资途径。该产品的推出反映了金融科技领域的创新，但也引发了关于营销策略和目标受众的讨论。</p>
+            <div class="news-sources"><a href="https://www.marketwatch.com/story/3-things-to-know-about-trump-accounts-the-new-investment-vehicle-for-kids-advertised-during-the-super-bowl-fdf64e91?mod=mw_rss_topstories" target="_blank" rel="noopener">MarketWatch</a> </div>
+        </div>
+        <div class="news-card" style="border-left: 4px solid #8e44ad; background: #f5eef8;">
+            <div class="news-header">
+                <span class="news-rank">13</span>
+                <span class="news-cat" style="background:#8e44ad;">🏭 行业动态</span>
+                <span class="news-impact" style="background:#27ae60;">利空</span>
+            </div>
+            <h3 class="news-title">《经济学人》警示：超级碗广告或预示AI泡沫将破</h3>
+            <p class="news-content">《经济学人》分析指出，本届超级碗广告中人工智能主题的泛滥，可能是一个反向指标，暗示AI炒作已达到顶峰，泡沫破裂的风险正在增加。这提醒投资者需对估值过高、缺乏实质盈利的AI概念股保持警惕。</p>
+            <div class="news-sources"><a href="https://www.marketwatch.com/story/this-years-super-bowl-ads-tell-you-the-ai-bubble-is-about-to-burst-1357e5ae?mod=mw_rss_topstories" target="_blank" rel="noopener">MarketWatch</a> <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOci1ldUtlVklvQ05nS05IY1FEdktsLTdELU45djl5eWR3cmZWYnh5cWFYWTNaazctTnlVX3FtRlFyeXdQcDVpWWd0VHZmUGFTVTJDcFBoLW81cnA5c0p3NzE5LXdCeGlQZHh6U1VtTnJ6RlljQ2ZvQnFSVXhyc25kUzdOQTdueGd1Mk5ndHdhZ2gzVFlIMlE?oc=5" target="_blank" rel="noopener">The Economist</a> </div>
+        </div>
+        <div class="news-card" style="border-left: 4px solid #c0392b; background: #fdedec;">
+            <div class="news-header">
+                <span class="news-rank">14</span>
+                <span class="news-cat" style="background:#c0392b;">📈 市场走势</span>
+                <span class="news-impact" style="background:#27ae60;">利空</span>
+            </div>
+            <h3 class="news-title">比特币暴跌后，加密货币杠杆投资者面临巨额损失</h3>
+            <p class="news-content">在比特币价格近期大幅下跌后，那些曾以加密货币为抵押借入数十亿美元进行投资的狂热投资者损失惨重。此事件突显了加密货币市场的高波动性和杠杆交易蕴含的巨大风险，可能促使监管机构进一步加强审查。</p>
+            <div class="news-sources"><a href="https://www.marketwatch.com/story/as-bitcoin-crashes-pity-those-wildly-enthusiastic-investors-who-borrowed-billions-against-crypto-794164bb?mod=mw_rss_topstories" target="_blank" rel="noopener">MarketWatch</a> </div>
+        </div>
+        <div class="news-card" style="border-left: 4px solid #2980b9; background: #ebf5fb;">
+            <div class="news-header">
+                <span class="news-rank">15</span>
+                <span class="news-cat" style="background:#2980b9;">📊 宏观经济</span>
+                <span class="news-impact" style="background:#7f8c8d;">中性</span>
+            </div>
+            <h3 class="news-title">美国计划推出学徒制清算系统，应对劳动力市场变革</h3>
+            <p class="news-content">美国宣布将引入“学徒制清算系统”，旨在更好地匹配职业技能培训与就业市场需求。此举是应对“特朗普大学法案”可能推动高等教育改革的一部分，长期看可能重塑美国劳动力结构，利好职业培训和教育科技领域。</p>
+            <div class="news-sources"><a href="https://www.bbc.com/news/articles/cq6qr58dl1jo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">BBC Business</a> <a href="https://www.cnbc.com/2026/02/08/trump-big-beautiful-bill-college-education.html" target="_blank" rel="noopener">CNBC</a> </div>
+        </div>
+
+    <!-- 15 条数据 -->
+    <div class="section-title">
+        <span class="icon">📊</span> 关键数据
+        <span class="section-count">15 项</span>
+    </div>
+    <div class="data-grid">
+        
+            <div class="data-card">
+                <div class="data-cat" style="color:#c0392b;">📊 股指</div>
+                <div class="data-label">日经225指数</div>
+                <div class="data-value">57,000+</div>
+                <div class="data-change" style="color:#e74c3c;">▲ 上涨</div>
+                <div class="data-note">受日本政治变局刺激，首次突破57,000点大关，创历史新高。</div>
+            </div>
+            <div class="data-card">
+                <div class="data-cat" style="color:#d4a843;">🛢️ 商品</div>
+                <div class="data-label">黄金现货价格</div>
+                <div class="data-value">$5,000+</div>
+                <div class="data-change" style="color:#e74c3c;">▲ 上涨</div>
+                <div class="data-note">突破每盎司5000美元关键阻力位，避险需求强劲。</div>
+            </div>
+            <div class="data-card">
+                <div class="data-cat" style="color:#2980b9;">💱 汇率</div>
+                <div class="data-label">美元/日元</div>
+                <div class="data-value">波动</div>
+                <div class="data-change" style="color:#7f8c8d;">— --</div>
+                <div class="data-note">在日本央行干预风险与财政刺激预期之间拉锯，走势震荡。</div>
+            </div>
+            <div class="data-card">
+                <div class="data-cat" style="color:#c0392b;">📊 股指</div>
+                <div class="data-label">道琼斯工业平均指数期货</div>
+                <div class="data-value">上涨</div>
+                <div class="data-change" style="color:#e74c3c;">▲ +</div>
+                <div class="data-note">盘前上涨，市场在关键经济数据公布前稍作喘息。</div>
+            </div>
+            <div class="data-card">
+                <div class="data-cat" style="color:#d4a843;">🛢️ 商品</div>
+                <div class="data-label">布伦特原油期货</div>
+                <div class="data-value">下跌</div>
+                <div class="data-change" style="color:#27ae60;">▼ -</div>
+                <div class="data-note">受美伊谈判进展打压，地缘政治溢价回落。</div>
+            </div>
+            <div class="data-card">
+                <div class="data-cat" style="color:#c0392b;">📊 股指</div>
+                <div class="data-label">MSCI亚太指数（除日本）</div>
+                <div class="data-value">上涨</div>
+                <div class="data-change" style="color:#e74c3c;">▲ +</div>
+                <div class="data-note">受日本股市强势和区域情绪带动普遍上扬。</div>
+            </div>
+            <div class="data-card">
+                <div class="data-cat" style="color:#2980b9;">💱 汇率</div>
+                <div class="data-label">美元指数(DXY)</div>
+                <div class="data-value">--</div>
+                <div class="data-change" style="color:#7f8c8d;">— --</div>
+                <div class="data-note">在美联储政策预期与全球市场风险情绪间保持相对稳定。</div>
+            </div>
+            <div class="data-card">
+                <div class="data-cat" style="color:#c0392b;">📊 股指</div>
+                <div class="data-label">标普500指数期货</div>
+                <div class="data-value">上涨</div>
+                <div class="data-change" style="color:#e74c3c;">▲ +</div>
+                <div class="data-note">跟随道指期货上涨，但涨幅可能受制于科技股情绪。</div>
+            </div>
+            <div class="data-card">
+                <div class="data-cat" style="color:#2980b9;">💱 汇率</div>
+                <div class="data-label">欧元/美元</div>
+                <div class="data-value">1.08附近</div>
+                <div class="data-change" style="color:#7f8c8d;">— --</div>
+                <div class="data-note">在欧美央行政策差异缩小的预期下，汇率区间震荡。</div>
+            </div>
+            <div class="data-card">
+                <div class="data-cat" style="color:#d4a843;">🛢️ 商品</div>
+                <div class="data-label">比特币</div>
+                <div class="data-value">下跌后企稳</div>
+                <div class="data-change" style="color:#27ae60;">▼ 近期大跌</div>
+                <div class="data-note">经历大幅回调后，价格在低水平寻求支撑，市场情绪脆弱。</div>
+            </div>
+            <div class="data-card">
+                <div class="data-cat" style="color:#8e44ad;">📉 利率</div>
+                <div class="data-label">美国10年期国债收益率</div>
+                <div class="data-value">关注中</div>
+                <div class="data-change" style="color:#7f8c8d;">— --</div>
+                <div class="data-note">市场等待通胀数据，收益率在近期高位附近徘徊。</div>
+            </div>
+            <div class="data-card">
+                <div class="data-cat" style="color:#c0392b;">📊 股指</div>
+                <div class="data-label">香港恒生指数</div>
+                <div class="data-value">受科技股提振</div>
+                <div class="data-change" style="color:#e74c3c;">▲ +</div>
+                <div class="data-note">受澜起科技等芯片股强劲表现带动，科技板块领涨。</div>
+            </div>
+            <div class="data-card">
+                <div class="data-cat" style="color:#2980b9;">💱 汇率</div>
+                <div class="data-label">美元/离岸人民币(CNH)</div>
+                <div class="data-value">--</div>
+                <div class="data-change" style="color:#7f8c8d;">— --</div>
+                <div class="data-note">在中国经济数据和全球美元走势影响下保持相对稳定。</div>
+            </div>
+            <div class="data-card">
+                <div class="data-cat" style="color:#d4a843;">🛢️ 商品</div>
+                <div class="data-label">白银</div>
+                <div class="data-value">跟随黄金上涨</div>
+                <div class="data-change" style="color:#e74c3c;">▲ +</div>
+                <div class="data-note">作为黄金的替代品，在贵金属整体强势中受益。</div>
+            </div>
+            <div class="data-card">
+                <div class="data-cat" style="color:#8e44ad;">📉 利率</div>
+                <div class="data-label">日本10年期国债收益率</div>
+                <div class="data-value">受控上行压力</div>
+                <div class="data-change" style="color:#e74c3c;">▲ 潜在上升</div>
+                <div class="data-note">市场预期日本央行将在巨额财政刺激下允许收益率一定程度上升。</div>
+            </div>
+    </div>
+
+    <!-- 展望 -->
+    <div class="outlook-card">
+        <h2>🔭 展望与策略</h2>
+        <p>短期市场展望呈现东西分化格局。亚洲市场，尤其是日本，在激进财政刺激预期下情绪高涨，但需警惕日元过度贬值和央行政策反击的风险。美国市场焦点完全转向即将公布的通胀与就业数据，任何超预期的结果都可能引发对美联储政策的重新定价和剧烈波动。策略上，建议投资者在亚洲关注政策受益板块（如基建、金融），同时在美国市场保持防御姿态，增持黄金等避险资产以对冲不确定性。地缘政治（美伊、芯片供应链）仍是关键的波动来源，需密切跟踪。</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2026 资本市场研究 | 数据来源: Bloomberg, FT, Reuters, CNBC, WSJ, 华尔街见闻, 财新</p>
+    <p style="margin-top:6px;">免责声明：本页面内容仅供参考，不构成投资建议。</p>
+</div>
+
+</body>
+</html>

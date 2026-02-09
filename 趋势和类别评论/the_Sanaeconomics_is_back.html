@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sanaeconomics is Back | 高市早苗经济学深度解构</title>
+    <style>
+        :root {
+            --bloomberg-black: #000000;
+            --bloomberg-orange: #ff6900;
+            --bloomberg-blue: #1e88e5;
+            --bloomberg-green: #4caf50;
+            --bloomberg-red: #f44336;
+            --japan-red: #bc002d;
+            --japan-red-light: #d4344a;
+            --bloomberg-gold: #ffd700;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --border-color: #e0e0e0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header Bar */
+        .header-bar {
+            background: var(--bloomberg-black);
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: -1px;
+        }
+        .logo span { color: var(--bloomberg-orange); }
+        .header-date {
+            color: rgba(255,255,255,0.7);
+            font-size: 13px;
+        }
+
+        /* Ticker */
+        .price-ticker {
+            background: #111;
+            padding: 14px 24px;
+            overflow: hidden;
+            border-bottom: 2px solid var(--japan-red);
+        }
+        .ticker-content {
+            display: flex;
+            gap: 48px;
+            animation: scroll 35s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .ticker-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
+        }
+        .ticker-name { color: #aaa; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .ticker-price { color: #fff; font-weight: 700; font-size: 15px; font-variant-numeric: tabular-nums; }
+        .ticker-change { font-size: 13px; font-weight: 600; }
+        .ticker-change.up { color: var(--bloomberg-green); }
+        .ticker-change.down { color: var(--bloomberg-red); }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a0a10 40%, #2e0a0a 70%, #0f0f23 100%);
+            padding: 80px 24px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 50% 40%, rgba(188, 0, 45, 0.08) 0%, transparent 40%),
+                        radial-gradient(circle at 70% 60%, rgba(255, 105, 0, 0.05) 0%, transparent 40%);
+            animation: shimmer 10s ease-in-out infinite;
+        }
+        @keyframes shimmer {
+            0%, 100% { transform: translateX(-5%) translateY(-5%); }
+            50% { transform: translateX(5%) translateY(5%); }
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 320px;
+            height: 320px;
+            background: radial-gradient(circle, rgba(188, 0, 45, 0.06) 0%, transparent 70%);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(188, 0, 45, 0.15);
+            border: 1px solid rgba(188, 0, 45, 0.3);
+            color: var(--japan-red-light);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            position: relative;
+        }
+        .hero-badge .pulse {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--japan-red);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        .hero-title {
+            font-size: clamp(32px, 6vw, 58px);
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 8px;
+            letter-spacing: -2px;
+            position: relative;
+            line-height: 1.1;
+        }
+        .hero-title .accent { color: var(--japan-red-light); }
+        .hero-title .accent-gold { color: var(--bloomberg-gold); }
+        .hero-subtitle-en {
+            font-size: clamp(16px, 2.5vw, 22px);
+            color: rgba(255,255,255,0.45);
+            font-weight: 300;
+            margin-bottom: 20px;
+            position: relative;
+            letter-spacing: -0.5px;
+        }
+        .hero-subtitle {
+            font-size: 18px;
+            color: rgba(255,255,255,0.65);
+            max-width: 760px;
+            margin: 0 auto;
+            position: relative;
+            line-height: 1.7;
+        }
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin-top: 40px;
+            position: relative;
+        }
+        .hero-stat {
+            text-align: center;
+        }
+        .hero-stat-value {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--japan-red-light);
+            font-variant-numeric: tabular-nums;
+        }
+        .hero-stat-value.green { color: var(--bloomberg-green); }
+        .hero-stat-value.gold { color: var(--bloomberg-gold); }
+        .hero-stat-value.white { color: rgba(255,255,255,0.9); }
+        .hero-stat-label {
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Article Meta */
+        .article-meta {
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .author-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .author-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--japan-red), var(--bloomberg-orange));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: #fff;
+            font-size: 14px;
+        }
+        .author-name { font-weight: 600; }
+        .publish-time { color: var(--text-secondary); font-size: 14px; }
+        .reading-time {
+            background: var(--bg-secondary);
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        /* Sections */
+        .section {
+            padding: 48px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .section:last-child { border-bottom: none; }
+        .section-label {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--japan-red);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 16px;
+        }
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            letter-spacing: -0.5px;
+            line-height: 1.3;
+        }
+        p {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+        a { color: var(--bloomberg-blue); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Big Number Callout */
+        .big-number {
+            text-align: center;
+            padding: 48px 24px;
+            margin: 32px 0;
+            background: linear-gradient(135deg, #fef0f0 0%, #fde0e0 100%);
+            border-radius: 12px;
+            position: relative;
+        }
+        .big-number-value {
+            font-size: clamp(48px, 8vw, 80px);
+            font-weight: 900;
+            color: var(--japan-red);
+            letter-spacing: -3px;
+            line-height: 1;
+        }
+        .big-number-label {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-top: 12px;
+            font-weight: 500;
+        }
+        .big-number-context {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-top: 8px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Data Table */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 15px;
+        }
+        .data-table th {
+            background: var(--bloomberg-black);
+            color: #fff;
+            padding: 14px 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .data-table th:not(:first-child) { text-align: right; }
+        .data-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .data-table td:not(:first-child) {
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+        .data-table tr:hover { background: var(--bg-secondary); }
+        .price-up { color: var(--bloomberg-green); font-weight: 600; }
+        .price-down { color: var(--bloomberg-red); font-weight: 600; }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin: 32px 0;
+        }
+        .stat-card {
+            background: var(--bg-secondary);
+            padding: 24px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+        .stat-value {
+            font-size: 30px;
+            font-weight: 800;
+            color: var(--bloomberg-black);
+            margin-bottom: 4px;
+            font-variant-numeric: tabular-nums;
+        }
+        .stat-value.red { color: var(--japan-red); }
+        .stat-value.green { color: var(--bloomberg-green); }
+        .stat-value.orange { color: var(--bloomberg-orange); }
+        .stat-value.blue { color: var(--bloomberg-blue); }
+        .stat-value.gold { color: #b8860b; }
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Chart Container */
+        .chart-container {
+            background: linear-gradient(180deg, #1a1a2e 0%, #0f0f23 100%);
+            border-radius: 12px;
+            padding: 32px;
+            margin: 32px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .chart-title {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .chart-subtitle {
+            color: rgba(255,255,255,0.5);
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+
+        /* Horizontal Bar Chart */
+        .hbar-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .hbar-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .hbar-label {
+            width: 160px;
+            font-size: 13px;
+            color: rgba(255,255,255,0.8);
+            text-align: right;
+            flex-shrink: 0;
+            font-weight: 500;
+        }
+        .hbar-track {
+            flex: 1;
+            height: 28px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hbar-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 1s ease-out;
+            display: flex;
+            align-items: center;
+            padding-right: 10px;
+            justify-content: flex-end;
+        }
+        .hbar-fill.red { background: linear-gradient(90deg, rgba(188,0,45,0.3), var(--japan-red)); }
+        .hbar-fill.green { background: linear-gradient(90deg, rgba(76,175,80,0.3), var(--bloomberg-green)); }
+        .hbar-fill.orange { background: linear-gradient(90deg, rgba(255,105,0,0.3), var(--bloomberg-orange)); }
+        .hbar-fill.blue { background: linear-gradient(90deg, rgba(30,136,229,0.3), var(--bloomberg-blue)); }
+        .hbar-fill.gold { background: linear-gradient(90deg, rgba(255,215,0,0.3), #b8860b); }
+        .hbar-value {
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        /* Vertical Bar Chart */
+        .chart-visual {
+            height: 220px;
+            display: flex;
+            align-items: flex-end;
+            gap: 6px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .chart-bar-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+        .chart-bar {
+            width: 100%;
+            border-radius: 3px 3px 0 0;
+            transition: all 0.3s;
+            position: relative;
+            min-height: 4px;
+        }
+        .chart-bar.red { background: linear-gradient(180deg, var(--japan-red) 0%, rgba(188,0,45,0.3) 100%); }
+        .chart-bar.green { background: linear-gradient(180deg, var(--bloomberg-green) 0%, rgba(76,175,80,0.3) 100%); }
+        .chart-bar.orange { background: linear-gradient(180deg, var(--bloomberg-orange) 0%, rgba(255,105,0,0.3) 100%); }
+        .chart-bar.blue { background: linear-gradient(180deg, var(--bloomberg-blue) 0%, rgba(30,136,229,0.3) 100%); }
+        .chart-bar.gold { background: linear-gradient(180deg, #b8860b 0%, rgba(184,134,11,0.3) 100%); }
+        .chart-bar:hover { filter: brightness(1.2); }
+        .chart-labels {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 12px;
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 32px;
+            margin: 32px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--japan-red), var(--bloomberg-orange), var(--bloomberg-gold));
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 28px;
+        }
+        .timeline-item:last-child { padding-bottom: 0; }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -37px;
+            top: 4px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--japan-red);
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 3px rgba(188,0,45,0.2);
+        }
+        .timeline-date {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--japan-red);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .timeline-content h5 {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .timeline-content p {
+            font-size: 15px;
+            margin-bottom: 0;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Media Cards Grid */
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin: 32px 0;
+        }
+        .media-card {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 24px;
+            border-left: 4px solid var(--japan-red);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .media-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        .media-card.orange-border { border-left-color: var(--bloomberg-orange); }
+        .media-card.blue-border { border-left-color: var(--bloomberg-blue); }
+        .media-card.green-border { border-left-color: var(--bloomberg-green); }
+        .media-card.gold-border { border-left-color: #b8860b; }
+        .media-source {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--japan-red);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .media-source.orange { color: var(--bloomberg-orange); }
+        .media-source.blue { color: var(--bloomberg-blue); }
+        .media-source.green { color: var(--bloomberg-green); }
+        .media-source.gold { color: #b8860b; }
+        .media-title {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .media-excerpt {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, #fef0f0 0%, #fde0e0 100%);
+            border-left: 4px solid var(--japan-red);
+            padding: 24px;
+            margin: 32px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .highlight-box.orange {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border-left-color: var(--bloomberg-orange);
+        }
+        .highlight-box.blue {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-left-color: var(--bloomberg-blue);
+        }
+        .highlight-box.gold {
+            background: linear-gradient(135deg, #fef9e7 0%, #fdebd0 100%);
+            border-left-color: #b8860b;
+        }
+        .highlight-box h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--bloomberg-black);
+        }
+        .highlight-box p {
+            margin-bottom: 0;
+            font-size: 15px;
+        }
+
+        /* Quote Block */
+        .quote-block {
+            background: var(--bloomberg-black);
+            color: #fff;
+            padding: 32px;
+            border-radius: 8px;
+            margin: 32px 0;
+            position: relative;
+        }
+        .quote-block::before {
+            content: '\201C';
+            position: absolute;
+            top: 12px;
+            left: 24px;
+            font-size: 72px;
+            color: var(--japan-red);
+            line-height: 1;
+            opacity: 0.3;
+            font-family: Georgia, serif;
+        }
+        .quote-text {
+            font-size: 19px;
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            padding-left: 36px;
+            color: rgba(255,255,255,0.9);
+        }
+        .quote-author {
+            font-size: 14px;
+            color: rgba(255,255,255,0.6);
+            padding-left: 36px;
+            font-style: normal;
+        }
+
+        /* Comparison Panel */
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            margin: 32px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+        .comparison-side {
+            padding: 28px;
+        }
+        .comparison-side.before {
+            background: #f8f9fa;
+            border-right: 1px solid var(--border-color);
+        }
+        .comparison-side.after {
+            background: #fff5f5;
+        }
+        .comparison-header {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid;
+        }
+        .comparison-header.before-h { color: var(--bloomberg-blue); border-color: var(--bloomberg-blue); }
+        .comparison-header.after-h { color: var(--japan-red); border-color: var(--japan-red); }
+        .comparison-item {
+            font-size: 14px;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            line-height: 1.5;
+        }
+        .comparison-item:last-child { border-bottom: none; }
+        .comparison-item strong {
+            display: block;
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 2px;
+        }
+
+        /* Anatomy Diagram */
+        .anatomy-box {
+            background: #1a1a2e;
+            border-radius: 12px;
+            padding: 32px;
+            margin: 32px 0;
+            color: #fff;
+        }
+        .anatomy-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: #fff;
+        }
+        .anatomy-flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .anatomy-node {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 8px;
+            padding: 16px 20px;
+            text-align: center;
+            min-width: 130px;
+        }
+        .anatomy-node.highlight {
+            background: rgba(188,0,45,0.15);
+            border-color: var(--japan-red);
+        }
+        .anatomy-node.warn {
+            background: rgba(255,105,0,0.15);
+            border-color: var(--bloomberg-orange);
+        }
+        .anatomy-node.danger {
+            background: rgba(244,67,54,0.15);
+            border-color: var(--bloomberg-red);
+        }
+        .anatomy-node-title {
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: var(--japan-red-light);
+        }
+        .anatomy-node.warn .anatomy-node-title { color: var(--bloomberg-orange); }
+        .anatomy-node.danger .anatomy-node-title { color: var(--bloomberg-red); }
+        .anatomy-node-value {
+            font-size: 12px;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.4;
+        }
+        .anatomy-arrow {
+            font-size: 20px;
+            color: rgba(255,255,255,0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bloomberg-black);
+            color: #fff;
+            padding: 48px 24px;
+            text-align: center;
+        }
+        .footer-note {
+            font-size: 13px;
+            color: rgba(255,255,255,0.5);
+            max-width: 640px;
+            margin: 0 auto 24px;
+            line-height: 1.6;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            font-size: 13px;
+        }
+        .footer-links a:hover { color: #fff; }
+
+        /* Article Nav */
+        .article-nav {
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0 24px;
+        }
+        .article-nav-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            height: 40px;
+            font-size: 13px;
+        }
+        .article-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 4px 12px;
+            color: #666;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.15s;
+            text-decoration: none;
+        }
+        .article-nav a:hover {
+            color: #c0392b;
+            background: rgba(192,57,43,0.06);
+            text-decoration: none;
+        }
+        .article-nav .nav-sep {
+            color: #e0e0e0;
+            user-select: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero { padding: 48px 16px 40px; }
+            .hero-stats { gap: 24px; flex-wrap: wrap; }
+            .hero-stat-value { font-size: 28px; }
+            .section { padding: 32px 0; }
+            .comparison { grid-template-columns: 1fr; }
+            .comparison-side.before { border-right: none; border-bottom: 1px solid var(--border-color); }
+            .ticker-content { gap: 24px; }
+            .anatomy-flow { flex-direction: column; }
+            .anatomy-arrow { transform: rotate(90deg); }
+            .hbar-label { width: 120px; font-size: 11px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 480px) {
+            .stats-grid { grid-template-columns: 1fr; }
+            .hero-stats { flex-direction: column; gap: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Bar -->
+<header class="header-bar">
+    <div class="logo">Capital<span>Markets</span></div>
+    <div class="header-date">2026年2月9日 星期日</div>
+</header>
+
+<!-- Article Navigation -->
+<nav class="article-nav">
+    <div class="article-nav-inner">
+        <a href="../index.html">&#8962; 首页</a>
+        <span class="nav-sep">/</span>
+        <a href="index.html">&#8592; 趋势与类别评论</a>
+    </div>
+</nav>
+
+<!-- Ticker -->
+<div class="price-ticker">
+    <div class="ticker-content">
+        <div class="ticker-item">
+            <span class="ticker-name">Nikkei 225</span>
+            <span class="ticker-price">56,363.94</span>
+            <span class="ticker-change up">▲ +3.9%</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">TOPIX</span>
+            <span class="ticker-price">3,783.94</span>
+            <span class="ticker-change up">▲ +2.3%</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">USD/JPY</span>
+            <span class="ticker-price">156.68</span>
+            <span class="ticker-change down">▼ 日元贬值</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">10Y JGB</span>
+            <span class="ticker-price">2.27%</span>
+            <span class="ticker-change down">▲ 27年新高</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">40Y JGB</span>
+            <span class="ticker-price">4.24%</span>
+            <span class="ticker-change down">▲ 历史新高</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">BOJ利率</span>
+            <span class="ticker-price">0.75%</span>
+            <span class="ticker-change up">30年高点</span>
+        </div>
+        <!-- Duplicate for seamless scroll -->
+        <div class="ticker-item">
+            <span class="ticker-name">Nikkei 225</span>
+            <span class="ticker-price">56,363.94</span>
+            <span class="ticker-change up">▲ +3.9%</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">TOPIX</span>
+            <span class="ticker-price">3,783.94</span>
+            <span class="ticker-change up">▲ +2.3%</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">USD/JPY</span>
+            <span class="ticker-price">156.68</span>
+            <span class="ticker-change down">▼ 日元贬值</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">10Y JGB</span>
+            <span class="ticker-price">2.27%</span>
+            <span class="ticker-change down">▲ 27年新高</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">40Y JGB</span>
+            <span class="ticker-price">4.24%</span>
+            <span class="ticker-change down">▲ 历史新高</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">BOJ利率</span>
+            <span class="ticker-price">0.75%</span>
+            <span class="ticker-change up">30年高点</span>
+        </div>
+    </div>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-badge"><span class="pulse"></span> 深度分析 | Japan &amp; Global Markets</div>
+    <h1 class="hero-title">The <span class="accent">Sana</span>economics is <span class="accent-gold">Back</span></h1>
+    <p class="hero-subtitle-en">Japan's Iron Lady, a Historic Mandate, and the Fiscal Gamble That Shook the World</p>
+    <p class="hero-subtitle">日本首位女首相高市早苗以战后最大胜选纪录横扫众议院，获得推行其激进经济议程的绝对授权。日经指数突破57,000创历史新高，日元跌至156，40年期国债收益率飙破4%——"高市交易"正在重塑全球资本市场的地壳板块。这是安倍经济学的还魂，还是一场更危险的财政豪赌？</p>
+    <div class="hero-stats">
+        <div class="hero-stat">
+            <div class="hero-stat-value green">57,000</div>
+            <div class="hero-stat-label">日经225历史新高</div>
+        </div>
+        <div class="hero-stat">
+            <div class="hero-stat-value">316席</div>
+            <div class="hero-stat-label">自民党单独绝对多数</div>
+        </div>
+        <div class="hero-stat">
+            <div class="hero-stat-value gold">¥122.3万亿</div>
+            <div class="hero-stat-label">FY2026预算(创纪录)</div>
+        </div>
+        <div class="hero-stat">
+            <div class="hero-stat-value white">234%</div>
+            <div class="hero-stat-label">政府债务/GDP</div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<main class="container">
+
+    <!-- Article Meta -->
+    <div class="article-meta">
+        <div class="author-info">
+            <div class="author-avatar">CM</div>
+            <div>
+                <div class="author-name">Capital Markets Research</div>
+                <div class="publish-time">2026年2月9日 · 更新于 23:00 CST</div>
+            </div>
+        </div>
+        <div class="reading-time">阅读时间 · 15分钟</div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Section 1: The Mandate -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="section">
+        <span class="section-label">第一章 · 授权</span>
+        <h2 class="section-title">316席：一场改写日本战后政治格局的胜利</h2>
+
+        <p>2026年2月8日，当NHK的选举速报在东京夜空中闪烁时，日本政治版图已经不可逆转地改变。自民党单独赢得<strong>316个众议院席位</strong>——超过261席绝对多数线整整55席，创下该党1955年成立以来的历史最高纪录，超越了1986年中曾根康弘创下的300席纪录。加上联盟伙伴日本维新会的36席，执政联盟合计握有<strong>352席</strong>，轻松跨越310席的三分之二绝对多数门槛。</p>
+
+        <p>这意味着什么？意味着高市早苗现在拥有<strong>推翻参议院否决</strong>的宪法权力。意味着修改宪法第九条——日本战后和平主义的基石——从理论变为现实。意味着她推行的每一项财政扩张、每一笔国防开支、每一个半导体补贴计划，在国会将畅通无阻。</p>
+
+        <div class="big-number">
+            <div class="big-number-value">316</div>
+            <div class="big-number-label">自民党众议院席位 · 战后最高纪录</div>
+            <div class="big-number-context">超越1986年中曾根康弘创下的300席纪录 · 执政联盟合计352席，握有2/3绝对多数</div>
+        </div>
+
+        <p>这场选举本不该在2026年2月举行。日本下一次例行大选原定于2028年底。但高市在1月23日——就任首相仅三个月后——宣布解散众议院，将投票日定在仅仅16天后的2月8日。批评者指责她给选民的准备时间太短；支持者则称这是政治直觉的完美运用。无论如何，结果证明了她的判断：以<strong>75%的支持率</strong>作为起跳板，高市的政治豪赌获得了历史性回报。</p>
+
+        <div class="highlight-box orange">
+            <h4>联盟重组：从公明党到维新会</h4>
+            <p>这场胜利的政治背景同样深刻。2025年10月，在长达26年的合作后，<strong>公明党终止了与自民党的联盟</strong>——这是日本战后政治史上最重要的联盟瓦解之一。公明党长期充当自民党的"刹车片"，在国防扩张和宪法修改上施加温和制约。高市随即转向日本维新会组建新联盟。维新会更加亲市场、更加鹰派、对再分配更不热心。这一联盟替换的深远意义在于：<strong>日本政治中最后一个制约右倾化的内部机制已经消失</strong>。</p>
+        </div>
+
+        <p>选举结果出炉后，全球市场的反应迅速而剧烈。亚洲交易时段一开盘，日经225指数即跳空高开突破56,000点，半小时内触及<strong>57,000点历史新高</strong>。TOPIX指数飙升至3,825.67的纪录峰值。与此同时，日元连续第七个交易日贬值，美元兑日元升至156.68；10年期日本国债收益率攀升至2.27%，为1999年以来最高水平。</p>
+
+        <p>美国银行此前设定的2026年底目标——TOPIX 3,700点、日经55,500点——在选举后的第一个交易日即被突破。用一位东京交易员的话说：<em>"市场不是在定价一场选举胜利。市场是在定价一个时代的开始。"</em></p>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Section 2: Who Is Takaichi -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="section">
+        <span class="section-label">第二章 · 人物</span>
+        <h2 class="section-title">从重金属鼓手到日本铁娘子：高市早苗的非典型崛起</h2>
+
+        <p>在成为日本首位女首相之前，高市早苗的人生简历读起来更像一部非典型的政治传记。她出生于奈良县大和郡山市的一个普通家庭——父亲在汽车公司工作，母亲是当地警察局的职员。在神户大学就读期间，她的身份不是未来的政治家，而是一支重金属乐队的<strong>鼓手</strong>。</p>
+
+        <p>1993年，年仅32岁的高市以无党派身份当选众议员，三年后加入自民党。此后三十年，她在安倍晋三的庇护下步步攀升——先后担任总务大臣和经济安全保障担当大臣，成为安倍派系中最坚定的意识形态继承人。她崇拜撒切尔夫人，立志成为日本的"铁娘子"——尽管批评者指出，她在财政立场上与撒切尔几乎完全相反。</p>
+
+        <div class="quote-block">
+            <p class="quote-text">她最崇拜的领导人是玛格丽特·撒切尔，但她不是财政鹰派——恰恰相反。高市早苗的经济哲学核心是'高压经济'：用持续的财政和货币扩张来推高工资和就业。这更接近于一个带着撒切尔面具的凯恩斯主义者。</p>
+            <p class="quote-author">— East Asia Forum, "Japan and the Contradictions of Sanaenomics"</p>
+        </div>
+
+        <p>2025年10月4日，在石破茂宣布辞职后的自民党总裁选举中，高市在第一轮投票中领先，随后在决选中以<strong>185票对156票</strong>击败小泉进次郎，成为自民党历史上首位女性总裁、日本历史上首位女性首相。她的就职支持率高达64%-75%（各机构差异），远超近年历任首相的首月表现。</p>
+
+        <p>但高市的政治身份远不止于"日本首位女首相"这一标签。在国际舞台上，她是一个<strong>鲜明的民族主义者</strong>：多次参拜靖国神社、对中国和朝鲜采取强硬立场、明确表示若中国对台湾采取行动日本军队"可能介入"——她将此定性为"生存威胁性事态"。特朗普在2月6日、选举前两天给予她"全面背书"（total endorsement），称她是"一位经过验证的、非常受欢迎的领导人"，并邀请她于3月19日访问白宫。</p>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value red">75%</div>
+                <div class="stat-label">就职峰值支持率<br>(产经新闻)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value orange">185:156</div>
+                <div class="stat-label">总裁选决选得票<br>击败小泉进次郎</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value blue">3个月</div>
+                <div class="stat-label">从就职到解散议会<br>闪电战式政治操作</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value green">30年</div>
+                <div class="stat-label">政治生涯<br>1993年首次当选</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Section 3: Sanaenomics vs Abenomics -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="section">
+        <span class="section-label">第三章 · 经济学</span>
+        <h2 class="section-title">三支新箭：Sanaenomics的承诺与矛盾</h2>
+
+        <p>"Sanaenomics"——这个仿照"Abenomics"构词的名称——并非媒体杜撰。高市本人有意识地继承并重构了安倍经济学的框架，同样提出"三支箭"，但每一支箭的方向和力度都发生了微妙而关键的偏移。</p>
+
+        <div class="comparison">
+            <div class="comparison-side before">
+                <div class="comparison-header before-h">安倍经济学 (2012-2020)</div>
+                <div class="comparison-item">
+                    <strong>第一支箭：货币政策</strong>
+                    核心引擎。日银"2-2-2承诺"、大规模量化宽松
+                </div>
+                <div class="comparison-item">
+                    <strong>第二支箭：财政政策</strong>
+                    短期刺激为主，曾推迟消费税上调
+                </div>
+                <div class="comparison-item">
+                    <strong>第三支箭：结构改革</strong>
+                    市场化导向增长，贸易自由化
+                </div>
+                <div class="comparison-item">
+                    <strong>宏观环境</strong>
+                    通缩、零通胀、零利率
+                </div>
+                <div class="comparison-item">
+                    <strong>国防</strong>
+                    渐进式增加
+                </div>
+            </div>
+            <div class="comparison-side after">
+                <div class="comparison-header after-h">高市经济学 (2025-)</div>
+                <div class="comparison-item">
+                    <strong>第一支箭：货币宽松延续</strong>
+                    支持低利率但非核心工具；日银已进入正常化轨道
+                </div>
+                <div class="comparison-item">
+                    <strong>第二支箭："负责任的积极财政"</strong>
+                    长期化、效率导向，17个战略领域投资
+                </div>
+                <div class="comparison-item">
+                    <strong>第三支箭：国家主导资本主义</strong>
+                    政府深度介入产业商业化，半导体、AI、核聚变
+                </div>
+                <div class="comparison-item">
+                    <strong>宏观环境</strong>
+                    通胀持续超2%、利率上行、实际工资下降
+                </div>
+                <div class="comparison-item">
+                    <strong>国防</strong>
+                    提前两年达到GDP 2%，可能向3%推进
+                </div>
+            </div>
+        </div>
+
+        <p>高市经济学的第一支箭——货币宽松——在实践中面临一个安倍从未遭遇的困境。安倍时代的日本银行拼命想制造通胀；<strong>高市时代的日本银行正在试图抑制通胀</strong>。2025年12月，植田和男将基准利率上调至0.75%——30年来最高水平。高市曾在总裁选期间称加息"愚蠢"，但就任后措辞明显软化。她在2025年11月18日与植田的会面后达成了微妙的默契：日银可以按自己的节奏正常化，但高市将持续通过财政端施压，确保经济增长不被利率上行压垮。</p>
+
+        <p>第二支箭——财政扩张——才是Sanaenomics的真正核心引擎。数字令人瞠目：</p>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value red">¥122.3万亿</div>
+                <div class="stat-label">FY2026预算<br>史上首超120万亿</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value orange">¥18.3万亿</div>
+                <div class="stat-label">FY2025追加预算<br>$1180亿</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value blue">¥1.23万亿</div>
+                <div class="stat-label">芯片与AI预算<br>同比增近300%</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value gold">¥5万亿/年</div>
+                <div class="stat-label">食品消费税暂停<br>两年成本</div>
+            </div>
+        </div>
+
+        <p>FY2026年度预算达到创纪录的<strong>122.3万亿日元</strong>（约7,800亿美元），较上年增长6.2%，为史上首次突破120万亿大关。此前的FY2025追加预算已高达18.3万亿日元。就任后推出的首个经济刺激方案规模为<strong>21.3万亿日元</strong>（1,350亿美元）。</p>
+
+        <p>具体的财政弹药包括：废除存续了半个世纪的临时汽油税（每升25.1日元，年成本约1.5万亿日元）；<strong>暂停食品和饮料8%消费税两年</strong>——这是选战中的核心承诺，年成本约5万亿日元（316亿美元）；每名儿童2万日元一次性现金补贴；以及覆盖冬季月份的家庭电费和天然气补贴。</p>
+
+        <p>第三支箭是最具Sanaenomics特色的部分：<strong>国家主导的产业资本主义</strong>。高市在17个战略领域部署了政府投资计划，涵盖人工智能、半导体、数字基础设施、网络安全、造船、港口物流、食品科技、核聚变能源和先进制造。经济产业省的芯片和AI预算几乎<strong>翻了四倍</strong>，从前一年的水平飙升至1.23万亿日元。其中1,500亿日元定向拨给国资芯片企业Rapidus Corp（累计政府投资已达2,500亿日元），而另外3,873亿日元则用于国产基础大模型、数据基础设施和"物理AI"。</p>
+
+        <div class="anatomy-box">
+            <div class="anatomy-title">Sanaenomics的传导机制</div>
+            <div class="anatomy-flow">
+                <div class="anatomy-node highlight">
+                    <div class="anatomy-node-title">财政扩张</div>
+                    <div class="anatomy-node-value">¥122万亿预算<br>+追加/刺激</div>
+                </div>
+                <div class="anatomy-arrow">→</div>
+                <div class="anatomy-node">
+                    <div class="anatomy-node-title">产业投资</div>
+                    <div class="anatomy-node-value">半导体/AI/核聚变<br>17个战略领域</div>
+                </div>
+                <div class="anatomy-arrow">→</div>
+                <div class="anatomy-node">
+                    <div class="anatomy-node-title">减税+补贴</div>
+                    <div class="anatomy-node-value">消费税暂停<br>汽油税废除</div>
+                </div>
+                <div class="anatomy-arrow">→</div>
+                <div class="anatomy-node warn">
+                    <div class="anatomy-node-title">预期效果</div>
+                    <div class="anatomy-node-value">工资↑ 消费↑<br>技术自主↑</div>
+                </div>
+                <div class="anatomy-arrow">→</div>
+                <div class="anatomy-node danger">
+                    <div class="anatomy-node-title">风险</div>
+                    <div class="anatomy-node-value">日元↓ JGB↓<br>债务不可持续?</div>
+                </div>
+            </div>
+        </div>
+
+        <p>2月5日，台积电宣布计划在熊本县第二工厂生产<strong>3纳米制程芯片</strong>——这对高市来说是一个标志性胜利。日本为其半导体雄心提供的补贴总额预计将通过2030年达到约<strong>10万亿日元</strong>（650亿美元）。但怀疑的声音同样响亮：许多专家质疑Rapidus能否与台积电和三星竞争并最终实现盈利。</p>
+
+        <div class="quote-block">
+            <p class="quote-text">Sanaenomics充满内部矛盾，建立在一种半自给自足的经济安全观之上。它在通胀已超2%、实际工资连续下降的环境下，重复安倍式的刺激路径，同时削弱日元并淡化物价压力。</p>
+            <p class="quote-author">— East Asia Forum, "Japan and the Contradictions of Sanaenomics", 2025年12月</p>
+        </div>
+
+        <p>最尖锐的批评来自财政算术。高市承诺消费税暂停"不会发行新债"，但从未明确说明资金来源。East Asia Forum的分析直言不讳：<strong>"Sanaenomics的财政算术根本不成立。"</strong>当你承诺每年减税6.5万亿日元、同时增加数万亿产业补贴和国防开支、而且拒绝承认需要发债时，市场会替你算这笔账——用JGB收益率作为答案。</p>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Section 4: Market Reaction - The Takaichi Trade -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="section">
+        <span class="section-label">第四章 · 市场</span>
+        <h2 class="section-title">"高市交易"的三条腿：股市狂欢、日元溃败、债市叛变</h2>
+
+        <p>自高市就任首相以来，全球资本市场出现了一个高度一致的交易模式——交易员称之为<strong>"高市交易"（Takaichi Trade）</strong>：做多日本股票、做空日元、做空日本国债。这三条腿相互强化，构成了一个自我循环的反馈回路。</p>
+
+        <h3 style="font-size: 20px; font-weight: 700; margin: 32px 0 16px;">第一条腿：股市——从期待到狂欢</h3>
+
+        <p>2月9日周一开盘，日经225指数在开盘数分钟内跳过56,000点，半小时内触及<strong>57,000点</strong>——历史上从未企及的高度。收盘报56,363.94点，涨幅3.9%（盘中涨幅远超此数）。TOPIX更是触及3,825.67的历史峰值。</p>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>指标</th>
+                    <th>2月9日表现</th>
+                    <th>自高市就任以来</th>
+                    <th>年初至今</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>日经225</strong></td>
+                    <td class="price-up">+3.9%</td>
+                    <td class="price-up">+18.2%</td>
+                    <td class="price-up">+12.5%</td>
+                </tr>
+                <tr>
+                    <td><strong>TOPIX</strong></td>
+                    <td class="price-up">+2.3%</td>
+                    <td class="price-up">+15.8%</td>
+                    <td class="price-up">+10.1%</td>
+                </tr>
+                <tr>
+                    <td><strong>三菱UFJ金融</strong></td>
+                    <td class="price-up">+2.5%</td>
+                    <td class="price-up">+22.4%</td>
+                    <td class="price-up">+14.8%</td>
+                </tr>
+                <tr>
+                    <td><strong>软银集团</strong></td>
+                    <td class="price-up">+2.2%</td>
+                    <td class="price-up">+19.6%</td>
+                    <td class="price-up">+11.3%</td>
+                </tr>
+                <tr>
+                    <td><strong>丰田汽车</strong></td>
+                    <td class="price-up">+2.0%</td>
+                    <td class="price-up">+16.5%</td>
+                    <td class="price-up">+9.7%</td>
+                </tr>
+                <tr>
+                    <td><strong>索尼集团</strong></td>
+                    <td class="price-up">+4.8%</td>
+                    <td class="price-up">+24.1%</td>
+                    <td class="price-up">+15.2%</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>股市的亢奋逻辑清晰：财政扩张提振内需、产业补贴利好科技制造、日元贬值提升出口商利润、低利率（相对其他发达经济体）维持估值吸引力。市场分析师此前认为一个"决定性胜利"将是"中期内对市场最好的结果"——而高市交出的答卷远超"决定性"。</p>
+
+        <h3 style="font-size: 20px; font-weight: 700; margin: 32px 0 16px;">第二条腿：日元——第七天的溃退</h3>
+
+        <p>选举结果公布后，日元连续第七个交易日贬值。美元兑日元在亚洲早盘一度触及<strong>157.72</strong>，收盘报156.68。这距离1月14日创下的159.18高点已不远——而那个水平已引发市场对当局干预的猜测。</p>
+
+        <div class="chart-container">
+            <div class="chart-title">美元兑日元走势：高市执政以来的趋势</div>
+            <div class="chart-subtitle">数据说明：橙色=USD/JPY汇率 · 更高=日元更弱 · 来源：Bloomberg, Trading Economics</div>
+            <div class="chart-visual" style="height: 180px;">
+                <div class="chart-bar-group">
+                    <div class="chart-bar orange" style="height: 50%;" title="2025年10月: ~148"></div>
+                </div>
+                <div class="chart-bar-group">
+                    <div class="chart-bar orange" style="height: 55%;" title="11月: ~150"></div>
+                </div>
+                <div class="chart-bar-group">
+                    <div class="chart-bar orange" style="height: 60%;" title="12月: ~152"></div>
+                </div>
+                <div class="chart-bar-group">
+                    <div class="chart-bar orange" style="height: 70%;" title="2026年1月初: ~154"></div>
+                </div>
+                <div class="chart-bar-group">
+                    <div class="chart-bar red" style="height: 80%;" title="1月中旬: ~159"></div>
+                </div>
+                <div class="chart-bar-group">
+                    <div class="chart-bar orange" style="height: 65%;" title="2月初: ~155"></div>
+                </div>
+                <div class="chart-bar-group">
+                    <div class="chart-bar red" style="height: 73%;" title="2月9日: ~157"></div>
+                </div>
+            </div>
+            <div class="chart-labels">
+                <span>10月</span>
+                <span>11月</span>
+                <span>12月</span>
+                <span>1月初</span>
+                <span>1月中</span>
+                <span>2月初</span>
+                <span>2/9</span>
+            </div>
+        </div>
+
+        <p>摩根大通的日本外汇首席策略师持有华尔街<strong>最悲观的年底预测：164</strong>。法国巴黎银行和摩根大通均认为日元将在2026年底跌至160甚至更低。驱动因素是多维的：美日利差依然宽阔、日本实际利率仍为负值、资本持续外流、套息交易（carry trade）卷土重来。</p>
+
+        <p>日本当局的表态耐人寻味。官方称"更关注市场波动性，而非特定汇率水平"——这是一个模糊到几乎无用的前瞻指引。但市场记得：去年日元接近160时，疑似有干预行为。问题在于，高市的整个经济议程——以财政扩张推动名义GDP增长——客观上需要一个偏弱的日元。<strong>她需要日元贬值，但不能太快；需要利率偏低，但不能对抗日银。</strong>这是一个极窄的走廊。</p>
+
+        <h3 style="font-size: 20px; font-weight: 700; margin: 32px 0 16px;">第三条腿：JGB——"债市叛变"</h3>
+
+        <p>如果说股市的狂欢是对Sanaenomics的投票，那么债市的抛售就是对其财政可信度的质疑。</p>
+
+        <p>2026年1月，日本国债市场经历了一场<a href="https://markets.financialcontent.com/stocks/article/marketminute-2026-1-23-the-jgb-rebellion-40-year-yields-breach-420-as-sanaenomics-jolts-global-markets" target="_blank">被称为"JGB叛变"</a>的抛售潮。40年期国债收益率飙升至<strong>4.24%</strong>——这是该期限品种自2007年设立以来首次突破4%，也是日本任何主权债务超过三十年来首次触及这一水平。30年期国债出现了<strong>自1999年以来最大单日收益率跳升</strong>。10年期收益率触及2.33%的27年新高。</p>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value red">4.24%</div>
+                <div class="stat-label">40年期JGB收益率<br>史上首破4%</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value red">2.27%</div>
+                <div class="stat-label">10年期JGB收益率<br>27年新高</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value orange">¥31.3万亿</div>
+                <div class="stat-label">FY2026偿债成本<br>首超30万亿</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value blue">¥544万亿</div>
+                <div class="stat-label">日银JGB持仓<br>QT持续缩减中</div>
+            </div>
+        </div>
+
+        <p>债市的逻辑同样清晰但方向相反：高市的大规模财政扩张意味着更多的国债供给；日银的量化紧缩（QT）意味着更少的购买者（日银JGB持仓已降至544万亿日元，为2022年中以来最低）；同时，收益率上升正在使日本国内保险公司将资金从海外债券——尤其是美国国债和欧洲债券——<strong>搬回国内</strong>，进一步加剧了全球利率上行压力。</p>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Section 5: The Debt Elephant -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="section">
+        <span class="section-label">第五章 · 债务</span>
+        <h2 class="section-title">房间里的大象：¥1,342万亿的财政深渊</h2>
+
+        <p>所有关于Sanaenomics的讨论最终都绕不开同一个问题：日本政府债务总额<strong>1,341.7万亿日元</strong>（约9万亿美元），债务与GDP之比约<strong>235%</strong>——发达国家中遥遥领先的世界第一。</p>
+
+        <p>在零利率时代，这个数字虽然惊人但并不致命。当10年期国债收益率在0-0.5%之间徘徊时，偿债成本是可控的。但Sanaenomics开启的利率上行环境正在改变这一等式——而且改变是不可逆的。</p>
+
+        <div class="chart-container">
+            <div class="chart-title">日本国债偿债成本的飙升轨迹</div>
+            <div class="chart-subtitle">数据来源：日本财务省 · 单位：万亿日元 · FY2027/28为MOF预估</div>
+            <div class="hbar-chart" style="margin-top: 20px;">
+                <div class="hbar-row">
+                    <div class="hbar-label">FY2023</div>
+                    <div class="hbar-track">
+                        <div class="hbar-fill blue" style="width: 40%;">
+                            <span class="hbar-value">¥25.3万亿</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">FY2024</div>
+                    <div class="hbar-track">
+                        <div class="hbar-fill blue" style="width: 46%;">
+                            <span class="hbar-value">¥27.0万亿</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">FY2025</div>
+                    <div class="hbar-track">
+                        <div class="hbar-fill orange" style="width: 52%;">
+                            <span class="hbar-value">¥28.2万亿</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">FY2026 (预算)</div>
+                    <div class="hbar-track">
+                        <div class="hbar-fill red" style="width: 60%;">
+                            <span class="hbar-value">¥31.3万亿 首超30万亿</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">FY2028E (MOF)</div>
+                    <div class="hbar-track">
+                        <div class="hbar-fill red" style="width: 80%;">
+                            <span class="hbar-value">利息支出→¥16.1万亿</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>FY2026的偿债成本预算为<strong>31.3万亿日元</strong>——历史上首次超过30万亿，较上年增长10.8%，这已是连续第六年创纪录。财务省估计，到FY2028年，仅利息支付就将攀升至<strong>16.1万亿日元</strong>，较FY2025/26的10.5万亿增长超过50%。</p>
+
+        <p>敏感性分析更加触目惊心：日本现有的约<strong>1,287万亿日元存量债务</strong>将在未来9-10年内逐步以新利率再融资。如果平均再融资利率从接近0%上升到2.0-2.5%，利息偿付占总支出的比例将从当前的约<strong>9%飙升至20-25%</strong>。这意味着每花出去的四日元中，就有一日元是用来支付历史债务的利息——还没算本金偿还。</p>
+
+        <div class="highlight-box">
+            <h4>财政算术的不可能三角</h4>
+            <p>高市同时承诺了三件在数学上互相矛盾的事情：(1) 暂停消费税并废除汽油税（年减税约6.5万亿日元）；(2) 大幅增加产业补贴、国防开支和基础设施投资；(3) 不发行新债来为上述减税融资。市场不相信第三条——40年期国债收益率4.24%就是答案。正如East Asia Forum所言：<strong>"Sanaenomics的财政算术根本不成立。"</strong></p>
+        </div>
+
+        <p>日银的量化紧缩正在加剧这一挑战。自2024年7月启动QT以来，日银已将每月JGB购买额从5.7万亿日元削减至2.9万亿日元，从资产负债表上削减了约<strong>21万亿日元</strong>。从下一财年起，缩减速度将放缓（每季度减少2,000亿，而非此前的4,000亿），但方向不会改变。完全正常化可能需要<strong>长达十年</strong>。在这期间，日本国债市场将不得不在没有日银作为"最后购买者"的情况下消化不断增长的新供给。</p>
+
+        <p>这就是"高市交易"第三条腿的逻辑：当你同时看到更多的债券供给、更少的央行购买、以及一个明确倾向于"花钱"而非"存钱"的政府，你做空国债。日本——曾经全球"廉价资本"的最后堡垒——正在以40年期4.24%的价格告诉世界：<strong>免费午餐已经结束了</strong>。</p>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Section 6: Global Spillover -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="section">
+        <span class="section-label">第六章 · 溢出</span>
+        <h2 class="section-title">全球连锁反应：从华盛顿到华尔街的震波传导</h2>
+
+        <p>Sanaenomics不仅仅是一个日本故事。作为全球最大的债权国和第二大美国国债持有者，日本的财政和货币政策变化会通过至少三条路径向全球传导。</p>
+
+        <h3 style="font-size: 20px; font-weight: 700; margin: 32px 0 16px;">路径一：美国国债的"卖家回归"</h3>
+
+        <p>日本持有超过<strong>1万亿美元</strong>的美国国债——仅次于中国的第二大外国持有者。随着日本国内收益率上升至具有吸引力的水平（40年期4.24%），日本保险公司和养老基金正在将资金从美债和欧债<strong>搬回国内</strong>。高盛估计，每10个基点的JGB收益率冲击，会传导约<strong>2-3个基点</strong>的压力到美债收益率上。1月22日，10年期美债收益率在日本投资者缩减海外持仓的背景下跳升至4.30%以上。</p>
+
+        <div class="highlight-box blue">
+            <h4>自我强化的全球财政循环</h4>
+            <p>如果日本大规模减持美债 → 美债收益率上升 → 美国偿债成本增加（美国自身债务/GDP已达120%） → 美债供需关系恶化 → 收益率进一步上升 → 日本国内收益率相对吸引力增强 → 更多资金回流日本 → 循环加速。分析人士警告，日本1.1万亿美元美债持仓的任何实质性减持，都将"对全球债券供需动态产生重大影响"。</p>
+        </div>
+
+        <h3 style="font-size: 20px; font-weight: 700; margin: 32px 0 16px;">路径二：套息交易的终结与重生</h3>
+
+        <p>日本几十年来一直是全球套息交易（carry trade）的发动机——以接近零成本借入日元，投资于高收益资产。随着日银利率升至0.75%、JGB收益率飙升至有吸引力的水平，这台发动机正在<strong>同时做两件事</strong>：一方面，美日利差收窄正在推动部分约<strong>1万亿美元</strong>规模的日元套息交易平仓；另一方面，高市的财政扩张导致的日元贬值又在创造新的套息机会——因为做空一个不断贬值的货币本身就是一笔好交易。</p>
+
+        <p>Benzinga的分析捕捉到了这一矛盾："特朗普对高市的背书将'为更强的美元注入更多空气'，触发反向套息交易，重置全球收益率。"</p>
+
+        <h3 style="font-size: 20px; font-weight: 700; margin: 32px 0 16px;">路径三：地缘政治的新轴线</h3>
+
+        <p>Sanaenomics的地缘政治维度同样不可忽视。高市将日本国防开支提前两年推至<strong>GDP的2%</strong>（约700亿美元），连续第14年创下国防预算纪录。FY2026国防预算达9.04万亿日元，同比增长9.4%。年底前将出台新的国家安全战略，可能将国防开支目标推至<strong>GDP的3%</strong>。</p>
+
+        <div class="media-grid">
+            <a href="https://www.cnbc.com/2026/02/09/japan-stocks-set-to-soar-after-takaichi-secures-historic-mandate.html" target="_blank" class="media-card green-border">
+                <div class="media-source green">CNBC</div>
+                <div class="media-title">Japan's Nikkei crosses 57,000 for the first time as Takaichi secures historic mandate</div>
+                <div class="media-excerpt">日经指数历史性突破57,000点，高市早苗赢得战后最大选举胜利。</div>
+            </a>
+            <a href="https://www.bloomberg.com/news/articles/2026-02-08/historic-win-pits-takaichi-s-vision-of-japan-against-the-markets" target="_blank" class="media-card orange-border">
+                <div class="media-source orange">Bloomberg</div>
+                <div class="media-title">Historic Win Pits Takaichi's Vision of Japan Against the Markets</div>
+                <div class="media-excerpt">历史性胜利将高市的日本愿景与市场力量对立。</div>
+            </a>
+            <a href="https://www.aljazeera.com/economy/2026/1/27/why-japans-economic-plans-are-sending-jitters-through-global-markets" target="_blank" class="media-card">
+                <div class="media-source">Al Jazeera</div>
+                <div class="media-title">Why Japan's economic plans are sending jitters through global markets</div>
+                <div class="media-excerpt">日本的经济计划为何在全球市场引发震荡。</div>
+            </a>
+            <a href="https://time.com/7372956/japan-takaichi-election-win/" target="_blank" class="media-card blue-border">
+                <div class="media-source blue">TIME</div>
+                <div class="media-title">Japan's Takaichi Wins Snap Election By Landslide</div>
+                <div class="media-excerpt">高市早苗以压倒性优势赢得闪电大选。</div>
+            </a>
+        </div>
+
+        <p>宪法修改——特别是第九条（放弃战争条款）——在三分之二多数的保障下已具备技术可行性。从公明党到维新会的联盟替换，意味着<strong>日本政治中对军事扩张的最后内部制约已经消失</strong>。中国将此定性为"回归军国主义"。而特朗普——这位在选前两天公开为高市站台的人——显然将日本的武装化视为其亚太战略的关键棋子。</p>
+
+        <div class="quote-block">
+            <p class="quote-text">祝贺高市早苗首相……她是一位备受尊敬、非常受欢迎的领导人。她大胆而明智地决定举行选举，获得了巨大回报。我们之间有一项非常重要的贸易协议。我们的同盟潜力是无限的。</p>
+            <p class="quote-author">— 美国总统唐纳德·特朗普，2026年2月6日</p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Section 7: Timeline -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="section">
+        <span class="section-label">第七章 · 时间线</span>
+        <h2 class="section-title">从安倍之死到57,000点：Sanaenomics的关键时刻</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2022年7月8日</div>
+                <div class="timeline-content">
+                    <h5>安倍晋三遇刺</h5>
+                    <p>日本前首相在奈良演讲时被枪杀。高市早苗失去了最重要的政治庇护人，但也继承了安倍派系的意识形态遗产和政治资源。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2025年10月4日</div>
+                <div class="timeline-content">
+                    <h5>高市赢得自民党总裁选举</h5>
+                    <p>在石破茂辞职后的党内选举中，高市以185:156击败小泉进次郎，成为自民党首位女性总裁。就职支持率高达64%-75%。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2025年10月18日</div>
+                <div class="timeline-content">
+                    <h5>公明党退出，维新会加入</h5>
+                    <p>延续26年的自公联盟瓦解。高市与日本维新会达成"信任与供给"协议。日本政治右倾化的最后内部刹车被松开。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2025年11月21日</div>
+                <div class="timeline-content">
+                    <h5>¥21.3万亿刺激方案</h5>
+                    <p>高市上任后推出首个大型经济刺激计划，规模达1,350亿美元。包含食品券、能源补贴、儿童现金补贴等措施。市场开始为"高市交易"定价。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2025年12月19日</div>
+                <div class="timeline-content">
+                    <h5>日银加息至0.75%</h5>
+                    <p>植田和男将基准利率上调25bp至30年来最高水平。高市此前称加息"愚蠢"，但在11月18日的会面后未公开反对。微妙的政治博弈开始。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2025年12月31日</div>
+                <div class="timeline-content">
+                    <h5>临时汽油税正式废除</h5>
+                    <p>存在了半个世纪的"临时"汽油税（1974年设立，名义上"暂时"）终于被取消。年财政成本约1.5万亿日元。高市兑现了选战核心承诺之一。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2026年1月14日</div>
+                <div class="timeline-content">
+                    <h5>日经创新高，日元触159</h5>
+                    <p>闪电大选预期升温推动日经突破纪录。美元兑日元一度触及159.18，引发干预猜测。"高市交易"全面展开。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2026年1月20-23日</div>
+                <div class="timeline-content">
+                    <h5>"JGB叛变"：40年期破4%</h5>
+                    <p>日本国债遭遇大规模抛售。40年期收益率飙至4.24%创历史纪录，30年期出现1999年以来最大单日跳升。市场对财政可持续性投出不信任票。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2026年1月23日</div>
+                <div class="timeline-content">
+                    <h5>高市宣布解散众议院</h5>
+                    <p>就任仅三个月，高市做出了她最大的政治赌注：解散众议院，投票日定在2月8日。日银同日宣布维持利率不变，不愿在选前制造波澜。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2026年2月5日</div>
+                <div class="timeline-content">
+                    <h5>台积电宣布在日本生产3nm芯片</h5>
+                    <p>台积电确认将在熊本第二工厂升级至3纳米制程——这是高市半导体战略的标志性胜利。日本承诺到2030年提供约10万亿日元芯片补贴。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2026年2月6日</div>
+                <div class="timeline-content">
+                    <h5>特朗普"全面背书"高市</h5>
+                    <p>选前两天，特朗普公开为高市站台，称她"大胆而明智"，并宣布3月19日的白宫峰会和"非常重要的贸易协议"。Benzinga分析：此举将"为更强的美元注入更多空气"。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2026年2月8-9日</div>
+                <div class="timeline-content">
+                    <h5>316席：历史性胜利 → 日经57,000</h5>
+                    <p>自民党赢得战后最大胜选纪录。次日开盘，日经半小时内突破57,000历史新高。美银的年底目标在选后第一天即被突破。"高市时代"正式开启。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- Section 8: Outlook -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section class="section">
+        <span class="section-label">第八章 · 前瞻</span>
+        <h2 class="section-title">2026下半年：蜜月期后的清算时刻</h2>
+
+        <p>316席的胜利给了高市时间和权力，但没有给她免除经济规律的特权。以下几个关键变量将决定Sanaenomics是日本的复兴叙事还是一场慢动作的财政危机。</p>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value red">2.9%</div>
+                <div class="stat-label">CPI通胀率<br>(2025年9月)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value red">-2.8%</div>
+                <div class="stat-label">实际工资同比<br>(2025年11月)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value blue">0.9%</div>
+                <div class="stat-label">2026年GDP预测<br>(OECD)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value orange">1.0%</div>
+                <div class="stat-label">日银终端利率预测<br>(Oxford Econ)</div>
+            </div>
+        </div>
+
+        <p><strong>变量一：春斗与实际工资。</strong>2026年春季劳资谈判（春斗）的结果将是最重要的近期催化剂。如果名义工资增长继续低于通胀——如2025年11月实际工资同比仍下降2.8%所示——那么高市的"高压经济"叙事将失去根基。消费者不会因为名义GDP在增长而感到富有；他们看的是超市账单。</p>
+
+        <p><strong>变量二：日银的下一步。</strong>Oxford Economics预计日银将在2026年年中加息至<strong>终端利率1%</strong>。ING则认为时间可能推迟至10月（如果日元加速贬值则可能提前至Q2）。长期终端利率预估区间为1.25%-1.75%。每一次加息都将加剧Sanaenomics的财政负担——并测试高市与植田之间那段微妙默契的弹性极限。Oxford Economics的Nagai警告："如果通胀在上半年顺利回落至2%，再加一次息可能引发与高市的摩擦。"</p>
+
+        <p><strong>变量三：宪法修改的赌注。</strong>三分之二多数使修宪成为技术上可行——但这是一个极高风险的政治操作。修宪需要全民公投批准，而日本选民对战后和平宪法的情感依附远比对自民党的政党忠诚更深。如果高市在修宪问题上操之过急，她可能会消耗刚刚赢得的政治资本——而这些资本是她推行经济议程的基础。</p>
+
+        <h3 style="font-size: 20px; font-weight: 700; margin: 32px 0 16px;">三种情景推演</h3>
+
+        <div class="media-grid">
+            <div class="media-card green-border">
+                <div class="media-source green">乐观情景 · 概率 25%</div>
+                <div class="media-title">"新经济奇迹"路径</div>
+                <div class="media-excerpt">
+                    春斗谈判带来3%+的实际工资增长，扭转消费疲软。半导体投资带动产业升级和出口增长。日银在1%暂停加息。日元在150-155区间企稳。财政乘数效应好于预期——Sanaenomics成为教科书级别的"高压经济"成功案例。日经年底触及65,000。
+                </div>
+            </div>
+            <div class="media-card">
+                <div class="media-source">悲观情景 · 概率 30%</div>
+                <div class="media-title">"滞胀陷阱"路径</div>
+                <div class="media-excerpt">
+                    通胀因财政扩张和日元贬值而顽固高企。实际工资持续下降。日银被迫加息超出预期，高市-植田博弈激化。JGB收益率失控上行，偿债成本挤压其他财政空间。国际评级机构下调展望。"失去的四十年"叙事取代"复兴"叙事。
+                </div>
+            </div>
+            <div class="media-card gold-border">
+                <div class="media-source gold">基准情景 · 概率 45%</div>
+                <div class="media-title">"矛盾共存"路径</div>
+                <div class="media-excerpt">
+                    经济温和增长（0.8-1.0%），但远低于Sanaenomics的雄心目标。日元在155-165区间波动，引发周期性干预猜测。日银在1%附近暂停，但不敢进一步加息。JGB市场持续紧张但不至于危机。高市的政治资本在经济成果与财政现实之间缓慢消耗。日经年底在55,000-60,000区间。
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight-box gold">
+            <h4>编辑部视角：安倍经济学的回魂，还是更危险的变异？</h4>
+            <p>Sanaenomics与Abenomics的根本区别不在于政策工具——而在于<strong>宏观环境</strong>。安倍在通缩中施展宽松，因此几乎没有副作用；高市在通胀中施展扩张，每一步都在与价格压力赛跑。OMFIF将Sanaenomics定位为"安倍经济学与新资本主义的桥梁"，这是一个外交辞令。更精确的描述或许是：<strong>这是一个在错误的利率环境中试图重演安倍剧本的实验</strong>。它的赌注不是日本经济能否增长——而是增长能否跑赢利率上行带来的偿债成本。316个议席不能改变这一算术。</p>
+        </div>
+
+        <h3 style="font-size: 20px; font-weight: 700; margin: 32px 0 16px;">结语：当政治授权遇上数学</h3>
+
+        <p>高市早苗在2026年2月8日获得了日本选民给予的、战后七十年来最大的政治授权。她有权力推行她的每一项政策。她有联盟来通过她的每一个法案。她有特朗普的背书来锚定美日同盟。她甚至有了修改和平宪法的技术可行性。</p>
+
+        <p>但她没有能力改变一个基本事实：<strong>日本政府债务是GDP的235%，利率正在上升，人口在减少。</strong></p>
+
+        <p>安倍的"三支箭"在零利率环境中不需要面对偿债成本的算术。高市的"三支箭"必须面对。40年期国债4.24%不是恐慌性定价——它是对一个在利率上行环境中推行大规模财政扩张的政府的理性定价。日经57,000也不是非理性亢奋——它是对一个拥有绝对权力的政府将不惜一切代价推高名义GDP的合理预期。</p>
+
+        <p>两个价格都是对的。问题在于它们指向的是同一个政府——一个同时让股票多头和债券空头都感到兴奋的政府。历史上，这种共识很少能持续很久。</p>
+
+        <p>Sanaenomics正在回归。它带着安倍的遗产、撒切尔的修辞、和一个远比安倍时代更危险的利率环境。它的成败将不取决于316个议席的授权，而取决于一个古老而无情的等式：<strong>增长率减去利率</strong>。如果前者赢，这将是日本的复兴时刻；如果后者赢，这将是全球最大财政实验的清算时刻。</p>
+
+        <p style="text-align: center; font-size: 15px; color: var(--text-secondary); margin-top: 40px;">— END —</p>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <p class="footer-note">本报告仅供研究和信息参考，不构成投资建议。文中引用的市场数据截至2026年2月9日，来源包括Bloomberg、CNBC、Reuters、日本财务省、Bank of Japan、Trading Economics及各公司公开披露信息。政治数据来自NHK、日本时报及各国际媒体报道。</p>
+    <div class="footer-links">
+        <a href="../index.html">返回首页</a>
+        <a href="https://www.cnbc.com/2026/02/09/japan-stocks-set-to-soar-after-takaichi-secures-historic-mandate.html" target="_blank">CNBC: Nikkei 57,000</a>
+        <a href="https://eastasiaforum.org/2025/12/07/japan-and-the-contradictions-of-sanaenomics/" target="_blank">East Asia Forum: Sanaenomics</a>
+        <a href="https://www.bloomberg.com/news/articles/2026-02-08/historic-win-pits-takaichi-s-vision-of-japan-against-the-markets" target="_blank">Bloomberg: Takaichi vs Markets</a>
+        <a href="https://www.boj.or.jp/" target="_blank">Bank of Japan</a>
+    </div>
+</footer>
+
+</body>
+</html>
