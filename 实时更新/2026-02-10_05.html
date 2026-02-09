@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-10 05:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-10 05:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场呈现混合态势，科技股波动加剧，美元走软推动黄金上涨，地缘政治事件影响投资者情绪。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>科技股波动与人工智能影响</div>
+                <div class="topic-title-en">Tech Sector Volatility and AI Impact</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    科技股表现分化，Oracle和AppLovin股价上涨而Monday.com因AI颠覆担忧暴跌。人工智能投资热潮持续，但估值过高引发泡沫恐惧，投资者需关注具有坚实AI战略的公司。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/big-tech-stocks-post-selloff-week.html" target="_blank" rel="noopener">[CNBC] Oracle gains 9% as tech tries to bounce back from $1 trillion sell-off</a>
+                    <a href="https://www.cnbc.com/2026/02/09/monday-com-stock-ai-software.html" target="_blank" rel="noopener">[CNBC] Monday.com drops 21% as AI disruption fears mount in software</a>
+                    <a href="https://news.google.com/rss/articles/CBMikwNBVV95cUxOaUlHRTZMYmFHZ0tPajJlQVkyUnZSc1dJbXY1cTgtTVNpX2xzNUUwc04yNUUxQXY5ZWp1UWhDMTRmcU0xbEc2STAzTk9uVDh3WWFXWjMzRFhKYVl5VzFsSGdBcWtKdVAyMUliT0pvRkdjdHZUMUN0dFE5cmlHV0pMWnNmY3hIMmh1UFdZV0gydThYTTQzVVNkWWliUWM5OUZickNTd1o2YV9rQ0pmbXdfcjNxTTZWMklvRzlaRllINGNBc2l5LUkxUTZnQmhPc0JjekhKei1vY1ZJcTRuR1hxQXpvNHMtWnlHZ0JIbUNuLU9jcUpIemZYSzJHaHpzQ0lxRGlOa2wwcFo3VXVPSW9LVXFHMm9EaXRScnVQSTRyZXFUQWNWWkRKRkxRNVE0Wk40M3IydjE0LTNwa0V5U1NnWkNZdDFFZHYxaUVWUVBtd09CaWcxTjBGQ2sxYVRPc1pFMnZ6NnNfcG9zQ29XdmUtSWxYS1JaZ0dacGhaMlpPREQwVXBkU0NGNFpPbURNWV9TemlV?oc=5" target="_blank" rel="noopener">[Barrons] Nvidia Stock Pops. It Should Benefit From OpenAI Spending, Analyst Says.</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">人工智能</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>全球货币与市场情绪</div>
+                <div class="topic-title-en">Global Currency and Market Sentiment</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美元指数跌向四年低点，受日本选举和中国报告引发的'卖出美国'情绪影响。黄金期货重回5000美元以上，反映对美元信心的逐渐侵蚀。这种货币波动可能增加全球市场不确定性，影响大宗商品和跨国企业利润。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/sell-america-fears-drag-dollar-toward-4-year-low-on-japan-election-china-report-a87651a4?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] ‘Sell America’ fears drag dollar toward 4-year low on Japan election, China report</a>
+                    <a href="https://www.marketwatch.com/story/gold-futures-once-again-reclaim-5-000-mark-af3da5ee?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Gold futures reclaim $5,000 mark, buoyed by ‘gradual erosion of confidence’ in the U.S. dollar</a>
+                    <span class="sector-tag">外汇</span>
+                    <span class="sector-tag">大宗商品</span>
+                    <span class="sector-tag">全球市场</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>地缘政治与政策发展</div>
+                <div class="topic-title-en">Geopolitical and Policy Developments</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    日本首相高市早苗历史性选举胜利推动日股大涨，显示政治稳定对市场的积极影响。美国国会推进住房可负担性方案，旨在缓解住房成本问题，可能提振房地产行业。特朗普计划四月访华，地缘政治动态可能影响中美贸易关系和全球市场。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cjd9k852zdjo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] Japanese stocks surge as Takaichi secures historic election victory</a>
+                    <a href="https://www.cnbc.com/2026/02/09/housing-affordability-prices-congress.html" target="_blank" rel="noopener">[CNBC] Housing affordability package set to advance in Congress amid home-cost concerns</a>
+                    <a href="https://www.investing.com/news/economy-news/trump-to-visit-beijing-for-meeting-with-xi-jinping-in-april-93CH-4494891" target="_blank" rel="noopener">[Investing.com] Trump to visit Beijing for meeting with Xi Jinping in April</a>
+                    <span class="sector-tag">日本股市</span>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">地缘政治</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>制药与医疗保健问题</div>
+                <div class="topic-title-en">Pharmaceutical and Healthcare Issues</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    FDA对诺和诺德肥胖药广告发出警告，凸显制药公司营销合规风险。Hims & Hers因减肥药策略失败股价暴跌24%，表明减肥药市场竞争激烈。AI聊天机器人提供不良健康建议的研究可能阻碍医疗AI发展，影响相关投资。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/fda-novo-nordisk-wegovy-tv-ad.html" target="_blank" rel="noopener">[CNBC] FDA says Novo Nordisk's TV ad for obesity pill includes 'false or misleading' claims</a>
+                    <a href="https://news.google.com/rss/articles/CBMirwNBVV95cUxOT0cxTU8zMjdpSmJna0I5MHIxM24tWWt5RElIaE9ZME5FbFlyRnUweVl4WWQ4VWhRZFBBeHdQVnFzRUNDN1pIYUNOYnFaUC1QWVlmUENnU254RW8xeGtUeEd5ZXp6OVluU3BDVDVoZ2lTRGZSQUZlcTRqYjdhZTdWS1pmOWx6MG5kaVVJTUhBOVZCVnFCU1FDbUJ1QUpFVkJyWVpVbUdkTm5hcDllVjZTOEhaTHo0MDJYY0pJQ3Nra181WTFfMGV6YkplX2RHVjlLMG53R3hGakJKdzU5NlNUMDh6M2lyajJHZ3dSVFBDQVcyTDlWMkswejRNczctc3g5ZExXcUkwSmU2TVlSaDVxWFZtMlVBRVpycm1BYnZpOUtGZmtwOFB4UExJNE9EWWJUM2F4cE9EXzZOZkFUVGdyUEkwOEx5OW9mRE4zM0Rlc1VJX0FheFdBMmMwV2EyZ0hrMjBYSDdReVVjRzZuYkgzbnFGSnVWZUxJR0RHOWRSLWIwLWhnMU1uYW9KbjFCSW9kVHFacmN1SnA2YkZjUFBIQVBrSEZiNDgyYlY1dGl2VQ?oc=5" target="_blank" rel="noopener">[Barrons] Hims & Hers Stock Plunges 24%. Its Weight-Loss Drug Strategy Backfired.</a>
+                    <span class="sector-tag">制药</span>
+                    <span class="sector-tag">医疗保健</span>
+                    <span class="sector-tag">人工智能医疗</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>企业重组与并购</div>
+                <div class="topic-title-en">Corporate Restructuring and M&A</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    化妆品品牌Barry M被竞争对手Warpaint收购，反映美容行业整合趋势。Target增加门店员工投资并削减500个职位，以改善客户体验，显示零售业向服务转型。Workday和Kyndryl的CEO变动导致股价下跌，强调领导层稳定性的重要性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c98q50gd2vmo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] Make-up brand Barry M bought by rival Warpaint</a>
+                    <a href="https://www.cnbc.com/2026/02/09/target-store-investment-job-cuts-customer-experience.html" target="_blank" rel="noopener">[CNBC] Target steps up investment in store staffing, cuts about 500 other roles to help fix customer experience</a>
+                    <a href="https://news.google.com/rss/articles/CBMihwNBVV95cUxQWTMxSnJQMThQcUlzYXpncGRyRXdXWDJKTklnQWNWRmNyQWw5UkJ1U2xtc0VaUjFfcTVOV0dQU2hQTnJCdm9DWU9lN2tJanc0YXhrQV81Z21JTTBBbmRhNm1GRGNJYW8yaTZmZmVFU3NjbjY0SWlBR3cxZU9YOC1IT2pGWmR5RHdIQmNQVFl0SWpPM0xOUHU1dmZUWlEwblBTT0dRWE5yMFVTQ3ZvQkdqOFZiSGNRSGlPUEo3eHRPa3ptbHVIY3UzX0hqdTdMclhzdEJMSmVOcE03OGZWRzVyVmtSQjdLVWVubl8taWZZV1BwNFJSUHVIdGN4X25ZRUFjWjMtQ2I3dG4wTmszcTBpZThFOE9QU0p3cEEtTHI3a0NOcW5QcjBiWjE4ZzE5X2VfMTEwTU1oN1hOUnpzU0FFTjVmMEdZZ3BvVWxpdDUxZEFNUjVES01tLW52em1lLTgzSTl1elU3TUNxdmJYWW1ra3hWWm9ab1BVYWxTdUhoSTVha3JqNXJj?oc=5" target="_blank" rel="noopener">[Barrons] Kyndryl Stock: How Earnings, Accounting, and a CEO Change Led to a 56% Plunge</a>
+                    <span class="sector-tag">消费品</span>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">企业软件</span>
+                    <span class="sector-tag">IT服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>加密货币市场动态</div>
+                <div class="topic-title-en">Cryptocurrency Market Dynamics</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美联储官员沃勒表示特朗普引发的加密货币狂热正在消退，市场抛售加剧。比特币、以太坊等主要加密货币下跌，但分析师预计可能反弹，因长期采用趋势仍在。加密货币市场受监管和政策风险影响，波动性高，投资者需谨慎。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/feds-waller-says-trump-crypto-euphoria-fading-amid-market-selloff-93CH-4494892" target="_blank" rel="noopener">[Investing.com] Fed’s Waller says Trump crypto euphoria fading amid market selloff</a>
+                    <a href="https://news.google.com/rss/articles/CBMihgNBVV95cUxOMEtGbnVsZDRCZ3BXcldLZ1NLYURZSHRhTkhuSzZvWElHX3UFS09iUUdwcl83N0ViQXI0Y1dHSjdqWkUxaEJRNHNsTDlaU0lIYVIzRlg3VEJObzZhc3BINEFMVTg5cGRZdHlUSUN5NHZJZWVJdEcwMHlnaks5alBYeTFTRXlJeDU1b09xQzRGY0RqQWFNQ2xLaEhrM1hqNnIzVWhETGpBcmRCVUlqeGxHaUhla09pSTByQU1rSkJGcVhWaEZHRVdSN3R1S2ZSZWxtNUJHdDFfZkZkMGFWYWxiNV84WkVSOW5YX3hLTkhTWHg4MmxwNy1ZSE10Tnc2bHZDTGRndms3akdPMkpyMy12X1p0VllrLU5ER3FqNi1ZOWMyeUEwQ0IwWmVic1RSWFRSSVk2SjRuanpVUVExSURTRVdTOWxpT2x5WENYcXZDbGdwTDVYVFZnRHEwWHNVVmpFclhrTEtNQXNQdndLOWRsTGpmYmZrQk5vT1J6WU00aF8yZXBWWUE?oc=5" target="_blank" rel="noopener">[Barrons] Bitcoin, Ethereum, XRP Fall. Why There’s Hope for a Crypto Rally.</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">区块链</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>长期投资趋势变化</div>
+                <div class="topic-title-en">Long-term Investment Shifts</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    企业面临灭绝风险除非保护自然，报告强调可持续发展成为投资关键因素。Alphabet计划发行科技界首支100年期债券，显示长期资本配置信心。中国从窃取创意转向保护知识产权，反映创新战略转变，影响全球技术竞争格局。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cq8g20xgdjwo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] Businesses face extinction unless they protect nature, major report warns</a>
+                    <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxOblR3eEQ1Q0dUbEJxY1g4ekIzQ09aV0I4MFJXUC1oVjBHaEpRUHQ5dXJqMUFIcnZYS183Y0gwSWdLY092c3V1SmJDcUtuVU5rbWR6cy14NVU0TTU4bDF0Y0JnZGZkb3QxVUVRaFptZGY2ektjal93ZXU2bkVGNE1UalVITk92UUhlQlV4Qy1LYzBPQlBfLTRSeWtkSHVNWWZWZmhpM0tfVEpHZw?oc=5" target="_blank" rel="noopener">[Bloomberg] Alphabet Plans Tech’s First 100-Year Bond Since Dot-Com Era</a>
+                    <span class="sector-tag">可持续发展</span>
+                    <span class="sector-tag">债券市场</span>
+                    <span class="sector-tag">知识产权</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>日股大涨因日本选举胜利</li>
+                <li>黄金期货突破5000美元关口</li>
+                <li>美元指数跌向四年低点</li>
+                <li>Databricks融资50亿美元估值1340亿美元</li>
+                <li>学生贷款投诉创历史新高</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
