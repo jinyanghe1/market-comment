@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-10 03:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-10 03:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场呈现分化态势，科技股反弹但软件股承压，美元走弱推动黄金上涨，投资者关注AI泡沫与地缘政治风险。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>科技股分化，AI驱动反弹与担忧并存</div>
+                <div class="topic-title-en">Tech Stocks Diverge, AI-Driven Rebound Amid Concerns</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Oracle因与OpenAI和TikTok的合作预期飙升9%，显示云服务商在AI浪潮中受益；但Monday.com因AI颠覆担忧暴跌21%，反映软件股面临结构性挑战。市场对AI泡沫看法分歧，投资者需精选具有核心竞争力的科技股。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/big-tech-stocks-post-selloff-week.html" target="_blank" rel="noopener">[CNBC] Oracle gains 9% as tech tries to bounce back from $1 trillion sell-off</a>
+                    <a href="https://www.cnbc.com/2026/02/09/monday-com-stock-ai-software.html" target="_blank" rel="noopener">[CNBC] Monday.com drops 21% as AI disruption fears mount in software</a>
+                    <a href="https://news.google.com/rss/articles/CBMi-AJBVV95cUxPT2I2NG1jNFVpSHJSX2hqSlhZZDZhMTlQVjdybjVzRmxRdUJOVDdTWnFFRFVKR1ZtNDV3T2JRdERMSzJ0VXFRaVF0WXM8Y3B2a2hjSXNKNG43YUNJTTNnMlpjTkVKeXBxemJQVWxJOHNWM3o2V2JnS0txWlpyTkJScWxhRHlOMXZaaVlPVVB3ZG1HLTc2UjBUM09RaV9aVWtZNUIzUGh4VG5pYVZuaHFVRGRaTW9GS0VmdFFZVHV6S2I2c1FzZXdkOFE3aDdyMDh5aVpFRU8wYmVwUlhIQ0ZBdS1LX2FJYURXd2hjOGM2R2hRUDRJRnZNeHQtblIxWnoxaFVCNUgyVEZKTURjTnFoakJXbXdueVNYWUNmOTdJclRvQ3ZxY01MelJEU1A4emFLNGpheFYtZUNiUUZ5M3QtLU4xQnJFSVRwYUs5VWkwbjdrVUFnZ1ZjOUJPR2tNblVvTWc5b1Yya3ZxRnNZbHpMM0JjR3B3RmRZ?oc=5" target="_blank" rel="noopener">[Barron's] Oracle’s Bets on OpenAI, TikTok Will Pay Off. Buy the Stock, This Analyst Says.</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">软件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>制药行业监管风波，肥胖药市场竞争加剧</div>
+                <div class="topic-title-en">Pharma Regulatory Storm, Intensifying Competition in Obesity Drug Market</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    FDA警告Novo Nordisk肥胖药广告存在误导性 claims，可能影响其市场营销策略并引发监管审查；Novo起诉Hims & Hers以阻止仿制药，显示巨头捍卫市场份额的决心。Hims & Hers股价暴跌24%，反映投资者对仿制药策略的担忧，行业竞争加剧可能压缩利润空间。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/fda-novo-nordisk-wegovy-tv-ad.html" target="_blank" rel="noopener">[CNBC] FDA says Novo Nordisk's TV ad for obesity pill includes 'false or misleading' claims</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQdUJqQXJpWXd6WlJ6UTJIc1Z0RTJheHZnN0ZUdFZBVi1rNG1ZbUNYOTF1N1hmT3FJaWg1YVJiUWttTldjS2FfQWpYYTZGV055b0VfalZiVHUybHpGZ2pwa3l4Rm1tTjliUmhwVUU2TWVPU2ZCR3VqaGJuQzNtZE93NW9aZkdTUHlCUzVOdmZjSkdhemxqbHA5cjRTMUIwZFA3bVlvSXpuWkRhcHFsUWJ4VVc3R2s?oc=5" target="_blank" rel="noopener">[Bloomberg] Novo Nordisk Says It’s Suing Hims to Halt Obesity Drug Copycats</a>
+                    <a href="https://news.google.com/rss/articles/CBMirwNBVV95cUxPZ29LSzdyaW9Kbjk0M1hFdnpMWUpfWFFFdElDYWg4eVFWUFVpSkF6SnZfbzBDQVdiWVkxTTZaNWxqVmVCSXlKcGJLd3hSWHVxMlAwY2dVWl9jaERSRGx2bzlteVVwVDMyRmJqamZoTElkVXRwLXhUX3BVWVF4aFVpdVB5UDVOZ1VYQWFtbGJSb3poZjNLM05FQ1JMY2o1TWxHYzJNbWJSVVVqMWlLNUs2emJkaFdyd200aWR3YTdtYjdxdFhNUVR2Zm0zOG10ZUkycERhMkVLTmFJTTYweDd4LXFDQmVEVTRMMERBYTV6cXFQaVh1TlZ0aGNnVnRqVmxUYXVKR1NNRWFCd3hsNE9FWmxqZlhTVGdvWnp2WjVfWWc3M0tEVTRzY21ZblFsdzZjU2dhQnNHSHpOdGZKOUZSYnhkTnNhSHd3RE41MWpFYzFtV0F1MnhQeDVGU3JSMm9kQzNIMW83MTFKcUVKTlZDQXMxTHROMVhCRHRTRDJodUxaTm80RDdmTkduVzNvdmhEUjBsbUxpVDhxdkJSZTF0dmt4STFpVE1PNzNUVWVQRQ?oc=5" target="_blank" rel="noopener">[Barron's] Hims & Hers Stock Plunges 24%. Its Weight-Loss Drug Strategy Backfired.</a>
+                    <span class="sector-tag">制药</span>
+                    <span class="sector-tag">生物技术</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>美元走弱与黄金大涨，避险情绪升温</div>
+                <div class="topic-title-en">Dollar Weakens and Gold Surges, Safe-Haven Demand Rises</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    美元因日本选举和中国报告跌向4年低点，反映'卖出美国'的担忧，可能加剧全球资本流动；黄金期货突破5000美元，受美元信心逐渐侵蚀和地缘政治紧张推动，凸显其作为避险资产的地位。投资者需关注美元疲软对大宗商品和出口导向型经济体的影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/sell-america-fears-drag-dollar-toward-4-year-low-on-japan-election-china-report-a87651a4?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] ‘Sell America’ fears drag dollar toward 4-year low on Japan election, China report</a>
+                    <a href="https://www.marketwatch.com/story/gold-futures-once-again-reclaim-5-000-mark-af3da5ee?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Gold futures reclaim $5,000 mark, buoyed by ‘gradual erosion of confidence’ in the U.S. dollar</a>
+                    <a href="https://news.google.com/rss/articles/CBMiggNBVV95cUxNbXMwYlUwc1pycjZ5a1d3QVRDOExKV0FxZ1lyUU5MbEd4T25UVE1abVNNRkZvUHJmbnZ3NW5FVHk2NUYyZEtTeXFlX3A1NVVGd2xXS21Ma2hSM3hxVVcxTWFnWEE4cTQ1UmNrZ0NxN2thbHpheXp1REZYb0doRFppMmR0QkpOS1hlMmVFV2tpdk9fMm9URWZObnpvMXZJQVpXVDNhZ3pnWUFGSkl6RkNkOVItYTl6WHNMUE1wYnpWR21USlJtSHdsTUdzYlpxUFBXTFRGUDJSMzJxTThpeE55dkFCZXlaTi1HRDV2RUNRb1NqMHV6ajhkV3RWTEtmRElxYncwZW04X2ZfTVhxLWtESGFwMGZkZzVGWWhSWXVoUjlWemJPTkVaVW1JVEtEd2xnRTJ4UHh0YWt0UWQzbFlxRDB0Z1RyWmRoR0swVnhfNHBHZXBBTkNGNjFDSzI1WjhhTHJwQ2lNSkI0Zm5TSGl5c2FhREc3QTM0eThXTmxHRVRIZw?oc=5" target="_blank" rel="noopener">[Barron's] Gold Pops Back Above $5,000. Blame China for Volatility, Says Bessent.</a>
+                    <span class="sector-tag">外汇</span>
+                    <span class="sector-tag">黄金</span>
+                    <span class="sector-tag">大宗商品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>企业并购与融资活跃，市场信心逐步恢复</div>
+                <div class="topic-title-en">Active M&A and Financing, Gradual Recovery of Market Confidence</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    Databricks完成50亿美元融资，估值达1340亿美元，显示投资者对AI数据平台的长期信心；Transocean以58亿美元股票收购Valaris，巩固海上钻井市场地位，可能推动行业整合。化妆品品牌Barry M被收购，反映消费品行业通过并购寻求增长，投资者可关注整合后的协同效应。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/databricks-completes-5-billion-funding-round-with-2-billion-in-debt.html" target="_blank" rel="noopener">[CNBC] Databricks completes $5 billion funding round at $134 billion valuation</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPVlYtM1M1dGNlQk0xYlZXbXg3NXl0RnhGaUNYMEY4VGYxZ2VJOHREeU9kdFM3NWJheFZlcXhDcUlkQUVoMUktRG1qT3lxbGdHLVNkTjhjQXRiQ18ycjJiWGdyRDV1M2xKeTBpU3pHTUZyVHQ2TGg2UVNPTW1XYWV0MDlXUktMWWVPaHYxOFJGRlhUY0hDQmxjcHNzb3YxWFhJLW5LWTV4VG12UlNhdmNNRjkxUQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Transocean Agrees to Buy Valaris for $5.8 Billion in Stock</a>
+                    <a href="https://www.bbc.com/news/articles/c98q50gd2vmo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Make-up brand Barry M bought by rival Warpaint</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>地缘政治紧张影响市场，航空与能源受冲击</div>
+                <div class="topic-title-en">Geopolitical Tensions Impact Markets, Airlines and Energy Affected</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    古巴禁止国际航空公司加油，特朗普政府施压加剧地缘政治风险，可能推高航空运营成本并影响全球供应链；欧盟准备给予乌克兰逐步成员权利，显示俄乌冲突持续影响欧洲政治经济。日本股市因选举胜利飙升，反映政治稳定对市场的积极影响，但全球紧张局势仍构成下行风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/cuba-airlines-fuel-energy-oil-us-trump-pressure.html" target="_blank" rel="noopener">[CNBC] Cuba says international airlines can no longer refuel there as Trump turns up the pressure</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNY1Y1Qllpb1hJRUxOWkNGSnhQYkUzVE5ydTY4SmprM0h3MXJtdXNGTU50T3llS0FlNjRUODBsRTkwdG1McjZ3WWJiYnpqWG1JdDRBb0tYam1UQXVXb1RsMjhYRkUwUXNYWlA1dzJCTDF5UkRFRVlWOF9wWmY3ZVhHZmlVOEJ6VVhrNF9CZWtwMk9OdHk3QWV2SFdIUm40RGJyeERNYlBNajJpMmJNbGRPZFBQLUhuQQ?oc=5" target="_blank" rel="noopener">[Bloomberg] EU Is Readying Options to Give Ukraine Gradual Membership Rights</a>
+                    <a href="https://www.bbc.com/news/articles/cjd9k852zdjo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Japanese stocks surge as Takaichi secures historic election victory</a>
+                    <span class="sector-tag">航空</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">地缘政治</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>市场估值与AI泡沫辩论，投资者分歧加大</div>
+                <div class="topic-title-en">Market Valuation and AI Bubble Debate, Investor Divergence Widens</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    股市估值偏高，但图表显示AI泡沫担忧可能被夸大，反映出市场对科技长期增长潜力的信心；科技股从万亿美元抛售中反弹，但软件股仍承压，显示投资者在AI主题中更加选择性。投资者需警惕高估值风险，同时关注具有实质创新和盈利能力的公司。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/the-stock-market-looks-expensive-but-this-chart-shows-why-ai-bubble-fears-in-tech-may-be-overblown-13f556d1?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The stock market looks expensive — but this chart shows why AI bubble fears in tech may be overblown</a>
+                    <a href="https://www.cnbc.com/2026/02/09/big-tech-stocks-post-selloff-week.html" target="_blank" rel="noopener">[CNBC] Oracle gains 9% as tech tries to bounce back from $1 trillion sell-off</a>
+                    <a href="https://news.google.com/rss/articles/CBMi6gJBVV95cUxPaXA2UzJGTjNhVHhVcHNTb0JILUZRY2ZCTS01YllwdE5VWWNJbjl5dTRCNFU5TS0yT1VlU3FkRlVVRFhyOVhBWnI4VGotekt3WVlJZG1OVGItYkt3RUFvZkdNTV9oNTNkSVJSVDFpVVU2cl9WS3BPbFpocG4ySTYyMlRCNEJQX3lpNjNxcl9VTFpNczNzcTd3LV94b2Vock5YRHltclRWZWlIZDVWb0owdEFISTU0dEE1R3RXUUtZcGdNMDN6UHhCS0Z0MWlpVEt4ZFFsMTNZM3pBbng4LWwtTUVIazhzenppVER2R016Z3g3d0tDY29lTmVuQmZobkNueWktRjByaWdpMHkwRlAtb0hvRXlRVEJ2RktlRnNYb3AybVRNOFJLNlVYT2dYRklvNWh3VGp2VENNdkJNRjlBUEpwNUtCeWlmTUdwMkVkaTdUWUtUd3VLYjlsUGtrN3lFNURWT1RNRzVSdw?oc=5" target="_blank" rel="noopener">[Barron's] These Stocks Are Today’s Movers: Kyndryl, Hims & Hers, Novo Nordisk, AppLovin, Monday.com, Valaris, and More</a>
+                    <span class="sector-tag">整体市场</span>
+                    <span class="sector-tag">科技</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美元跌向4年低点</li>
+                <li>黄金期货突破5000美元</li>
+                <li>Databricks估值1340亿美元</li>
+                <li>Novo Nordisk肥胖药广告被FDA警告</li>
+                <li>日本股市因选举飙升</li>
+                <li>北欧电力价格创2022年以来新高</li>
+                <li>Oracle股票上涨9%</li>
+                <li>Monday.com股票下跌21%</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
