@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-09 18:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-09 18:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">日本大选推动股市飙升，美国经济数据前夕国债收益率上升，减肥药市场变动显著，私人信贷担忧再起，地缘政治紧张影响航空能源板块，科技行业持续创新。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>日本大选推动股市飙升</div>
+                <div class="topic-title-en">Japanese Election Drives Market Surge</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    日本自民党总裁高市早苗赢得历史性选举胜利，市场预期其政策将延续宽松货币和财政刺激，推动日经225指数创历史新高，日元兑美元汇率接近160关口。投资者关注其政策对日本国债收益率和全球资本流动的影响，这可能加剧全球金融市场波动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cjd9k852zdjo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Japanese stocks surge as Takaichi secures historic election victory</a>
+                    <a href="https://www.cnbc.com/2026/02/09/japan-election-sanae-takaichi-markets-yen-bonds-nikkei-225-jgb-160-usd-ldp.html" target="_blank" rel="noopener">[CNBC] Yen near 160, a record Nikkei 225, higher yields: What experts expect after Sanae Takaichi's landslide victory</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxObDBPcDlodXRnLUN1R2hQMVB3djJjcFJhMU40NGo3UGtKNjJQa0dCXzhJWkEwZTBNVlBhUlIxb2VlVlROemp4V3lVM01Fd0RfWmtYdElzQkszS0FkWWRSOUdmX1FGVWwyWmZ2WHc0aE9vNzJMYUZQUVZLakpETFA4YThLM3FqSFIyZ2JpcXcxMndQUjhLX2FfcTRZNkRpc1I2Sk1uNmppLXFJS3J3eThaLXNMcw?oc=5" target="_blank" rel="noopener">[Bloomberg] Yen Swings After Takaichi Win, Asia Stocks to Rise: Markets Wrap</a>
+                    <span class="sector-tag">日本股市</span>
+                    <span class="sector-tag">日元汇率</span>
+                    <span class="sector-tag">全球债券市场</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>减肥药市场竞争加剧，诺和诺德受益</div>
+                <div class="topic-title-en">Weight-Loss Drug Market Intensifies, Novo Nordisk Benefits</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Hims & Hers 突然撤回口服 Wegovy 仿制药计划，导致其股价暴跌，而诺和诺德股价上涨8%。这凸显了减肥药市场的高壁垒和诺和诺德的领先地位，但同时也表明市场竞争可能加剧，投资者需关注专利保护和监管风险对行业格局的长期影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/novo-nordisk-hims-hers-wegovy-compounded-copycat.html" target="_blank" rel="noopener">[CNBC] Novo Nordisk pops 8% after Hims & Hers pulls copycat Wegovy weight-loss pill</a>
+                    <a href="https://www.marketwatch.com/story/hims-hers-stock-poised-for-heavy-losses-after-quick-u-turn-on-plan-for-oral-wegovy-competitor-c859798e?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Hims & Hers stock poised for heavy losses after quick U-turn on plan for oral Wegovy competitor</a>
+                    <a href="https://www.investing.com/news/stock-market-news/novo-nordisk-shares-jumps-as-hims-pulls-49-compounded-weightloss-pill-4492716" target="_blank" rel="noopener">[Investing.com] Novo Nordisk jumps, Hims shares plummet after pulling $49 weight-loss pill</a>
+                    <span class="sector-tag">制药</span>
+                    <span class="sector-tag">医疗保健</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>美国国债收益率上升，关注经济数据</div>
+                <div class="topic-title-en">U.S. Treasury Yields Rise as Investors Await Economic Data</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国国债收益率走高，投资者等待本周关键的就业和通胀数据。这些数据将影响美联储的货币政策路径，进而对全球资产定价产生重大影响。市场情绪谨慎，股市期货在波动后略有上涨，反映出对经济软着陆的预期与通胀担忧之间的平衡。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/us-treasury-yields-investors-await-busy-week-of-economic-data.html" target="_blank" rel="noopener">[CNBC] U.S. Treasury yields move higher as investors await busy week of economic data</a>
+                    <a href="https://www.cnbc.com/2026/02/08/here-are-the-5-big-things-were-watching-in-the-stock-market-this-week.html" target="_blank" rel="noopener">[CNBC] Here are the 5 big things we're watching in the stock market this week</a>
+                    <a href="https://www.marketwatch.com/story/u-s-stock-futures-rise-after-a-wild-week-on-wall-street-ahead-of-key-jobs-and-inflation-reports-60e29ed8?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] U.S. stock futures rise after a wild week on Wall Street, ahead of key jobs and inflation reports</a>
+                    <span class="sector-tag">债券市场</span>
+                    <span class="sector-tag">股市</span>
+                    <span class="sector-tag">货币政策敏感板块</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>私人信贷市场担忧再起，AI压力软件公司</div>
+                <div class="topic-title-en">Private Credit Worries Resurface as AI Pressures Software Firms</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    在3万亿美元的私人信贷市场中，担忧情绪再次浮现，因为人工智能的发展给软件公司带来压力，可能导致违约风险上升。这提醒投资者在追求高收益时需警惕信用风险，特别是科技行业债务，并可能引发更广泛的信贷紧缩。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/private-credit-software-firms-fall-ai-fears.html" target="_blank" rel="noopener">[CNBC] Private credit worries resurface in $3 trillion market as AI pressures software firms</a>
+                    <span class="sector-tag">私人信贷</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">科技金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>古巴燃料危机引发地缘政治紧张</div>
+                <div class="topic-title-en">Cuba Fuel Crisis Sparks Geopolitical Tensions</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    古巴宣布国际航空公司无法在其境内加油，因美国特朗普政府加大压力，墨西哥派遣人道主义援助船只。这可能导致航空公司成本上升，并加剧美洲地区的地缘政治风险，影响能源和航空板块，进而波及全球供应链和旅游行业。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/cuba-airlines-fuel-energy-oil-us-trump-pressure.html" target="_blank" rel="noopener">[CNBC] Cuba says international airlines can no longer refuel there as Trump turns up the pressure</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPbGxfWFFpeDNjV08wX2VHYUN2NUZOWWhLU1k4OXNEU2pWdXEyU0xMSzMwZHRTLTlINWR0cVgxc1JBeUtxR1RtVlVhbVBJVjVmZVpZNE83bmhYYU9rMTBVNGNnVjdCc2RuYjRzNW9xNFZoMXo5eWdSQzdraWJXOXIzSnZZYlRvOVN5aWYwQVJwUHJGYjJ6Y3AxdkVjbUJ2UERWYVlORVo1TWtudE5ZcEhhTUJKaXhmUQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Cuba Tells Airlines It Can’t Refuel as Nicaragua Ends Easy Entry</a>
+                    <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQRElULWV4aHg1bGdacXgtWXNSUHZGVU9hcWVXcjNGRldWb3hVRjhUWllyNHlGbHhMMElKbmNhN01GbGdwNHBodGh2NUVaZDFnY1F3OXc3ZGVhQzdvZ3JxVkRoZnp2VTBKRmJnZDdJaWVVTDhnQU1kazZmZWo3a3ZMNTdWWElXUmJpRVZrejFPcGpBTHdheEVEUUY4NVlFZ3RzYXI1V0FxcWJzYmlE?oc=5" target="_blank" rel="noopener">[Bloomberg] Mexico Dispatches Two Ships to Cuba With Humanitarian Aid</a>
+                    <span class="sector-tag">航空</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">地缘政治敏感板块</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>科技行业动态：AI芯片与工作制度变革</div>
+                <div class="topic-title-en">Tech Sector Dynamics: AI Chips and Work System Changes</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    三星即将大规模生产AI芯片，推动股价上涨，这对美光等存储芯片公司有重要意义，可能重塑半导体竞争格局。同时，部分科技公司采用72小时工作周，反映行业效率追求和劳动力市场变革，人工智能持续成为焦点，投资者应关注技术突破和商业模式变化带来的投资机会。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cvgn2k285ypo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] The tech firms embracing a 72-hour working week</a>
+                    <a href="https://news.google.com/rss/articles/CBMihANBVV95cUxPOEZ1RDVmeWFEX3NZb3BiU2tmaXZCRGxvdU1KNlgtTnVDV1U3WmlyYkdwRm1mV2lWQmFTdGlSTnFWS1lDMHRJLU00ckRoN1hfUlhsY2ppOU5aQnFsUXBDYUV1LXpFQzU2ai1TdEp4THIzY3J5OUxxb2Nid1dRV0pTREJ0QlJtWFZNY2hDbTYtbUhhUFJRd0YtTDhHQzRidW42cktDczBsMFV5TkRIS0IzU3dnTHoxc1V5YmR3Y1FMZzlIVjZvNzZNN1plM2hGTlRmYlZDTjRMNXVlNlBJVlFRcDQ4OXRySkl6RGpyblJDUXhUS2Y2UGN6SEZhUk9uSC1XU1VucjNrdmlnMXRHOWh5U3hmMVlaUzZDbFRIZ2lFNTNoTjNYekdPd2cwS0RWNkZIXzhsb2ZKZFZiQnNrQlVHZE5vcW1BVHN4UXRSMWRlR2VzNTZtV2ppaEk4eDZsWEVRZ21SQjFndW02V240MlFsb1FKNndFem1Leks0azBkZjhIdlJo?oc=5" target="_blank" rel="noopener">[Barrons] Samsung Stock Rises on Report MBM Chips Are Coming. It Matters for Micron.</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNbU5TUXFVUXEtcUJSV3pLZkMwdHNHakpjRFpYNDQweXlIN1o1OE00WE1MWmhtTGhkNUVkNVlfT1FiTWJscmZBNXFMVS0wbVhqOXg5cllodHZEWDVrZ0lVQVVEcHBOSjhNMEVJN1AySV9wVWt3M3hsWjRYSFlvQjBYUDR0MGVSZ2pIQTJOeW5CNWhnZGhGMks5QlZqU1c4S3EwR0JUNDRPNTlNbkFmUEFieTBlS0M?oc=5" target="_blank" rel="noopener">[Bloomberg] Samsung Stock Rises After Report on Mass Production of AI Chips</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">科技公司</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>日经225指数创历史新高</li>
+                <li>美元兑日元汇率接近160</li>
+                <li>美国10年期国债收益率上升</li>
+                <li>诺和诺德股价上涨8%</li>
+                <li>Hims & Hers 股价暴跌</li>
+                <li>比特币跌破70,000美元</li>
+                <li>黄金价格突破5,000美元</li>
+                <li>三星AI芯片大规模生产</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>

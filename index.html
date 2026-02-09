@@ -559,6 +559,77 @@
             font-size: 14px;
         }
 
+        /* ── Topbar Search ── */
+        .topbar-search {
+            position: relative;
+        }
+        .topbar-search input {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 4px;
+            color: #fff;
+            font-size: 12px;
+            padding: 5px 12px 5px 28px;
+            width: 180px;
+            outline: none;
+            transition: width 0.25s, border-color 0.2s;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.5)' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: 8px center;
+        }
+        .topbar-search input::placeholder { color: rgba(255,255,255,0.45); }
+        .topbar-search input:focus {
+            width: 260px;
+            border-color: var(--wp-gold);
+            background-color: rgba(255,255,255,0.18);
+        }
+        .search-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin-top: 6px;
+            width: 340px;
+            max-height: 400px;
+            overflow-y: auto;
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            z-index: 200;
+        }
+        .search-dropdown.active { display: block; }
+        .search-item {
+            display: block;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--wp-border);
+            transition: background 0.15s;
+            color: var(--wp-text);
+        }
+        .search-item:last-child { border-bottom: none; }
+        .search-item:hover { background: #f5f7fa; color: var(--wp-text); }
+        .search-item .si-title {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        .search-item .si-meta {
+            font-size: 11px;
+            color: var(--wp-text-light);
+        }
+        .search-item mark {
+            background: rgba(212,168,67,0.3);
+            color: inherit;
+            padding: 0 1px;
+            border-radius: 2px;
+        }
+        .search-empty {
+            padding: 20px 16px;
+            font-size: 13px;
+            color: var(--wp-text-light);
+            text-align: center;
+        }
+
         /* ── Responsive ── */
         @media (max-width: 900px) {
             .main-layout {
@@ -586,6 +657,9 @@
         }
 
         @media (max-width: 480px) {
+            .topbar-search input { width: 120px; }
+            .topbar-search input:focus { width: 160px; }
+            .search-dropdown { width: 280px; }
             .topbar { display: none; }
             .site-header { padding: 32px 16px; }
             .hero-banner { padding: 40px 16px; }
@@ -604,47 +678,40 @@
      ══════════════════════════════════════════════════════ -->
 <script>
 var SITE_DATA = {
-    // 市场月度评论 - 最新的排在最前面
-    monthlyReports: [
+    "monthlyReports": [
         {
-            title: '2026年1月市场月度评论：17连阳后的结构分化与春季布局',
-            heroTitle: '2026年1月 · 资本市场月度评论',
-            subtitle: '沪指17连阳破十年纪录，港股月涨近7%。AI与贵金属双主线驱动，春季攻势强势启幕。深度解读市场结构、板块轮动与配置策略。',
-            excerpt: 'A股以沪指17连阳的历史性走势拉开2026年帷幕，两市成交额突破3.6万亿元刷新纪录。AI产业链与贵金属板块形成双主线格局，港股恒指月涨近7%创4年半新高。本文从权益市场、大宗商品、宏观政策三个维度进行系统性梳理，并给出2月配置建议。',
-            url: '市场月度评论/2026jan.html',
-            date: '2026-02-04',
-            author: '市场策略研究团队',
-            stats: [
-                { label: '上证综指', value: '4,117', change: '+3.76%', up: true },
-                { label: '恒生指数', value: '27,387', change: '+6.85%', up: true },
-                { label: 'COMEX黄金', value: '$4,604', change: '+5.2%', up: true },
-                { label: 'WTI原油', value: '$59.12', change: '-6.8%', up: false }
-            ]
+            "title": "2026年1月 · 资本市场月度评论",
+            "url": "市场月度评论/2026jan.html",
+            "date": "2026-02-04",
+            "excerpt": "沪指17连阳破十年纪录，港股月涨近7%——AI与资源双主线交辉，春季攻势强势启幕"
         }
     ],
-    // 趋势和类别评论 - 最新的排在最前面
-    trendArticles: [
+    "trendArticles": [
         {
-            title: 'The SaaSpocalypse | 当AI代理和美联储联手碾压SaaS',
-            excerpt: '当150万AI代理在72小时内涌入一个社交网络，当美联储将利率悬在高位不放——一场价值2850亿美元的软件股灾难就此拉开序幕。这不是泡沫破裂，这是范式转移。',
-            url: '趋势和类别评论/how_moltbook_and_fed_crushed_the_saas.html',
-            date: '2026-02-08',
-            category: 'SaaS · AI'
+            "title": "The Sanaeconomics is Back | 高市早苗经济学深度解构",
+            "url": "趋势和类别评论/the_Sanaeconomics_is_back.html",
+            "date": "2026-02-09",
+            "excerpt": ""
         },
         {
-            title: 'The Big Golden Bust | 贵金属市场深度分析',
-            excerpt: '从历史新高到惊魂暴跌：贵金属市场一周多空博弈全景透视。全球媒体如何报道这场"黄金风暴"，主要贵金属价格与期货走势深度解析。',
-            url: '趋势和类别评论/The_Big_golden_bust.html',
-            date: '2026-02-08',
-            category: '贵金属'
+            "title": "The SaaSpocalypse | 当AI代理和美联储联手碾压SaaS",
+            "url": "趋势和类别评论/how_moltbook_and_fed_crushed_the_saas.html",
+            "date": "2026-02-08",
+            "excerpt": ""
+        },
+        {
+            "title": "The Big Golden Bust | 贵金属市场深度分析",
+            "url": "趋势和类别评论/The_Big_golden_bust.html",
+            "date": "2026-02-08",
+            "excerpt": "从历史新高到惊魂暴跌：贵金属市场一周多空博弈全景透视"
         }
     ],
-    // 每日评论 - 最新的排在最前面
-    dailyComments: [
+    "dailyComments": [
         {
-            title: '每日评论 2026-02-04',
-            url: '每日评论/040226.html',
-            date: '2026-02-04'
+            "title": "每日评论 - 2026年02月09日",
+            "url": "每日评论/090226.html",
+            "date": "2026-02-09",
+            "excerpt": "全球市场情绪分化，亚洲股市在激进政策预期下强势领涨，而美国市场在关键数据前保持谨慎，日元与黄金等避险资产波动加剧。"
         }
     ]
 };
@@ -653,8 +720,12 @@ var SITE_DATA = {
 <!-- ── Top Bar ── -->
 <div class="topbar">
     <div>Capital Markets Research</div>
-    <div>
+    <div style="display:flex;align-items:center;gap:14px;">
         <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <div class="topbar-search">
+            <input type="text" id="searchInput" placeholder="搜索文章..." autocomplete="off">
+            <div id="searchResults" class="search-dropdown"></div>
+        </div>
     </div>
 </div>
 
@@ -684,7 +755,10 @@ var SITE_DATA = {
     <main class="posts-section">
         <!-- 月度评论 -->
         <div id="monthly">
-            <h2 class="standalone-title">月度评论 / Monthly Review</h2>
+            <div class="section-header">
+                <h2>月度评论 / Monthly Review</h2>
+                <a href="市场月度评论/index.html" class="more-link">更多 &rarr;</a>
+            </div>
             <div id="monthlySection"></div>
         </div>
 
@@ -718,10 +792,47 @@ var SITE_DATA = {
   <div class="widget-body" style="padding:16px 20px;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
       <span style="font-size:12px;font-weight:700;color:#3498db;">&#9670; 分化</span>
-      <span style="font-size:11px;color:#999;">2026-02-09 17:01</span>
+      <span style="font-size:11px;color:#999;">2026-02-09 18:00</span>
     </div>
-    <p style="font-size:13px;color:#555;margin-bottom:14px;line-height:1.6;">数据更新中...</p>
-    <p style="font-size:13px;color:#999;text-align:center;padding:16px 0;">数据更新中...</p>
+    <p style="font-size:13px;color:#555;margin-bottom:14px;line-height:1.6;">日本大选推动股市飙升，美国经济数据前夕国债收益率上升，减肥药市场变动显著，私人信贷担忧再起，地缘政治紧张影响航空能源板块，科技行业持续创新。</p>
+    <div style="border-top:1px solid #e2e4e7;padding-top:12px;">
+      <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
+        <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
+          <span style="color:#e74c3c;margin-right:4px;">1.</span>日本大选推动股市飙升
+        </div>
+        <div style="font-size:11px;color:#999;"><a href="https://www.bbc.com/news/articles/cjd9k852zdjo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">BBC Business</a> | <a href="https://www.cnbc.com/2026/02/09/japan-election-sanae-takaichi-markets-yen-bonds-nikkei-225-jgb-160-usd-ldp.html" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">CNBC</a></div>
+      </div>
+      <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
+        <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
+          <span style="color:#999;margin-right:4px;">2.</span>减肥药市场竞争加剧，诺和诺德受益
+        </div>
+        <div style="font-size:11px;color:#999;"><a href="https://www.cnbc.com/2026/02/09/novo-nordisk-hims-hers-wegovy-compounded-copycat.html" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">CNBC</a> | <a href="https://www.marketwatch.com/story/hims-hers-stock-poised-for-heavy-losses-after-quick-u-turn-on-plan-for-oral-wegovy-competitor-c859798e?mod=mw_rss_topstories" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">MarketWatch</a></div>
+      </div>
+      <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
+        <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
+          <span style="color:#999;margin-right:4px;">3.</span>美国国债收益率上升，关注经济数据
+        </div>
+        <div style="font-size:11px;color:#999;"><a href="https://www.cnbc.com/2026/02/09/us-treasury-yields-investors-await-busy-week-of-economic-data.html" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">CNBC</a> | <a href="https://www.cnbc.com/2026/02/08/here-are-the-5-big-things-were-watching-in-the-stock-market-this-week.html" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">CNBC</a></div>
+      </div>
+      <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
+        <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
+          <span style="color:#27ae60;margin-right:4px;">4.</span>私人信贷市场担忧再起，AI压力软件公司
+        </div>
+        <div style="font-size:11px;color:#999;"><a href="https://www.cnbc.com/2026/02/09/private-credit-software-firms-fall-ai-fears.html" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">CNBC</a></div>
+      </div>
+      <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
+        <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
+          <span style="color:#27ae60;margin-right:4px;">5.</span>古巴燃料危机引发地缘政治紧张
+        </div>
+        <div style="font-size:11px;color:#999;"><a href="https://www.cnbc.com/2026/02/09/cuba-airlines-fuel-energy-oil-us-trump-pressure.html" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">CNBC</a> | <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPbGxfWFFpeDNjV08wX2VHYUN2NUZOWWhLU1k4OXNEU2pWdXEyU0xMSzMwZHRTLTlINWR0cVgxc1JBeUtxR1RtVlVhbVBJVjVmZVpZNE83bmhYYU9rMTBVNGNnVjdCc2RuYjRzNW9xNFZoMXo5eWdSQzdraWJXOXIzSnZZYlRvOVN5aWYwQVJwUHJGYjJ6Y3AxdkVjbUJ2UERWYVlORVo1TWtudE5ZcEhhTUJKaXhmUQ?oc=5" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Bloomberg</a></div>
+      </div>
+      <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
+        <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
+          <span style="color:#e74c3c;margin-right:4px;">6.</span>科技行业动态：AI芯片与工作制度变革
+        </div>
+        <div style="font-size:11px;color:#999;"><a href="https://www.bbc.com/news/articles/cvgn2k285ypo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">BBC Business</a> | <a href="https://news.google.com/rss/articles/CBMihANBVV95cUxPOEZ1RDVmeWFEX3NZb3BiU2tmaXZCRGxvdU1KNlgtTnVDV1U3WmlyYkdwRm1mV2lWQmFTdGlSTnFWS1lDMHRJLU00ckRoN1hfUlhsY2ppOU5aQnFsUXBDYUV1LXpFQzU2ai1TdEp4THIzY3J5OUxxb2Nid1dRV0pTREJ0QlJtWFZNY2hDbTYtbUhhUFJRd0YtTDhHQzRidW42cktDczBsMFV5TkRIS0IzU3dnTHoxc1V5YmR3Y1FMZzlIVjZvNzZNN1plM2hGTlRmYlZDTjRMNXVlNlBJVlFRcDQ4OXRySkl6RGpyblJDUXhUS2Y2UGN6SEZhUk9uSC1XU1VucjNrdmlnMXRHOWh5U3hmMVlaUzZDbFRIZ2lFNTNoTjNYekdPd2cwS0RWNkZIXzhsb2ZKZFZiQnNrQlVHZE5vcW1BVHN4UXRSMWRlR2VzNTZtV2ppaEk4eDZsWEVRZ21SQjFndW02V240MlFsb1FKNndFem1Leks0azBkZjhIdlJo?oc=5" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Barrons</a></div>
+      </div>
+    </div>
   </div>
 </div>
 <!-- NEWS_WIDGET_END -->
@@ -885,94 +996,23 @@ var SITE_DATA = {
 
 <script>
 /* ══════════════════════════════════════════════════════
-   动态渲染函数
+   动态渲染函数（自动读取 SITE_DATA）
    ══════════════════════════════════════════════════════ */
 
-function renderHero() {
-    var report = SITE_DATA.monthlyReports[0];
-    if (!report) return;
-    var el = document.getElementById('heroBanner');
-    var statsHtml = '';
-    report.stats.forEach(function(s) {
-        statsHtml += '<div class="hero-stat-card">' +
-            '<div class="stat-label">' + s.label + '</div>' +
-            '<div class="stat-value">' + s.value + '</div>' +
-            '<div class="stat-change ' + (s.up ? 'stat-up' : 'stat-down') + '">' + s.change + '</div>' +
-            '</div>';
-    });
-    el.innerHTML = '<div class="hero-inner">' +
-        '<div>' +
-            '<span class="hero-badge">Latest Report</span>' +
-            '<h2>' + report.heroTitle + '</h2>' +
-            '<p>' + report.subtitle + '</p>' +
-            '<a href="' + report.url + '" class="hero-btn">阅读全文 &rarr;</a>' +
-        '</div>' +
-        '<div class="hero-stats">' + statsHtml + '</div>' +
-        '</div>';
-}
-
-function renderMonthly() {
-    var el = document.getElementById('monthlySection');
-    var html = '';
-    SITE_DATA.monthlyReports.forEach(function(r, i) {
-        html += '<article class="post-card' + (i === 0 ? ' featured' : '') + '">' +
-            '<div class="post-card-body">' +
-                '<div class="post-meta">' +
-                    '<span class="category">月度评论</span>' +
-                    '<span>' + r.date + '</span>' +
-                    '<span>' + r.author + '</span>' +
-                '</div>' +
-                '<h3><a href="' + r.url + '">' + r.title + '</a></h3>' +
-                '<p class="post-excerpt">' + r.excerpt + '</p>' +
-                '<a href="' + r.url + '" class="read-more">阅读全文 &rarr;</a>' +
-            '</div>' +
-        '</article>';
-    });
-    el.innerHTML = html;
-}
-
-function renderTrends() {
-    var el = document.getElementById('trendSection');
-    var articles = SITE_DATA.trendArticles.slice(0, 5);
-    if (articles.length === 0) {
+function renderCards(containerId, articles, categoryLabel, emptyMsg) {
+    var el = document.getElementById(containerId);
+    if (!articles || articles.length === 0) {
         el.innerHTML = '<article class="post-card"><div class="post-card-body">' +
             '<div class="coming-soon"><div class="cs-icon">&#9998;</div>' +
-            '<p>趋势与类别评论即将发布，敬请期待。</p></div></div></article>';
+            '<p>' + emptyMsg + '</p></div></div></article>';
         return;
     }
     var html = '';
-    articles.forEach(function(a) {
-        html += '<article class="post-card">' +
+    articles.forEach(function(a, i) {
+        html += '<article class="post-card' + (i === 0 && categoryLabel === '月度评论' ? ' featured' : '') + '">' +
             '<div class="post-card-body">' +
                 '<div class="post-meta">' +
-                    '<span class="category">趋势研究</span>' +
-                    '<span>' + a.date + '</span>' +
-                    (a.category ? '<span>' + a.category + '</span>' : '') +
-                '</div>' +
-                '<h3><a href="' + a.url + '">' + a.title + '</a></h3>' +
-                '<p class="post-excerpt">' + a.excerpt + '</p>' +
-                '<a href="' + a.url + '" class="read-more">阅读全文 &rarr;</a>' +
-            '</div>' +
-        '</article>';
-    });
-    el.innerHTML = html;
-}
-
-function renderDaily() {
-    var el = document.getElementById('dailySection');
-    var articles = SITE_DATA.dailyComments;
-    if (articles.length === 0) {
-        el.innerHTML = '<article class="post-card"><div class="post-card-body">' +
-            '<div class="coming-soon"><div class="cs-icon">&#9998;</div>' +
-            '<p>每日评论即将发布，敬请期待。</p></div></div></article>';
-        return;
-    }
-    var html = '';
-    articles.forEach(function(a) {
-        html += '<article class="post-card">' +
-            '<div class="post-card-body">' +
-                '<div class="post-meta">' +
-                    '<span class="category">每日评论</span>' +
+                    '<span class="category">' + categoryLabel + '</span>' +
                     '<span>' + a.date + '</span>' +
                 '</div>' +
                 '<h3><a href="' + a.url + '">' + a.title + '</a></h3>' +
@@ -984,17 +1024,30 @@ function renderDaily() {
     el.innerHTML = html;
 }
 
+function renderHero() {
+    var report = SITE_DATA.monthlyReports[0];
+    if (!report) return;
+    var el = document.getElementById('heroBanner');
+    el.innerHTML = '<div class="hero-inner">' +
+        '<div>' +
+            '<span class="hero-badge">Latest Report</span>' +
+            '<h2>' + report.title + '</h2>' +
+            (report.excerpt ? '<p>' + report.excerpt + '</p>' : '') +
+            '<a href="' + report.url + '" class="hero-btn">阅读全文 &rarr;</a>' +
+        '</div>' +
+        '<div class="hero-stats">' +
+            '<div class="hero-stat-card"><div class="stat-label">发布日期</div><div class="stat-value">' + report.date + '</div></div>' +
+        '</div>' +
+    '</div>';
+}
+
 function renderSidebarLatest() {
     var el = document.getElementById('latestArticles');
     var all = [];
-    SITE_DATA.monthlyReports.forEach(function(a) {
-        all.push({ title: a.title, url: a.url, date: a.date });
-    });
-    SITE_DATA.trendArticles.forEach(function(a) {
-        all.push({ title: a.title, url: a.url, date: a.date });
-    });
-    SITE_DATA.dailyComments.forEach(function(a) {
-        all.push({ title: a.title, url: a.url, date: a.date });
+    ['monthlyReports','trendArticles','dailyComments'].forEach(function(key) {
+        (SITE_DATA[key] || []).forEach(function(a) {
+            all.push({ title: a.title, url: a.url, date: a.date });
+        });
     });
     all.sort(function(a, b) { return b.date.localeCompare(a.date); });
     var html = '';
@@ -1007,10 +1060,74 @@ function renderSidebarLatest() {
 
 // 执行渲染
 renderHero();
-renderMonthly();
-renderTrends();
-renderDaily();
+renderCards('monthlySection', SITE_DATA.monthlyReports, '月度评论', '月度评论即将发布，敬请期待。');
+renderCards('trendSection', SITE_DATA.trendArticles, '趋势研究', '趋势与类别评论即将发布，敬请期待。');
+renderCards('dailySection', SITE_DATA.dailyComments, '每日评论', '每日评论即将发布，敬请期待。');
 renderSidebarLatest();
+
+/* ══════════════════════════════════════════════════════
+   搜索功能
+   ══════════════════════════════════════════════════════ */
+(function() {
+    var input = document.getElementById('searchInput');
+    var dropdown = document.getElementById('searchResults');
+    if (!input || !dropdown) return;
+
+    // 构建全站文章索引
+    var allArticles = [];
+    var sections = {
+        monthlyReports: '月度评论',
+        trendArticles: '趋势研究',
+        dailyComments: '每日评论'
+    };
+    Object.keys(sections).forEach(function(key) {
+        (SITE_DATA[key] || []).forEach(function(a) {
+            allArticles.push({
+                title: a.title,
+                url: a.url,
+                date: a.date,
+                section: sections[key]
+            });
+        });
+    });
+
+    function highlightMatch(text, query) {
+        if (!query) return text;
+        var regex = new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+        return text.replace(regex, '<mark>$1</mark>');
+    }
+
+    function doSearch() {
+        var q = input.value.trim().toLowerCase();
+        if (q.length < 1) {
+            dropdown.classList.remove('active');
+            return;
+        }
+        var results = allArticles.filter(function(a) {
+            return a.title.toLowerCase().indexOf(q) !== -1;
+        });
+
+        if (results.length === 0) {
+            dropdown.innerHTML = '<div class="search-empty">未找到匹配的文章</div>';
+        } else {
+            var html = '';
+            results.slice(0, 8).forEach(function(a) {
+                html += '<a href="' + a.url + '" class="search-item">' +
+                    '<div class="si-title">' + highlightMatch(a.title, input.value.trim()) + '</div>' +
+                    '<div class="si-meta">' + a.section + ' · ' + a.date + '</div>' +
+                '</a>';
+            });
+            dropdown.innerHTML = html;
+        }
+        dropdown.classList.add('active');
+    }
+
+    input.addEventListener('input', doSearch);
+    input.addEventListener('focus', function() { if (input.value.trim()) doSearch(); });
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.topbar-search')) dropdown.classList.remove('active');
+    });
+})();
 
 /* ── 订阅功能 ── */
 function handleSubscribe(e) {
