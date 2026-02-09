@@ -217,8 +217,35 @@
             gap: 36px;
         }
 
+        /* ── Section Headers ── */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--wp-primary);
+        }
+        .section-header h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--wp-primary);
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        .section-header .more-link {
+            font-size: 13px;
+            color: var(--wp-text-light);
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        .section-header .more-link:hover {
+            color: var(--wp-accent);
+        }
+
         /* ── Post Cards ── */
-        .posts-section h2 {
+        .posts-section h2.standalone-title {
             font-size: 20px;
             font-weight: 700;
             color: var(--wp-primary);
@@ -517,6 +544,21 @@
         }
         .footer-bottom a { color: var(--wp-gold); }
 
+        /* ── Empty state card decoration ── */
+        .coming-soon {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--wp-text-light);
+        }
+        .coming-soon .cs-icon {
+            font-size: 48px;
+            opacity: 0.3;
+            margin-bottom: 12px;
+        }
+        .coming-soon p {
+            font-size: 14px;
+        }
+
         /* ── Responsive ── */
         @media (max-width: 900px) {
             .main-layout {
@@ -553,24 +595,60 @@
             .main-layout { padding: 20px 16px; }
             .nav-inner a { padding: 12px 14px; font-size: 13px; }
         }
-
-        /* ── Empty state card decoration ── */
-        .coming-soon {
-            text-align: center;
-            padding: 40px 20px;
-            color: var(--wp-text-light);
-        }
-        .coming-soon .cs-icon {
-            font-size: 48px;
-            opacity: 0.3;
-            margin-bottom: 12px;
-        }
-        .coming-soon p {
-            font-size: 14px;
-        }
     </style>
 </head>
 <body>
+
+<!-- ══════════════════════════════════════════════════════
+     SITE DATA - 更新文章时只需修改此处数据
+     ══════════════════════════════════════════════════════ -->
+<script>
+var SITE_DATA = {
+    // 市场月度评论 - 最新的排在最前面
+    monthlyReports: [
+        {
+            title: '2026年1月市场月度评论：17连阳后的结构分化与春季布局',
+            heroTitle: '2026年1月 · 资本市场月度评论',
+            subtitle: '沪指17连阳破十年纪录，港股月涨近7%。AI与贵金属双主线驱动，春季攻势强势启幕。深度解读市场结构、板块轮动与配置策略。',
+            excerpt: 'A股以沪指17连阳的历史性走势拉开2026年帷幕，两市成交额突破3.6万亿元刷新纪录。AI产业链与贵金属板块形成双主线格局，港股恒指月涨近7%创4年半新高。本文从权益市场、大宗商品、宏观政策三个维度进行系统性梳理，并给出2月配置建议。',
+            url: '市场月度评论/2026jan.html',
+            date: '2026-02-04',
+            author: '市场策略研究团队',
+            stats: [
+                { label: '上证综指', value: '4,117', change: '+3.76%', up: true },
+                { label: '恒生指数', value: '27,387', change: '+6.85%', up: true },
+                { label: 'COMEX黄金', value: '$4,604', change: '+5.2%', up: true },
+                { label: 'WTI原油', value: '$59.12', change: '-6.8%', up: false }
+            ]
+        }
+    ],
+    // 趋势和类别评论 - 最新的排在最前面
+    trendArticles: [
+        {
+            title: 'The SaaSpocalypse | 当AI代理和美联储联手碾压SaaS',
+            excerpt: '当150万AI代理在72小时内涌入一个社交网络，当美联储将利率悬在高位不放——一场价值2850亿美元的软件股灾难就此拉开序幕。这不是泡沫破裂，这是范式转移。',
+            url: '趋势和类别评论/how_moltbook_and_fed_crushed_the_saas.html',
+            date: '2026-02-08',
+            category: 'SaaS · AI'
+        },
+        {
+            title: 'The Big Golden Bust | 贵金属市场深度分析',
+            excerpt: '从历史新高到惊魂暴跌：贵金属市场一周多空博弈全景透视。全球媒体如何报道这场"黄金风暴"，主要贵金属价格与期货走势深度解析。',
+            url: '趋势和类别评论/The_Big_golden_bust.html',
+            date: '2026-02-08',
+            category: '贵金属'
+        }
+    ],
+    // 每日评论 - 最新的排在最前面
+    dailyComments: [
+        {
+            title: '每日评论 2026-02-04',
+            url: '每日评论/040226.html',
+            date: '2026-02-04'
+        }
+    ]
+};
+</script>
 
 <!-- ── Top Bar ── -->
 <div class="topbar">
@@ -592,81 +670,41 @@
         <a href="index.html" class="active">首页</a>
         <a href="#monthly">月度评论</a>
         <a href="#category">趋势与类别</a>
-        <a href="#macro">宏观追踪</a>
+        <a href="#daily">每日评论</a>
         <a href="#about">关于</a>
     </div>
 </nav>
 
-<!-- ── Hero Banner ── -->
-<section class="hero-banner">
-    <div class="hero-inner">
-        <div>
-            <span class="hero-badge">Latest Report</span>
-            <h2>2026年1月 · 资本市场月度评论</h2>
-            <p>
-                沪指17连阳破十年纪录，港股月涨近7%。AI与贵金属双主线驱动，春季攻势强势启幕。
-                深度解读市场结构、板块轮动与配置策略。
-            </p>
-            <a href="市场月度评论/2026jan.html" class="hero-btn">阅读全文 &rarr;</a>
-        </div>
-        <div class="hero-stats">
-            <div class="hero-stat-card">
-                <div class="stat-label">上证综指</div>
-                <div class="stat-value">4,117</div>
-                <div class="stat-change stat-up">+3.76%</div>
-            </div>
-            <div class="hero-stat-card">
-                <div class="stat-label">恒生指数</div>
-                <div class="stat-value">27,387</div>
-                <div class="stat-change stat-up">+6.85%</div>
-            </div>
-            <div class="hero-stat-card">
-                <div class="stat-label">COMEX黄金</div>
-                <div class="stat-value">$4,604</div>
-                <div class="stat-change stat-up">+5.2%</div>
-            </div>
-            <div class="hero-stat-card">
-                <div class="stat-label">WTI原油</div>
-                <div class="stat-value">$59.12</div>
-                <div class="stat-change stat-down">-6.8%</div>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- ── Hero Banner (动态渲染) ── -->
+<section class="hero-banner" id="heroBanner"></section>
 
 <!-- ── Main Layout ── -->
 <div class="main-layout">
     <!-- ── Content ── -->
-    <main class="posts-section" id="monthly">
-        <h2>月度评论 / Monthly Review</h2>
+    <main class="posts-section">
+        <!-- 月度评论 -->
+        <div id="monthly">
+            <h2 class="standalone-title">月度评论 / Monthly Review</h2>
+            <div id="monthlySection"></div>
+        </div>
 
-        <!-- Featured Post -->
-        <article class="post-card featured">
-            <div class="post-card-body">
-                <div class="post-meta">
-                    <span class="category">月度评论</span>
-                    <span>2026-02-04</span>
-                    <span>市场策略研究团队</span>
-                </div>
-                <h3><a href="市场月度评论/2026jan.html">2026年1月市场月度评论：17连阳后的结构分化与春季布局</a></h3>
-                <p class="post-excerpt">
-                    A股以沪指17连阳的历史性走势拉开2026年帷幕，两市成交额突破3.6万亿元刷新纪录。AI产业链与贵金属板块形成双主线格局，
-                    港股恒指月涨近7%创4年半新高。本文从权益市场、大宗商品、宏观政策三个维度进行系统性梳理，并给出2月配置建议。
-                </p>
-                <a href="市场月度评论/2026jan.html" class="read-more">阅读全文 &rarr;</a>
+        <!-- 趋势与类别评论 -->
+        <div id="category" style="margin-top:36px;">
+            <div class="section-header">
+                <h2>趋势与类别评论 / Thematic Research</h2>
+                <a href="趋势和类别评论/index.html" class="more-link">更多 &rarr;</a>
             </div>
-        </article>
+            <div id="trendSection"></div>
+        </div>
 
-        <h2 id="category" style="margin-top:36px;">趋势与类别评论 / Thematic Research</h2>
-
-        <article class="post-card">
-            <div class="post-card-body">
-                <div class="coming-soon">
-                    <div class="cs-icon">&#9998;</div>
-                    <p>趋势与类别评论即将发布，敬请期待。</p>
-                </div>
+        <!-- 每日评论 -->
+        <div id="daily" style="margin-top:36px;">
+            <div class="section-header">
+                <h2>每日评论 / Daily Commentary</h2>
+                <a href="每日评论/index.html" class="more-link">更多 &rarr;</a>
             </div>
-        </article>
+            <div id="dailySection"></div>
+        </div>
     </main>
 
     <!-- ── Sidebar ── -->
@@ -679,48 +717,11 @@
   </div>
   <div class="widget-body" style="padding:16px 20px;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-      <span style="font-size:12px;font-weight:700;color:#f39c12;">&#9679; 谨慎</span>
-      <span style="font-size:11px;color:#999;">2026-02-08 21:26</span>
+      <span style="font-size:12px;font-weight:700;color:#3498db;">&#9670; 分化</span>
+      <span style="font-size:11px;color:#999;">2026-02-09 13:01</span>
     </div>
-    <p style="font-size:13px;color:#555;margin-bottom:14px;line-height:1.6;">全球市场受日本大选结果、美国关键经济数据预期及AI主题投资情绪交织影响，呈现谨慎分化格局。</p>
-    <div style="border-top:1px solid #e2e4e7;padding-top:12px;">
-      <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
-        <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
-          <span style="color:#e74c3c;margin-right:4px;">1.</span>日本大选自民党大胜，预计利好股市压制日元
-        </div>
-        <div style="font-size:11px;color:#999;"><a href="https://www.cnbc.com/2026/02/08/japans-ruling-ldp-seen-winning-outright-majority-in-snap-poll-nhk.html" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">CNBC</a> | <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPZTlXY2FxZjZSbi03SVJ5b2dpT0VaUDM2T28yYlJ6Vy1Hek9jUGtXeGxCaDdQMnFLRzEzZy1yNXotVzBTYkRrb1ZKZzBNemVEWGFYRjY0NEJFOW5MclRWNzJUQzhMd2lNdjlKM09yWDVtV053NUVndVQ0NTVlRUV0b1J6Y2lQVVlGd2d6Y0xLVUt6Z2g1YXZnSFNWYktibVZsRUhreU1qNTIyM3owcVRMaFlxTQ" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Bloomberg</a></div>
-      </div>
-      <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
-        <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
-          <span style="color:#999;margin-right:4px;">2.</span>AI投资热潮与风险并存，引发市场板块轮动
-        </div>
-        <div style="font-size:11px;color:#999;"><a href="https://www.cnbc.com/2026/02/08/wall-street-analysts-like-these-stocks-for-long-term-growth-potential.html" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">CNBC</a> | <a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPZnp2el9ldXZMb0FLbmVwT0pMSkhvU3MyNTk3Nld4Y1VnZTF4eXRJVkd2M2J0TkJnWGlDVGxmODhmOFg1eWxEOWJkWERQMnJQWjltb1JUYmE2NkRlV25RbTFYREdmb2FnZ203TWZiWXRsalVaN25LeDNzOGlqa3Nnd0Q5V2hxMVRZR090dHg2bU5paTlfX1Bic1d2a3dhMktfbE83NWpTbS1zR3ZPZTJWNl9NaWJKWGtiZms0d25iVThRM0JKcjhj" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Reuters</a></div>
-      </div>
-      <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
-        <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
-          <span style="color:#999;margin-right:4px;">3.</span>美国关键就业与通胀数据前夕，市场情绪紧张
-        </div>
-        <div style="font-size:11px;color:#999;"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQTGdhcTB6c2pmdGVaZml1TFl5WEZ0T3MwUHZWalBBbzhZU3p3RE5OR2pUcHpPWHJkY3RfdkpiZzBOemxuM0VSdF9pc2Y3Ylg1U3hYTW1CcWI4U09zTno4TXB1YWhPUkozOF9tT3BKX0pKSkROZWVib1RRUkU5dWJlWkpMWHBReEc2Umdrb1h6TFAzeE9Tb3B5MjJoUmpfa01YaXVZaHNB" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Bloomberg</a> | <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BSDVvUnlQdmpUWDZqR1RuV1VmbjcyYUlXTUFTNHdBQVpqS1M5OVlXQ1dyVTI2OVIwd0FwSFQ5T2dzRzdqcjctMV9VdW1zV0NPVFNUa0ppOEtUSDgxS0ZEWQ" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">财新</a></div>
-      </div>
-      <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
-        <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
-          <span style="color:#27ae60;margin-right:4px;">4.</span>加密货币市场崩跌，杠杆投资者遭受重创
-        </div>
-        <div style="font-size:11px;color:#999;"><a href="https://www.marketwatch.com/story/as-bitcoin-crashes-pity-those-wildly-enthusiastic-investors-who-borrowed-billions-against-crypto-794164bb?mod=mw_rss_topstories" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">MarketWatch</a> | <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5yQ1A0eFlUU0duWm9HM25qbW5qRENQWGhxZTlEMmVFYmdXRzVfVmwtYzRTcFhJSGZrTVdfc0hiMm5fXzlreV9wYlBRQUlvUFlYd1NpQVJ2NlBuYndraVAxbzJEWlplX2p0YWtYaVlQcTY" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Financial Times</a></div>
-      </div>
-      <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
-        <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
-          <span style="color:#27ae60;margin-right:4px;">5.</span>地缘政治风险升温：乌克兰局势、伊朗核谈判与中美博弈
-        </div>
-        <div style="font-size:11px;color:#999;"><a href="https://www.investing.com/news/world-news/ukraine-urges-acceleration-of-peace-talks-says-only-trump-can-broker-deal-4492418" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Investing.com</a> | <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPSEV3WVRTWGtfN250WWpHQ0R6NGpObkdLVEJUc2t0X2htX2ZSdnRtYXdEcGdfelIzM0tQYks3ZDNvT0RtbVFpb0JORDJURkM5UWRvbVBLWGN5aXNVYzhPSFNWMXZBeVVjMUxnTkNfVWVEVDN2UUJKaUZWRVdSUWNPbHp5S1dCXzdfci1sSV9MXy1CNEFNUUJaeXJIMEF0LS1hTnFXX3BEdUJjVWsyMjdkV1Fn" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Bloomberg</a></div>
-      </div>
-      <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;">
-        <div style="font-size:13px;font-weight:600;color:#1e1e1e;margin-bottom:4px;">
-          <span style="color:#999;margin-right:4px;">6.</span>企业裁员与成本控制成趋势，关注运营效率
-        </div>
-        <div style="font-size:11px;color:#999;"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNZFhzVXMyajdUM19mTG1mS1d1azd1UVN2Q0duYUdsZXpjelQwUFVkV2FPcVVoQ1dWaFNES3N0UndqaVFQLVYwRlNBdWJ3VEVvZUd1UmJRdjV5WU9WckVnRG1TU0tMX1BvVmdSNjZWbDRJbEdqdWR4dVBXMTBjenROVG43TXpJQ0ljUmthaUZwbGMxbzFuanBZZzkwQTZGYTRmN1RSUzNScUdHc0dWU0Nj" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Bloomberg</a> | <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNWnlmb0JNaEU0UkhLdll4Z2wwZzA2aDVkbjVFLW5rYVBzOWZlRndsSTZXWUticmZTb1NTVTFGV3hyVk1KMzhKZHFIbWNxc2Uwdk1yT214RnJiYkQtU3RhX192Q016dEVNN0hBQ1puNG9rN20wV096QTZQR1JhYkphRnhGeDFILTBwdl92T0k3VEk4cXdCN3VocFpVUFp4RTZ5SzRUZW9XQ045bmF2ampFdUgzLTg" target="_blank" rel="noopener" style="color:#0073aa;font-size:11px;">Bloomberg</a></div>
-      </div>
-    </div>
+    <p style="font-size:13px;color:#555;margin-bottom:14px;line-height:1.6;">数据更新中...</p>
+    <p style="font-size:13px;color:#999;text-align:center;padding:16px 0;">数据更新中...</p>
   </div>
 </div>
 <!-- NEWS_WIDGET_END -->
@@ -776,16 +777,11 @@
             </div>
         </div>
 
-        <!-- Recent Posts Widget -->
+        <!-- Recent Posts Widget (动态渲染) -->
         <div class="widget">
             <div class="widget-title">最新文章</div>
             <div class="widget-body">
-                <ul>
-                    <li>
-                        <a href="市场月度评论/2026jan.html">2026年1月市场月度评论</a>
-                        <span class="widget-date">2026-02-04</span>
-                    </li>
-                </ul>
+                <ul id="latestArticles"></ul>
             </div>
         </div>
 
@@ -796,7 +792,7 @@
                 <ul>
                     <li><a href="#monthly">月度评论</a></li>
                     <li><a href="#category">趋势与类别评论</a></li>
-                    <li><a href="#macro">宏观追踪</a></li>
+                    <li><a href="#daily">每日评论</a></li>
                 </ul>
             </div>
         </div>
@@ -820,6 +816,7 @@
                     <a href="#">碳酸锂</a>
                     <a href="#">恒生指数</a>
                     <a href="#">ETF</a>
+                    <a href="#">SaaS</a>
                 </div>
             </div>
         </div>
@@ -854,7 +851,168 @@
     </div>
 </section>
 
+<!-- ── Footer ── -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-col">
+            <h4>资本市场研究</h4>
+            <p>
+                专注于中国资本市场的系统性分析与策略研究。
+                以数据驱动的视角，呈现专业、客观、可操作的投资洞察。
+            </p>
+        </div>
+        <div class="footer-col">
+            <h4>内容分类</h4>
+            <ul>
+                <li><a href="#monthly">市场月度评论</a></li>
+                <li><a href="#category">趋势与类别评论</a></li>
+                <li><a href="#daily">每日评论</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>免责声明</h4>
+            <p>
+                本站内容仅供参考，不构成任何投资建议。
+                投资有风险，入市需谨慎。
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>&copy; 2026 资本市场研究 | Capital Markets Research</span>
+        <span>Powered by <a href="#">Static Site</a> &middot; Hosted on <a href="#">GitHub Pages</a></span>
+    </div>
+</footer>
+
 <script>
+/* ══════════════════════════════════════════════════════
+   动态渲染函数
+   ══════════════════════════════════════════════════════ */
+
+function renderHero() {
+    var report = SITE_DATA.monthlyReports[0];
+    if (!report) return;
+    var el = document.getElementById('heroBanner');
+    var statsHtml = '';
+    report.stats.forEach(function(s) {
+        statsHtml += '<div class="hero-stat-card">' +
+            '<div class="stat-label">' + s.label + '</div>' +
+            '<div class="stat-value">' + s.value + '</div>' +
+            '<div class="stat-change ' + (s.up ? 'stat-up' : 'stat-down') + '">' + s.change + '</div>' +
+            '</div>';
+    });
+    el.innerHTML = '<div class="hero-inner">' +
+        '<div>' +
+            '<span class="hero-badge">Latest Report</span>' +
+            '<h2>' + report.heroTitle + '</h2>' +
+            '<p>' + report.subtitle + '</p>' +
+            '<a href="' + report.url + '" class="hero-btn">阅读全文 &rarr;</a>' +
+        '</div>' +
+        '<div class="hero-stats">' + statsHtml + '</div>' +
+        '</div>';
+}
+
+function renderMonthly() {
+    var el = document.getElementById('monthlySection');
+    var html = '';
+    SITE_DATA.monthlyReports.forEach(function(r, i) {
+        html += '<article class="post-card' + (i === 0 ? ' featured' : '') + '">' +
+            '<div class="post-card-body">' +
+                '<div class="post-meta">' +
+                    '<span class="category">月度评论</span>' +
+                    '<span>' + r.date + '</span>' +
+                    '<span>' + r.author + '</span>' +
+                '</div>' +
+                '<h3><a href="' + r.url + '">' + r.title + '</a></h3>' +
+                '<p class="post-excerpt">' + r.excerpt + '</p>' +
+                '<a href="' + r.url + '" class="read-more">阅读全文 &rarr;</a>' +
+            '</div>' +
+        '</article>';
+    });
+    el.innerHTML = html;
+}
+
+function renderTrends() {
+    var el = document.getElementById('trendSection');
+    var articles = SITE_DATA.trendArticles.slice(0, 5);
+    if (articles.length === 0) {
+        el.innerHTML = '<article class="post-card"><div class="post-card-body">' +
+            '<div class="coming-soon"><div class="cs-icon">&#9998;</div>' +
+            '<p>趋势与类别评论即将发布，敬请期待。</p></div></div></article>';
+        return;
+    }
+    var html = '';
+    articles.forEach(function(a) {
+        html += '<article class="post-card">' +
+            '<div class="post-card-body">' +
+                '<div class="post-meta">' +
+                    '<span class="category">趋势研究</span>' +
+                    '<span>' + a.date + '</span>' +
+                    (a.category ? '<span>' + a.category + '</span>' : '') +
+                '</div>' +
+                '<h3><a href="' + a.url + '">' + a.title + '</a></h3>' +
+                '<p class="post-excerpt">' + a.excerpt + '</p>' +
+                '<a href="' + a.url + '" class="read-more">阅读全文 &rarr;</a>' +
+            '</div>' +
+        '</article>';
+    });
+    el.innerHTML = html;
+}
+
+function renderDaily() {
+    var el = document.getElementById('dailySection');
+    var articles = SITE_DATA.dailyComments;
+    if (articles.length === 0) {
+        el.innerHTML = '<article class="post-card"><div class="post-card-body">' +
+            '<div class="coming-soon"><div class="cs-icon">&#9998;</div>' +
+            '<p>每日评论即将发布，敬请期待。</p></div></div></article>';
+        return;
+    }
+    var html = '';
+    articles.forEach(function(a) {
+        html += '<article class="post-card">' +
+            '<div class="post-card-body">' +
+                '<div class="post-meta">' +
+                    '<span class="category">每日评论</span>' +
+                    '<span>' + a.date + '</span>' +
+                '</div>' +
+                '<h3><a href="' + a.url + '">' + a.title + '</a></h3>' +
+                (a.excerpt ? '<p class="post-excerpt">' + a.excerpt + '</p>' : '') +
+                '<a href="' + a.url + '" class="read-more">阅读全文 &rarr;</a>' +
+            '</div>' +
+        '</article>';
+    });
+    el.innerHTML = html;
+}
+
+function renderSidebarLatest() {
+    var el = document.getElementById('latestArticles');
+    var all = [];
+    SITE_DATA.monthlyReports.forEach(function(a) {
+        all.push({ title: a.title, url: a.url, date: a.date });
+    });
+    SITE_DATA.trendArticles.forEach(function(a) {
+        all.push({ title: a.title, url: a.url, date: a.date });
+    });
+    SITE_DATA.dailyComments.forEach(function(a) {
+        all.push({ title: a.title, url: a.url, date: a.date });
+    });
+    all.sort(function(a, b) { return b.date.localeCompare(a.date); });
+    var html = '';
+    all.slice(0, 10).forEach(function(a) {
+        html += '<li><a href="' + a.url + '">' + a.title + '</a>' +
+            '<span class="widget-date">' + a.date + '</span></li>';
+    });
+    el.innerHTML = html;
+}
+
+// 执行渲染
+renderHero();
+renderMonthly();
+renderTrends();
+renderDaily();
+renderSidebarLatest();
+
+/* ── 订阅功能 ── */
 function handleSubscribe(e) {
     e.preventDefault();
     var email = document.getElementById('subEmail').value.trim();
@@ -873,7 +1031,6 @@ function handleSubscribe(e) {
     msgEl.textContent = '正在提交...';
     msgEl.className = 'subscribe-msg';
 
-    // Try API first, fallback to redirect
     fetch((window.SUBSCRIPTION_SERVER || 'http://localhost:8888') + '/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -891,7 +1048,6 @@ function handleSubscribe(e) {
         }
     })
     .catch(function() {
-        // Fallback: redirect to subscribe page
         window.open(subUrl, '_blank');
         msgEl.textContent = '已在新窗口中打开订阅页面。';
         msgEl.className = 'subscribe-msg success';
@@ -900,38 +1056,6 @@ function handleSubscribe(e) {
     return false;
 }
 </script>
-
-<!-- ── Footer ── -->
-<footer class="site-footer">
-    <div class="footer-inner">
-        <div class="footer-col">
-            <h4>资本市场研究</h4>
-            <p>
-                专注于中国资本市场的系统性分析与策略研究。
-                以数据驱动的视角，呈现专业、客观、可操作的投资洞察。
-            </p>
-        </div>
-        <div class="footer-col">
-            <h4>内容分类</h4>
-            <ul>
-                <li><a href="#monthly">市场月度评论</a></li>
-                <li><a href="#category">趋势与类别评论</a></li>
-                <li><a href="#macro">宏观动态追踪</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>免责声明</h4>
-            <p>
-                本站内容仅供参考，不构成任何投资建议。
-                投资有风险，入市需谨慎。
-            </p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <span>&copy; 2026 资本市场研究 | Capital Markets Research</span>
-        <span>Powered by <a href="#">Static Site</a> &middot; Hosted on <a href="#">GitHub Pages</a></span>
-    </div>
-</footer>
 
 </body>
 </html>
