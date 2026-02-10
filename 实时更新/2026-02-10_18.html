@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-10 18:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-10 18:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">全球市场呈现板块剧烈分化格局，科技与AI相关板块受强劲业绩和资本开支驱动领涨，而能源板块受油价下跌及BP暂停回购拖累，同时地缘政治风险为市场增添不确定性。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>台积电业绩强劲与半导体供应链博弈</div>
+                <div class="topic-title-en">TSMC's Strong Revenue & Semiconductor Supply Chain Tensions</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    台积电1月营收同比飙升37%，SMIC四季度利润也大增60.7%，印证AI驱动的半导体需求依然旺盛。然而，美国要求将40%芯片产能从台湾转移的目标被台湾产业界直指‘不可能’，凸显了全球半导体供应链面临的地缘政治风险与重构压力。这对依赖先进制程的全球科技产业构成长期不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/taiwan-chips-us-supply-chain-lutnick-trade-deal.html" target="_blank" rel="noopener">[CNBC] 'Impossible': Taiwan pushes back against Washington’s 40% chip supply relocation goal</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOMVhzaEJrVTlVazFMY2xfN3AtNGFVcjdhRjNqVjNCSTNuY1Z2Z0VyaE5KRWE5Y3YzWGZDcXJzMkRLOFZMNG40Wm1DbEtReFhlRzI0NWdfcUNmM0N0S01LZ1BadU9UV1RFckxKekU0Yy1haDhhMUtjOXNxa0ZDdVZZMmhWZGxPdGszSkk5akVheWZjLXp4Q1NHajBRamZjeVdCbWU5anNVS1ZBcW1Jc3NCeFZn?oc=5" target="_blank" rel="noopener">[Bloomberg] TSMC Revenue Jumps 37% in January as AI Spending Marches On</a>
+                    <a href="https://www.investing.com/news/stock-market-news/smic-reports-607-increase-in-fourthquarter-profit-4495692" target="_blank" rel="noopener">[Investing.com] SMIC reports 60.7% increase in fourth-quarter profit</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">科技硬件</span>
+                    <span class="sector-tag">人工智能</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>BP暂停股票回购引发能源板块动荡</div>
+                <div class="topic-title-en">BP's Share Buyback Halt Sparks Energy Sector Turmoil</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    因油价下跌导致利润下滑，BP宣布暂停股票回购计划，股价应声大跌5%。此举不仅反映了原油市场基本面的疲软，更向市场传递出大型能源公司现金流趋紧、优先保障资产负债表健康的信号，可能引发市场对整个传统能源板块分红稳定性的重新评估。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cz0g4dkm77zo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] BP profits fall after oil prices drop</a>
+                    <a href="https://www.cnbc.com/2026/02/10/bp-earnings-q4-full-year-oil-energy.html" target="_blank" rel="noopener">[CNBC] BP shares fall 5% after oil major suspends share buyback plan</a>
+                    <a href="https://www.marketwatch.com/story/bp-to-halt-stock-buybacks-as-profit-slumps-0457cb71?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] BP to halt stock buybacks as profit slumps</a>
+                    <span class="sector-tag">石油与天然气</span>
+                    <span class="sector-tag">能源</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>AI军备竞赛持续：巨头加大投入与风险警示</div>
+                <div class="topic-title-en">Ongoing AI Arms Race: Heavy Investment & Risk Warnings</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    科技巨头正以前所未有的力度投资AI。Alphabet发行债券以资助AI建设，但同时首次在财报中明确警示AI相关风险。软银因旗下Arm的强势及AI叙事股价大涨10%。这显示市场对AI长期潜力极度乐观，但领先企业已开始正视其带来的巨额资本开支、监管和伦理风险，投资逻辑从纯粹的概念炒作向务实且高风险的军备竞赛演变。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/alphabet-highlights-new-ai-related-risks-in-tapping-debt-market.html" target="_blank" rel="noopener">[CNBC] Alphabet calls out new AI-related risks, as it taps debt market to fund build-out</a>
+                    <a href="https://www.cnbc.com/2026/02/10/softbank-group-corp-shares-surge-after-telecom-unit-lifts-outlook-arm-ai-chip.html" target="_blank" rel="noopener">[CNBC] SoftBank shares surge 10% after telecom unit lifts outlook, Arm strength bolsters AI narrative</a>
+                    <a href="https://www.marketwatch.com/story/alphabets-15-billion-bond-deal-may-have-a-highly-unusual-component-2aa15bee?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Alphabet’s $20 billion bond deal may be followed by something highly unusual</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">科技股</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>奢侈品复苏与零售业结构性调整</div>
+                <div class="topic-title-en">Luxury Recovery vs. Retail Structural Adjustments</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    开云集团(Gucci母公司)在新CEO带领下业绩超预期，股价暴涨10%，显示奢侈品需求在特定品牌和战略调整下有望复苏。然而，另一边，Target裁员约500人以投资于门店体验，Saks Global的崩溃被指暴露百货模式困境。这揭示了零售消费领域明显的K型分化：高端消费彰显韧性，而大众市场则必须通过效率提升和体验优化来争夺客户。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/gucci-kering-earnings-stock-sales-q4-fy-new-ceo.html" target="_blank" rel="noopener">[CNBC] Gucci-owner Kering jumps 10% as new CEO maps revival, sales beats estimates</a>
+                    <a href="https://www.cnbc.com/2026/02/09/target-store-investment-job-cuts-customer-experience.html" target="_blank" rel="noopener">[CNBC] Target steps up investment in store staffing, cuts about 500 other roles to help fix customer experience</a>
+                    <a href="https://www.investing.com/news/stock-market-news/saks-global-collapse-shows-struggles-of-department-store-model-kering-ceo-says-4495755" target="_blank" rel="noopener">[Investing.com] Saks Global collapse shows struggles of department store model, Kering CEO says</a>
+                    <span class="sector-tag">奢侈品零售</span>
+                    <span class="sector-tag">一般零售</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>地缘政治风险升温：霍尔木兹海峡紧张局势</div>
+                <div class="topic-title-en">Escalating Geopolitical Risk: Tensions in the Strait of Hormuz</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国警告船只远离伊朗水域，因伊朗革命卫队曾试图登船。此举立即推高了原油价格，因该海峡是全球约三分之一海运石油的咽喉要道。这一事件将地缘政治风险溢价重新注入原油市场，可能抵消部分需求疲软的影响，并为能源和航运板块带来短期波动性交易机会。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/us-warns-ships-avoid-iran-strait-hormuz-boarding-irgc-tehran-israel-netanyahu.html" target="_blank" rel="noopener">[CNBC] U.S. urges ships to stay 'as far as possible' from Iran's waters in Strait of Hormuz after boarding attempts</a>
+                    <a href="https://www.investing.com/news/commodities-news/oil-drifts-lower-as-traders-weigh-supply-risks-amid-usiran-tensions-4495416" target="_blank" rel="noopener">[Investing.com] Oil gains as traders weigh supply risks amid US–Iran tensions</a>
+                    <span class="sector-tag">石油与天然气</span>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">国防安全</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>日本新首相能否重振经济受关注</div>
+                <div class="topic-title-en">Market Focus on Japan's New Prime Minister's Economic Revival Plan</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    高市早苗在选举中大胜，但市场真正关心的是她是否有能力带领日本经济走出长期通缩和增长停滞的困境。其政策纲领将直接影响日股走势、日元汇率以及日本国债市场。若其政策被市场视为有效，可能吸引全球资本回流日本资产。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cddn7qed35eo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Japan has given Takaichi a landslide win - but can she bring back the economy?</a>
+                    <span class="sector-tag">日本股市</span>
+                    <span class="sector-tag">外汇市场</span>
+                    <span class="sector-tag">国债</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>欧洲宣布紧急状态与防务整合</div>
+                <div class="topic-title-en">Europe Declares State of Emergency and Pushes for Defense Integration</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    法国总统马克龙宣布欧洲进入“紧急状态”，并推动进展受阻的欧洲战斗机项目。这一政治举动预示着地缘政治压力下，欧洲可能加速在防务、能源安全等关键领域的战略自主进程。虽然短期会增加财政压力，但长期可能利好欧洲的国防工业和关键技术领域，并可能影响欧元区资产的風險溢价。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxON2FFYjFjNHdwZXBiZWxjZEpYMWpYTE15MkZrdW1mX1NKNGl2ajdaUUFQN0Q2RXdJZU5oTkhOUDNCVHhuNV9KbGFxSnh5SzdUZnR1eHlQQmU5MUtnQ2xpcklSei05RTJSX1Jya1NSOWc5MDVuVnlaQXRjMmxrM0VGWUt1X3cyVW5qYmp4QW83QUozODFKYzRDb2lrV1JmYlE?oc=5" target="_blank" rel="noopener">[Economist] Emmanuel Macron declares a European state of emergency - The Economist</a>
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQWFJLb0hYOEUteG9GS0FhQl83TXBRbzdaa0UzamFpM09HZXNlOFp3RllLcXg0S0dUQldueGdOQkRXWUU0QlJnaTc4alVuRlhZQTNtV280SUhHXzVMWmNzTFI5V3JLT0RVNmpKQTNwOWNzem5hMjBadnZsNXFxRk0zQWxXWXFhLVV3TUgtTFdDWmxFSXVNblJsUzgydndmNktrWmZ2UGg2VkN4Zk1DQVE?oc=5" target="_blank" rel="noopener">[Bloomberg] Macron Calls for Progress on Troubled European Fighter Jet</a>
+                    <span class="sector-tag">欧洲国防工业</span>
+                    <span class="sector-tag">航空航天</span>
+                    <span class="sector-tag">欧洲股市</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国10年期国债收益率下行，市场等待零售销售数据</li>
+                <li>台积电1月营收同比增长37%</li>
+                <li>SMIC第四季度利润同比增长60.7%</li>
+                <li>欧洲股市持平，BP下跌抵消奢侈品股上涨</li>
+                <li>美国警告船只远离伊朗水域，地缘风险推高油价</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
