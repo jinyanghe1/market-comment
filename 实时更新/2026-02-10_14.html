@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-10 14:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-10 14:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">亚洲股市普遍走强，科技股在巨量抛售后尝试反弹，但地缘政治与行业特定风险为市场带来不确定性。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>半导体供应链紧张与AI芯片竞争加剧</div>
+                <div class="topic-title-en">Semiconductor Supply Chain Tension and AI Chip Competition Intensifies</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国要求台湾芯片业者转移40%产能的目标被台方称为‘不可能’，凸显全球半导体供应链重构的艰难与政治风险。与此同时，内存芯片市场供应紧张正引发市场混乱（Bloomberg），而SoftBank因旗下Arm的AI叙事股价大涨，Jefferies也因AI数据中心前景上调Aixtron目标价，表明AI硬件需求仍是核心增长驱动力，但供应链自主可控已成为关键风险点。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/taiwan-chips-us-supply-chain-lutnick-trade-deal.html" target="_blank" rel="noopener">[CNBC] 'Impossible': Taiwan pushes back against Washington’s 40% chip supply relocation goal</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOb1FIS29SY1ROeFU5eGR4T3BqT3Z2blJMSXBueWRXN2QzanBWZ0U1WDlQTnZNZkxJblVDellmY21LdUR3QVpqUW1iRFJ0U1lfdy1kajBHZVZXbVpreTZBRGItY1F5d01IWUliVGRCWVNoSVR1alZ3N3YyeHZnWlBPTGJXZGxxZ1RndDlQdE91Vnlja3lpT0hzOE5ULUlGdGp6WVd3V3RqUXFuQV91RjcwNGFn?oc=5" target="_blank" rel="noopener">[Bloomberg] Memory Chip Squeeze Wreaks Havoc in Markets, With More to Come</a>
+                    <a href="https://www.cnbc.com/2026/02/10/softbank-group-corp-shares-surge-after-telecom-unit-lifts-outlook-arm-ai-chip.html" target="_blank" rel="noopener">[CNBC] SoftBank shares surge 10% after telecom unit lifts outlook, Arm strength bolsters AI narrative</a>
+                    <a href="https://www.investing.com/news/stock-market-news/jefferies-upgrades-aixtron-on-ai-data-center-growth-prospects-raises-pt-to-27-4495495" target="_blank" rel="noopener">[Investing.com] Jefferies upgrades Aixtron on AI data center growth prospects, raises PT to €27</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">科技硬件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>科技巨头加大AI投入与债务融资</div>
+                <div class="topic-title-en">Tech Giants Ramp Up AI Investment and Debt Financing</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    Alphabet（Google）在发行200亿美元债券为AI建设融资的同时，于申报文件中首次明确提示AI相关风险，显示其大规模资本开支已进入新阶段，且市场对此存在担忧。与此同时，Oracle与微软等科技股正试图从万亿市值暴跌中反弹。这表明科技行业正处在‘高投入、高风险、高估值’的关键节点，资本市场成为支撑其AI军备竞赛的重要后盾。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/alphabet-highlights-new-ai-related-risks-in-tapping-debt-market.html" target="_blank" rel="noopener">[CNBC] Alphabet calls out new AI-related risks, as it taps debt market to fund build-out</a>
+                    <a href="https://www.marketwatch.com/story/alphabets-15-billion-bond-deal-may-have-a-highly-unusual-component-2aa15bee?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Alphabet’s $20 billion bond deal may be followed by something highly unusual</a>
+                    <a href="https://www.cnbc.com/2026/02/09/big-tech-stocks-post-selloff-week.html" target="_blank" rel="noopener">[CNBC] Oracle gains 9%, Microsoft climbs 3% as tech tries to bounce back from $1 trillion sell-off</a>
+                    <a href="https://news.google.com/rss/articles/CBMiigNBVV95cUxQREZXNmhQUzNaeTlDazA7Z1l4MVQzZmNtX0ctZ2xwTlJFNVk2MzZmS0RUSXQzXzJkdHl6cWhaLVJVdWZXUkZWZTJyTDVHTXFCYzlMQl9fUm5RVHRoYktKSzFOT3poNXZGeUVKN3RaaUhlbXVqaXl5MEk3a0hHOGMtZHRlY09xM3ZaMWFpQ0ZMVHdhLUw3R1Z0Y1NlZGJVVmU5MnF6V0Rtbi1tSGw4MnlnbUJQWXdpZnFOTS1MbEhFRmd3VHpOT1JSX2VmVnZtd0dtMVlrVGpWS2tnMjZCeEgxNnFraW1QX0YzS0lpbnVZRFRHb0NlVGc3WkJ1eTZmSmh0cG1zTExPU2R0RGJwM2l1UUNjQzNQRl9kZ2RnMm1wOUlja3R0NnR2VTBEcnhPX0xMOVNOWWhOUWZfYXFlWXBYU3ltMGxVUU1TWlZtRXVvOXUxUFRvSkZnN1JwdzNDZVlsSVY1YTdNSEwwOUFuMUdEeUx3eHc1VkNQYU1vdlBGYzlQX0M1cldmd1BR?oc=5" target="_blank" rel="noopener">[Barrons] Alphabet Stock Is Still a ‘Best Idea.’ The Company Can Cash In on AI.</a>
+                    <span class="sector-tag">互联网</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">软件服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>地缘政治风险与贸易政策不确定性上升</div>
+                <div class="topic-title-en">Rising Geopolitical Risks and Trade Policy Uncertainty</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    多重地缘政治风险交织：美国警告船只远离伊朗水域，可能推高航运保险成本并扰动能源供应；中国高级官员重申打击‘台独’，加剧了围绕台湾的紧张局势，直接关联核心半导体供应链。此外，美国对孟加拉国部分服装的关税豁免显示了贸易政策的微调，而共和党试图推迟对特朗普关税的投票，则增加了未来美国贸易政策的不可预测性。这些因素共同构成市场重要的下行风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/us-warns-ships-avoid-iran-strait-hormuz-boarding-irgc-tehran-israel-netanyahu.html" target="_blank" rel="noopener">[CNBC] U.S. urges ships to stay 'as far as possible' from Iran's waters in Strait of Hormuz after boarding attempts</a>
+                    <a href="https://www.investing.com/news/economy-news/senior-chinese-official-calls-for-resolutely-cracking-down-on-taiwan-independence-separatists-4495493" target="_blank" rel="noopener">[Investing.com] Senior Chinese official calls for ’resolutely’ cracking down on ’Taiwan independence’ separatists</a>
+                    <a href="https://www.bbc.com/news/articles/c626r78g122o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] US to exempt some Bangladeshi clothes from tariffs</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPYWJaVE00N3A4N3hHME5KTE0tQUF5MlRsRk9VX2UwSmpVRGZSRmRRNTB6YVdVQzlNQ2ZBVDBiNE5YRDJGTXRzZTFsb3NPTFVUVkJoeHhYWXRNUEx6WEJRczNBeThQbFJaTzd3MGhDQmxuYm1tNElBN2plWkp3SVFweWJqZHExSVQwSDlGWHZxeDRLeEJpX0xRd3BzRU5McWN5dkhxbXNRQWZ3cGJHRTE3bnhNa2JDdw?oc=5" target="_blank" rel="noopener">[Bloomberg] House Republicans Move to Keep Putting Off Vote on Trump Tariffs</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">服装纺织</span>
+                    <span class="sector-tag">国防军工</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>零售业结构性调整与并购活动</div>
+                <div class="topic-title-en">Structural Adjustments and M&A Activities in Retail</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Target宣布削减约500个办公室及仓库职位，同时增加门店员工投资，反映了实体零售商在优化成本结构与提升客户体验之间的艰难平衡。另一方面，英国平价彩妆品牌Barry M被竞争对手Warpaint收购，显示了消费品牌在市场压力下寻求整合的趋势。这两起事件共同指向零售行业正通过内部重组和外部并购来应对增长挑战和市场竞争。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/target-store-investment-job-cuts-customer-experience.html" target="_blank" rel="noopener">[CNBC] Target steps up investment in store staffing, cuts about 500 other roles to help fix customer experience</a>
+                    <a href="https://www.marketwatch.com/story/targets-new-ceo-wants-to-make-stores-more-welcoming-his-latest-move-is-to-cut-jobs-ff1774fd?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Target cuts office and warehouse jobs, as it shifts resources toward stores</a>
+                    <a href="https://www.bbc.com/news/articles/c98q50gd2vmo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Make-up brand Barry M bought by rival Warpaint</a>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>亚洲市场表现分化与个股剧烈波动</div>
+                <div class="topic-title-en">Divergent Performance and Sharp Volatility in Asian Markets</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    日本日经225指数逼近58,000点历史高位，显示日本股市的强劲势头。然而，亚洲市场内部出现显著分化：韩国最大国防公司Hanwha Aerospace因业绩不及预期股价大跌，而SoftBank则因AI概念和电信业务展望上调而暴涨。同时，JPMorgan的看多报告推动部分中国AI股票飙升。这表明在整体市场向好的背景下，个股业绩和叙事驱动带来的波动性极大，投资者需精选标的。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/asia-markets-live-nikkei-topix-takaichi-kospi-hang-seng.html" target="_blank" rel="noopener">[CNBC] Japan's Nikkei 225 nears record 58,000 level as Asian stock markets mostly rise</a>
+                    <a href="https://www.cnbc.com/2026/02/10/south-korea-largest-defense-firm-hanwha-aerospace-slumps-downbeat-results.html" target="_blank" rel="noopener">[CNBC] South Korea's largest defense firm Hanwha Aerospace slumps 6% as revenue, pre-tax profit miss estimates</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxONEZCcGpYWnlyT2dZRlN3Qlk5WWdYT1RzTTN6dm1OYzJRTkJQU0xhUXU2dDJnY1kyT08zTHlVUkxUT1A4VFdJbEM5RGdBV1l2NjF0Y0Zpbk1GRXFaaHp6RkQ3U3doN1BIZWtKRzVoSjQzaS1NbU90YkUyWUsxUGVBaEVWOGhIc0VyTEJhQnlBZXJJUFFMYTRNTmQ4cmxGX3ZJWGtSVk9VbUFON3JUWHJwNHFHUEY?oc=5" target="_blank" rel="noopener">[Bloomberg] JPMorgan Bullish Calls Spur Surge in a Pair of China AI Stocks</a>
+                    <span class="sector-tag">证券</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">电信</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>金融市场创新与监管挑战并存</div>
+                <div class="topic-title-en">Financial Market Innovation Coexists with Regulatory Challenges</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    金融市场出现新旧动能交织的景象：一方面，预测市场在超级碗期间交易额达15亿美元，显示其日益主流化；另一方面，加密货币诈骗激增，而美国CFTC主要办公室仅有一名执法律师，凸显监管滞后与力不从心。同时，Alphabet发行可能包含100年期债券的债务，反映了超长期限融资工具的吸引力。这种创新与风险并存的局面，对金融监管体系和投资者保护提出了更高要求。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/in-a-coming-out-party-for-prediction-markets-and-sports-people-just-traded-nearly-1-5-billion-on-the-super-bowl-winner-86613100?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] In a coming-out party for prediction markets and sports, people just traded nearly $1.5 billion on the Super Bowl winner</a>
+                    <a href="https://news.google.com/rss/articles/CBMiigNBVV95cUxQdDVMczQyMEY0aVpHVnJscElRbm9YTmtUTzlZOW5tamU1QVdGQjBZSEpwdjJnbTRfVTBnLWtjQlktVUVmOTd3bHFmVFdxeEFmc25nWHE3SGI4b1MtTGo1UGk2WkZRR2w3di05X3lFR3ZIODlrNDRORFhzQlNTUGlXSWU1ZHhCajZqVWlJVDZFM2s2clQ0MDU0ajlUV0hxSlhYSU1VaFhSbEdfRF9peHVIV29lY2dUdl9HMW5xLTVBU0FnNjRZV1JFN2oyV3l6ZWktNmh4SXptNzQ3ck1qOXUtS0tHQWFzSDBwcHdOTGpXRU1vZWt0WUxiOEVOX3dod0tyZzJfX29jLWQ0VVdfX3c1YWxhV1R4eDExTjlVRGV4bUo4clV4NTZoZlUxODNhUTRTZGlqbXAtVHZGZHpoQnJJTnhfZlVkMDQtZUt2U3FmYlZieU9NMkYzQy01NjNiUk1QbGMtMVV2Z25lYjdqdldaZHpGb0ZTaEhoNWN3ZzRFVEdodmpmSzRoQWxn?oc=5" target="_blank" rel="noopener">[Barrons] As Crypto Scams Mount, the CFTC Now Has 1 Enforcement Lawyer in Its Flagship Office</a>
+                    <a href="https://news.google.com/rss/articles/CBMi-wJBVV95cUxPOGxHTDJndDh1UkJER2NPS0FZVnlFTmlaQnhKZEhDTGhUSElvYUUta0RQRkN2VlY1TEY1MWhZMzlCd1Z5cFoyYVFXOG5zZFoyUU00WU9xcnNWUC1TbXAzYzZQaUNpdDFQU0JyRHRUZXRCVWtzbmE3dEo2alBMNmU0NEdkMzdnNWFla3ZCanF5d08yajRBTUJRVURtM0tYVkZIVUxhUG84YU9vd19jM2ZHdHdwMWN0c2k0UkxuVldMZUhEYTBoWTdiUjNmdXhhWkg3VmF2SGJxalhWMnRzSnBGSEVWSXNJb0VBekRfaDVGRDZPbzQzMXEtRk1RQU1GekR4dGxxZHpVVDJ4dnNvNTFFeWxrUXBiY21mTmtZdEZZQ1pBbDk3VTRhZ1RqN3dCdlVCZzY0M3F2NEs0a3dVMDAza3YycjdNa3NZTVo0NHdKYmlKSVE2NTA1Sk5ESWRGNmFxMXBaRHdXeFpNVTRjTkVZMjZ4WFhsdG5IRUtF?oc=5" target="_blank" rel="noopener">[Barrons] Google Goes Long With 100-Year Bond Sale. We’ve Seen This Before.</a>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">证券</span>
+                    <span class="sector-tag">债券市场</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>健康科技与减肥药市场遭遇挫折</div>
+                <div class="topic-title-en">Health Tech and Weight-Loss Drug Market Suffer Setbacks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    健康科技公司Hims & Hers因减肥药策略引发市场担忧股价暴跌16%，反映出市场对GLP-1类药物竞争格局及企业具体战略执行的高度敏感。同时，研究指出AI聊天机器人提供不良健康建议，这为依赖AI进行健康咨询的商业模式敲响了警钟。这些事件表明，尽管健康科技和减肥药是热门赛道，但面临严格的监管审视、激烈的市场竞争以及技术可靠性质疑。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMirwNBVV95cUxQY2Q4Xy1MbDdwT0Z2bFEtRVA0QnVzTFk3OXljX1IxREpWTG5yMzF2U3FXQk9UUEpOYjRRWm1RZTNENGgxaVU4dTRTOHVOWWZMWFpOaENpRko5VUlvV2JfenR0cGxSY0w2NVJBd0I4d0dsRWFrTTBrMHl4OEhhaDl6UUxpTXBsTDVvWHRZR0pYWTZLajBFVnk1WDdrY0w5Si1nRUd5b1VLVXpOTlhZOHprS2NEWnMxNEg1LUhieWlPanVsQzVtd0c3R2dyU0F4bTVUTzlkblVyT1ozRFVmOVh4MzktTFA5TDJ3UldETFltV3laN0FtazV6NHFzell1T2dxcFlyM2JxS2s3UnNXVkhLclRKN09aTGpjamtLMG5mLUdRZ1Y0S21ISHlCT2Z1bWdoS1NCRmVReHU2RTdLSzJybE5jWU91S3NJb0s5amo0VkRodlBxV25ZZ0JreU5YemMwSVFXVFc0UFZHTTFLVkdNeWdGcjBfLVptcC1OWlZrdDBScEd3UDEyRnpNX3Z0TXBFengyWEJvbFpHeEJwYjRyWGxDc29jUlRjX190Q0FtTQ?oc=5" target="_blank" rel="noopener">[Barrons] Hims & Hers Stock Plunges 16%. Its Weight-Loss Drug Strategy Backfired.</a>
+                    <a href="https://news.google.com/rss/articles/CBMilgNBVV95cUxQT1R5N3RRaF9iSHdRemlDNVJGcVktTnhHTV83WlN6MUxsQmJrcUhwTWVETHl2VW8yd3FHWjg2QnpzUm9HZUc1OWJZQmpka2hFdmVoWkhTWF8zT3lDc2twMUJ6TXVuZTFQa05rR0FGU0tLdkRwYmxsR3AwRS1YU0t3WjFFUjZSY29ZNFBhZUUtMTJIZm1DbkpmRlhmVnJxRTZJVWtROU1Gal96anlwVmtNWXZubnJDUjc4Q3QwMjgzU0dzX1VISEgxYXRDbmRJUWNXTXBHc2NqWjk1bjk4dXNvSTZPSzdQWnNlYVE5TnZSVFlCYjlYLVpjNFB5bnc1ejBGNUhoR09aNDM1N2tfZFBHMUpCSS0xX2RadDkxTHZSaWc5Yl9feF9jamhhYmcyMEM0ajJKRVEyOWVkTFdDai11R0tkNDBsLUo2cTFSUGFHeWtRNVdxQnlTVFliS3hUZVRJM1JHZlAzR2NOakc4dkg0SG5SNnBRWXlSSzY3RFdMYTdMNEplaDVSazZXX2RRalRjTDVobTNn?oc=5" target="_blank" rel="noopener">[Barrons] AI Chatbots Give Bad Health Advice, Research Finds</a>
+                    <span class="sector-tag">健康科技</span>
+                    <span class="sector-tag">制药</span>
+                    <span class="sector-tag">医疗服务</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>日经225指数逼近58,000点历史高位</li>
+                <li>Alphabet发行200亿美元债券以资助AI建设</li>
+                <li>SoftBank股价因Arm及电信业务预期上调暴涨10%</li>
+                <li>Target削减约500个岗位，同时增加门店员工投资</li>
+                <li>美国豁免部分孟加拉国服装关税</li>
+                <li>美元/人民币汇率升至2023年以来最强水平</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
