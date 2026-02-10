@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-10 12:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-10 12:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">亚洲股市在科技股反弹带动下普遍上涨，日经指数创历史新高，但地缘政治风险与债券市场波动引人关注。</p>
+            <span class="sentiment" style="background:#e74c3c;">&#9650; 市场情绪: 看涨</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>科技巨头强势反弹，AI投资热潮推动市场信心</div>
+                <div class="topic-title-en">Tech Giants Rebound Strongly, AI Investment Boom Boosts Market Confidence</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    经历前期大幅抛售后，以Alphabet、Oracle、微软为代表的科技股出现显著反弹，其中甲骨文大涨9%。这波反弹的核心驱动力是市场对人工智能基础设施长期投资的坚定信念。尽管Alphabet在发行债券时提示了AI相关风险，但Databricks以1340亿美元估值完成巨额融资，均表明资本仍在疯狂涌入AI赛道，市场情绪正从恐慌转向对长期增长的重新定价。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/big-tech-stocks-post-selloff-week.html" target="_blank" rel="noopener">[CNBC] Oracle gains 9%, Microsoft climbs 3% as tech tries to bounce back from $1 trillion sell-off</a>
+                    <a href="https://www.cnbc.com/2026/02/09/alphabet-highlights-new-ai-related-risks-in-tapping-debt-market.html" target="_blank" rel="noopener">[CNBC] Alphabet calls out new AI-related risks, as it taps debt market to fund build-out</a>
+                    <a href="https://www.marketwatch.com/story/alphabets-15-billion-bond-deal-may-have-a-highly-unusual-component-2aa15bee?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Alphabet’s $20 billion bond deal may be followed by something highly unusual</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">云计算</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>日经指数再创历史新高，亚洲市场普遍走强</div>
+                <div class="topic-title-en">Nikkei Hits Fresh Record High, Asian Markets Mostly Rise</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    日本股市延续大选后的强势行情，日经225指数一度逼近58000点，创下历史新高，领涨亚洲市场。此轮上涨主要得益于国内政治稳定预期以及日元汇率走弱对出口企业的提振。亚洲其他主要市场亦跟随上涨，表明区域投资者风险偏好提升，资金正从美元资产中流出，寻求亚洲增长机会。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/asia-markets-live-nikkei-topix-takaichi-kospi-hang-seng.html" target="_blank" rel="noopener">[CNBC] Japan's Nikkei 225 continues post election rally as Asian stock markets mostly rise</a>
+                    <a href="https://www.investing.com/news/stock-market-news/asia-stocks-rise-as-nikkei-sets-fresh-record-dollar-drops-4495410" target="_blank" rel="noopener">[Investing.com] Asia stocks rise as Nikkei sets record, dollar drops</a>
+                    <span class="sector-tag">股市</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">出口贸易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>地缘政治风险升温，霍尔木兹海峡航运安全引担忧</div>
+                <div class="topic-title-en">Geopolitical Risks Heat Up, Shipping Safety in Strait of Hormuz Raises Concerns</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国向船只发出警告，要求其尽可能远离伊朗水域，因伊朗革命卫队此前进行了登船尝试。这一事件加剧了全球关键石油运输通道——霍尔木兹海峡的紧张局势，可能扰乱全球能源供应链并推高航运保险费率。同时，《经济学人》提及俄罗斯的破坏活动变得更大胆，多重地缘风险叠加，增加了市场的不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/us-warns-ships-avoid-iran-strait-hormuz-boarding-irgc-tehran-israel-netanyahu.html" target="_blank" rel="noopener">[CNBC] U.S. urges ships to stay 'as far as possible' from Iran's waters in Strait of Hormuz after boarding attempts</a>
+                    <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOM0xQX1VIUWtoWTNFLUVpdU9ZcXgxM3J4aER0MDUyTUkxelJFc3R3LUt3ZmNMTUdiVTB0Zmp5U2NHejhhX1I1U2cwX3lQd19UYk9ZNlFBWFg4dWROUHdZYjVRcHZVWTY0OUUyMXBSWGtaY1NuRk9SQlVNZUtnVU5Md285dGZCVVdVb0pFeUg4WnE4UQ?oc=5" target="_blank" rel="noopener">[Economist] Russia’s sabotage campaign is becoming bolder</a>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">保险</span>
+                    <span class="sector-tag">国防安全</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>企业战略调整聚焦：Target加码门店，MrBeast进军金融科技</div>
+                <div class="topic-title-en">Corporate Strategic Shifts: Target Doubles Down on Stores, MrBeast Enters Fintech</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    零售巨头Target宣布削减约500个办公室及仓库职位，将资源重新投向门店员工和客户体验，反映了实体零售在数字化时代回归服务本质的战略转向。与此同时，网红MrBeast收购面向年轻人的金融应用Step，标志着内容创作者正利用其巨大流量和年轻粉丝基础，跨界进入金融科技领域，探索新的商业模式。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/target-store-investment-job-cuts-customer-experience.html" target="_blank" rel="noopener">[CNBC] Target steps up investment in store staffing, cuts about 500 other roles to help fix customer experience</a>
+                    <a href="https://www.cnbc.com/2026/02/10/youtube-mrbeast-youth-financial-services-app-step-beast-industries-acquires-fintech-app.html" target="_blank" rel="noopener">[CNBC] YouTube star MrBeast buys youth-focused financial services app Step</a>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>药品监管风波再起，减肥药市场面临合规挑战</div>
+                <div class="topic-title-en">Pharmaceutical Regulatory Storm Returns, Weight-Loss Drug Market Faces Compliance Challenges</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国FDA指出诺和诺德旗下减肥药Wegovy的电视广告存在“虚假或误导性”陈述，这对依赖重磅药物的药企营销策略构成直接挑战。同时，数字健康公司Hims & Hers因市场对其减肥药策略的担忧而股价暴跌16%。这一系列事件凸显了在巨大市场需求驱动下，减肥药赛道的竞争已从疗效延伸至营销合规与商业策略的稳健性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/fda-novo-nordisk-wegovy-tv-ad.html" target="_blank" rel="noopener">[CNBC] FDA says Novo Nordisk's TV ad for obesity pill includes 'false or misleading' claims</a>
+                    <a href="https://news.google.com/rss/articles/CBMirwNBVV95cUxOZS10NDhtaHM1c3prczc4VUlnLVl2YTVqMVpjdU9tdC1XdkdmNVV3NkJFVXlFcDM2c1lrZmQ1SlBGNG1WQWNsd3Vzb3d4NHB1aDlvWEpEV3p5R3I0OWlJNFZvUE11cjE4SWZXSjQ1RXRza0xQYXhncWptTTdOMldwSW5jM1JDTmQ5eGtnSHpBLWQxZlMzblZDY1htMmUta1pqT2Z5cTZoTUxaaTAzOG1ZQ3UxY093RGVtaE91YWtkeTl6ZHQ2QnVJWndCTW15Nzd2ME5qSXdsa2l5UTUyWjRzbXRDdHFNMDB3Uk9uNk9aUDItbWh5TThYc19oN0xySWE2aHMxVjU2V3YxanVWZ3FfdVNkVkMyTkJ6T3A1S1hmMjFXWF8yaUZxRHE3azlKUFhLSXowS2tMZkJBRmxlZExEUkJHYnJqbGlJVzZwZWZwbmNRdWJTOC1ucHd5WXlvYlJLNnhyQktVblloendkOTdDQXpBM0dEWjJMalZnbVRQOHBxUVJwRGlfdGdoOFRyZzdPLVJ6NUtJUmVGUXFIT0NiYUtnZWh0cW1DUy1Nd0JaNA?oc=5" target="_blank" rel="noopener">[Barron's] Hims & Hers Stock Plunges 16%. Its Weight-Loss Drug Strategy Backfired.</a>
+                    <span class="sector-tag">制药</span>
+                    <span class="sector-tag">医疗保健</span>
+                    <span class="sector-tag">数字健康</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>黄金巨震与加密货币监管收紧，避险与投机资产波动加剧</div>
+                <div class="topic-title-en">Gold Volatility and Crypto Regulatory Tightening, Safe-Haven and Speculative Assets Face Increased Fluctuations</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    黄金价格在突破每盎司5000美元后出现剧烈波动，分析将部分原因归咎于中国市场的巨大影响力，凸显了黄金作为传统避险资产在新形势下的定价复杂性。另一方面，随着加密货币骗局增加，美国CFTC正加强其旗舰办公室的执法力量，预示着对加密市场的监管将更趋严格，这可能抑制短期投机热情但有利于行业长期规范发展。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiggNBVV95cUxQREtGU3RzZTU1d193M3luazktMk1UZEp5MEhwWkwyN01tVkQtNEhIODBnYkZkbWlnOVdGYklOM1lRRld6alROTFk4RVd3VzVJandlQVFRWnRUX24zTGctN0ZUVUl1OUcyUHBUUWJGc1A4Q3d0QUJmRm40Tl9lcUxYbWdLQ0EyWFdwUFlJZFNLbWF0R01zZlluSjc0MTdTaWJMcHJwMWpYRU5PQnNtV3UwaW50N1FtcUt5dDZMM1NkMUNmUXBEYWpTYS1JN1l5TXctYk41bzlEUGVoMmtxU0pyUjdMUWRPRzUwQjhYNDVhRk5GZ2toRkFoaENsUkJnQTJfcHNGcTVEbXRaUENGTnpuczB5UXdjQmJKeTVpcmstMWFyYTVQcW1oT0RpOGthVFNXT2s2TXB6RjBxSkhodVVfbHVQN2hmZnR4OEQ5dFpsRHlVZFYxR3k0b1RYQ0xNa0xZOHJxZXJNRVZlNzQzVFFjQWFTaG5MZ3lWZGY4dlFoNmNDdw?oc=5" target="_blank" rel="noopener">[Barron's] Gold Pops Back Above $5,000. Blame China for Volatility, Says Bessent.</a>
+                    <a href="https://news.google.com/rss/articles/CBMiigNBVV95cUxOU3JoeS1RaEU0OURDcWlQc0NDbW13SGJxODlJNTJQRVJBeUZPdUhqcnBxbEQxc0VjOEhxQ29pdnZ0VEtta2xqTmJUQ1hpSlZxVklyYVU2cTViYUdfeWdRdHZUZDFaY05SVlJRUGJHMUZLQ3hHdG5rUVZITmdPa3pnNEdYWjBDN1pXUHZKT0Z2Snp4bFI2b2c4bFRlekhsTFpndXJvaXl3SWZtVkktNG5yYWdsLTZnWml5OTVYM3RmYTVuV2hYTlhiZXNuYTF4bFdtN1NoYWw1SE02SWI5dXdVSmlWYWR6Q1FlT0tNUXQ3bjhlUWlfR01HZjd0VDJsdFBEeXZhR3BfdHZLeVktWkRnSENrOV91TTVIaGZIcWRPNGlfTG5oV1Z2akdRNktVMG1WNENJLWNFdHNQQWxyZmdIbVh1SDN6dmIxLXZ1V040REhOS2ZSR2NlTktTLU9xOHhXd2xkc1poaG01Z3ZkeXdRN2FJa3FuSEIzM21JNXdLaHNyZDNYMkZhT0N3?oc=5" target="_blank" rel="noopener">[Barron's] As Crypto Scams Mount, the CFTC Now Has 1 Enforcement Lawyer in Its Flagship Office</a>
+                    <span class="sector-tag">黄金/大宗商品</span>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">金融监管</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>日经225指数逼近58000点创历史新高</li>
+                <li>Databricks完成50亿美元融资，估值达1340亿美元</li>
+                <li>Alphabet发行200亿美元债券以支持AI等投资</li>
+                <li>黄金价格突破每盎司5000美元后剧烈波动</li>
+                <li>Target削减约500个职位以加码门店投资</li>
+                <li>韩国韩华宇航因业绩不及预期股价下跌6%</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
