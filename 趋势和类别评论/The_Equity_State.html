@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Equity State | 权益国家：当华盛顿接管牛市</title>
+    <style>
+        :root {
+            --bloomberg-black: #000000;
+            --bloomberg-orange: #ff6900;
+            --bloomberg-blue: #1e88e5;
+            --bloomberg-green: #4caf50;
+            --bloomberg-red: #f44336;
+            --bloomberg-gold: #ffd700;
+            --eq-navy: #1a1a4e;
+            --eq-navy-light: #2d2d7a;
+            --eq-crimson: #8b1a2b;
+            --eq-crimson-light: #c0392b;
+            --eq-steel: #37474f;
+            --eq-steel-light: #546e7a;
+            --slate: #475569;
+            --slate-light: #64748b;
+            --amber: #d4a843;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --border-color: #e0e0e0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .header-bar { background: var(--bloomberg-black); padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 24px; font-weight: 700; color: #fff; letter-spacing: -1px; }
+        .logo span { color: var(--bloomberg-orange); }
+        .header-date { color: rgba(255,255,255,0.7); font-size: 13px; }
+
+        .price-ticker { background: #111; padding: 14px 24px; overflow: hidden; border-bottom: 2px solid var(--eq-crimson); }
+        .ticker-content { display: flex; gap: 48px; animation: scroll 40s linear infinite; }
+        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .ticker-item { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
+        .ticker-name { color: #aaa; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .ticker-price { color: #fff; font-weight: 700; font-size: 15px; font-variant-numeric: tabular-nums; }
+        .ticker-change { font-size: 13px; font-weight: 600; }
+        .ticker-change.up { color: var(--bloomberg-green); }
+        .ticker-change.down { color: var(--bloomberg-red); }
+        .ticker-change.neutral { color: var(--slate-light); }
+        .ticker-change.gold { color: var(--amber); }
+
+        .hero { background: linear-gradient(135deg, #0a0a1f 0%, #1a1a4e 35%, #2d1a3e 65%, #0f0a1a 100%); padding: 80px 24px 60px; text-align: center; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle at 30% 40%, rgba(139,26,43,0.12) 0%, transparent 40%), radial-gradient(circle at 70% 60%, rgba(26,26,78,0.15) 0%, transparent 40%); animation: shimmer 12s ease-in-out infinite; }
+        @keyframes shimmer { 0%, 100% { transform: translateX(-5%) translateY(-5%); } 50% { transform: translateX(5%) translateY(5%); } }
+        .hero::after { content: ''; position: absolute; top: 50%; left: 50%; width: 360px; height: 360px; background: radial-gradient(circle, rgba(212,168,67,0.06) 0%, transparent 70%); border-radius: 50%; transform: translate(-50%, -50%); }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(139,26,43,0.2); border: 1px solid rgba(192,57,43,0.4); color: var(--eq-crimson-light); font-size: 11px; font-weight: 700; padding: 6px 16px; border-radius: 20px; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 1.5px; position: relative; }
+        .hero-badge .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--eq-crimson); animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+        .hero-title { font-size: clamp(32px, 6vw, 58px); font-weight: 900; color: #fff; margin-bottom: 8px; letter-spacing: -2px; position: relative; line-height: 1.1; }
+        .hero-title .accent { color: var(--eq-crimson-light); }
+        .hero-title .accent-gold { color: var(--amber); }
+        .hero-title .accent-blue { color: #5dade2; }
+        .hero-subtitle-en { font-size: clamp(16px, 2.5vw, 22px); color: rgba(255,255,255,0.45); font-weight: 300; margin-bottom: 20px; position: relative; letter-spacing: -0.5px; }
+        .hero-subtitle { font-size: 18px; color: rgba(255,255,255,0.65); max-width: 800px; margin: 0 auto; position: relative; line-height: 1.7; }
+        .hero-stats { display: flex; justify-content: center; gap: 48px; margin-top: 40px; position: relative; }
+        .hero-stat { text-align: center; }
+        .hero-stat-value { font-size: 36px; font-weight: 800; font-variant-numeric: tabular-nums; }
+        .hero-stat-value.red { color: var(--eq-crimson-light); }
+        .hero-stat-value.gold { color: var(--amber); }
+        .hero-stat-value.blue { color: #5dade2; }
+        .hero-stat-value.green { color: var(--bloomberg-green); }
+        .hero-stat-value.white { color: rgba(255,255,255,0.9); }
+        .hero-stat-label { font-size: 12px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+        .article-meta { padding: 24px 0; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+        .author-info { display: flex; align-items: center; gap: 12px; }
+        .author-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, var(--eq-navy), var(--eq-crimson)); display: flex; align-items: center; justify-content: center; font-weight: 600; color: #fff; font-size: 14px; }
+        .author-name { font-weight: 600; }
+        .publish-time { color: var(--text-secondary); font-size: 14px; }
+        .reading-time { background: var(--bg-secondary); padding: 6px 12px; border-radius: 4px; font-size: 13px; color: var(--text-secondary); }
+
+        .section { padding: 48px 0; border-bottom: 1px solid var(--border-color); }
+        .section:last-child { border-bottom: none; }
+        .section-label { display: inline-block; font-size: 12px; font-weight: 700; color: var(--eq-crimson); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; }
+        .section-label.navy { color: var(--eq-navy-light); }
+        .section-label.gold { color: var(--amber); }
+        .section-label.steel { color: var(--eq-steel); }
+        .section-title { font-size: 28px; font-weight: 700; margin-bottom: 24px; letter-spacing: -0.5px; line-height: 1.3; }
+        p { font-size: 17px; line-height: 1.8; margin-bottom: 20px; color: var(--text-primary); }
+        a { color: var(--bloomberg-blue); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .big-number { text-align: center; padding: 48px 24px; margin: 32px 0; border-radius: 12px; }
+        .big-number.crimson { background: linear-gradient(135deg, #fdf2f4 0%, #f5c6cb 100%); }
+        .big-number.navy { background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%); }
+        .big-number.gold { background: linear-gradient(135deg, #fef9e7 0%, #fdebd0 100%); }
+        .big-number.green { background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); }
+        .big-number-value { font-size: clamp(48px, 8vw, 80px); font-weight: 900; letter-spacing: -3px; line-height: 1; }
+        .big-number-value.crimson { color: var(--eq-crimson); }
+        .big-number-value.navy { color: var(--eq-navy); }
+        .big-number-value.gold { color: var(--amber); }
+        .big-number-value.green { color: var(--bloomberg-green); }
+        .big-number-label { font-size: 16px; color: var(--text-secondary); margin-top: 12px; font-weight: 500; }
+        .big-number-context { font-size: 14px; color: var(--text-secondary); margin-top: 8px; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+        .data-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 15px; }
+        .data-table th { background: var(--bloomberg-black); color: #fff; padding: 14px 16px; text-align: left; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .data-table td { padding: 14px 16px; border-bottom: 1px solid var(--border-color); vertical-align: top; }
+        .data-table tr:hover { background: var(--bg-secondary); }
+        .price-up { color: var(--bloomberg-green); font-weight: 600; }
+        .price-down { color: var(--bloomberg-red); font-weight: 600; }
+
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 32px 0; }
+        .stat-card { background: var(--bg-secondary); padding: 24px; border-radius: 8px; text-align: center; border: 1px solid var(--border-color); }
+        .stat-value { font-size: 30px; font-weight: 800; color: var(--bloomberg-black); margin-bottom: 4px; font-variant-numeric: tabular-nums; }
+        .stat-value.red { color: var(--bloomberg-red); }
+        .stat-value.green { color: var(--bloomberg-green); }
+        .stat-value.orange { color: var(--bloomberg-orange); }
+        .stat-value.blue { color: var(--bloomberg-blue); }
+        .stat-value.gold { color: var(--amber); }
+        .stat-value.slate { color: var(--slate); }
+        .stat-value.crimson { color: var(--eq-crimson); }
+        .stat-value.navy { color: var(--eq-navy); }
+        .stat-label { font-size: 13px; color: var(--text-secondary); line-height: 1.3; }
+
+        .chart-container { background: linear-gradient(180deg, #1a1a2e 0%, #0f0f23 100%); border-radius: 12px; padding: 32px; margin: 32px 0; }
+        .chart-title { color: #fff; font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+        .chart-subtitle { color: rgba(255,255,255,0.5); font-size: 13px; margin-bottom: 24px; }
+        .hbar-chart { display: flex; flex-direction: column; gap: 12px; }
+        .hbar-row { display: flex; align-items: center; gap: 12px; }
+        .hbar-label { width: 160px; font-size: 13px; color: rgba(255,255,255,0.8); text-align: right; flex-shrink: 0; font-weight: 500; }
+        .hbar-track { flex: 1; height: 28px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden; }
+        .hbar-fill { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-right: 10px; justify-content: flex-end; transition: width 1s ease-out; }
+        .hbar-fill.red { background: linear-gradient(90deg, rgba(244,67,54,0.3), var(--bloomberg-red)); }
+        .hbar-fill.blue { background: linear-gradient(90deg, rgba(30,136,229,0.3), var(--bloomberg-blue)); }
+        .hbar-fill.orange { background: linear-gradient(90deg, rgba(255,105,0,0.3), var(--bloomberg-orange)); }
+        .hbar-fill.gold { background: linear-gradient(90deg, rgba(212,168,67,0.3), var(--amber)); }
+        .hbar-fill.green { background: linear-gradient(90deg, rgba(76,175,80,0.3), var(--bloomberg-green)); }
+        .hbar-fill.slate { background: linear-gradient(90deg, rgba(71,85,105,0.3), var(--slate)); }
+        .hbar-fill.crimson { background: linear-gradient(90deg, rgba(139,26,43,0.3), var(--eq-crimson)); }
+        .hbar-fill.navy { background: linear-gradient(90deg, rgba(26,26,78,0.3), var(--eq-navy-light)); }
+        .hbar-value { font-size: 12px; font-weight: 700; color: #fff; }
+
+        .chart-visual { height: 220px; display: flex; align-items: flex-end; gap: 6px; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .chart-bar-group { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+        .chart-bar { width: 100%; border-radius: 3px 3px 0 0; transition: all 0.3s; min-height: 4px; }
+        .chart-bar.crimson { background: linear-gradient(180deg, var(--eq-crimson) 0%, rgba(139,26,43,0.3) 100%); }
+        .chart-bar.navy { background: linear-gradient(180deg, var(--eq-navy-light) 0%, rgba(26,26,78,0.3) 100%); }
+        .chart-bar.gold { background: linear-gradient(180deg, var(--amber) 0%, rgba(212,168,67,0.3) 100%); }
+        .chart-bar.green { background: linear-gradient(180deg, var(--bloomberg-green) 0%, rgba(76,175,80,0.3) 100%); }
+        .chart-bar.slate { background: linear-gradient(180deg, var(--slate) 0%, rgba(71,85,105,0.3) 100%); }
+        .chart-bar.red { background: linear-gradient(180deg, var(--bloomberg-red) 0%, rgba(244,67,54,0.3) 100%); }
+        .chart-bar.blue { background: linear-gradient(180deg, var(--bloomberg-blue) 0%, rgba(30,136,229,0.3) 100%); }
+        .chart-bar:hover { filter: brightness(1.2); }
+        .chart-labels { display: flex; justify-content: space-around; margin-top: 12px; font-size: 12px; color: rgba(255,255,255,0.5); }
+        .chart-bar-value { font-size: 11px; color: rgba(255,255,255,0.7); text-align: center; margin-bottom: 4px; font-weight: 600; }
+
+        .timeline { position: relative; padding-left: 32px; margin: 32px 0; }
+        .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, var(--eq-crimson), var(--eq-navy), var(--amber)); }
+        .timeline-item { position: relative; padding-bottom: 28px; }
+        .timeline-item:last-child { padding-bottom: 0; }
+        .timeline-item::before { content: ''; position: absolute; left: -37px; top: 4px; width: 12px; height: 12px; border-radius: 50%; background: var(--eq-crimson); border: 2px solid #fff; box-shadow: 0 0 0 3px rgba(139,26,43,0.2); }
+        .timeline-item.navy-dot::before { background: var(--eq-navy); box-shadow: 0 0 0 3px rgba(26,26,78,0.2); }
+        .timeline-item.gold-dot::before { background: var(--amber); box-shadow: 0 0 0 3px rgba(212,168,67,0.2); }
+        .timeline-item.green-dot::before { background: var(--bloomberg-green); box-shadow: 0 0 0 3px rgba(76,175,80,0.2); }
+        .timeline-item.steel-dot::before { background: var(--eq-steel); box-shadow: 0 0 0 3px rgba(55,71,79,0.2); }
+        .timeline-date { font-size: 13px; font-weight: 700; color: var(--eq-crimson); margin-bottom: 6px; letter-spacing: 0.5px; }
+        .timeline-item.navy-dot .timeline-date { color: var(--eq-navy); }
+        .timeline-item.gold-dot .timeline-date { color: var(--amber); }
+        .timeline-item.green-dot .timeline-date { color: var(--bloomberg-green); }
+        .timeline-item.steel-dot .timeline-date { color: var(--eq-steel); }
+        .timeline-content h5 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+        .timeline-content p { font-size: 15px; margin-bottom: 0; color: var(--text-secondary); line-height: 1.6; }
+
+        .highlight-box { background: linear-gradient(135deg, #fdf2f4 0%, #f5c6cb 100%); border-left: 4px solid var(--eq-crimson); padding: 24px; margin: 32px 0; border-radius: 0 8px 8px 0; }
+        .highlight-box.navy { background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%); border-left-color: var(--eq-navy); }
+        .highlight-box.gold { background: linear-gradient(135deg, #fef9e7 0%, #fdebd0 100%); border-left-color: var(--amber); }
+        .highlight-box.green { background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-left-color: var(--bloomberg-green); }
+        .highlight-box.slate { background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%); border-left-color: var(--slate); }
+        .highlight-box.steel { background: linear-gradient(135deg, #eceff1 0%, #cfd8dc 100%); border-left-color: var(--eq-steel); }
+        .highlight-box.orange { background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-left-color: var(--bloomberg-orange); }
+        .highlight-box h4 { font-size: 16px; font-weight: 700; margin-bottom: 12px; color: var(--bloomberg-black); }
+        .highlight-box p { margin-bottom: 0; font-size: 15px; }
+        .highlight-box ul { margin: 8px 0 0 20px; font-size: 15px; line-height: 1.7; }
+        .highlight-box li { margin-bottom: 4px; }
+
+        .quote-block { background: var(--bloomberg-black); color: #fff; padding: 32px; border-radius: 8px; margin: 32px 0; position: relative; }
+        .quote-block::before { content: '\201C'; position: absolute; top: 12px; left: 24px; font-size: 72px; color: var(--eq-crimson); line-height: 1; opacity: 0.3; font-family: Georgia, serif; }
+        .quote-text { font-size: 19px; font-style: italic; line-height: 1.6; margin-bottom: 16px; padding-left: 36px; color: rgba(255,255,255,0.9); }
+        .quote-author { font-size: 14px; color: rgba(255,255,255,0.6); padding-left: 36px; font-style: normal; }
+
+        .comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 32px 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); }
+        .comparison-side { padding: 28px; }
+        .comparison-side.before { background: #f8f9fa; border-right: 1px solid var(--border-color); }
+        .comparison-side.after { background: #fdf2f4; }
+        .comparison-header { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid; }
+        .comparison-header.before-h { color: var(--slate); border-color: var(--slate); }
+        .comparison-header.after-h { color: var(--eq-crimson); border-color: var(--eq-crimson); }
+        .comparison-item { font-size: 14px; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.05); line-height: 1.5; }
+        .comparison-item:last-child { border-bottom: none; }
+        .comparison-item strong { display: block; font-size: 13px; color: var(--text-secondary); margin-bottom: 2px; }
+
+        .anatomy-box { background: #1a1a2e; border-radius: 12px; padding: 32px; margin: 32px 0; color: #fff; }
+        .anatomy-title { font-size: 18px; font-weight: 700; margin-bottom: 24px; }
+        .anatomy-flow { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
+        .anatomy-node { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 16px 20px; text-align: center; min-width: 130px; }
+        .anatomy-node.crimson-node { background: rgba(139,26,43,0.2); border-color: var(--eq-crimson); }
+        .anatomy-node.navy-node { background: rgba(26,26,78,0.2); border-color: var(--eq-navy-light); }
+        .anatomy-node.gold-node { background: rgba(212,168,67,0.15); border-color: var(--amber); }
+        .anatomy-node.green-node { background: rgba(76,175,80,0.15); border-color: var(--bloomberg-green); }
+        .anatomy-node.slate-node { background: rgba(71,85,105,0.15); border-color: var(--slate); }
+        .anatomy-node-title { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+        .anatomy-node.crimson-node .anatomy-node-title { color: var(--eq-crimson-light); }
+        .anatomy-node.navy-node .anatomy-node-title { color: #7986cb; }
+        .anatomy-node.gold-node .anatomy-node-title { color: var(--amber); }
+        .anatomy-node.green-node .anatomy-node-title { color: var(--bloomberg-green); }
+        .anatomy-node.slate-node .anatomy-node-title { color: var(--slate-light); }
+        .anatomy-node-value { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.4; }
+        .anatomy-arrow { font-size: 20px; color: rgba(255,255,255,0.3); }
+
+        .media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin: 32px 0; }
+        .media-card { background: var(--bg-secondary); border-radius: 8px; padding: 24px; border-left: 4px solid var(--eq-crimson); transition: transform 0.2s, box-shadow 0.2s; }
+        .media-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+        .media-card.navy-border { border-left-color: var(--eq-navy); }
+        .media-card.gold-border { border-left-color: var(--amber); }
+        .media-card.green-border { border-left-color: var(--bloomberg-green); }
+        .media-card.steel-border { border-left-color: var(--eq-steel); }
+        .media-source { font-size: 11px; font-weight: 700; color: var(--eq-crimson); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+        .media-source.navy { color: var(--eq-navy); }
+        .media-source.gold { color: var(--amber); }
+        .media-source.green { color: var(--bloomberg-green); }
+        .media-title { font-size: 15px; font-weight: 600; margin-bottom: 10px; line-height: 1.4; }
+        .media-excerpt { font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+
+        .pillar-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 32px 0; }
+        .pillar-card { border-radius: 12px; padding: 28px; text-align: center; border: 1px solid var(--border-color); }
+        .pillar-card.crimson { background: linear-gradient(135deg, #fdf2f4 0%, #f8d7da 100%); }
+        .pillar-card.navy { background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%); }
+        .pillar-card.gold { background: linear-gradient(135deg, #fef9e7 0%, #fdebd0 100%); }
+        .pillar-icon { font-size: 36px; margin-bottom: 12px; }
+        .pillar-title { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+        .pillar-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+
+        .footer { background: var(--bloomberg-black); color: #fff; padding: 48px 24px; text-align: center; }
+        .footer-note { font-size: 13px; color: rgba(255,255,255,0.5); max-width: 640px; margin: 0 auto 24px; line-height: 1.6; }
+        .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+        .footer-links a { color: rgba(255,255,255,0.7); font-size: 13px; }
+        .footer-links a:hover { color: #fff; }
+
+        .article-nav { background: #fff; border-bottom: 1px solid #e0e0e0; padding: 0 24px; }
+        .article-nav-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; gap: 4px; height: 40px; font-size: 13px; }
+        .article-nav a { display: inline-flex; align-items: center; gap: 5px; padding: 4px 12px; color: #666; font-weight: 600; border-radius: 4px; transition: all 0.15s; text-decoration: none; }
+        .article-nav a:hover { color: var(--eq-crimson); background: rgba(139,26,43,0.06); text-decoration: none; }
+        .article-nav .nav-sep { color: #e0e0e0; user-select: none; }
+
+        @media (max-width: 768px) {
+            .hero { padding: 48px 16px 40px; }
+            .hero-stats { gap: 24px; flex-wrap: wrap; }
+            .hero-stat-value { font-size: 28px; }
+            .section { padding: 32px 0; }
+            .comparison { grid-template-columns: 1fr; }
+            .comparison-side.before { border-right: none; border-bottom: 1px solid var(--border-color); }
+            .ticker-content { gap: 24px; }
+            .anatomy-flow { flex-direction: column; }
+            .anatomy-arrow { transform: rotate(90deg); }
+            .hbar-label { width: 120px; font-size: 11px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .pillar-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 480px) {
+            .stats-grid { grid-template-columns: 1fr; }
+            .hero-stats { flex-direction: column; gap: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header-bar">
+    <div class="logo">Capital<span>Markets</span></div>
+    <div class="header-date">2026年2月10日 星期二</div>
+</header>
+
+<nav class="article-nav">
+    <div class="article-nav-inner">
+        <a href="../index.html">&#8962; 首页</a>
+        <span class="nav-sep">/</span>
+        <a href="index.html">&#8592; 趋势与类别评论</a>
+    </div>
+</nav>
+
+<div class="price-ticker">
+    <div class="ticker-content">
+        <div class="ticker-item"><span class="ticker-name">S&P 500</span><span class="ticker-price">6,248</span><span class="ticker-change up">▲ +3.2% YTD</span></div>
+        <div class="ticker-item"><span class="ticker-name">Fed Funds</span><span class="ticker-price">3.50-3.75%</span><span class="ticker-change neutral">按兵不动</span></div>
+        <div class="ticker-item"><span class="ticker-name">DXY 美元指数</span><span class="ticker-price">103.8</span><span class="ticker-change down">▼ -2.1% YTD</span></div>
+        <div class="ticker-item"><span class="ticker-name">UST 10Y</span><span class="ticker-price">4.52%</span><span class="ticker-change down">▲ +18bps YTD</span></div>
+        <div class="ticker-item"><span class="ticker-name">Gold 黄金</span><span class="ticker-price">$3,120</span><span class="ticker-change gold">▲ 央行创纪录购买</span></div>
+        <div class="ticker-item"><span class="ticker-name">BTC 比特币</span><span class="ticker-price">$98,400</span><span class="ticker-change up">▲ +12% YTD</span></div>
+        <!-- duplicate for scroll -->
+        <div class="ticker-item"><span class="ticker-name">S&P 500</span><span class="ticker-price">6,248</span><span class="ticker-change up">▲ +3.2% YTD</span></div>
+        <div class="ticker-item"><span class="ticker-name">Fed Funds</span><span class="ticker-price">3.50-3.75%</span><span class="ticker-change neutral">按兵不动</span></div>
+        <div class="ticker-item"><span class="ticker-name">DXY 美元指数</span><span class="ticker-price">103.8</span><span class="ticker-change down">▼ -2.1% YTD</span></div>
+        <div class="ticker-item"><span class="ticker-name">UST 10Y</span><span class="ticker-price">4.52%</span><span class="ticker-change down">▲ +18bps YTD</span></div>
+        <div class="ticker-item"><span class="ticker-name">Gold 黄金</span><span class="ticker-price">$3,120</span><span class="ticker-change gold">▲ 央行创纪录购买</span></div>
+        <div class="ticker-item"><span class="ticker-name">BTC 比特币</span><span class="ticker-price">$98,400</span><span class="ticker-change up">▲ +12% YTD</span></div>
+    </div>
+</div>
+
+<div class="hero">
+    <div class="hero-badge"><span class="pulse"></span> 2026 新年大势 Special Report</div>
+    <h1 class="hero-title"><span class="accent">权益国家</span></h1>
+    <div class="hero-subtitle-en">The Equity State: When Washington Nationalized the Bull Market</div>
+    <div class="hero-subtitle">美国政府不再只是市场的监管者——它正成为资产价格的担保人。当美联储独立性遭受围攻、当每个新生儿的命运与标普500绑定、当关税和美元成为地缘武器——2026，一场前所未有的经济实验正在华盛顿上演。</div>
+    <div class="hero-stats">
+        <div class="hero-stat">
+            <div class="hero-stat-value red">$25亿</div>
+            <div class="hero-stat-label">美联储装修调查金额</div>
+        </div>
+        <div class="hero-stat">
+            <div class="hero-stat-value gold">$1,000</div>
+            <div class="hero-stat-label">特朗普账户种子资金</div>
+        </div>
+        <div class="hero-stat">
+            <div class="hero-stat-value blue">3.50%</div>
+            <div class="hero-stat-label">联邦基金利率</div>
+        </div>
+        <div class="hero-stat">
+            <div class="hero-stat-value green">$5,000亿+</div>
+            <div class="hero-stat-label">2026 AI资本支出预测</div>
+        </div>
+    </div>
+</div>
+
+<main class="container">
+
+    <div class="article-meta">
+        <div class="author-info">
+            <div class="author-avatar">ES</div>
+            <div>
+                <div class="author-name">Capital Markets 宏观研究组</div>
+                <div class="publish-time">2026年2月10日 | 蛇年新春特辑</div>
+            </div>
+        </div>
+        <div class="reading-time">30分钟深度阅读</div>
+    </div>
+
+    <!-- ==================== PROLOGUE ==================== -->
+    <section class="section">
+        <div class="section-label">Prologue</div>
+        <h2 class="section-title">导读：三根支柱，一个新物种</h2>
+
+        <p>2026年2月，全球金融史翻到了一页怪异的新章。传统的制度防火墙正在被拆除，新的地缘经济壁垒正在竖起。美国货币政策、财政创新和地缘政治博弈的轨迹在此刻惊人地交汇——预示着美国经济操作系统的一次根本性重构。</p>
+
+        <p>我们将它命名为<strong>「权益国家」（The Equity State）</strong>。在这个新范式中，股票市场的健康不再仅仅是经济成功的晴雨表，更是社会政策实施和地缘政治力量投射的<em>主要载体</em>。市场崩盘不再仅仅是金融事件——它将是政治灾难。</p>
+
+        <div class="pillar-grid">
+            <div class="pillar-card crimson">
+                <div class="pillar-icon">&#127981;</div>
+                <div class="pillar-title">支柱一：围攻堡垒</div>
+                <div class="pillar-desc">对美联储主席鲍威尔的刑事调查与沃什提名——沃尔克以来央行自治时代的终结</div>
+            </div>
+            <div class="pillar-card navy">
+                <div class="pillar-icon">&#127891;</div>
+                <div class="pillar-title">支柱二：金色门票</div>
+                <div class="pillar-desc">特朗普账户（第530A条）为每个新生儿创建投资账户——主街与华尔街的合并</div>
+            </div>
+            <div class="pillar-card gold">
+                <div class="pillar-icon">&#127758;</div>
+                <div class="pillar-title">支柱三：护城河</div>
+                <div class="pillar-desc">「海湖庄园协议」框架下的关税武器、美元管理与软性资本管制</div>
+            </div>
+        </div>
+
+        <p>在接下来的30分钟里，我们将拆解这台新机器的每一个齿轮。但首先请记住一件事：如果这场实验成功，美国将发明一种新的国家形态——一个以标普500为国家资产负债表核心的「权益国家」。如果失败，那就是教科书级的「毁灭性繁荣」（Crack-Up Boom）。</p>
+
+        <p>没有中间道路。</p>
+    </section>
+
+    <!-- ==================== CHAPTER 1: THE SIEGE ==================== -->
+    <section class="section">
+        <div class="section-label">Chapter 1</div>
+        <h2 class="section-title">围城：美联储独立性的终结</h2>
+
+        <p>自1970年代的通胀危机以来，美联储独立性的神圣性一直是全球金融稳定的基石。然而在2026年初，这一基石在行政压力和法律手段的双重重压下正在破裂。围攻Eccles Building的号角声，从一个荒诞的角度吹响。</p>
+
+        <div class="big-number crimson">
+            <div class="big-number-value crimson">$2,500,000,000</div>
+            <div class="big-number-label">美联储总部装修项目预算膨胀</div>
+            <div class="big-number-context">美国司法部（DOJ）对鲍威尔展开刑事调查的名义——一项「装修超支」案件</div>
+        </div>
+
+        <p>这不是一个关于装修的故事。虽然调查名义上聚焦于美联储总部装修项目的成本超支，但调查的时机和性质昭然若揭：这是一种「借口」（pretext），旨在迫使鲍威尔辞职，或在他任期最后几个月里使其失效。这种策略让人联想到尼克松时代对阿瑟·伯恩斯的施压——但利用刑事司法机器针对在任央行行长，则是冲突的显著升级。</p>
+
+        <p>鲍威尔在视频声明中公开谴责这项调查是惩罚性的，意在报复他拒绝按照行政部门的时间表大幅降息。在华盛顿，一位央行行长像辩护律师一样对着镜头喊冤——这本身就是制度崩溃的信号。</p>
+
+        <div class="highlight-box">
+            <h4>制度性后果</h4>
+            <ul>
+                <li><strong>制度性瘫痪：</strong>调查实际上阉割了美联储进行前瞻性指引（Forward Guidance）的能力。任何政策沟通现在都可能被通过法律辩护的棱镜解读</li>
+                <li><strong>风险重新定价：</strong>市场开始在美国资产中计入「政治风险溢价」——这种溢价通常只出现在新兴市场。美元的韧性更多基于「最不烂的苹果」理论</li>
+                <li><strong>历史先例粉碎：</strong>这是沃尔克-格林斯潘以来最严重的央行独立性危机。不同于口头施压，这次动用了刑事调查</li>
+            </ul>
+        </div>
+
+        <h3 style="font-size: 22px; margin: 40px 0 20px; font-weight: 700;">「双凯文之争」：继承人的对决</h3>
+
+        <p>随着鲍威尔任期将于2026年5月结束，继任者之争成为华尔街最紧盯的宫斗剧。最终，凯文·沃什（Kevin Warsh）被提名，击败了另一位凯文——凯文·哈塞特（Kevin Hassett）。这代表了行政部门对忠诚度的渴望与市场对可信度需求之间的一种复杂妥协。</p>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>属性维度</th>
+                    <th>凯文·沃什 Kevin Warsh</th>
+                    <th>凯文·哈塞特 Kevin Hassett</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>职业背景</strong></td>
+                    <td>前美联储理事 (2006-2011)，摩根士丹利银行家，胡佛研究所研究员</td>
+                    <td>白宫经济顾问委员会 (CEA) 前主席，学术型经济学家</td>
+                </tr>
+                <tr>
+                    <td><strong>市场感知</strong></td>
+                    <td>「鹰派转向实用主义者」。华尔街认可度高</td>
+                    <td>「忠诚主义者」。被视为行政意志的延伸</td>
+                </tr>
+                <tr>
+                    <td><strong>货币哲学</strong></td>
+                    <td>历史上对QE持怀疑态度；近期转向「生产力主义」</td>
+                    <td>坚信AI生产力能压低通胀，证明低利率合理</td>
+                </tr>
+                <tr>
+                    <td><strong>独立性系数</strong></td>
+                    <td>可能私下反击但公开保持一致——「房间里的成年人」</td>
+                    <td>更有可能直接执行财政部主导的低利率政策</td>
+                </tr>
+                <tr>
+                    <td><strong>对美元影响</strong></td>
+                    <td class="price-up">提名后美元反弹，黄金抛售——被视为反货币贬值保障</td>
+                    <td class="price-down">市场预期美元走软、通胀预期脱锚</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>沃什的任命在金融市场上引发了显著反应：美元指数反弹、贵金属遭到抛售。市场将他解读为对全面货币贬值的制衡。然而深入分析显示，沃什近期已经向「生产力主义」观点靠拢——认为人工智能驱动的生产力提升可以证明经济「过热」是合理的，从而在不引发恶性通胀的情况下维持低利率。</p>
+
+        <div class="quote-block">
+            <div class="quote-text">这种知识框架的转变至关重要。它为沃什未来可能采取的宽松政策提供了学术掩护，使其看起来不像是对政治压力的屈服，而是对新经济现实的适应。这是投降书上最优雅的措辞。</div>
+            <div class="quote-author">— Capital Markets 宏观研究组分析</div>
+        </div>
+
+        <h3 style="font-size: 22px; margin: 40px 0 20px; font-weight: 700;">FOMC：裂痕已经可见</h3>
+
+        <p>美联储2026年1月决议将利率维持在3.50%–3.75%不变——一次典型的「鸽派按兵不动」（dovish hold）。然而决策背后的裂痕显而易见。斯蒂芬·米兰和克里斯托弗·沃勒投了反对票，主张降息25个基点。这种内部分歧表明：FOMC内部正在形成一个强大的派系，优先考虑增长而非对抗通胀的「最后一公里」。</p>
+
+        <div class="highlight-box navy">
+            <h4>「新中性」利率理论框架</h4>
+            <p>以财政部长贝森特（Scott Bessent）和顾问米兰为首的行政经济团队，正在推行一种理论：由于技术的通缩压力，中性利率（R-star）实际上比当前模型显示的要低。通过争辩美联储在生产力判断上「落后于曲线」，政府将其干预定性为对技术官僚错误的纠正，而非对独立性的侵犯。</p>
+        </div>
+
+        <p>2026年的主要风险不再是衰退，而是<strong>通胀预期的脱锚</strong>。如果市场确信美联储屈服于财政部，债券市场可能会发生暴动。沉寂几十年的「债券义警」（Bond Vigilantes）可能会推高长端收益率，进而挑战「特朗普账户」所依赖的高权益估值。</p>
+
+        <div class="chart-container">
+            <div class="chart-title">美联储独立性「政治压力指数」</div>
+            <div class="chart-subtitle">行政部门对央行干预力度的历史纵览 (1970-2026)</div>
+            <div class="hbar-chart">
+                <div class="hbar-row">
+                    <div class="hbar-label">尼克松 vs 伯恩斯 (1971)</div>
+                    <div class="hbar-track"><div class="hbar-fill slate" style="width: 45%"><span class="hbar-value">45</span></div></div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">约翰逊 vs 马丁 (1965)</div>
+                    <div class="hbar-track"><div class="hbar-fill slate" style="width: 35%"><span class="hbar-value">35</span></div></div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">里根 vs 沃尔克 (1981)</div>
+                    <div class="hbar-track"><div class="hbar-fill navy" style="width: 30%"><span class="hbar-value">30</span></div></div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">特朗普 1.0 vs 鲍威尔 (2018)</div>
+                    <div class="hbar-track"><div class="hbar-fill orange" style="width: 55%"><span class="hbar-value">55</span></div></div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">特朗普 2.0 vs 鲍威尔 (2025)</div>
+                    <div class="hbar-track"><div class="hbar-fill red" style="width: 78%"><span class="hbar-value">78</span></div></div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">DOJ调查+沃什提名 (2026)</div>
+                    <div class="hbar-track"><div class="hbar-fill crimson" style="width: 95%"><span class="hbar-value">95</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CHAPTER 2: THE GOLDEN TICKET ==================== -->
+    <section class="section">
+        <div class="section-label navy">Chapter 2</div>
+        <h2 class="section-title">金色门票：特朗普账户与「所有权革命」</h2>
+
+        <p>如果说控制美联储是手段，那么建立「股东社会」（Shareholder Society）就是目的。特朗普账户（第530A条）的推出是这个时代决定性的国内政策——财政部长贝森特亲口将它描述为「历史上主街与华尔街之间最大规模的合并」。这不仅仅是修辞，更是政治激励机制的结构性重组。</p>
+
+        <div class="big-number navy">
+            <div class="big-number-value navy">$1,000</div>
+            <div class="big-number-label">每个美国新生儿获得的联邦种子资金</div>
+            <div class="big-number-context">2025年1月1日至2028年12月31日期间出生的每个美国儿童，将获得一个享有税收优惠的投资账户</div>
+        </div>
+
+        <h3 style="font-size: 22px; margin: 40px 0 20px; font-weight: 700;">第530A条：机制解剖</h3>
+
+        <p>作为「大美法案」（One Big Beautiful Bill Act, OBBBA）的核心部分，第530A条是一项精心设计的社会工程。让我们拆解它的每一个齿轮：</p>
+
+        <div class="anatomy-box">
+            <div class="anatomy-title">特朗普账户资金循环图</div>
+            <div class="anatomy-flow">
+                <div class="anatomy-node crimson-node">
+                    <div class="anatomy-node-title">财政部</div>
+                    <div class="anatomy-node-value">发行国债融资</div>
+                </div>
+                <div class="anatomy-arrow">&#10140;</div>
+                <div class="anatomy-node navy-node">
+                    <div class="anatomy-node-title">530A账户</div>
+                    <div class="anatomy-node-value">$1,000种子+年$5,000上限</div>
+                </div>
+                <div class="anatomy-arrow">&#10140;</div>
+                <div class="anatomy-node gold-node">
+                    <div class="anatomy-node-title">指数基金</div>
+                    <div class="anatomy-node-value">被动流入S&P 500</div>
+                </div>
+                <div class="anatomy-arrow">&#10140;</div>
+                <div class="anatomy-node green-node">
+                    <div class="anatomy-node-title">企业CapEx</div>
+                    <div class="anatomy-node-value">$5,000亿+ AI投资</div>
+                </div>
+                <div class="anatomy-arrow">&#10140;</div>
+                <div class="anatomy-node slate-node">
+                    <div class="anatomy-node-title">GDP & 税收</div>
+                    <div class="anatomy-node-value">回流财政部</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value navy">$1,000</div>
+                <div class="stat-label">联邦种子资金</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value gold">$5,000</div>
+                <div class="stat-label">年度缴款上限</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value crimson">18年</div>
+                <div class="stat-label">锁定期至受益人成年</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value green">50州</div>
+                <div class="stat-label">「50州挑战」匹配计划</div>
+            </div>
+        </div>
+
+        <p>几个关键设计值得注意。首先，投资范围被严格限制在<strong>广泛市场指数基金</strong>——如S&P 500等价物。这确保了资本直接流入美国企业部门的核心，而非投机性资产或外国市场。其次，贝莱德（BlackRock）、先锋集团（Vanguard）、戴尔（Dell）、达利奥（Dalio）等资本巨头纷纷承诺匹配计划，形成了涉及州政府、雇主和慈善家的多层融资生态。</p>
+
+        <div class="highlight-box navy">
+            <h4>「锁定效应」：为什么市场崩盘将成为政治禁区</h4>
+            <p>通过让每个美国家庭在标普500中拥有直接的财务利益，政府使股市崩盘在政治上变得不可接受。过去，熊市主要伤害富人和退休人员。在特朗普账户时代，熊市将摧毁整整一代人的「储备金」。这为政府在市场出现困境迹象时进行干预创造了压倒性的政治授权——这实际上是将「特朗普看跌期权」（Trump Put）法典化了。</p>
+        </div>
+
+        <h3 style="font-size: 22px; margin: 40px 0 20px; font-weight: 700;">民粹右翼与资产管理巨头的「缓和」</h3>
+
+        <p>贝莱德和先锋集团的热情支持值得玩味。现任政府过去曾猛烈攻击这些公司的ESG政策，然而特朗普账户将数十亿美元的被动资金流引入它们的产品。这暗示了一个基于资产价格通胀的新联盟正在形成——民粹主义右翼与华尔街之间达成了一种基于共同利益的「缓和」（d&eacute;tente）。</p>
+
+        <div class="comparison">
+            <div class="comparison-side before">
+                <div class="comparison-header before-h">旧社会契约：消费型安全网</div>
+                <div class="comparison-item"><strong>SNAP 食品券</strong>以直接消费补贴为核心</div>
+                <div class="comparison-item"><strong>部落绿色能源</strong>美洲原住民部落获$15亿投资</div>
+                <div class="comparison-item"><strong>工作要求</strong>相对宽松的资格审查</div>
+                <div class="comparison-item"><strong>财富观念</strong>工资收入为核心</div>
+            </div>
+            <div class="comparison-side after">
+                <div class="comparison-header after-h">权益国家：资产型安全网</div>
+                <div class="comparison-item"><strong>530A账户</strong>指数基金投资为核心</div>
+                <div class="comparison-item"><strong>部落拨款削减</strong>绿色能源投资减少$15亿</div>
+                <div class="comparison-item"><strong>工作要求</strong>SNAP资格显著收紧</div>
+                <div class="comparison-item"><strong>财富观念</strong>资产所有权为核心</div>
+            </div>
+        </div>
+
+        <p>批评者指出了阴暗面：「大美法案」的资金来源是以削减其他安全网为代价的。530A账户的税收优惠不成比例地有利于那些有能力在联邦种子资金之外每年额外缴纳$5,000上限的富裕家庭。这种政策将政府的支持从消费转向资产持有——贫富差距在代际间被放大。</p>
+
+        <div class="quote-block">
+            <div class="quote-text">我们正在见证历史上主街与华尔街之间最大规模的合并。每个美国家庭都将成为资本主义的股东。</div>
+            <div class="quote-author">— Scott Bessent，美国财政部长</div>
+        </div>
+    </section>
+
+    <!-- ==================== CHAPTER 3: THE MOAT ==================== -->
+    <section class="section">
+        <div class="section-label gold">Chapter 3</div>
+        <h2 class="section-title">护城河：海湖庄园协议与地缘经济堡垒</h2>
+
+        <p>为了在不引发货币危机或贸易赤字爆炸的情况下维持高压的国内经济，美国政府转向了一套新的外部工具。这套框架被非正式地称为「海湖庄园协议」（Mar-a-Lago Accord），代表了与过去三十年「强势美元」政策的彻底决裂。</p>
+
+        <p>这一转变的智力架构师是斯蒂芬·米兰（Stephen Miran），他的论文《重构全球贸易体系用户指南》已成为2026年贸易政策的蓝图。核心思想简洁而激进：强势美元是对外国制造商的补贴，是对美国出口的征税。目标是在不失去储备货币地位的前提下，通过干预削弱美元以重新平衡贸易。</p>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value gold">弱美元</div>
+                <div class="stat-label">美元管理：削弱美元重新平衡贸易</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value crimson">战略关税</div>
+                <div class="stat-label">双重功能：保护+为减税筹资</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value navy">892条修改</div>
+                <div class="stat-label">软性资本管制：主权基金政治过滤器</div>
+            </div>
+        </div>
+
+        <h3 style="font-size: 22px; margin: 40px 0 20px; font-weight: 700;">格陵兰岛事件：从荒诞到危机</h3>
+
+        <p>2026年初的「格陵兰岛局势」是这一新激进姿态的教科书案例。特朗普总统重新对控制格陵兰岛表现出兴趣，导致与丹麦及欧盟的外交僵局。当遭到拒绝时，美国威胁征收「解放日」（Liberation Day）关税。这听起来很荒谬——但它引发了欧盟经济防御机制的实战演练。</p>
+
+        <div class="highlight-box gold">
+            <h4>欧盟的「火箭筒」：反胁迫工具 (ACI)</h4>
+            <p>欧盟首次认真考虑动用其「反胁迫工具」（Anti-Coercion Instrument）——这是一款专门设计用于报复经济勒索的武器。虽然随着金融市场反应剧烈、「债券义警」发出警告信号，关税威胁最终被撤回，但这证明了本届政府为了领土或战略目标，愿意将贸易武器化到何种程度。</p>
+        </div>
+
+        <h3 style="font-size: 22px; margin: 40px 0 20px; font-weight: 700;">去美元化的悖论</h3>
+
+        <p>2026年揭示了一个引人入胜的悖论。一方面，美国政府反复无常的行为和金融体系的武器化本应加速去美元化。另一方面，缺乏可行的替代方案使得美元依然占据主导地位。特朗普威胁对放弃美元的国家征收100%关税——这实际上阻碍了一些正式的去美元化努力。</p>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2025 Q4</div>
+                <div class="timeline-content">
+                    <h5>「海湖庄园协议」理论框架形成</h5>
+                    <p>米兰论文发表，关税+弱美元+资本管制的三位一体理论框架建立</p>
+                </div>
+            </div>
+            <div class="timeline-item navy-dot">
+                <div class="timeline-date">2026年1月</div>
+                <div class="timeline-content">
+                    <h5>格陵兰岛外交危机爆发</h5>
+                    <p>「解放日」关税威胁引发欧盟ACI反胁迫机制启动程序</p>
+                </div>
+            </div>
+            <div class="timeline-item gold-dot">
+                <div class="timeline-date">2026年1月中旬</div>
+                <div class="timeline-content">
+                    <h5>债券义警发出警告</h5>
+                    <p>长端收益率飙升迫使关税威胁撤回，市场展示了对行政权力的约束力</p>
+                </div>
+            </div>
+            <div class="timeline-item green-dot">
+                <div class="timeline-date">2026年2月</div>
+                <div class="timeline-content">
+                    <h5>金砖国家策略调整</h5>
+                    <p>巴西、印度被迫走钢丝：一方面将储备分散到黄金（创纪录购买），另一方面公开维持对美元忠诚</p>
+                </div>
+            </div>
+            <div class="timeline-item steel-dot">
+                <div class="timeline-date">进行中</div>
+                <div class="timeline-content">
+                    <h5>第892条修改审议</h5>
+                    <p>对外国主权财富基金投资的监管审议，设立政治过滤器</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title">全球储备货币份额 vs 黄金购买量</div>
+            <div class="chart-subtitle">央行正在用脚投票——美元份额缓慢下降，黄金购买量创纪录</div>
+            <div class="hbar-chart">
+                <div class="hbar-row">
+                    <div class="hbar-label">美元 (USD)</div>
+                    <div class="hbar-track"><div class="hbar-fill navy" style="width: 58%"><span class="hbar-value">58.4%</span></div></div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">欧元 (EUR)</div>
+                    <div class="hbar-track"><div class="hbar-fill blue" style="width: 20%"><span class="hbar-value">19.8%</span></div></div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">日元 (JPY)</div>
+                    <div class="hbar-track"><div class="hbar-fill slate" style="width: 6%"><span class="hbar-value">5.7%</span></div></div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">英镑 (GBP)</div>
+                    <div class="hbar-track"><div class="hbar-fill green" style="width: 5%"><span class="hbar-value">4.9%</span></div></div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">人民币 (CNY)</div>
+                    <div class="hbar-track"><div class="hbar-fill crimson" style="width: 3%"><span class="hbar-value">2.8%</span></div></div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">黄金 (央行购买)</div>
+                    <div class="hbar-track"><div class="hbar-fill gold" style="width: 88%"><span class="hbar-value">创纪录</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CHAPTER 4: THE MARKET LANDSCAPE ==================== -->
+    <section class="section">
+        <div class="section-label steel">Chapter 4</div>
+        <h2 class="section-title">2026市场格局：多维极化</h2>
+
+        <p>上述政策的交汇创造了一个被摩根大通称为「多维极化」（Multidimensional Polarization）的市场环境。资产在不同维度上同时被拉扯：AI热潮的狂喜与贸易战的恐惧，被动资金的洪流与债券义警的暴怒，美元的管理性贬值与黄金的结构性上涨。</p>
+
+        <h3 style="font-size: 22px; margin: 40px 0 20px; font-weight: 700;">AI与能源：背离中的融合</h3>
+
+        <p>股票市场呈现剧烈分化。一方面，「科技七巨头」（Mag 7）和AI基础设施公司吸收了绝大部分资本流，受预计2026年超过$5,000亿的资本支出热潮推动。另一方面，传统行业在贸易战和高名义利率的不确定性中挣扎。</p>
+
+        <div class="big-number green">
+            <div class="big-number-value green">$5,000亿+</div>
+            <div class="big-number-label">2026年AI相关资本支出预测</div>
+            <div class="big-number-context">数据中心建设预计为GDP增长贡献10-20个基点——但正撞上物理电力供应的限制</div>
+        </div>
+
+        <p>2026年的一个关键洞察是<strong>AI与能源的深度绑定</strong>。数据中心的建设预计将为GDP增长贡献10-20个基点，但正撞上物理电力供应的限制。这使得能源板块成为令人意外的市场领导者——委内瑞拉和中东的地缘政治不稳定进一步推高能源价格，使其成为AI繁荣的隐形受益者。</p>
+
+        <div class="chart-container">
+            <div class="chart-title">2026 各资产类别展望矩阵</div>
+            <div class="chart-subtitle">基于「权益国家」框架的多空信号强度</div>
+            <div class="hbar-chart">
+                <div class="hbar-row">
+                    <div class="hbar-label">美股（AI/科技）</div>
+                    <div class="hbar-track"><div class="hbar-fill green" style="width: 85%"><span class="hbar-value">强看多</span></div></div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">美股（传统行业）</div>
+                    <div class="hbar-track"><div class="hbar-fill slate" style="width: 40%"><span class="hbar-value">中性偏弱</span></div></div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">能源板块</div>
+                    <div class="hbar-track"><div class="hbar-fill orange" style="width: 72%"><span class="hbar-value">看多（AI能源瓶颈）</span></div></div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">美国国债</div>
+                    <div class="hbar-track"><div class="hbar-fill red" style="width: 30%"><span class="hbar-value">承压（期限溢价上升）</span></div></div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">黄金</div>
+                    <div class="hbar-track"><div class="hbar-fill gold" style="width: 90%"><span class="hbar-value">结构性看多</span></div></div>
+                </div>
+                <div class="hbar-row">
+                    <div class="hbar-label">美元指数</div>
+                    <div class="hbar-track"><div class="hbar-fill crimson" style="width: 35%"><span class="hbar-value">管理性走弱</span></div></div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="font-size: 22px; margin: 40px 0 20px; font-weight: 700;">「毁灭性繁荣」风险</h3>
+
+        <p>随着美联储受到束缚、财政闸门通过特朗普账户大开、关税推高投入成本，美国经济面临进入「毁灭性繁荣」（Crack-Up Boom）的风险——即资产价格在通胀高企和货币贬值的背景下名义上快速上涨。这个词来自路德维希·冯·米塞斯。它描述的是一种可怕的景观：每个人都在赚钱，但没有人真正变得更富有。</p>
+
+        <div class="media-grid">
+            <div class="media-card">
+                <div class="media-source">股市展望</div>
+                <div class="media-title">TINA效应 + 被动资金洪流</div>
+                <div class="media-excerpt">摩根大通等机构预测全球股市将实现两位数增长，主要由「别无选择」效应和来自特朗普账户的被动资金流推动。指数基金的结构性买入压力前所未有。</div>
+            </div>
+            <div class="media-card navy-border">
+                <div class="media-source navy">债券市场</div>
+                <div class="media-title">期限溢价的反攻</div>
+                <div class="media-excerpt">这一资产类别面临严峻压力。期限溢价正在上升，投资者要求对财政主导风险进行补偿。长端收益率是「权益国家」最大的外部约束。</div>
+            </div>
+            <div class="media-card gold-border">
+                <div class="media-source gold">黄金</div>
+                <div class="media-title">最后的中立资产</div>
+                <div class="media-excerpt">作为「海湖庄园」弱势美元政策和地缘政治对冲的终极受益者。各国央行正在以创纪录的速度购入黄金——它是仅存的不受任何单一政权控制的储备资产。</div>
+            </div>
+        </div>
+
+        <div class="highlight-box orange">
+            <h4>Crack-Up Boom 预警信号清单</h4>
+            <ul>
+                <li><strong>信号一：</strong>名义资产价格创新高，但以黄金计价的实际回报为负</li>
+                <li><strong>信号二：</strong>10年期国债收益率突破5%的同时标普500继续上涨</li>
+                <li><strong>信号三：</strong>通胀预期（5Y5Y breakeven）脱锚至3%以上</li>
+                <li><strong>信号四：</strong>美联储在通胀高于目标时仍被迫降息</li>
+                <li><strong>信号五：</strong>美元贬值速度超过贝森特团队的「管理」能力</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ==================== CHAPTER 5: KEY PLAYERS ==================== -->
+    <section class="section">
+        <div class="section-label">Chapter 5</div>
+        <h2 class="section-title">棋手们：「权益国家」的关键建筑师</h2>
+
+        <p>每一次制度变革背后都有关键人物。理解他们的思想背景和激励机制，是解读「权益国家」运作逻辑的钥匙。</p>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>关键人物</th>
+                    <th>角色</th>
+                    <th>在「权益国家」中的功能</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Scott Bessent</strong></td>
+                    <td>财政部长</td>
+                    <td>总设计师。推动「主街华尔街合并」叙事，主导530A条立法，管理美元估值目标</td>
+                </tr>
+                <tr>
+                    <td><strong>Stephen Miran</strong></td>
+                    <td>白宫经济顾问</td>
+                    <td>理论架构师。「海湖庄园协议」框架的智力源头，「新中性利率」理论推手</td>
+                </tr>
+                <tr>
+                    <td><strong>Kevin Warsh</strong></td>
+                    <td>美联储主席提名人</td>
+                    <td>执行者/妥协者。市场信任他的独立性，但「生产力主义」转向暗示妥协空间</td>
+                </tr>
+                <tr>
+                    <td><strong>Jerome Powell</strong></td>
+                    <td>现任美联储主席</td>
+                    <td>最后的守卫。在司法部调查下维持最后几个月的独立性——或成为殉道者</td>
+                </tr>
+                <tr>
+                    <td><strong>Larry Fink (贝莱德)</strong></td>
+                    <td>资产管理巨头CEO</td>
+                    <td>利益结盟者。从ESG标靶到530A受益者——$万亿被动资金流的最大接收方</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="quote-block">
+            <div class="quote-text">2026年不仅仅是关税更高的一年——而是美国经济被重新设计为依靠权益波动性运行的一年。我们正处于关于鲍威尔调查的「战争迷雾」中，大多数媒体只关注丑闻本身。我们需要关注的是结构。</div>
+            <div class="quote-author">— Capital Markets 宏观研究组</div>
+        </div>
+    </section>
+
+    <!-- ==================== CHAPTER 6: RISK MAP ==================== -->
+    <section class="section">
+        <div class="section-label gold">Chapter 6</div>
+        <h2 class="section-title">风险地图：高赌注实验的三重尾部风险</h2>
+
+        <p>每一场宏大实验都嵌入了对等的风险。「权益国家」的风险不是通常意义上的经济衰退——而是更加诡异的系统性断裂。</p>
+
+        <div class="media-grid">
+            <div class="media-card">
+                <div class="media-source">系统性风险</div>
+                <div class="media-title">通胀预期脱锚</div>
+                <div class="media-excerpt">如果市场确信美联储已沦为财政部附属机构，「债券义警」将推高长端收益率。期限溢价回归将使$36万亿国债的再融资成本剧增——这是一场自我实现的财政危机。</div>
+            </div>
+            <div class="media-card navy-border">
+                <div class="media-source navy">政治风险</div>
+                <div class="media-title">「特朗普看跌期权」的道德风险</div>
+                <div class="media-excerpt">当政府被绑定必须维持股价上涨时，每一次市场回调都将迫使政策干预。这创造了巨大的道德风险——企业和投资者将变得更加鲁莽，因为他们确信政府不会允许下跌。</div>
+            </div>
+            <div class="media-card gold-border">
+                <div class="media-source gold">地缘风险</div>
+                <div class="media-title">贸易伙伴的报复升级</div>
+                <div class="media-excerpt">格陵兰岛事件证明了盟友也可能成为对手。如果欧盟真正启动ACI，中国采取对称性关税报复，「海湖庄园协议」框架将面临两线甚至多线作战。</div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title">「权益国家」风险仪表盘</div>
+            <div class="chart-subtitle">2026年2月主要风险指标评估</div>
+            <div class="chart-visual">
+                <div class="chart-bar-group">
+                    <div class="chart-bar-value">85</div>
+                    <div class="chart-bar crimson" style="height: 85%"></div>
+                </div>
+                <div class="chart-bar-group">
+                    <div class="chart-bar-value">72</div>
+                    <div class="chart-bar red" style="height: 72%"></div>
+                </div>
+                <div class="chart-bar-group">
+                    <div class="chart-bar-value">68</div>
+                    <div class="chart-bar gold" style="height: 68%"></div>
+                </div>
+                <div class="chart-bar-group">
+                    <div class="chart-bar-value">60</div>
+                    <div class="chart-bar navy" style="height: 60%"></div>
+                </div>
+                <div class="chart-bar-group">
+                    <div class="chart-bar-value">55</div>
+                    <div class="chart-bar slate" style="height: 55%"></div>
+                </div>
+                <div class="chart-bar-group">
+                    <div class="chart-bar-value">45</div>
+                    <div class="chart-bar blue" style="height: 45%"></div>
+                </div>
+            </div>
+            <div class="chart-labels">
+                <span>央行<br>独立性</span>
+                <span>通胀<br>脱锚</span>
+                <span>贸易<br>报复</span>
+                <span>道德<br>风险</span>
+                <span>美元<br>失控</span>
+                <span>流动性<br>陷阱</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EPILOGUE ==================== -->
+    <section class="section">
+        <div class="section-label">Epilogue</div>
+        <h2 class="section-title">尾声：蛇年的赌桌</h2>
+
+        <p>2026年的蛇年以一种近乎文学性的方式展开。蛇象征着蜕变、智慧，以及危险。美国正在经历的，恰恰是这三者的叠加。</p>
+
+        <p>让我们做一个思想实验。想象一下，如果这台机器<em>真的</em>运转起来：美联储在沃什领导下配合降息；特朗普账户的被动资金流推高标普500；弱美元政策重新平衡贸易赤字；AI资本支出热潮带来生产力跃升。在这种「完美运转」的情景下，你会看到的是一个名义上繁荣的美国——资产价格上涨、就业强劲、GDP增长体面——而其代价是制度的不可逆退化。</p>
+
+        <p>但更有可能的是，这台机器会在某个环节卡壳。债券义警、外国报复、AI泡沫、通胀的反扑——任何一个都可能成为引爆点。彼时，这个被精心设计为「不能下跌」的市场，将面临物理定律的审判。</p>
+
+        <div class="highlight-box slate">
+            <h4>最终判断</h4>
+            <p>「权益国家」是一场规模空前的金融实验。它试图将美国改造为一个以股票市场为心脏的政治机器。这不是传统意义上的牛市或熊市问题——这是关于美国经济宪法本身的改写。对于投资者而言，唯一确定的结论是：2026年的波动率将是非线性的，而传统的宏观分析框架可能需要被彻底重构。</p>
+        </div>
+
+        <div class="anatomy-box">
+            <div class="anatomy-title">「权益国家」逻辑闭环</div>
+            <div class="anatomy-flow">
+                <div class="anatomy-node crimson-node">
+                    <div class="anatomy-node-title">控制美联储</div>
+                    <div class="anatomy-node-value">压制利率成本</div>
+                </div>
+                <div class="anatomy-arrow">&#10140;</div>
+                <div class="anatomy-node navy-node">
+                    <div class="anatomy-node-title">特朗普账户</div>
+                    <div class="anatomy-node-value">全民入股S&P</div>
+                </div>
+                <div class="anatomy-arrow">&#10140;</div>
+                <div class="anatomy-node gold-node">
+                    <div class="anatomy-node-title">海湖庄园协议</div>
+                    <div class="anatomy-node-value">弱美元+关税护城河</div>
+                </div>
+                <div class="anatomy-arrow">&#10140;</div>
+                <div class="anatomy-node green-node">
+                    <div class="anatomy-node-title">资产价格上涨</div>
+                    <div class="anatomy-node-value">政治合法性锁定</div>
+                </div>
+                <div class="anatomy-arrow">&#8635;</div>
+            </div>
+        </div>
+
+        <p>在这场豪赌中，最重要的问题不是「市场会涨还是跌」，而是：<strong>当一个国家把自己的政治命运与股票指数捆绑在一起时，它还能保持纠错的能力吗？</strong></p>
+
+        <p>答案可能决定了21世纪上半叶的全球金融秩序。</p>
+
+        <p>蛇年快乐。小心脚下。</p>
+
+        <p style="text-align: center; padding: 32px 0; font-size: 15px; color: var(--text-secondary); letter-spacing: 4px;">— END —</p>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-note">
+        本文系深度观察类评论文章，综合了来自华盛顿、华尔街和全球各主要资本的碎片化信号，提出「权益国家」这一统一叙事框架。文中引用的分析基于公开的新闻报道、政策文件、研究论文和投行研报。本文不构成任何投资建议，投资者应基于自身风险承受能力做出独立判断。
+    </div>
+    <div class="footer-links">
+        <a href="index.html">趋势与类别评论</a>
+        <a href="../index.html">首页</a>
+    </div>
+    <div style="margin-top: 20px; font-size: 12px; color: rgba(255,255,255,0.3);">&copy; 2026 Capital Markets Research</div>
+</footer>
+
+</body>
+</html>
