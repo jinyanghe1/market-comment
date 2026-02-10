@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-10 21:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-10 21:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">地缘政治与财报风险压制市场情绪，AI与新能源等结构性机会仍存。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>半导体供应链博弈加剧，AI需求成关键支撑</div>
+                <div class="topic-title-en">Semiconductor Supply Chain Tensions Intensify, AI Demand Emerges as Key Pillar</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国要求供应链转移的政策遭遇台湾方面质疑，凸显全球半导体供应链重塑的复杂性与高成本。与此同时，台积电的最新业绩数据被解读为AI需求依然强劲，为行业提供基本面支撑。Nvidia被分析师看好将受益于OpenAI等公司的巨额AI支出，显示AI硬件需求仍是当前科技投资的核心叙事。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/taiwan-chips-us-supply-chain-lutnick-trade-deal.html" target="_blank" rel="noopener">[CNBC] 'Impossible': Taiwan pushes back against Washington’s 40% chip supply relocation goal</a>
+                    <a href="https://www.marketwatch.com/story/what-tsmcs-latest-numbers-say-about-the-ai-story-7b178c17?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] What TSMC’s latest numbers say about the AI story</a>
+                    <a href="https://news.google.com/rss/articles/CBMikwNBVV95cUxOSVBSemdaaWc1ZkZrRlJHUzYyRnc3dF9uRjVDa1I2YWdzV01oM1RoUkQyTXdaRElfTWZxWW5NT3p6Wm53SHQ5ZnFBR1ZxcWRhNlRwWTZjZUNzODRGbUY4cDZ4VEtYSTlCS1pIOGRHRlkzX25HVjlDSFhodC04N1R3OUhKRVllRjV2LWo2cXZVTF95TEZGc19iRUJLRXp6RlMwXzdkV0toSW5MNDVKalI4UjhINXByQmxaaGdSaDdFZFhoT281SkpkZW50czJKV3pNaGgzdTBPb3ZEVG5XYTNKekU1MGRKMWJSeDBNa2F4RWRUSHdXMGRNa0lza3JpMXBrRDZ4QnNqZmZkUHQyTnNEZEE2OEFVTFFvclMxUk5lRUIxb1B2N0U1RmFyZkN1Y1ptcmxKeVI0c1BDalp1T1pMd0hBNE5oem9yM01iOU1SNDBtelNiTXUwSHlIU1Nzb1BFQlA5TnlHaUk5cHhoS25BU3BUaVhIUEdoWmkwZDRuZWkzWEg3QmlsSUFMd0Y3YTNuT2l3?oc=5" target="_blank" rel="noopener">[Barron's] Nvidia Stock Pops. It Should Benefit From OpenAI Spending, Analyst Says.</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">科技硬件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>传统能源巨头盈利承压，启动深度成本削减</div>
+                <div class="topic-title-en">Traditional Energy Giants Under Profit Pressure, Launch Deep Cost Cuts</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    BP因利润下滑而中止股票回购计划，导致股价大跌，并宣布将进一步加大成本削减力度，反映出在能源转型和波动油价环境下传统油气业务面临的增长困境。同样，零售商Target宣布裁员以调整成本结构。这预示着多个传统行业巨头正通过结构性调整来应对盈利挑战，可能引发市场对相关板块盈利质量的重新评估。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cz0g4dkm77zo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] BP steps up cost cutting as profits slide</a>
+                    <a href="https://www.cnbc.com/2026/02/10/bp-earnings-q4-full-year-oil-energy.html" target="_blank" rel="noopener">[CNBC] BP shares fall 5% after oil major suspends share buyback plan</a>
+                    <a href="https://www.marketwatch.com/story/targets-new-ceo-wants-to-make-stores-more-welcoming-his-latest-move-is-to-cut-jobs-ff1774fd?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Target cuts office and warehouse jobs, to shift ‘significantly more payroll’ to stores</a>
+                    <span class="sector-tag">石油天然气</span>
+                    <span class="sector-tag">综合能源</span>
+                    <span class="sector-tag">零售</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>减肥药市场竞争白热化，监管与商业策略成焦点</div>
+                <div class="topic-title-en">Weight-Loss Drug Market Competition Heats Up, Regulation and Strategy in Focus</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    诺和诺德因Wegovy广告被FDA警告，同时面临来自竞争对手的专利诉讼，凸显明星药物在商业化过程中面临的监管与法律风险。另一方面，阿斯利康预告其减肥药候选药物，而Hims & Hers则因其减肥药策略失败导致股价暴跌。这表明减肥药赛道已进入激烈竞争与严格监管并行的新阶段，企业的研发实力与合规营销能力同等重要。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cddn4z54qe8o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] Wegovy maker sues rival over 'knock-off' weight-loss drugs</a>
+                    <a href="https://www.cnbc.com/2026/02/09/fda-novo-nordisk-wegovy-tv-ad.html" target="_blank" rel="noopener">[CNBC] FDA says Novo Nordisk's TV ad for obesity pill includes 'false or misleading' claims</a>
+                    <a href="https://www.marketwatch.com/story/astrazeneca-profit-climbs-on-cancer-and-heart-drug-demand-b673c908?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] AstraZeneca CEO teases weight-loss drug candidate as profit meets target</a>
+                    <a href="https://news.google.com/rss/articles/CBMirwNBVV95cUxNd011MHRWSjAtNnh1TnJUQ2Zwb1QwMFpqaUFOOFJfanNKcGZIeEdpWFRXRllLWnd0Q2htSW91QS1lWlV1RXYwbjVZQi1IUUk3TmhCcFdLb0dFQzVSVm9YREFYYzJJWWVENUIwa1BhUV9KZGNuQmhzSnIxbDB4Umxnb1NxSjMzRWVJODNmUzFTS3ZDVGZLenF2aGw2cDBkTXJXNko3Tnp0OVFZNmVQa3FDQ1MxbEtaZ3g5NDhRWjRJclY3UDFVdG95ci12ZWFrekhfOVhEekh3NnBmb0dFY0xrM3FxNFpHdXRSOG1QU0xaaUg4eVV1VERSYi14VXZMNE1pSmJrd3FBNGFPYlZPTzBweDRPbW5PLWs5clMtZUlUTmFxMUlSSktuWGNDbzZDSWxkeU1nZTlhb0UwVnhNOERGRUNzalJ6Rmo5NHdrbFpyM2RPX2ZPb05DWGM1UXR5MnFsbzdEVDFpZ05OV1E0NlFJVElIN0gxRFpmUWZMVkJ0bDVPOWFPemFLR0RMZGR2bzZQbEFoRnNHeF9VYTdxWjdwR1dibV9qRngya3o1REViOA?oc=5" target="_blank" rel="noopener">[Barron's] Hims & Hers Stock Plunges 16%. Its Weight-Loss Drug Strategy Backfired.</a>
+                    <span class="sector-tag">生物制药</span>
+                    <span class="sector-tag">医疗服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>科技巨头AI军备竞赛升级，融资与风险管控并行</div>
+                <div class="topic-title-en">Tech Giants' AI Arms Race Escalates, Financing and Risk Management in Tandem</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    Alphabet为资助AI建设而发行百年期债券，同时在文件中警示新的AI相关风险，表明其在激进投入的同时开始正视技术的潜在负面影响。中国科技巨头阿里巴巴也发布新的机器人AI模型，加入“实体AI”竞争。这反映出全球科技巨头正不惜代价投入AI基础设施，融资活动活跃，但市场需关注其资本开支效率及伴随的伦理、监管风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/alphabet-highlights-new-ai-related-risks-in-tapping-debt-market.html" target="_blank" rel="noopener">[CNBC] Alphabet calls out new AI-related risks, as it taps debt market to fund build-out</a>
+                    <a href="https://www.marketwatch.com/story/how-investors-are-reacting-as-alphabet-launches-landmark-100-year-bond-in-u-k-689bc1a8?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] How investors are reacting as Alphabet launches landmark 100-year bond in U.K.</a>
+                    <a href="https://www.cnbc.com/2026/02/10/alibaba-ai-model-robotics-rynnbrain-china.html" target="_blank" rel="noopener">[CNBC] China's Alibaba launches AI model to power robots as tech giants talk up 'physical AI'</a>
+                    <span class="sector-tag">互联网</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">软件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>地缘冲突扰动能源与贸易航线，避险情绪升温</div>
+                <div class="topic-title-en">Geopolitical Conflicts Disrupt Energy and Trade Routes, Safe-Haven Sentiment Rises</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国警告船只远离伊朗水域，印度扣押涉嫌违规运输的油轮，以及土耳其对地区核军备竞赛的警告，均加剧了中东地区的紧张局势，直接威胁霍尔木兹海峡这一关键石油运输通道的安全。同时，欧盟内部对俄罗斯石油服务禁令存在分歧。这些事件叠加，可能推高能源价格溢价，并提振黄金等避险资产需求。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/us-warns-ships-avoid-iran-strait-hormuz-boarding-irgc-tehran-israel-netanyahu.html" target="_blank" rel="noopener">[CNBC] U.S. urges ships to stay 'as far as possible' from Iran's waters in Strait of Hormuz after boarding attempts</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQdWpWd2gzTzFWM0tPbDV2OTBTRE85ajNLTFB2cDBfVEM2ZGRiUHRMQUVrWE95YVJVVUVOTDZZUVlsNzZXVnpTbXVFSWlTa0ZERnRsRmdkUHVXdXVQc0tCVnJWSWx5OTZmZU9PWU1YQkJPc3NYVndxaWJhcU9Nck1JUzlMdWtwQ1Jackpqb3ktUkFxeEFUVTRJcFZfUThBdm1EQzJtVjRIUENaODdGQkx0NVd3?oc=5" target="_blank" rel="noopener">[Bloomberg] India Seizes Three Tankers in First Action Against Dark Fleet</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOamZqRXpxOXozNnJySWEwY3l6LWgyU2VUemxDaTlDbU9WVVlNTG04eFQ1bXpzVV9uV2ZZdmpCTFhsaUVNQmF0eHdjV3piWkVCY2s1a2hIR3NDOTVJV2RuMW5keDFHUDBxSE5EbHE1ajlfWE9nbmlLSUI1VTQtOU9LbXhTNDRiSTE1Nk9XMG01X2FERThKWngxSDE4UUU0TEI2TUlhazFLTEhJZVdwUHgtZVBOSmtJdw?oc=5" target="_blank" rel="noopener">[Bloomberg] Turkey Says It Could Be Dragged Into Nuclear Arms Race Over Iran</a>
+                    <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNYklPT2JLOFFRM09KM1FHRUg4Tk9PNU5MYnZ0alYyZFRoSUpFcmY0MFFJNDRjSlFta0VrMktfUjlreFNEX0hvY3NkLUdwaGdOWGhKam1wZDZ6c09ramxTZWZUQU5MVVFLcE9reXFibFFNQ1ZJb3l5eEdOYjVna3U2MV8wQ0pfWWF4dV9nbTJJUXllVDd2ekFhdEZSOWZwVTJ4M1FycEtZZ3c1dmFDTFBN?oc=5" target="_blank" rel="noopener">[Bloomberg] Greece and Malta Hesitate Over EU’s Russia Oil Services Ban</a>
+                    <span class="sector-tag">石油天然气</span>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">黄金及避险资产</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>消费必需品需求现疲软迹象，可口可乐增长预警引担忧</div>
+                <div class="topic-title-en">Signs of Softening Demand for Consumer Staples, Coca-Cola's Growth Warning Raises Concerns</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    可口可乐罕见地出现季度销售额不及预期，并给出温和增长指引，引发股价下跌。这可能是高通胀环境下全球消费者支出意愿减弱的早期信号，尤其对定价能力较强的品牌构成考验。尽管销量和价格仍在上涨，但增速放缓足以引发市场对必需消费品板块整体盈利韧性的重新审视。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/coca-cola-ko-q4-2025-earnings.html" target="_blank" rel="noopener">[CNBC] Coca-Cola shares fall 3% after company forecasts modest growth amid demand concerns</a>
+                    <a href="https://www.marketwatch.com/story/coca-colas-stock-falls-after-a-rare-sales-miss-even-as-volumes-and-prices-rose-0ecfae6d?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Coca-Cola’s stock falls after a rare sales miss, even as volumes and prices rose</a>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">必需消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>美国住房负担能力引关注，零售业进行运营调整</div>
+                <div class="topic-title-en">U.S. Housing Affordability in Focus, Retail Sector Undergoes Operational Adjustments</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国国会推进住房可负担性法案，直接回应高涨的房价压力，若通过可能对房地产和建筑行业产生影响。与此同时，零售业代表Target通过裁员进行组织结构调整，旨在将资源向门店体验倾斜，反映实体零售在电商竞争下的持续转型努力。这两方面动态均指向美国经济在消费和居住成本层面面临的结构性调整压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/housing-affordability-prices-congress.html" target="_blank" rel="noopener">[CNBC] Housing affordability package set to advance in Congress amid home-cost concerns</a>
+                    <a href="https://www.bbc.com/news/articles/cgmlgv7rdx1o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] Target slashes 500 jobs as retailer seeks to invest in its stores</a>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">住宅建筑</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>欧洲政治与能源政策面临不确定性</div>
+                <div class="topic-title-en">European Politics and Energy Policy Face Uncertainty</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    法国总统马克龙宣布进入“欧洲紧急状态”并推动欧洲战斗机项目，英国领导人斯塔默的健康问题引发政治稳定性担忧，叠加欧盟内部在俄罗斯石油禁令上的分歧，共同构成了欧洲在政治、防务与能源政策上的复杂局面。这种不确定性可能影响欧洲市场的投资信心和区域性项目的推进效率。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxON2FFYjFjNHdwZXBiZWxjZEpYMWpYTE15MkZrdW1mX1NKNGl2ajdaUUFQN0Q2RXdJZU5oTkhOUDNCVHhuNV9KbGFxSnh5SzdUZnR1eHlQQmU5MUtnQ2xpcklSei05RTJSX1Jya1NSOWc5MDVuVnlaQXRjMmxrM0VGWUt1X3cyVW5qYmp4QW83QUozODFKYzRDb2lrV1JmYlE?oc=5" target="_blank" rel="noopener">[Economist] Emmanuel Macron declares a European state of emergency - The Economist</a>
+                    <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQelkxUkhrei0yZmVoRExiakg4Vk0xSXM2Q1YwWmhVM1pUdzdSS3F2VWcwZ2dGTFZZWUxFaWhqMXZEb3I3ZVJBR0lRLXhGTnJXOUExcHhNOUZoX2RLc3JzTXpGcXgxSkRCOThHVXdUQ1pqY3VoTEVMQlpCaVg0cXE4TEozRkI2SV84LTliemk0Yng1aDJ1XzYwbXZOaEx2Um5rZWc?oc=5" target="_blank" rel="noopener">[Economist] Keir Starmer: a sick man who can’t afford to catch a cold - The Economist</a>
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQWFJLb0hYOEUteG9GS0FhQl83TXBRbzdaa0UzamFpM09HZXNlOFp3RllLcXg0S0dUQldueGdOQkRXWUU0QlJnaTc4alVuRlhZQTNtV280SUhHXzVMWmNzTFJ5V3JLT0RVNmpKQTNwOWNzem5hMjBadnZsNXFxRk0zQWxXWXFhLVV3TUgtTFdDWmxFSXVNblJsUzgydndmNktrWmZ2UGg2VkN4Zk1DQVE?oc=5" target="_blank" rel="noopener">[Bloomberg] Macron Calls for Progress on Troubled European Fighter Jet</a>
+                    <span class="sector-tag">国防航空</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">欧洲股市</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>BP利润下滑并中止股票回购，股价大跌5%</li>
+                <li>可口可乐销售额罕见不及预期，股价下跌</li>
+                <li>CVS Health季度盈利超预期，重申全年展望</li>
+                <li>台积电数据被解读为AI需求依然强劲</li>
+                <li>美国国会正推进住房可负担性法案</li>
+                <li>英国可再生能源拍卖创纪录，将推动更多太阳能农场建设</li>
+                <li>巴西1月通胀回升，支持央行谨慎降息的观点</li>
+                <li>诺和诺德Wegovy广告被FDA警告含误导信息</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
