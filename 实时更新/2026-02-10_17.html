@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-10 17:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-10 17:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场呈现分化态势，科技股受AI投资与监管双重因素影响，能源板块承压，地缘政治风险持续扰动供应链。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>科技巨头AI军备竞赛与监管风险交织</div>
+                <div class="topic-title-en">Big Tech's AI Arms Race Amid Regulatory Scrutiny</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Alphabet（谷歌）发行百年期债券并警告AI相关风险，显示其正投入巨资进行AI基础设施扩张，但也凸显了随之而来的运营和监管不确定性。与此同时，Meta（Instagram）和谷歌（YouTube）因被指设计‘成瘾机器’而面临诉讼，这为科技巨头的商业模式带来了潜在的监管和法律风险。AI热潮同时推高了英伟达（受益于OpenAI支出）和台积电（1月营收同比大增37%）的预期，但行业整体面临估值和伦理的双重考验。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/alphabet-highlights-new-ai-related-risks-in-tapping-debt-market.html" target="_blank" rel="noopener">[CNBC] Alphabet calls out new AI-related risks, as it taps debt market to fund build-out</a>
+                    <a href="https://www.bbc.com/news/articles/c3wlpqpe2z4o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] Instagram and YouTube owners built 'addiction machines', trial hears</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOMVhzaEJrVTlVazFMY2xfN3AtNGFVcjdhRjNqVjNCSTNuY1Z2Z0VyaE5KRWE5Y3YzWGZDcXJzMkRLOFZMNG40Wm1DbEtReFhlRzI0NWdfcUNmM0N0S01LZ1BadU9UV1RFckxKekU0Yy1haDhhMUtjOXNxa0ZDdVZZMmhWZGxPdGszSkk5akVheWZjLXp4Q1NHajBRamZjeVdCbWU5anNVS1ZBcW1Jc3NCeFZn?oc=5" target="_blank" rel="noopener">[Bloomberg] TSMC Revenue Jumps 37% in January as AI Spending Marches On</a>
+                    <a href="https://news.google.com/rss/articles/CBMikwNBVV95cUxOeFljUEdOQS1GNnEyc1VUUkN0RnYtZDZicHZzMC16VzJITUxrUTRYZmlkbTIzTnkyX2lHX05sLXVJOHowR1dMeFlJX2lMS0NJMHdVVlpOdnBMcFBGVllvY1hXSElCWlBUQUdGMlBUT0ZkVC03ZENsVG16YUFnU25TMGZQeklILUtQNEJDb05VQUlKdUphOURkdHh0ZXpseGVfMEcyQzcxRUZTVjFOYUZMRnVpOTkySDNTNGdaNXJWU3NycExGT2RsRVFmLV9YTTFwM2xYSUZFOFJORzhqSFVBODR2azhjWnQzWFF6NFBXcWN5MHp3RjdaRHdyRnoxdWFjRllIRmRSSld6cWhoMThzVXR4ZlhmQVlKN0ZHMGo0anFrNC03eFFMeE9GQ1pvZjFkVmhtdEJjUy1BbmoxNnIxWjNoR0xFS1NJZ3FPaGVjYk5kMHB6TGtMb1ZsbEhndkFMNW0xTVljeUswcmxVU1ozaTE1TTh6bnhZcW5uT1Q2STRWbzNUMUVNSHhGVlpLTWwyYzRR?oc=5" target="_blank" rel="noopener">[Barrons] Nvidia Stock Pops. It Should Benefit From OpenAI Spending, Analyst Says.</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">互联网科技</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">社交媒体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>地缘政治紧张加剧，能源与供应链风险攀升</div>
+                <div class="topic-title-en">Geopolitical Tensions Escalate, Raising Energy and Supply Chain Risks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国警告船只远离伊朗水域，霍尔木兹海峡局势紧张，直接威胁全球约20%的石油贸易通道，可能推高能源价格和航运成本。与此同时，台湾地区对华盛顿的芯片供应链转移目标表示‘不可能’，凸显全球半导体供应链重组面临巨大现实阻力，地缘政治因素持续干扰关键科技产业的稳定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/us-warns-ships-avoid-iran-strait-hormuz-boarding-irgc-tehran-israel-netanyahu.html" target="_blank" rel="noopener">[CNBC] U.S. urges ships to stay 'as far as possible' from Iran's waters in Strait of Hormuz after boarding attempts</a>
+                    <a href="https://www.cnbc.com/2026/02/10/taiwan-chips-us-supply-chain-lutnick-trade-deal.html" target="_blank" rel="noopener">[CNBC] 'Impossible': Taiwan pushes back against Washington’s 40% chip supply relocation goal</a>
+                    <a href="https://www.investing.com/news/commodities-news/us-issues-fresh-guidance-to-vessels-transiting-strait-of-hormuz-as-iran-tensions-simmer-4494608" target="_blank" rel="noopener">[Investing.com] US issues fresh guidance to vessels transiting Strait of Hormuz as Iran tensions simmer</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">国防军工</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>能源巨头BP暂停股票回购，行业盈利压力显现</div>
+                <div class="topic-title-en">Energy Giant BP Halts Buybacks, Signaling Sector Profit Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    BP因油价下跌导致利润下滑，并决定暂停股票回购计划，这是能源行业在油价波动和向可再生能源转型过程中面临财务压力的明确信号。此举可能引发市场对油气巨头资本纪律和股东回报可持续性的担忧，同时也凸显了传统能源公司在能源转型浪潮中平衡投资与回报的挑战。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cz0g4dkm77zo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] BP profits fall after oil prices drop</a>
+                    <a href="https://www.cnbc.com/2026/02/10/bp-earnings-q4-full-year-oil-energy.html" target="_blank" rel="noopener">[CNBC] BP suspends buybacks in fresh sign of oil price pressure</a>
+                    <a href="https://www.marketwatch.com/story/bp-to-halt-stock-buybacks-as-profit-slumps-0457cb71?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] BP to halt stock buybacks as profit slumps</a>
+                    <span class="sector-tag">石油天然气</span>
+                    <span class="sector-tag">能源</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>零售业结构性调整：Target裁员投资门店，奢侈品显现复苏迹象</div>
+                <div class="topic-title-en">Retail Restructuring: Target Cuts Jobs to Invest in Stores, Luxury Shows Signs of Recovery</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Target裁员约500个公司岗位，将资源转向投资门店体验和一线员工，反映了实体零售业在应对电商竞争和消费者体验需求时的结构性调整。另一方面，开云集团（Kering）在Gucci销售下滑幅度小于预期且新任CEO制定复兴计划后股价大涨，显示奢侈品行业在经历疲软后可能出现分化性复苏，市场对强有力的转型战略反应积极。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/09/target-store-investment-job-cuts-customer-experience.html" target="_blank" rel="noopener">[CNBC] Target steps up investment in store staffing, cuts about 500 other roles to help fix customer experience</a>
+                    <a href="https://www.bbc.com/news/articles/cgmlgv7rdx1o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] Target slashes 500 jobs as retailer seeks to invest in its stores</a>
+                    <a href="https://www.cnbc.com/2026/02/10/gucci-kering-earnings-stock-sales-q4-fy-new-ceo.html" target="_blank" rel="noopener">[CNBC] Gucci-owner Kering jumps 11% as new CEO maps revival, sales beats estimates</a>
+                    <a href="https://www.investing.com/news/stock-market-news/kerings-fourthquarter-sales-fall-less-than-expected-as-gucci-slide-continues-4495510" target="_blank" rel="noopener">[Investing.com] Kering CEO flags ’fragile’ recovery as Gucci owner’s sales decline less than feared</a>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">奢侈品</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>亚洲股市资金外流，科技股回调与个别巨头走强并存</div>
+                <div class="topic-title-en">Foreign Capital Flees Asian Stocks Amid Tech Rout, While Select Giants Strengthen</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    受AI驱动的科技股抛售潮蔓延影响，外资正在撤出亚洲股市，表明全球科技板块的高估值正经历一轮调整压力。然而，市场内部分化明显：软银因电信业务上调展望和Arm的AI叙事而股价飙升，台积电营收也因AI支出强劲增长，这凸显了在板块整体回调中，拥有坚实AI核心业务和盈利前景的公司仍受资金青睐。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/economy-news/foreign-investors-pull-from-asian-stocks-as-aidriven-tech-rout-spreads-4495642" target="_blank" rel="noopener">[Investing.com] Foreign investors pull from Asian stocks as AI-driven tech rout spreads</a>
+                    <a href="https://www.cnbc.com/2026/02/10/softbank-group-corp-shares-surge-after-telecom-unit-lifts-outlook-arm-ai-chip.html" target="_blank" rel="noopener">[CNBC] SoftBank shares surge 10% after telecom unit lifts outlook, Arm strength bolsters AI narrative</a>
+                    <a href="https://www.cnbc.com/2026/02/10/south-korea-largest-defense-firm-hanwha-aerospace-slumps-downbeat-results.html" target="_blank" rel="noopener">[CNBC] South Korea's largest defense firm Hanwha Aerospace slumps 6% as revenue, pre-tax profit miss estimates</a>
+                    <span class="sector-tag">科技股</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">电信</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>可再生能源投资加速，太阳能项目创纪录</div>
+                <div class="topic-title-en">Renewable Energy Investment Accelerates with Record Solar Auction</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    英国创纪录的可再生能源拍卖结果意味着更多太阳能农场即将建设，这反映了全球能源转型趋势下，政府对清洁能源的政策支持力度和投资吸引力仍在加强。尽管传统油气巨头面临压力，但可再生能源，尤其是太阳能，正成为资本密集流入的领域，长期来看将重塑全球能源格局和相关产业链。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cp85n416n3vo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] More solar farms on the way after record renewables auction</a>
+                    <span class="sector-tag">可再生能源</span>
+                    <span class="sector-tag">公用事业</span>
+                    <span class="sector-tag">太阳能</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>个股剧烈波动：财报与战略调整引发市场重估</div>
+                <div class="topic-title-en">Sharp Moves in Individual Stocks as Earnings and Strategy Shifts Trigger Re-rating</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    多只个股因财报和战略变动出现极端走势：减肥药战略受挫导致Hims & Hers股价暴跌16%；IT基础设施服务商Kyndryl因财报、会计问题及CEO变更股价腰斩；而周一.com尽管业绩超预期却难逃软件股估值陷阱。这表明在当前市场环境下，投资者对业绩细节、管理层执行力以及行业叙事极为敏感，惩罚与奖励都迅速而剧烈。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMirwNBVV95cUxOV3ZnUVZheWo4OTlCeU1KcmdLbERybmh3TXBMVWF2R2JxcTA4aTlBVHd4akxFUUkxS3VLenBEQXdVV0llRmlmMXRTa05qbWo1ZmZIN0NZWXZYQmV4cm1qQS1mempVNWZDS2hCUVVQV0lGNnJtSERZalFacDBxOG8zUWJOQ0xuUmU2RVdnWGZkQjlqUHJqQlRHRWcwSlVPSm1DNjRYU1VIOTJhWS1udno3eWFrcXdtd3NMOXlFd2dka3RzN003dlRyTE5XcWVMVEdpRk1oemFjMzN1RG5sRzJrVGhiV3Y2YmU0ZnBXV19PSG94ZDlYaXZHVGQxNnhaRDZ0ZG1fekhoMEYyNzBzTEk3eERDTF9oU1pBZWlIcHZqWHFaa0RLbWtmczZ6YTVIeDJyQk84SmRCZ0VHVlBnQVNYZ1RIaENYYmZSZk9jWTdkU0pzYll3TlZpekoxeGJSLWNWRE45Ul9vZzI1N2RPR19pbFRfRTN5NjE2T1pVWTBLM3c3WXFBejJaYVpOTHF2Z1J0TVNqUnR0ajZCVVJZbEM1a1NjcndEdExObjNSdkdpRQ?oc=5" target="_blank" rel="noopener">[Barrons] Hims & Hers Stock Plunges 16%. Its Weight-Loss Drug Strategy Backfired.</a>
+                    <a href="https://news.google.com/rss/articles/CBMihwNBVV95cUxQRndwQkowLXdoMGhxMDAyTUl6bzEwMVRpVmMwck5ZSG5BLWRkVU51bzBYVmxDbkxFOG1iU0tIUndOQ2g3Ylo2UHJNelVUeVB3RHJRa2ZucHd4U0pENVVlSVJkX3h3UV82SE9tRDBJcnVENldWNHFzVXVVU01IQnUyRGtyMTBDTVVJbEZqdUdUQ181NnZvOTBUZURiNXBqaDNXVkxhQ1MwMXJLdVp1TlpJVG1TUzZCYTdtUG40ajA1c3ZpbWhlSTliRFBBeTRyT2twMGhGb3l6a29PUUVaZWpTMDRZNS01MmN3dDN5X3ZHbkdxV2x6YmRsVFRzVnhMTS1tSXpvZml5cGNpREh6TGIzMlJ2SzU4U19TbE5mLVAyT28yNXFWU3NSV2ZES3kwQnVXTHBDZjMydGtLUzFiMVJ5OXJQNTJRNWhVc0F4bW5VT0dLclMxQjN6SzE5N1lkVGdWeG5yQ0pLbWNSYnhkd0pwaUdsRk13VlBVZThEd1RPdEJWMlc2WkVz?oc=5" target="_blank" rel="noopener">[Barrons] Kyndryl Stock: How Earnings, Accounting, and a CEO Change Led to a 55% Plunge</a>
+                    <a href="https://news.google.com/rss/articles/CBMikANBVV95cUxOUUxxRThrWHY0SFRPRUtJQWFTRXBWVmtHeUVoUTdTYjdIcmV4SFdncG81N0Y5cC1OYkphTWtFdGFMLWJLSHVRSEh3bjNLREN1ekZHTFdwQTBkT2JxY2xlbkxvZVV2aXNORVNNR2FDb1Y3T2xyOG9iYmRoVV80eEtRcXdXLVNicnMwZ0pLT1pjNmd1bXRlVElWTlJqSEw1c1ZHSWhvQzhSSkhCZnRWUDA3SXBFa0hVVndXc2N5MkYzb25DV0tuU0dsNjVaanNYN3lHS2h5ZkdUNE1WR1lEcV8wdGhSM3JsTDhTUTYyQkxVdS1lOHdSOW9fdjZ5VVJmSWFZWS14RTVjM0pXQUthQm9DbWRhanNab012aEFETnMwbHZsaktOYlMwTjVFYjdjWUVvbFFNbzFHSjRFMnNEVmlQS05HNTA3c0NtdkF0bXhta1RzejV6UDNEU0ZpMkFjWDdXMlRVc1hweDE1eFVmRkFtV0lOSDdBVlpjT0dyNUNXaC1zVVgzV1lqTFJSVGdnZWFz?oc=5" target="_blank" rel="noopener">[Barrons] Monday.com Earnings Beat Estimates. The Stock Can’t Escape the Software Trap.</a>
+                    <span class="sector-tag">医疗保健</span>
+                    <span class="sector-tag">信息技术服务</span>
+                    <span class="sector-tag">软件</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>BP宣布暂停股票回购计划</li>
+                <li>台积电1月营收同比增长37%</li>
+                <li>美国十年期国债收益率走低</li>
+                <li>开云集团（Kering）第四季度销售降幅小于预期，股价大涨11%</li>
+                <li>外资从亚洲股市撤出</li>
+                <li>英国可再生能源拍卖创纪录，将推动太阳能农场建设</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
