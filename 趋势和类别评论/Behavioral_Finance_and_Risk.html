@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Human Game | 人性的博弈</title>
+    <style>
+        :root {
+            --accent: #7b1fa2;
+            --accent-light: #ab47bc;
+            --accent-glow: rgba(123,31,162,0.10);
+            --accent-dark: #4a148c;
+            --bloomberg-black: #000000;
+            --bloomberg-green: #4caf50;
+            --bloomberg-red: #f44336;
+            --bloomberg-orange: #ff6900;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --border-color: #e0e0e0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header-bar {
+            background: var(--bloomberg-black); padding: 12px 24px;
+            display: flex; justify-content: space-between; align-items: center;
+            position: sticky; top: 0; z-index: 100;
+        }
+        .logo { font-size: 24px; font-weight: 700; color: #fff; letter-spacing: -1px; }
+        .logo span { color: var(--accent-light); }
+        .header-date { color: rgba(255,255,255,0.7); font-size: 13px; }
+
+        .article-nav { background: #fff; border-bottom: 1px solid #e0e0e0; padding: 0 24px; }
+        .article-nav-inner {
+            max-width: 900px; margin: 0 auto; display: flex; align-items: center;
+            gap: 4px; height: 40px; font-size: 13px;
+        }
+        .article-nav a {
+            display: inline-flex; align-items: center; gap: 5px; padding: 4px 12px;
+            color: #666; font-weight: 600; border-radius: 4px; transition: all 0.15s; text-decoration: none;
+        }
+        .article-nav a:hover { color: var(--accent); background: var(--accent-glow); text-decoration: none; }
+        .article-nav .nav-sep { color: #e0e0e0; user-select: none; }
+
+        .price-ticker { background: var(--bloomberg-black); padding: 16px 24px; overflow: hidden; }
+        .ticker-content { display: flex; gap: 48px; animation: scroll 25s linear infinite; }
+        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .ticker-item { display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+        .ticker-name { color: #fff; font-weight: 600; font-size: 14px; }
+        .ticker-price { color: var(--accent-light); font-weight: 700; font-size: 16px; }
+        .ticker-change { font-size: 13px; font-weight: 600; }
+        .ticker-change.up { color: var(--bloomberg-green); }
+        .ticker-change.down { color: var(--bloomberg-red); }
+
+        .hero {
+            background: linear-gradient(135deg, #1a0a2e 0%, #2d1b46 50%, #120828 100%);
+            padding: 80px 24px; text-align: center; position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle at 50% 50%, rgba(123,31,162,0.15) 0%, transparent 50%);
+            animation: pulse 10s ease-in-out infinite;
+        }
+        @keyframes pulse { 0%,100% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(1.1); opacity: 1; } }
+        .hero-label {
+            display: inline-block; background: var(--accent); color: #fff; font-size: 11px;
+            font-weight: 600; padding: 4px 12px; border-radius: 2px; margin-bottom: 20px;
+            text-transform: uppercase; letter-spacing: 1px; position: relative;
+        }
+        .hero-title {
+            font-size: clamp(32px, 6vw, 56px); font-weight: 800; color: #fff;
+            margin-bottom: 16px; letter-spacing: -1px; position: relative;
+        }
+        .hero-subtitle {
+            font-size: 20px; color: rgba(255,255,255,0.7); max-width: 700px;
+            margin: 0 auto; position: relative;
+        }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+        .article-meta {
+            padding: 24px 0; border-bottom: 1px solid var(--border-color);
+            display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+        }
+        .author-info { display: flex; align-items: center; gap: 12px; }
+        .author-avatar {
+            width: 40px; height: 40px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            display: flex; align-items: center; justify-content: center; font-weight: 600; color: #fff;
+        }
+        .author-name { font-weight: 600; }
+        .publish-time { color: var(--text-secondary); font-size: 14px; }
+        .reading-time { background: var(--bg-secondary); padding: 6px 12px; border-radius: 4px; font-size: 13px; color: var(--text-secondary); }
+
+        .section { padding: 48px 0; border-bottom: 1px solid var(--border-color); }
+        .section:last-child { border-bottom: none; }
+        .section-label {
+            display: inline-block; font-size: 12px; font-weight: 600; color: var(--accent);
+            text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px;
+        }
+        .section-title { font-size: 28px; font-weight: 700; margin-bottom: 24px; letter-spacing: -0.5px; }
+        p { font-size: 17px; line-height: 1.8; margin-bottom: 20px; color: var(--text-primary); }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 32px 0; }
+        .stat-card { background: var(--bg-secondary); padding: 24px; border-radius: 8px; text-align: center; }
+        .stat-value { font-size: 32px; font-weight: 800; color: var(--bloomberg-black); margin-bottom: 4px; }
+        .stat-value.purple { color: var(--accent); }
+        .stat-value.green { color: var(--bloomberg-green); }
+        .stat-value.red { color: var(--bloomberg-red); }
+        .stat-label { font-size: 13px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; }
+
+        .data-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 15px; }
+        .data-table th {
+            background: var(--bloomberg-black); color: #fff; padding: 14px 16px;
+            text-align: left; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .data-table td { padding: 14px 16px; border-bottom: 1px solid var(--border-color); }
+        .data-table tr:hover { background: var(--bg-secondary); }
+
+        .chart-container {
+            background: linear-gradient(180deg, #1a0a2e 0%, #120828 100%);
+            border-radius: 12px; padding: 32px; margin: 32px 0; position: relative; overflow: hidden;
+        }
+        .chart-title { color: #fff; font-size: 18px; font-weight: 600; margin-bottom: 24px; }
+        .chart-subtitle { color: rgba(255,255,255,0.5); font-size: 13px; margin-top: -16px; margin-bottom: 24px; }
+        .h-bar-chart { display: flex; flex-direction: column; gap: 16px; }
+        .h-bar-row { display: flex; align-items: center; gap: 12px; }
+        .h-bar-label { color: rgba(255,255,255,0.8); font-size: 14px; min-width: 140px; text-align: right; }
+        .h-bar-track { flex: 1; height: 28px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden; }
+        .h-bar-fill {
+            height: 100%; border-radius: 4px;
+            background: linear-gradient(90deg, var(--accent) 0%, var(--accent-light) 100%);
+            display: flex; align-items: center; justify-content: flex-end; padding-right: 8px;
+            font-size: 12px; color: #fff; font-weight: 600;
+        }
+        .h-bar-fill.red { background: linear-gradient(90deg, #c62828 0%, #ef5350 100%); }
+        .h-bar-fill.green { background: linear-gradient(90deg, #2e7d32 0%, #66bb6a 100%); }
+        .h-bar-fill.orange { background: linear-gradient(90deg, #e65100 0%, #ff9800 100%); }
+        .h-bar-fill.blue { background: linear-gradient(90deg, #1565c0 0%, #42a5f5 100%); }
+
+        .chart-visual {
+            height: 200px; display: flex; align-items: flex-end; gap: 4px;
+            padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .chart-bar {
+            flex: 1;
+            background: linear-gradient(180deg, var(--accent-light) 0%, rgba(171,71,188,0.3) 100%);
+            border-radius: 2px 2px 0 0; transition: all 0.3s;
+        }
+        .chart-bar:hover { background: linear-gradient(180deg, #ff6900 0%, rgba(255,105,0,0.3) 100%); }
+        .chart-bar.green { background: linear-gradient(180deg, #66bb6a 0%, rgba(102,187,106,0.3) 100%); }
+        .chart-bar.red { background: linear-gradient(180deg, #ef5350 0%, rgba(239,83,80,0.3) 100%); }
+        .chart-labels {
+            display: flex; justify-content: space-between; margin-top: 12px;
+            font-size: 12px; color: rgba(255,255,255,0.5);
+        }
+
+        /* S-Curve for Prospect Theory */
+        .s-curve-container {
+            background: linear-gradient(180deg, #1a0a2e 0%, #120828 100%);
+            border-radius: 12px; padding: 32px; margin: 32px 0; text-align: center;
+        }
+        .s-curve-container .chart-title { margin-bottom: 16px; }
+        .s-curve {
+            position: relative; width: 320px; height: 260px; margin: 0 auto;
+        }
+        .s-curve .axis-x {
+            position: absolute; top: 50%; left: 0; right: 0; height: 1px;
+            background: rgba(255,255,255,0.3);
+        }
+        .s-curve .axis-y {
+            position: absolute; left: 50%; top: 0; bottom: 0; width: 1px;
+            background: rgba(255,255,255,0.3);
+        }
+        .s-curve .label {
+            position: absolute; color: rgba(255,255,255,0.6); font-size: 12px;
+        }
+        .s-curve .label.gain { right: 8px; top: 52%; }
+        .s-curve .label.loss { left: 8px; top: 52%; }
+        .s-curve .label.value { left: 52%; top: 4px; }
+        .s-curve .label.neg-value { left: 52%; bottom: 4px; }
+        .s-curve .curve-line {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        }
+        .s-curve svg { width: 100%; height: 100%; }
+
+        .media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 32px 0; }
+        .media-card {
+            background: var(--bg-secondary); border-radius: 8px; padding: 20px;
+            border-left: 4px solid var(--accent); transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .media-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+        .media-source { font-size: 12px; font-weight: 600; color: var(--accent); text-transform: uppercase; margin-bottom: 8px; }
+        .media-title { font-size: 15px; font-weight: 600; margin-bottom: 8px; line-height: 1.4; }
+        .media-excerpt { font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+            border-left: 4px solid var(--accent); padding: 24px; margin: 32px 0; border-radius: 0 8px 8px 0;
+        }
+        .highlight-box h4 { font-size: 16px; font-weight: 700; margin-bottom: 12px; color: var(--bloomberg-black); }
+        .highlight-box p { margin-bottom: 0; font-size: 15px; }
+        .highlight-box ul { margin: 8px 0 0 20px; font-size: 15px; line-height: 1.8; }
+
+        .highlight-box.warning {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border-left-color: var(--bloomberg-orange);
+        }
+        .highlight-box.danger {
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+            border-left-color: var(--bloomberg-red);
+        }
+        .highlight-box.hope {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-left-color: var(--bloomberg-green);
+        }
+
+        .quote-block {
+            background: var(--bloomberg-black); color: #fff; padding: 32px;
+            border-radius: 8px; margin: 32px 0; position: relative;
+        }
+        .quote-block::before {
+            content: '\201c'; position: absolute; top: 16px; left: 24px;
+            font-size: 64px; color: var(--accent-light); line-height: 1; opacity: 0.3;
+        }
+        .quote-text { font-size: 20px; font-style: italic; line-height: 1.6; margin-bottom: 16px; padding-left: 32px; }
+        .quote-author { font-size: 14px; color: rgba(255,255,255,0.7); padding-left: 32px; }
+
+        .anatomy-box {
+            border: 2px solid var(--accent); border-radius: 12px; padding: 32px; margin: 32px 0; position: relative;
+        }
+        .anatomy-box .anatomy-tag {
+            position: absolute; top: -14px; left: 24px; background: var(--accent); color: #fff;
+            padding: 4px 16px; border-radius: 4px; font-size: 12px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+        .anatomy-box h4 { font-size: 18px; font-weight: 700; margin-bottom: 16px; margin-top: 8px; }
+        .anatomy-box p { font-size: 15px; margin-bottom: 12px; }
+
+        .comparison-panel {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 32px 0;
+            border-radius: 12px; overflow: hidden;
+        }
+        .comparison-side { padding: 28px; }
+        .comparison-side.left { background: #f3e5f5; }
+        .comparison-side.right { background: #e8f5e9; }
+        .comparison-side h4 { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
+        .comparison-side ul { list-style: none; padding: 0; }
+        .comparison-side ul li { font-size: 14px; padding: 6px 0; border-bottom: 1px solid rgba(0,0,0,0.06); line-height: 1.5; }
+        .comparison-side ul li:last-child { border-bottom: none; }
+
+        .big-number {
+            text-align: center; padding: 40px 20px; margin: 32px 0;
+            background: linear-gradient(135deg, #1a0a2e, #2d1b46); border-radius: 12px;
+        }
+        .big-number .number {
+            font-size: clamp(48px, 10vw, 80px); font-weight: 900;
+            background: linear-gradient(135deg, var(--accent-light), #fff);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; line-height: 1.1;
+        }
+        .big-number .label { color: rgba(255,255,255,0.6); font-size: 16px; margin-top: 8px; }
+
+        .formula-box {
+            background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px;
+            padding: 24px; margin: 24px 0; text-align: center;
+            font-size: 20px; font-family: "Times New Roman", serif; letter-spacing: 1px;
+        }
+        .formula-box .explain {
+            font-size: 14px; color: var(--text-secondary); margin-top: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; letter-spacing: 0;
+        }
+
+        .timeline { position: relative; padding-left: 32px; margin: 32px 0; }
+        .timeline::before {
+            content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+            width: 2px; background: linear-gradient(180deg, var(--accent), var(--accent-light));
+        }
+        .timeline-item { position: relative; padding-bottom: 24px; }
+        .timeline-item::before {
+            content: ''; position: absolute; left: -37px; top: 4px;
+            width: 12px; height: 12px; border-radius: 50%; background: var(--accent); border: 2px solid #fff;
+        }
+        .timeline-date { font-size: 13px; font-weight: 600; color: var(--accent); margin-bottom: 4px; }
+        .timeline-content h5 { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+        .timeline-content p { font-size: 14px; margin-bottom: 0; color: var(--text-secondary); }
+
+        .footer {
+            background: var(--bloomberg-black); color: #fff; padding: 48px 24px; text-align: center;
+        }
+        .footer-note { font-size: 13px; color: rgba(255,255,255,0.5); max-width: 600px; margin: 0 auto 24px; }
+        .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+        .footer-links a { color: rgba(255,255,255,0.7); font-size: 13px; }
+        .footer-links a:hover { color: #fff; }
+
+        @media (max-width: 768px) {
+            .hero { padding: 48px 16px; }
+            .section { padding: 32px 0; }
+            .comparison-panel { grid-template-columns: 1fr; }
+            .h-bar-label { min-width: 100px; font-size: 12px; }
+            .ticker-content { gap: 24px; }
+            .s-curve { width: 240px; height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header-bar">
+    <div class="logo">Capital<span>Markets</span></div>
+    <div class="header-date">2026年2月10日 星期二</div>
+</header>
+
+<nav class="article-nav">
+    <div class="article-nav-inner">
+        <a href="../index.html">&#8962; 首页</a>
+        <span class="nav-sep">/</span>
+        <a href="index.html">&#8592; 趋势与类别评论</a>
+    </div>
+</nav>
+
+<div class="price-ticker">
+    <div class="ticker-content">
+        <div class="ticker-item">
+            <span class="ticker-name">VIX 恐惧指数</span>
+            <span class="ticker-price">16.54</span>
+            <span class="ticker-change down">▼ -3.2%</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">BRK.B 伯克希尔</span>
+            <span class="ticker-price">$478.22</span>
+            <span class="ticker-change up">▲ +0.5%</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">SPY 标普ETF</span>
+            <span class="ticker-price">$600.12</span>
+            <span class="ticker-change up">▲ +0.3%</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">TLT 美债ETF</span>
+            <span class="ticker-price">$87.45</span>
+            <span class="ticker-change down">▼ -0.4%</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">GLD 黄金ETF</span>
+            <span class="ticker-price">$248.90</span>
+            <span class="ticker-change up">▲ +0.8%</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">VIX 恐惧指数</span>
+            <span class="ticker-price">16.54</span>
+            <span class="ticker-change down">▼ -3.2%</span>
+        </div>
+        <div class="ticker-item">
+            <span class="ticker-name">BRK.B 伯克希尔</span>
+            <span class="ticker-price">$478.22</span>
+            <span class="ticker-change up">▲ +0.5%</span>
+        </div>
+    </div>
+</div>
+
+<section class="hero">
+    <span class="hero-label">新手通识 · 第三部分 | Behavioral Finance</span>
+    <h1 class="hero-title">人性的博弈</h1>
+    <p class="hero-subtitle">内省：投资最大的敌人不是市场，而是投资者自己——从单兵作战上升到排兵布阵</p>
+</section>
+
+<main class="container">
+
+    <div class="article-meta">
+        <div class="author-info">
+            <div class="author-avatar">CM</div>
+            <div>
+                <div class="author-name">Capital Markets Research</div>
+                <div class="publish-time">2026年2月10日 · 资本的骨骼系列</div>
+            </div>
+        </div>
+        <div class="reading-time">阅读时间 · 30分钟</div>
+    </div>
+
+    <!-- ==================== Chapter 7 ==================== -->
+    <section class="section">
+        <span class="section-label">第七章</span>
+        <h2 class="section-title">行为金融学——为什么你总是拿不住？</h2>
+
+        <p>假设你买了一只股票，涨了20%。你心里痒痒的，想要落袋为安。同一天，你的另一只股票亏了20%。你死死拿着不动，告诉自己「不卖就不算亏」。</p>
+
+        <p>如果你觉得这很正常，那么恭喜——你是一个标准的人类，你的大脑正在按照几百万年进化出来的本能运作。不幸的是，这些本能在投资领域会系统性地让你做出错误决策。</p>
+
+        <h3 style="font-size:20px;font-weight:700;margin:32px 0 16px;">前景理论：大脑的损失函数是不对称的</h3>
+
+        <p>1979年，心理学家Daniel Kahneman和Amos Tversky发表了一篇改变人类认知的论文——<strong>前景理论（Prospect Theory）</strong>（Citation: Kahneman & Tversky, 1979）。这篇论文最终为Kahneman赢得了2002年诺贝尔经济学奖（Tversky已于1996年去世，诺奖不追授）。</p>
+
+        <p>前景理论的核心发现可以概括为一句话：<strong>人对损失的感受强度是对等量收益感受的2-2.5倍</strong>。</p>
+
+        <div class="s-curve-container">
+            <div class="chart-title">前景理论价值函数（S型曲线）</div>
+            <div class="s-curve">
+                <div class="axis-x"></div>
+                <div class="axis-y"></div>
+                <div class="label gain">收益 →</div>
+                <div class="label loss">← 损失</div>
+                <div class="label value">价值感受(+)</div>
+                <div class="label neg-value">价值感受(-)</div>
+                <div class="curve-line">
+                    <svg viewBox="0 0 320 260" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 20 230 Q 80 220, 120 180 Q 140 160, 160 130"
+                              stroke="#ef5350" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <path d="M 160 130 Q 180 100, 200 85 Q 240 55, 300 45"
+                              stroke="#66bb6a" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <text x="60" y="248" fill="rgba(255,255,255,0.5)" font-size="11">损失100元</text>
+                        <text x="55" y="195" fill="#ef5350" font-size="11" font-weight="600">痛苦值: -250</text>
+                        <text x="210" y="40" fill="rgba(255,255,255,0.5)" font-size="11">收益100元</text>
+                        <text x="215" y="75" fill="#66bb6a" font-size="11" font-weight="600">快乐值: +100</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <p>这张S型曲线告诉我们几件深刻的事情：</p>
+
+        <div class="media-grid">
+            <div class="media-card" style="border-left-color:#f44336;">
+                <div class="media-source" style="color:#f44336;">偏差一</div>
+                <div class="media-title">损失厌恶（Loss Aversion）</div>
+                <div class="media-excerpt">亏100元的痛苦约等于赚250元的快乐。这解释了为什么人们宁愿持有亏损股票也不愿止损——因为「确认损失」带来的痛苦太大了。大脑选择逃避：只要不卖，就可以假装损失不存在。</div>
+            </div>
+            <div class="media-card" style="border-left-color:#ff6900;">
+                <div class="media-source" style="color:#ff6900;">偏差二</div>
+                <div class="media-title">处置效应（卖盈持亏）</div>
+                <div class="media-excerpt">投资者倾向于过早卖出盈利的股票（锁定快乐），同时过久持有亏损的股票（逃避痛苦）。这导致了一个荒谬的结果：你的投资组合里全是烂股票（因为好的都卖了），而且卖掉的好股票还在继续涨。</div>
+            </div>
+            <div class="media-card" style="border-left-color:#7b1fa2;">
+                <div class="media-source" style="color:#7b1fa2;">偏差三</div>
+                <div class="media-title">羊群效应（Herding）</div>
+                <div class="media-excerpt">在不确定的环境中，人类的本能是跟随群体。牛市尾声时所有人都在买入，你害怕被落下；熊市底部时所有人都在卖出，你害怕被吞噬。集体行动感觉安全，但在市场中它恰恰是最危险的。</div>
+            </div>
+            <div class="media-card" style="border-left-color:#1565c0;">
+                <div class="media-source" style="color:#1565c0;">偏差四</div>
+                <div class="media-title">过度自信（Overconfidence）</div>
+                <div class="media-excerpt">心理学实验表明：当被问到「你觉得自己的驾驶技术在所有司机中排前多少？」时，超过80%的人回答「前50%」。投资领域也一样——大多数人高估自己选股和择时的能力，从而过度交易，交易越多，摩擦成本越高。</div>
+            </div>
+        </div>
+
+        <h3 style="font-size:20px;font-weight:700;margin:32px 0 16px;">案例：牛顿与南海泡沫——天才也无法逃离人性</h3>
+
+        <p>1720年，英国南海公司（South Sea Company）的股票经历了人类历史上最著名的泡沫之一。物理学家Isaac Newton——发现万有引力的那个Newton——也在这场泡沫中下了赌注。</p>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">1720年初</div>
+                <div class="timeline-content">
+                    <h5>牛顿首次买入南海公司股票</h5>
+                    <p>作为一位谨慎的理性主义者，牛顿在£128的价位买入了一批南海公司股票。这是一个合理的投资决策。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">1720年4月</div>
+                <div class="timeline-content">
+                    <h5>理性离场，获利丰厚</h5>
+                    <p>股价涨到£350时，牛顿卖出全部持仓，净赚约£7,000（相当于今天约数百万英镑）。一个理性、克制、成功的交易。故事到这里本该结束。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">1720年5-6月</div>
+                <div class="timeline-content">
+                    <h5>股价继续暴涨，牛顿痛苦不堪</h5>
+                    <p>股价从£350一路飙升至£1,000以上。牛顿眼看着自己「过早卖出」的股票又涨了三倍。他的朋友们在赚钱，他的邻居们在赚钱，而他「聪明地」止盈了。这种感觉比亏钱还痛苦——这就是FOMO（Fear of Missing Out）。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">1720年6月</div>
+                <div class="timeline-content">
+                    <h5>牛顿再次杀入，倾尽身家</h5>
+                    <p>在股价接近历史高点时，牛顿忍不住了，以远高于第一次的价格重新买入——而且这次的仓位是上次的数倍。他还借了钱加杠杆。羊群效应和过度自信同时发作。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">1720年秋</div>
+                <div class="timeline-content">
+                    <h5>泡沫破裂，牛顿巨亏</h5>
+                    <p>股价从£1,000以上暴跌至£100以下。牛顿损失了约£20,000——几乎是他一生的积蓄。他后来留下了那句著名的话。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote-block">
+            <p class="quote-text">我能计算天体的运行轨迹，却无法计算人类的疯狂。</p>
+            <p class="quote-author">— Isaac Newton，在南海泡沫中损失毕生积蓄之后</p>
+        </div>
+
+        <p>牛顿的故事不是一个关于智商的故事。它告诉我们：<strong>投资决策的质量与智力水平几乎无关</strong>。决定投资结果的不是你有多聪明，而是你能在多大程度上控制自己的情绪。这就是行为金融学的核心启示。</p>
+    </section>
+
+    <!-- ==================== Chapter 8 ==================== -->
+    <section class="section">
+        <span class="section-label">第八章</span>
+        <h2 class="section-title">风险管理与仓位控制</h2>
+
+        <p>在投资的世界里，有一条不成文的铁律：<strong>活下来是第一要务</strong>。所有关于收益率、阿尔法、夏普比率的讨论，都建立在一个前提上——你的本金还在。如果本金归零，一切归零。</p>
+
+        <div class="big-number">
+            <div class="number">-50%</div>
+            <div class="label">亏损50%后，你需要盈利100%才能回本</div>
+        </div>
+
+        <p>这就是亏损的不对称性——也是为什么风险管理比追求收益更重要。让我们用一张表来展示这个冷酷的数学事实：</p>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>亏损幅度</th>
+                    <th>回本所需涨幅</th>
+                    <th>难度描述</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>-10%</td>
+                    <td>+11.1%</td>
+                    <td>一个季度的正常回报即可恢复</td>
+                </tr>
+                <tr>
+                    <td>-20%</td>
+                    <td>+25.0%</td>
+                    <td>需要大约一年的好行情</td>
+                </tr>
+                <tr>
+                    <td>-33%</td>
+                    <td>+50.0%</td>
+                    <td>相当于一轮小牛市</td>
+                </tr>
+                <tr>
+                    <td>-50%</td>
+                    <td style="color:var(--bloomberg-red);font-weight:600;">+100%</td>
+                    <td>需要翻倍——极其困难</td>
+                </tr>
+                <tr>
+                    <td>-75%</td>
+                    <td style="color:var(--bloomberg-red);font-weight:600;">+300%</td>
+                    <td>几乎不可能在合理时间内恢复</td>
+                </tr>
+                <tr>
+                    <td>-90%</td>
+                    <td style="color:var(--bloomberg-red);font-weight:600;">+900%</td>
+                    <td>事实上等于归零</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 style="font-size:20px;font-weight:700;margin:32px 0 16px;">凯利公式：最优下注比例</h3>
+
+        <p>有没有一个数学公式能告诉你每次应该投入多少比例的资金？有。它叫<strong>凯利公式（Kelly Criterion）</strong>，最初由贝尔实验室的John Kelly在1956年提出，用于信息论领域，后被引入赌博和投资。</p>
+
+        <div class="formula-box">
+            f* = (bp - q) / b
+            <div class="explain">f* = 最优投注比例 | b = 赔率（盈亏比）| p = 获胜概率 | q = 失败概率 (1-p)</div>
+        </div>
+
+        <p>举个例子：如果你发现了一个投资机会，胜率60%（p=0.6），赔率2:1（b=2，即赚了赚2倍，亏了亏1倍），那么凯利公式建议你投入：</p>
+
+        <p style="text-align:center;font-size:20px;font-weight:700;">f* = (2 × 0.6 - 0.4) / 2 = 0.4 = <span style="color:var(--accent);">40%</span></p>
+
+        <p>但实战中，几乎没有人会使用100%的凯利比例，原因如下：</p>
+
+        <div class="highlight-box warning">
+            <h4>凯利公式的三大修正</h4>
+            <p><strong>1. 参数估计误差</strong>：你很难精确知道一个投资的真实胜率和赔率。如果你高估了胜率，凯利公式会建议过大的仓位，一次亏损就可能造成毁灭性损失。实践中，人们通常使用<strong>半凯利（Half Kelly）</strong>——只下注凯利建议值的一半。</p>
+            <p><strong>2. 不考虑连续亏损</strong>：凯利公式假设你有无限次机会。但在现实中，连续的坏运气可能在你等到均值回归之前就耗尽你的本金。</p>
+            <p><strong>3. 心理承受力</strong>：即使数学上最优的仓位比例，如果导致的短期波动超出了你的心理承受范围，你大概率会在最差的时点恐慌卖出。最优策略的前提是你能执行它。</p>
+        </div>
+
+        <h3 style="font-size:20px;font-weight:700;margin:32px 0 16px;">最大回撤：复利的头号杀手</h3>
+
+        <p>如果你只看一个风险指标，那就看<strong>最大回撤（Maximum Drawdown）</strong>——从历史最高点到最低点的最大跌幅。它衡量的是最坏情况下你要承受多大的损失。</p>
+
+        <div class="chart-container">
+            <div class="chart-title">经典案例：最大回撤的毁灭性</div>
+            <div class="h-bar-chart">
+                <div class="h-bar-row">
+                    <div class="h-bar-label">S&P 500 (2008)</div>
+                    <div class="h-bar-track"><div class="h-bar-fill red" style="width:57%;">-56.8%</div></div>
+                </div>
+                <div class="h-bar-row">
+                    <div class="h-bar-label">纳斯达克 (2000)</div>
+                    <div class="h-bar-track"><div class="h-bar-fill red" style="width:78%;">-78.4%</div></div>
+                </div>
+                <div class="h-bar-row">
+                    <div class="h-bar-label">日经225 (1990)</div>
+                    <div class="h-bar-track"><div class="h-bar-fill red" style="width:82%;">-81.9%</div></div>
+                </div>
+                <div class="h-bar-row">
+                    <div class="h-bar-label">LTCM (1998)</div>
+                    <div class="h-bar-track"><div class="h-bar-fill red" style="width:92%;">-92%</div></div>
+                </div>
+                <div class="h-bar-row">
+                    <div class="h-bar-label">比特币 (2022)</div>
+                    <div class="h-bar-track"><div class="h-bar-fill red" style="width:77%;">-77.2%</div></div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="font-size:20px;font-weight:700;margin:32px 0 16px;">案例：长期资本管理公司（LTCM）——天才们的陨落</h3>
+
+        <p>如果世界上有一群人「应该」能做好风险管理，那就是LTCM的创始团队：两位诺贝尔经济学奖得主（Myron Scholes和Robert Merton），一位传奇债券交易员（John Meriwether），以及来自哈佛、MIT、斯坦福的数十位博士。</p>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value green">40%</div>
+                <div class="stat-label">年均收益率 (1994-1997)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value purple">25:1</div>
+                <div class="stat-label">峰值杠杆倍数</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value red">$46亿</div>
+                <div class="stat-label">4个月内亏损金额</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value red">-92%</div>
+                <div class="stat-label">最大回撤</div>
+            </div>
+        </div>
+
+        <p>LTCM的策略本身并不冒险——他们做的是债券价差套利，利用各种债券之间的微小定价偏差获利。问题在于：这些偏差太小了，为了获得可观的绝对收益，他们使用了极高的杠杆——最高时达到25倍。</p>
+
+        <p>1998年8月，俄罗斯突然宣布债务违约，全球市场陷入恐慌。投资者争相涌入美国国债避险，导致信用利差急剧扩大——而这恰恰是LTCM做空的方向。在25倍杠杆下，信用利差每扩大1个基点，LTCM的损失就被放大25倍。四个月内，$47亿资本近乎归零。</p>
+
+        <p>最终，美联储不得不协调14家华尔街大行共同出资36亿美元救助LTCM——因为如果它倒闭，其高达1.25万亿美元的衍生品头寸将引发连锁反应，可能导致全球金融系统崩溃。</p>
+
+        <div class="quote-block">
+            <p class="quote-text">市场保持非理性的时间，可以远远超过你保持偿付能力的时间。</p>
+            <p class="quote-author">— John Maynard Keynes（常被引用，出处有争议）</p>
+        </div>
+
+        <p>LTCM的教训是深刻的：<strong>再精妙的模型，再聪明的大脑，都无法消除「尾部风险」——那些模型认为几乎不可能发生，但一旦发生就毁灭一切的事件</strong>。这就是Nassim Taleb后来所说的「黑天鹅」（Citation: Taleb, 2007）。</p>
+    </section>
+
+    <!-- ==================== Chapter 9 ==================== -->
+    <section class="section">
+        <span class="section-label">第九章</span>
+        <h2 class="section-title">构建你的反脆弱系统</h2>
+
+        <p>前面的章节可能让你感到沮丧：大脑有缺陷，市场不可预测，天才也会爆仓。那普通人还能做什么？</p>
+
+        <p>答案是：<strong>你不需要预测市场，你需要构建一个在任何市场环境下都不会被摧毁，且长期能积累收益的系统。</strong></p>
+
+        <h3 style="font-size:20px;font-weight:700;margin:32px 0 16px;">现代投资组合理论（MPT）：唯一的免费午餐</h3>
+
+        <p>Harry Markowitz在1952年的博士论文中提出了一个看似简单但深刻的洞察：<strong>分散化（Diversification）是金融世界唯一的「免费午餐」</strong>（Citation: Markowitz, 1952）。他因此获得了1990年诺贝尔经济学奖。</p>
+
+        <p>核心逻辑是这样的：如果你持有的两种资产的价格走势不完全相同（相关性低于1），那么将它们组合在一起，可以在<strong>不降低预期收益的情况下降低风险</strong>。这不是魔法，而是数学——方差的加权求和公式中，相关系数越低，组合方差越小。</p>
+
+        <div class="anatomy-box">
+            <span class="anatomy-tag">关键概念</span>
+            <h4>相关性（Correlation）是分散化的灵魂</h4>
+            <p>分散化的效果取决于资产之间的<strong>相关性</strong>。如果两种资产总是同涨同跌（相关性=1），分散化毫无意义。如果它们的走势完全无关（相关性=0）甚至相反（相关性=-1），分散化效果最佳。</p>
+            <p><strong>经典的低相关性组合</strong>：股票 + 国债（经济好时股票涨、国债跌；经济差时反过来）。这就是60/40策略的理论基础。</p>
+            <p style="margin-bottom:0;"><strong>但相关性不是恒定的</strong>：2022年股债同时暴跌，打碎了60/40策略「永远有效」的幻想。在极端恐慌时期，几乎所有资产的相关性都趋向1——「除了现金，什么都在跌」。这是分散化的根本局限。</p>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title">有效前沿（Efficient Frontier）示意图</div>
+            <div class="chart-subtitle">在相同风险水平下，分散化组合能获得更高的预期回报</div>
+            <div class="chart-visual" style="height:220px;position:relative;">
+                <!-- Simplified representation of efficient frontier using positioned dots -->
+                <div style="position:absolute;bottom:20%;left:10%;width:12px;height:12px;background:var(--bloomberg-red);border-radius:50%;" title="100%债券：低风险低回报"></div>
+                <div style="position:absolute;bottom:35%;left:20%;width:12px;height:12px;background:var(--accent-light);border-radius:50%;" title="80债/20股"></div>
+                <div style="position:absolute;bottom:55%;left:30%;width:14px;height:14px;background:var(--accent);border-radius:50%;box-shadow:0 0 8px var(--accent);" title="60债/40股 — 经典配置"></div>
+                <div style="position:absolute;bottom:68%;left:42%;width:12px;height:12px;background:var(--accent-light);border-radius:50%;" title="40债/60股"></div>
+                <div style="position:absolute;bottom:75%;left:55%;width:12px;height:12px;background:var(--accent-light);border-radius:50%;" title="20债/80股"></div>
+                <div style="position:absolute;bottom:78%;left:72%;width:12px;height:12px;background:var(--bloomberg-green);border-radius:50%;" title="100%股票：高风险高回报"></div>
+                <!-- Labels -->
+                <div style="position:absolute;bottom:12%;left:6%;color:rgba(255,255,255,0.6);font-size:11px;">100%债券</div>
+                <div style="position:absolute;bottom:48%;left:14%;color:#fff;font-size:11px;font-weight:600;">60/40</div>
+                <div style="position:absolute;bottom:82%;left:66%;color:rgba(255,255,255,0.6);font-size:11px;">100%股票</div>
+                <div style="position:absolute;bottom:2%;right:8%;color:rgba(255,255,255,0.4);font-size:11px;">风险（标准差）→</div>
+                <div style="position:absolute;top:8%;left:2%;color:rgba(255,255,255,0.4);font-size:11px;writing-mode:vertical-lr;">← 预期回报</div>
+            </div>
+        </div>
+
+        <h3 style="font-size:20px;font-weight:700;margin:32px 0 16px;">股债平衡：60/40策略的原理与局限</h3>
+
+        <p>最经典的分散化策略是将投资组合分为60%股票和40%债券。它的逻辑简洁优雅：</p>
+
+        <div class="comparison-panel">
+            <div class="comparison-side left">
+                <h4>60%股票的角色</h4>
+                <ul>
+                    <li>提供长期资本增值</li>
+                    <li>对抗通胀（企业能提价）</li>
+                    <li>高波动但高预期回报</li>
+                    <li>经济扩张期表现最佳</li>
+                </ul>
+            </div>
+            <div class="comparison-side right">
+                <h4>40%债券的角色</h4>
+                <ul>
+                    <li>提供稳定的现金流（利息）</li>
+                    <li>经济衰退时升值（避风港）</li>
+                    <li>降低组合整体波动</li>
+                    <li>提供再平衡的「弹药」</li>
+                </ul>
+            </div>
+        </div>
+
+        <p>当股票暴跌时，债券通常会上涨（因为资金涌入避险），此时你卖出一部分债券、买入便宜的股票，将配比恢复到60/40——这就是<strong>再平衡（Rebalancing）</strong>，一种纪律性的「低买高卖」机制。</p>
+
+        <h3 style="font-size:20px;font-weight:700;margin:32px 0 16px;">从被动投资到因子投资</h3>
+
+        <p>如果你接受了「市场很难被打败」这个前提，那么下一个逻辑推论是：与其花大量时间和精力选股，不如<strong>买下整个市场</strong>。这就是<strong>被动投资（Passive Investing）</strong>和<strong>指数基金（Index Fund）</strong>的哲学基础。</p>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value purple">90%</div>
+                <div class="stat-label">主动基金15年内跑输标普500的比例</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value green">0.03%</div>
+                <div class="stat-label">先锋标普500ETF（VOO）年费率</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">$11万亿</div>
+                <div class="stat-label">全球被动投资基金总规模</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value green">10.7%</div>
+                <div class="stat-label">标普500过去50年年化回报</div>
+            </div>
+        </div>
+
+        <p>被动投资的进化版本是<strong>因子投资（Factor Investing）</strong>，也叫Smart Beta。学术研究发现，股票市场中有几个系统性的超额回报来源（「因子」），它们在不同国家、不同时期都持续有效：</p>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>因子</th>
+                    <th>定义</th>
+                    <th>学术支撑</th>
+                    <th>年化超额回报</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>价值（Value）</strong></td>
+                    <td>买入低估值股票，卖出高估值股票</td>
+                    <td>Fama & French (1993)</td>
+                    <td>~3-5%</td>
+                </tr>
+                <tr>
+                    <td><strong>动量（Momentum）</strong></td>
+                    <td>买入近期涨幅大的股票，卖出跌幅大的</td>
+                    <td>Jegadeesh & Titman (1993)</td>
+                    <td>~4-6%</td>
+                </tr>
+                <tr>
+                    <td><strong>质量（Quality）</strong></td>
+                    <td>买入高ROE、低杠杆、盈利稳定的公司</td>
+                    <td>Novy-Marx (2013)</td>
+                    <td>~2-4%</td>
+                </tr>
+                <tr>
+                    <td><strong>小市值（Size）</strong></td>
+                    <td>小公司长期跑赢大公司</td>
+                    <td>Fama & French (1993)</td>
+                    <td>~1-3%</td>
+                </tr>
+                <tr>
+                    <td><strong>低波动（Low Vol）</strong></td>
+                    <td>低波动股票风险调整后回报更高</td>
+                    <td>Baker, Bradley & Wurgler (2011)</td>
+                    <td>~1-3%</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 style="font-size:20px;font-weight:700;margin:32px 0 16px;">案例：巴菲特的十年赌约——简单的力量</h3>
+
+        <p>2007年，Warren Buffett发起了一个著名的赌约：他押注一只标普500指数基金在接下来10年的表现将超过任何对冲基金经理精心挑选的基金组合。对冲基金经理Ted Seides接受了挑战，挑选了五只「基金中的基金」（Fund of Funds），代表着华尔街最聪明的大脑和最昂贵的策略。</p>
+
+        <div class="chart-container">
+            <div class="chart-title">巴菲特赌约结果（2008-2017 累计回报）</div>
+            <div class="h-bar-chart">
+                <div class="h-bar-row">
+                    <div class="h-bar-label">标普500指数基金</div>
+                    <div class="h-bar-track"><div class="h-bar-fill green" style="width:90%;">+125.8%</div></div>
+                </div>
+                <div class="h-bar-row">
+                    <div class="h-bar-label">对冲基金组合A</div>
+                    <div class="h-bar-track"><div class="h-bar-fill" style="width:58%;">+62.8%</div></div>
+                </div>
+                <div class="h-bar-row">
+                    <div class="h-bar-label">对冲基金组合B</div>
+                    <div class="h-bar-track"><div class="h-bar-fill" style="width:28%;">+28.3%</div></div>
+                </div>
+                <div class="h-bar-row">
+                    <div class="h-bar-label">对冲基金组合C</div>
+                    <div class="h-bar-track"><div class="h-bar-fill" style="width:7%;">+7.5%</div></div>
+                </div>
+                <div class="h-bar-row">
+                    <div class="h-bar-label">对冲基金组合D</div>
+                    <div class="h-bar-track"><div class="h-bar-fill" style="width:2%;">+2.8%</div></div>
+                </div>
+                <div class="h-bar-row">
+                    <div class="h-bar-label">对冲基金组合E</div>
+                    <div class="h-bar-track"><div class="h-bar-fill red" style="width:36%;">+36.3%</div></div>
+                </div>
+            </div>
+        </div>
+
+        <p>结果毫无悬念：标普500指数基金以<strong>125.8%</strong>的累计回报碾压了所有五只对冲基金组合——最好的一只只有62.8%，最差的只有2.8%。一个不需要任何思考、任何策略、任何天才的简单指数基金，打败了全世界最昂贵的金融大脑。</p>
+
+        <p>为什么？因为对冲基金收取「2%管理费 + 20%业绩提成」——这意味着即使毛回报与市场持平，扣除费用后也会大幅落后。而标普500 ETF的费率只有0.03%——每投入10,000元，每年只收3元管理费。</p>
+
+        <div class="quote-block">
+            <p class="quote-text">在扣除费用后的情况下，主动管理作为一个整体，在过去、现在和将来都必然跑输被动管理。这不是观点，而是算术事实。</p>
+            <p class="quote-author">— William Sharpe，诺贝尔经济学奖得主，夏普比率发明者</p>
+        </div>
+    </section>
+
+    <!-- ==================== Conclusion ==================== -->
+    <section class="section">
+        <span class="section-label">终章</span>
+        <h2 class="section-title">给新手的终极建议——简单的力量</h2>
+
+        <p>如果你读完了这三篇文章的全部内容，你已经比95%的散户投资者拥有了更系统的知识框架。但知识和行动之间有一条鸿沟——而这条鸿沟，恰恰是由我们在第七章讨论的人性弱点所造成的。</p>
+
+        <p>所以，让我们以几条尽可能简单、尽可能可执行的建议来结束这个系列：</p>
+
+        <div class="media-grid">
+            <div class="media-card" style="border-left-color:#2e7d32;">
+                <div class="media-source" style="color:#2e7d32;">建议一</div>
+                <div class="media-title">先活下来，再谈收益</div>
+                <div class="media-excerpt">永远不要把所有鸡蛋放在一个篮子里。永远不要使用超出承受能力的杠杆。永远不要投入你六个月内可能需要用到的钱。这些是不可妥协的底线。</div>
+            </div>
+            <div class="media-card" style="border-left-color:#1565c0;">
+                <div class="media-source" style="color:#1565c0;">建议二</div>
+                <div class="media-title">从指数基金开始</div>
+                <div class="media-excerpt">如果你没有时间或兴趣深入研究个股，一个宽基指数基金（如沪深300ETF或标普500ETF）就是你最好的朋友。它给你整个市场的平均回报，而这个「平均」已经超过了大多数专业人士。</div>
+            </div>
+            <div class="media-card" style="border-left-color:#ff6900;">
+                <div class="media-source" style="color:#ff6900;">建议三</div>
+                <div class="media-title">定投比择时更可靠</div>
+                <div class="media-excerpt">每个月固定投入一笔钱，不管市场涨跌。这叫做「定期定额投资」（Dollar-Cost Averaging）。它不会让你买在最低点，但能确保你不会全仓买在最高点——更重要的是，它消除了决策疲劳。</div>
+            </div>
+            <div class="media-card" style="border-left-color:#7b1fa2;">
+                <div class="media-source" style="color:#7b1fa2;">建议四</div>
+                <div class="media-title">时间是最大的杠杆</div>
+                <div class="media-excerpt">复利需要时间才能展现威力。10%的年化回报，7.2年翻一倍，30年变17倍。你不需要每年赚50%——你需要的是30年不亏本、持续积累的纪律。耐心是投资者最稀缺也最有价值的品质。</div>
+            </div>
+        </div>
+
+        <div class="big-number">
+            <div class="number">17.4x</div>
+            <div class="label">年化10%回报，坚持30年后的累计倍数（复利的力量）</div>
+        </div>
+
+        <div class="highlight-box hope">
+            <h4>最后的话</h4>
+            <p>证券市场是人类文明最伟大的发明之一。它将今天的储蓄转化为明天的生产力，将个人的资本汇聚成推动社会进步的洪流。它充满了风险、贪婪、恐惧和非理性——但也正因如此，它为那些理性、耐心和自律的参与者提供了长期的丰厚回报。</p>
+            <p style="margin-bottom:0;">理解市场的机制，学会估值的方法，认识自己的弱点，构建简单的系统——然后给时间以时间。这就是证券投资最不性感、但最有效的答案。</p>
+        </div>
+
+        <div class="quote-block">
+            <p class="quote-text">投资很简单，但并不容易。</p>
+            <p class="quote-author">— Warren Buffett</p>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p class="footer-note">本文系「资本的骨骼——证券市场新手通识全书」系列第三部分（完结篇）。内容仅供教育目的，不构成投资建议。</p>
+    <div class="footer-links">
+        <a href="../index.html">返回首页</a>
+        <a href="Art_and_Science_of_Valuation.html">← 上一篇：估值的艺术与科学</a>
+        <a href="Securities_Market_Mechanics.html">回到第一篇：市场的骨架与血脉</a>
+    </div>
+</footer>
+
+</body>
+</html>

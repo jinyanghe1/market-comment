@@ -1,5 +1,50 @@
 [
     {
+        "file": "Securities_Market_Mechanics.html",
+        "title": "Capital's Skeleton I",
+        "subtitle": "市场的骨架与血脉——机制、工具与参与者",
+        "date": "2026-02-10",
+        "readTime": "25分钟",
+        "excerpt": "从荷兰东印度公司的第一张股票，到2010年闪崩的毫秒级订单流——解构证券市场的底层运作逻辑。证券是什么？你的订单去了哪里？利率如何决定万物的价格？一份写给聪明人的市场机制祛魅手册。",
+        "tags": ["Education", "Market Structure", "Interest Rates", "Trading", "Macro"]
+    },
+    {
+        "file": "Art_and_Science_of_Valuation.html",
+        "title": "Capital's Skeleton II",
+        "subtitle": "估值的艺术与科学——寻找价格与价值的错配",
+        "date": "2026-02-10",
+        "readTime": "28分钟",
+        "excerpt": "利润是观点，现金流是事实。从乐视的财报红旗到特斯拉的估值之争，从诺基亚的护城河崩塌到大奖章基金的量化传奇——一位严厉审计师视角的定价方法论。",
+        "tags": ["Education", "Valuation", "Fundamental Analysis", "Technical Analysis", "Moat"]
+    },
+    {
+        "file": "Behavioral_Finance_and_Risk.html",
+        "title": "Capital's Skeleton III",
+        "subtitle": "人性的博弈——心理、风险与投资组合",
+        "date": "2026-02-10",
+        "readTime": "30分钟",
+        "excerpt": "牛顿在南海泡沫中赔光积蓄，LTCM的诺奖得主在俄罗斯危机中爆仓，而一只0.03%费率的指数基金碾压了全华尔街——投资最大的敌人不是市场，而是你自己的大脑。",
+        "tags": ["Education", "Behavioral Finance", "Risk Management", "Portfolio", "Passive Investing"]
+    },
+    {
+        "file": "HK_Risk_Premium.html",
+        "title": "HK Risk Premium",
+        "subtitle": "香江水暖：地缘扰动下的价值重估与长期信心",
+        "date": "2026-02-10",
+        "readTime": "18分钟",
+        "excerpt": "地缘政治噪音短期扰动市场情绪，但并未改变香港作为国际金融中心的法治基石与流动性优势。恒生指数PE跌入历史5%分位、AH溢价升至十年新高、南向资金持续涌入——这是风险溢价的合理定价，还是情绪错杀后的历史性买入窗口？",
+        "tags": ["Hong Kong", "HSI", "Valuation", "Southbound", "Geopolitics", "Connect"]
+    },
+    {
+        "file": "Land_Tycoon_Falls.html",
+        "title": "Land Tycoon Falls",
+        "subtitle": "当监管干部走进地产深渊：柯卡生失联与深圳地产金融反腐风暴",
+        "date": "2026-02-09",
+        "readTime": "25分钟",
+        "excerpt": "前银监会非银部主任柯卡生失联月余。他曾是信托业最受尊敬的监管者，曾在华融顶住赖小民的高压，最终却倒在了深圳中型房企的废墟中。在他身后，是一条正在被封死的旋转门。",
+        "tags": ["Property", "Anti-Corruption", "Shenzhen", "Trust", "Regulation"]
+    },
+    {
         "file": "RWA_With_Chinese_Characteristics.html",
         "title": "RWA With Chinese Characteristics",
         "subtitle": "禁稳定币、开RWA：42号文与数字金融新秩序",
