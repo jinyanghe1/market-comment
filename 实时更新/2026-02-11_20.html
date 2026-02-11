@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-11 20:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-11 20:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在多重因素影响下呈现谨慎情绪，地缘政治、贸易政策及科技股波动成为焦点，同时美国消费放缓迹象引发担忧。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>地缘政治与贸易紧张加剧市场不确定性</div>
+                <div class="topic-title-en">Geopolitical and Trade Tensions Increase Market Uncertainty</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    以色列总理内塔尼亚胡访美讨论对伊朗强硬立场，同时美国考虑扣押伊朗油轮以施压德黑兰，推高原油价格。特朗普考虑退出USMCA贸易协定并面临关税政策反弹，加上欧盟对中国电动汽车征收关税，全球贸易紧张局势升级。这些因素共同加剧了市场对能源价格和供应链稳定性的担忧。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/crude-moves-higher-as-netanyahu-visits-washington-d9ff180e?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Crude moves higher as Netanyahu visits Washington</a>
+                    <a href="https://www.investing.com/news/stock-market-news/factboxeu-tariffs-on-imports-of-chinamade-evs-4499306" target="_blank" rel="noopener">[Investing.com] Factbox-EU tariffs on imports of China-made EVs</a>
+                    <a href="https://news.google.com/rss/articles/CBMiuANBVV95cUxOc0xsSzFsTEx4R2I3bkZSZ0RxaDgzbHN4MUVEcVgxTmpLRlBkQzU0NHF5SHZabmtjU3pncVZuR25zdVhEUllNSVhfcEhXM0NuZEVKdlU0YzFtVTlkMW1kRjMwWEQxQ296cExIM2U5RzlyTkRJVGdSb0NqQnEtc19kd04xY2ptVjhfU1psNHN2LXdfcFZTaUpWYUwtSXhSQ3VFNlhfcWVOS2hUaHkzQ1RpbmJWMk12WE8yeHp4SHJfOWRaRFkwT2FxbFVDWDZzUjl0VGxMRnZOMWZ1dzJIRkVOME95LUlwNlQxcHF0VmV5cW5Ed3N6aFlnSkh3ZjRNXzk0ZV9jZElQc0ZhWU1JQUJKak9RT1NER0FRcGNPNkRWZWcxNHViU0g5cDVwVVdCaXVwSTJrZlpRVEIybkRpTlJOTTkxeWFISndybHF3RU1ZaTBWbE1BODVKdzloVmZ6LXJJMmlaNy1mQ0tuR2VwQ3dZNE91em1JNzA5UjZRd2FXVUVVVFBoYzUzSVlwaHNReHRuTkgxcEs0clhxamlVeHdzQjk0OHFEa2pHTTdYUEhxZmdHMkItenl1dw?oc=5" target="_blank" rel="noopener">[WSJ] U.S. Weighs Seizing Tankers Carrying Iranian Oil to Pressure Tehran</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">物流</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>AI板块剧烈分化，硬件强劲但软件股遭抛售</div>
+                <div class="topic-title-en">AI Sector Sees Sharp Divergence: Hardware Strong, Software Stocks Sold Off</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    AI领域出现明显分化，英伟达等硬件公司业绩强劲，但多家AI软件公司发布利润预警并遭遇大幅抛售，著名激进投资者已开始介入。中国顶级芯片制造商警告AI产能可能过剩闲置，同时xAI联合创始人离职，加剧市场对AI行业泡沫和盈利可持续性的担忧。投资者正从概念炒作转向基本面甄别。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/the-sell-off-in-ai-losers-has-been-so-steep-that-this-famed-activist-investor-has-reportedly-sprung-into-action-c100732b?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The sell-off in AI losers has been so steep that this famed activist investor has reportedly sprung into action</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOSjVoNUEzRVJ5U3dzaGFPOXlVcC1aZ3g2MmZ2dlJJY3E5QVdROGNUQ1MxSG5UT3h3Q3d6WXpySXAycmk5WXQ4eDlTMUpxeExTVURWZ0tfcEF4YXhrTDg5V3JlNDRSX3RJakpvaVZtNmtQTk1kMVN2UE9DWkxRVzlxbjA3YnpwQmdmOWhOczVUNFdXSVUxaE9vWmh4LXFyNXFkOHlTcWR1Rml2ZFBqZkVrcGxB?oc=5" target="_blank" rel="noopener">[Bloomberg] China’s Top Chipmaker Warns Rushed AI Capacity Could Sit Idle</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPcVJaRlFGZ1p3YkIxM2ZVQkxxaWJOQUVZSmV2eVNIX3FFejMyYkpzTjhBTTlxd1pQX0k4aXV0czBSV21iTlNSX1p4Z2daYlYydjFibXdNWkpVbnZNMDA5YThDN1djcXp4VVZtY3N4TThhZUdZTmw0Z0tfaUFwR2xmRGN0RjlEdEVQODdvUG1wSGsyQTl1VWxOUWE4ekRhV2V3UWdVTWRnQzIwVlY3THVQODBuRFU?oc=5" target="_blank" rel="noopener">[Bloomberg] AI Loser Software Stocks Struggle as Hardware Earnings Jump</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">软件服务</span>
+                    <span class="sector-tag">科技硬件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>美国消费出现放缓迹象，市场关注就业数据</div>
+                <div class="topic-title-en">Signs of US Consumer Slowdown Emerge, Focus on Jobs Data</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    多项迹象显示美国消费引擎正在减弱，投资者等待关键的就业和失业数据以评估经济健康状况。金融市场因此暂停上涨步伐，日元大幅走强反映避险情绪上升。消费放缓若持续，将影响企业盈利前景和美联储政策路径，对依赖美国消费的全球行业构成压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE54QmZ6U3VMb2xYcXJxNXBKNmdyXzk5SjdubEE3T2RrUDdveFFOdDd5bFJOOG02TTl1WTdDQUc4QS10U0JLamozZy1nWjJOQ2M1NWdEVkVEYXk3QnpDYV9kbDZTNk5kVmdlOUJvZFZnRW4?oc=5" target="_blank" rel="noopener">[FT] The US consumer is slowing</a>
+                    <a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOOHVCMjRVRXN2VHNoU3BpZy02N3Y4WmFrbzdwazNySHhDLW5ZMTc2TkJQUXRKSkJfcFo0RFdlWDN1QkQxVkhha1NaWnR6UUZPSVpOa3pjZjNMdzhUcDJXN2xWckdVcFR4TlAzZ254Vk5UcE5oU01mb2R4bERyc3dJbDJJb3NWQQ?oc=5" target="_blank" rel="noopener">[Reuters] Morning Bid: Yen roars back as US consumer engine sputters</a>
+                    <a href="https://www.investing.com/news/stock-market-news/buoyant-stocks-pause-for-breath-on-signs-of-softening-us-consumption-4498572" target="_blank" rel="noopener">[Investing.com] Stocks pause for breath as AI worries simmer; yen gallops higher</a>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">消费品</span>
+                    <span class="sector-tag">金融服务</span>
+                    <span class="sector-tag">休闲旅游</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>企业裁员潮持续，喜力计划裁减6000个岗位</div>
+                <div class="topic-title-en">Corporate Layoffs Continue, Heineken Plans to Cut 6,000 Jobs</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    啤酒需求疲软导致喜力宣布将裁员多达6000人，约占其员工总数的7%，同时发布较为保守的2026年增长指引。此前福特也表示因关税遭受额外9亿美元损失。多个行业的成本控制和裁员反映了企业应对经济放缓和需求下降的压力，可能预示着盈利增长面临挑战。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/heinekens-annual-profit-beat-expectations-but-brewer-sets-slower-2026-growth-forecast-4498720" target="_blank" rel="noopener">[Investing.com] Heineken to cut up to 6,000 jobs as beer demand falters</a>
+                    <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNQXlmUG5XQy1Tb0ZySmd1YkVQV1A2S1c1TU1vQm1kNjJTeFNuczFYSTI0QVpobXdZa3BhZm1sbXY3bmtrZS0yRjBwdFBlR21zWE1ZR1VmaUdfN0oxN0h2V1ZId0thVnI2czNUUm9OUU9LWU9YZF9wUXhsZmloX0duMGc2ZUNOZ29pQUlUcXJMR0QwNlNWX2ZfcHNGTS1zUldUMDk1b0taLXJ3a0JB?oc=5" target="_blank" rel="noopener">[Bloomberg] Heineken Cuts 7% of Staff as Beer Slump Weighs on Brewer</a>
+                    <a href="https://www.bbc.com/news/articles/cdjmepg4pzlo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Ford says it took an extra $900m tariff hit last year</a>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">消费服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>加密货币遭遇重挫，比特币跌破67000美元</div>
+                <div class="topic-title-en">Cryptocurrencies Suffer Heavy Losses, Bitcoin Falls Below $67,000</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    比特币价格再次暴跌近2000美元，跌破67000美元关键水平，与股市走势出现背离。韩国散户投资者因亏损而退出加密货币市场。这表明在宏观经济不确定性增加和监管担忧下，加密货币作为风险资产的吸引力下降，资金可能正流向更传统的避险资产。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/bitcoins-getting-slammed-again-as-number-one-cryptocurrency-loses-nearly-2-000-b5c1cb45?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Bitcoin’s getting slammed again as number-one cryptocurrency loses nearly $2,000</a>
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDEyQjVWNW8zQksxX1JHOUc3LTJFYjNiTmVWNmc5dnlQeVNxT3NyTzdYaVJsdXlJYk9MUGl0SUxMZTdYUjNoQVVTalBpekxiVWx2UVQwWThEUE1QblQxeFVKREp3bnQ3bVh6VlpnRnBSblJncHFUbnBJYW5USzNQVlktQm91UENGOTRFRmFwYmtEc1VFc3otNGhLUlZGSkZGQlhhc0FMOXRQWDY5UGc?oc=5" target="_blank" rel="noopener">[Bloomberg] Bitcoin Slides Below $67,000 as Crypto Diverges From Stocks</a>
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNdmRMMGhIRldvQ1loRnZ0bUN5cDBDRHNvS2p6akJ6aVQ5M3luN0lBYWFOT2t0T0NVYWZPOHNRYVdVekUxVF96eFdIeXpEbndyLXlBLXdMbjRJYlRwQ3hnTlE4dEw1cWVsYjhkMVRlSjRkQkRvTmluMm5CME1jcy1ObUstZG1rVW1raDlEM2pNNTVHUDNGZHIwR2hLcVdVNVc4bGdJOGFXZ252cDloYnd5cA?oc=5" target="_blank" rel="noopener">[Bloomberg] South Koreans Bail on Crypto as Retail Traders Bemoan Losses</a>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">资产管理</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>中国通缩压力持续，在香港发行低息人民币债券</div>
+                <div class="topic-title-en">China's Deflation Pressure Persists, Issues Low-Yield Yuan Bonds in Hong Kong</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    中国消费者通胀继续放缓，生产者价格保持下降趋势，显示内需不足和通缩压力仍然存在。与此同时，中国在香港发行了多年来收益率最低的人民币债券，反映出市场对人民币资产的强劲需求和中国政府利用低利率环境的策略。这可能为国内经济提供低成本融资，但通缩风险仍需关注。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMipwNBVV95cUxQcUduUFU5bllHbmpTYy0wSzl2TDBYMTk5MW9ORVJOSk41TmdTV3RieUJtREY2ZzAxT0FhMmFaMWwzVndXREExZG0yRHUtTzdzQ3Ewb0hpM0RuckRDWS0wSXdzSXAyV3JLb3ZfenJ6SWlNRlFEeEhIT255MzlQaXZZdVl1UnFkQUZ0S05lNlRFNkdoYmJhQmFBMXdjWi0zWVhUTm14anc2SHVNa18yb1JFLVJVdVJWNkc3aHFOMDNVVTR4bjQ5bjdCUUF0elVSYkJzU2tpNmV1a2NjSldMcUVMYm41X3Y0WjBzMnQwa24taUFXSHdvdWp6NjR4QVBtcHBQZWhGVHZmWDg0a0F1YzhIeEZYRjV0cXpmcnk2M0V3Q2dNcUVyQ1hRWm0tb0tyeEtkTE55Vk55MmNmdEtVWHVDT1lMX0xrcHJFSloyRXdfVWJJb1plaUF0M1VYZWhkcXdZZktsNm5QVHhrRHB3MWRNaE9ZM0NxeTBLbVYtbDQxQ2U2WUxMU1FSVnZzd2tmb25fZmdiODNKV1lDWHNpbGhIN1hHSzFwd3c?oc=5" target="_blank" rel="noopener">[WSJ] China’s Consumer Inflation Eases, Producer Prices Stay in Decline</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOZ3ZJSnpKZzhIYlBuQWlsY2NoYlJBOEdrbUJDVG1paVBxWHVDanlBLVlTUVk3aGc1UlljYm0wQUYtd2FRRmJxS2FLZmJDVEx6OU0ySlZNanI1X19feVFRYWc4cVZmWXNGczJPaU1WaG8xQjhKeF9MdXlJbG40dWgzbkNSaWJBSUlZYUN0WE40eG9LenB0NHJWT01fTFVNcUtWbUk2UVExQlNXVGVRRHluV3h3?oc=5" target="_blank" rel="noopener">[Bloomberg] China Sells Yuan Bonds in Hong Kong at Lowest Yields in Years</a>
+                    <span class="sector-tag">债券市场</span>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>激进投资者活跃，瞄准伦敦证券交易所和Netflix交易</div>
+                <div class="topic-title-en">Activist Investors Active, Targeting LSE Group and Netflix Deal</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    知名激进投资者Elliott Management已建立伦敦证券交易所集团的股份，同时另一激进投资者正推动华纳放弃与Netflix的交易。这反映出在当前市场波动下，激进投资者正寻找估值机会和公司治理改善的空间，可能引发相关公司的战略调整和股价波动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE43S0xmZTRQMDZCQW16ZVNQbkM0cS1uVnZhWS11TWhUazkxZHFRbUdIbmpPellUZFpKT0FBb0ZqTU16a1NYSk81ekM1eGhHR1FGRlZaajhCa1AteGVJRkcwcDlzcHNBSXVUUXAxcld2SFE?oc=5" target="_blank" rel="noopener">[FT] Elliott Management builds stake in London Stock Exchange Group</a>
+                    <a href="https://news.google.com/rss/articles/CBMirwNBVV95cUxNYzRPOTJTNVQtaEhOa2FiNWlkN0RhRDFsWjhLRmN6Nl8yVzVTLUUwTE80b1dLV1RKM1p2a1JBLWZ0TkdETWlBdnhURlM0ZEZ0QnVjTnZkSDQwSUZPamJKZGpwSEgteGlRT0k1M05xQlJ2V3NsM0I3N2pQX0ZvaW5uQW1WN1FZaTdYbHlaQ3hMX2dvUFNXd0xkNkM4LVQwX2x2VDZTV3NJaTllLUdpamxLRUdWdThBRjdNbExBQmdRTTRmSmNNYzIzeTVzVjBCWEZQczFZZUg2VnByMlh1M0dQSG9rcEl2NU01NDlXY0ctUlNpQTNYR3RfMllnRkZvWkJaTXFsbWpoNnZqVnpVNnNucFdCNkpzNEo3eklTVnRtLUxJRUxvdE1hSHZjTXREZ1JSQ3FVNk1iLXZZOGFnM1FjWnFfQkdCa2YwMmo0WGR2MWI0V1FIOVJPU1JOTHJzQW50eDhYQnZaYmRfVGMxUXhrY0xSbzZPYjdjSGJ2Y3Vlcl9hdUVySmdxbU5QQ3Frd1dkTE40MnpFeHA3NWpSLUVBSW85MWY5M21OdjA3SXZ4dw?oc=5" target="_blank" rel="noopener">[WSJ] Exclusive | Activist Investor Pushes Warner to Walk Away From Netflix Deal</a>
+                    <span class="sector-tag">金融服务</span>
+                    <span class="sector-tag">媒体娱乐</span>
+                    <span class="sector-tag">资产管理</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>大宗商品走势分化，黄金上涨而镍矿减产</div>
+                <div class="topic-title-en">Commodity Markets Diverge: Gold Rises While Nickel Mine Cuts Output</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    黄金和白银在就业数据公布前再次上涨，反映避险需求和美元走弱预期。同时，全球最大镍矿被要求削减产量，可能影响电动车电池供应链。原油价格因地缘政治紧张而走高。大宗商品市场的分化走势反映了不同品种的供需基本面和宏观经济预期的差异。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/gold-and-silver-are-rallying-again-ahead-of-payrolls-report-11c12a2b?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Gold and silver are rallying again ahead of payrolls report</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOMEYyWFdnNEJKY2JzLWFDckgtNHUzc0dhZUxGejN2cGVIc09UdWw4azFUTUFBV1dmckpaVVZTSkowMktBbFBSWGhJbG4xaElKLXdSVDUwc2F0VzRCNE03dVRHSGpvUXptM25uM09EZlc3S1JlaXJCMXY1c28ycTB3eGlsZTBPUFluV05BbDdKaktYbmgyMm5KSXVLWWdQeVQ0b3djQmVMUmhqZUpxUnJ4ejUteHJBQQ?oc=5" target="_blank" rel="noopener">[Bloomberg] World’s Biggest Nickel Mine in Indonesia Told to Cut Output</a>
+                    <span class="sector-tag">贵金属</span>
+                    <span class="sector-tag">矿业</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">电动汽车供应链</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国消费支出出现放缓迹象</li>
+                <li>中国消费者通胀继续放缓，PPI维持下降</li>
+                <li>比特币跌破67000美元关口</li>
+                <li>喜力计划裁员6000人</li>
+                <li>黄金白银在非农就业数据前上涨</li>
+                <li>欧盟公布对中国电动汽车关税细则</li>
+                <li>全球最大镍矿被要求削减产量</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
