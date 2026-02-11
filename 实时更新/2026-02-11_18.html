@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-11 18:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-11 18:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场情绪混合，AI威胁蔓延与加密货币下跌引发担忧，但道指创新高及部分企业乐观展望缓和悲观情绪。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI技术竞争加剧与市场威胁扩散</div>
+                <div class="topic-title-en">AI Competition Intensifies and Market Threats Spread</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    AI技术竞争白热化，Anthropic与OpenAI在支出和广告上相互抨击，反映行业内部压力。同时，中国顶级芯片制造商警告AI产能可能过剩，导致资源闲置，这加剧了科技股波动。AI威胁已从软件股蔓延至金融股，如LPL因担忧AI替代而大跌，显示传统行业正面临颠覆风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/the-ai-threat-wrecked-software-stocks-now-broker-stocks-look-next-with-lpl-down-11percent.html" target="_blank" rel="noopener">[CNBC] The AI threat wrecked software stocks. Now financial stocks look next with LPL closing 8% lower</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOSjVoNUEzRVJ5U3dzaGFPOXlVcC1aZ3g2MmZ2dlJJY3E5QVdROGNUQ1MxSG5UT3h3Q3d6WXpySXAycmk5WXQ4eDlTMUpxeExTVURWZ0tfcEF4YXhrTDg5V3JlNDRSX3RJakpvaVZtNmtQTk1kMVN2UE9DWkxRVzlxbjA3YnpwQmdmOWhOczVUNFdXSVUxaE9vWmh4LXFyNXFkOHlTcWR1Rml2ZFBqZkVrcGxB?oc=5" target="_blank" rel="noopener">[Bloomberg] China’s Top Chipmaker Warns Rushed AI Capacity Could Sit Idle</a>
+                    <a href="https://www.cnbc.com/2026/02/11/anthropic-vs-openai-ads-spending-criticism.html" target="_blank" rel="noopener">[CNBC] Anthropic executive takes a thinly-veiled swipe at OpenAI over spending and ads</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">半导体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>加密货币寒冬持续，监管不确定性增加</div>
+                <div class="topic-title-en">Crypto Winter Persists with Rising Regulatory Uncertainty</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    比特币跌破67,000美元，加密市场与股票市场脱钩，显示投机情绪降温。Galaxy CEO称加密货币'投机时代'可能结束，而香港推进稳定币计划但面临北京保留，监管分歧加剧市场波动。Robinhood因加密相关收入不及预期股价下跌，反映行业盈利压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDEyQjVWNW8zQksxX1JHOUc3LTJFYjNiTmVWNmc5dnlQeVNxT3NyTzdYaVJsdXlJYk9MUGl0SUxMZTdYUjNoQVVTalBpekxiVWx2UVQwWThEUE1QblQxeFVKREp3bnQ3bVh6VlpnRnBSblJncHFUbnBJYW5USzNQVlktQm91UENGOTRFRmFwYmtEc1VFc3otNGhLUlZGSkZGQlhhc0FMOXRQWDY5UGc?oc=5" target="_blank" rel="noopener">[Bloomberg] Bitcoin Slides Below $67,000 as Crypto Diverges From Stocks</a>
+                    <a href="https://www.cnbc.com/2026/02/10/bitcoin-crypto-trading-speculation-galaxy-ceo-mike-novogratz.html" target="_blank" rel="noopener">[CNBC] Crypto's 'age of speculation' may be over, says Galaxy CEO Mike Novogratz</a>
+                    <a href="https://www.marketwatch.com/story/crypto-caution-weighs-on-robinhoods-sales-and-sinks-its-stock-ff27eac8?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Crypto winter hits Robinhood’s sales and stock, but CEO sees prediction-market ‘super cycle’</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">金融科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>全球贸易紧张升级，关税影响企业盈利</div>
+                <div class="topic-title-en">Global Trade Tensions Escalate with Tariff Impacts on Corporate Earnings</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    特朗普关税政策面临政治反弹，但福特已额外承担9亿美元关税成本，凸显美国企业压力。TSMC则受益于AI芯片需求和关税相关新闻，显示供应链转移机会。中国推动粮食自给自足以减少对美国作物依赖，可能重塑全球农业贸易格局。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cdjmepg4pzlo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Ford says it took an extra $900m tariff hit last year</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQRHFBZGFWMVJiM19UcHU3eVVRQ01GUjBNajA3eTB4OXVfM3BjT3NYV0dmY3FEUlVubXlLbFd3YXJUWWhGQmF0bDgtTXF6aGRiVEoxTG9oWjR0dm96Nnl2bzRDNXUxdzB5SDFsVjU4WXY4V1dKZ09DMTFZOTltT3M0TTZldjVrNWRKX002UzdfSUxQUUc3dktfTjd3amlVSG9jNXJkR3B6a29DUS1MVVRYT2tLTUM?oc=5" target="_blank" rel="noopener">[Bloomberg] Trump’s Tariffs Face Rebuke as Johnson Fails to Block Votes</a>
+                    <a href="https://www.cnbc.com/2026/02/11/cnbcs-the-china-connection-newsletter-inside-chinas-push-to-feed-1point4-billion-people-without-us-crops.html" target="_blank" rel="noopener">[CNBC] CNBC's The China Connection newsletter: Inside China’s push to feed 1.4 billion people without U.S. crops</a>
+                    <span class="sector-tag">汽车</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">农业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>美国经济数据放缓，就业报告成焦点</div>
+                <div class="topic-title-en">U.S. Economic Data Slows, Jobs Report in Focus</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国12月消费者支出放缓，引发对经济韧性的担忧，可能影响美联储货币政策路径。1月就业报告即将发布，市场预期将提供劳动力市场健康状况的关键线索。道指创纪录高位，但投资者态度谨慎，显示乐观与担忧并存。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cg7e8ven7r7o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] US consumer spending slowed in December - Is it a warning for the economy?</a>
+                    <a href="https://www.cnbc.com/2026/02/10/jobs-report-preview-january-2026.html" target="_blank" rel="noopener">[CNBC] The delayed January jobs report will be released Wednesday. Here's what to expect</a>
+                    <a href="https://news.google.com/rss/articles/CBMi-wJBVV95cUxQanUwdjhrak95a0NTN0FvQUdBSkkwYlRkVFB5Uy1JSU01MGRvMW5yVFhzcHBNd1JWSExJM0ZvZmEwdldmN0JvQmg0R2hQZkVjT05OQWQweHJMSXhDMHFtMFl1ODczOG8zbmhhQVAyYjg2eWhwWnVvbWR5YzJqSXMwV3dYLUpocXphNzgtNmdhN1BrbTY0Z2JNQnBxRU5PbkQycUxsTk5mV3AzbTZfVWYxNWREU0JDZ1N1LUNxWG0tWVNvRFNuSG1qbmxHZ3JWRGs2MWFSNF9LWFpCSFdjUmJiRWpncEVxVnFEZ1l4YXpIODBmZEdvdVQ4ZUhhSTJDczd2czRjd2ZHQzN0QkhFUFVtUTlIelktaUIyZnNCeGQ1eVBQcmVKV3JKWElVVGhZakwyRFk5LTVzdXk2bk9oek5TU3JPc0lsNUhxN2t1WlZKckRDdmRNYkFwY2c3NGl1bmRRQ0JVSkpOeUkteTZxSTBJSDlzd3gwODZ2ejdZ?oc=5" target="_blank" rel="noopener">[Barron's] Dow Heads for Another Record High Ahead of Jobs Report</a>
+                    <span class="sector-tag">整体经济</span>
+                    <span class="sector-tag">消费</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>企业盈利分化，成本削减与增长并存</div>
+                <div class="topic-title-en">Corporate Earnings Diverge with Cost-Cutting and Growth</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Heineken因啤酒销售下滑裁员至多6000人，反映消费行业压力，但Siemens能源获得创纪录燃气轮机订单，显示能源转型需求旺盛。福特发布乐观年度展望推动股价上涨，而Lyft的10亿美元回购未能抵消混合业绩带来的股价下跌，凸显市场对盈利质量的关注。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNQXlmUG5XQy1Tb0ZySmd1YkVQV1A2S1c1TU1vQm1kNjJTeFNuczFYSTI0QVpobXdZa3BhZm1sbXY3bmtrZS0yRjBwdFBlR21zWE1ZR1VmaUdfN0oxN0h2V1ZId0thVnI2czNUUm9OUU9LWU9YZF9wUXhsZmloX0duMGc2ZUNOZ29pQUlUcXJMR0QwNlNWX2ZfcHNGTS1zUldUMDk1b0taLXJ3a0JB?oc=5" target="_blank" rel="noopener">[Bloomberg] Heineken Cuts Up to 6,000 Jobs Amid Slump in Beer Sales</a>
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPeUdzaVNUYzFPanJYZGx3UGhnMVdad3plOGhtSlpfcFgwRHlIVXROdVg3WHNZWEVWT2FvckJQeUZFOC1MTVN4Tk9mRTJENUEtaThGVnFfSFZ1bGVfSXJLa0FWRDI0RjNjbE8zOEhhS0k3TFlPNWRWNWpWNGNGT2w3Y0RSUm9mdTFrWmdERF82QUpjeWM4X1dLQkM1bjZ4MTNrZVA3Nmo3bEdUQW5fNThUZA?oc=5" target="_blank" rel="noopener">[Bloomberg] Siemens Energy Books Record Gas Turbine Orders on Power Boom</a>
+                    <a href="https://www.marketwatch.com/story/fords-rosier-outlook-for-the-year-sends-stock-higher-after-earnings-eccfcbb2?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Ford’s rosier outlook for the year is reason for optimism on Wall Street</a>
+                    <span class="sector-tag">饮料</span>
+                    <span class="sector-tag">汽车</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">交通</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>亚洲股市表现强劲但风险犹存</div>
+                <div class="topic-title-en">Asian Markets Show Strength but Risks Remain</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    日本股市创历史新高，主要受AI和日元走弱推动，但分析师警告涨势可能脆弱，因经济基本面存疑。亚洲市场多数上涨，投资者消化美国零售销售疲软和中国通胀数据。中国股票获MSCI指数最大新增，近三年来首次，可能吸引外资流入，但需关注地缘政治风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/11/japan-stocks-record-ai-yen-takaichi-.html" target="_blank" rel="noopener">[CNBC] Japanese stocks have been hitting record highs. But the rally may be 'fragile'</a>
+                    <a href="https://www.cnbc.com/2026/02/11/asia-markets-live-today-wednesday-china-inflation-kospi-hang-seng-china-inflation.html" target="_blank" rel="noopener">[CNBC] Asia markets mostly rise as investors shrug off weak U.S. retail sales, assess China inflation</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNS296NkNUNi1JUmRGc2ZHMlB2blM0N3kyT3FNUXVYSDBEQ0FtZ1dDWmg3WmNIcTc3WllWbFR4T3NRb250QlYxdzZrVWxMQ1hyem14WmRySXJCcmR1ak5UT1dxWGk1N1p5eWFlck5ack1ac0lBXzhPT2lBX3BEdGFaTkxqSHRvOFFFcXdyRHdmVmwwcE5wenRyVE43bkNmRWdCYTdGdHJrMzZEYUpIazZwa29zalVTZw?oc=5" target="_blank" rel="noopener">[Bloomberg] China Stocks Win Most MSCI Index Additions in Nearly Three Years</a>
+                    <span class="sector-tag">亚洲股市</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>比特币跌破67,000美元</li>
+                <li>福特因关税损失9亿美元</li>
+                <li>美国12月消费者支出放缓</li>
+                <li>Heineken裁员至多6000人</li>
+                <li>日本股市创纪录高位</li>
+                <li>中国股票获MSCI指数最大新增</li>
+                <li>1月就业报告即将发布</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
