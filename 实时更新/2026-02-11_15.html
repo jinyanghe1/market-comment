@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-11 15:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-11 15:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在AI技术冲击、加密货币寒冬及中美经济数据分歧中呈现复杂情绪。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI技术对股市的冲击与机遇</div>
+                <div class="topic-title-en">AI Impact and Opportunities in Stock Markets</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    人工智能技术正在导致软件和金融类股票被抛售，市场担忧AI替代风险，但芯片制造商如英伟达和台积电因AI需求增长而受益。投资者需区分受冲击和受益板块，关注AI长期变革带来的投资机会。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/the-ai-threat-wrecked-software-stocks-now-broker-stocks-look-next-with-lpl-down-11percent.html" target="_blank" rel="noopener">[CNBC] The AI threat wrecked software stocks. Now financial stocks look next with LPL closing 8% lower</a>
+                    <a href="https://news.google.com/rss/articles/CBMiogNBVV95cUxQdF9WWGppc0ZyaDJLSGt2TFhGcjVRRmZrS1NMQUYxeHJFVzZISFlBdW9QbGk3S0wtUEppdk5mazBuNnA3Z05aZnBlS2plbDN6QWJ4R3JkMXFTbW40TWRWT1VfaGV1T1NuYzBKRzhHZ2VWQ25oM1VmVE1tR2Q0enFZbjllQXFOaEt2UjBLTElEcHU4czBCaTRkTVYybjB6S2ZfUUI4SGtIU0U2S2NyOXJrRWpmZHBVdmxTakJnN0owQVBHcmI1SVpaS1J2RUxWYUhIdHZDSDltYjFmWTQ2WEVXUmFOcVQzcEFYQ3FjMUJoMXNYUVRGUGZFdTZ6amxuSDBhakxLM21aZUtnYVU3NEpCaGJ6MHVTbFhLc0Y0cVV0dllBcGNWUTNmM0xQM202a2RGS1N6czVPRjRNeFBOTUwtUG45aXRkWjM0VkNjUGJZTHVMdEVVOEd0R1htRkxIR1dNQklFUjBRRFBad2R4eERDeDNVQTFhVllnVUR3OHlXakpFV2I5ZjZSb3M2T2pock1qU3B6MnN0bHlpWF9XbmgyakVB?oc=5" target="_blank" rel="noopener">[Barrons] Microsoft and 18 More Software Stocks That Can Be AI Survivors</a>
+                    <a href="https://news.google.com/rss/articles/CBMihANBVV95cUxPVUc1UTFLOC1wMnl3dm1sMVV5V01vVTR1LVYzNnM1NlR5b2NRY28teXVGT2dGNkJxYjNqb25reFdURVo0cVVUbVpVbFVYdWdZdXRDRmVLTVppaGhSSS15eVROVkhKUVFkUldTQlFYbjhBTTRFOHRpSVJjTTNoOFplSllIeTkyZ0RrN1lIcFNVRkRSazBQSE9ac1ByWmVQUzRzcWhsQ2hzRzE1b24xd3hvX3Y1OTVNTzZ3c0I5dEg4djRHWWhBUVlHTy1HZ0JKZ3BBbEEyVENXQVI5WW5lSmdFTnZuZHB6X3JwUGRRYlpsU0FpUHkzQTloOXc0NjUtZlBSdDZyT2RNY2RrZWd3TFZlcENJMDNSZEplMzNMdVhwX2RnZTZPemJYc2xjZlFTWU16NExCQ3pTMG40MU1XVTlBMmJPd3RHNzBDN1dKeGxxaUYxWm5iM1lLRTZ2RVdNd2htZFgxRTV3dnVkREViOVlZeldzVHhRclVqLVQ3RHNvNWwwMkRl?oc=5" target="_blank" rel="noopener">[Barrons] Why Nvidia Stock Is Stuck in a Holding Pattern—and How It Gets Out</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPdmtFSm1wS1VEYVkxWDZIS1c5TWtVT3JaSDV2NjBXRGtvVVV5LUZGb09yVlROcVducDluUmI3U0paanNfc1VrNHRPMXRsVEtkYVNpLV8xM2gwZHJlNEFPc0NZUjhBaVNEdGZwRnpaMzlSN2YwUGQ5VDQwbm1iZ0U1LW9wWnlWOHZuNUVQc0dkU2FJc1FZRG0zNDAwVFRldk9ST1VqampUd0VUZzVQM2REd3MyNXc?oc=5" target="_blank" rel="noopener">[Bloomberg] Wall Street’s New Trade Is Dumping Any Stock in AI’s Crosshairs</a>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">金融服务</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>加密货币市场进入寒冬</div>
+                <div class="topic-title-en">Cryptocurrency Market Enters Deep Winter</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    加密货币市场正经历最寒冷的冬天，投机泡沫破裂导致交易平台收入下滑，监管机构加强执法打击诈骗。尽管比特币鲸鱼再次买入显示长期信心，但市场整体情绪低迷，投资风险高，需等待明确复苏信号。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/bitcoin-crypto-trading-speculation-galaxy-ceo-mike-novogratz.html" target="_blank" rel="noopener">[CNBC] Crypto's 'age of speculation' may be over, says Galaxy CEO Mike Novogratz</a>
+                    <a href="https://www.marketwatch.com/story/crypto-caution-weighs-on-robinhoods-sales-and-sinks-its-stock-ff27eac8?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Crypto winter hits Robinhood’s sales and stock, but CEO sees prediction-market ‘super cycle’</a>
+                    <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNcEVOeFlqZ3UxTWRBUTJkNTFGal9XZ2JrV1RtVHFUaEZXZkFLeVc0a2l0WTBPTkc4SGxuM0ZrQktDb1J4em1HYlYtTkZoZEhJS1AzdlZFUHlLNC1zRWZGT01JUTFfOFM3UXp6R1k4Q2lVenpWeHhwSDlWU3ZPQXJORDZibThpWXFfQ2xMSExCb2laRzlmOHFNSGl2RXdpd1l3UWc?oc=5" target="_blank" rel="noopener">[Economist] Why this is the coldest crypto winter yet</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxONldJSjRvaVRjWTFNcXdacGtPM2w5TUhfNzdDNEFjNnczTnNRZldBN1k5RmI1NkREcFlNcHFmaXVnaEZYNmpJcTQxaWhhLVAzYzk0S3E5QlAtQzBiWGx1Q1lGeGhvSE53dVhaOXhOTGp3VGtEMVZQTjJkUkY2ek1vUkZ5TzV1VTJTNk5OeHUxQUQ3OFBxdTdkS2Y3MW9LX1lhWmVUaHBTelAxVmdUVHhXY1F3?oc=5" target="_blank" rel="noopener">[Bloomberg] Bitcoin Whales Are Buying Again as Other Large Buyers Retreat</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">交易平台</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>中国经济数据与政策动向</div>
+                <div class="topic-title-en">China Economic Data and Policy Moves</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    中国1月CPI通胀低于预期，PPI持续通缩，反映内需不足和经济下行压力。香港推进稳定币计划显示金融创新，但中国减持美债可能引发全球市场波动，投资者需关注政策风险与结构性变化。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/11/asia-markets-live-today-wednesday-china-inflation-kospi-hang-seng-china-inflation.html" target="_blank" rel="noopener">[CNBC] Asia markets mostly rise as investors shrug off weak U.S. retail sales, assess China inflation</a>
+                    <a href="https://www.cnbc.com/2026/02/11/china-inflation-january-cpi-ppi-deflation.html" target="_blank" rel="noopener">[CNBC] China consumer inflation rises less than expected in January as producer price deflation persists</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPdWxhVk9FQzlrdjB1cmJpb2pWdXRaeHlCVS1JcWtBUXRyRFdWSHdDbTlmeXZXMVh3T0o1ZzhCVXVpdUdxWVNIbjBUQjR5UFFha3dqUVh2QkEtS2pXMnhwczFxLTBqV3hLUHNTZWhmSWFnQU9BNzZrU2E5MWYzMUp3YURXc3RVd0hYQWtXa0pVQldxblRSa2lkd2tXYmlQZnZhazFJWk8tQWZMb0ZBMngwMmhwQ1A1UQ?oc=5" target="_blank" rel="noopener">[Bloomberg] China’s Years-Long Retreat From US Treasuries Flags Bigger Risks</a>
+                    <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNU2VCM1pGODdSSGVOSXhPOE1TN3k4MC1tRGhBaFJHR0NSZUZzcEN5S2FRbmJQODZLN3huSEpjYzQ2VC1zZ2RBX2xtVVMxZ1U0N2FjM3VuRTdnQVFMT2hjZkFOQXhlWkJCQkM4UEw4OURKY1ItSnplTV9WT2p4aG4yRVlMaG12a0V1Q0JNNUJiZnJwQUdPSE1ndTZ2M2U3bExKSXpmdjh1QXBScV9Z?oc=5" target="_blank" rel="noopener">[Bloomberg] China’s Big Silver Squeeze Persists Even as Prices Steady</a>
+                    <span class="sector-tag">宏观经济</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">大宗商品</span>
+                    <span class="sector-tag">农业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>美国经济指标与消费趋势</div>
+                <div class="topic-title-en">US Economic Indicators and Consumption Trends</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国12月消费者支出放缓，延迟的就业报告增加经济不确定性，可能影响美联储货币政策走向。福特公司受关税冲击但2026年展望改善，显示企业韧性，市场需观察后续消费数据以判断衰退风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cg7e8ven7r7o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] US consumer spending slowed in December - Is it a warning for the economy?</a>
+                    <a href="https://www.cnbc.com/2026/02/10/jobs-report-preview-january-2026.html" target="_blank" rel="noopener">[CNBC] The delayed January jobs report will be released Wednesday. Here's what to expect</a>
+                    <a href="https://www.cnbc.com/2026/02/10/ford-motor-f-earnings-q4-2025.html" target="_blank" rel="noopener">[CNBC] Ford reports worst quarterly earnings miss in four years, guides for better 2026</a>
+                    <span class="sector-tag">消费</span>
+                    <span class="sector-tag">汽车</span>
+                    <span class="sector-tag">零售</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>地缘政治与贸易政策风险</div>
+                <div class="topic-title-en">Geopolitical and Trade Policy Risks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普关税政策面临国内反对，但可能继续影响全球贸易，增加企业成本。中国寻求粮食自给自足减少对美国农产品依赖，地缘政治紧张升级，投资者应规避贸易敏感板块，关注供应链重组机会。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cdjmepg4pzlo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Ford says it took an extra $900m tariff hit last year</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQRHFBZGFWMVJiM19UcHU3eVVRQ01GUjBNajA3eTB4OXVfM3BjT3NYV0dmY3FEUlVubXlLbFd3YXJUWWhGQmF0bDgtTXF6aGRiVEoxTG9oWjR0dm96Nnl2bzRDNXUxdzB5SDFsVjU4WXY4V1dKZ09DMTFZOTltT3M0TTZldjVrNWRKX002UzdfSUxQUUc3dktfTjd3amlVSG9jNXJkR3B6a29DUS1MVVRYT2tLTUM?oc=5" target="_blank" rel="noopener">[Bloomberg] Trump Tariffs Face Rebuke as Johnson Fails to Block Votes</a>
+                    <a href="https://www.cnbc.com/2026/02/11/cnbcs-the-china-connection-newsletter-inside-chinas-push-to-feed-1point4-billion-people-without-us-crops.html" target="_blank" rel="noopener">[CNBC] CNBC's The China Connection newsletter: Inside China’s push to feed 1.4 billion people without U.S. crops</a>
+                    <span class="sector-tag">贸易</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">农业</span>
+                    <span class="sector-tag">工业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>企业财报分化与市场反应</div>
+                <div class="topic-title-en">Corporate Earnings Divergence and Market Reactions</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    多家公司财报表现分化，生物科技公司CSL因CEO离职和业绩不佳股价暴跌，而Apple和Shopify因创新和增长预期上涨。企业裁员和成本控制成为趋势，投资者需精选个股，关注盈利质量和行业前景。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/11/csl-shares-ceo-departure-weak-earnings.html" target="_blank" rel="noopener">[CNBC] Shares of Australian biotech major CSL plunge to 8-year low after CEO departure, weak earnings</a>
+                    <a href="https://www.marketwatch.com/story/heres-how-apples-stock-can-surge-in-the-face-of-rising-memory-costs-8cc35404?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Here’s how Apple’s stock can surge in the face of rising memory costs</a>
+                    <a href="https://www.marketwatch.com/story/shopifys-stock-soars-ahead-of-earnings-why-this-analyst-is-newly-upbeat-5f0a1460?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Shopify’s stock soars ahead of earnings. Why this analyst is newly upbeat.</a>
+                    <a href="https://news.google.com/rss/articles/CBMi-gJBVV95cUxQZnZtLVdVR2lwaWhyaEw1NXVKUTA2ekRVOFFBVm5zWlE4YjhSV3BMdzRZTzIxWjA4Nkp4N1UyMGVQOGlfUXFNX0dRY0t4R2pYREgwYXZlRnRlUklfbXdZZlBfanNLUXZ6MExvbjIzSnYzS3BXcUlKQU85N2JEcjVPVmQ5R0hIdEp2Ykd3QWQ4cnhjT1JaaVZnMmgtbURkSzNpUGIzcFRybHJ3Q09xYkREUXIwQmhTM1V1NGhwNk1aLTQ0Q0ZHaE9jWEQyRXJ1cXFsdFBCRjg2Zmo5aW04UUZvYjIwWVNxd1Z6ZjdEaDQtcWhJbGZVYS0xdkRQaG5YUGszOUQxeTEyYThBTUI1V2RZN0dxOWhFbm8tR1RsVldCbUVHcmhSek03ZmJUaEl1Vm9pNkJzQk9LMmNoUy0xVU9MMHZlVUFaNzNtMkExa3g0X3A4bjdBRWswNFRBNW0yNXNpajFOR1VzNDZlLU1TVkJHR0VDN1hXdnFXeEE?oc=5" target="_blank" rel="noopener">[Barrons] Coca-Cola Stock Falls as Revenue Growth Disappoints. What World Cup and Mexico’s Sugar Tax Mean for 2026.</a>
+                    <span class="sector-tag">生物科技</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">消费品</span>
+                    <span class="sector-tag">工业</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国12月消费者支出放缓</li>
+                <li>中国1月CPI同比上涨低于预期，PPI持续通缩</li>
+                <li>福特第四季度业绩大幅低于预期，但2026年展望乐观</li>
+                <li>特斯拉xAI部门两天内失去第二位联合创始人</li>
+                <li>香港继续推进稳定币发行计划</li>
+                <li>比特币鲸鱼再次买入比特币</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
