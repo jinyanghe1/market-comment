@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-11 19:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-11 19:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场呈现分化格局，人工智能与芯片股表现强势，但加密货币暴跌、部分企业财报疲软及监管风险压制整体情绪。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>人工智能热潮分化：芯片股强势 vs. AI落后者遭抛售</div>
+                <div class="topic-title-en">AI Boom Diverges: Chip Stocks Strong vs. AI Losers Sold Off</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    人工智能乐观情绪推动新兴市场股市创新高，台积电(TSMC)等芯片制造商因AI需求前景而受到提振。然而，市场出现明显分化，华尔街正抛售那些可能被AI颠覆的传统行业股票（如财富管理），且部分AI相关软件公司发布盈利预警，显示市场对AI泡沫的担忧正在加剧。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxOVUlObGo2ZFA0TjdmVkNMRDZVTWRPTUF4bG45UjBnYmRhTVhlV2pkMDJSa1VpNWlNREdFUk1OUXJPVjlndEtIdFowVEdwbzdLTlBNb3Y4UDM4NVZjMjEzUlQxdnhlMHFkMFdVMURNa0g2LXRwcHRLc3RCVFRIOG45RXduY203NWRrUm56alo0WE1iUmoxbzFwVjJtbDl1RFc5NEJmdzc0ZFJfY0Ny?oc=5" target="_blank" rel="noopener">[Bloomberg] Emerging-Market Stocks Jump to Record High on AI Optimism</a>
+                    <a href="https://www.marketwatch.com/story/the-sell-off-in-ai-losers-has-been-so-steep-that-this-famed-activist-investor-has-reportedly-sprung-into-action-c100732b?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The sell-off in AI losers has been so steep that this famed activist investor has reportedly sprung into action</a>
+                    <a href="https://news.google.com/rss/articles/CBMijgNBVV95cUxNbnhGNUl3OUlhdlUyZUtQTUtpbG5HdUIyby1MNGQ5TmNNSGMwSGxza29VNWs5RDRZRHdKMTN5OGJtLVFCMzJXSjZpcFFyQU4wdlduaVB6Q0tDU1R0YTRjYjliSEpuUXVCMVYyS3UxR3ZlYVQ1OFpJcEVFWmJSQlBQUndfaVc5UHVjZ05YbTJfTkdGNlFSMmRpQWUxeGZjNndvdkhhR3poX0xpNkZrRzU3TnVZZXVZOVB3NmxhWjMtY3FGQnRtUThMcnR0Qlg3clR3TDZkRVlKNTdtN1Vfb1BaWjZQR2lBZEFFcEtkT2N2MnlETmZiMy0wQVJDRTgtQXdGOGZBdC1TQ215RUZSWkNMY01KQzF5Tm1EaUxUMzRCVS1aR2JnT3BwTlVYNC1YajcwRXV1WWVaQ0xtYm1JMGlxWGl1eWRhZzVMNHAzdkFBTGV1SGh2QXZpRFQ4YnZtanlZVGNPWTF2MnRBdXZBZkR3UnJqajV5b2J2OEdGdC1BR1FMOXVFamgwUVVIUHF2QQ?oc=5" target="_blank" rel="noopener">[Barron's] TSMC Stock Is on a Roll. AI Chip Sales, Trump Tariff News Could Keep It Going.</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">财富管理</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>加密货币市场遭遇重挫，投机时代或将终结</div>
+                <div class="topic-title-en">Cryptocurrency Market Plunges, Speculative Era May Be Over</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    比特币价格跌破67,000美元，单日暴跌近2000美元，与股市走势出现背离。Galaxy CEO 诺沃格拉茨表示加密货币的'投机时代'可能已经结束，而韩国散户投资者因亏损纷纷离场。此轮下跌可能反映了监管担忧加剧、杠杆清算以及市场对数字资产作为风险资产属性的重新定价。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDEyQjVWNW8zQksxX1JHOUc3LTJFYjNiTmVWNmc5dnlQeVNxT3NyTzdYaVJsdXlJYk9MUGl0SUxMZTdYUjNoQVVTalBpekxiVWx2UVQwWThEUE1QblQxeFVKREp3bnQ3bVh6VlpnRnBSblJncHFUbnBJYW5USzNQVlktQm91UENGOTRFRmFwYmtEc1VFc3otNGhLUlZGSkZGQlhhc0FMOXRQWDY5UGc?oc=5" target="_blank" rel="noopener">[Bloomberg] Bitcoin Slides Below $67,000 as Crypto Diverges From Stocks</a>
+                    <a href="https://www.cnbc.com/2026/02/10/bitcoin-crypto-trading-speculation-galaxy-ceo-mike-novogratz.html" target="_blank" rel="noopener">[CNBC] Crypto's 'age of speculation' may be over, says Galaxy CEO Mike Novogratz</a>
+                    <a href="https://www.marketwatch.com/story/bitcoins-getting-slammed-again-as-number-one-cryptocurrency-loses-nearly-2-000-b5c1cb45?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Bitcoin’s getting slammed again as number-one cryptocurrency loses nearly $2,000</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">区块链</span>
+                    <span class="sector-tag">金融服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>企业财报季表现参差，福特、Lyft等多家公司业绩不及预期</div>
+                <div class="topic-title-en">Mixed Corporate Earnings Season: Ford, Lyft Among Companies Missing Expectations</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    第四季度财报季出现分化：福特汽车录得四年来最严重的季度盈利不及预期，但给出了强劲的2026年指引；Lyft因乘客数量令人失望股价暴跌15%；Astera Labs、Lithia Motors等公司营收也未达预期。这表明在宏观经济不确定性下，消费者支出和特定行业需求出现疲软迹象。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/ford-motor-f-earnings-q4-2025.html" target="_blank" rel="noopener">[CNBC] Ford reports worst quarterly earnings miss in four years, guides for better 2026</a>
+                    <a href="https://www.cnbc.com/2026/02/10/lyft-lyft-q4-2025-earnings-.html" target="_blank" rel="noopener">[CNBC] Lyft stock falls 15% on disappointing fourth-quarter results, rider numbers</a>
+                    <a href="https://www.investing.com/news/earnings/ford-misses-q4-profit-gives-stronger-outlook-4498055" target="_blank" rel="noopener">[Investing.com] Ford misses on Q4 profit, analyst says 2026 outlook ’clears the bar’</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">共享出行</span>
+                    <span class="sector-tag">科技硬件</span>
+                    <span class="sector-tag">零售</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>贸易政策与关税风险持续，福特受冲击、台积电或受益</div>
+                <div class="topic-title-en">Trade Policy and Tariff Risks Persist, Impacting Ford, Benefiting TSMC</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    福特表示去年因关税额外损失9亿美元，凸显贸易壁垒对跨国企业的直接影响。同时，特朗普时期的关税政策面临国会反对，政策前景存在变数。另一方面，台积电可能因相关贸易政策而获得竞争优势。地缘政治紧张（如原油因中东局势上涨）也增加了贸易环境的不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cdjmepg4pzlo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Ford says it took an extra $900m tariff hit last year</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQRHFBZGFWMVJiM19UcHU3eVVRQ01GUjBNajA3eTB4OXVfM3BjT3NYV0dmY3FEUlVubXlLbFd3YXJUWWhGQmF0bDgtTXF6aGRiVEoxTG9oWjR0dm96Nnl2bzRDNXUxdzB5SDFsVjU4WXY4V1dKZ09DMTFZOTltT3M0TTZldjVrNWRKX002UzdfSUxQUUc3dktfTjd3amlVSG9jNXJkR3B6a29DUS1MVVRYT2tLTUM?oc=5" target="_blank" rel="noopener">[Bloomberg] Trump’s Tariffs Face Rebuke as Johnson Fails to Block Votes</a>
+                    <a href="https://www.marketwatch.com/story/crude-moves-higher-as-netanyahu-visits-washington-d9ff180e?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Crude moves higher as Netanyahu visits Washington</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国际贸易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>监管审查与 ESG 风险升温，波及科技、医药与消费品行业</div>
+                <div class="topic-title-en">Regulatory Scrutiny and ESG Risks Intensify, Affecting Tech, Pharma, and Consumer Goods</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    监管压力在多行业显现：美国食品药品监督管理局(FDA)拒绝审查Moderna的实验性流感疫苗；迪士尼广告因内容问题被禁；儿童在网上被减肥药广告轰炸引发监管担忧。同时，Salesforce员工就与ICE的合作向CEO施压，Estée Lauder起诉沃尔玛售假，显示企业面临日益复杂的合规与ESG（环境、社会和治理）挑战。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/moderna-fda-flu-shot.html" target="_blank" rel="noopener">[CNBC] Moderna says FDA refuses to review its application for experimental flu shot</a>
+                    <a href="https://www.bbc.com/news/articles/c89kl834nv9o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Children bombarded with weight loss drug ads online, says commissioner</a>
+                    <a href="https://www.cnbc.com/2026/02/10/salesforce-employees-call-on-ceo-benioff-to-cancel-ice-opportunities.html" target="_blank" rel="noopener">[CNBC] Salesforce employees call on CEO Benioff to cancel ICE 'opportunities'</a>
+                    <span class="sector-tag">生物制药</span>
+                    <span class="sector-tag">媒体娱乐</span>
+                    <span class="sector-tag">社交媒体</span>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">企业软件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>关键宏观数据与央行动向受关注，就业报告与梵蒂冈银行入市成焦点</div>
+                <div class="topic-title-en">Key Macro Data and Central Bank Moves in Focus: Jobs Report and Vatican Bank Entry</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    延迟发布的美国1月非农就业报告即将公布，将成为评估经济健康状况和美联储政策路径的关键。与此同时，梵蒂冈银行首次涉足股票指数，为未来推出ETF铺平道路，这可能吸引新的长期资金流入股市。中国持续减持美债则预示全球储备资产配置的长期结构性变化。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/jobs-report-preview-january-2026.html" target="_blank" rel="noopener">[CNBC] The delayed January jobs report will be released Wednesday. Here's what to expect</a>
+                    <a href="https://www.cnbc.com/2026/02/10/vatican-bank-makes-first-foray-into-equity-indexes-setting-stage-for-potential-etf-launches.html" target="_blank" rel="noopener">[CNBC] Vatican Bank makes first foray into equity indexes, setting stage for potential ETF launches</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPdWxhVk9FQzlrdjB1cmJpb2pWdXRaeHlCVS1JcWtBUXRyRFdWSHdDbTlmeXZXMVh3T0o1ZzhCVXVpdUdxWVNIbjBUQjR5UFFha3dqUVh2QkEtS2pXMnhwczFxLTBqV3hLUHNTZWhmSWFnQU9BNzZrU2E5MWYzMUp3YURXc3RVd0hYQWtXa0pVQldxblRSa2lkd2tXYmlQZnZhazFJWk8tQWZMb0ZBMngwMmhwQ1A1UQ?oc=5" target="_blank" rel="noopener">[Bloomberg] China’s Years-Long Retreat From US Treasuries Flags Bigger Risks</a>
+                    <span class="sector-tag">宏观经济</span>
+                    <span class="sector-tag">金融服务</span>
+                    <span class="sector-tag">资产管理</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>行业动态：啤酒业裁员、能源订单强劲与镍矿减产</div>
+                <div class="topic-title-en">Industry Dynamics: Beer Layoffs, Strong Energy Orders, and Nickel Mine Cutbacks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    行业层面出现结构性调整：海尼根(Heineken)因啤酒销售低迷裁员7%，反映消费趋势变化。同时，西门子能源获得创纪录的燃气轮机订单，受益于全球电力需求繁荣。印尼全球最大镍矿被要求减产，可能影响电动汽车电池供应链并支撑镍价。中国白银持续短缺也值得关注。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNQXlmUG5XQy1Tb0ZySmd1YkVQV1A2S1c1TU1vQm1kNjJTeFNuczFYSTI0QVpobXdZa3BhZm1sbXY3bmtrZS0yRjBwdFBlR21zWE1ZR1VmaUdfN0oxN0h2V1ZId0thVnI2czNUUm9OUU9LWU9YZF9wUXhsZmloX0duMGc2ZUNOZ29pQUlUcXJMR0QwNlNWX2ZfcHNGTS1zUldUMDk1b0taLXJ3a0JB?oc=5" target="_blank" rel="noopener">[Bloomberg] Heineken Cuts 7% of Staff as Beer Slump Weighs on Brewer</a>
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPeUdzaVNUYzFPanJYZGx3UGhnMVdad3plOGhtSlpfcFgwRHlIVXROdVg3WHNZWEVWT2FvckJQeUZFOC1MTVN4Tk9mRTJENUEtaThGVnFfSFZ1bGVfSXJLa0FWRDI0RjNjbE8zOEhhS0k3TFlPNWRWNWpWNGNGT2w3Y0RSUm9mdTFrWmdERF82QUpjeWM4X1dLQkM1bjZ4MTNrZVA3Nmo3bEdUQW5fNThUZA?oc=5" target="_blank" rel="noopener">[Bloomberg] Siemens Energy Books Record Gas Turbine Orders on Power Boom</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOMEYyWFdnNEJKY2JzLWFDckgtNHUzc0dhZUxGejN2cGVIc09UdWw4azFUTUFBV1dmckpaVVZTSkowMktBbFBSWGhJbG4xaElKLXdSVDUwc2F0VzRCNE03dVRHSGpvUXptM25uM09EZlc3S1JlaXJCMXY1c28ycTB3eGlsZTBPUFluV05BbDdKaktYbmgyMm5KSXVLWWdQeVQ0b3djQmVMUmhqZUpxUnJ4ejUteHJBQQ?oc=5" target="_blank" rel="noopener">[Bloomberg] World’s Biggest Nickel Mine in Indonesia Told to Cut Output</a>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">能源设备</span>
+                    <span class="sector-tag">工业金属</span>
+                    <span class="sector-tag">贵金属</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国1月非农就业报告即将公布</li>
+                <li>比特币价格跌破67,000美元</li>
+                <li>福特Q4盈利创四年最大不及预期幅度</li>
+                <li>台积电股价受AI芯片销售提振</li>
+                <li>新兴市场股市因AI乐观情绪创历史新高</li>
+                <li>海尼根宣布裁员7%</li>
+                <li>西门子能源获创纪录燃气轮机订单</li>
+                <li>FDA拒绝审查Moderna实验性流感疫苗</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
