@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-11 22:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-11 22:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">美国就业市场强劲但贸易政策不确定性上升，企业盈利承压，市场情绪复杂，投资者需关注经济数据与政策动向。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美国就业数据超预期</div>
+                <div class="topic-title-en">U.S. Jobs Report Exceeds Expectations</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    美国1月新增非农就业岗位13万个，超出预期，失业率维持在4.3%。这表明劳动力市场依然强劲，可能缓解经济衰退担忧，但也会影响美联储的降息决策，对股市和债市产生双向影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/11/jobs-report-january-2026-.html" target="_blank" rel="noopener">[CNBC] U.S. payrolls rose by 130,000 in January, more than expected; unemployment rate at 4.3%</a>
+                    <a href="https://www.investing.com/news/economic-indicators/us-economy-adds-130000-jobs-in-january-exceeding-expectations-4499846" target="_blank" rel="noopener">[Investing.com] U.S. economy adds 130,000 jobs in January, exceeding expectations</a>
+                    <span class="sector-tag">整体经济</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">消费</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>关税政策不确定性加剧</div>
+                <div class="topic-title-en">Tariff Policy Uncertainty Intensifies</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    福特因关税额外损失9亿美元，美国各州关税账单达2000亿美元，特朗普考虑退出USMCA贸易协定。这些增加了贸易政策的不确定性，可能推高进口成本并扰乱全球供应链，对跨国企业和制造业构成显著压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cdjmepg4pzlo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Ford says it took an extra $900m tariff hit last year</a>
+                    <a href="https://www.cnbc.com/2026/02/11/inflation-affordability-trump-tariffs-midterm-elections.html" target="_blank" rel="noopener">[CNBC] Tariff bill in U.S. states hits $200 billion as affordability and Trump head into midterms showdown</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ2pHcmhYeGRiUHZ5MW1QUG93YkFuVkxZbmJwVGQ2ajMwLXlmbTZqQThjcUVZSEJXUG1VeEt5c1hkczFYRnBtRVlGeG9XcmxULUtyUG9udTFCMkJ4encyVldVM1pIU3NaNkNnbGhFQlFGeG1oR2hfcTlkaUNNLUpUSmJ1alFVRzhqaldJb1pVb1FhYTIza0JRYWkxNWxiZk1DTExTYmszUUtrY1hnTFpvRVE2TQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Trump Privately Weighs Quitting USMCA Trade Pact He Negotiated</a>
+                    <span class="sector-tag">汽车</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">农业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>企业盈利压力与裁员潮</div>
+                <div class="topic-title-en">Corporate Earnings Pressure and Job Cuts</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    海尼根因啤酒销售下滑裁员6000人，福特公布四年来最大季度盈利miss，卡夫亨氏暂停分拆计划。这反映消费者需求疲软和成本压力上升，企业通过裁员和重组应对挑战，投资者需关注运营效率改善和行业整合机会。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/11/heineken-slash-6000-jobs-ai-productivity-savings-.html" target="_blank" rel="noopener">[CNBC] Heineken to slash up to 6,000 jobs in AI 'productivity savings' amid slump in beer sales</a>
+                    <a href="https://www.cnbc.com/2026/02/10/ford-motor-f-earnings-q4-2025.html" target="_blank" rel="noopener">[CNBC] Ford reports worst quarterly earnings miss in four years, guides for better 2026</a>
+                    <a href="https://www.cnbc.com/2026/02/11/kraft-heinz-pauses-split-new-ceo-challenges.html" target="_blank" rel="noopener">[CNBC] Kraft Heinz pauses work to split the company as new CEO says 'challenges are fixable'</a>
+                    <span class="sector-tag">消费品</span>
+                    <span class="sector-tag">汽车</span>
+                    <span class="sector-tag">食品饮料</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>AI竞赛与产能风险</div>
+                <div class="topic-title-en">AI Race and Capacity Risks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Uber Eats推出AI购物助手，xAI两天内失去第二位联合创始人，中国智谱发布新AI模型，芯片制造商警告AI产能可能闲置。AI竞赛加速但面临人才流失和过度投资风险，投资者应甄别具有可持续优势和技术壁垒的公司。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/11/uber-eats-launches-ai-cart-assistant-for-grocery-delivery.html" target="_blank" rel="noopener">[CNBC] Uber Eats launches AI cart assistant for grocery delivery</a>
+                    <a href="https://www.cnbc.com/2026/02/10/musks-xai-loses-second-co-founder-in-two-days-as-jimmy-ba-departs.html" target="_blank" rel="noopener">[CNBC] Musk's xAI loses second co-founder in two days</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxORWptQlZQU25RRHpGb1pHQV9sdlJZMTlNTEZDT2czRXlUcXo3WUplSldFSVJpOUdjXzU5RWRCM25uOUk1VVRDQjBGX1JCVy04cy13SGdwU2FJWGc5bnhNSVc3WU5ieHlndkFnX3NqVFd0eUpDdDR1UmFJUjZSWElCVU9lDFVoaUFLT255eDJmOE1vM1BoSFE2MHRxdjdleHZmelMwb1h0V1FpSVRHLWN6V1JR?oc=5" target="_blank" rel="noopener">[Bloomberg] China’s Zhipu Unveils New AI Model, Jolting Race With DeepSeek</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOSjVoNUEzRVJ5U3dzaGFPOXlVcC1aZ3g2MmZ2dlJJY3E5QVdROGNUQ1MxSG5UT3h3Q3d6WXpySXAycmk5WXQ4eDlTMUpxeExTVURWZ0tfcEF4YXhrTDg5V3JlNDRSX3RJakpvaVZtNmtQTk1kMVN2UE9DWkxRVzlxbjA3YnpwQmdmOWhOczVUNFdXSVUxaE9vWmh4LXFyNXFkOHlTcWR1Rml2ZFBqZkVrcGxB?oc=5" target="_blank" rel="noopener">[Bloomberg] China’s Top Chipmaker Warns Rushed AI Capacity Could Sit Idle</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">消费服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>加密货币波动与监管挑战</div>
+                <div class="topic-title-en">Cryptocurrency Volatility and Regulatory Challenges</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    比特币价格跌破67000美元，与股市走势脱钩，Robinhood加密货币收入不及预期。此外，贩毒集团转向加密货币洗钱，监管机构难以跟上。这加剧了市场波动性和监管不确定性，可能抑制机构投资者参与。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/11/bitcoin-price-today-crypto-volatility.html" target="_blank" rel="noopener">[CNBC] Bitcoin bounce fades as it hovers around $67,000</a>
+                    <a href="https://news.google.com/rss/articles/CBMiggNBVV95cUxQcUZZU3daUXJRRWw2cVR0aW1CR2loLTJuMkFWX2dMLXNhTTRNMlBLZG5YM1B6TjRmSlNFM3YyVzd2Q1JPVGhYZlhJcDhPVmt2TWdHa1d6NW1xRnQ2Uk9ZUE1XdEJjYWgzYnlnaTlmdTd3dEp4dGFmdm43elE1ZUFkLWY4NU9aRzlsakNkUVZGR0ctVFhpQjZZMDdweFBxU1RXZHdoRktNbkpLTFFwcTJOOVI2dWJqT0VCMTc1dlhJSWhiUHJNdVZUaEVUOExGdV81WHNpdzNHeXV4OTgyQlB4UG44cFlBODRHeWlTY091S3pQVlotaThLTTFBUjQ1eUFjV0tFdllGZmxNR0JRUHAwTnpHNGlTbDVOaEp6eE1aaFl2WjlRWVhNc05YVDRvel81VzJTRE4tV0xQM0cwRnVzYlhsbGFiekRhWVVXakt1MExGWGlXaVFNUmpQQjk3SHZEVHU4OEcyQ044RXo3N0N2SVUwcGZheFB0QmxYNC1pWG5NQQ?oc=5" target="_blank" rel="noopener">[Barrons] Robinhood Stock Tumbles as Crypto-Related Revenue Falls Short of Expectations</a>
+                    <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNck8xMGRfRWVfcGFZZlgyUlB1Y05SUTFVYlNXd3NvRFF3cGI4ZS1CNkxDdGRkT3dtMUNZelRyX1dURFJNWk5kZzh0SUYxOVprdjBET1lTb01MeDRhbWF6REpUUTg5Yk9TT1hPR2pUQ08xZFowLTlKQXhsQmsybjRpYXlvQk5SXzdmRHBpbVVvNHZOU1haNHJpQTZwNWxoTW5sTmFjSXlzSndXNkE1V3lPajQxZGFJclE?oc=5" target="_blank" rel="noopener">[Bloomberg] Drug Cartels Are Shifting Their Money Laundering to Crypto. Cops Can’t Keep Up</a>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">加密货币</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>消费者经济压力与住房挑战</div>
+                <div class="topic-title-en">Consumer Economic Pressure and Housing Challenges</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国银行内部数据显示中产阶级感到经济痛苦，住房缩水通胀使得50万美元购买力下降，Chipotle拒绝提供超值餐。同时，FHA抵押贷款需求上升反映 affordability 挑战。这可能抑制消费者支出并影响零售和房地产板块盈利。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/bank-of-americas-internal-data-show-the-middle-class-is-now-feeling-the-pain-of-the-k-shaped-economy-e84daee2?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Bank of America’s internal data show the middle class is now feeling the pain of the K-shaped economy</a>
+                    <a href="https://www.marketwatch.com/story/the-great-shrinkflation-of-housing-in-america-what-500-000-buys-today-vs-what-it-bought-in-2019-3d3deece?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The great ‘shrinkflation’ of housing in America: What $500,000 buys today vs. what it bought in 2019</a>
+                    <a href="https://www.marketwatch.com/story/chipotle-ceo-doubles-down-on-not-offering-value-meals-says-our-food-is-worth-every-penny-96f3cbbd?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Chipotle CEO doubles down on not offering value meals, says ‘our food is worth … every penny’</a>
+                    <a href="https://www.cnbc.com/2026/02/11/fha-mortgage-demand-rises-as-borrowers-face-affordability-challenges.html" target="_blank" rel="noopener">[CNBC] FHA mortgage demand rises as borrowers face affordability challenges</a>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">金融服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>全球大宗商品与能源市场变动</div>
+                <div class="topic-title-en">Global Commodity and Energy Market Shifts</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    印尼命令全球最大镍矿减产，印度要求炼油厂考虑购买更多美国和委内瑞拉石油，西门子能源获得创纪录燃气轮机订单。这些变化影响原材料供应和能源价格，对相关行业成本和投资有重要影响，需关注供应链调整。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOMEYyWFdnNEJKY2JzLWFDckgtNHUzc0dhZUxGejN2cGVIc09UdWw4azFUTUFBV1dmckpaVVZTSkowMktBbFBSWGhJbG4xaElKLXdSVDUwc2F0VzRCNE03dVRHSGpvUXptM25uM09EZlc3S1JlaXJCMXY1c28ycTB3eGlsZTBPUFluV05AbDdKaktYbmgyMm5KSXVLWWdQeVQ0b3djQmVMUmhqZUpxUnJ4ejUteHJBQQ?oc=5" target="_blank" rel="noopener">[Bloomberg] World’s Biggest Nickel Mine in Indonesia Told to Cut Output</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOeG0yeUhJZVVOVmwtYWFoejRNcGQwR1k3VW5HOTY8dWI1N003UDJDb1lMcWNkSWlVRTE4MVpQblF6QUZwN3UxX0EzdlJQb2RQdDhJZHNLM1lseVUwQlNoREMzbUk5NUNwWUZrUER6TmZjYXBqLVVQNDVZdUlsREQtR3Q4NG5TeGluaWtxbVdzc0xIUTZ3aXVkWnB0UmR1dExYQ2todEV6ak4zdDhaRWV5aTNn?oc=5" target="_blank" rel="noopener">[Bloomberg] India Asks Refiners to Consider Buying More US, Venezuelan Oil</a>
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPeUdzaVNUYzFPanJYZGx3UGhnMVdad3plOGhtSlpfcFgwRHlIVXROdVg3WHNZWEVWT2FvckJQeUZFOC1MTVN4Tk9mRTJENUEtaThGVnFfSFZ1bGVfSXJLa0FWRDI0RjNjbE8zOEhhS0k3TFlPNWRWNWpWNGNGT2w3Y0RSUm9mdTFrWmdERF82QUpjeWM4X1dLQkM1bjZ4MTNrZVA3Nmo3bEdUQW5fNzhUZA?oc=5" target="_blank" rel="noopener">[Bloomberg] Siemens Energy Books Record Gas Turbine Orders on Power Boom</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">原材料</span>
+                    <span class="sector-tag">工业</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国1月新增非农就业13万人，失业率4.3%</li>
+                <li>比特币价格跌破67000美元</li>
+                <li>美国各州关税账单达2000亿美元</li>
+                <li>海尼根裁员6000人</li>
+                <li>福特季度盈利最大miss四年</li>
+                <li>金价和银价在就业报告前上涨</li>
+                <li>印尼镍矿减产</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
