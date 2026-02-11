@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-11 21:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-11 21:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">地缘政治与政策不确定性加剧市场波动，投资者在AI板块分化、关税风险与宏观数据中寻找方向，整体情绪趋于谨慎。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美国关税政策悬而未决，贸易风险与内部博弈加剧</div>
+                <div class="topic-title-en">U.S. Tariff Policy in Limbo, Intensifying Trade Risks and Internal Battles</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    多方报道显示，特朗普时期的关税政策面临国内政治阻力（众议院共和党人阻止反对投票），同时其团队正私下权衡退出USMCA贸易协定的可能。此举为全球贸易格局带来巨大不确定性，企业如福特已承压（额外9亿美元关税冲击），并可能推动供应链的进一步重构。投资者需警惕贸易保护主义升级对跨国企业盈利和全球通胀的潜在影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/gop-tariffs-trump-house-johnson.html" target="_blank" rel="noopener">[CNBC] GOP defectors help spike House measure to block tariff disapproval votes</a>
+                    <a href="https://www.cnbc.com/2026/02/11/inflation-affordability-trump-tariffs-midterm-elections.html" target="_blank" rel="noopener">[CNBC] Tariff bill in U.S. states hits $200 billion as affordability and Trump head into midterms showdown</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQZ2pHcmhYeGRiUHZ5MW1QUG93YkFuVkxZbmJwVGQ2ajMwLXlmbTZqQThjcUVZSEJXUG1VeEt5c1hkczFYRnBtRVlGeG9XcmxULUtyUG9udTFCMkJ4encyVldVM1pIU3NaNkNnbGhFQlFGeG1oR2hfcTlkaUNNLUpUSmJ1alFVRzhqaldJb1pVb1FhYTIza0JRYWkxNWxiZk1DTExTYmszUUtrY1hnTFpvRVE2TQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Trump Privately Weighs Quitting USMCA Trade Pact He Negotiated</a>
+                    <a href="https://www.bbc.com/news/articles/cdjmepg4pzlo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[CNBC] Ford says it took an extra $900m tariff hit last year</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">宏观策略</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>人工智能产业出现分化：硬件繁荣与软件遇挫</div>
+                <div class="topic-title-en">AI Industry Divergence: Hardware Boom vs. Software Struggles</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    市场呈现明显的AI板块内部分化。一方面，台积电（TSMC）因AI芯片销售强劲而股价走高，GlobalFoundries也因数据中心芯片需求旺盛而业绩超预期。另一方面，大量AI软件和“非赢家”股票遭遇大幅抛售，知名激进投资者已开始介入。同时，中国顶级芯片制造商警告AI产能扩张过快可能导致闲置。这标志着AI投资从主题炒作进入业绩验证与去伪存真阶段。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPcVJaRlFGZ1p3YkIxM2ZVQkxxaWJOQUVZSmV2eVNIX3FFejMyYkpzTjhBTTlxd1pQX0k4aXV0czBSV21iTlNSX1p4Z2daYlYydjFibXdNWkpVbnZNMDA5YThDN1djcXp4VVZtY3N4TThhZUdZTmw0Z0tfaUFwR2xmRGN0RjlEdEVQODdvUG1wSGsyQTl1VWxOUWE4ekRhV2V3UWdVTWRnQzIwVlY3THVQODBuRFU?oc=5" target="_blank" rel="noopener">[Bloomberg] AI Loser Software Stocks Struggle as Hardware Earnings Jump</a>
+                    <a href="https://news.google.com/rss/articles/CBMijgNBVV95cUxNd0sweTlwQk0tSTNEUzFGa2pVVl9xZmEtYjlrNjdrNXNzNmJmdGRqZ0dGc09PMWhIVFY1dmZmNnd3R2dOVDV2M0taNXN3RDB6MGZQLWJwcUdOZ3VPTlV2VW9wb21tTWx6V0poOUxzeGpyNDlXZjZIZ2FTQmFBdlU2d2FmMXM1emwtSWFKM084RjZLeW04NEs4S3g3dFJaUzlOd1JfSHJ6ckd3aEhROVF3THNhTTI5Vi1fM0UwY29QdkR1amFYZ1FJdW5NZTU5aTZSMGctT1RpNG00eGg5dW5JWmhTaUV1MDRKSjBxcG5Qc0pWWDNUcW9fMHFYbWxvMGtiVUUxSnBFUnVuTXV3Sk9OMXVZb0Y3MVlRTHNyQkg3OUpCcHk3S3RqRnY1ai1NY05kTnUzRmZoTk1uQy1xX252eEpvc1prazUwRzdsN3hON1JpejBjRWNUbmw4elhEM1pKdXN6Z0ZaTjBWTTlIbHFtYV9paEVDUGc2bmYxSUt3MU9ELW43X3FJZUVtVWpSQQ?oc=5" target="_blank" rel="noopener">[Barron's] TSMC Stock Is on a Roll. AI Chip Sales, Trump Tariff News Could Keep It Going.</a>
+                    <a href="https://www.marketwatch.com/story/the-sell-off-in-ai-losers-has-been-so-steep-that-this-famed-activist-investor-has-reportedly-sprung-into-action-c100732b?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The sell-off in AI losers has been so steep that this famed activist investor has reportedly sprung into action</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOSjVoNUEzRVJ5U3dzaGFPOXlVcC1aZ3g2MmZ2dlJJY3E5QVdROGNUQ1MxSG5UT3h3Q3d6WXpySXAycmk5WXQ4eDlTMUpxeExTVURWZ0tfcEF4YXhrTDg5V3JlNDRSX3RJakpvaVZtNmtQTk1kMVN2UE9DWkxRVzlxbjA3YnpwQmdmOWhOczVUNFdXSVUxaE9vWmh4LXFyNXFkOHlTcWR1Rmil2ZFBqZkVrcGxB?oc=5" target="_blank" rel="noopener">[Bloomberg] China’s Top Chipmaker Warns Rushed AI Capacity Could Sit Idle</a>
+                    <a href="https://www.investing.com/news/stock-market-news/globalfoundries-expects-strong-quarterly-revenue-on-chips-demand-from-data-centers-4499621" target="_blank" rel="noopener">[Investing.com] GlobalFoundries expects strong quarterly revenue on chips demand from data centers</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">人工智能软件</span>
+                    <span class="sector-tag">数据中心</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>美国汽车巨头福特业绩暴雷，但展望改善引发关注</div>
+                <div class="topic-title-en">Ford's Severe Earnings Miss Sparks Concern, Yet Improved Guidance Draws Attention</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    福特汽车报告了四年来最严重的季度盈利未达预期，凸显出在电动汽车转型、激烈竞争和关税成本（额外9亿美元）下的经营压力。然而，公司同时发布了优于预期的2026年业绩指引，表明管理层认为最糟糕的时期可能已经过去，并通过成本控制和产品线调整来恢复盈利能力。这反映了传统车企在转型阵痛中的挣扎与市场对其能否兑现承诺的观望态度。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/ford-motor-f-earnings-q4-2025.html" target="_blank" rel="noopener">[CNBC] Ford reports worst quarterly earnings miss in four years, guides for better 2026</a>
+                    <a href="https://www.bbc.com/news/articles/cdjmepg4pzlo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[CNBC] Ford says it took an extra $900m tariff hit last year</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">电动汽车</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>加密货币市场波动加剧，机构态度呈现分歧</div>
+                <div class="topic-title-en">Heightened Volatility in Crypto Market as Institutional Attitudes Diverge</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    比特币在短暂反弹后再度失守67,000美元关口，与美股走势出现背离，显示其独立的高波动性特征。与此同时，市场参与者态度两极分化：MicroStrategy联合创始人Michael Saylor公开“加倍投资”比特币，而华尔街机构却在做空其股票。这种分歧预示着加密货币作为资产类别仍在成熟过程中，短期价格受流动性、监管预期和宏观情绪多重驱动，投资风险较高。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/11/bitcoin-price-today-crypto-volatility.html" target="_blank" rel="noopener">[CNBC] Bitcoin bounce fades as it drops back down to just under $67,000</a>
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQTDEyQjVWNW8zQksxX1JHOUc3LTJFYjNiTmVWNmc5dnlQeVNxT3NyTzdYaVJsdXlJYk9MUGl0SUxMZTdYUjNoQVVTalBpekxiVWx2UVQwWThEUE1QblQxeFVKREp3bnQ3bVh6VlpnRnBSblJncHFUbnBJYW5USzNQVlktQm91UENGOTRFRmFwYmtEc1VFc3otNGhLUlZGSkZGQlhhc0FMOXRQWDY5UGc?oc=5" target="_blank" rel="noopener">[Bloomberg] Bitcoin Slides Below $67,000 as Crypto Diverges From Stocks</a>
+                    <a href="https://news.google.com/rss/articles/CBMirgNBVV95cUxNcDk4aU56dy0wZEJsMzVxemt3bjhJQjJCQlFHOGo4d3F5d0w4MENfQUtFdTRTNmJwdTc3a1E4UmZLV2lPal91OVV1V1U3Q0xCc3JaRXZ3VzhHc2Jndnc0X01Od0x1U1ZIa1lnYXRNdkNCaExuVm1SQnRrVjZMQ3pScUZZWHVWc2ZPcWN4UHRCV3QwaVk2cFJ1SlROeGd5enJfX3Q5Vk9yazBUMGhlM1NJQmR3VXpEcVFVYkowSmNPVHJSWVU4c2QtZURQbTV3dEowa1BNSU1mUnEyVzRwOXhUeGFrbGdqWWI1U1NSRjFYMTE2c3BoUmhKaF85enJsLU1OSXdQNElQQU9nNjFaemoxbHZoUU1XX2dONUpaOWJyT2tjeVE5STJEUHI2T3ZKQzNvbmwzUzZnX2FvUkl2XzYzUzZOemYxd1ZwbDdZNGx0dGNvYVJNeDFuZmFmYW1feThYNklqWUVHZGcwdC1ZREpaNlp0cUYwYklwR0cyVy1ZVjZybHhjakoyVUZSOUZ0X2p0Z0hGQjJfYnBCWm9LcDJFbllBdUt6ZXp6MkgxNTlR?oc=5" target="_blank" rel="noopener">[Barron's] Strategy’s Michael Saylor Doubles Down on Bitcoin. Wall Street Is Shorting the Stock.</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">金融科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>地缘政治紧张推动能源与避险资产价格</div>
+                <div class="topic-title-en">Geopolitical Tensions Drive Energy and Safe-Haven Asset Prices</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    以色列总理内塔尼亚胡紧急访美，旨在警告特朗普政府勿与伊朗达成“狭窄协议”，此举加剧了中东地缘政治风险。同时，印度要求炼油厂考虑购买更多美国和委内瑞拉石油，反映了全球能源供应链的主动调整。受这些因素推动，原油与黄金价格同步走高。地缘政治已成为影响短期市场风险偏好和大宗商品定价的关键变量。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPUTBBMEh5VUdHN0FUSnA4WnFkcnpVX1lVN0lHNU54U0E5dFRBeWhWLWlHdkM5VFlCVUM0Y00yOWlwNUlGNk5vTzhiblkyTDFsQXBPVk9QRFN5b2hySFNMUndTaXRCN3hqakdMdThrX3Y2a2FfX0N0aWFYdEtzY0xRV2lSS1RMc05NR1NIc2hRV2lPUERzR05vUUZpdzJvWmNGUDlPNHJoMVBDS2ZYWV94ZXZyMA?oc=5" target="_blank" rel="noopener">[Bloomberg] Netanyahu, in Hasty Trip, to Warn Trump Against Narrow Iran Deal</a>
+                    <a href="https://www.marketwatch.com/story/crude-moves-higher-as-netanyahu-visits-washington-d9ff180e?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Crude moves higher as Netanyahu visits Washington</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOeG0yeUhJZVVOVmwtYWFoejRNcGQwR1k3VW5HOTY4dWI1N003UDJDb1lMcWNkSWlVRTE4MVpQblF6QUZwN3UxX0EzdlJQb2RQdDhJZHNLM1lseVUwQlNoREMzbUk5NUNwWUZrUER6TmZjYXBqLVVQNDVZdUlsREQtR3Q4NG5TeGluaWtxbVdzc0xIUTZ3aXVkWnB0UmR1dExYQ2todEV6ak4zdDhaRWV5aTNn?oc=5" target="_blank" rel="noopener">[Bloomberg] India Asks Refiners to Consider Buying More US, Venezuelan Oil</a>
+                    <a href="https://www.marketwatch.com/story/gold-and-silver-are-rallying-again-ahead-of-payrolls-report-11c12a2b?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Gold and silver are rallying again ahead of payrolls report</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">贵金属</span>
+                    <span class="sector-tag">国防军工</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>科技巨头动态频出：亚马逊获卫星许可，xAI高管离职，Uber加码AI</div>
+                <div class="topic-title-en">Frequent Moves from Tech Giants: Amazon Gets Satellite Approval, xAI Execs Depart, Uber Boosts AI</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    亚马逊获得FCC批准发射4500颗低轨互联网卫星，标志着其在太空互联网领域与SpaceX的竞争进入新阶段，长期看有助于巩固其云服务（AWS）和物流网络优势。与此同时，马斯克的xAI公司在两天内失去第二位联合创始人，引发对该公司内部稳定性和研发进程的担忧。此外，Uber Eats推出AI购物助手，显示AI应用正迅速渗透至消费科技领域，提升用户体验和运营效率。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/amazon-gets-fcc-approval-to-launch-4500-leo-internet-satellites.html" target="_blank" rel="noopener">[CNBC] Amazon gets FCC approval to launch 4,500 Leo internet satellites</a>
+                    <a href="https://www.cnbc.com/2026/02/10/musks-xai-loses-second-co-founder-in-two-days-as-jimmy-ba-departs.html" target="_blank" rel="noopener">[CNBC] Musk's xAI loses second co-founder in two days</a>
+                    <a href="https://www.cnbc.com/2026/02/11/uber-eats-launches-ai-cart-assistant-for-grocery-delivery.html" target="_blank" rel="noopener">[CNBC] Uber Eats launches AI cart assistant for grocery delivery</a>
+                    <span class="sector-tag">航天科技</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">互联网平台</span>
+                    <span class="sector-tag">云服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>食品饮料业面临重组与挑战：卡夫亨茨暂停分拆，喜力裁员</div>
+                <div class="topic-title-en">Food & Beverage Industry Faces Restructuring and Challenges: Kraft Heinz Pauses Split, Heineken Cuts Jobs</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    卡夫亨茨在新CEO上任后暂停了分拆计划，认为现有挑战是“可解决的”，这反映出公司在应对通胀成本压力和增长乏力后，战略重心从分拆转向内部整合与效率提升。无独有偶，喜力因啤酒销售低迷宣布裁员7%，表明全球消费降级或口味变化正对传统消费品巨头构成持续压力。该行业可能需要更多降本增效和品牌创新来应对结构性挑战。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/11/kraft-heinz-pauses-split-new-ceo-challenges.html" target="_blank" rel="noopener">[CNBC] Kraft Heinz pauses work to split the company as new CEO says 'challenges are fixable'</a>
+                    <a href="https://www.investing.com/news/stock-market-news/kraft-heinz-pauses-work-related-to-separation-4499480" target="_blank" rel="noopener">[Investing.com] Kraft Heinz halts split, new CEO says problems are ’fixable’</a>
+                    <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNQXlmUG5XQy1Tb0ZySmd1YkVQV1A2S1c1TU1vQm1kNjJTeFNuczFYSTI0QVpobXdZa3BhZm1sbXY3bmtrZS0yRjBwdFBlR21zWE1ZR1VmaUdfN0oxN0h2V1ZId0thVnI2czNUUm9OUU9LWU9YZF9wUXhsZmloX0duMGc2ZUNOZ29pQUlUcXJMR0QwNlNWX2ZfcHNGTS1zUldUMDk1b0taLXJ3a0JB?oc=5" target="_blank" rel="noopener">[Bloomberg] Heineken Cuts 7% of Staff as Beer Slump Weighs on Brewer</a>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>医疗健康领域新动态：减肥药广告引争议，Moderna疫苗遭拒</div>
+                <div class="topic-title-en">New Developments in Healthcare: Weight-Loss Drug Ads Spark Controversy, Moderna Vaccine Rejected</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    英国监管机构警告儿童正被在线减肥药广告“轰炸”，这凸显了GLP-1类药物爆红背后的社会伦理与监管问题，可能引发更严格的营销限制。另一方面，FDA拒绝受理Moderna新款流感疫苗的审批，对Moderna的多元化产品线推进是一次挫折，也提醒投资者生物科技产品的审批路径存在不确定性。这两个事件反映了医疗健康行业在创新、商业推广与监管合规之间的持续博弈。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c89kl834nv9o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Children bombarded with weight loss drug ads online, says commissioner</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgNBVV95cUxOTEpEZVlVS2o1Z3cyYTI3U3BWYnVXbnphT0xKQ0ZIeUdPaHVRbEFxcXBCMmdKM1pTbXFJSFNNZlJGamhmS0pTUUhxbG5sUzRpYkhXRzUteFpja3NLTEh5akE2bWJMcEtGOHhhdFdfbVptZm0tZkg5OThzMXJDREJMUHdjSGFDeGpfa251REhueE5SeFdPV1lvLWtkNm1zSk9ScDdMelFpVjBnVG81YVY2T2pvc2VoSTdXZmhPc2k2ZEw2ZFd0a0FRT0Z5eWVITlF1eFFqRjR1T1dRbEc5Tk40d0hEOTEwNGEyUTMzU0QwWWxEOUI4NVNZUm5tY3FBVUQ2ZWE5d040U3lGakJEdUFhbXVzaW1ZR252Z3NJNHpvYjdFaEZ4Zmhsem5LM0V6MWJvRWxET19xZmxtYlk4VEVxQnVXWVRJSWxVbmFZRGFKMkwzYlVfRm42T3F3LUNvQkZ6YnQ0UnJ4TU5xRXVWcnNJSkFxbzl6aDBUWFp4SmdiSnFqazllb1pqekQ3YzlGSmR1UUxGdlE4Z0hYd0hRZWxqTmhKRG5nM1JTOHZoOWJjd0xkdw?oc=5" target="_blank" rel="noopener">[WSJ] FDA Refuses to Consider Approving Use of Moderna’s New Flu Vaccine</a>
+                    <span class="sector-tag">生物科技</span>
+                    <span class="sector-tag">制药</span>
+                    <span class="sector-tag">医疗保健服务</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国各州关税账单总额已达2000亿美元</li>
+                <li>比特币价格跌破67,000美元</li>
+                <li>福特Q4盈利出现四年来最大幅度未达预期</li>
+                <li>GlobalFoundries季度营收因数据中心芯片需求超预期</li>
+                <li>摩根士丹利筛选3600只股票寻找AI调整后机会</li>
+                <li>黄金、白银价格在非农数据公布前上涨</li>
+                <li>FHA抵押贷款申请量因 affordability 挑战上升</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
