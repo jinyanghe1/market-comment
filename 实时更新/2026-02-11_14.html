@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-11 14:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-11 14:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场情绪分化，亚洲股市上涨抵消美国消费数据疲软，但AI股与加密货币承压，投资者关注经济数据与政策风险。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI对科技股的冲击与市场分化</div>
+                <div class="topic-title-en">AI Impact on Tech Stocks and Market Divergence</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    AI威胁导致软件和金融经纪类股票下跌，反映出市场对自动化替代的担忧。然而，芯片制造商如TSMC因AI需求强劲而受益，显示半导体产业链的结构性机会。投资者需区分AI受害股与受益股，并关注技术迭代带来的估值重塑。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/the-ai-threat-wrecked-software-stocks-now-broker-stocks-look-next-with-lpl-down-11percent.html" target="_blank" rel="noopener">[CNBC] The AI threat wrecked software stocks. Now financial stocks look next with LPL closing 8% lower</a>
+                    <a href="https://www.cnbc.com/2026/02/10/musks-xai-loses-second-co-founder-in-two-days-as-jimmy-ba-departs.html" target="_blank" rel="noopener">[CNBC] Musk's xAI loses second co-founder in two days</a>
+                    <a href="https://www.investing.com/news/stock-market-news/exclusivebytedance-developing-ai-chip-in-manufacturing-talks-with-samsung-sources-say-4498656" target="_blank" rel="noopener">[Investing.com] Exclusive-ByteDance developing AI chip, in manufacturing talks with Samsung, sources say</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">金融服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>中国经济数据疲软与市场韧性</div>
+                <div class="topic-title-en">Weak Chinese Economic Data and Market Resilience</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    中国1月CPI涨幅低于预期，PPI持续通缩，凸显内需不足和制造业压力。然而，亚洲股市无视美国零售销售疲软而上涨，反映区域市场的独立韧性。中国减持美债趋势加剧全球金融不确定性，投资者需警惕长期资本流动风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/11/china-inflation-january-cpi-ppi-deflation.html" target="_blank" rel="noopener">[CNBC] China consumer inflation rises less than expected in January as producer price deflation persists</a>
+                    <a href="https://www.cnbc.com/2026/02/11/asia-markets-live-today-wednesday-china-inflation-kospi-hang-seng-china-inflation.html" target="_blank" rel="noopener">[CNBC] Asia markets mostly rise as investors shrug off weak U.S. retail sales, assess China inflation</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPdWxhVk9FQzlrdjB1cmJpb2pWdXRaeHlCVS1JcWtBUXRyRFdWSHdDbTlmeXZXMVh3T0o1ZzhCVXVpdUdxWVNIbjBUQjR5UFFha3dqUVh2QkEtS2pXMnhwczFxLTBqV3hLUHNTZWhmSWFnQU9BNzZrU2E5MWYzMUp3YURXc3RVd0hYQWtXa0pVQldxblRSa2lkd2tXYmlQZnZhazFJWk8tQWZMb0ZBMngwMmhwQ1A1UQ?oc=5" target="_blank" rel="noopener">[Bloomberg] China’s Years-Long Retreat From US Treasuries Flags Bigger Risks</a>
+                    <span class="sector-tag">中国经济</span>
+                    <span class="sector-tag">金融市场</span>
+                    <span class="sector-tag">制造业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>美国消费者支出放缓引发经济担忧</div>
+                <div class="topic-title-en">US Consumer Spending Slowdown Raises Economic Concerns</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国12月消费者支出减速，结合延迟发布的1月就业报告，增加经济软着陆疑虑。日元走强反映市场避险情绪升温，可能影响美联储降息节奏。投资者应密切关注后续零售数据和就业市场，以判断消费韧性是否持续。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cg7e8ven7r7o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] US consumer spending slowed in December - Is it a warning for the economy?</a>
+                    <a href="https://www.cnbc.com/2026/02/10/jobs-report-preview-january-2026.html" target="_blank" rel="noopener">[CNBC] The delayed January jobs report will be released Wednesday. Here's what to expect</a>
+                    <a href="https://www.investing.com/news/economy-news/morning-bid-yen-roars-back-as-us-consumer-engine-sputters-4498689" target="_blank" rel="noopener">[Investing.com] Morning Bid: Yen roars back as US consumer engine sputters</a>
+                    <span class="sector-tag">消费零售</span>
+                    <span class="sector-tag">就业市场</span>
+                    <span class="sector-tag">货币政策</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>加密货币寒冬与监管加强</div>
+                <div class="topic-title-en">Cryptocurrency Winter and Tightening Regulation</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    加密货币投机时代可能结束，监管机构如CFTC执法力量不足，导致诈骗风险上升。香港推进稳定币计划与中国大陆禁令形成对比，加剧政策分歧。Robinhood等交易平台因加密收入不及预期股价大跌，显示行业盈利模式面临挑战。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/10/bitcoin-crypto-trading-speculation-galaxy-ceo-mike-novogratz.html" target="_blank" rel="noopener">[CNBC] Crypto's 'age of speculation' may be over, says Galaxy CEO Mike Novogratz</a>
+                    <a href="https://www.cnbc.com/2026/02/11/hong-kong-stablecoin-licenses-china-crypto-ban-usdt-usdc-cny-cnh-rmb-usd-fiat-currency.html" target="_blank" rel="noopener">[CNBC] Hong Kong proceeds with stablecoin plans despite Beijing's reservations</a>
+                    <a href="https://news.google.com/rss/articles/CBMiigNBVV95cUxNcjlDTi1tX3NXdWFaS1c3UW1qdF9SZUhzUjZZX1hrbk8teUY2MW1ta1hsMGlvWFJlWDFuWFNLU1hJQk1EOFVKVjRKcllqdGZQVGE4YXJhOThpMTRxcWg0YS0yWmF0eTdFcVdCUTZWcFpmYVB4NVU3ZVczSTlYUDBsbC1DMjhzZmxfMERvR08tTk9od1dLWkRVUl9OZjhBNTk3MW1UYl95eTBpVnZ3M0ZkWXlYdTJpT2hRQU10V2VZXy1ZVjFsVWRnZnhFenFrRjdqRUJ0WHNOTDdJSGxVd21CcEtyVmpSd0RHdVpzM3VoYjA4QklEeTJuYjRUMTJ3dFV1ZjhtTHBMdGtoLXVhNHV4WGtEeDZwa1pBUndzTHVRSXpINmxNcWtGai1jUmlSN3pfenFEZWotTWZGa0x0RGZjNlhzMkpMRERXRjJteElqT2dKOS02TU5GZFFiQlhXZnZHaWIya3FpWnA2Tnk0Q3RZVm9oTDFBdnRTbkNwdjlKMlE5ajBSYjhCUlJn?oc=5" target="_blank" rel="noopener">[Barron's] As Crypto Scams Mount, the CFTC Now Has No Enforcement Lawyers in Its Flagship Office</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">监管科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>汽车业受关税冲击与业绩分化</div>
+                <div class="topic-title-en">Automotive Sector Hit by Tariffs and Earnings Divergence</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    福特因额外关税损失9亿美元，第四季度盈利严重低于预期，但2026年展望改善提振股价。特朗普关税政策面临国会反对，增加汽车制造业成本不确定性。投资者需评估关税对供应链的影响，并关注电动汽车转型中的竞争力变化。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cdjmepg4pzlo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Ford says it took an extra $900m tariff hit last year</a>
+                    <a href="https://www.cnbc.com/2026/02/10/ford-motor-f-earnings-q4-2025.html" target="_blank" rel="noopener">[CNBC] Ford reports worst quarterly earnings miss in four years, guides for better 2026</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQRHFBZGFWMVJiM19UcHU3eVVRQ01GUjBNajA3eTB4OXVfM3BjT3NYV0dmY3FEUlVubXlLbFd3YXJUWWhGQmF0bDgtTXF6aGRiVEoxTG9oWjR0dm96Nnl2bzRDNXUxdzB5SDFsVjU4WXY4V1dKZ09DMTFZOTltT3M0TTZldjVrNWRKX002UzdfSUxQUUc3dktfTjd3amlVSG9jNXJkR3B6a29DUS1MVVRYT2tLTUM?oc=5" target="_blank" rel="noopener">[Bloomberg] Trump Tariffs Face Rebuke as Johnson Fails to Block Votes</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">贸易物流</span>
+                    <span class="sector-tag">零部件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>贸易政策与地缘政治风险升温</div>
+                <div class="topic-title-en">Trade Policy and Geopolitical Risks Escalate</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普推动关税和煤炭采购政策，旨在复兴传统产业，但面临政治阻力。中国持续减持美债，暗示去美元化趋势，可能加剧全球资本流动波动。这些因素叠加，增加跨国企业运营风险，投资者需调整资产配置以对冲政策不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNaEdUNll3YkgwTi1MbTJxa1V3Q1RQU1g2dTgyUkU3azVUQjh1cVRpY0RFd0ZJZTVNbUlHRDN6aGNaeWdhaVR2ZEgzY1JXalN6ellZdk5IVWc5NUZHb3dobURVczliM0lHazJBakdkUmh4dU9zTzhJUmxEeUp0NjJEbENEVVByVGE1bEZwU05BSmNkQmNpdGFEdUZ4UnR3U2Z1YXJ4NDYxVHQwY1l4VUloUHo1MA?oc=5" target="_blank" rel="noopener">[Bloomberg] Trump to Direct Pentagon to Buy Coal Power to Revive Industry</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPdWxhVk9FQzlrdjB1cmJpb2pWdXRaeHlCVS1JcWtBUXRyRFdWSHdDbTlmeXZXMVh3T0o1ZzhCVXVpdUdxWVNIbjBUQjR5UFFha3dqUVh2QkEtS2pXMnhwczFxLTBqV3hLUHNTZWhmSWFnQU9BNzZrU2E5MWYzMUp3YURXc3RVd0hYQWtXa0pVQldxblRSa2lkd2tXYmlQZnZhazFJWk8tQWZMb0ZBMngwMmhwQ1A1UQ?oc=5" target="_blank" rel="noopener">[Bloomberg] China’s Years-Long Retreat From US Treasuries Flags Bigger Risks</a>
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNZmswMnJkLUVtazM2b19PWjN5UUhOY0t1c3habXVuRHZNbk1McU0xZVVNQkRoWFZkMVktRThHM1pJSzdaVHlobjZXOVlHUzZNQzJZZy1ub1NLdDMyQnpocm1ZNWM3Zk5OQlVXYlJKdHp0UXdmTWxIMFBrcnVPRkZ5SFFQdHBmdFZzdG9tWlJnSENWWUxiUHBObnBEMWFoYVZ6ZlFDVzhRd29MdDJiSnc?oc=5" target="_blank" rel="noopener">[The Economist] Who wrangled the best trade deal from Donald Trump?</a>
+                    <span class="sector-tag">贸易</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">地缘政治</span>
+                    <span class="sector-tag">债券市场</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国12月消费者支出放缓</li>
+                <li>中国1月CPI同比上涨低于预期，PPI持续通缩</li>
+                <li>福特第四季度盈利低于预期，关税损失9亿美元</li>
+                <li>香港推进稳定币牌照计划</li>
+                <li>特朗普关税政策面临国会反对</li>
+                <li>亚洲股市上涨，忽略美国疲软数据</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
