@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-13 06:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-13 06:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场关注美国政策变动与通胀数据，科技股财报表现分化，人工智能领域持续吸引巨额投资，整体情绪偏向谨慎。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美国环保政策逆转，汽车与能源行业面临变局</div>
+                <div class="topic-title-en">US Climate Policy Reversal Impacts Auto and Energy Sectors</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    特朗普政府撤销EPA关于温室气体的危害认定，这是对气候监管框架的重大冲击。此举短期内可能降低汽车制造商合规成本并提振传统能源股，但长期将增加政策不确定性，并可能延缓向电动汽车的转型进程。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cn0zdd7yl4vo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Trump revokes key climate ruling which he says has made cars pricier</a>
+                    <a href="https://www.cnbc.com/2026/02/12/trump-epa-endangerment-finding-climate-change-greenhouse-gas.html" target="_blank" rel="noopener">[CNBC] Trump revokes EPA finding on greenhouse gas threat in huge blow to climate change regulations</a>
+                    <a href="https://www.cnbc.com/2026/02/12/epa-climate-change-automakers.html" target="_blank" rel="noopener">[CNBC] What the EPA's flip on climate change means for automakers</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">传统能源</span>
+                    <span class="sector-tag">清洁能源</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>科技股财报季表现剧烈分化，市场反应不一</div>
+                <div class="topic-title-en">Tech Earnings Season Shows Sharp Divergence, Mixed Market Reactions</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Rivian、Instacart和Airbnb因业绩超预期及乐观指引股价大涨，显示消费者和特定科技领域需求强劲。然而，Pinterest业绩不及预期且指引疲软，Cisco因内存成本压力导致利润率担忧而暴跌，揭示了科技行业内部的结构性挑战和竞争压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/rivian-automotive-rivn-earnings-q4-2025.html" target="_blank" rel="noopener">[CNBC] Rivian stock rises 15% as automaker tops Q4 expectations, targets significant production increase</a>
+                    <a href="https://www.cnbc.com/2026/02/12/instacart-cart-q4-2025-earnings.html" target="_blank" rel="noopener">[CNBC] Instacart stock pops 14% on revenue beat, optimistic guidance</a>
+                    <a href="https://www.cnbc.com/2026/02/12/pinterest-pins-q4-earnings-report-2025.html" target="_blank" rel="noopener">[CNBC] Pinterest shares tank 20% on earnings miss, weak guidance</a>
+                    <a href="https://www.cnbc.com/2026/02/12/cisco-stock-has-worst-day-since-2022-as-memory-prices-pressure-margins.html" target="_blank" rel="noopener">[CNBC] Cisco stock has worst day since 2022 as memory prices pressure margins</a>
+                    <span class="sector-tag">电动汽车</span>
+                    <span class="sector-tag">电商配送</span>
+                    <span class="sector-tag">在线旅游</span>
+                    <span class="sector-tag">社交媒体</span>
+                    <span class="sector-tag">网络设备</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>AI领域融资热潮持续，但安全与商业模式担忧浮现</div>
+                <div class="topic-title-en">AI Funding Boom Continues Amid Safety and Business Model Concerns</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    Anthropic以3800亿美元估值完成300亿美元巨额融资，显示资本仍疯狂追逐头部AI初创公司。与此同时，AI安全领域负责人因担忧离职转投诗歌研究，AWS CEO称对软件AI的恐惧被夸大，突显出行业在狂热发展中对长期风险与伦理的深刻分歧。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/anthropic-closes-30-billion-funding-round-at-380-billion-valuation.html" target="_blank" rel="noopener">[CNBC] Anthropic closes $30 billion funding round as cash keeps flowing into top AI startups</a>
+                    <a href="https://www.bbc.com/news/articles/c62dlvdq3e3o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] AI safety leader says 'world is in peril' and quits to study poetry</a>
+                    <a href="https://www.cnbc.com/2026/02/12/aws-ceo-garman-software-ai-fears.html" target="_blank" rel="noopener">[CNBC] AWS CEO Garman says software AI fears are 'overblown'</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">风险投资</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>关键经济数据发布在即，市场聚焦通胀与住房市场</div>
+                <div class="topic-title-en">Key Economic Data Looming, Market Focus on Inflation and Housing</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国1月CPI报告即将公布，其结果将直接影响美联储的货币政策路径。与此同时，1月成屋销售骤降超8%，被描述为一场“新的住房危机”，表明高利率环境持续对房地产市场构成压力，可能拖累整体经济增长。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/the-january-cpi-inflation-report-is-due-out-friday-morning-heres-what-its-expected-to-show.html" target="_blank" rel="noopener">[CNBC] The January CPI inflation report is due out Friday morning. Here's what it's expected to show</a>
+                    <a href="https://www.cnbc.com/2026/02/12/january-homes-sales.html" target="_blank" rel="noopener">[CNBC] Realtors report a 'new housing crisis' as January home sales tank more than 8%</a>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>能源板块领涨标普500，数据中心需求推高电价</div>
+                <div class="topic-title-en">Energy Sector Leads S&P 500, Data Center Demand Drives Up Electricity Prices</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    能源板块成为年初至今标普500表现最佳的板块，其驱动力不仅来自油价上涨。数据中心和AI计算需求激增导致电力消耗大幅增长，分析师预计电价上涨速度将是通胀率的两倍，且短期内无缓解迹象，这为公用事业和能源生产商带来机遇，但增加了科技和制造业的成本压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/why-energy-is-the-best-performing-sector-in-the-s-p-500-so-far-this-year-78bafd05?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Energy is the best-performing sector in the S&P 500 so far this year — and it’s not just because of the rise in oil prices</a>
+                    <a href="https://www.cnbc.com/2026/02/12/electricity-price-data-center-ai-inflation-goldman.html" target="_blank" rel="noopener">[CNBC] Electricity prices rising by double the rate of inflation. Data center demand means no relief ahead, analysts say</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">公用事业</span>
+                    <span class="sector-tag">数据中心</span>
+                    <span class="sector-tag">科技制造</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>英国经济增长乏力，财政大臣面临压力</div>
+                <div class="topic-title-en">Sluggish UK GDP Growth Puts Pressure on Chancellor</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    英国最新GDP数据显示增长疲软，财政大臣里夫斯承认“还有更多工作要做”。这表明英国经济复苏动能不足，可能迫使政府考虑新的刺激措施。结合苏格兰威士忌出口下降而三文鱼出口保持高位的报道，显示出英国经济内部及出口市场的结构性不平衡。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4gjmm7dlggo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Reeves says 'more to do' after sluggish GDP growth</a>
+                    <a href="https://www.bbc.com/news/articles/ce94gpk79gyo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Salmon exports remain high but Scotch whisky falls</a>
+                    <span class="sector-tag">英国整体经济</span>
+                    <span class="sector-tag">食品饮料出口</span>
+                    <span class="sector-tag">公共服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>媒体并购面临审查，公共服务外包承压</div>
+                <div class="topic-title-en">Media M&A Under Scrutiny, Public Service Outsourcing Under Strain</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    英国监管机构已下令对《每日邮报》所有者5亿英镑收购《每日电讯报》的交易进行调查，凸显媒体集中化引发的政治与监管风险。同时，Capita公司因处理积压的公务员养老金而“不堪重负”，暴露出大型公共服务外包合同的执行风险和潜在的财务影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/czj17w3n1e8o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Probe ordered into Daily Mail owner's £500m takeover of Telegraph</a>
+                    <a href="https://www.bbc.com/news/articles/c5yg54750gdo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Civil service pension backlog 'overwhelmed' Capita, boss says</a>
+                    <span class="sector-tag">媒体</span>
+                    <span class="sector-tag">外包服务</span>
+                    <span class="sector-tag">金融行政</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>特定行业困境凸显：药店负债与律师事务所倒闭</div>
+                <div class="topic-title-en">Sector-Specific Strains: Pharmacy Debt and Law Firm Collapse</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    英国药店因成本飙升而难以维持运营，有药剂师累积高达14.5万英镑债务，反映了医疗零售端面临的通胀和资金压力。同时，一家律师事务所倒闭影响“数万人”，凸显专业服务行业在经济波动中的脆弱性，可能引发对相关行业信贷风险的关注。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c3wzvd5l36yo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] 'I racked up £145k of debt' - pharmacists struggling to stay afloat as costs soar</a>
+                    <a href="https://www.bbc.com/news/articles/cj6dk0845n7o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] 'Tens of thousands' affected by law firm collapse</a>
+                    <span class="sector-tag">药店零售</span>
+                    <span class="sector-tag">法律服务</span>
+                    <span class="sector-tag">中小企业信贷</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国1月成屋销售环比下降超过8%</li>
+                <li>1月CPI通胀报告即将公布</li>
+                <li>Anthropic以3800亿美元估值完成300亿美元融资</li>
+                <li>英国经济增长疲软，财政大臣承诺采取更多行动</li>
+                <li>电力价格涨幅是整体通胀率的两倍</li>
+                <li>Rivian计划显著提高产量</li>
+                <li>苏格兰威士忌出口下降，三文鱼出口保持高位</li>
+                <li>美国参议院阻止国土安全部拨款，政府关门风险上升</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
