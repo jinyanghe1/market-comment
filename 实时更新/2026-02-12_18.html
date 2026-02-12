@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-12 18:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-12 18:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在贸易紧张局势和人工智能热潮中呈现混合态势，经济数据温和但企业业绩分化。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>贸易紧张与地缘政治风险加剧</div>
+                <div class="topic-title-en">Escalating Trade Tensions and Geopolitical Risks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国众议院投票推翻特朗普对加拿大关税，但州级关税法案增加，显示贸易政策不确定性持续。梅赛德斯等汽车制造商受关税成本重创，而中国工厂在关税下保持活跃，凸显供应链韧性。伊朗紧张局势和台湾问题增添地缘政治风险，可能影响全球能源和科技市场。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/11/gop-trump-tariffs-canada.html" target="_blank" rel="noopener">[CNBC] House votes to override Trump's Canada tariffs</a>
+                    <a href="https://www.cnbc.com/2026/02/12/mercedes-earnings-autos-tariffs-luxury-china.html" target="_blank" rel="noopener">[CNBC] Mercedes hit by $1.2 billion in tariff costs as full-year earnings more than halve</a>
+                    <a href="https://www.cnbc.com/2026/02/12/trump-tariffs-cny-chinese-factories-and-ports-are-buzzing-with-activity.html" target="_blank" rel="noopener">[CNBC] A year into Trump tariffs, Chinese factories and ports are buzzing with activity</a>
+                    <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxQOGxXdFpNZnVwV2lTSkhyd1IzRWxPb3FRaGNxOTM0dXlLNnFiNDFiZkJkanQ1djI2SFBKRVNOZUpSOFd6N2FNcXk3V1RabDJqSTdVU055SzdxaEVrNDBzWVdUa0k3Yy1FQklpZjFMbG5pa0Q5WE15d0NhbHcxeEJfQmJ0b0Ryb2dKdnlibHF5VlBkZW0wZjQyTUNVWFlGNjZpMUw1Z1ZFeFB2T0kt?oc=5" target="_blank" rel="noopener">[Bloomberg] US House Defies Trump and Votes to End His Canada Tariffs</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">制造业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>人工智能热潮推动科技股表现</div>
+                <div class="topic-title-en">AI Boom Fuels Technology Stock Performance</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    软银通过OpenAI投资获利42亿美元，显示AI投资回报显著。中国AI股票如Zhipu因新模型发布上涨30%，低成本AI模型涌现可能加剧竞争。西门子因AI需求提升利润展望，股价上涨7%，表明AI正渗透传统工业，但Unity等公司因AI担忧股价暴跌，反映市场对泡沫的警惕。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/softbank-vision-fund-openai.html" target="_blank" rel="noopener">[CNBC] SoftBank books $4.2 billion gain on OpenAI bet, boosting its Vision Fund</a>
+                    <a href="https://www.cnbc.com/2026/02/12/chinese-ai-stocks-new-model-and-agent-releases-zhipu-minimax.html" target="_blank" rel="noopener">[CNBC] Zhipu leads rally in Chinese AI stocks, surging 30% as a wave of new releases hits market</a>
+                    <a href="https://www.cnbc.com/2026/02/12/european-markets-stoxx-600-ftse-dax-cac-siemens-loreal-earnings.html" target="_blank" rel="noopener">[CNBC] Siemens shares jump 7% as AI demand boosts profit outlook</a>
+                    <a href="https://www.investing.com/news/stock-market-news/a-year-on-from-deepseek-shock-get-set-for-flurry-of-lowcost-chinese-ai-models-4501688" target="_blank" rel="noopener">[Investing.com] A year on from DeepSeek shock, get set for flurry of low-cost Chinese AI models</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">工业制造</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>经济数据温和增长但存隐忧</div>
+                <div class="topic-title-en">Moderate Economic Growth with Underlying Concerns</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    英国第四季度GDP仅增长0.1%，显示经济疲软。美国1月新增就业13万人，失业率降至4.3%，表明劳动力市场稳健但增长放缓。这些数据可能影响央行货币政策，英国经济困境在加剧，对欧洲市场构成压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4gjmm7dlggo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] UK economy grew by 0.1% in final quarter of 2025</a>
+                    <a href="https://news.google.com/rss/articles/CBMijANBVV95cUxORVZXWDM0cjF6UmNPU3Y4SmJjWHhEVFBVbmlJeVRIQWZTQUhEQ0RqbFZYS2stMFR4bFZrakd5Y0N2bTRLdi1RNTJfS0NsTy1nd2lscW5lRDFUbzQzeUxDQzFjS0J1R2s5cDBXT1BPMEpXLU5raFFqYkItZHJDTDhmbHgxc2ZEaElVa2UxN1M4WGlXZnRXNVlWYUtfLUg2ZFpQbl92dmFtSjNZS2RsbGVzWnAtemxSdHlTNmcxUW1QbG9lMGgwZGZLcnloUEZZckpXaWRiMTRyaEIyX3h5ak80Ty1tblp2TERGdWR1NmhEbUFtQUdJeGVIaHRFYVBIOXhqS1Z3SlhyMElnZDhnMGtHbW55b3pEbnB0VUtDaWlkM3VVUzZ5YUlPTGpfeHZnT2Q3M0xZX21jODZWMHZNMnVZUTRFYVJGNlFKNTFfem96dEVLQzdMd09xN1dlUDBzNTlLYzFlS3NtdTVYbjJNTGRSVTJ3cjlBYXVHT1puZS02dEwxaVhSNzZjVkZfOV8?oc=5" target="_blank" rel="noopener">[Barrons] The U.S. Added 130,000 Jobs in January. Unemployment Rate Ticks Down to 4.3%.</a>
+                    <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQbnY3T0FyRGRfZHB5cDRrNGg0NWtxLWZLcFBIVGxWTDBYOGhPcmxjUVNHSFVJbUt2bVVDbUZsWUFkR2dwV0dEVDFkSGp6NUVaanlLb0k1Z1NCQWtBdnVwWWpEaHp0NUdtcnFHYlRJdDNnRFNpcFo5TUpBSE4tVHRLUVo5a1Y1dGdrV2s0VUJoYmZNR0M5cmZSSG53YVA2Y05iTDB4eQ?oc=5" target="_blank" rel="noopener">[Economist] Britain’s predicament will get worse before it gets better</a>
+                    <span class="sector-tag">整体经济</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">消费</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>企业财报季表现分化，市场反应剧烈</div>
+                <div class="topic-title-en">Corporate Earnings Season Shows Divergence with Volatile Market Reactions</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    McDonald’s通过价值推动盈利超预期，而Adyen财报后股价暴跌20%，Unity因AI担忧股价重挫。Vertiv因业绩打消AI贸易失去动力的担忧股价飙升25%，显示投资者对AI基础设施信心。Cisco尽管财报乐观但股价下跌，反映市场对科技股估值敏感。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/11/mcdonalds-mcd-q4-2025-earnings.html" target="_blank" rel="noopener">[CNBC] McDonald’s earnings beat estimates as chain’s value push pays off</a>
+                    <a href="https://www.cnbc.com/2026/02/12/adyen-stock-price-earnings.html" target="_blank" rel="noopener">[CNBC] Adyen plummets as much as 20% after earnings report</a>
+                    <a href="https://news.google.com/rss/articles/CBMi_gJBVV95cUxQUFQ4dmg2MVBEc1hiNE1aWXlGb2VqTm9iTDVjdkC5X2h2Mlp6NS0xODRreFVIRG1lR2tKTktscnRUYkV6dnkwampEQWJoVTg4eHVnN2s2aUdQbHlaaWd6cXhhaWlXczluc3M1eUZFVGJpQzMtNGstNDVPZlQwU3FHaDJqZ1NialdPUmViZ2tKRGYzblViYkVNbnlUbThyNDBZSncyZVI4S25aMWJzZU8zVzlIdDVrZW1Ra2dTX1VLXzRVOVhPbVBac0k2ZmJ2c2RrS0pKMTFUTWp0R19MRmJ5ZmJKUlhxa1A3anM1NEF3VUhzR1JlZ0RGTnFtU3luZ0ZRVm9ESjhyRXJ1bXJmclluVEo3UnNKZS1nNTB5b2U5bmVRdFFISF91RjJoSDQySGFWMWZpYTFRUTVjVnA3c3lfd2VVZUlpanJzT2RmVTl4eDBrWmRiQi1lT21PYXdRd0JOSU1BajRPZDZRcTRXMVExR1RXY3RvUnZxNm1QRHd3?oc=5" target="_blank" rel="noopener">[Barrons] Vertiv Stock Soars 25%. Earnings Shake Off Concerns the AI Trade Is Losing Steam.</a>
+                    <a href="https://www.marketwatch.com/story/ciscos-stock-falls-as-investors-pan-a-seemingly-upbeat-earnings-report-17f46ba4?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Cisco’s stock falls as investors pan a seemingly upbeat earnings report</a>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">工业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>资产管理行业巨头并购案重塑格局</div>
+                <div class="topic-title-en">Asset Management Giant M&A Reshapes Landscape</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    Nuveen以140亿美元收购英国老牌资产管理公司Schroders，后者股价上涨28%。此次并购将创建资产管理巨头，可能引发行业整合潮，影响全球资管市场竞争和投资者选择，对金融板块产生深远影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/nuveen-schroders-asset-management-takeover.html" target="_blank" rel="noopener">[CNBC] UK's Schroders pops 28% on Nuveen takeover that's set to create asset management giant</a>
+                    <a href="https://www.marketwatch.com/story/a-222-year-old-u-k-firm-to-fall-into-american-hands-as-nuveen-to-buy-schroders-for-14-billion-f49f56cc?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] A 222-year-old U.K. firm to fall into American hands as Nuveen to buy Schroders for $14 billion</a>
+                    <span class="sector-tag">资产管理</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>美元避险属性受挑战，货币市场波动</div>
+                <div class="topic-title-en">Dollar's Safe-Haven Status Challenged, Currency Market Volatility</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    货币策略师质疑美元作为避险资产的神话，指出在风险事件中美元并非总是上涨。这可能影响外汇市场策略，推动投资者分散货币风险，对黄金和其他避险资产构成利好，增加货币市场不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/currency-strategist-who-incurred-bessents-wrath-exposes-safe-haven-myth-of-the-dollar-b4e1125d?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Currency strategist who incurred Bessent’s wrath exposes safe-haven myth of the dollar</a>
+                    <span class="sector-tag">外汇</span>
+                    <span class="sector-tag">黄金</span>
+                    <span class="sector-tag">避险资产</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>英国第四季度GDP增长0.1%</li>
+                <li>美国1月新增非农就业13万人，失业率降至4.3%</li>
+                <li>梅赛德斯因关税成本损失12亿美元，全年收益减半</li>
+                <li>软银通过OpenAI投资获利42亿美元</li>
+                <li>Schroders因Nuveen收购案股价上涨28%</li>
+                <li>Adyen财报后股价暴跌20%</li>
+                <li>西门子因AI需求利润展望提升，股价上涨7%</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
