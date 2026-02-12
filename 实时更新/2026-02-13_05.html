@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-13 05:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-13 05:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在关键通胀数据公布前情绪谨慎，科技股受盈利压力和AI热潮降温拖累，同时能源与气候政策转向带来新的不确定性。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>科技股承压，思科等财报引发对硬件盈利能力的担忧</div>
+                <div class="topic-title-en">Tech Stocks Under Pressure as Earnings from Cisco and Others Raise Concerns Over Hardware Profitability</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    思科因内存成本压力导致利润率承压，股价创2022年以来最差单日表现，拖累整个科技板块。与此同时，应用光电面临增长可持续性质疑，Check Point软件的目标价遭下调。这表明在AI投资热潮之外，传统硬件和软件公司的基本面正面临成本与需求的双重考验。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/cisco-stock-has-worst-day-since-2022-as-memory-prices-pressure-margins.html" target="_blank" rel="noopener">[CNBC] Cisco stock has worst day since 2022 as memory prices pressure margins</a>
+                    <a href="https://www.marketwatch.com/story/why-ciscos-stock-is-falling-hard-and-taking-the-tech-sector-with-it-83977fb8?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Why Cisco’s stock is falling hard — and taking the tech sector with it</a>
+                    <a href="https://news.google.com/rss/articles/CBMigANBVV95cUxNTk9sOWxsTExXX2VfQlRnT1FGRGJNeWJmNERGUGRnZTRPQ3N5VkFkMElvMFpVeHJwRng0UDNDMVhTejJXNjhqY3p4S1VXUnEwUk12QnRzN0RFSEc4UlViZ2ZZS3FZdDNsemtxX2JJcUpRbkt0WS1iVi1yaVpQM0NqQkdFUHI3ajd3bHJ6QzliV1JkOWtmeUhlTUhTMmFaV2EzaXc3NXRSYVdGS2JnQ0h3Y19xZng2TnhaeTB6bC1CZmdJQWl3RnBnWC1fcjdUQUl0RFNLMVplT2RmemxMak5ZYUJQMEdEbFFwWkpGdHhyaTEyZk12QWpqMEVWZGhRVkJmdGI5ZnQ4R3NiUnc2Yl9JdnNVSWF1WkxXWGJKLS1rcVY2dVhYOVBKZFFqelZTOFU3bmxRMmduako0TUZreXRNS015N1A2bXRUWVNHUkdfUGVmV2hBZDIwZ2lfU2tYTnBvRmNLVkJQMjlMTUZ4ZlAyNjBkaEVQamtURERGLW9pRmU?oc=5" target="_blank" rel="noopener">[Barrons] AppLovin Faces Tough Questions as It Sees Rapid Growth</a>
+                    <span class="sector-tag">科技硬件</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">软件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>美国1月CPI数据在即，市场关注通胀路径与美联储独立性</div>
+                <div class="topic-title-en">Upcoming US January CPI Data in Focus, Markets Watch Inflation Path and Fed Independence</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    1月CPI报告即将公布，市场预期将影响对美联储降息时机的判断。与此同时，德国央行警告称美联储政治独立性的丧失可能加剧全球通胀，增加了长期政策的不确定性。强劲的就业数据未能压制加密货币上涨，显示市场流动性预期复杂。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/the-january-cpi-inflation-report-is-due-out-friday-morning-heres-what-its-expected-to-show.html" target="_blank" rel="noopener">[CNBC] The January CPI inflation report is due out Friday morning. Here's what it's expected to show</a>
+                    <a href="https://www.investing.com/news/economy-news/loss-of-fed-independence-could-push-up-inflation-all-around-the-world-bundesbank-warns-4503914" target="_blank" rel="noopener">[Investing.com] Loss of Fed independence could push up inflation all around the world, Bundesbank warns</a>
+                    <a href="https://news.google.com/rss/articles/CBMiiANBVV95cUxOYWY4bUVQSk9CbmQtQ2JHQXJhVjEzaktoSE1YTEM4YThuX1diWXRVb1dhZ29LNzFzZHo5cHNJd1RuOGlCVWZkTXg5UHB0c0hoc09kRC1yWXFMVVhaRC1HMFdIeXNSTW9ZS2JVeDRHUlA4Rk5CSktaa3NuMWxZTmY0Q1FOaEx3MjhwZ1RVWmN4UHJFZXlWR1ZfSzcxU1RSa21WR2ZwZGNlUU96bXZJUGpEamo2UDN1WFZKeWxGdG9CLVpsckd4dlZLX3Y4SmtLd29QX1VqbzFCeXJHT2VrbFR1UTBCUGNyV0lpNmJkc2dEUHhqbHctbUk4a0FkN3VGWlZYMU1qVlF4VmNqdGpFSm5KUEl5NTAxX3BVQkc5OGhNYXVvclFJVG5aR0JMeGR0ZFpwd2s2dGlNaldiT2lqMVhvSVlEMkVCOGZpeDN1UnpzOW44QXBTV0dZOFNzNnJEcC1NZzNFX3pmaWlKNDhVazYwalRGZjQzWVVpZkNneTZZZWJwNmxCNlhPMA?oc=5" target="_blank" rel="noopener">[Barrons] Bitcoin, XRP, Ether Are Rising. Cryptos Are Shrugging Off Strong Jobs Data.</a>
+                    <span class="sector-tag">整体市场</span>
+                    <span class="sector-tag">债券市场</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>AI领域现分歧：巨额融资与安全担忧并存</div>
+                <div class="topic-title-en">Divergence in AI Sector: Massive Fundraising Coexists with Safety Concerns</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Anthropic以3800亿美元估值完成300亿美元融资，显示顶级AI初创公司仍能吸引巨额资本。然而，AWS CEO警告软件AI恐惧被夸大，同时一位AI安全领袖因担忧风险而辞职，突显行业在狂热发展中对长期安全与伦理的深层次焦虑。私人股本巨头也面临AI带来的商业模式挑战。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/anthropic-closes-30-billion-funding-round-at-380-billion-valuation.html" target="_blank" rel="noopener">[CNBC] Anthropic closes $30 billion funding round as cash keeps flowing into top AI startups</a>
+                    <a href="https://www.marketwatch.com/story/anthropic-is-now-worth-380-billion-and-sharing-new-details-about-how-much-money-it-makes-182e6151?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Anthropic is now worth $380 billion and sharing new details about how much money it makes</a>
+                    <a href="https://www.cnbc.com/2026/02/12/aws-ceo-garman-software-ai-fears.html" target="_blank" rel="noopener">[CNBC] AWS CEO Garman says software AI fears are 'overblown'</a>
+                    <a href="https://www.bbc.com/news/articles/c62dlvdq3e3o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] AI safety leader says 'world is in peril' and quits to study poetry</a>
+                    <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxON1pyOHYzcjVROHVrQlNPbEwzajRTUlBMV3NkZjBiVGx4Vk02NGpZWTlvSjRTc3dCQlZnenAtQUw0YWtfVnpvMWpHTE1sNWl4bjk2eFdmaHJVNnFYeGtrM2s5b3plb2ZmeGdBRlZwWGY5WnF2aHBYaElnX0loV2kwUEdQRHBkX2VWeWliQ25qNzZVVWNfOGc?oc=5" target="_blank" rel="noopener">[The Economist] Private-equity barons have a giant AI problem</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">软件即服务</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">风险投资</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>特朗普政府撤销EPA气候危害认定，冲击汽车与能源业</div>
+                <div class="topic-title-en">Trump Administration Revokes EPA Climate Endangerment Finding, Impacting Auto and Energy Sectors</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    特朗普撤销EPA关于温室气体危害的认定，这是对气候法规的重大打击。此举将直接减轻汽车制造商的排放合规压力，可能延缓电动汽车转型，但同时会增加政策不确定性和潜在的长期气候风险。电力需求因数据中心和AI激增，价格涨幅是通胀的两倍，能源转型路径更趋复杂。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/trump-epa-endangerment-finding-climate-change-greenhouse-gas.html" target="_blank" rel="noopener">[CNBC] Trump revokes EPA finding on greenhouse gas threat in huge blow to climate change regulations</a>
+                    <a href="https://www.cnbc.com/2026/02/12/epa-climate-change-automakers.html" target="_blank" rel="noopener">[CNBC] What the EPA's flip on climate change means for automakers</a>
+                    <a href="https://www.cnbc.com/2026/02/12/epa-endangerment-finding-repeal.html" target="_blank" rel="noopener">[CNBC] How EPA 'endangerment finding' repeal could impact your wallet</a>
+                    <a href="https://www.cnbc.com/2026/02/12/electricity-price-data-center-ai-inflation-goldman.html" target="_blank" rel="noopener">[CNBC] Electricity prices rising by double the rate of inflation. Data center demand means no relief ahead, analysts say</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">能源（传统）</span>
+                    <span class="sector-tag">公用事业</span>
+                    <span class="sector-tag">可再生能源</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>英国经济与监管动态：GDP增长乏力，媒体并购受调查</div>
+                <div class="topic-title-en">UK Economic and Regulatory Dynamics: Sluggish GDP Growth, Media M&A Under Probe</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    英国财政大臣承认GDP增长乏力后表示'仍需努力'，反映经济复苏动能不足。与此同时，监管机构下令调查《每日邮报》所有者对《每日电讯报》的5亿英镑收购案，凸显媒体集中度引发的担忧。民用服务养老金积压问题拖累Capita，显示公共服务外包风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4gjmm7dlggo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Reeves says 'more to do' after sluggish GDP growth</a>
+                    <a href="https://www.bbc.com/news/articles/czj17w3n1e8o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Probe ordered into Daily Mail owner's £500m takeover of Telegraph</a>
+                    <a href="https://www.bbc.com/news/articles/c5yg54750gdo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Civil service pension backlog 'overwhelmed' Capita, boss says</a>
+                    <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNODVDZEZmaEVkN3A0Um5xVm1PN2Y3aDhaMkpoSUoyT19HWkxFYkxEeHl4Q2JEX3lCRWE2WXpldnRZa1dJTjJFd0RWb2R2RllXcWFoN1hTV3VZcnZDTzU4a1JQZ1dYTl94WmdWQ1FpTTJhM09jQ3ZpUENxbWNKOTgwNWFFc0NuSkk1aEZUUWcyVWY3VlEwOUpFMGFiQjZJT1BfMXFWOA?oc=5" target="_blank" rel="noopener">[The Economist] Britain’s “Hillsborough law”, pledging candour, is avoiding it</a>
+                    <span class="sector-tag">英国经济（宏观）</span>
+                    <span class="sector-tag">媒体出版</span>
+                    <span class="sector-tag">商业服务</span>
+                    <span class="sector-tag">金融（养老金）</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>加密货币与金融科技：交易平台故障与股价异常关联</div>
+                <div class="topic-title-en">Cryptocurrency and Fintech: Exchange Outages and Abnormal Stock Correlation</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    Coinbase出现短暂交易中断，影响客户买卖和转账，暴露了关键金融基础设施的可靠性风险。同时，Robinhood股价走势与比特币高度相关，分析认为这种关联性缺乏基本面支撑，可能预示着市场投机情绪浓厚和估值扭曲。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/coinbase-says-some-customers-were-unable-to-buy-sell-transfer-amid-brief-thursday-disruption-ee38d375?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Coinbase says some customers were ‘unable to buy, sell, transfer’ amid brief Thursday disruption</a>
+                    <a href="https://www.marketwatch.com/story/robinhoods-stock-is-now-trading-almost-exactly-like-bitcoin-but-it-really-shouldnt-be-a9a88715?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Robinhood’s stock is now trading almost exactly like bitcoin — but it really shouldn’t be</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">证券交易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>特定行业动态：能源板块领涨，锂电与减肥药受关注</div>
+                <div class="topic-title-en">Sector-Specific Dynamics: Energy Leads, Lithium and Weight-Loss Drugs in Focus</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    能源板块成为标普500年内表现最佳板块，驱动因素不仅是油价，还包括强劲的基本面和资本纪律。Oppenheimer基于锂前景上调雅宝目标价，显示对电动车供应链长期信心。礼来为减肥药提前囤积15亿美元库存，押注FDA批准和市场爆发，凸显制药巨头对代谢疾病赛道的激进布局。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/why-energy-is-the-best-performing-sector-in-the-s-p-500-so-far-this-year-78bafd05?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Energy is the best-performing sector in the S&P 500 so far this year — and it’s not just because of the rise in oil prices</a>
+                    <a href="https://www.investing.com/news/analyst-ratings/oppenheimer-raises-albemarle-stock-price-target-to-216-on-lithium-outlook-93CH-4503915" target="_blank" rel="noopener">[Investing.com] Oppenheimer raises Albemarle stock price target to $216 on lithium outlook</a>
+                    <a href="https://www.investing.com/news/stock-market-news/eli-lilly-builds-15-billion-stockpile-of-weightloss-pill-ahead-of-fda-decision-4503907" target="_blank" rel="noopener">[Investing.com] Eli Lilly builds $1.5 billion stockpile of weight-loss pill ahead of FDA decision</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">锂/原材料</span>
+                    <span class="sector-tag">生物制药</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>房地产市场预警：销售骤降引发“新住房危机”担忧</div>
+                <div class="topic-title-en">Real Estate Market Warning: Plunging Sales Spark Fears of a 'New Housing Crisis'</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    房地产经纪人报告称1月房屋销售量暴跌超8%，并警告可能出现“新住房危机”。高利率、高房价和库存不足持续抑制市场活动，若销售疲软趋势延续，将拖累建筑、建材、家居零售等相关行业，并对消费信心产生负面影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/january-homes-sales.html" target="_blank" rel="noopener">[CNBC] Realtors report a 'new housing crisis' as January home sales tank more than 8%</a>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">住宅建筑</span>
+                    <span class="sector-tag">银行业（抵押贷款）</span>
+                    <span class="sector-tag">家居零售</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国1月CPI数据即将公布</li>
+                <li>思科股价创2022年来最大跌幅</li>
+                <li>Anthropic估值达3800亿美元</li>
+                <li>美国1月房屋销售暴跌超8%</li>
+                <li>英国GDP增长乏力</li>
+                <li>能源板块年内领涨标普500</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
