@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-12 21:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-12 21:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在AI热潮与贸易紧张中分化，经济数据疲软但企业盈利参差不齐，投资者情绪趋于谨慎。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI发展与市场影响</div>
+                <div class="topic-title-en">AI Development and Market Implications</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    AI技术推动Siemens等工业公司展望提升，但Alphabet发行百年债券引发对AI军备竞赛债务风险的担忧，同时AI研究员警告潜在危机并退出领域，显示行业面临融资与监管双重挑战。投资应关注具备实际AI应用的稳健企业，避免过度杠杆化。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c62dlvdq3e3o" target="_blank" rel="noopener">[BBC] AI researcher says 'world is in peril' and quits to study poetry</a>
+                    <a href="https://www.cnbc.com/2026/02/12/alphabet-100-year-bond-debt-fears-ai-credit-risk.html" target="_blank" rel="noopener">[CNBC] Why Alphabet’s 100-year sterling bond is raising new fears over debt-fuelled AI arms race</a>
+                    <a href="https://www.marketwatch.com/story/siemens-boosts-outlook-as-ai-orders-pour-in-and-its-software-business-defies-gloom-e4141bf5" target="_blank" rel="noopener">[MarketWatch] Siemens boosts outlook as AI orders pour in and its software business defies gloom</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">工业自动化</span>
+                    <span class="sector-tag">金融服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>全球贸易紧张与关税影响</div>
+                <div class="topic-title-en">Global Trade Tensions and Tariff Impacts</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国对加拿大关税的争议及Mercedes因关税成本导致盈利减半，凸显贸易政策直接冲击企业利润；中国禁止低于成本汽车销售以结束价格战，可能稳定行业但抑制消费者需求。投资者需警惕贸易摩擦升级对全球供应链和汽车制造业的负面影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/11/gop-trump-tariffs-canada.html" target="_blank" rel="noopener">[CNBC] House votes to override Trump's Canada tariffs</a>
+                    <a href="https://www.cnbc.com/2026/02/12/mercedes-earnings-autos-tariffs-luxury-china.html" target="_blank" rel="noopener">[CNBC] Mercedes hit by $1.2 billion in tariff costs as full-year earnings more than halve</a>
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPZFBfR21MN1NHXzc2a1R5dHNzc2w2UTFVVDRzdjUwYjB1N1BtTTNaTDBmTnVZa1R1aWgweTJIZ28zLTFYNGVKSlJMT0V0MDFqUHJOcXFHWVNTV2JFQUx3bUxvUlA5QURYSGw5bUFHZXpvMTY1Ym43a3Rnek94MmlNaDByTzFkN0J1eDVsSi1tS1dhem9lcmM5OFpvZEhJZjFXa01Qb1ItMm5ITTRxX3c" target="_blank" rel="noopener">[Bloomberg] China Bans Below-Cost Car Sales to End Prolonged Price War</a>
+                    <span class="sector-tag">汽车</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">国际贸易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>经济展望与市场情绪</div>
+                <div class="topic-title-en">Economic Outlook and Market Sentiment</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    英国GDP增长疲软及中国经济通缩风险加剧全球增长担忧，但“旧经济”板块因数据和AI反弹而受热捧，反映市场分化。投资者应关注宏观经济指标变化，适度配置防御性资产，同时把握工业等传统行业的复苏机会。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4gjmm7dlggo" target="_blank" rel="noopener">[BBC] Reeves says 'more to do' after sluggish GDP growth</a>
+                    <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQbnY3T0FyRGRfZHB5cDRrNGg0NWtxLWZLcFBIVGxWTDBYOGhPcmxjUVNHSFVJbUt2bVVDbUZsWUFkR2dwV0dEVDFkSGp6NUVaanlLb0k1Z1NCQWtBdnVwWWpEaHp0NUdtcnFHYlRJdDNnRFNpcFo5TUpBSE4tVHRLUVo5a1Y1dGdrV2s0VUJoYmZNR0M5cmZSSG53YVA2Y05iTDB4eQ" target="_blank" rel="noopener">[Economist] Britain’s predicament will get worse before it gets better</a>
+                    <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQMU9PVFVUSWlrQ0RFT0FWOGpzTFlzT2FOc2phdUZwdEk3LURuN2ZON2pZY1RlYU9sT1RZZFp6UEVacU9WeGxuaFZTZFYwQVBKU0FFRHhuUXJxRXpNMzk1WHp3RUFzbkpqZmF6QW5rT3FtZDZwWWlDRmY5VW5CWFUwZktPUW1iajNaVTEwYXNBckNWSUItTVJXU1lnMkgwa2tpUUN6RHVVdVo4dmMteU1V" target="_blank" rel="noopener">[Bloomberg] ‘Old Economy’ Is Hot Again, Propelled by Data and AI Backlash</a>
+                    <span class="sector-tag">宏观经济</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">工业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>企业盈利与行业表现</div>
+                <div class="topic-title-en">Corporate Earnings and Sector Performance</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Restaurant Brands等公司盈利超预期，但Shopify因软件担忧不及预期股价大跌，Vertiv则因AI关联业绩飙升，显示AI对特定公司提振显著。投资者需甄别各行业盈利质量，聚焦现金流稳定且受益于技术趋势的企业。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/restaurant-brands-international-qsr-q4-2025-earnings.html" target="_blank" rel="noopener">[CNBC] Restaurant Brands earnings top estimates as international Burger King restaurants fuel sales growth</a>
+                    <a href="https://news.google.com/rss/articles/CBMi_wJBVV95cUxNZE9WMVhJbnhVNUV6Tm5WR1ByaFpiR3VYYnhWNUZORkpCN2U1TmVmTU4zcENtRmpwLTZBUEtGWllxeVdHSEdTX2Z4aXVrLWJCYU5kRHFTMUNaUDZ2ckNBVXBoTUVCZ2htaERqekpzdkMtend1TFpzbk04S09feVBpbF9nLVN1SGh6R1M1Q2FWelNzVm1OalVFc284dU5xSTNQejlwZ0FfNU9hUFZyRWVvczdiUldmT1p5RFl2WDRNdTNCQnNzY1BxQU1oeFF6bVVNRHhrWEpCaG85b3h6Y2RYVWxnUDA1WjBja3pWRUJnZDJxTjFnSk9yZ2JmbEN3Tlo3UHBIZjA5TVZkcXRRMmhGUFFNNEhlWXpPdDBUbDhvSGtwSjY2dFpSNGtDLURvVXRrTHphM2M4WXZGdmRXOFZiWmtsd0NoLVBNNjR2bUNteVRGRFdMY0U1WFdwTFJTcjc4NGt3MW5UQXFXVk9wdEFoTjNvTW5Zd2x5bWs0REZwaw" target="_blank" rel="noopener">[Barrons] Shopify Stock Slumps on Earnings Miss. Software Worries Are Why.</a>
+                    <a href="https://news.google.com/rss/articles/CBMi_gJBVV95cUxOSjBlVGczZzRhX2hwTzUzUDFVQmluVlBkVVRlYmhyT3JxOWxzeFdtZkItRGJ2R3RnYk03WnpWM0VGV2xoR1hzTWlRdEpzNFhpZmlLSkhtd3NCU242WUdxQ0JZQnZNWjdHMFM3Wk9ZYTVEWHI4ZGUyYmZhQ3UxYzZMb3lRZzhubGxtc2NfeVBaMTBIZ19yTFhtTlFISkM0T1RVcGEyaGg0U2lvenBGZlRqSHkxcEhOX0xybWdoY1NkTVJ0MDRrYXlBQURldWhxRU92UFlFOHBEeUxKUmlzYVRKMVBsZHhtOS1wMG5KUUhVcjQyZ1k5WlRwTlY0TFpPTGNnelFnelI2YmZDZWlGUlMzLXpfV1lDcXpBaXl3STRIZjBTbk4wZnVhaHI4dmJ1TmdlMG1DbzhHMllJU2FmaTZ4bUhlMjNrUXFOOEEzcDNUUC1MZkp6T2tEZV8yN0dONHV5N1oyQkl4cjRmNkxRQmZmdzNERHFvcnptTEdTU2Zn" target="_blank" rel="noopener">[Barrons] Vertiv Stock Soars 25%. Earnings Shake Off Concerns the AI Trade Is Losing Steam.</a>
+                    <span class="sector-tag">餐饮</span>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">工业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>监管变化与政治动向</div>
+                <div class="topic-title-en">Regulatory Changes and Political Moves</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Anthropic资助AI监管团体以影响选举，特朗普命令Pentagon购买煤炭电力可能重塑能源格局，德国保护国防公司免受中美影响，凸显地缘政治风险。投资者需关注政策变动对科技、能源和国防板块的长期影响，规避不确定性高的领域。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/anthropic-gives-20-million-to-group-pushing-for-ai-regulations-.html" target="_blank" rel="noopener">[CNBC] Anthropic gives $20 million to group pushing for AI regulations ahead of 2026 elections</a>
+                    <a href="https://www.cnbc.com/2026/02/11/trump-orders-pentagon-to-buy-power-from-coal-plants.html" target="_blank" rel="noopener">[CNBC] Trump orders Pentagon to buy power from coal plants</a>
+                    <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcDhmWHJwZzZxMlZCNk1US2ZIb2JYcVp6NmY1UGtRak5pYkhUOUtHZnQtdVZVY2NHX0lqZ2VaclVIdC1BTTFUZUptTE9QS0hCSGZHbTcwdTJQWThjUTJzTzBwMHQxdkxza3I1U2g3TDYyZXdoeW1vWWJ6aXhIaUh3YUl6U0huT2pVQWV3Y2Q3Umt4MDlvMnk3enJEOWEwdEhBdml6WEVSRS1TWXFwNHQ2NVFlWmd1bUJSc3Aw" target="_blank" rel="noopener">[Bloomberg] Germany Is Trying to Shield Defense Firms From China — and Even the US</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">社交媒体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>金融业并购活动</div>
+                <div class="topic-title-en">Mergers and Acquisitions in Financial Sector</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    Nuveen以140亿美元收购Schroders，标志美国资本大举进入欧洲资产管理市场，可能引发行业整合潮。此举将增强Nuveen的全球竞争力，但对Schroders等传统机构构成压力，投资者可关注金融板块的并购机会和估值重估。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/a-222-year-old-u-k-firm-to-fall-into-american-hands-as-nuveen-to-buy-schroders-for-14-billion-f49f56cc" target="_blank" rel="noopener">[MarketWatch] A 221-year-old U.K. firm to fall into American hands as Nuveen to buy Schroders for $14 billion</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNV3QyZ3VVZ2l0bXdQWUNmakRNVXZWSHRpb3J0Umg3NzFra2pBWWJmTlllekszeXJydUZpUGJFT1Y0SlI4eG9uY1NSZVFDeXRBNy04bnVRb2hEajI5Qm4wMXhGano4aFRlQnN0MUFSemxhTlVmOG1SSVIta3ZocjlZOEg1UHg1MlpYVnRhUlFvdVF1bGl3RGIxMmJsaWV4Mnk0b1ZCUGpEcEM5SWVFZXNyeXZjSkc" target="_blank" rel="noopener">[Bloomberg] Nuveen to Buy City of London Stalwart Schroders for £9.9 Billion</a>
+                    <span class="sector-tag">金融服务</span>
+                    <span class="sector-tag">资产管理</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>英国GDP增长疲软</li>
+                <li>Mercedes因关税成本12亿美元导致全年盈利减半</li>
+                <li>Siemens因AI订单提升业务展望</li>
+                <li>中国禁止低于成本汽车销售以结束价格战</li>
+                <li>Nuveen收购Schroders交易额达140亿美元</li>
+                <li>美国工业股大幅上涨</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
