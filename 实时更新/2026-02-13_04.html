@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-13 04:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-13 04:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场面临多重挑战：政策转向引发行业震荡，AI热潮与能源压力并存，房地产与科技股波动加剧。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>特朗普撤销EPA温室气体危害认定，气候政策大转向</div>
+                <div class="topic-title-en">Trump Revokes EPA Endangerment Finding, Major Climate Policy Shift</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    特朗普政府撤销EPA关于温室气体危害的认定，这是美国气候监管的重大倒退，将大幅削弱现有气候法规的法律基础。此举短期内利好传统能源和汽车制造业，降低合规成本，但长期将加剧政策不确定性，并可能引发法律挑战和国际贸易摩擦。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/trump-epa-endangerment-finding-climate-change-greenhouse-gas.html" target="_blank" rel="noopener">[CNBC] Trump revokes EPA finding on greenhouse gas threat in huge blow to climate change regulations</a>
+                    <a href="https://www.cnbc.com/2026/02/12/epa-climate-change-automakers.html" target="_blank" rel="noopener">[CNBC] What the EPA's flip on climate change means for automakers</a>
+                    <a href="https://www.marketwatch.com/story/trump-touts-largest-deregulatory-action-in-american-history-heres-why-its-too-soon-to-call-it-that-f33c0349?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Trump touts ‘largest deregulatory action in American history.’ Here’s why it’s too soon to call it that.</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">公用事业</span>
+                    <span class="sector-tag">环保科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>AI融资热潮持续，Anthropic获300亿美元巨额融资</div>
+                <div class="topic-title-en">AI Funding Boom Continues, Anthropic Raises $30 Billion</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    Anthropic以3800亿美元估值完成300亿美元融资，显示顶级AI初创公司仍在吸引巨额资本。与此同时，AI安全负责人辞职并警告风险，突显行业在快速商业化与安全治理之间的紧张关系。资金集中流向头部公司可能加剧市场垄断担忧，但同时也推动底层算力需求。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/anthropic-closes-30-billion-funding-round-at-380-billion-valuation.html" target="_blank" rel="noopener">[CNBC] Anthropic closes $30 billion funding round as cash keeps flowing into top AI startups</a>
+                    <a href="https://www.investing.com/news/economy-news/anthropic-valued-at-380-billion-in-latest-funding-round-4503855" target="_blank" rel="noopener">[Investing.com] Anthropic valued at $380 billion in latest funding round</a>
+                    <a href="https://www.bbc.com/news/articles/c62dlvdq3e3o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] AI safety leader says 'world is in peril' and quits to study poetry</a>
+                    <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxON1pyOHYzcjVROHVrQlNPbEwzajRTUlBMV3NkZjBiVGx4Vk02NGpZWTlvSjRTc3dCQlZnenAtQUw0YWtfVnpvMWpHTE1sNWl4bjk2eFdmaHJVNnFYeGtrM2s5b3plb2ZmeGdBRlZwWGY5WnF2aHBYaElnX0loV2kwUEdQRHBkX2VWeWliQ25qNzZVVWNfOGc?oc=5" target="_blank" rel="noopener">[The Economist] Private-equity barons have a giant AI problem</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">软件服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>房地产市场疲软，1月房屋销售骤降超8%</div>
+                <div class="topic-title-en">Housing Market Weakens, January Home Sales Plunge Over 8%</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    1月房屋销售大幅下降超过8%，房地产经纪人警告出现'新住房危机'，高利率和可负担性压力持续抑制需求。同时，社会保障资金可能早于预期耗尽，将影响消费者长期信心和退休规划，进一步拖累住房和消费支出。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/january-homes-sales.html" target="_blank" rel="noopener">[CNBC] Realtors report a 'new housing crisis' as January home sales tank more than 8%</a>
+                    <a href="https://www.marketwatch.com/story/social-security-could-run-out-of-money-in-just-6-years-even-sooner-than-originally-feared-c28eb5a5?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Social Security could run out of money in just 6 years — even sooner than originally feared</a>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">建筑</span>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">家居零售</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>科技股剧烈波动，思科、QuantumScape等财报后暴跌</div>
+                <div class="topic-title-en">Tech Stocks Volatile, Cisco and QuantumScape Plunge After Earnings</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    思科因内存成本压力导致利润率担忧，股价遭遇2022年以来最差单日表现；QuantumScape因财报不及预期和现金流忧虑股价暴跌。这反映在AI投资热潮之外，传统硬件和新兴技术公司仍面临严峻的盈利和供应链挑战。市场对科技股估值更为挑剔。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/cisco-stock-has-worst-day-since-2022-as-memory-prices-pressure-margins.html" target="_blank" rel="noopener">[CNBC] Cisco stock has worst day since 2022 as memory prices pressure margins</a>
+                    <a href="https://www.marketwatch.com/story/quantumscapes-stock-is-falling-heres-why-wall-street-is-panning-the-ev-battery-makers-earnings-f7b17ffb?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] QuantumScape’s stock is falling. Here’s why Wall Street is panning the EV battery maker’s earnings.</a>
+                    <a href="https://news.google.com/rss/articles/CBMi_AJBVV95cUxOSFdDazJwV3lNS25XM2k5Vm80VVJFZGFvQXE4aUNIQXViMlExczVrSHRjTGJZaHYtYWdTdjJfR1A0VE41dnJXYXE5V205U25vVzNBeTJDWU5pX1NRbnY1enpMLWVPejFTR0pPWVlEWkg0NC1RbThfYnRvYnhVcTAxSGdhVTd1MDFDVDQzWE81bFBTTnZ0QzA5c0NaanB6X2ZubE01WFZsbVdMbVZYQW5pT0lqajFoVW9QNF91eFg1RmliRW1LQ0Fwd05pbmVEcG1KOTJxVUZWMGdZNjVSbTV4X3Fxd3EtRF9LR2l4STNGY09XMndjV0tMcXd2QWRtcFhhVGdYVFFxeGhUbTNrVEJTaG1Ia3lmS0FPRjgwTmYtUmJsb3kydTliSzQ1X2pCVUNqR0dyZExGQ1B0ZENxUkNGTHdPSUNJWlV6dW0zQkM2N1BUOElkenRESjduQ1VQQUl1VXR3bjFQWlRHRkhEOWEyU2pmZEdYS3pEU0RyaQ?oc=5" target="_blank" rel="noopener">[Barron's] Cisco Stock Falls Despite Earnings Beat</a>
+                    <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOS3R6Q0FrQnFuT1plOGFjU0FlV2RXV0JqMzNMTEZWQXFiNUhWMHpYbGJjS1hJZ2ktVDJqblQ3bnZpdlBpcFYyNnNIb1dEOFY5aVFTTVd0bF9SQWRMRmppTnhpNWt2Wm9LcmdFQVNWbWQxRFhWM1NvdGl2RzZVY2JMMlZMWHZvUUlPXy13UGFmU1hqcFVtY1E?oc=5" target="_blank" rel="noopener">[The Economist] Arm wants a bigger slice of the chip business</a>
+                    <span class="sector-tag">网络设备</span>
+                    <span class="sector-tag">电动汽车电池</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">科技硬件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>数据中心需求推高电价，能源通胀压力持续</div>
+                <div class="topic-title-en">Data Center Demand Drives Up Electricity Prices, Energy Inflation Pressure Persists</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    受AI数据中心需求激增推动，电价涨幅达通胀率的两倍，且分析师认为短期内无缓解迹象。这将直接增加科技巨头和工业企业的运营成本，可能侵蚀利润率。同时，油价因供应预测下跌，显示能源市场呈现电力紧张与石油宽松的分化格局。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/electricity-price-data-center-ai-inflation-goldman.html" target="_blank" rel="noopener">[CNBC] Electricity prices rising by double the rate of inflation. Data center demand means no relief ahead, analysts say</a>
+                    <a href="https://www.investing.com/news/commodities-news/oil-prices-down-2-a-barrel-on-supply-forecast-4503863" target="_blank" rel="noopener">[Investing.com] Oil prices down $2 a barrel on supply forecast</a>
+                    <span class="sector-tag">公用事业</span>
+                    <span class="sector-tag">数据中心</span>
+                    <span class="sector-tag">科技巨头</span>
+                    <span class="sector-tag">工业制造</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>英国经济疲软与商业困境交织</div>
+                <div class="topic-title-en">UK Economic Sluggishness and Business Woes Intertwined</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    英国财政大臣承认GDP增长疲软'还有更多工作要做'，经济动能不足。同时，多个行业面临压力：律师事务所倒闭影响数万人，药剂师因成本飙升陷入债务，公务员养老金处理拖累外包商Capita。显示英国在增长乏力下，企业与公共服务均承压。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4gjmm7dlggo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Reeves says 'more to do' after sluggish GDP growth</a>
+                    <a href="https://www.bbc.com/news/articles/cj6dk0845n7o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] 'Tens of thousands' affected by law firm collapse</a>
+                    <a href="https://www.bbc.com/news/articles/c3wzvd5l36yo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] 'I racked up £145k of debt' - pharmacists struggling to stay afloat as costs soar</a>
+                    <a href="https://www.bbc.com/news/articles/c5yg54750gdo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Civil service pension backlog 'overwhelmed' Capita, boss says</a>
+                    <span class="sector-tag">英国零售</span>
+                    <span class="sector-tag">专业服务</span>
+                    <span class="sector-tag">医疗保健</span>
+                    <span class="sector-tag">外包服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>政治风险升温：美国预算僵局与地缘政治紧张</div>
+                <div class="topic-title-en">Political Risks Heat Up: US Budget Stalemate and Geopolitical Tensions</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国参议院阻止国土安全部资金，政府关门风险上升，加剧财政不确定性。同时，中国被指控通过投资美国公司规避关税，以及其在北极的活动引发关注，显示贸易和地缘政治摩擦仍是市场潜在威胁。德国拒绝联合发债则凸显欧洲财政分裂风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/economy-news/us-senate-blocks-homeland-security-funding-raising-likelihood-of-shutdown-4503854" target="_blank" rel="noopener">[Investing.com] US Senate blocks Homeland Security funding, raising likelihood of shutdown</a>
+                    <a href="https://www.marketwatch.com/story/china-is-hacking-the-tariff-system-by-investing-in-u-s-firms-while-american-taxpayers-foot-the-bill-07f3eb97?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] China is hacking the tariff system by investing in U.S. firms — and American taxpayers foot the bill</a>
+                    <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVG1iOWp3SFBCdGFGOGxSdjlEeC14OTJ6S3pQbHVlNlo0QjI1RU9nVG9qUVFwQkQ2TGUweXBua28wMlhKc1dfRlZncVNfQVlfVWxOcWh2cFM4OU1kQWN6Z21lUE1IWWwwOUg0TlpvUVpZWGdJUkdkZTBIbWZ1enlCc0I2bmpzNm9CZHAw?oc=5" target="_blank" rel="noopener">[The Economist] What China is really up to in the Arctic</a>
+                    <a href="https://www.investing.com/news/economy-news/german-chancellor-merz-rejects-joint-european-debt-issuance-93CH-4503857" target="_blank" rel="noopener">[Investing.com] German Chancellor Merz rejects joint European debt issuance</a>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">政府承包商</span>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">债券市场</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>1月美国房屋销售下降超过8%</li>
+                <li>Anthropic完成300亿美元融资，估值3800亿美元</li>
+                <li>美国电价涨幅为通胀率两倍</li>
+                <li>思科股价遭遇2022年以来最差单日表现</li>
+                <li>英国财政大臣承认GDP增长疲软</li>
+                <li>美国参议院阻止国土安全部资金，政府关门风险上升</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
