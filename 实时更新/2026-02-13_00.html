@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-13 00:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-13 00:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">全球市场在AI热潮与地缘政治紧张中震荡，经济增长放缓担忧加剧，但能源需求提供支撑。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI科技热潮引发债务风险担忧</div>
+                <div class="topic-title-en">AI Tech Boom Raises Debt Risk Concerns</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    AI技术快速发展推动数据中心电力需求激增，导致电价上涨；同时科技公司为AI投资大量发债，如Alphabet发行100年期债券，可能加剧信用风险。投资者需关注高估值科技股的债务水平，平衡增长与风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c62dlvdq3e3o" target="_blank" rel="noopener">[BBC] AI safety leader says 'world is in peril' and quits to study poetry</a>
+                    <a href="https://www.cnbc.com/2026/02/12/electricity-price-data-center-ai-inflation-goldman.html" target="_blank" rel="noopener">[CNBC] Electricity prices are rising by double the rate of inflation. Data center demand means no relief ahead</a>
+                    <a href="https://www.cnbc.com/2026/02/12/alphabet-100-year-bond-debt-fears-ai-credit-risk.html" target="_blank" rel="noopener">[CNBC] Why Alphabet’s 100-year sterling bond is raising new fears over debt-fuelled AI arms race</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOZG92dW0yX0NjMlR2UjVkd3B2U1BVZllnQUV2WFFsNzVJZGFXcjZuanJSZ1JKZE1ySkM1dDBpOWc2R0hEa2dSbVItRWh5U0tnQVN2S09yaFZaa0VqcFZYMkYwQWM4Zkh3MkZjLVpRaTkwMEwzc2hnTmMtbzhkODYwVk96R2R0dXAzQ05HdTh1Ui1mcFh2SjdPNWk1NW9RandJZEI1enpBX1VqdXVvSnQ1RXdncTMwUQ" target="_blank" rel="noopener">[Bloomberg] SoftBank Swings to Profit on Valuation Boost From Its OpenAI Bet</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>地缘政治紧张与贸易政策不确定性</div>
+                <div class="topic-title-en">Geopolitical Tensions and Trade Policy Uncertainty</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普政府关税政策导致关税收入飙升300%，但可能引发贸易伙伴报复；美日启动550亿美元能源与芯片基金以强化供应链，显示全球贸易碎片化趋势。投资者需关注关税对通胀和企业成本的影响，调整全球资产配置。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/11/tariff-revenue-soars-more-than-300percent-as-us-awaits-supreme-court-decision.html" target="_blank" rel="noopener">[CNBC] Tariff revenue soars more than 300% as U.S. awaits Supreme Court decision</a>
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQTXdWRFdMVVZ6Uk5SNnJTMHhYb0E3YUtHaWIzV0lsU01rZXdqdk9JM1hTNl85b3djM00zR0pTRllmVmhIX1hTT2dEcXQzeDFUQUVqZGdpMm1IalpTTTA1eXdDUnl2T191N2R2UUo4akpOaU04eTlra1I4Uk5ic2NBbWdxajZTN2hHTWJxOXk4dXQyam1Xb0YyLTBWS2w5NXJZb0xJdDNUYXpkX3h0aEFRVQ" target="_blank" rel="noopener">[Bloomberg] US, Japan Zero In on Energy, Chips for $550 Billion Fund Launch</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOZTUzUTNSRjRLazdoY1k3MmRRRU1Gd3E0Z1NVRlQ1bFZYSXpEX3NvMUZpUWFjNVFWQlhTSnZTd3AwQXRvSF9fV3ZpaHdOWVZ3ZEJDNHN2NTJIaDNfcVVxRGxqUUNXTWpkaGdEcmpFOXVhVW1ycFJ1Z3NrNzlWMG55cy1pWE9EOUpmWVJldWtmV0ZhTEJWR0Q0a0RFZ0Jpd2o2MnJBX0xHTUF1VjFJUjRtNmlSUQ" target="_blank" rel="noopener">[Bloomberg] China Sets Duties Up to 12% on EU Dairy, Below Initial Rates</a>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">国防</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>全球经济增长放缓迹象显现</div>
+                <div class="topic-title-en">Signs of Slowing Global Economic Growth</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    英国GDP增长疲软，财政大臣承认“更多工作要做”；中国经济学家呼吁放松资本管制以应对美元波动，但房地产问题持续。全球经济引擎减速可能抑制企业盈利增长，增加衰退风险，投资者应转向防御性资产。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4gjmm7dlggo" target="_blank" rel="noopener">[BBC] Reeves says 'more to do' after sluggish GDP growth</a>
+                    <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQbnY3T0FyRGRfZHB5cDRrNGg0NWtxLWZLcFBIVGxWTDBYOGhPcmxjUVNHSFVJbUt2bVVDbUZsWUFkR2dwV0dEVDFkSGp6NUVaanlLb0k1Z1NCQWtBdnVwWWpEaHp0NUdtcnFHYlRJdDNnRFNpcFo5TUpBSE4tVHRLUVo5a1Y1dGdrV2s0VUJoYmZNR0M5cmZSSG53YVA2Y05iTDB4eQ" target="_blank" rel="noopener">[Economist] Britain’s predicament will get worse before it gets better</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOWkVtcDJDaG9SencxVERoVnZ1VkFoRmQxaVEwX3hHbUF1Uk9Sak5FVUtXUk1mQkltQUhqd2pBeEUxRUxFR1pBb2RHb3pucVNVd2doUEFRVl9KMHpnMll3UmxidThFTkdtSWpQSEREM3c4WGhoNmhhb255azZOZHVibmRwUWxrbmFBWEgzd1M5SUxiQW53RXFCdUcyOURqbTVVQW5HNlcwR0xRWjdWejN1b1NVSHU" target="_blank" rel="noopener">[Bloomberg] China Economists Urge Looser Capital Controls as Dollar Wobbles</a>
+                    <span class="sector-tag">宏观经济</span>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>AI驱动电力需求激增引发能源危机</div>
+                <div class="topic-title-en">AI-Driven Electricity Demand Surge Sparks Energy Crisis</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    数据中心和AI应用推动电力需求，电价涨幅达通胀两倍，Goldman Sachs预计无缓解迹象；美日合作550亿美元基金聚焦能源和芯片，显示战略投资以保障供应链。能源板块可能受益于持续需求，但电价上涨或加剧通胀压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/electricity-price-data-center-ai-inflation-goldman.html" target="_blank" rel="noopener">[CNBC] Electricity prices are rising by double the rate of inflation. Data center demand means no relief ahead</a>
+                    <a href="https://www.marketwatch.com/story/this-stock-market-strategy-lets-you-play-the-energy-boom-while-cutting-your-risk-26bd552e" target="_blank" rel="noopener">[MarketWatch] This stock-market strategy lets you play the energy boom while cutting your risk</a>
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQTXdWRFdMVVZ6Uk5SNnJTMHhYb0E3YUtHaWIzV0lsU01rZXdqdk9JM1hTNl85b3djM00zR0pTRllmVmhIX1hTT2dEcXQzeDFUQUVqZGdpMm1IalpTTTA1eXdDUnl2T191N2R2UUo4akpOaU04eTlra1I4Uk5ic2NBbWdxajZTN2hHTWJxOXk4dXQyam1Xb0YyLTBWS2w5NXJZb0xJdDNUYXpkX3h0aEFRVQ" target="_blank" rel="noopener">[Bloomberg] US, Japan Zero In on Energy, Chips for $550 Billion Fund Launch</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">公用事业</span>
+                    <span class="sector-tag">科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>全球房地产市场疲软压力增大</div>
+                <div class="topic-title-en">Global Real Estate Market Weakness Intensifies</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国1月成屋销售暴跌超8%，房地产经纪人警告“新住房危机”；中国购房者对建筑质量不满，反映房地产行业深层问题。两国市场疲软可能拖累经济增长和金融稳定，影响银行和建筑行业股票，投资者需规避高杠杆地产公司。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/january-homes-sales.html" target="_blank" rel="noopener">[CNBC] Realtors report a 'new housing crisis' as January home sales tank more than 8%</a>
+                    <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQd3JBYmtJZENab3puVktEMW1wQkN5bUJqQjJZdllkVHBKNHlmZC1zRHJDU2NtV2p2SVdXQ1ZwcHB2WGotaUZrR2NWRFpDX291MWlVdmR0TF9oQU52aVNYQWh0ckNBZlVWUG1NSEJFcWFKTm1tTlZOcGp6aVA1N0dMbVFGSThXTE1vOGdWWS14b1V0WV9uaUpUaENNWlo1TEdYcmZhbHlkalFqVkhSbDZkYlVYU2lPeVlKRkE" target="_blank" rel="noopener">[Economist] Chinese homebuyers are enraged by shoddy building standards</a>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">建筑</span>
+                    <span class="sector-tag">银行</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>公司收益分化与并购活动活跃</div>
+                <div class="topic-title-en">Divergent Corporate Earnings and Active M&A</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Micron因内存价格上涨股价攀升，Restaurant Brands国际增长强劲但股价下跌，显示市场对收益反应不一；Nuveen以99亿英镑收购Schroders，凸显金融行业整合趋势。投资者需精选个股，关注现金流和增长质量，并购活动可能带来行业重塑机会。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/microns-stock-climbs-on-this-fresh-sign-of-booming-memory-prices-25398140" target="_blank" rel="noopener">[MarketWatch] Micron’s stock climbs on this fresh sign of booming memory prices</a>
+                    <a href="https://www.cnbc.com/2026/02/12/restaurant-brands-international-qsr-q4-2025-earnings.html" target="_blank" rel="noopener">[CNBC] Restaurant Brands shares fall despite earnings beat, strong international growth</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNV3QyZ3VVZ2l0bXdQWUNmakRNVXZWSHRpb3J0Umg3NzFra2pBWWJmTlllekszeXJydUZpUGJFT1Y0SlI4eG9uY1NSZVFDeXRBNy04bnVRb2hEajI5Qm4wMXhGano4aFRlQnN0MUFSemxhTlVmOG1SSVIta3ZocjlZOEg1UHg1MlpYVnRhUlFvdVF1bGl3RGIxMmJsaWV4Mnk0b1ZCUGpEcEM5SWVFZXNyeXZjSkc" target="_blank" rel="noopener">[Bloomberg] Nuveen to Buy City of London Stalwart Schroders for £9.9 Billion</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">消费品</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国1月成屋销售下降超8%</li>
+                <li>电价涨幅达通胀两倍</li>
+                <li>关税收入飙升300%</li>
+                <li>英国GDP增长疲软</li>
+                <li>Micron内存价格上涨</li>
+                <li>美国失业率处于低位</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
