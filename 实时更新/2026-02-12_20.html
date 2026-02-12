@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-12 20:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-12 20:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在AI产业繁荣、企业财报分化与地缘政治风险交织下呈现谨慎乐观情绪。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI热潮持续，半导体与基础设施公司业绩强劲</div>
+                <div class="topic-title-en">AI Boom Continues, Strong Earnings for Semiconductor and Infrastructure Companies</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    西门子因AI订单涌入而调升业绩展望，Vertiv财报也显示AI基础设施需求抵消了市场对AI热潮降温的担忧。这表明AI投资正从芯片向更广泛的硬件与工业软件领域扩散，相关企业持续受益。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/siemens-boosts-outlook-as-ai-orders-pour-in-and-its-software-business-defies-gloom-e4141bf5?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Siemens boosts outlook as AI orders pour in and its software business defies gloom</a>
+                    <a href="https://news.google.com/rss/articles/CBMi_gJBVV95cUxOdGZCcjd5YlpPREtZanNJcmVMVk1PTE1TYXQ0N2czVk8zbTgtLTFtV2VWOHpwb19oZXBaWHhNWWFBY3FFTTVMUEpud2hNRE1YM2tmSXBfY3N2SXVkVUlQWkQ2Sk1VUnRESDg3TVd2YTdKb3gtR05Rb19JZGJUbjg4bmd5RllkOGZHOXRxbnlnSGpyMEk4eklpZXJQQk1ldXQ2cVpadzFpa2lQbC1BclpCZW1lU1pHU2RRQ0FGOGMxeG1NdndnRkRROGRQQkE3UGdDZFdXM3lKc2g0MWZGZUlXX0NWeEFDSWMtSG5JSER1QjlRaUwtQ3NtR0NGUVNjMDJYWDh0V2JjUlUtYmZ3c2FNZTBTZHEyQ09qZTA4Ti1UUUNSdGJQMFRjRXQzVGZjU0RGdDZnc2FRUWo5dmtURjlfQ3R2dV9ySng2bXdXZlR1M3hTTERQbWZpUkxlTUd5OHBsX0daNW15LWhwRjBOeVhfV0x1SFhkZW5PYmNnX1Z3?oc=5" target="_blank" rel="noopener">[Barron's] Vertiv Stock Soars 25%. Earnings Shake Off Concerns the AI Trade Is Losing Steam.</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">工业自动化</span>
+                    <span class="sector-tag">数据中心基础设施</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>美国资管巨头Nuveen收购英国百年老店施罗德</div>
+                <div class="topic-title-en">U.S. Asset Manager Nuveen to Acquire U.K.'s Schroders</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Nuveen将以约140亿美元收购拥有222年历史的英国资管公司施罗德，这是全球资产管理行业整合的重大标志。交易可能改变欧洲资管格局，并引发市场对行业集中度提升及跨境并购潮的预期。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/a-222-year-old-u-k-firm-to-fall-into-american-hands-as-nuveen-to-buy-schroders-for-14-billion-f49f56cc?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] A 222-year-old U.K. firm to fall into American hands as Nuveen to buy Schroders for $14 billion</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNV3QyZ3VVZ2l0bXdQWUNmakRNVXZWSHRpb3J0Umg3NzFra2pBWWJmTlllekszeXJydUZpUGJFT1Y0SlI4eG9uY1NSZVFDeXRBNy04bnVRb2hEajI5Qm4wMXhGano4aFRlQnN0MUFSemxhTlVmOG1SSVIta3ZocjlZOEg1UHg1MlpYVnRhUlFvdVF1bGl3RGIxMmJsaWV4Mnk0b1ZCUGpEcEM5SWVFZXNyeXZjSkc?oc=5" target="_blank" rel="noopener">[Bloomberg] Nuveen to Buy City of London Stalwart Schroders for £9.9 Billion</a>
+                    <span class="sector-tag">资产管理</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>英、美经济数据疲软引发增长担忧</div>
+                <div class="topic-title-en">Weak UK and US Economic Data Fuel Growth Concerns</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    英国2025年末GDP仅增长0.1%，服务业停滞，加之《经济学人》警告英国困境可能恶化，凸显其经济动能不足。美国方面，预算赤字预计将扩大数万亿美元，且就业增长数据遭下修，加剧了市场对发达国家财政可持续性与经济增长潜力的忧虑。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4gjmm7dlggo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] UK economy grew by 'subdued' 0.1% at end of 2025</a>
+                    <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQbnY3T0FyRGRfZHB5cDRrNGg0NWtxLWZLcFBIVGxWTDBYOGhPcmxjUVNHSFVJbUt2bVVDbUZsWUFkR2dwV0dEVDFkSGp6NUVaanlLb0k1Z1NCQWtBdnVwWWpEaHp0NUdtcnFHYlRJdDNnRFNpcFo5TUpBSE4tVHRLUVo5a1Y1dGdrV2s0VUJoYmZNR0M5cmZSSG53YVA2Y05iTDB4eQ?oc=5" target="_blank" rel="noopener">[The Economist] Britain’s predicament will get worse before it gets better</a>
+                    <a href="https://news.google.com/rss/articles/CBMilgNBVV95cUxPUDZDX0NxOTliY0pINWhJVVVLWGtuZmtydjFwX1dnNnJZMmxETU5ybmdkU24yaks2MkRVeHRXQXUxUi1DaG1Pd2hKU1lqSjlZWDNGZmREMnFuSFRDUWxPUXgxX3hIQ0ItU2xlTGcyVnBFM2VoamFkQXB1UlpxaGM0VkNJX2tXcU4tWVZkSmNZNE1HZDNiYkx1dTlaOWQzcDF2dGZVaWZ0YWNXaHJEWjJiMW93OURWX0RQdWxMYWFNMVQtazkyWmVLZ2MzTGVZMGFkeVNjbkVzWk1WOFV5cmc2MjFoSmU0Mk44eWV1UUpfRm1KTzBlNlE1dGNDMVphUlJBbWFqbjFxVjFxdk1hTnBuc2xYS0xEZXk5STkxNlVncFhqaHgwTnNseDRrUzluaXJaLVZ3SUFUbGtSN2VWdlNCRlBiOHNsOFpLcTJHRjcwcFpnek12NE5mN3VYcmRWdWgyTmJrdnBWbFRHRnNMM2ozSVRRZWpxSlpUR1BUNTRnXzkxQ1FBb1Q0RnRfbDIyMi1GUnBKVmNn?oc=5" target="_blank" rel="noopener">[Wall Street Journal] U.S. Budget Hole Set to Deepen by Trillions</a>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">服务业</span>
+                    <span class="sector-tag">政府债券</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>地缘政治紧张影响贸易与能源市场</div>
+                <div class="topic-title-en">Geopolitical Tensions Impact Trade and Energy Markets</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    中美欧贸易关系出现新摩擦，中国对欧盟乳制品加征关税并出手整顿国内汽车行业价格战，可能重塑相关行业竞争格局。同时，美国向中东增派航母，美伊紧张局势持续，为原油市场增添了供应风险溢价，油价在多空因素下波动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOZTUzUTNSRjRLazdoY1k3MmRRRU1Gd3E0Z1NVRlQ1bFZYSXpEX3NvMUZpUWFjNVFWQlhTSnZTd3AwQXRvSF9fV3ZpaHdOWVZ3ZEJDNHN2NTJIaDNfcVVxRGxqUUNXTWpkaGdEcmpFOXVhVW1ycFJ1Z3NrNzlWMG55cy1pWE9EOUpmWVJldWtmV0ZhTEJWR0Q0a0RFZ0Jpd2o2MnJBX0xHTUF1VjFJUjRtNmlSUQ?oc=5" target="_blank" rel="noopener">[Bloomberg] China Sets Duties Up to 12% on EU Dairy, Below Initial Rates</a>
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPZFBfR21MN1NHXzc2a1R5dHNzc2w2UTFVVDRzdjUwYjB1N1BtTTNaTDBmTnVZa1R1aWgweTJIZ28zLTFYNGVKSlJMT0V0MDFqUHJOcXFHWVNTV2JFQUx3bUxvUlA5QURYSGw5bUFHZXpvMTY1Ym43a3Rnek94MmlNaDByTzFkN0J1eDVsSi1tS1dhem9lcmM5OFpvZEhJZjFXa01Qb1ItMm5ITTRxX3c?oc=5" target="_blank" rel="noopener">[Bloomberg] China Bans Below-Cost Car Sales to End Prolonged Price War</a>
+                    <a href="https://news.google.com/rss/articles/CBMiygNBVV95cUxOUTRlSHFiMVA1dEE1aTRiWmdFSU14UmIyS0Q1TThmQkNYTjVNcjhCdEJNX1F4Rm13SVd3bkZfVmUxQVktWjFaSVFMX3dvTDM1ZHZzNzdjVk10Uzl3Q0VjSExXUElkV19CNmdxRmlGWnQyV2FTUlpiZmdEUFZtNzA0MFprQzl1bWE3bkdTczgwdzJZYklhb244VzkxaWVJeFJWZm9IUHgzZGVOdERvU3ZWVm9xQXhtLV9yNkZEdFozX2RCUXJRdUN0a1VSOXhoTEdpWnFDU1BqRkJ2YmE3d2EwZ2FJLWZ2enJmMXR2WXQ0eDFiR1RlMWl2VEpBODZtLUtoZ2p4eXk5dEFxSW1RVHNqaGdfM0NWUl8tUmh2eHN6WWJkRV9yRGE4YTVqTV9nMHpPZ19fTkI3WUlSMmVkTlpUa1JuM1BlcUY3T2lyNlB2TWJxUV80RUVQWHVxOWdVSEppRy12bHkyWjlZYzI4N2ppbmN0MFZzaGlQYVg3VW9QNkxQSkp4dTdJekRaSEtDRW9tOHdCVUpXQWMwVTNsUi02V2lEVzZmc1JyRkFrbC1GMzJJQ3o2RzVpci1vcjhFeFY0anUxUmQ2MEh0Zw?oc=5" target="_blank" rel="noopener">[Wall Street Journal] Exclusive | Pentagon Prepares Second Aircraft Carrier to Deploy to the Middle East</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">农业</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>企业财报季表现分化，科技股尤为显著</div>
+                <div class="topic-title-en">Mixed Corporate Earnings Season, Particularly in Tech</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    财报季呈现冰火两重天：Granite Construction、Kimco Realty业绩超预期并上调展望，而Shopify因软件业务增长担忧导致股价暴跌。这表明即使在AI主题下，企业个体基本面差异巨大，投资者需仔细甄别。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMi_wJBVV95cUxPVlJOYWxKaWNpYzVCMWljTzk1RjVWYWZ0YldxbGtDN3YyVWdtQUdvQXZSRm9hd3ZFSjBWWTlpRWFqcW1iUnVzUllOTzZCRjVaT1JOR2FYaFQzSm1jZWx4MlV0eDJ0RXJ4S3RtX0xnRG5NeVkzOHk1S2lMdDg1RHlfNW9LQV9UUzJDeXhsT2Y4U0NYWlBPdmwtc19CZE1EUzBqSHQtRXBsQW1kOVc3cmZOTk05SkN4aVM5X01JV3BOT2xyXzNob3hxZHJCTHYzUUJ1ZUtFUUQtUHpqa1hQSWVKbGsxdDhRQkRubXJ6dHR0QjNKc1AxZkJGTEsxYlFIYkxZdDJBc3lud1k8RUpma1BYVklGOEhFdVhyVkx5WUE5cTJOZWRTeEY4akZfV18xZlV0RFlNUnlMN2dkTE5wUlhvdGx2YkR1NjlxY0pId3RacGw4N0ZNQjlKRm9kNDg1cVhRMk05WTlmWVF5bnBvb3Q2OFp3a243ZjBiRzNsREdtOA?oc=5" target="_blank" rel="noopener">[Barron's] Shopify Stock Slumps on Earnings Miss. Software Worries Are Why.</a>
+                    <a href="https://www.investing.com/news/earnings/granite-construction-beats-q4-estimates-raises-2026-revenue-outlook-93CH-4502302" target="_blank" rel="noopener">[Investing.com] Granite Construction beats Q4 estimates, raises 2026 revenue outlook</a>
+                    <a href="https://www.investing.com/news/earnings/kimco-realty-earnings-beat-by-003-revenue-topped-estimates-4502323" target="_blank" rel="noopener">[Investing.com] Kimco Realty earnings beat by $0.03, revenue topped estimates</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">建筑业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>加密货币市场动荡，香港态度构成长期变量</div>
+                <div class="topic-title-en">Cryptocurrency Market Volatility, Hong Kong's Stance a Long-term Variable</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    主要加密货币价格再次下跌，但分析师认为监管清晰化可能带来提振。值得注意的是，尽管市场经历2万亿美元市值缩水，香港对加密资产的乐观展望并未减弱，这或预示亚洲在该领域的长期战略地位，为市场未来复苏埋下伏笔。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiiwNBVV95cUxNWC1KZXlmRU9rZW1Mclh2WEgwbl9iQWFVd05SWnM3NFhvN2ZSU0pLcHFiUTlGOEVkVXd0cEtBdS1Xc3kwak55UXZZRUlPWE9BNnFmVFRKUmlSOF9LVTRwNlhZbXRza0dHcGNOSWZPXzBQS1JhSmVXVzNKeXdZbDh6WUthX1RZR1B4VzFBUkhxTTRjcXRYeUlvdzRtQzNnZFV5dWxoRHJ0VVpodUxleHRWRFVSRzNrcWhRVjh0RDF3MlJzUUJFZUVCVVBlS05PeFdvWVZvNDRhcGZfcU9CVDBBem1YQTY1TGxVTno1encwNHpsaGhQZGM1V254SHVsV2sxdFhQN1FkcGFEb1VmcHhSb2JzUkFwNURtSTN4QWJ5akJrZHZ6Z2JDTFdXNkQ5ZmVLQjN4ZXFWUGc1TW1VZk95NHU2OWJ0cTV1WHYxQkJrZTE4YWRZZktnOG1pYy1VTnRfYWh1WDhCNzdHSGlRR0JMT1NqU0huRl9zU3REdjRwdlRsbDZTTVJiNGFUOA?oc=5" target="_blank" rel="noopener">[Barron's] Bitcoin, XRP, Ether Are Falling Again. Why Cryptos May Soon Get a Boost.</a>
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNUHVzZUVDWXJCUUg4bHNpazBMMXltNUNYQU1IallVVl9zRWpuTGFhY0xNeXJYZzJzd0Zwdmg1bFFxOVBYVFdfNS1aUnF4ajlEcUNYZjBfN1JjX2pIanB3VnlxS1JzRGczVzBQYTVPbkpudk1ZMjlLOVlwVzRScXFmRTd6aTg2OFNhTVpyYmxfU045VVFiYm5EaDN3NU5KSmk2RjJnZHRieThXc25hMDA5Tg?oc=5" target="_blank" rel="noopener">[Bloomberg] Crypto’s $2 Trillion Crash Hasn’t Dimmed Outlook in Hong Kong</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">区块链</span>
+                    <span class="sector-tag">金融科技</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>英国2025年第四季度GDP仅增长0.1%</li>
+                <li>Nuveen拟以约140亿美元收购英国施罗德集团</li>
+                <li>西门子因AI订单上调业绩展望</li>
+                <li>中国对欧盟乳制品加征最高12%关税</li>
+                <li>美国预算赤字预计将再扩大数万亿美元</li>
+                <li>Shopify财报不及预期，股价大跌</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
