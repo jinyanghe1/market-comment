@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-13 07:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-13 07:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">美股市场受AI担忧和监管不确定性拖累出现广泛抛售，科技股领跌，但部分公司财报表现亮眼，市场情绪偏谨慎。</p>
+            <span class="sentiment" style="background:#27ae60;">&#9660; 市场情绪: 看跌</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI焦虑引发市场广泛抛售，科技股与物流股受重创</div>
+                <div class="topic-title-en">AI Fears Spark Broad Market Selloff, Tech and Logistics Stocks Hit Hard</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    市场对人工智能技术及其潜在影响的担忧集中爆发，导致道指跌破50000点，苹果因Siri延迟和监管担忧市值蒸发，同时AI货运工具的推出冲击了卡车和物流股。这反映了投资者对AI颠覆传统行业及引发监管风险的恐惧，短期内可能继续压制科技板块估值。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/dow-ends-below-50-000-threshold-for-first-time-since-friday-as-ai-fears-spark-wider-stock-selloff-f6ee91e1?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Dow ends below 50,000 threshold for first time since Friday as AI fears spark wider stock selloff</a>
+                    <a href="https://www.cnbc.com/2026/02/12/trucking-and-logistics-stocks-tumble-on-release-of-ai-freight-scaling-tool.html" target="_blank" rel="noopener">[CNBC] Trucking and logistics stocks drop on release of AI freight scaling tool</a>
+                    <a href="https://www.marketwatch.com/story/apple-sees-200-billion-market-cap-wipeout-as-stock-slides-on-ai-fears-88917cc0?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Apple sees $200 billion market-cap wipeout as stock slides on AI fears</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">物流运输</span>
+                    <span class="sector-tag">半导体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>特朗普政府撤销关键气候法规，汽车与能源行业面临剧变</div>
+                <div class="topic-title-en">Trump Administration Revokes Key Climate Ruling, Automotive and Energy Industries Face Upheaval</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    特朗普总统撤销了EPA关于温室气体构成危险的“危害认定”，这将从根本上削弱美国气候法规的法律基础，特别是车辆排放标准。此举短期内可能降低汽车制造商合规成本并提振传统能源股，但长期将增加政策不确定性，并可能影响美国在电动车领域的竞争力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/trump-epa-endangerment-finding-climate-change-greenhouse-gas.html" target="_blank" rel="noopener">[CNBC] Trump revokes EPA finding on greenhouse gas threat in huge blow to climate change regulations</a>
+                    <a href="https://www.investing.com/news/commodities-news/trump-administration-set-to-revoke-basis-of-us-climate-regulation-4502883" target="_blank" rel="noopener">[Investing.com] Trump revokes basis of US climate regulation, ends vehicle emission standards</a>
+                    <a href="https://www.bbc.com/news/articles/cn0zdd7yl4vo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Trump revokes key climate ruling which he says has made cars pricier</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">石油天然气</span>
+                    <span class="sector-tag">公用事业</span>
+                    <span class="sector-tag">可再生能源</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>科技巨头监管压力加剧，苹果面临FTC审查</div>
+                <div class="topic-title-en">Regulatory Pressure Intensifies on Tech Giants, Apple Faces FTC Scrutiny</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    苹果公司因涉嫌在新闻应用中缺乏保守派内容而受到FTC警告，叠加对Siri延迟的担忧，导致股价遭遇大幅抛售。与此同时，美国反垄断主管辞职突显出政治与监管机构间的紧张关系。科技巨头面临的监管环境日趋复杂，可能影响其业务运营和股价表现。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/apple-stock-worst-day-ftc-siri.html" target="_blank" rel="noopener">[CNBC] Apple has worst day since April as company faces FTC scrutiny, Siri delay reports</a>
+                    <a href="https://www.bbc.com/news/articles/c0q3dvww5pqo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] FTC warns Apple over alleged lack of conservative news</a>
+                    <a href="https://www.bbc.com/news/articles/cnv6j9vrn06o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] US antitrust chief resigns amid tensions with Trump officials</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">媒体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>企业财报表现分化，电动车与旅游平台亮眼 vs. 社交媒体与网络设备商疲软</div>
+                <div class="topic-title-en">Corporate Earnings Show Divergence: EV and Travel Platforms Shine vs. Social Media and Networking Gear Weakness</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Rivian因超预期的季度业绩和增产目标股价大涨，Airbnb和Instacart也因强劲财报上涨。相反，Pinterest因业绩和指引不及预期暴跌，Cisco则受内存成本挤压利润率影响而重挫。这表明市场正在严格审视企业盈利质量和增长前景，资金向基本面扎实的公司集中。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/rivian-automotive-rivn-earnings-q4-2025.html" target="_blank" rel="noopener">[CNBC] Rivian stock rises 15% as automaker tops Q4 expectations, targets significant production increase</a>
+                    <a href="https://www.cnbc.com/2026/02/12/pinterest-pins-q4-earnings-report-2025.html" target="_blank" rel="noopener">[CNBC] Pinterest shares tank 20% on earnings miss, weak guidance</a>
+                    <a href="https://www.cnbc.com/2026/02/12/cisco-stock-has-worst-day-since-2022-as-memory-prices-pressure-margins.html" target="_blank" rel="noopener">[CNBC] Cisco stock has worst day since 2022 as memory prices pressure margins</a>
+                    <span class="sector-tag">电动汽车</span>
+                    <span class="sector-tag">在线旅游</span>
+                    <span class="sector-tag">食品配送</span>
+                    <span class="sector-tag">社交媒体</span>
+                    <span class="sector-tag">网络设备</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>宏观经济疲软与房地产市场新危机隐现</div>
+                <div class="topic-title-en">Macroeconomic Weakness and Emerging 'New Housing Crisis'</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    英国财政大臣承认在疲软的GDP增长后“还有很多工作要做”，而美国一月份房屋销售大幅下滑超过8%，被房地产经纪人称为“新住房危机”。这些数据加剧了对经济增长放缓和利率环境影响的担忧，可能进一步抑制消费者信心和相关行业投资。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4gjmm7dlggo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Reeves says 'more to do' after sluggish GDP growth</a>
+                    <a href="https://www.cnbc.com/2026/02/12/january-homes-sales.html" target="_blank" rel="noopener">[CNBC] Realtors report a 'new housing crisis' as January home sales tank more than 8%</a>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">建筑业</span>
+                    <span class="sector-tag">零售</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>AI数据中心需求推高电力价格，加剧通胀压力</div>
+                <div class="topic-title-en">AI Data Center Demand Drives Up Electricity Prices, Adding to Inflation Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    分析师指出，受人工智能数据中心需求激增的推动，电力价格正以两倍于通胀率的速度上涨，且短期内无缓解迹象。这将增加企业和家庭的运营与生活成本，可能迫使央行在更长时间内维持高利率，并对高能耗行业（如科技和制造业）的利润率构成压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/electricity-price-data-center-ai-inflation-goldman.html" target="_blank" rel="noopener">[CNBC] Electricity prices rising by double the rate of inflation. Data center demand means no relief ahead, analysts say</a>
+                    <span class="sector-tag">公用事业</span>
+                    <span class="sector-tag">数据中心</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">制造业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>私人股本巨头面临AI颠覆性挑战</div>
+                <div class="topic-title-en">Private-Equity Barons Face Disruptive AI Challenge</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    《经济学人》文章指出，私人股本行业面临巨大的人工智能问题，AI可能颠覆其投资组合中许多公司的商业模式。这迫使PE公司需要重新评估资产价值并调整投资策略，可能引发行业整合与资产重估浪潮，长期来看会改变资本流向。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxON1pyOHYzcjVROHVrQlNPbEwzajRTUlBMV3NkZjBiVGx4Vk02NGpZWTlvSjRTc3dCQlZnenAtQUw0YWtfVnpvMWpHTE1sNWl4bjk2eFdmaHJVNnFYeGtrM2s5b3plb2ZmeGdBRlZwWGY5WnF2aHBYaElnX0loV2kwUEdQRHBkX2VWeWliQ25qNzZVVWNfOGc?oc=5" target="_blank" rel="noopener">[Economist] Private-equity barons have a giant AI problem</a>
+                    <span class="sector-tag">私募股权</span>
+                    <span class="sector-tag">风险投资</span>
+                    <span class="sector-tag">被投资企业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>媒体并购面临监管审查，Daily Mail收购Telegraph受阻</div>
+                <div class="topic-title-en">Media M&A Faces Regulatory Scrutiny as Daily Mail's Telegraph Takeover Probed</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    英国政府已下令对Daily Mail所有者以5亿英镑收购《每日电讯报》的交易进行调查，反映出媒体集中度问题引发监管关注。此类审查可能延缓或阻止交易，影响媒体行业的整合进程，并增加相关公司股价的不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/czj17w3n1e8o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Probe ordered into Daily Mail owner's £500m takeover of Telegraph</a>
+                    <span class="sector-tag">媒体出版</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>道琼斯指数跌破50000点关口</li>
+                <li>苹果公司单日市值蒸发约2000亿美元</li>
+                <li>Rivian股价大涨15%，Airbnb股价上涨</li>
+                <li>Pinterest股价暴跌20%，Cisco股价创多年最大跌幅</li>
+                <li>美国1月成屋销售环比下降超8%</li>
+                <li>电力价格以通胀率两倍的速度上涨</li>
+                <li>特朗普政府撤销EPA温室气体“危害认定”</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
