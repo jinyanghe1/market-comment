@@ -1,5 +1,50 @@
 [
     {
+        "file": "China_Power_Reform_I.html",
+        "title": "Power Reform I",
+        "subtitle": "制度考古：从「计划的电」到「市场的电」",
+        "date": "2026-02-12",
+        "readTime": "40分钟",
+        "excerpt": "电力体制改革二十四年：一部垄断、博弈与妥协的制度史。从2002年厂网分开的「开天辟地」，到2015年中发9号文的「第二次冲锋」，再到2026年全国统一电力市场路线图——中国最大商品的市场化之路，走了四分之一个世纪。系列共五篇，本篇为第一篇。",
+        "tags": ["Power Reform", "Energy", "Market Structure", "Policy", "Regulation", "Series"]
+    },
+    {
+        "file": "China_Power_Reform_II.html",
+        "title": "Power Reform II",
+        "subtitle": "发电侧的博弈：煤与光的战争",
+        "date": "2026-02-12",
+        "readTime": "35分钟",
+        "excerpt": "从五大发电集团到百万屋顶光伏，从煤电联动的政治经济学到136号文的市场化冲击。13亿千瓦煤电何去何从？光伏组件价格暴跌96%之后新能源全面入市谁将胜出？煤电容量电价、差价合约机制、强制配储取消——发电端的权力重组与成本革命正在加速。",
+        "tags": ["Power Reform", "Generation", "Coal", "Solar", "Wind", "136号文", "Series"]
+    },
+    {
+        "file": "China_Power_Reform_III.html",
+        "title": "Power Reform III",
+        "subtitle": "送电的帝国：电网、输配与储能",
+        "date": "2026-02-12",
+        "readTime": "35分钟",
+        "excerpt": "两张大网覆盖960万平方公里，100万公里输电线路编织成世界最庞大的电力网络。特高压将西部风光送往东部工厂，储能从行政指令的附庸蜕变为市场竞争的主角。从强制配储的兴衰到独立储能的崛起，从输配电价改革到新型电力系统——垄断、改革与技术突围的故事。",
+        "tags": ["Power Reform", "Grid", "Storage", "UHV", "Transmission", "Series"]
+    },
+    {
+        "file": "China_Power_Reform_IV.html",
+        "title": "Power Reform IV",
+        "subtitle": "交易的艺术：电力市场化交易全解",
+        "date": "2026-02-12",
+        "readTime": "45分钟",
+        "excerpt": "从一笔电力交易的全流程到省间壁垒的政治经济学，从现货市场的负电价到容量市场的破冰。6万亿千瓦时市场化交易、4000+售电公司的生死竞争、省间壁垒的四重锁链——全景解构中国电力交易的博弈、价格与制度。系列共五篇，本篇为第四篇。",
+        "tags": ["Power Reform", "Trading", "Spot Market", "Capacity", "Ancillary Services", "Series"]
+    },
+    {
+        "file": "China_Power_Reform_V.html",
+        "title": "Power Reform V",
+        "subtitle": "绿电的未来：碳中和时代的电力新秩序",
+        "date": "2026-02-12",
+        "readTime": "45分钟",
+        "excerpt": "从绿证交易到碳市场联动，从136号文省级落地到电力市场治理革命。4460亿千瓦时绿证交易、碳配额价格破百、CBAM倒逼机制——当安全、经济、清洁三角不可能同时满足，中国电力改革如何在2030-2060的碳中和路径上找到动态平衡？系列共五篇，本篇为终篇。",
+        "tags": ["Power Reform", "Green Power", "Carbon Market", "CBAM", "Governance", "Series"]
+    },
+    {
         "file": "Huijin_Leviathan.html",
         "title": "The Leviathan's Ledger",
         "subtitle": "利维坦的账本：中央汇金的静默扩张",

@@ -674,7 +674,7 @@
 <body>
 
 <!-- ══════════════════════════════════════════════════════
-     SITE DATA - 更新文章时只需修改此处数据
+     SITE DATA - 月度评论与每日评论手动维护；趋势评论自动读取 manifest.json
      ══════════════════════════════════════════════════════ -->
 <script>
 var SITE_DATA = {
@@ -686,32 +686,25 @@ var SITE_DATA = {
             "excerpt": "沪指17连阳破十年纪录，港股月涨近7%——AI与资源双主线交辉，春季攻势强势启幕"
         }
     ],
-    "trendArticles": [
-        {
-            "title": "The Sanaeconomics is Back | 高市早苗经济学深度解构",
-            "url": "趋势和类别评论/the_Sanaeconomics_is_back.html",
-            "date": "2026-02-09",
-            "excerpt": ""
-        },
-        {
-            "title": "The SaaSpocalypse | 当AI代理和美联储联手碾压SaaS",
-            "url": "趋势和类别评论/how_moltbook_and_fed_crushed_the_saas.html",
-            "date": "2026-02-08",
-            "excerpt": ""
-        },
-        {
-            "title": "The Big Golden Bust | 贵金属市场深度分析",
-            "url": "趋势和类别评论/The_Big_golden_bust.html",
-            "date": "2026-02-08",
-            "excerpt": "从历史新高到惊魂暴跌：贵金属市场一周多空博弈全景透视"
-        }
-    ],
+    "trendArticles": [],
     "dailyComments": [
+        {
+            "title": "每日评论 - 2026年02月11日",
+            "url": "每日评论/110226.html",
+            "date": "2026-02-11",
+            "excerpt": ""
+        },
         {
             "title": "每日评论 - 2026年02月09日",
             "url": "每日评论/090226.html",
             "date": "2026-02-09",
             "excerpt": "全球市场情绪分化，亚洲股市在激进政策预期下强势领涨，而美国市场在关键数据前保持谨慎，日元与黄金等避险资产波动加剧。"
+        },
+        {
+            "title": "每日评论 - 2026年02月04日",
+            "url": "每日评论/040226.html",
+            "date": "2026-02-04",
+            "excerpt": ""
         }
     ]
 };
@@ -1058,12 +1051,38 @@ function renderSidebarLatest() {
     el.innerHTML = html;
 }
 
-// 执行渲染
+// 执行渲染（非趋势部分立即渲染）
 renderHero();
 renderCards('monthlySection', SITE_DATA.monthlyReports, '月度评论', '月度评论即将发布，敬请期待。');
-renderCards('trendSection', SITE_DATA.trendArticles, '趋势研究', '趋势与类别评论即将发布，敬请期待。');
 renderCards('dailySection', SITE_DATA.dailyComments, '每日评论', '每日评论即将发布，敬请期待。');
-renderSidebarLatest();
+
+// 趋势评论：从 manifest.json 动态加载（最多显示8篇最新）
+(function() {
+    var MAX_TREND_CARDS = 8;
+    fetch('趋势和类别评论/manifest.json')
+        .then(function(r) { return r.json(); })
+        .then(function(items) {
+            // manifest 已按日期降序排列；取前 N 篇
+            var articles = items.slice(0, MAX_TREND_CARDS).map(function(item) {
+                return {
+                    title: item.title + (item.subtitle ? ' | ' + item.subtitle : ''),
+                    url: '趋势和类别评论/' + item.file,
+                    date: item.date,
+                    excerpt: item.excerpt || ''
+                };
+            });
+            SITE_DATA.trendArticles = articles;
+            renderCards('trendSection', articles, '趋势研究', '趋势与类别评论即将发布，敬请期待。');
+            renderSidebarLatest(); // 重新渲染侧栏（含趋势文章）
+        })
+        .catch(function() {
+            renderCards('trendSection', [], '趋势研究', '无法加载文章列表。');
+            renderSidebarLatest();
+        });
+
+    // 先渲染一次侧栏（不含趋势文章），避免空白
+    renderSidebarLatest();
+})();
 
 /* ══════════════════════════════════════════════════════
    搜索功能
@@ -1073,23 +1092,36 @@ renderSidebarLatest();
     var dropdown = document.getElementById('searchResults');
     if (!input || !dropdown) return;
 
-    // 构建全站文章索引
-    var allArticles = [];
-    var sections = {
-        monthlyReports: '月度评论',
-        trendArticles: '趋势研究',
-        dailyComments: '每日评论'
-    };
-    Object.keys(sections).forEach(function(key) {
-        (SITE_DATA[key] || []).forEach(function(a) {
-            allArticles.push({
-                title: a.title,
-                url: a.url,
-                date: a.date,
-                section: sections[key]
+    // 构建全站文章索引（动态重建，以包含 fetch 加载的趋势文章）
+    function buildSearchIndex() {
+        var list = [];
+        var sections = {
+            monthlyReports: '月度评论',
+            trendArticles: '趋势研究',
+            dailyComments: '每日评论'
+        };
+        Object.keys(sections).forEach(function(key) {
+            (SITE_DATA[key] || []).forEach(function(a) {
+                list.push({
+                    title: a.title,
+                    url: a.url,
+                    date: a.date,
+                    section: sections[key]
+                });
             });
         });
-    });
+        return list;
+    }
+    var allArticles = buildSearchIndex();
+    // 每 2 秒重建一次索引（等趋势文章加载后自动更新）
+    var _searchRefresh = setInterval(function() {
+        var newList = buildSearchIndex();
+        if (newList.length > allArticles.length) {
+            allArticles = newList;
+            clearInterval(_searchRefresh);
+        }
+    }, 2000);
+    setTimeout(function() { clearInterval(_searchRefresh); }, 15000);
 
     function highlightMatch(text, query) {
         if (!query) return text;
