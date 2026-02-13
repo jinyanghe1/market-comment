@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-13 10:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-13 10:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场受AI担忧和通胀数据影响出现抛售，监管变化与业绩分化加剧波动。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI担忧引发市场大幅波动</div>
+                <div class="topic-title-en">AI Fears Trigger Significant Market Volatility</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    AI技术颠覆性担忧导致广泛股票抛售，道指跌破50000点关键心理关口，同时长期国债因避险需求上涨，显示投资者从高估值科技股转向防御性资产。这可能导致科技板块估值调整，并增加市场短期不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/asia-markets-live-today-friday-nikkei-kospi-hang-seng-ai-fears.html" target="_blank" rel="noopener">[CNBC] Asia stock markets track losses on Wall Street as AI fears hit sentiment</a>
+                    <a href="https://www.cnbc.com/2026/02/12/ai-disruption-fears-slam-new-corners-of-the-market-and-google-reminds-us-why-we-own-it.html" target="_blank" rel="noopener">[CNBC] AI disruption fears slam new corners of the market, and Google reminds us why we own it</a>
+                    <a href="https://www.marketwatch.com/story/dow-ends-below-50-000-threshold-for-first-time-since-friday-as-ai-fears-spark-wider-stock-selloff-f6ee91e1?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Dow ends below 50,000 threshold for first time since Friday as AI fears spark wider stock selloff</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">国债</span>
+                    <span class="sector-tag">防御性股票</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>通胀与经济增长数据引发关注</div>
+                <div class="topic-title-en">Inflation and Economic Growth Data Draw Attention</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国CPI通胀报告即将公布，市场担忧通胀粘性可能推迟美联储降息，影响利率敏感型资产。英国GDP增长乏力显示全球经济复苏不平衡，可能压制风险偏好，导致资金流向避险资产。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/the-january-cpi-inflation-report-is-due-out-friday-morning-heres-what-its-expected-to-show.html" target="_blank" rel="noopener">[CNBC] The January CPI inflation report is due out Friday morning. Here's what it's expected to show</a>
+                    <a href="https://www.bbc.com/news/articles/c4gjmm7dlggo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Reeves says 'more to do' after sluggish GDP growth</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">消费品</span>
+                    <span class="sector-tag">房地产</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>特朗普政府监管政策转向</div>
+                <div class="topic-title-en">Regulatory Policy Shifts Under Trump Administration</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    特朗普撤销关键气候法规以降低汽车成本，但可能加剧环境风险并影响电动汽车转型；反垄断官员辞职暗示科技监管可能松动，利好大型企业但增加长期政策不确定性。EPA政策翻转对汽车和能源行业产生直接冲击。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cn0zdd7yl4vo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Trump revokes key climate ruling which he says has made cars pricier</a>
+                    <a href="https://www.bbc.com/news/articles/cnv6j9vrn06o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] US antitrust chief resigns amid tensions with Trump officials</a>
+                    <a href="https://www.cnbc.com/2026/02/12/epa-climate-change-automakers.html" target="_blank" rel="noopener">[CNBC] What the EPA's flip on climate change means for automakers</a>
+                    <span class="sector-tag">汽车</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>企业业绩分化凸显行业趋势</div>
+                <div class="topic-title-en">Divergent Corporate Earnings Highlight Sector Trends</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    科技巨头苹果和思科因监管压力及成本上涨而下跌，而电动汽车Rivian和共享经济Airbnb业绩超预期，显示消费韧性和绿色经济潜力。关税和原材料成本影响部分公司盈利，导致投资者进行板块轮动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/apple-stock-worst-day-ftc-siri.html" target="_blank" rel="noopener">[CNBC] Apple's stock has worst day since April as iPhone maker faces FTC scrutiny, reports of Siri delay</a>
+                    <a href="https://www.cnbc.com/2026/02/12/rivian-automotive-rivn-earnings-q4-2025.html" target="_blank" rel="noopener">[CNBC] Rivian stock rises 15% as automaker tops Q4 expectations, targets significant production increase</a>
+                    <a href="https://www.marketwatch.com/story/airbnb-expects-a-continued-travel-rebound-this-year-as-it-banks-on-new-services-1fe641f3?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Airbnb expects a continued travel rebound this year, as it banks on new services</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">电动汽车</span>
+                    <span class="sector-tag">共享经济</span>
+                    <span class="sector-tag">消费服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>全球货币与贸易动态变化</div>
+                <div class="topic-title-en">Global Currency and Trade Dynamics</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    日元因避险需求创近15个月最佳周度表现，可能削弱日本出口竞争力；美日贸易谈判进展缓慢影响双边经济关系。中国房价持续下跌加剧房地产风险，对全球增长前景构成压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/yen-on-track-for-best-week-in-nearly-15-months-4504293" target="_blank" rel="noopener">[Investing.com] Yen on track for best week in nearly 15 months</a>
+                    <a href="https://www.investing.com/news/economy-news/japan-to-accelerate-talks-with-us-for-first-deals-under-trade-package-4504280" target="_blank" rel="noopener">[Investing.com] Japan says issues remain in finalising first deals under US trade package</a>
+                    <a href="https://www.investing.com/news/economic-indicators/chinas-new-home-prices-extend-decline-in-january-4504295" target="_blank" rel="noopener">[Investing.com] China’s new home prices extend decline in January</a>
+                    <span class="sector-tag">外汇</span>
+                    <span class="sector-tag">出口</span>
+                    <span class="sector-tag">房地产</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>AI安全与技术挑战浮现</div>
+                <div class="topic-title-en">AI Safety and Technological Challenges Emerge</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    AI安全领袖辞职并警告全球风险，加上AI编码平台漏洞导致黑客事件，暴露AI技术安全缺陷，可能延缓企业采用。机器人技术进展缓慢，特别是手部开发困难，增加自动化成本，影响制造业升级。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c62dlvdq3e3o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] AI safety leader says 'world is in peril' and quits to study poetry</a>
+                    <a href="https://www.bbc.com/news/articles/cy4wnw04e8wo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] AI coding platform's flaws allow BBC reporter to be hacked</a>
+                    <a href="https://www.bbc.com/news/articles/cg7y45kxvp9o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Get a grip: Robotics firms struggle to develop hands</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">网络安全</span>
+                    <span class="sector-tag">机器人</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>道琼斯指数跌破50000点</li>
+                <li>美国CPI通胀数据即将公布</li>
+                <li>日元创近15个月最佳周表现</li>
+                <li>中国新房价格连续下跌</li>
+                <li>Rivian季度业绩超预期</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
