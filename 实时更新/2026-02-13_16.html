@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-13 16:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-13 16:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">全球市场在地缘政治紧张和AI技术调整中呈现分化，电动汽车与能源板块表现强劲，但整体情绪趋于谨慎。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美中地缘政治紧张升级影响全球贸易</div>
+                <div class="topic-title-en">US-China Geopolitical Tensions Escalate, Impacting Global Trade</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国与台湾签署贸易协议降低关税，同时中国在巴拿马港口竞争加剧并减持美债，日本扣押中国渔船，显示地缘政治风险上升。这可能扰乱供应链并增加避险资产需求，投资者需关注贸易依赖型行业。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/panama-ports-us-china-ck-hutchison-trump.html" target="_blank" rel="noopener">[CNBC] U.S.–China proxy battle over Panama Canal ports set to intensify as CK Hutchison warns of legal action</a>
+                    <a href="https://www.cnbc.com/2026/02/13/us-signs-trade-deal-with-taiwan-lowering-trump-tariffs.html" target="_blank" rel="noopener">[CNBC] U.S. signs trade deal with Taiwan, lowering tariffs to 15%, while Taipei to boost American goods purchases</a>
+                    <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOY3NUZXpubElDdXloWklyb3FxcnZEWGwtZ1dlbEVocTdJZnJUa0lLTFB4MmNROFF5ajJvWmNfR1hjOXZQYXhuNXJObFRodkpjdnNBQ0h1bUNuWmk2MEZWemtIZWxxbm1OVkRZVHFMUjhQbk83NEdJM1dfMHRVaHVVaGJZUGs3WWlCbHBOcUU4OEl2MjhPaFNMWlpscDJWMmpISnJr?oc=5" target="_blank" rel="noopener">[Bloomberg] Why China Is Retreating Further From US Treasuries</a>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>AI技术进展引发市场波动与芯片需求增长</div>
+                <div class="topic-title-en">AI Technology Advances Drive Market Volatility and Chip Demand</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    AI相关股票出现抛售，但芯片制造商如Applied Materials业绩超预期，Fastly因AI概念股价飙升72%。AI数据中心推动能源需求，显示技术迭代加速，但市场担忧过度炒作可能导致科技股回调。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/europe-markets-stoxx-600-ftse-100-metals-ai-sell-off.html" target="_blank" rel="noopener">[CNBC] European stocks head for mixed open after latest AI Wall Street sell-off</a>
+                    <a href="https://www.marketwatch.com/story/this-trucking-company-is-ais-latest-casualty-as-the-stock-heads-for-a-record-selloff-88f51005?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] This trucking company is AI’s latest casualty, as its stock suffers worst day in more than 6 years</a>
+                    <a href="https://news.google.com/rss/articles/CBMi_gJBVV95cUxOU1BXRi1MOEhiaUFHNjBlVEZHM1lnMVhYWDNnTy1tT0VKa2pLU0xJSDBjMUpMZ3RuOGxTSnRNWi15M0EzSXQ0N2Ztdlh2SUcyOWFDU2NBSVQ0eWgybjNZR3dvb3Q0Y3A4ZV9QM3NMWkFyZ0NVUmZGR2t2aE5oTUNsaEtrWVlRZXItbUFmVElVRURWMU5pRDFkZEQzdUxEaW4ySVRISHJLd1JkVnc3SDV5S3hSaWVibzNJQURnczBLdXN3ZVFEWERFTDNBQ19iSEp5Y0NRLTRLVklfa3FMTnBlVy1wYkVBWC13VTdyeWZ6bjI3SFoyRUQ1bXY5TURJVjdmZDA5T0JMTG4xVkNmNlltenFqY3QzMDlrc280Y0FJeGVidDdWbDhaYS0wSHpGdXV0T01ackpCSHhEWWtNcFNkS1V3UUxLWkxMSkZTRERkc1JwcTNDTV9wTjhpWjYxM3dFZzE4WFZIOUxfTGk3MWVlbXN6aUdfOGN4UEtZZllR?oc=5" target="_blank" rel="noopener">[Barrons] Fastly Stock Soars 72%. Earnings Show It’s an Underrated AI Play.</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">能源</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>电动汽车行业竞争加剧，中国制造商崛起</div>
+                <div class="topic-title-en">EV Industry Competition Intensifies with Chinese Manufacturers Rising</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    小米电动SUV在中国1月销量超越特斯拉Model Y两倍，显示中国电动汽车竞争力增强。美国政策变化影响汽车价格，Rivian业绩超预期但QuantumScape面临挑战，表明行业分化加速，投资者应关注电池技术和市场渗透率。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/xiaomis-electric-suv-tops-china-sales-in-january-sells-twice-as-many-as-teslas-model-y.html" target="_blank" rel="noopener">[CNBC] Xiaomi's electric SUV tops China sales in January, sells twice as many as Tesla's Model Y</a>
+                    <a href="https://www.cnbc.com/2026/02/12/rivian-automotive-rivn-earnings-q4-2025.html" target="_blank" rel="noopener">[CNBC] Rivian stock rises 15% as automaker tops Q4 expectations, targets significant production increase</a>
+                    <a href="https://news.google.com/rss/articles/CBMihgNBVV95cUxPaUQtTU5ONFViejVKanZfTFFnSWRwakZzRUt4SG5VMGg0a1RnZFVodzlaeE9KV3JBenhhSjFDZmVXLUJDNkJSMjlXVndpMWNEbEVfNXV2SE9jc2ktVFJoOTBjTEJaOXlyU0h4dFJlTm9EQzdWdk5LZUctZHpPX1h2OUhDU1IwaVRqNjBWR2xaWjRuZU5YVVR3WW8yZk8xdzVSOTN3bFZmN1oydVlHZDFYdGtvOVh3bkNCRkdYYmJBRVFpWWppVlFFSFpCWjlUb2gyWTlka1pNeGJnSzZ6c3J2S1otV0cxSmZIX3l1bU9wYVM2SlVFUGNyekZWWVllYm9OOHVTMFRXekgxY1A2S2dNamdRVDBRMElhMFBGdjdxd1ZEMTNObGpScHo0U3h6MXdVXzlHaWNIdHZXYkpiSWRiN1NibVRhczZfTHRPWG9xeHpDTDc4SmNhNjJ2ZElvczJVWk5BZWNoWkJadndpTEItbVpteEs1eVluQXF6U0hyUmFHWGtVYXc?oc=5" target="_blank" rel="noopener">[Barrons] QuantumScape Stock Tumbles After Earnings. This Could Be a Worry for Investors.</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">电池技术</span>
+                    <span class="sector-tag">新能源汽车</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>能源板块表现强劲，受AI数据中心需求推动</div>
+                <div class="topic-title-en">Energy Sector Outperforms, Driven by AI Data Center Demand</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    能源板块成为标普500今年迄今表现最佳，不仅因油价上涨，还因AI数据中心电力需求增长。能源CEO表示AI正改变行业格局，投资者可关注传统能源转型和可再生能源机会。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/why-energy-is-the-best-performing-sector-in-the-s-p-500-so-far-this-year-78bafd05?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Energy is the best-performing sector in the S&P 500 so far this year — and it’s not just because of the rise in oil prices</a>
+                    <a href="https://news.google.com/rss/articles/CBMixgNBVV95cUxPN2hEY1JOOWVUajJSREdRNW82a2VoS1BzTGFaaHExaHdVWmlQRWFXXzYxUjRlNEtsd0NxY0VhcXRqQTF5YTFXckllYVY4UGotakk2TnlrcVZUVno4ZDVmR241cGVQREtsb3ZWbGg4VlZiZmEtdGxSRzFZV1BjbFc0akdwWGVXOURpS3VZQmVwQmozTnNXNTJtbDYxamlDbGJSVV8xWWxvV054RGhpbUQ5dEVWbkFQYjVySk9Pd05XOEFpN2ppcThudHNWeGJJRUdFRzQ5QnFfdXVCTzRtUnFIT1NrRUI2Q1F3SlQ2ZW1FMmR4d0k2Wjg5QVB4ZDgweHRLZ05SaFZRN2wtRGFseVFMMkxMaFRyMlh5V2ZldVRIbzlxY015TklfeTBUdGtEenlBa0FFVG5jNW1RU0VJSVJtdktOb3Nqa0V6Uzg1WVNxejEyRmlzS0lJVk9QYUV1MHFCQTNRNk9hTEVsQXFEWUZUUUFGLUUxd0hoRnc3X0JXalpGT2lxaVBzQlFqN0tWMDNITGJLd3lzaXFscFFYREdzc0dQYk5wRlhYVDBCaFpJTVpMOEdsNGhRdFBXODRkRGQ3dEt2VWFR?oc=5" target="_blank" rel="noopener">[Barrons] Energy CEO: 'AI Data Centers Are Changing Everything We Do'</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">公用事业</span>
+                    <span class="sector-tag">石油天然气</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>科技巨头面临监管压力，股价波动加剧</div>
+                <div class="topic-title-en">Tech Giants Face Regulatory Pressure, Stock Volatility Increases</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    苹果因FTC审查和Siri延迟报告股价遭遇大幅下跌，亚马逊Ring取消合作，显示科技公司监管风险上升。与此同时，Micron和Arista等公司表现分化，投资者需评估合规成本和竞争格局。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/apple-stock-worst-day-ftc-siri.html" target="_blank" rel="noopener">[CNBC] Apple's stock has worst day since April as iPhone maker faces FTC scrutiny, reports of Siri delay</a>
+                    <a href="https://www.cnbc.com/2026/02/12/amazons-ring-cancels-flock-partnership-amid-super-bowl-ad-backlash.html" target="_blank" rel="noopener">[CNBC] Amazon's Ring cancels Flock partnership amid Super Bowl ad backlash</a>
+                    <a href="https://www.marketwatch.com/story/arista-succeeds-where-cisco-came-up-short-to-the-benefit-of-its-stock-ee2bfadc?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Arista succeeds where Cisco came up short — to the benefit of its stock</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">社交媒体</span>
+                    <span class="sector-tag">电子商务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>金融市场避险情绪升温，黄金与加密货币波动</div>
+                <div class="topic-title-en">Financial Market Safe-Haven Sentiment Rises, Gold and Cryptocurrencies Volatile</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    中国投机者推动黄金市场波动，比特币在亚洲企稳，避险货币如瑞士法郎和日元被重新评估。这反映市场对经济不确定性和地缘政治的担忧，投资者可能转向实物资产和去中心化金融。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/china-gold-volatility-bessent-etfs-leverage-margin.html" target="_blank" rel="noopener">[CNBC] How China's 'unruly' speculators might be fueling the frenzy in gold market</a>
+                    <a href="https://www.cnbc.com/2026/02/13/safe-haven-currency-swiss-franc-yen-dollar-switzerland-usd-dxy-trump.html" target="_blank" rel="noopener">[CNBC] Safe-haven currencies might not be so safe after a volatile year. Here's how the market is rethinking the Swiss franc, dollar and yen</a>
+                    <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxNY29hM0J1S2xmSUlweUd6YU9ZZDJIOXJCX2ptb1N4MDJncmdGOVkyMnhkTEsxZ1VKSjdYbWYwTEZrR2hDOUpzTjRJajZGVFVCdDNmaUtqZkNtMXVWcy1hd3JFUFAtV0FmVGh4dmhDUnBWYVFwZ3QtZE1SM0dPbXFZQnNPUWVFQUxQN19Ua0NTN0hnWkhSQ2pXTHFtOFNSemNOMzE3dHMwLUFxNTM5S0R0YWh1bFFRUi1HUVE?oc=5" target="_blank" rel="noopener">[Bloomberg] Bitcoin Steadies in Asia After Standard Chartered Warning</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">贵金属</span>
+                    <span class="sector-tag">加密货币</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>小米电动SUV 1月在华销量超越特斯拉Model Y两倍</li>
+                <li>能源板块成为标普500今年迄今表现最佳板块</li>
+                <li>Fastly股价因AI概念单日飙升72%</li>
+                <li>Rivian第四季度业绩超预期，股价上涨15%</li>
+                <li>中国持续减持美国国债，地缘政治风险上升</li>
+                <li>黄金市场因中国投机者推动出现剧烈波动</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
