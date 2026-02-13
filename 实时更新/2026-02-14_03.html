@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-14 03:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-14 03:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场呈现复杂图景：通胀降温与联储官员提名提振情绪，但AI过热忧虑与特朗普贸易政策引发市场动荡。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美国通胀数据喜忧参半，市场降息预期摇摆</div>
+                <div class="topic-title-en">Mixed US Inflation Data Fuels Rate Cut Uncertainty</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国1月通胀数据显示整体物价压力因二手车价格下跌而缓解，但核心通胀因服务业成本坚挺而回升，呈现复杂信号。这削弱了市场对美联储将迅速转向激进降息的押注，可能导致金融条件在更长时间内保持紧缩，对成长股估值构成压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cd6z05p56xyo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Inflation eases in US as prices for used cars fall</a>
+                    <a href="https://www.cnbc.com/2026/02/13/heres-the-inflation-breakdown-for-january-2026-in-one-chart.html" target="_blank" rel="noopener">[CNBC] Here’s the inflation breakdown for January 2026 — in one chart</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQYzJVQmhSdW5pdjl4ZjlGQnRtbXNQNi1pakJObXk5ZWpoUUpacmwzcUFTLWNjZHEtRDN4SVNILTFQb3A0STZIOGdtV1lFOVVCY25MdXoyVWQwLVBCZVBtVERfU1VnWl9wci1CV3hHUmRyUmJDR2oyWWVuRllCUlh1enQ4X19Eb1VZQU8zaEEtTHRFX1hoNy1UaXhEYmFUWDBkOVNfaDZsQWNCVVZCR2FiYjdwaU0?oc=5" target="_blank" rel="noopener">[Bloomberg] US Core CPI Picked Up at Start of Year on Firmer Services Costs</a>
+                    <span class="sector-tag">消费</span>
+                    <span class="sector-tag">汽车</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>AI支出狂潮引发市场“消化不良”，科技股遭抛售</div>
+                <div class="topic-title-en">AI Spending Spree Triggers Market Indigestion and Tech Selloff</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    市场对科技巨头无节制AI资本支出的担忧加剧，导致亚马逊、微软等股票进入技术性熊市，并引发广泛的“先卖出，再问AI问题”式抛售。分析师警告，AI热潮可能对信贷市场造成系统性冲击，并引发行业颠覆（如冲击货运股），迫使投资者重新评估科技股的盈利前景与估值合理性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/ai-credit-markets.html" target="_blank" rel="noopener">[CNBC] AI disruption could spark a ‘shock to the system’ in credit markets, UBS analyst says</a>
+                    <a href="https://www.marketwatch.com/story/amazons-stock-just-entered-a-bear-market-this-magnificent-seven-name-could-be-next-ec2d789d?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] AI spending fears drove Amazon’s stock into a bear market, alongside Microsoft’s</a>
+                    <a href="https://www.marketwatch.com/story/ai-fears-slammed-trucking-stocks-analysts-see-an-obvious-buying-opportunity-45da5878?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] AI fears slammed trucking stocks. Analysts see an obvious buying opportunity.</a>
+                    <a href="https://news.google.com/rss/articles/CBMi_AJBVV95cUxQREJ2Z1JmMTVIUTV2QjViZ0g0ZnNnSHFycTl5eGZyR2RMVng2b3d0TXpfYjlJeEF3M3FMZ2MyZmhjLTZVbEpvSXNsUHdKUEdpX3ZhSFF2VWRKWG5yZ3Exc0p6OGhvTk91QVlzTFVocU80bURjbnVUVWo0MHZ5eGs1X0dIMWJnem5Ca3FBMVhwcHIwT1hlVnRCdzl0QlMyTzNacV9Ud3phRUQ5bFM4WXRHTlBSSk1UdllvbVRraEsxLUY1eW9nTWV6TG1XZWFNRVF0LXpZMzlxUktBUnpZZ2hySlNGQUdTQ0kzTi1aUmZscWhGSExJT3E1dFNBVGZqWGhMdnlGcGY5NERZVnhwWXQzOFN2OFVtN21pREZLdkVHMzQySlBhQVJZRWI0QjVSZFczY01DRDU5MnZibldDRFJPeXV0MHVYV0JuaDhhbk90YS1rWW5WM1lYNFBaUUhndHBrRVB3eDR1TkNUTEVSZ0R2ejNPZlN3TFFnOURaSA?oc=5" target="_blank" rel="noopener">[Barron's] Stock Market Reels From ‘Sell First, Ask AI Questions Later’ Tech Slump</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">货运物流</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>特朗普政府贸易政策升级，关税与监管冲击多个行业</div>
+                <div class="topic-title-en">Trump Administration Escalates Trade Policies, Tariffs Hit Multiple Sectors</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普政府政策行动密集：撤销气候法规以降低汽车成本、实施金属关税导致进口商面临创纪录的保证金缺口、并切断对古巴的石油供应。这些政策直接推高企业运营成本和供应链不确定性，已对Pinterest等公司的业绩造成实质性打击，并可能引发更广泛的贸易摩擦。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cn0zdd7yl4vo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Trump revokes key climate ruling which he says has made cars pricier</a>
+                    <a href="https://www.cnbc.com/2026/02/12/trump-tariffs-us-customs-record-bond-funding-issues-flagged.html" target="_blank" rel="noopener">[CNBC] Trump tariffs leave importers with record-breaking $3.5 billion U.S. Customs bond funding shortfall</a>
+                    <a href="https://www.cnbc.com/2026/02/13/-pinterest-stock-price-tariff-earnings-layoffs.html" target="_blank" rel="noopener">[CNBC] Pinterest stock craters 20% as tariffs hit earnings. Here's what's happening</a>
+                    <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxQM0V3enRvb3U2aWhycTNvUlB1YVJuSU1PZHRsSW0yaVhJZ0tieXB0SHlBTThpSV9iVHhKcmtieTFQYVFtY3E1dlNvV21KNHBlMnlUS0g1VFo5TmhObGRkOWVZbDQ0eWxtR0hpNmVwU3lsMEpuZGhVNHRlS1B0c2tfQVJn?oc=5" target="_blank" rel="noopener">[Bloomberg] Much of Cuba Goes Dark as Trump Chokes Oil Supply</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">进口贸易</span>
+                    <span class="sector-tag">航空运输</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">社交媒体/广告</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>企业财报冰火两重天：流媒体强势，零售电商抗压</div>
+                <div class="topic-title-en">Corporate Earnings Diverge: Streaming Strength vs. Retail Resilience</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    Roku凭借付费订阅用户创纪录增长而股价大涨，Instacart亦因业绩强劲反驳了市场对杂货电商竞争的过度担忧。这表明在宏观不确定性中，拥有清晰盈利路径和用户粘性的消费科技公司仍受青睐。同时，新购车贷款利息抵税政策可能刺激汽车消费，为相关板块提供支撑。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/roku-stock-earnings-premium-subscriptions.html" target="_blank" rel="noopener">[CNBC] Roku stock surges on earnings beat, record quarter for premium subscriptions</a>
+                    <a href="https://www.cnbc.com/2026/02/13/instacart-cart-stock-ceo-grocery.html" target="_blank" rel="noopener">[CNBC] Instacart jumps 7% on strong results as CEO calls grocery competition fears 'overblown'</a>
+                    <a href="https://www.cnbc.com/2026/02/13/interest-on-new-car-loans-tax-deductible.html" target="_blank" rel="noopener">[CNBC] Interest on new car loans is now tax deductible up to $10,000—here's how much buyers may actually save</a>
+                    <span class="sector-tag">流媒体</span>
+                    <span class="sector-tag">电商零售</span>
+                    <span class="sector-tag">广告科技</span>
+                    <span class="sector-tag">汽车</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>美联储领导层变动与降息预期持续博弈</div>
+                <div class="topic-title-en">Fed Leadership Uncertainty and Rate Cut Expectations in Flux</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    市场对美联储今年降息三次的预期概率升至50%，反映出对经济放缓的担忧。与此同时，围绕美联储主席的提名出现政治博弈，参议院被敦促推进对潜在候选人Warsh的听证会，尽管现任主席鲍威尔正在接受调查。这种政治化倾向增加了货币政策路径的不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/fed-chair-warsh-powell-senate-bessent.html" target="_blank" rel="noopener">[CNBC] Senate should proceed with Warsh hearings for Fed chair despite Powell probe: Bessent</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQaDFjUTBqQ09jXzZtZmJHU0N2TmpmY2NyeXJtSE1jeDJub3J1dkktckc0eE16NERjeW0zaktXa3JYb3BrWHVyb044Ul9HUWctanV3cnVCV2c5cGdibFJYM3FpdS1GMTBaNTdHcllwTnZfcmdRSjZFOXcyOVZOU1JKTUZiS3FLal9BeDlLRlBiQ0FSU3lkZVJEMEVoSGR5bzF4NkFKbzdRVU1iaXVrUXBYcXJB?oc=5" target="_blank" rel="noopener">[Bloomberg] Traders Boost Bets to 50% for Fed to Cut Three Times This Year</a>
+                    <span class="sector-tag">银行</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">房地产</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>地缘政治与能源市场动荡，油价受多重因素驱动</div>
+                <div class="topic-title-en">Geopolitics and Energy Market Volatility, Oil Prices Driven by Multiple Factors</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    委内瑞拉原油销售收入突破10亿美元且资金流向改变，以及特朗普政府扼制古巴石油供应，凸显地缘政治对能源市场的直接干预。与此同时，原油类股票年初至今的强劲上涨（+21%）使分析师对2026年持乐观态度，但政治风险仍是主要变量。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/venezuela-oil-sales-qatar-chris-wright-trump.html" target="_blank" rel="noopener">[CNBC] Venezuela oil sales top $1 billion, funds won’t go to Qatar account anymore, Energy secretary says</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQc3c1ZmtQY05FR3o1UDZySkg3YzFkVG1PeVl1c0pET3pmRUZQMzh1aW1fd2hIeXd2MWVXb3VHMHRGZ0M2UklwbjUyT3hVTUdZMk5YTTI0anZHNkFXcWpnSnh2Yk43X0stdkgtWVJvMVgxNEVWdDF0eGRnUVE1NGxrOU9kS0ZLSzFDR0IxWlFGVHQ1VlZMdF9uVHRGN2JOU3QtZFYxWWItS1dUNGxhRVBkX3JR?oc=5" target="_blank" rel="noopener">[Bloomberg] The 21% Surge in Oil Stocks Is Making Analysts Bullish on 2026</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">油气开采</span>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">新兴市场</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>中概股面临新一轮监管与地缘政治风险</div>
+                <div class="topic-title-en">Chinese Stocks Face Renewed Regulatory and Geopolitical Risks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国短暂将阿里巴巴、百度列为“军方支持企业”，尽管随后移除，但这一举动标志着中美科技博弈仍在持续，并可能随时升级。此类事件会加剧在美上市中概股的合规风险和估值折价，投资者需持续关注相关地缘政治动态对特定板块的冲击。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQaWxERVFJNlBINjBjQTFwUnIwdDBJYWszdS1yVEw0YkRoX3FCb2RfVTBOOHlubVlteEdtNXREOEV2Z3JMTTROZ1hJUWozbEQxVm05Y0diLXF2bi1KOWZUQ25hVGxpbl9kVXJqV0tFc0Z6RWNzQk04UUZxLUc2U290YXBnSEZWajZwQUlpWnFoeHhSVWMxWkkwXzZPU2p1djhJQlpYZUliVVZrQ1lwOG0wTzJR?oc=5" target="_blank" rel="noopener">[Bloomberg] US Briefly Lists Alibaba, Baidu as Aiding China’s Military</a>
+                    <span class="sector-tag">中概股</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">电子商务</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国1月整体通胀因二手车价格下跌而放缓，但核心通胀因服务成本上升而加速。</li>
+                <li>交易员将美联储2026年降息三次的预期概率提高至50%。</li>
+                <li>特朗普关税导致美国进口商面临创纪录的35亿美元海关保证金缺口。</li>
+                <li>原油类股票年初至今已上涨21%，分析师对2026年持乐观态度。</li>
+                <li>亚马逊与微软股价因AI支出忧虑双双跌入技术性熊市。</li>
+                <li>比特币若跌至60,000美元可能引发新一轮的清算螺旋。</li>
+                <li>Roku第四季度高端订阅用户数创下历史纪录。</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
