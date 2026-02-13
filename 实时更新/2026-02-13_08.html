@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-13 08:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-13 08:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">全球市场受AI恐慌情绪蔓延及科技巨头财报影响普遍下跌，监管政策变动与加密货币波动加剧市场不确定性。</p>
+            <span class="sentiment" style="background:#27ae60;">&#9660; 市场情绪: 看跌</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美股大幅抛售，AI恐惧引发市场震荡</div>
+                <div class="topic-title-en">U.S. Stock Selloff Intensifies Amid AI Fears</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    道指自周五以来首次收于5万点下方，苹果市值单日蒸发2000亿美元，科技股普遍承压，显示投资者对AI泡沫及高估值的担忧加剧。此次抛售可能引发市场风格转换，资金从科技板块流向防御性资产。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/dow-ends-below-50000-threshold-for-first-time-since-friday-as-ai-fears-spark-wider-stock-selloff-f6ee91e1?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Dow ends below 50,000 threshold for first time since Friday as AI fears spark wider stock selloff</a>
+                    <a href="https://www.marketwatch.com/story/apple-sees-200-billion-market-cap-wipeout-as-stock-slides-on-ai-fears-88917cc0?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Apple sees $200 billion market-cap wipeout as stock slides on AI fears</a>
+                    <a href="https://www.marketwatch.com/story/amazons-stock-just-entered-a-bear-market-this-magnificent-seven-name-could-be-next-ec2d789d?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Amazon’s stock just entered a bear market. This ‘Magnificent Seven’ name could be next.</a>
+                    <span class="sector-tag">科技股</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">大盘指数</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>监管政策重大转向，气候与 antitrust 领域现动荡</div>
+                <div class="topic-title-en">Major Regulatory Shifts in Climate and Antitrust Policy</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    特朗普政府撤销关键车辆排放标准，可能提振传统能源及汽车制造业，但打击清洁能源板块。同时，美国司法部 antitrust 主管辞职，暗示未来并购审查可能放松，或利好大型科技与媒体并购交易。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cn0zdd7yl4vo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Trump revokes key climate ruling which he says has made cars pricier</a>
+                    <a href="https://www.investing.com/news/commodities-news/trump-administration-set-to-revoke-basis-of-us-climate-regulation-4502883" target="_blank" rel="noopener">[Investing.com] Trump revokes basis of US climate regulation, ends vehicle emission standards</a>
+                    <a href="https://www.bbc.com/news/articles/cnv6j9vrn06o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] US antitrust chief resigns amid tensions with Trump officials</a>
+                    <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQeWxfemZzdlpVVmJycGRNU3NmN2g3SFl0WWhrVl9zS0Q1YjAyMlJlRXR6bERGZ2Jod0dQZTlWOWMtbzhoekxqenpnLVRlZGlhQ0ZiRUR6SjRmaGNuTHZvV3U0Q0RoQTZSaFh1OWRlUmtnU2twUXRaT3pGWWJZcXhOU05hQUkyRHVXZFpldGFZZDd4NlJYNkU5QThxaC05ZkhVMmc?oc=5" target="_blank" rel="noopener">[Bloomberg] Justice Department Antitrust Chief Slater Resigns</a>
+                    <span class="sector-tag">清洁能源</span>
+                    <span class="sector-tag">传统能源</span>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">媒体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>加密货币交易所暴雷与资产价格背离</div>
+                <div class="topic-title-en">Cryptocurrency Exchange Losses Diverge from Asset Price Gains</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    Coinbase意外转亏，显示交易所业务在加密货币资金外流下面临压力，但比特币等主流加密货币价格却在强劲就业数据后上涨。这种背离表明市场结构正在变化，机构投资者可能直接持有资产而非通过交易所，对交易所商业模式构成长期挑战。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/coinbase-swings-to-a-surprise-loss-amid-flight-from-crypto-b5706ddb?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Coinbase swings to surprise loss amid crypto exodus, but says traders are buying the dip</a>
+                    <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-coinbase-misses-q4-2025-earnings-stock-down-79-93CH-4504241" target="_blank" rel="noopener">[Investing.com] Earnings call transcript: Coinbase misses Q4 2025 earnings, stock down 7.9%</a>
+                    <a href="https://news.google.com/rss/articles/CBMiiANBVV95cUxNQ24ySlZLNk1lSGZ3Tl9mTEotUU16MXExZ1RRQzZoTkxuYUhPU3ZXR1BqU1pSNXJxd191dVBza0o0ZGc2bzhCTS1UNmxzZWFuOFA4dzk5bzJYY3BsWmg3Y0pQOTktTVFmMmVpcXZhbE11MC0xazNTVzNCdDdENm1ZTWo3R2RCcHZpeC1tOGxxVjNzTXFSYTZ0V0ZzMDFneWUzWHBmM1pRYWNKWWxWeVM1QkhBaVN5NXBxekVNTTVaaWlURDJJWDlCUlRNV2hERnBvcGY0WmVucnhLS015akNxUXR4a2lHMnJuSXYzQUx1Ukx5NmxIVDN2TXUxQjZUMWozaXVkWlI4YnVRWG0tOU5PRy00cE8tWFQyQ3ZVeW4zckM5WFBLY0Jxc1FaakpEQ2M0ZUJHaFdJaThWVzZPZ2VNUGhpQVk4SUpXVWZodUhlcjF4X1hXSHNFalFvLUZzeEx1ZmIzblNMR2p4emMyZ0p2TnpSaTNWdGtIYndvNGJYdENEaDVlVFZ3Yg?oc=5" target="_blank" rel="noopener">[Barrons] Bitcoin, XRP, Ether Are Rising. Cryptos Are Shrugging Off Strong Jobs Data.</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">金融科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>AI军备竞赛升级，芯片与技术路线现分化</div>
+                <div class="topic-title-en">AI Arms Race Escalates, Chip and Technology Paths Diverge</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    OpenAI首次采用英伟达竞争对手Cerebras的芯片发布模型，同时Anthropic以3800亿美元估值完成巨额融资。这表明AI模型训练对算力的需求正推动芯片供应链多元化，可能削弱英伟达的垄断溢价，但整体上巨额资本涌入仍将加速行业创新与整合。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOYnFtRTZqbi05ejNfUS0wZGh3QWpxTjE1N3p3Sk9JZTdJZHB2T1c0ZG55aWFNakdBZzFucmRuMXNFTnZEVFVVbExIVkZvMjY0aTFBMnFUS1VGXzNHcHNKODIxbzFfTURLdVVLWnRMbEVueldmemZ4QVV3aUJzX2lKZDBHeWh0VGQtXzQ0dWJSZWQ5UzNvU3hFWDNSNGwxV3NvZ1hBTS1fTlBFZ3RWdHlMdGdETnl0Zw?oc=5" target="_blank" rel="noopener">[Bloomberg] OpenAI Debuts First Model Using Chips From Nvidia Rival Cerebras</a>
+                    <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNcmt1R3huYmloT0J0YUppZWlxeEphUnptYzN3aGdsVEtXU1gwLUUySVhHbXlwQWtybzBHcXY5WWtKX3dHa2c4anA4V2JiR3gwU0ZuYnA2c1E4eW5OTnBmT3ZKdUhWb1Q3SjNycnZmOVhxRkRyVzVSdVptWmZDdjg5Rk1WZEJSWUQ2YkRIUktPOUxrdDhuVFhHQ0phTlhWanZsS1JYcXZHNXlWTnI2S05r?oc=5" target="_blank" rel="noopener">[Bloomberg] Anthropic Finalizes $30 Billion Funding at $380 Billion Value</a>
+                    <a href="https://news.google.com/rss/articles/CBMi_gJBVV95cUxPcjZOR2dGTWNaVDhXOGtPYzVsbG9MMVQ2MnlRalpxRGFrdmVuSFgzbXFWeTJYbmxqc3BLbkVBaG9VU3F5a2laUW9qUlhiNFNKazJxQ19Dc0szdmpnbWIteHVIODR5eW9VRlE4NkdKZzRyNzNveHRPaDFjN25nQ2lZbWRZNUhySHVJcGk3Z0UwRndmMVN2X3NNcTVXcEMxWjQ0NGItMjYtV1RPLU9EMTMwd1A4T0YzS19fakZsU2QxY0pGODBMY2pSOHltUjMtSmZDM0tIUVNTOWlIdzRxMnlSRTR4LTdfY3YtNjZQNEhfLUhOWFJtZ2pCYmhEeVhLNDV2MlBndm5wVWdLdnhYSmtQazJNTWhDSmFVQ29DMnlSSDFzaWhHN2pOSjItSS1Ta2NNUnhlS0R6RzZsMmZtYWNidkltbWJpNWdXVjM1QVk3bGF2V0VMaFRmU1ZnbjRvMVlQeWpfcnhmWjVtcjFBOXBhTTFaVTVpNDNKakhKdGNB?oc=5" target="_blank" rel="noopener">[Barrons] Nvidia Stock Wobbles. The Focus Is Turning to Earnings.</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">云计算</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>消费与医疗保健企业财报冰火两重天</div>
+                <div class="topic-title-en">Mixed Earnings Results from Consumer and Healthcare Companies</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    百威英博、Crocs业绩超预期推动股价上涨，显示部分消费品牌韧性。但Baxter International因业绩惨淡股价暴跌，QuantumScape财报后亦重挫，反映医疗器械和前沿技术领域面临成本与商业化压力。投资者需甄别个体公司基本面，而非一概而论。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMijgNBVV95cUxPQUdkOVVNSkNCay04VnpNQUYzbjdWd3B5ZTRaVTVTUm1tbTl4X0xjVnlxMjNxRVZ1NWw5X0gxTHA2ZGhxbDJMd1lyaEFUU1VzSUFOd2RxN0MySWw1MTMzZnBLcEQ0eGpLNXV3Q2hUS0ZqVnlCQ1g5ZDdqSnRwMWt0MVFVU0M4VnFtaEtYODA1dnRTY0RSNkd2QXVoUjVXQU1rQ1M2UGNvVG9yNTh5U0tIMVAxaFR2bXZTZ3dILUw2anBEc1U4Y0lLM1dXRHBSRHJYSzVQdXVYbGlmOWExbjhlc3RSam1TWjFBNUk4UzlhTmxCcnRwaVJPLVBtQXlCM1NURmlSSTlieGtyUTNHNFpMNV9adGNNRnhhbEdLUEtXaHJsOGY3b3dQTFZ3bHNqTWk4VzZyMElGbzRVcko3VDdxQzR4UEdNaDVQQzVzSUEtNVNhcVdLX1lrZHp1VWtieHJ0Z1BxY3VWT1RTQmR2Z1RVY0ZjQS1Bc0xZSXlsd1Y1cVZQRm1xLXVlVE9JQ0lGUQ?oc=5" target="_blank" rel="noopener">[Barrons] Anheuser-Busch Stock Jumps as Earnings Beat Forecasts. Why the Bud Brewer Can Fizz in 2026.</a>
+                    <a href="https://news.google.com/rss/articles/CBMi_AJBVV95cUxPVlJsZ09obUxfVGhhOVN0ajlDSFpSZ3kyOWdaWU1uM2lRRmNSWmRQUU9qQUJKMG81cUZiTGJPb2FFWjVRd3BfYWc1bllMT251dWs4eXRFQ2pYZ3pPa29MSUZ5WGdaWjhJMFJNSDZLeTdPLWVKbHdGZ3ZJUjJRUGlKOEMwc2NobXUteGtzcnBFVHA0QVpjbkNkUWNmTW9pQ0VwQnUxWDdMOTdEMGk0ZE5YYzlDa29GQkR5bEhkRWZmM19GZExETEtGS2JmenF2UEhkaG1mVk5hYUJhcG5adHd0WWREbnJ3VWlVbUNTQkptRE94dFVJM0hUOEF6Y2Q5WnAtYVVEcndCMkpfaFVTZGVSTkNiODhodmNXWmFrOVphZDJmN1ZEcktQSlZuTTF5NTNLbkR1dXVmVVREMGNCQ2U3TWlrdDJNRnpfOVVLMzkyZkVrRHEydHEyVkZBbU9fTS1Eb29hZGxtSERRSUFQbkFlSkxQOXNLcDNUamV4Mw?oc=5" target="_blank" rel="noopener">[Barrons] Crocs Stock Jumps After Earnings. Ugly Shoes Are Still in Style.</a>
+                    <a href="https://news.google.com/rss/articles/CBMikANBVV95cUxNSU1wMkYzMnE2anZ0eFVMd09lRDVCZUJBRm1tcVh2Zm5Ody1tUldDNWZ1eFV6RTg4UVZyY1Z6dWJWWmoxei1qbzRRZVdGb180MnB0OWtmQlduRm13YThyNUhSOC1uUWpKWlNlcWE5cTFaWFJBakFiX0ZIcFBwYlI3Nnp2Y1pBUTdZRlJqMkhxRW1xUmtxRXBfWFR3ZGJFMFIxakN0NUhfcHByVnNuaWU4eWE5c1hUMDlaYWN1X1Y0NjFqeHVONnZ2ZC1GbGxvazZqdnlBYmxBcGhLaVExM1lQaGZfbkVPbG9FZGZlelJ3SkVPdXo2dUp0Y1o1djNNRGdDaEhsZEZxdFFBTWZWV3lxVDNKc1BWcmJSMS1yMUc2RUlFWnJOWjFiX3FrQlpEU3RUYVZSUmxpU1Z5am80bVJiQ2dwZHE2MHVKRk1qcll5T2otN2txS3o1WHZxWEFkeEtCVUt2em9OOExtZlFrb0p3WFhheWxPWHdHSkJCbnJxcVh6eU5RTEpOeVB2a0MwNGlV?oc=5" target="_blank" rel="noopener">[Barrons] Baxter International Stock Falls Sharply. Earnings Were Brutal.</a>
+                    <a href="https://news.google.com/rss/articles/CBMihgNBVV95cUxPN3c1a0JtdEtNbXRWeFhhX21TUmJMaVI3bTZPS3dwTnZNLWhybDZVUVR6VWJycmM3Q1dPbjRDcHA4Z2N4Q3puLVBVNU5JMjlWVE1xQjFMQkFPbnROMGFQam1Qa2xhWmh1cHZTd0FySTRqcDNtMnRYczdfSUJaN0JUSGwyNHBxVFRuOFgzSkVNb1BRUlNFUDFUNE1QTzBWMC1URDBWYWZHX1RMX0VyazhXeGxGeTViYjFHWXRMTEg3YkxNbFZONnRyUjlfUEFYRFZmY0ZiSXJXMWhKYVlaWnc0djN1VjZJS21HUWV3ZlBHN0puOUpQSzVaeVF5OUh4X2wybUVEVVpuWnVlTjRDSkNINnhobUJ3eDlzQWs0c0NldF84UVR2MlF4X0xNdkhpUWtHYzdxWEJFWUtBVE5UN2dxRmx5dnZmaDlGX0wwdjV6UkxlTllQdURhbVB4VEl2ZWtNcGhERkdUYUZhenNtRnFfM3doUFNTUi1YTHBmTlFKRDFpZWJoOWc?oc=5" target="_blank" rel="noopener">[Barrons] QuantumScape Stock Tumbles After Earnings. This Could Be a Worry for Investors.</a>
+                    <span class="sector-tag">消费品</span>
+                    <span class="sector-tag">医疗保健</span>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">新能源汽车电池</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>英国经济疲软与并购审查加剧</div>
+                <div class="topic-title-en">Sluggish UK Economy and Increased M&A Scrutiny</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    英国财政大臣里夫斯承认GDP增长疲软后表示'还有更多工作要做'，突显经济挑战。同时，监管部门下令调查《每日邮报》母公司对《每日电讯报》的收购，显示媒体集中度引发担忧，可能影响传媒行业整合进程与估值。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4gjmm7dlggo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Reeves says 'more to do' after sluggish GDP growth [Also: Google Business]</a>
+                    <a href="https://www.bbc.com/news/articles/czj17w3n1e8o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Probe ordered into Daily Mail owner's £500m takeover of Telegraph</a>
+                    <span class="sector-tag">英国经济</span>
+                    <span class="sector-tag">媒体</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>道琼斯指数收于50,000点下方</li>
+                <li>苹果单日市值蒸发2000亿美元</li>
+                <li>Coinbase Q4意外转亏</li>
+                <li>比特币价格在强劲就业数据后逆势上涨</li>
+                <li>英国GDP增长疲软</li>
+                <li>长期国债在股市抛售中上涨</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
