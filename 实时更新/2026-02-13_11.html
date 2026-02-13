@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-13 11:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-13 11:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场受人工智能监管忧虑及宏观政策不确定性拖累，呈现广泛抛售，但能源及部分电动车板块表现坚韧。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI监管与技术瓶颈引发市场恐慌，科技股遭广泛抛售</div>
+                <div class="topic-title-en">AI Regulatory and Tech Bottleneck Fears Trigger Market Panic, Tech Stocks Sell Off Broadly</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    市场对AI发展的担忧正从概念炒作转向具体风险。FTC对苹果的审查及AI安全主管的离职加剧了监管不确定性，而AI编码平台的安全漏洞和机器人技术的瓶颈则暴露了技术落地的实际困难。这共同导致投资者重新评估科技股的高估值，引发包括苹果、亚马逊在内的科技巨头股价大幅下挫，并蔓延至亚洲市场。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cy4wnw04e8wo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] AI coding platform's flaws allow BBC reporter to be hacked</a>
+                    <a href="https://www.bbc.com/news/articles/c62dlvdq3e3o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] AI safety leader says 'world is in peril' and quits to study poetry</a>
+                    <a href="https://www.cnbc.com/2026/02/13/asia-markets-live-today-friday-nikkei-kospi-hang-seng-ai-fears.html" target="_blank" rel="noopener">[CNBC] Asia stock markets track losses on Wall Street as AI fears hit sentiment</a>
+                    <a href="https://www.cnbc.com/2026/02/12/apple-stock-worst-day-ftc-siri.html" target="_blank" rel="noopener">[CNBC] Apple's stock has worst day since April as iPhone maker faces FTC scrutiny...</a>
+                    <a href="https://www.marketwatch.com/story/dow-ends-below-50-000-threshold-for-first-time-since-friday-as-ai-fears-spark-wider-stock-selloff-f6ee91e1?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Dow ends below 50,000 threshold... as AI fears spark wider stock selloff</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">科技股</span>
+                    <span class="sector-tag">半导体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>美国政策环境剧烈变动，气候与贸易政策转向冲击多个行业</div>
+                <div class="topic-title-en">Drastic Shifts in US Policy Environment, Climate and Trade Policy Reversals Impact Multiple Sectors</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    特朗普政府政策出现显著转向，撤销关键气候法规可能降低车企合规成本并利好传统能源股，但会打击新能源产业链。同时，美国与台湾签署贸易协议，尽管降低关税可能短期提振双边贸易，但也显著加剧了地缘政治风险，可能招致反制措施。政策的高度不确定性正成为市场的主要波动源。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cn0zdd7yl4vo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Trump revokes key climate ruling which he says has made cars pricier</a>
+                    <a href="https://www.cnbc.com/2026/02/13/us-signs-trade-deal-with-taiwan-lowering-trump-tariffs.html" target="_blank" rel="noopener">[CNBC] U.S. signs trade deal with Taiwan, lowering tariffs to 15%...</a>
+                    <a href="https://www.cnbc.com/2026/02/12/epa-climate-change-automakers.html" target="_blank" rel="noopener">[CNBC] What the EPA's flip on climate change means for automakers</a>
+                    <a href="https://www.investing.com/news/economy-news/judge-blocks-trump-administration-from-cutting-600-million-in-public-health-funds-4504306" target="_blank" rel="noopener">[Investing.com] Judge blocks Trump administration from cutting $600 million in public health funds</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">半导体（供应链）</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>地缘政治与供应链风险升级，巴拿马运河争端凸显物流脆弱性</div>
+                <div class="topic-title-en">Geopolitical and Supply Chain Risks Escalate, Panama Canal Dispute Highlights Logistics Fragility</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    CK Hutchison与马士基在巴拿马运河港口的法律纠纷，直接威胁全球关键航运节点的稳定，可能推高运费并延迟货物交付，影响依赖该航线的全球贸易。与此同时，美国施压台湾增加国防支出，以及中国在北极的活动，均显示地缘紧张局势在多个热点区域持续升温，为全球供应链和跨国企业运营带来额外风险溢价。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/panama-ports-us-china-ck-hutchison-trump.html" target="_blank" rel="noopener">[CNBC] CK Hutchison threatens legal action against Maersk as Panama Canal ports dispute escalates</a>
+                    <a href="https://www.investing.com/news/world-news/us-lawmakers-step-up-pressure-on-taiwan-parliament-to-approve-defence-spending-4504300" target="_blank" rel="noopener">[Investing.com] US lawmakers step up pressure on Taiwan parliament to approve defence spending</a>
+                    <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVG1iOWp3SFBCdGFGOGxSdjlEeC14OTJ6S3pQbHVlNlo0QjI1RU9nVG9qUVFwQkQ2TGUweXBua28wMlhKc1dfRlZncVNfQVlfVWxOcWh2cFM4OU1kQWN6Z21lUE1IWWwwOUg0TlpvUVpZWGdJUkdkZTBIbWZ1enlCc0I2bmpzNm9CZHAw?oc=5" target="_blank" rel="noopener">[Economist] What China is really up to in the Arctic</a>
+                    <span class="sector-tag">航运物流</span>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">大宗商品</span>
+                    <span class="sector-tag">制造业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>电动车市场格局生变，中国品牌崛起与传统车企转型承压</div>
+                <div class="topic-title-en">EV Market Dynamics Shift, Chinese Brands Rise and Legacy Automakers Face Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    小米电动车在中国市场销量超越特斯拉Model Y，标志着中国本土电动车品牌在智能化、成本控制和市场响应速度上已形成强大竞争力，可能重塑全球电动车格局。与此同时，Rivian业绩超预期并计划增产，显示出部分新兴车企已跨越生存门槛。但EPA政策转向对依赖电动车转型的传统车企构成压力，行业分化或将加剧。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/xiaomis-electric-suv-tops-china-sales-in-january-sells-twice-as-many-as-teslas-model-y.html" target="_blank" rel="noopener">[CNBC] Xiaomi's electric SUV tops China sales in January, sells twice as many as Tesla's Model Y</a>
+                    <a href="https://www.cnbc.com/2026/02/12/rivian-automotive-rivn-earnings-q4-2025.html" target="_blank" rel="noopener">[CNBC] Rivian stock rises 15% as automaker tops Q4 expectations, targets significant production increase</a>
+                    <a href="https://www.marketwatch.com/story/rivians-stock-jumps-as-investors-cheer-big-growth-potential-this-year-87cac253?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Rivian’s stock jumps as investors cheer big growth potential this year</a>
+                    <span class="sector-tag">电动汽车</span>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">锂电池</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>宏观经济数据与政策僵局主导市场情绪，通胀与增长前景不明</div>
+                <div class="topic-title-en">Macroeconomic Data and Political Gridlock Dominate Sentiment, Inflation and Growth Outlook Murky</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    即将公布的美国CPI数据是判断美联储政策路径的关键，其结果可能引发市场剧烈波动。尽管美国经济在增长，但“无就业增长”的态势令人担忧实际需求强度。此外，美国国土安全部预算僵局可能导致政府部分停摆，叠加英国财政大臣对疲弱GDP的表态，反映出西方主要经济体在财政与货币政策协调上均面临挑战，抑制了市场风险偏好。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/the-january-cpi-inflation-report-is-due-out-friday-morning-heres-what-its-expected-to-show.html" target="_blank" rel="noopener">[CNBC] The January CPI inflation report is due out Friday morning...</a>
+                    <a href="https://www.bbc.com/news/articles/c3ewje4xk3yo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] The US economy is growing - so where are all the jobs?</a>
+                    <a href="https://www.cnbc.com/2026/02/12/dhs-shutdown-senate-dhs-funding-bill-trump.html" target="_blank" rel="noopener">[CNBC] DHS shutdown all but certain as Democrats and Trump White House can't cut deal</a>
+                    <a href="https://www.bbc.com/news/articles/c4gjmm7dlggo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Reeves says 'more to do' after sluggish GDP growth</a>
+                    <span class="sector-tag">整体市场</span>
+                    <span class="sector-tag">国债</span>
+                    <span class="sector-tag">消费股</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>消费与旅行需求显现韧性，但企业业绩与成本压力分化</div>
+                <div class="topic-title-en">Consumer and Travel Demand Show Resilience, But Corporate Earnings and Cost Pressures Diverge</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    尽管宏观环境不确定，但旅行需求持续反弹，英国半学期假期预订旺盛，Airbnb也对今年预期乐观，显示体验式消费仍具韧性。然而企业层面分化明显：能源板块因结构性因素成为年初标普最佳板块；Tesco拓展年轻客群以求增长；但Coinbase因加密市场资金外流意外亏损，DraftKings因高昂扩张成本遭抛售，表明在利率高企环境下，市场对企业的盈利能力与成本控制极为苛刻。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c3ew90z9jezo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Rain and politics driving up half-term holiday bookings, travel agents say</a>
+                    <a href="https://www.marketwatch.com/story/airbnb-expects-a-continued-travel-rebound-this-year-as-it-banks-on-new-services-1fe641f3?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Airbnb expects a continued travel rebound this year, as it banks on new services</a>
+                    <a href="https://www.marketwatch.com/story/why-energy-is-the-best-performing-sector-in-the-s-p-500-so-far-this-year-78bafd05?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Energy is the best-performing sector in the S&P 500 so far this year...</a>
+                    <a href="https://www.bbc.com/news/articles/ckg8r4nnx0yo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Tesco plans to give under-18s Clubcard access this year</a>
+                    <a href="https://www.marketwatch.com/story/coinbase-swings-to-a-surprise-loss-amid-flight-from-crypto-b5706ddb?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Coinbase swings to surprise loss amid crypto exodus...</a>
+                    <a href="https://www.marketwatch.com/story/draftkings-stock-sinks-as-investors-balk-at-the-high-cost-of-a-push-into-prediction-markets-79bb7fc2?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] DraftKings’ stock sinks as investors balk at the high cost of a push into prediction markets</a>
+                    <span class="sector-tag">航空旅游</span>
+                    <span class="sector-tag">酒店餐饮</span>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">金融科技</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国1月CPI数据即将公布，是市场关注焦点</li>
+                <li>道指跌破50000点关口，受AI恐慌情绪拖累</li>
+                <li>小米SUV在华销量为特斯拉Model Y两倍，电动车竞争格局变化</li>
+                <li>能源板块成为年初至今标普500表现最佳板块</li>
+                <li>巴拿马运河港口法律纠纷威胁全球关键供应链节点</li>
+                <li>Rivian Q4业绩超预期并计划大幅提高产量</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
