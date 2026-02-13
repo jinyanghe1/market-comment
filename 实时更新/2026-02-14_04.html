@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-14 04:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-14 04:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在韧性通胀数据与AI板块回调的拉锯下呈现谨慎情绪，同时特朗普政策与地缘政治因素增添不确定性。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美国1月核心CPI增速回升，强化美联储鹰派预期</div>
+                <div class="topic-title-en">US Core CPI Accelerates in January, Bolstering Fed's Hawkish Stance</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    最新数据显示，美国1月核心CPI因服务成本走强而提速，表明通胀粘性依然存在。这可能会推迟市场对美联储首次降息时点的预期，交易员已将今年降息三次的押注概率提升至50%。持续的通胀压力对利率敏感型行业构成利空，并可能抑制市场风险偏好。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/heres-the-inflation-breakdown-for-january-2026-in-one-chart.html" target="_blank" rel="noopener">[CNBC] Here’s the inflation breakdown for January 2026 — in one chart</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQYzJVQmhSdW5pdjl4ZjlGQnRtbXNQNi1pakJObXk5ZWpoUUpacmwzcUFTLWNjZHEtRDN4SVNILTFQb3A0STZIOGdtV1lFOVVCY25MdXoyVWQwLVBCZVBtVERfU1VnWl9wci1CV3hHUmRyUmJDR2oyWWVuRllCUlh1enQ4X19Eb1VZQU8zaEEtTHRFX1hoNy1UaXhEYmFUWDBkOVNfaDZsQWNCVVZCR2FiYjdwaU0?oc=5" target="_blank" rel="noopener">[Bloomberg] US Core CPI Picked Up at Start of Year on Firmer Services Costs</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQaDFjUTBqQ09jXzZtZmJHU0N2TmpmY2NyeXJtSE1jeDJub3J1dkktckc0eE16NERjeW0zaktXa3JYb3BrWHVyb044Ul9HUWctanV3cnVCV2c5cGdibFJYM3FpdS1GMTBaNTdHcllwTnZfcmdRSjZFOXcyOVZOU1JKTUZiS3FLal9BeDlLRlBiQ0FSU3lkZVJEMEVoSGR5bzF4NkFKbzdRVU1iaXVrUXBYcXJB?oc=5" target="_blank" rel="noopener">[Bloomberg] Traders Boost Bets to 50% for Fed to Cut Three Times This Year</a>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">科技成长股</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>特朗普政策持续扰动市场：关税、气候法规与人事任命</div>
+                <div class="topic-title-en">Trump's Policies Continue to Roil Markets: Tariffs, Climate Rules, and Appointments</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    特朗普政府政策成为市场关键扰动因素。其关税政策导致进口商面临创纪录的35亿美元海关债券资金缺口，直接冲击贸易相关企业。同时，撤销关键气候法规旨在降低汽车成本，利好传统汽车制造商但可能损害电动车产业链。前政府官员进入AI公司董事会，则凸显了科技与政治交织的风险与机遇。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/trump-tariffs-us-customs-record-bond-funding-issues-flagged.html" target="_blank" rel="noopener">[CNBC] Trump tariffs leave importers with record-breaking $3.5 billion U.S. Customs bond funding shortfall</a>
+                    <a href="https://www.bbc.com/news/articles/cn0zdd7yl4vo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Trump revokes key climate ruling which he says has made cars pricier</a>
+                    <a href="https://www.cnbc.com/2026/02/13/anthropic-ai-chris-liddell-microsoft-trump-board.html" target="_blank" rel="noopener">[CNBC] Anthropic taps ex-Microsoft CFO, Trump aide Liddell for board</a>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">清洁能源</span>
+                    <span class="sector-tag">人工智能</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>AI颠覆性影响受关注：或冲击信贷市场，初创公司加速冲刺IPO</div>
+                <div class="topic-title-en">AI's Disruptive Impact in Focus: Potential Credit Market Shock and Startup IPO Momentum</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    AI技术的影响力评估进入新阶段。UBS分析师警告AI可能对生产率和企业债务产生双重冲击，引发信贷市场“系统性休克”。与此同时，AI初创公司Cohere业绩超预期并加紧推进IPO，显示一级市场热度不减。这反映了市场在AI巨大潜力与未知风险之间的复杂权衡。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/ai-credit-markets.html" target="_blank" rel="noopener">[CNBC] AI disruption could spark a ‘shock to the system’ in credit markets, UBS analyst says</a>
+                    <a href="https://www.cnbc.com/2026/02/13/ai-startup-cohere-revenue-ipo.html" target="_blank" rel="noopener">[CNBC] Enterprise AI startup Cohere tops revenue target as momentum builds to IPO: Investor memo</a>
+                    <span class="sector-tag">金融业</span>
+                    <span class="sector-tag">科技行业</span>
+                    <span class="sector-tag">私募股权/风险投资</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>地缘政治与能源：委内瑞拉石油收入转移，阿布扎比打造金融巨舰</div>
+                <div class="topic-title-en">Geopolitics & Energy: Venezuela's Oil Revenue Redirected, Abu Dhabi Creates Financial Giant</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    地缘政治事件持续影响能源与金融格局。美国能源部长称委内瑞拉超10亿美元的石油销售收入将不再存入卡塔尔账户，此举可能改变相关资金流向并影响地缘政治关系。另一方面，阿布扎比头部上市企业整合成立规模达2370亿美元的金融巨头，标志着中东主权资本正在进行重大战略重组，以提升全球金融影响力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/venezuela-oil-sales-qatar-chris-wright-trump.html" target="_blank" rel="noopener">[CNBC] Venezuela oil sales top $1 billion, funds won’t go to Qatar account anymore, Energy secretary says</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQRzJfLXh3NldEdnF3dkRXajlhT29RYTZFYXVhV1hsNU5waU9jdjhQMzEydTFaNmk3emV5VmlzOWtwc0V3MFFMY1Y4WkJ5aXZaQ3Z5QzRLa0oyWlk0UWdmemgzOGhxZ0JEY3FnMGNteWpMVFJ3TEpTcTExcmFzUlNkREExUUlLcFJ6QXpKYTdjQXV5a3pGZ2VJTXd3a2FkX0xBdV9KYmdWQWhFZmt3OWxUOVVZSTQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Abu Dhabi’s Top Listed Firm Sets Up $237 Billion Financial Giant</a>
+                    <span class="sector-tag">石油天然气</span>
+                    <span class="sector-tag">国际金融</span>
+                    <span class="sector-tag">主权财富基金</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>科技股财报与情绪分化：流媒体与生鲜配送亮眼，社交媒体受关税打击</div>
+                <div class="topic-title-en">Tech Earnings & Sentiment Diverge: Streaming & Grocery Delivery Shine, Social Media Hit by Tariffs</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    科技板块内部出现显著分化。Roku和Instacart因强劲的订阅增长和业绩超预期而股价大涨，显示消费级服务需求稳健。相反，Pinterest因关税冲击盈利导致股价暴跌20%，凸显了全球贸易政策对数字广告企业的直接影响。这种分化要求投资者更精细地甄别子行业风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/roku-stock-earnings-premium-subscriptions.html" target="_blank" rel="noopener">[CNBC] Roku stock surges on earnings beat, record quarter for premium subscriptions</a>
+                    <a href="https://www.cnbc.com/2026/02/13/instacart-cart-stock-ceo-grocery.html" target="_blank" rel="noopener">[CNBC] Instacart jumps 7% on strong results as CEO calls grocery competition fears 'overblown'</a>
+                    <a href="https://www.cnbc.com/2026/02/13/-pinterest-stock-price-tariff-earnings-layoffs.html" target="_blank" rel="noopener">[CNBC] Pinterest stock craters 20% as tariffs hit earnings. Here's what's happening</a>
+                    <span class="sector-tag">流媒体</span>
+                    <span class="sector-tag">生鲜电商</span>
+                    <span class="sector-tag">社交媒体/数字广告</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>数字货币与大宗商品承压：比特币面临流动性考验，原油供应过剩</div>
+                <div class="topic-title-en">Digital Assets & Commodities Under Pressure: Bitcoin Faces Liquidity Test, Oil Glut Persists</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    风险资产中的另类投资领域面临压力。比特币价格若跌至6万美元关键位，可能引发新的强制平仓潮，显示市场杠杆仍然脆弱。与此同时，原油价格因供应过剩预期而连续第二周下跌，尽管油股年内大涨，但基本面与股价走势出现背离，增加了能源板块的波动风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNQTUtWDJKMHhWMWpHVlNYM0RvUGs5OXdPVWgxc1hZZHZsWllfc1BPZllSTzRCR096eE5zZTlPbTU0RW9KNTdheWJ1VTVzenU1T3RTREZpLXI0bXN1VW1PejZvOXhyaXFHWXNZRkt2NEhCeXk4QnJXMnFaM1oyNE50bk5jMFZvZ1pOUGV3VnZTcmZRV0tkSVRQa1ZuaklYSVhRY1hzcVdHT19OY0xSXzVfUTlrRQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Bitcoin Falling to $60,000 Could Spark Fresh Liquidation Spiral</a>
+                    <a href="https://www.investing.com/news/commodities-news/oil-prices-hold-losses-over-supply-glut-forecasts-us-cpi-awaited-4504305" target="_blank" rel="noopener">[Investing.com] Oil prices set for second straight weekly loss over supply glut forecasts</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">能源开采</span>
+                    <span class="sector-tag">大宗商品交易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>特定行业政策与事件：汽车贷款利息抵税，中概股遭遇短暂列入清单</div>
+                <div class="topic-title-en">Sector-Specific Policies & Events: Car Loan Interest Deductible, Chinese Stocks Briefly Listed</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    行业层面出现具体利好与风险事件。美国新规允许新车贷款利息最高抵税1万美元，这将直接刺激汽车消费，尤其利好汽车金融和整车销售。另一方面，美国短暂将阿里巴巴和百度列为“军工企业”，虽然后续可能移除，但凸显了中概股面临的地缘政治风险溢价长期存在，投资不确定性增加。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/interest-on-new-car-loans-tax-deductible.html" target="_blank" rel="noopener">[CNBC] Interest on new car loans is now tax deductible up to $10,000—here's how much buyers may actually save</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQaWxERVFJNlBINjBjQTFwUnIwdDBJYWszdS1yVEw0YkRoX3FCb2RfVTBOOHlubVlteEdtNXREOEV2Z3JMTTROZ1hJUWozbEQxVm05Y0diLXF2bi1KOWZUQ25hVGxpbl9kVXJqV0tFc0Z6RWNzQk04UUZxLUc2U290YXBnSEZWajZwQUlpWnFoeHhSVWMxWkkwXzZPU2p1djhJQlpYZUliVVZrQ1lwOG0wTzJR?oc=5" target="_blank" rel="noopener">[Bloomberg] US Briefly Lists Alibaba, Baidu as Aiding China’s Military</a>
+                    <span class="sector-tag">汽车制造与销售</span>
+                    <span class="sector-tag">汽车金融</span>
+                    <span class="sector-tag">中概股/科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>零售与医药行业动态：礼来囤积减肥药，情人节消费趋实用</div>
+                <div class="topic-title-en">Retail & Pharma Dynamics: Lilly Stockpiles Weight-Loss Drugs, Valentine's Gifts Turn Practical</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    消费和医药领域出现值得关注的微观趋势。礼来在FDA批准前大量囤积GLP-1减肥药丸，表明公司对获批和市场需求极具信心，可能预示着口服减肥药市场将迎来爆发。同时，情人节消费趋势显示更多消费者选择吸尘器、轮胎等实用礼品，反映在高通胀和利率环境下，消费者支出更加理性务实，可能影响传统礼品行业。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/what-signal-lilly-sends-by-stockpiling-glp-1-obesity-pills-ahead-of-fda-approval.html" target="_blank" rel="noopener">[CNBC] What signal Lilly sends by stockpiling its GLP-1 weight loss pills ahead of FDA approval</a>
+                    <a href="https://www.marketwatch.com/story/at-first-i-laughed-more-couples-are-gifting-practical-things-like-vacuum-cleaners-this-valentines-day-560128ee?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Who needs chocolates? Why more Valentine’s Day shoppers are buying vacuums and car tires.</a>
+                    <span class="sector-tag">医药制造</span>
+                    <span class="sector-tag">医疗保健</span>
+                    <span class="sector-tag">消费品零售</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国1月核心CPI因服务成本走强而加速</li>
+                <li>交易员对美联储年内降息三次的押注概率升至50%</li>
+                <li>特朗普关税导致进口商面临35亿美元海关债券资金缺口</li>
+                <li>比特币若跌至6万美元可能引发强平潮</li>
+                <li>原油价格预计连续第二周下跌</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
