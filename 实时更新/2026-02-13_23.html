@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-13 23:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-13 23:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">美国通胀数据意外放缓提供积极信号，但特朗普关税政策冲击市场、AI引发的结构性担忧及政治僵局共同作用下，市场情绪趋于谨慎。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美国通胀意外放缓，缓解市场对美联储政策的担忧</div>
+                <div class="topic-title-en">U.S. Inflation Cools More Than Expected, Easing Fed Policy Concerns</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    美国1月CPI同比增长2.4%，低于预期，特别是二手车价格下跌为主要贡献因素。这一关键数据缓解了市场对通胀顽固的焦虑，可能为美联储未来转向更宽松的货币政策提供空间，对整体股市构成短期利好。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/cpi-inflation-report-january-2026.html" target="_blank" rel="noopener">[CNBC] Consumer prices rose 2.4% annually in January, less than expected</a>
+                    <a href="https://www.bbc.com/news/articles/cd6z05p56xyo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Inflation eases in US as prices for used cars fall</a>
+                    <a href="https://news.google.com/rss/articles/CBMi" target="_blank" rel="noopener">[Bloomberg] Live: Analysis of US CPI Report for January</a>
+                    <span class="sector-tag">整体市场</span>
+                    <span class="sector-tag">消费类</span>
+                    <span class="sector-tag">利率敏感型行业（如房地产、科技）</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>特朗普关税政策成本显现，美国企业与消费者承压</div>
+                <div class="topic-title-en">Costs of Trump Tariffs Mount, Weighing on U.S. Firms and Consumers</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    纽约联储报告指出，特朗普关税的成本主要由美国企业和消费者承担。同时，关税导致进口商面临创纪录的35亿美元海关债券资金缺口，直接冲击企业现金流与运营。此政策正从公司盈利（如Pinterest）和宏观经济层面产生广泛的负面溢出效应。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c78x9256pn7o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Costs from Trump's tariffs paid mainly by US firms and consumers, NY Fed says</a>
+                    <a href="https://www.cnbc.com/2026/02/12/trump-tariffs-us-customs-record-bond-funding-issues-flagged.html" target="_blank" rel="noopener">[CNBC] Trump tariffs leave importers with record-breaking $3.5 billion U.S. Customs bond funding shortfall</a>
+                    <a href="https://www.cnbc.com/2026/02/13/-pinterest-stock-price-tariff-earnings-layoffs.html" target="_blank" rel="noopener">[CNBC] Pinterest stock craters 20% as tariffs hit earnings. Here's what's happening</a>
+                    <span class="sector-tag">进口贸易</span>
+                    <span class="sector-tag">零售业</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">科技（受影响个股）</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>AI投资热潮与行业颠覆风险并存</div>
+                <div class="topic-title-en">AI Investment Boom Coexists with Sector Disruption Risks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    AI领域持续吸引资金，如初创公司Cohere营收超预期并推进IPO，Shield AI洽谈以120亿美元估值融资。然而，AI的颠覆性力量也引发市场恐惧，导致卡车运输、房地产等传统行业股票承压，同时软件行业前景被机构看淡，显示AI红利分配不均。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/13/ai-startup-cohere-revenue-ipo.html" target="_blank" rel="noopener">[CNBC] Enterprise AI startup Cohere tops revenue target as momentum builds to IPO: Investor memo</a>
+                    <a href="https://www.investing.com/news/company-news/shield-ai-in-talks-to-raise-1-billion-at-12-billion-valuation--bloomberg-93CH-4505842" target="_blank" rel="noopener">[Investing.com] Shield AI in talks to raise $1 billion at $12 billion valuation - Bloomberg</a>
+                    <a href="https://www.cnbc.com/2026/02/13/trucking-real-estate-stocks-latest-victims-of-ai-fears.html" target="_blank" rel="noopener">[CNBC] Trucking and real estate stocks struggle to gain momentum on Friday after becoming latest victims of AI fears</a>
+                    <a href="https://www.marketwatch.com/story/its-been-a-software-horror-show-heres-why-it-could-get-even-scarier-according-to-citi-9495bd24?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] It’s been a software horror show. Here’s why it could get even scarier, according to Citi.</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">风险投资</span>
+                    <span class="sector-tag">运输</span>
+                    <span class="sector-tag">房地产</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>地缘政治与能源供应紧张推高油价预期</div>
+                <div class="topic-title-en">Geopolitics and Tight Energy Supply Bolster Oil Price Outlook</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    特朗普政府对委内瑞拉和古巴的石油制裁加剧了全球能源供应紧张局势。与此同时，AI数据中心对电力的巨大需求正在重塑能源行业格局。分析师因油价上涨而看好2026年石油股表现，表明能源板块在不确定环境中的防御性与成长性预期。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMi" target="_blank" rel="noopener">[Bloomberg] Much of Cuba Goes Dark as Trump Chokes Oil Supply</a>
+                    <a href="https://news.google.com/rss/articles/CBMi" target="_blank" rel="noopener">[Bloomberg] Reliance Gets US License to Directly Buy Venezuelan Crude</a>
+                    <a href="https://news.google.com/rss/articles/CBMi" target="_blank" rel="noopener">[Barron's] Energy CEO: 'AI Data Centers Are Changing Everything We Do'</a>
+                    <a href="https://news.google.com/rss/articles/CBMi" target="_blank" rel="noopener">[Bloomberg] The 21% Surge in Oil Stocks Is Making Analysts Bullish on 2026</a>
+                    <span class="sector-tag">能源（石油与天然气）</span>
+                    <span class="sector-tag">公用事业</span>
+                    <span class="sector-tag">航空航天发动机</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>市场抛售加剧，担忧情绪蔓延</div>
+                <div class="topic-title-en">Market Selloff Accelerates Amid Broad-Based Concerns</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    股市出现加速抛售模式，道指单日大跌660点。这种抛售不仅仅是对单一数据的反应，而是对关税冲击企业盈利、AI颠覆传统行业、政治僵局（如DHS可能关门）以及经济K型分化的综合担忧。市场波动性上升也波及了黄金和白银等避险资产。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMi" target="_blank" rel="noopener">[Barron's] Stock Market News From Feb. 12, 2026: Dow Drops 660 Points</a>
+                    <a href="https://news.google.com/rss/articles/CBMi" target="_blank" rel="noopener">[Barron's] The Stock Selloff Is Accelerating. A Pattern Is Emerging.</a>
+                    <a href="https://news.google.com/rss/articles/CBMi" target="_blank" rel="noopener">[Barron's] Gold and Silver Turn Lower as Volatility Strikes</a>
+                    <span class="sector-tag">整体市场</span>
+                    <span class="sector-tag">周期性板块</span>
+                    <span class="sector-tag">贵金属</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>企业盈利分化加剧，部分消费股表现惨淡</div>
+                <div class="topic-title-en">Corporate Earnings Diverge Sharply, Some Consumer Stocks Falter</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    财报季显示企业表现冰火两重天。Magna、Ingersoll Rand等工业公司凭借利润率扩张实现盈利超预期，而消费领域的Wendy's销售持续恶化，股价跌向13年低点；DraftKings尽管营收大增，股价却下跌，反映市场对增长可持续性的质疑。这种分化凸显了选股的重要性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/company-news/magna-q4-2025-slides-strong-margin-expansion-drives-earnings-beat-stock-jumps-93CH-4505843" target="_blank" rel="noopener">[Investing.com] Magna Q4 2025 slides: Strong margin expansion drives earnings beat, stock jumps</a>
+                    <a href="https://www.marketwatch.com/story/wendys-sales-keep-getting-worse-as-the-stock-sinks-toward-a-13-year-low-f1fb0976?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Wendy’s sales keep getting worse, as the stock sinks toward a 13-year low</a>
+                    <a href="https://www.investing.com/news/company-news/draftkings-q4-2025-slides-revenue-up-43-stock-drops-despite-earnings-beat-93CH-4505849" target="_blank" rel="noopener">[Investing.com] DraftKings Q4 2025 slides: revenue up 43%, stock drops despite earnings beat</a>
+                    <span class="sector-tag">工业</span>
+                    <span class="sector-tag">餐饮休闲</span>
+                    <span class="sector-tag">博彩</span>
+                    <span class="sector-tag">生物技术（Moderna）</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>政治风险升温：政府关门危机与美联储领导层不确定性</div>
+                <div class="topic-title-en">Political Risks Escalate: Government Shutdown Threat and Fed Leadership Uncertainty</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国政治僵局导致国土安全部（DHS）资金法案无法通过，政府部分关门几成定局，将直接冲击相关行业并加剧经济不确定性。同时，围绕美联储主席职位的政治博弈仍在继续，增加了货币政策路径的变数，不利于金融市场稳定。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/12/dhs-shutdown-senate-dhs-funding-bill-trump.html" target="_blank" rel="noopener">[CNBC] DHS shutdown all but certain as Democrats and Trump White House can't cut deal</a>
+                    <a href="https://www.cnbc.com/2026/02/13/fed-chair-warsh-powell-senate-bessent.html" target="_blank" rel="noopener">[CNBC] Senate should proceed with Warsh hearings for Fed chair despite Powell probe: Bessent</a>
+                    <span class="sector-tag">政府承包商</span>
+                    <span class="sector-tag">航空运输与安全</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国1月CPI同比增2.4%低于预期</li>
+                <li>特朗普关税造成35亿美元海关债券缺口</li>
+                <li>AI初创公司Cohere营收超目标推进IPO</li>
+                <li>Shield AI拟以120亿美元估值融资10亿</li>
+                <li>道指单日暴跌660点</li>
+                <li>平均退税金额同比上涨22%</li>
+                <li>Pinterest因关税致股价暴跌20%</li>
+                <li>Wendy's股价跌向13年低点</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
