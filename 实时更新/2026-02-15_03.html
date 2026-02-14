@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-15 03:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-15 03:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">地缘政治风险上升与货币政策转向预期交织，市场在人工智能等结构性增长主题与宏观不确定性间谨慎权衡。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>地缘政治紧张局势与联盟重塑</div>
+                <div class="topic-title-en">Geopolitical Tensions and Alliance Reshaping</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国国务卿鲁比奥在慕尼黑安全会议上强调美欧利益交织，试图稳固跨大西洋关系，同时美国可能对伊朗展开数周军事行动，加拿大也加大对伊朗制裁，加剧地缘政治不确定性。中国被指扩大对俄战争援助，中美欧三方关系复杂化，可能引发市场避险情绪，推高能源与国防板块波动。欧洲方面，欧盟推动共同防御协定，英国工党领袖斯塔默呼吁重塑西方联盟并寻求与欧盟建立更紧密关系，预示着后英国脱欧时代的地缘格局变动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/us-and-european-interests-are-intertwined-rubio-says.html" target="_blank" rel="noopener">[CNBC] U.S. and European interests are 'intertwined,' Secretary of State Rubio says</a>
+                    <a href="https://www.investing.com/news/world-news/exclusiveus-military-preparing-for-potentially-weekslong-iran-operations-4506989" target="_blank" rel="noopener">[Investing.com] Exclusive-US military preparing for potentially weeks-long Iran operations</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPWEliaEY2XzlGWDJUSkp4WU9iX0tnZWlnWlY2M2F6c05Mcm5ETEt4em1JOFZMM2xEWjE1aTBkeTRZSWVTQTZBRE1GdmJWUHJRQXZxMjJMWl8tZFJTUzk2Z3l2RWFBeVk3Zm5WNTFMaENOTGxhazdFR3JQYzZ4VnFnS2tWb1BKbE5nM2lCczFHdnY5SXg1d1RpcDJDcTBaSnRQNXEtaGpGeU1MWm1Nc2tMaDN0S2s?oc=5" target="_blank" rel="noopener">[Bloomberg] China Expanding Aid to Russian War Effort, Western Officials Say</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">外汇市场</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>中美人工智能竞赛与监管动态</div>
+                <div class="topic-title-en">Sino-US AI Race and Regulatory Developments</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    中国AI模型本周密集发布，展现激烈竞争态势，但华尔街日报指出中国正动用“国家队”投资者为AI股市降温，防止泡沫。同时，金融时报报道美国认定阿里巴巴和比亚迪与中国军方有关联，这可能引发进一步的技术管制与投资限制。亚马逊CEO宣布投入2000亿美元用于AI以重振AWS，凸显全球科技巨头资本竞赛白热化。这些动态表明AI领域的投资机会与地缘政治风险并存。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/new-china-ai-models-alibaba-bytedance-seedance-kuaishou-kling.html" target="_blank" rel="noopener">[CNBC] It's been a big — but rocky — week for AI models from China. Here's what's happened</a>
+                    <a href="https://news.google.com/rss/articles/CBMivgNBVV95cUxONHl3YnNETlBFVmc3N0JvY0Z5Nk1Jc2E4enprZmNzOXQzNnNtTWNCWGRSbTI2dE1lYjJveXJYbWYwOWhrdF9oM3V0RnMwMjB4SFZDMGxZV0JRREFLNzZwRzA3OVB4Zmo2dUFGdU15SjZ1dk4yRUx5STItbmlBZllNTjFSUXJJdllneEVLZGxNWF9RbldRUVFPc25yOTU4NUlqaWRLYndZTl9zQUJuRXkxQU4xNU05VklmUFUyMzMxRHMyZHFxbGthSVBiaU4xTHU3cS1nQ2NtTkd4T3RudTZxZjJxcDh0amw3UlM3ckctUEJuZTh1UE1wQTRRSmFKRUt1dUxPU1ZTOFR1SDhsbE1zTXFHaU16MnRrOVF1U3lIREtMaGZ0emNENXlidTRTVGpieGpvc0NGNVBEMHh6alFPOHlNcGNib1Y5S3NJS05yMG4zTENxbVp4TDJlbUlVa0RMTVRuRWFOSXExZWZyS3JvODJlbWREZGNsc25RNE5YeXZDcjhmb3QyMGwwYVJiVDZ6SUlLR08xcUdEQ2x5VmQxV2pJakYtUUR0QXZNQkotbFBUZnhEa2tQcllfWUM5UQ?oc=5" target="_blank" rel="noopener">[WSJ] China Deploys a ‘National Team’ of Investors to Keep AI Stock Boom in Check</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5GR3RDdE5VaGVZdWdKMkY1WVd6a2NyNU1hS1ZVMVRNY2JscmI4T3lGN0xnTDgxTS1FUE1MU01sWFRmTXd6amV4aHJQbmNQY0xIelAzd19raGsxZnptaXAyb1dBMDNpZFZOMV9oREhKVHU?oc=5" target="_blank" rel="noopener">[FT] Amazon’s Andy Jassy bets on $200bn AI spending drive to revive AWS</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">科技股</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>货币政策转向预期与全球流动性</div>
+                <div class="topic-title-en">Monetary Policy Pivot Expectations and Global Liquidity</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    MarketWatch专栏批评美联储主席鲍威尔行动过迟，但认为这反而带来了就业和通胀的积极数据，强化了市场对货币政策即将转向宽松的预期。与此同时，欧洲央行（ECB）扩大欧元流动性安全网至全球范围，旨在提升欧元国际地位。乌克兰与IMF达成82亿美元新贷款计划，条件有所放宽。这些信号共同指向全球金融条件可能趋于宽松，利好风险资产估值。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/thank-too-late-jerome-powell-for-the-jobs-and-inflation-beats-2bc659af?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Thank ‘Too Late’ Jerome Powell for the jobs and inflation beats</a>
+                    <a href="https://www.investing.com/news/economy-news/ecb-makes-euro-backstop-global-to-bolster-currencys-role-4507256" target="_blank" rel="noopener">[Investing.com] ECB makes euro backstop global to bolster currency’s role</a>
+                    <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNUEJTVUNzOXBTS3VMdG9HQ0dHaVlQeUs2RzM2ak42UGoxT2xra2w1WWNiSHEtbkJ5SE9qSE1WX2l2dHlJZXMyMlJ6NWhBaXFQZU13cDdxSGVrd2cxdHJGemZ3RDFzUS05OFdwLWZhbGhCcWRYRWhFMXk4UGo0TE9MNlBUR2ZPY0tSUWNvUEc2RUc0OXdNRmRWN2xXNF90N1cyNHc?oc=5" target="_blank" rel="noopener">[Reuters] Ukraine, IMF ease conditions on new $8.2 billion loan program</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">债券市场</span>
+                    <span class="sector-tag">成长股</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>关键行业动态与消费趋势</div>
+                <div class="topic-title-en">Key Industry Developments and Consumer Trends</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    食品饮料巨头卡夫亨氏计划分拆获伯克希尔CEO阿贝尔赞扬，被视为其扭亏为盈的关键一步，可能带动食品板块价值重估。美国牛肉价格因牛群数量减少而面临15%的上涨压力，直接影响食品通胀与零售业成本。预测市场Polymarket重返美国市场并推出新策略，反映了金融科技与博彩交叉领域的创新，但也伴随监管风险。中国春节为奢侈品品牌提供了重新赢得中国大额消费者的机会，是观察中国高端消费复苏的重要窗口。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/berkshire-ceo-abel-praises-kraft-heinz-for-turnaround-on-planned-split.html" target="_blank" rel="noopener">[CNBC] Berkshire CEO Abel praises Kraft Heinz for turnaround on planned split</a>
+                    <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxQLW54Y2psRktVWE5ZTnhMT1pka1NfN3BIZUdjb1lUQXVFNGZHUkVSSG45RlprbDk0VkhXN25vLWZLN19URzR1N29CM2ZQMUdnYzlieFhEbG9yYmg3QWRHc19LMEVDUkVHWWg1TlVPajlfTlZkTTlBZE1BbjhpaHFOdUt6ZVQ4bV96c3NJRUNieEY5eXpZaXdMbXJTNV9UYTR2YkpYbV9ScUwtU2p0OXBfRU44RjZSbGxyTUN4VGxaNXY?oc=5" target="_blank" rel="noopener">[Bloomberg] America’s Vanishing Cattle Herd Drives 15% Price Hikes for Beef</a>
+                    <a href="https://www.cnbc.com/2026/02/14/lunar-new-year-luxury-china.html" target="_blank" rel="noopener">[CNBC] Lunar New Year gives luxury brands a chance to win back big spenders in China</a>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">农业</span>
+                    <span class="sector-tag">奢侈品</span>
+                    <span class="sector-tag">金融科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>市场结构变化与投资行为</div>
+                <div class="topic-title-en">Market Structure Changes and Investment Behavior</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    FT报道华尔街六大银行CEO 2025年薪酬总额达2.5亿美元，高额薪酬在盈利压力下可能引发股东关注和ESG讨论。MarketWatch有观点认为比特币需再跌20%才具投资价值，反映了加密货币市场在当前宏观环境下的高波动性与估值分歧。多篇关于个人财务、继承规划（如提前继承遗产）和退休年金选择的文章，凸显了在老龄化社会及经济不确定性下，财务规划和财富管理需求的增长。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5YOVJEYnpGQmNzM3pQVW1MSEZQeVdpbEVTLV9vbmRpc2szMGM0ZkhJal9YTGF5ZFFjY2s4V3BMekRSeWQ0LUlqRmVfUzZyTUdNR0VLbXN5akEwQlFsM0ttNGRsSmExdmtqZnY3eWdpelI?oc=5" target="_blank" rel="noopener">[FT] Six Wall Street bank chiefs bring in combined pay of $250mn in 2025</a>
+                    <a href="https://www.marketwatch.com/story/bitcoin-needs-to-fall-another-20-before-its-actually-a-deal-30e1d6ff?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Why bitcoin needs to fall another 20% before it’s even worth a look</a>
+                    <a href="https://news.google.com/rss/articles/CBMigwNBVV95cUxPRDl3Q3Y3RjVPQjNDZXFyb3VYbndmSkEzODhSU1FCLWRkbWdFNVpJRHNVRGhScnl0YUdPZ0N2Q1J0MU5VTnRPMGFpS0F0eGs2Y25WUXBMa2lUWFNRMDNLWEJVRlZOR3J5ZTZITjJMTHJoT0lENjVZVXlndGVybnlFakxvT0tKbVRMSkFmQ2JYWHpFdHo5X3pUZWlnU0d0eTZzRm9tLVJUdzZZeTF3eDNMQjdkZTdjUkFaOEFIYmhKLUFodjhWcjNFRXB2cWgzMU9CMkQ2R0FUNTZmU09xOVZyR3N6VWZoWjZSbHlhWUxtbi1DWjVmS3JQOHl2c0Q5SC1qVEIyTHhJQnJES1dxdzk5aU9GejB3VEE2dWRKUUt4VC1tWExwOUF4S0hULXlyYVRMQjZ2X2lKalpVdzR4SDVHbFFpMXA2OFpKVDY5R3AycmdhNUJtYXJ2bTN4X2pjM3BQdEVDZ0xNTm9xenNzYU1KLVk1ZmdRN3F0Ym1pUVF3QmxIQTA?oc=5" target="_blank" rel="noopener">[Barrons] Adult Kids Are Getting Their Inheritances Sooner. How Parents Are Doing It.</a>
+                    <span class="sector-tag">银行</span>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">保险与资产管理</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>退休规划与财务咨询需求上升</div>
+                <div class="topic-title-en">Rising Demand for Retirement Planning and Financial Advice</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    多篇MarketWatch文章集中探讨老年财务问题，包括是否加入海外医疗保险、出售房产购买年金是否明智、人寿保险年龄限制以及痴呆症老人财产被侵占等。这反映出在人口老龄化加剧的背景下，退休规划、养老金融产品（如年金、保险）以及家庭财产法律咨询的需求日益凸显。相关金融服务板块可能迎来结构性增长机会，但也对产品的合规性与透明度提出更高要求。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/im-almost-65-and-live-abroad-should-i-skip-signing-up-for-medicare-2eaf7f79?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] I’m almost 65 and live abroad. Should I skip signing up for Medicare?</a>
+                    <a href="https://www.marketwatch.com/story/my-husband-73-wants-to-sell-our-300k-rental-and-buy-an-annuity-is-that-wise-a91ec6ca?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] My husband, 73, wants to sell our $300K rental and buy an annuity. Is that wise?</a>
+                    <a href="https://www.marketwatch.com/story/the-actual-age-limit-for-buying-life-insurance-might-surprise-you-f9cd73fc?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The actual age limit for buying life insurance might surprise you</a>
+                    <span class="sector-tag">保险</span>
+                    <span class="sector-tag">资产管理</span>
+                    <span class="sector-tag">法律服务</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美联储货币政策转向宽松预期增强</li>
+                <li>欧洲央行扩大全球欧元流动性安排</li>
+                <li>美国牛肉价格面临15%上涨压力</li>
+                <li>华尔街六大银行CEO 2025年总薪酬达2.5亿美元</li>
+                <li>比特币估值分歧大，有观点认为需再跌20%</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
