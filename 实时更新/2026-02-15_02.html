@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-15 02:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-15 02:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">全球市场在美欧关系强化与地缘政治风险加剧的背景下呈现谨慎情绪，AI科技和食品行业个股表现活跃。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美欧关系强化与全球地缘政治博弈</div>
+                <div class="topic-title-en">Strengthening US-Europe Relations and Global Geopolitics</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    美国国务卿Rubio在慕尼黑安全会议上强调美欧利益交织，呼吁共同维护价值观；美国北约特使称中国能阻止俄罗斯在乌克兰的行动，显示大国协调与博弈。这有助于稳定跨大西洋联盟，提振投资者信心，但可能加剧与中俄的紧张关系，影响全球贸易格局。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/us-and-european-interests-are-intertwined-rubio-says.html" target="_blank" rel="noopener">[CNBC] U.S. and European interests are 'intertwined,' Secretary of State Rubio says</a>
+                    <a href="https://www.investing.com/news/world-news/european-reaction-to-rubios-speech-on-transatlantic-ties-at-munich-security-conference-4507253" target="_blank" rel="noopener">[Investing.com] European reaction to Rubio’s speech on transatlantic ties at Munich Security Conference</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOcTVQZml1V3N5NDR5U2tWR1BOQ2NFTFF3ZTNGSmdQQVNLQVZVRXl5MjJWUHFYeHBDNWZQMEdRR0xMYS0zU2Y2STkzX3BQVlV0clNWclBETW9hSzhub2lLUkRHODdURlE5ajU1MTRRM1ltOFpURUR5WllUT1B0RmNDLURWS0Q1cllOak9sUldubkZiTUNwMjZHMlN3dlZnajl5LTdUNjRHeUp2VUhFb3NQVDN3" target="_blank" rel="noopener">[Bloomberg] Rubio Assures Europe and Calls on Leaders to Uphold Values</a>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">外交</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>中国AI发展加速与国家队市场调控</div>
+                <div class="topic-title-en">China's AI Acceleration and National Team Market Intervention</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    中国科技巨头阿里巴巴、字节跳动等推出新AI模型，但华尔街日报报道中国部署‘国家队’投资者以抑制AI股票过热。这表明政府在推动科技创新的同时，警惕市场泡沫，可能短期抑制投机但长期利好行业健康发展。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/new-china-ai-models-alibaba-bytedance-seedance-kuaishou-kling.html" target="_blank" rel="noopener">[CNBC] It's been a big — but rocky — week for AI models from China. Here's what's happened</a>
+                    <a href="https://news.google.com/rss/articles/CBMivgNBVV95cUxQZm1FZGplRzlrVjM4bzV0VTZ1UWsyRENOb3kxMUFnWVY1Sm9CQmJIWXpadTh4MmJhbV9JamFOaG1BcnB1NHEzd2taTC0wSmpKSFpCQk9MellzZ0l6MmZaN09jN2xPRWQ0WkY4Mk5TXzVPNHo4bW1jcnVrWHJVRFhZU21TemMxZFRCOGFhV0Nva3ZNMFBzNE1oVW1kdzFvSVQ0QkFOWVM0ek02T2NNMXpDcUh5V1Fua0hPTUFHVlVRQk9fNlJzY3pEN1kwdUJ3MEFzaC1pWlk5b2pWQi01b0Q4VGpmbkI0cHFVNjhxZDlMR0FoTzBFN2lVUTFDdVFoeF9BUG5BWXBWVGF1M25XRnE3S2VSMktteVY5R19fTW1ibURIMkRGX24ydVRUTm4zeXJuYVhMZFhBODk5cngxRno4cm5lNTh3REQ2eEwwb3Q5Ylpka25FQWd0ZnlIcDBoRUpSdEpsc1Zib0JsM0ZNR0U5U0hVWGpZbDNPS1lPQlVfazFmX2RoQVBSSFRlcHdQRXl5MzlDaC1OTkszT1FpVl8yMEJHWkp4OEVEOVFkcm5OZEkzTlVVOUMzWmZreVBidw" target="_blank" rel="noopener">[WSJ] China Deploys a ‘National Team’ of Investors to Keep AI Stock Boom in Check</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>伯克希尔哈撒韦赞扬卡夫亨氏转型与分拆计划</div>
+                <div class="topic-title-en">Berkshire Hathaway Praises Kraft Heinz Turnaround and Planned Split</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    伯克希尔CEO Greg Abel公开赞扬卡夫亨氏的业绩 turnaround，并支持其分拆计划。作为重要股东，此表态增强了市场对这家食品巨头复苏的信心，可能推动食品行业进一步重组与价值释放。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/berkshire-ceo-abel-praises-kraft-heinz-for-turnaround-on-planned-split.html" target="_blank" rel="noopener">[CNBC] Berkshire CEO Abel praises Kraft Heinz for turnaround on planned split</a>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">消费品</span>
+                    <span class="sector-tag">投资</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>伊朗与古巴制裁升级加剧地缘政治风险</div>
+                <div class="topic-title-en">Escalating Sanctions on Iran and Cuba Heighten Geopolitical Risks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国对古巴的制裁导致其航空燃油短缺；加拿大加大对伊朗制裁并呼吁政权更迭；美国军方准备对伊朗进行长期行动。这些事件推高能源和地缘政治风险，可能扰乱全球供应链并刺激油价波动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/cuba-fuel-shortage-trump-tariffs.html" target="_blank" rel="noopener">[CNBC] What's next for Cuba? Trump turns the screws as the island runs out of jet fuel</a>
+                    <a href="https://www.investing.com/news/world-news/canada-wants-iran-government-change-increases-sanctions-4507260" target="_blank" rel="noopener">[Investing.com] Canada wants Iran government change, increases sanctions</a>
+                    <a href="https://www.investing.com/news/world-news/exclusiveus-military-preparing-for-potentially-weekslong-iran-operations-4506989" target="_blank" rel="noopener">[Investing.com] Exclusive-US military preparing for potentially weeks-long Iran operations</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">航空</span>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">国防</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>华尔街银行高薪酬与媒体行业并购压力</div>
+                <div class="topic-title-en">Wall Street Bank High Pay and Media Industry M&A Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    六家华尔街银行CEO在2025年总薪酬达2.5亿美元，反映金融业盈利强劲但可能引发监管关注；同时，华纳兄弟股东对派拉蒙与Netflix的竞购战失去耐心，显示媒体行业整合趋势与股东激进主义抬头。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5YOVJEYnpGQmdzM3pQVW1MSEZQeVdpbEVTLV9vbmRpc2szMGM0ZkhJal9YTGF5ZFFjY2s4V3BMekRSeWQ0LUlqRmVfUzZyTUdNR0VLbXN5akEwQlFsM0ttNGRsSmExdmtqZnY3eWdpelI" target="_blank" rel="noopener">[FT] Six Wall Street bank chiefs bring in combined pay of $250mn in 2025</a>
+                    <a href="https://www.marketwatch.com/story/big-warner-bros-shareholders-are-getting-restless-in-this-paramount-netflix-bidding-war-3491dab8?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Big Warner Bros. shareholders are losing patience with the Paramount-Netflix bidding war</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">媒体娱乐</span>
+                    <span class="sector-tag">投资银行</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>美国国土安全部关闭增加政治不确定性</div>
+                <div class="topic-title-en">US Homeland Security Shutdown Increases Political Uncertainty</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国国土安全部因ICE突袭僵局而关闭，可能影响边境安全、旅行和政府部门运作，凸显美国政治极化，打击投资者信心并增加市场波动风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPZEtzMWFOUG9YSHlINXlpYjVPLV9HTFJhNlpxSGR1YnN2N2pUd3ZUZXd1Q3RvSE05TnlpcDZYSXVmM2hRydXNkSVhmWlpKV2lSVHN2RHFXQlBVWG4zN0lGekFsQzJNM1BGUXREWElzSzk4YnIwVUo3VGlzeFdlc2ZlbEtSZGZQRktIZnd0UFo1SHpnU0o2cXhFZHFvLS1GRHlrOEUzd1Jn" target="_blank" rel="noopener">[Bloomberg] US Homeland Security Department Shuts Down Amid ICE Raid Impasse</a>
+                    <a href="https://news.google.com/rss/articles/CBMihANBVV95cUxQM0dvSmM5bkg2dEJOampEREV0XzVBSGRfeFUta0hpLVJHR3JlOEo0bUJYcHRlUUhic2dBWml1cldEOEUzNTFySDdLR1FISmpvNUJaVXZjOHZaZjRLUmJDQ2JHTFIwVkpGU202ZGFQaDI0YUxxbFlsV0M3c0s3SHVMSXpYbVBETzlJS1NyS1F5SF9HS0l1TmtrSjFVS3l3OHZ2WXFLT3M2a3h0UW5rZWptMm9QN290T2R6LWxlby13eWZFMVR0dE5UYjA2MEozX19fVzFjTFFLZDg2cHhuZE91UjBHWW53QmJsQ2dIQUhlV1JuYzZfX0F0TGxwc3FyRjgwNkxFWURLSVQ1bE11eUFodHRLQ3dVZEFVeDRLVUd3UVV3OUZTb0pPVXB0UDFWSEZBMEdOVE9ERXJKbXc2UnJEakFHNVpuZFlySmVTMlp3Yk1DZ051UzlPX0RPeU5ZVWE4NWZkVTZTU0NHckpvSXpvazZnZDlJOXRiaUFLM0hpVDU0SVBO" target="_blank" rel="noopener">[WSJ] How a Homeland Security Shutdown Affects ICE and TSA</a>
+                    <span class="sector-tag">政府服务</span>
+                    <span class="sector-tag">航空</span>
+                    <span class="sector-tag">安全</span>
+                    <span class="sector-tag">旅游</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>华尔街六位CEO 2025年总薪酬达2.5亿美元</li>
+                <li>美国牛肉价格因牛群减少上涨15%</li>
+                <li>早期IRS数据显示平均税收退款为2,290美元</li>
+                <li>乌克兰与IMF达成82亿美元贷款计划</li>
+                <li>伯克希尔哈撒韦CEO赞扬卡夫亨氏转型</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
