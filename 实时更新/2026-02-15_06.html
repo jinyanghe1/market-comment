@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-15 06:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-15 06:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在复杂的地缘政治局势与企业财报季中呈现谨慎观望情绪，投资者关注美联储政策路径与科技巨头资本支出动向。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>地缘政治紧张局势加剧，美伊对抗与中美欧关系重塑市场风险</div>
+                <div class="topic-title-en">Geopolitical Tensions Escalate: US-Iran Confrontation and Reshaping of China-US-Europe Relations Heighten Market Risk</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国军事准备对伊朗进行可能长达数周的军事行动，并与以色列达成协议施压伊朗停止对华石油销售，直接推高地缘政治风险溢价，可能冲击全球能源供应与价格。与此同时，美国国务卿卢比奥强调美欧利益交织并呼吁维护共同价值观，而欧洲方面则寻求强化自身防御并重塑与西方联盟的关系，显示跨大西洋关系在压力下进行复杂调整。中国被西方指控扩大对俄战争援助，成为新的摩擦点。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/world-news/exclusiveus-military-preparing-for-potentially-weekslong-iran-operations-4506989" target="_blank" rel="noopener">[Investing.com] Exclusive-US military preparing for potentially weeks-long Iran operations</a>
+                    <a href="https://www.investing.com/news/commodities-news/trump-netanyahu-agreed-us-should-press-iran-to-cut-oil-sales-to-china-axios-reports-4507265" target="_blank" rel="noopener">[Investing.com] Trump, Netanyahu agreed US should press Iran to cut oil sales to China, Axios reports</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOcTVQZml1V3N5NDR5U2tWR1BOQ2NFTFF3ZTNGSmdQQVNLQVZVRXl5MjJWUHFYeHBDNWZQMEdRR0xMYS0zU2Y2STkzX3BQVlV0clNWclBETW9hSzhub2lLUkRHODdURlE5ajU1MTRRM1ltOFpURUR5WllUT1B0RmNDLURWS0Q1cllOak9sUldubkZiTUNwMjZHMlN3dlZnajl5LTdUNjRHeUp2VUhFb3NQVDN3" target="_blank" rel="noopener">[Bloomberg] Rubio Assures Europe and Calls on Leaders to Uphold Values</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPWEliaEY2XzlGWDJUSkp4WU9iX0tnZWlnWlY2M2F6c05Mcm5ETEt4em1JOFZMM2xEWjE1aTBkeTRZSWVTQTZBRE1GdmJWUHJRQXZxMjJMWl8tZFJTUzk2Z3l2RWFBeVk3Zm5WNTFMaENOTGxhazdFR3JQYzZ4VnFnS2tWb1BKbE5nM2lCczFHdnY5SXg1d1RpcDJDcTBaSnRQNXEtaGpGeU1MWm1Nc2tMaDN0S2s" target="_blank" rel="noopener">[Bloomberg] China Expanding Aid for Russia’s War, Western Officials Say</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">全球供应链</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>AI投资浪潮席卷传统行业，食品与国防领域应用引关注</div>
+                <div class="topic-title-en">AI Investment Wave Sweeps Traditional Industries: Applications in Food and Defense Draw Attention</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    AI创新正深入食品工业，初创公司试图利用AI破解大型食品公司的配方秘密，预示着食品研发与知识产权领域的竞争将转向技术驱动。更具标志性的是，五角大楼在针对委内瑞拉马杜罗政府的军事行动中使用了Anthropic的Claude AI模型，这表明生成式AI已进入实战级军事应用，或将开启国防科技投资的新赛道。亚马逊CEO也押注2000亿美元的AI支出以重振AWS，显示云巨头对AI基础设施的军备竞赛仍在升级。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/big-food-ai-recipes.html" target="_blank" rel="noopener">[CNBC] AI startups want to crack open the recipe book in Big Food's test kitchens</a>
+                    <a href="https://news.google.com/rss/articles/CBMitwNBVV95cUxNUEpudGI4TWFJTml4RE83SE9ZVE0walY2Q3QxUmlKanF3TzgtN0tyMnN1YXdiaS0tZko5cWUxcncyLUk5UFhzNVJvMHJRYUd3MlEzaW1UZW0xRTM4ekY5RlR5WVZZVENUajdWZmVrRWl0Z3c2NjFsbGYwc182b05FUktRaDRpVlFtVzYteVRVX3ZkUXc0dngtY1VSWUxfYW5JbXZvUUI0MFRGZGlPeVk1RnlVbkxPeFFlUFNsajRVQTNwak5CRVJBMU9PZGxWdkVKQXYzcEFHU1hjTEY1d0ZXS3VPdldqU3N5UnBIYXBfOGdWTE51ZG1BRnVkZ0ROQkRNZTZiUmFDMExQRVRMVUtkNHZoYWhITEx6RG5tanp2OXZMRVQ5cG1NejBnc0VjT1dqUGtQSV84VXlMOGp5cVdLTWllNk80R3NNam5FU0g2aGVDYm1RMXZkcXY0OGxTbG9VQi14V0dLNDdncExKV1FZTXRGcXVOZVhSX1lJRHJDTzFjdVgzM0xUUTNrSTBIM0pxMGc2OEIwWnFZTG5pcW5mQTQ5QldnYlo1bDhrQmNwUGJMZDhSNmdr" target="_blank" rel="noopener">[WSJ] Exclusive | Pentagon Used Anthropic’s Claude in Maduro Venezuela Raid</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5GR3RDdE5VaGVZdWdKMkY1WVd6a2NyNU1hS1ZVMVRNY2JscmI4T3lGN0xnTDgxTS1FUE1MU01sWFRmTXd6amV4aHJQbmNQY0xIelAzd19raGsxZnptaXAyb1dBMDNpZFZOMV9oREhKVHU" target="_blank" rel="noopener">[FT] Amazon’s Andy Jassy bets on $200bn AI spending drive to revive AWS</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">国防科技</span>
+                    <span class="sector-tag">云计算</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>华尔街高管薪酬重返2006年高位，引发对金融业风险与泡沫担忧</div>
+                <div class="topic-title-en">Wall Street Executive Pay Returns to 2006 Highs, Sparking Concerns Over Financial Industry Risks and Bubbles</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    六家华尔街银行CEO在2025年获得了总计2.5亿美元的薪酬，薪资水平回归至2006年全球金融危机前的峰值。这反映了在交易和承销活动可能活跃的背景下，金融业利润丰厚，但同时也敲响了警钟：高昂的薪酬激励可能助长过度风险承担行为，令人联想到上一轮危机前的市场环境。投资者需警惕金融板块是否已过度乐观并隐含泡沫风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5YOVJEYnpGQmNzM3pQVW1MSEZQeVdpbEVTLV9vbmRpc2szMGM0ZkhJal9YTGF5ZFFjY2s4V3BMekRSeWQ0LUlqRmVfUzZyTUdNR0VLbXN5akEwQlFsM0ttNGRsSmExdmtqZnY3eWdpelI" target="_blank" rel="noopener">[FT] Six Wall Street bank chiefs bring in combined pay of $250mn in 2025</a>
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQTWctaFNkWHg0dlJaRm9nQk9BZkxvWkRDSDdqTWNGZk8zNGN1RnQwZjdzblRNWGtOTzRwVXUzMUpqTlphWnRjSUJ4MVZxLXhTcEZKeWczUVBKbHU1RC1jX0d1NDYtYVhjcmVsSTM3OHJZLWt3ZDZ6N2xybDhGeFlsdS1Fblc4U2lnVVFRS21Dc2gtOGd0NWJwZmNrMkhPdmdqZWNsQ1ZKYjU4b0VnNUd5Tg" target="_blank" rel="noopener">[Bloomberg] Wall Street Banks Are Paying Their CEOs Like It’s 2006 Again</a>
+                    <span class="sector-tag">银行</span>
+                    <span class="sector-tag">金融服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>知名投资者押注关键标的：伯克希尔看好卡夫亨氏，阿克曼重仓Meta</div>
+                <div class="topic-title-en">Prominent Investors Place Key Bets: Berkshire Bullish on Kraft Heinz, Ackman Goes Big on Meta</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    伯克希尔哈撒韦CEO阿贝尔公开赞扬卡夫亨氏在计划分拆前的转型表现，这传递了对其重组战略和价值释放的强烈信心，可能带动市场对传统消费巨头分拆价值的重估。另一方面，对冲基金大佬比尔·阿克曼披露对Meta进行了重大投资，此举可能基于其对Meta在AI领域盈利能力或资本回报的乐观预期，为科技股情绪提供支撑。两位重量级投资者的动向成为市场观察行业前景的风向标。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/berkshire-ceo-abel-praises-kraft-heinz-for-turnaround-on-planned-split.html" target="_blank" rel="noopener">[CNBC] Berkshire CEO Abel praises Kraft Heinz for turnaround on planned split</a>
+                    <a href="https://news.google.com/rss/articles/CBMijwNBVV95cUxPakY1SWJfR0NKaGR5Y0drNnNkdjNGM0plaFJycFJhZkphQ2phY3phR1ZLN3dtYnF4TVBPb1VrVjRLY09HaGVDSFkyVEFSOV8tQ2lXek9FTk40SjR2a2ktVTQ0T3NOOE8xZVNPanRiMDNmYXRzQ0gwOWE4TTR6ZzlUWkUzYWRPSXhGVWhaY2xCSXM3VEM0WVJ3WmpGQzN4N1RwR2gxMlo2ZWIwWERTbE9lRVRtaURlNTdZY1poTlR1ZWVYcFJIelUwa0F5YnNzQXJ0Q2JIR3BuWkJ5bzJYZlFkb0dtWUVvMWkyUzRONzlPdUF4X1VqY1lhRTFSVDdDekw5WnAxcW90MWdBLWVTSFJOeExNX3V0UHB5R21fVUZRX0lobnZVVlV0T0dhVjJXaWs1N2FJaXMyV2hyVWZrT2ZTMnJ0eWVlb0FicDVycnZncERZaElkaDVza3JIcmw5ZzdLSXhkdU9FTEQ0RVlYVlVZTUcwdko5RFNWQmdZNFRwM2tHMmpwd1RWNDNPRGVQa2c" target="_blank" rel="noopener">[WSJ] Bill Ackman Makes a Big Bet on Meta</a>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">消费者必需品</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">社交媒体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>欧洲央行扩大欧元安全网以提升全球地位，美欧货币政策路径受关注</div>
+                <div class="topic-title-en">ECB Expands Euro Safety Net to Boost Global Role; US-Europe Monetary Policy Paths in Focus</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    欧洲央行决定将其欧元流动性支持工具（“欧元安全网”）向全球范围开放，旨在增强欧元在国际交易和储备中的吸引力，挑战美元霸权。这一长期战略举措可能逐步影响全球资本流动和资产配置。与此同时，市场分析将就业和通胀数据的向好部分归因于美联储主席鲍威尔“行动过晚”，暗示当前政策效果存在滞后性，投资者需重新评估美联储未来政策的节奏与全球经济联动影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/economy-news/ecb-makes-euro-backstop-global-to-bolster-currencys-role-4507256" target="_blank" rel="noopener">[Investing.com] ECB makes euro backstop global to bolster currency’s role</a>
+                    <a href="https://www.marketwatch.com/story/thank-too-late-jerome-powell-for-the-jobs-and-inflation-beats-2bc659af?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Thank ‘Too Late’ Jerome Powell for the jobs and inflation beats</a>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">外汇市场</span>
+                    <span class="sector-tag">跨境资本流动</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>美国制裁与供应链问题持续发酵：古巴燃料危机，中国奢侈品牌求复苏</div>
+                <div class="topic-title-en">U.S. Sanctions and Supply Chain Issues Persist: Cuba Fuel Crisis, Chinese Luxury Brands Seek Recovery</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国对古巴的制裁加码导致其航空燃料短缺，凸显了在地缘政治紧张下，特定国家面临的严峻经济与供应链压力。另一方面，中国春节期间成为全球奢侈品牌挽回中国高消费客户的关键战役，表明尽管面临经济挑战，中国高端消费市场依然具有决定性影响力。品牌在中国市场的表现将继续影响全球奢侈品行业的业绩与股价。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/cuba-fuel-shortage-trump-tariffs.html" target="_blank" rel="noopener">[CNBC] What's next for Cuba? Trump turns the screws as the island runs out of jet fuel</a>
+                    <a href="https://www.cnbc.com/2026/02/14/lunar-new-year-luxury-china.html" target="_blank" rel="noopener">[CNBC] Lunar New Year gives luxury brands a chance to win back big spenders in China</a>
+                    <span class="sector-tag">航空运输</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">奢侈品</span>
+                    <span class="sector-tag">零售</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>市场技术面与基本面隐忧浮现：美股突破失败，道指运输指数飙升存疑</div>
+                <div class="topic-title-en">Market Technical and Fundamental Concerns Emerge: Failed U.S. Stock Breakout, Doubts Over Dow Transports Surge</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    标普500指数近期突破关键阻力位失败，技术图形显现疲态，暗示上行动能不足，可能面临调整压力。同时，尽管道琼斯运输指数大幅上涨通常被视为经济健康的确认信号，但有分析警告此次上涨可能并非积极的“绿灯”，或反映了扭曲的供应链成本而非实际需求增长，对经济前景的指示作用存疑。这两个信号叠加，加剧了市场对短期走势的谨慎看法。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/these-are-high-probability-options-trades-for-next-weeks-busy-earnings-crush-32b47d47?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] S&P 500’s failed breakouts signal a darkening technical cloud</a>
+                    <a href="https://www.marketwatch.com/story/what-wall-street-bulls-are-getting-wrong-about-the-dow-transports-steep-takeoff-549c6694?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The Dow transports’ steep takeoff isn’t the green light you’re told it is</a>
+                    <a href="https://www.cnbc.com/2026/02/14/here-are-3-factors-that-drove-the-big-swings-in-the-stock-market-last-week.html" target="_blank" rel="noopener">[CNBC] Here are 3 factors that drove the big swings in the stock market last week</a>
+                    <span class="sector-tag">广泛市场指数</span>
+                    <span class="sector-tag">工业运输</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国可能对伊朗进行军事行动</li>
+                <li>华尔街六大银行CEO 2025年总薪酬达2.5亿美元</li>
+                <li>欧洲央行向全球开放欧元流动性工具</li>
+                <li>伯克希尔CEO公开支持卡夫亨氏分拆计划</li>
+                <li>比尔·阿克曼重仓押注Meta</li>
+                <li>标普500指数关键技术位突破失败</li>
+                <li>美国社交Security基金或于6年内耗尽</li>
+                <li>俄罗斯MOEX指数收盘持平</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
