@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-14 08:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-14 08:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">科技股抛售拖累市场，地缘政治风险升温，投资者在通胀数据与美联储政策间权衡，情绪趋于谨慎。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>科技股大幅回调，AI热潮降温</div>
+                <div class="topic-title-en">Tech Stocks Plunge as AI Fears Cool Down</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    亚马逊、微软等科技巨头股票连续下跌，亚马逊创近20年最长连跌纪录，市场担忧AI投资过热引发'先卖出后问AI'的抛售行为。科技板块估值承压，可能拖累整体市场表现，投资者需警惕高估值科技股的回调风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/amazons-stock-just-clinched-its-worst-losing-streak-in-nearly-two-decades-its-giving-investors-aws-deja-vu-2f239fe3?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Amazon’s stock just clinched its worst losing streak in nearly 20 years</a>
+                    <a href="https://www.marketwatch.com/story/these-32-favorite-stocks-signal-the-bull-market-is-running-on-fumes-60b18b69?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Stock Market Reels From ‘Sell First, Ask AI Questions Later’ Tech Slump</a>
+                    <a href="https://news.google.com/rss/articles/CBMiigNBVV95cUxQY3NBTEhCcVJWR1pZWU82emNqTWloblVUTWtMLXNxZDJEODVMRHZ1aUxaNDZNMmVsWUpHdHY1M1ZQd004Z3ZjeDc0SWlick80NkhOaFk5akROeVpBcnItRzlaVG1HRS1VRG5HRUVFREczdTU2SmF4X0pZaFRueDZnT095YWV2Y2dBV1lGVjlhVENpamstNzgzVmJFZFhUVFNzTFNzaW5BSkRvYnBFS25fcU96RWxreGYzSHI5RnBDZFFFUUF0MkNWWDkwck9VSEkxOXNPWmI1UXdlam50ejdKZlhhZVlfU3RMLW9YeE80Um9iYzUwYjJOUDlfeFMzT3RhTEFMYjVfeDhOZWM2QlNENUJTNTJjZDVwR1hKczJLX193ZGlBTVVobzNtUnM1clF6QlFmTWFmTUoyTkxkWEl0OGJ3NVhjLWR6c2VnNjZDUzNuSlg0YWluRU56eVJlaDI4UkFIbElZa3A3TXF1SFV3aFFxbVpXTmNCVDFnRzY0UjNkWDF2U25OeUJn" target="_blank" rel="noopener">[Barrons] Amazon Joins Microsoft in Bear Market. Why Mag 7 Stocks Are Struggling.</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">云计算</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>美国通胀数据喜忧参半，美联储降息预期调整</div>
+                <div class="topic-title-en">US Inflation Data Mixed, Fed Rate Cut Expectations Adjusted</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国整体通胀因二手车价格下跌而缓解，但核心CPI受服务成本上升推动加速，显示通胀粘性仍存。交易员将美联储年内三次降息的概率提升至50%，货币政策路径不确定性增加，市场可能持续波动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cd6z05p56xyo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Inflation eases in US as prices for used cars fall</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQYzJVQmhSdW5pdjl4ZjlGQnRtbXNQNi1pakJObXk5ZWpoUUpacmwzcUFTLWNjZHEtRDN4SVNILTFQb3A0STZIOGdtV1lFOVVCY25MdXoyVWQwLVBCZVBtVERfU1VnWl9wci1CV3hHUmRyUmJDR2oyWWVuRllCUlh1enQ4X19Eb1VZQU8zaEEtTHRFX1hoNy1UaXhEYmFUWDBkOVNfaDZsQWNCVVZCR2FiYjdwaU0" target="_blank" rel="noopener">[Bloomberg] US Core CPI Picked Up at Start of Year on Firmer Services Costs</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQaDFjUTBqQ09jXzZtZmJHU0N2TmpmY2NyeXJtSE1jeDJub3J1dkktckc0eE16NERjeW0zaktXa3JYb3BrWHVyb044Ul9HUWctanV3cnVCV2c5cGdibFJYM3FpdS1GMTBaNTdHcllwTnZfcmdRSjZFOXcyOVZOU1JKTUZiS3FLal9BeDlLRlBiQ0FSU3lkZVJEMEVoSGR5bzF4NkFKbzdRVU1iaXVrUXBYcXJB" target="_blank" rel="noopener">[Bloomberg] Traders Boost Bets to 50% for Fed to Cut Three Times This Year</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>地缘政治紧张升级，伊朗局势扰动能源市场</div>
+                <div class="topic-title-en">Geopolitical Tensions Escalate, Iran Situation Disturbs Energy Markets</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国军方准备对伊朗进行可能长达数周的军事行动，加剧中东紧张局势，可能引发石油供应中断风险。油价波动性上升，将推高全球能源成本并影响通胀前景，能源板块和航空业面临压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/world-news/exclusiveus-military-preparing-for-potentially-weekslong-iran-operations-4506989" target="_blank" rel="noopener">[Investing.com] Exclusive-US military preparing for potentially weeks-long Iran operations</a>
+                    <a href="https://news.google.com/rss/articles/CBMipANBVV95cUxQd2MyMGhoUDIwUEFWWnozNjJEUmNNMHlCdmpPalJ2U1E2N293UWZIcmh1U0tVWFFzUnJoVG1uTDgwSDg3ZDZVNUw0MUh4Y2VwaXlaLUZ2elMzenV0OXlsWVg0QzJHUGVzXzIzWlkwbkZkZ2k5aEN0ODFHQ0hscExRZUxTLTUtU1U4N0J2SWZjT3JEZDVaLWg1Y2FLNWo2VExmMG5mTFl5eTN5OW5KQXpxMzhfdWRna0R4WVF3VDJTOVUzeWtzYTRnRVZGdFV6SXdlOTJ1Tzhyd1YtMl9BcmFkU1BONE85aU5FUU1MZUF5bks3WHlFeEdCR1JsdjdyUmduQVozZlhubEl2dk1MV2JYVHBGMllvS2lOcENOam53OXZxT1A0MXA0Wm92OGw4aGVjbk5qQzdvR2l2YU9WTEZrYkVJRUdlcDh6LWVhdHdYd2FVYU1ZNmM1VEdzWUNRb1UydmEwOXJRUWxkQnhIXzJkSVJSam5HeXNzaXR6WFRKQ0RhcUdrR3pmekF0YlAzUnJCWlhzbFA4NUd6NlJ2YWNCb3l3R1A" target="_blank" rel="noopener">[Barrons] Oil and Gas in a Volatile World</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">航空</span>
+                    <span class="sector-tag">国防</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>加密货币面临抛压，比特币关键位测试</div>
+                <div class="topic-title-en">Cryptocurrency Under Selling Pressure, Bitcoin Tests Key Levels</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    比特币价格可能跌至60,000美元，若跌破关键支撑位，可能引发新一轮清算螺旋，加剧市场恐慌。加密货币与科技股相关性增强，投资者风险偏好下降导致资金流出，金融科技板块承压。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiiANBVV95cUxPLUozb0FyWUpQSXNpTkY3b2VHbVZwbEpqdHo0U2xZQW1ubHhlQTg5dG1RN3VodzI2NWkybFdpUnRSbV9SYzN1RDByVjVBRkNjQ0g2emt4RVAwcl91NHhVY25odE9rR3pVc3ZsZEhiRS1HejhxRHEtaWw3Y2ZrVml2NnJlNVppZDFyak5SeXNDT1hPQzhXV2dHSjhheVh6M3hBZHVrR1REeGdfRDZCeksyRS1JSUc2UVRBanZEd0NyOWtlTlZuRXVqYUZUeDNIUmItX01UemFUSmYxaTFoY0ZBQkpZM3JaaVpxWFFnQUVjUE5Nd1VUaG5aRG44MkFZaUQtZUhNWTA3NDNTc3h3d1NLWWdPai1uQTYxb0FqMXNISm1pQ3dzd3FwdlNxVWhWekJmZ3Y4UDdmQ1VvcUhMTG83eklsTnR2Y1RLQW5NMkotbkdFcVNaU3V2dzZUV2t3SkpZdDVOTlN5UkhRYkFMXzNSUnJtMkVKWXMydEktY19NdHBDblRMcXJ6cg" target="_blank" rel="noopener">[Barrons] Bitcoin Price May Fall to $50,000, Crypto Bull Says. What Happens Next.</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNQTUtWDJKMHhWMWpHVlNYM0RvUGs5OXdPVWgxc1hZZHZsWllfc1BPZllSTzRCR096eE5zZTlPbTU0RW9KNTdheWJ1VTVzenU1T3RTREZpLXI0bXN1VW1PejZvOXhyaXFHWXNZRkt2NEhCeXk4QnJXMnFaM1oyNE50bk5jMFZvZ1pOUGV3VnZTcmZRV0tkSVRQa1ZuaklYSVhRY1hzcVdHT19OY0xSXzVfUTlrRQ" target="_blank" rel="noopener">[Bloomberg] Bitcoin Falling to $60,000 Could Spark Fresh Liquidation Spiral</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">金融科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>SpaceX考虑IPO，马斯克或保留控制权</div>
+                <div class="topic-title-en">SpaceX Weighs IPO with Dual-Class Shares to Empower Musk</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    SpaceX正考虑通过双重股权结构进行IPO，以确保马斯克保持控制权，这可能为航天行业带来投资热潮并提振相关板块。但合并xAI的债务问题可能构成风险，投资者需关注公司治理和财务稳定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPYXV0c1gxbnhnazRXWWh5YTVuM0Q5RmdFUnhqbFNQcEc2eWJFUkQwbTRFeGp5NlJqS3d0UHNiUFcyQ01XUHllWGJiREJGclFKc1YwZktZZWkxQ21SaDRFbEJ5TkVSeFNUT29yX3lZcXZnVTBKZGlKVWhOVUMzMlNFb2pLc3RzdG04M3kyX3ZRbkpiaXNtQWotenJwUlhybU9FaGRiY1BzWjBOTE40dElHelVqWFEyQQ" target="_blank" rel="noopener">[Bloomberg] SpaceX Is Said to Weigh Dual-Class Shares in IPO to Empower Musk</a>
+                    <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxNMkhvNk1iRDlwX0FZU1JHMVdsVExBMDJtZnp4Vkt6MFpGSjVNXzd5blFqOUJaZ2VSdzlzQ2tGZlJWYUs0cGg2WnFGU1dtYU1md1NVVGRNbHItXzJQX0pzM0p3aU1rYy01TjVVb3B0SzlSdGkxNVFPdWNiRDBDaU9KTkJEOVNqV3d6dm80ck03TW1uUndRWmJjNmJkdGVXcTRlaEhJRXVjNTlZNEdNX25odDhfeDJzdkVlclJiOUt5Vm1faVgxY1E" target="_blank" rel="noopener">[Bloomberg] Musk’s Bankers are Discussing a Plan to Wrangle xAI Debt after SpaceX Merger</a>
+                    <span class="sector-tag">航天</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">投资</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>中美科技摩擦再起，阿里巴巴百度被点名</div>
+                <div class="topic-title-en">US-China Tech Tensions Flare as Alibaba, Baidu Named</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国短暂将阿里巴巴和百度列为援助中国军方的企业，尽管随后移除，但仍加剧了中美科技脱钩担忧。中国科技股可能面临更大监管压力和投资不确定性，投资者需警惕地缘政治风险对科技板块的长期影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQaWxERVFJNlBINjBjQTFwUnIwdDBJYWszdS1yVEw0YkRoX3FCb2RfVTBOOHlubVlteEdtNXREOEV2Z3JMTTROZ1hJUWozbEQxVm05Y0diLXF2bi1KOWZUQ25hVGxpbl9kVXJqV0tFc0Z6RWNzQk04UUZxLUc2U290YXBnSEZWajZwQUlpWnFoeHhSVWMxWkkwXzZPU2p1djhJQlpYZUliVVZrQ1lwOG0wTzJR" target="_blank" rel="noopener">[Bloomberg] US Briefly Names Alibaba, Baidu as Firms Aiding China’s Military</a>
+                    <span class="sector-tag">中国科技</span>
+                    <span class="sector-tag">电子商务</span>
+                    <span class="sector-tag">云计算</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>媒体行业整合加剧，华纳兄弟探索面临压力</div>
+                <div class="topic-title-en">Media Industry Consolidation Intensifies as Warner Bros Discovery Faces Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    华纳兄弟探索的大股东对派拉蒙与Netflix的竞购战失去耐心，要求公司聚焦核心业务，显示媒体行业整合过程中股东对过度扩张的担忧。流媒体竞争白热化，并购可能提升长期竞争力，但短期财务压力增加。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/big-warner-bros-shareholders-are-getting-restless-in-this-paramount-netflix-bidding-war-3491dab8?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Big Warner Bros. shareholders are losing patience with the Paramount-Netflix bidding war</a>
+                    <a href="https://www.investing.com/news/stock-market-news/warner-bros-discovery-sees-activist-sachem-head-increase-stake-in-q4-4506993" target="_blank" rel="noopener">[Investing.com] Warner Bros Discovery sees activist Sachem Head increase stake in Q4</a>
+                    <span class="sector-tag">媒体</span>
+                    <span class="sector-tag">娱乐</span>
+                    <span class="sector-tag">流媒体</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国整体通胀缓解但核心CPI上升</li>
+                <li>比特币价格可能跌至60,000美元关键位</li>
+                <li>亚马逊股票创近20年最长连跌纪录</li>
+                <li>美联储年内三次降息概率升至50%</li>
+                <li>美国军方准备对伊朗进行军事行动</li>
+                <li>SpaceX考虑IPO并采用双重股权结构</li>
+                <li>阿里巴巴和百度被美国短暂列为军事关联企业</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
