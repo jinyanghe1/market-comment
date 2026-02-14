@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-15 05:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-15 05:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">全球市场正受到地缘政治关系紧张与国内政策不确定性的双重夹击，同时企业层面的重组与科技投资为市场注入结构性活力。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美欧关系重申“利益交织”，但深层分歧犹存</div>
+                <div class="topic-title-en">US-Europe Relations: Reaffirmed Ties but Deep Chill Remains</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国国务卿鲁比奥公开强调美欧利益紧密相连，试图安抚盟友。然而，《经济学人》等媒体分析指出，双方在贸易、防务及对华政策上存在深刻裂痕，这种“表面温暖实则寒流”的局面将持续影响跨大西洋的贸易与投资政策稳定性，增加企业在欧美的运营风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/us-and-european-interests-are-intertwined-rubio-says.html" target="_blank" rel="noopener">[CNBC] U.S. and European interests are ‘intertwined,’ Secretary of State Rubio says</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOcTVQZml1V3N5NDR5U2tWR1BOQ2NFTFF3ZTNGSmdQQVNLQVZVRXl5MjJWUHFYeHBDNWZQMEdRR0xMYS0zU2Y2STkzX3BQVlV0clNWclBETW9hSzhub2lLUkRHODdURlE5ajU1MTRRM1ltOFpURUR5WllUT1B0RmNDLURWS0Q1cllOak9sUldubkZiTUNwMjZHMlN3dlZnajl5LTdUNjRHeUp2VUhFb3NQVDN3?oc=5" target="_blank" rel="noopener">[Bloomberg] Rubio Assures Europe and Calls on Leaders to Uphold Values</a>
+                    <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPN0xUbTFxLVZPYW5ZT1pTSUY5NUUxUmE4LVQ3Q0taOTFTOWhJYk9zbXNPa2lvb3dfeFdjbmx5bU0tblJJZ0lRMnJiX2IzTFNnbnJjUGpoaGVpNW1DeUV2dzJFelZpVWhyS0prQ3VKcUdpU0pkWlJXT0pWTzRWbV9obTNFSUpqMnE0VlVrVEpaSG1jX2Y2ckVjSjhzbVE5UFI5WHRoajBB?oc=5" target="_blank" rel="noopener">[Economist] America offers Europe warmer words, but a deep chill remains</a>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>中美紧张局势再度升温，科技与供应链承压</div>
+                <div class="topic-title-en">US-China Tensions Escalate, Pressuring Tech and Supply Chains</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美方认定阿里巴巴和比亚迪与中国军方有关联，此举可能导致新一轮制裁与投资限制。同时，西方官员指控中国扩大对俄罗斯的战争援助。地缘政治风险加剧，将迫使全球科技和汽车制造商重新评估其供应链依赖，并可能引发新一轮的资本配置调整，利好部分替代市场。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9tT0xESUdPMVR2Tk9ZdWlpRDJjUkR4eTQ0NGZkYzhha0kzbVJuOWdwSmtUR2R5ZW1ubjdPWXdWcUg3bEQ2emxldUFPWGprUUU0d2JfQ1JldTdJRFQxUFJncHdwUkgzeTlYSUZNUG5XWWo?oc=5" target="_blank" rel="noopener">[FT] US concludes Alibaba and BYD have links to Chinese military</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPWEliaEY2XzlGWDJUSkp4WU9iX0tnZWlnWlY2M2F6c05Mcm5ETEt4em1JOFZMM2xEWjE1aTBkeTRZSWVTQTZBRE1GdmJWUHJRQXZxMjJMWl8tZFJTUzk2Z3l2RWFBeVk3Zm5WNTFMaENOTGxhazdFR3JQYzZ4VnFnS2tWb1BKbE5nM2lCczFHdnY5SXg1d1RpcDJDcTBaSnRQNXEtaGpGeU1MWm1Nc2tMaDN0S2s?oc=5" target="_blank" rel="noopener">[Bloomberg] China Expanding Aid to Russian War Effort, Western Officials Say</a>
+                    <a href="https://www.cnbc.com/2026/02/14/lunar-new-year-luxury-china.html" target="_blank" rel="noopener">[CNBC] Lunar New Year gives luxury brands a chance to win back big spenders in China</a>
+                    <span class="sector-tag">科技硬件</span>
+                    <span class="sector-tag">新能源汽车</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">国防军工</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>美国国土安全部关闭，暴露政治僵局与经济风险</div>
+                <div class="topic-title-en">US Homeland Security Shutdown Exposes Political Impasse and Economic Risks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国国土安全部因移民执法（ICE）突袭行动争议而关闭，这不仅威胁国内安全机构的运作，也凸显了政治内斗对政府基本职能的损害。政策不确定性升高，可能削弱商业投资信心，并对依赖稳定监管环境的行业（如航空旅行、跨境物流）造成短期冲击。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPZEtzMWFOUG9YSHlINXlpYjVPLV9HTFJhNlpxSGR1YnN2N2pUd3ZUZXd1Q3RvSE05TnlpcDZYSXVmM2hSdXNkSVhmWlpKV2lSVHN2RHFXQlBVWG4zN0lGekFsQzJNM1BGUXREWElzSzk4YnIwVUo3VGlzeFdlc2ZlbEtSZGZQRktIZnd0UFo1SHpnU0o2cXhFZHFvLS1GRHlrOEUzd1Jn?oc=5" target="_blank" rel="noopener">[Bloomberg] US Homeland Security Department Shuts Down Amid ICE Raid Impasse</a>
+                    <a href="https://news.google.com/rss/articles/CBMihANBVV95cUxPd05hd2JreHRDbEJEdFUza1NIWjRrS1lrLVpLT1pWWVllUGNQQ0dVVFpON0lZdy1IUWhfbjdoRkVDZ3RkWGtSalExOTJxbXpuR2lJVlF2N05LUDFJTHgwaFZQeml3WGlUQlZTTkxMSWNwTXI5eHlfel93ZVBISHhVTmlTWmZpbE1TZmIzVDhUcmRaM2l3ekh1M01POTlxWFBEQVFUYXdVcWFvZ2t1a3pkU2poZTlQS1p2UlVmenBVLVo1R2lkZFBwU1d0Q3dma3pFNy1Ya0hxV0dnTF81Z1drdmdrY0NXQ3c3d2daMGFKYjZmXzY1cjVYdmtpSWdfejNKOEx6eEhFeXBvQ2FwaF9ySExHdmpZcVZsOWhwWnNJSy1mdERxMlRjSXlBdU41TjhhaW1GbXIzMEVyQkNSQ3YtbUhwTUhsYThPbFpvZHppLTZ3NWs4bTlfVmtkd2RrYk9MUXNENnhHUjQ4TDBGc3hmelMzaF93MjEzVEo2cDNuejZuVFFE?oc=5" target="_blank" rel="noopener">[WSJ] How a Homeland Security Shutdown Affects ICE and TSA</a>
+                    <span class="sector-tag">航空运输</span>
+                    <span class="sector-tag">物流</span>
+                    <span class="sector-tag">国防与政府服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>食品行业巨头分拆与AI创新共塑行业未来</div>
+                <div class="topic-title-en">Food Industry Reshaped by Corporate Split and AI Innovation</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    伯克希尔CEO阿贝尔赞扬卡夫亨氏在计划分拆中的扭亏为盈，此举可能为股东释放价值，并引发对大型包装食品公司业务聚焦的重新评估。同时，AI初创公司正寻求进入大型食品公司的测试厨房以开发新配方，表明食品行业正经历一场从资本结构到研发模式的全面技术革新。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/berkshire-ceo-abel-praises-kraft-heinz-for-turnaround-on-planned-split.html" target="_blank" rel="noopener">[CNBC] Berkshire CEO Abel praises Kraft Heinz for turnaround on planned split</a>
+                    <a href="https://www.cnbc.com/2026/02/14/big-food-ai-recipes.html" target="_blank" rel="noopener">[CNBC] AI startups want to crack open the recipe book in Big Food's test kitchens</a>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">消费品</span>
+                    <span class="sector-tag">人工智能</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>亚马逊豪掷2000亿美元投资AI，云战争再度升级</div>
+                <div class="topic-title-en">Amazon Bets $200 Billion on AI to Revive AWS, Escalating Cloud Wars</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    亚马逊CEO安迪·贾西计划斥资2000亿美元进行AI投资以重振AWS增长。这笔巨额资本开支不仅将巩固亚马逊在云基础设施领域的地位，也将对芯片、数据中心和软件服务供应商产生巨大拉动作用，同时给微软和谷歌带来巨大竞争压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5GR3RDdE5VaGVZdWdKMkY1WVd6a2NyNU1hS1ZVMVRNY2JscmI4T3lGN0xnTDgxTS1FUE1MU01sWFRmTXd6amV4aHJQbmNQY0xIelAzd19raGsxZnptaXAyb1dBMDNpZFZOMV9oREhKVHU?oc=5" target="_blank" rel="noopener">[FT] Amazon’s Andy Jassy bets on $200bn AI spending drive to revive AWS</a>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">数据中心</span>
+                    <span class="sector-tag">软件服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>华尔街CEO薪酬重回2006年水平，银行业盈利强劲</div>
+                <div class="topic-title-en">Wall Street CEO Pay Returns to 2006 Levels Amid Strong Bank Profits</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    六家华尔街银行CEO 2025年总薪酬高达2.5亿美元，薪酬水平堪比2006年金融危机前。这反映了在利率环境变化和市场波动中，大型投行依然保持了强大的盈利能力。高薪酬可能引发监管和公众关注，但短期内凸显了金融板块的财务健康状况。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5YOVJEYnpGQmNzM3pQVW1MSEZQeVdpbEVTLV9vbmRpc2szMGM0ZkhJal9YTGF5ZFFjY2s4V3BMekRSeWQ0LUlqRmVfUzZyTUdNR0VLbXN5akEwQlFsM0ttNGRsSmExdmtqZnY3eWdpelI?oc=5" target="_blank" rel="noopener">[FT] Six Wall Street bank chiefs bring in combined pay of $250mn in 2025</a>
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQTWctaFNkWHg0dlJaRm9nQk9BZkxvWkRDSDdqTWNGZk8zNGN1RnQwZjdzblRNWGtOTzRwVXUzMUpqTlphWnRjSUJ4MVZxLXhTcEZKeWczUVBKbHU1RC1jX0d1NDYtYVhjcmVsSTM3OHJZLWt3ZDZ6N2xybDhGeFlsdS1Fblc4U2lnVVFRS21Dc2gtOGd0NWJwZmNrMkhPdmdqZWNsQ1ZKYjU4b0VnNUd5Tg?oc=5" target="_blank" rel="noopener">[Bloomberg] Wall Street Banks Are Paying Their CEOs Like It’s 2006 Again</a>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">资产管理</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>美国牛肉价格飙升15%，食品通胀压力再现</div>
+                <div class="topic-title-en">US Beef Prices Surge 15% as Cattle Herd Shrinks, Reviving Food Inflation Fears</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国牛群数量减少导致牛肉价格同比上涨15%，这可能重新点燃市场对食品通胀的担忧。上游农业与畜牧业将直接受益，而下游的餐饮、食品加工及零售业将面临成本上升压力，可能侵蚀其利润率或迫使终端消费涨价。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxQLW54Y2psRktVWE5ZTnhMT1pka1NfN3BIZUdjb1lUQXVFNGZHUkVSSG45RlprbDk0VkhXN25vLWZLN19URzR1N29CM2ZQMUdnYzlieFhEbG9yYmg3QWRHc19LMEVDUkVHWWg1TlVPajlfTlZkTTlBZE1BbjhpaHFOdUt6ZVQ4bV96c3NJRUNieEY5eXpZaXdMbXJTNV9UYTR2YkpYbV9ScUwtU2p0OXBfRU44RjZSbGxyTUN4VGxaNXY?oc=5" target="_blank" rel="noopener">[Bloomberg] America’s Vanishing Cattle Herd Drives 15% Price Hikes for Beef</a>
+                    <span class="sector-tag">农业</span>
+                    <span class="sector-tag">畜牧业</span>
+                    <span class="sector-tag">餐饮业</span>
+                    <span class="sector-tag">食品零售</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国牛肉价格同比上涨15%</li>
+                <li>亚马逊计划2000亿美元AI投资</li>
+                <li>六家华尔街银行CEO总薪酬达2.5亿美元</li>
+                <li>美国国土安全部因政治僵局关闭</li>
+                <li>欧洲央行推动欧元全球“安全网”</li>
+                <li>中国春节奢侈品消费受关注</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
