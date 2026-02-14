@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-15 01:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-15 01:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">全球市场在AI技术颠覆、地缘政治紧张及金融政策转向可负担性主题下呈现分化格局。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI技术颠覆引发市场调整与监管干预</div>
+                <div class="topic-title-en">AI Disruption Triggers Market Adjustments and Regulatory Intervention</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    AI技术的快速发展正重塑全球行业竞争格局，但市场泡沫风险上升，中国政府通过'国家队'投资者介入以控制AI股票过热，反映出监管层对科技泡沫的担忧。高盛等机构仍推荐AI相关股票，显示长期投资价值与短期波动并存，投资者需警惕估值回调风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMivgNBVV95cUxNMkVfWVVKVzhZNUdXdEpZYnNKcnFBMjNCcDE2QXF6RnpEY3JDejZNeHNNXzBtVDhPMDJYMDB1eGc0dnlOWE4xZHNlZFFQT2xiYkRkb2NjMXYyVVR4clp3aGpLbHNTTUt3RlFtOTVlUWdpTm5odjVYSTNGWjM3NzFfdXpXaDhEblNVV0VNOEdqVFBjWnFUUjZ5TUJ5M3M5QlQ5ZlAxdXZleGFNMDJTU3RLUElZTk1UN21lTi1TRnlWMEZiMDVkQmhkeFBKejZNS3h3bkpkV1liMmxpdEdVV1hHaHhVOXY1bEE4cHFsZ3NMV0NHek9DVThKeEZac0t4U3NyUHpPMHZMREJVWi1udlZMV21FeTh3VjRieWRydlJfSl8zVnlLUlp1cDFqQlRseVoyT0pDb1hCN0VvRFN4NVJtQXktakNBbVduMUluajZrcWUyY2ZVdllfbkJLOWl4YjR4RE1GcUp4bDZERzBCNmdiMWNJRWhwTFdmckU3b0FYQTlUcXJ1YmhYNU9fUUUtVXFIZ0VsZ2ZpX1d1WGJtZ0dwUzlpN1VoNS0wRDlQdUcwSjBFcUVUejZUWHh0MFRMQQ?oc=5" target="_blank" rel="noopener">[WSJ] China Deploys a ‘National Team’ of Investors to Keep AI Stock Boom in Check</a>
+                    <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOVkVEbVU4ZVBJdHdSMTJrdnpmRHVaOHItMlMwTUZvT002QmhOT2JRRk1wYTNJMzN3T1FRQWJ1NFZYZUQ2UEZFbjY4RGIzZWFOcHR5SWtWWTEyLVZTWE5aYVVIdk5aNWFLMnlzU3hmMVV2aDczekk5X2lCazVPQW9nWDY5QTk?oc=5" target="_blank" rel="noopener">[CNBC Markets] Goldman Sachs says these five stocks, including Nvidia, are too attractive to ignore</a>
+                    <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9rREtFekFiMXRvRmxfMmdmdXdEYVlZUkZOYnpkb2JnNDVzeXpWR0oyMlZMVlBVdVFieGFyZVVaRk5panpoc0lQdFAwaXRQamFEWkhz?oc=5" target="_blank" rel="noopener">[华尔街见闻] 本周，“AI颠覆一切”的狼终于来了</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">互联网平台</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>地缘政治紧张加剧中美博弈与全球供应链风险</div>
+                <div class="topic-title-en">Geopolitical Tensions Escalate Sino-US Rivalry and Global Supply Chain Risks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    中美在贸易、技术和地缘政治领域的竞争持续升级，中国被指扩大对俄罗斯战争援助并规避关税，可能引发美国进一步制裁，影响全球贸易流动。福特等美国车企与特朗普政府讨论中美合资，显示产业政策不确定性，欧洲寻求重建联盟以应对分化，投资者需关注国防、能源和汽车板块波动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/china-is-hacking-the-tariff-system-by-investing-in-u-s-firms-while-american-taxpayers-foot-the-bill-07f3eb97?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] China is hacking the tariff system by investing in U.S. firms — and American taxpayers foot the bill</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPWEliaEY2XzlGWDJUSkp4WU9iX0tnZWlnWlY2M2F6c05Mcm5ETEt4em1JOFZMM2xEWjE1aTBkeTRZSWVTQTZBRE1GdmJWUHJRQXZxMjJMWl8tZFJTUzk2Z3l2RWFBeVk3Zm5WNTFMaENOTGxhazdFR3JQYzZ4VnFnS2tWb1BKbE5nM2lCczFHdnY5SXg1d1RpcDJDcTBaSnRQNXEtaGpGeU1MWm1Nc2tMaDN0S2s?oc=5" target="_blank" rel="noopener">[Bloomberg] China Expanding Aid to Russian War Effort, Western Officials Say</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQUm96eS1pY2NTWVJmOUZuQzJ2b0JKeEk1N0JjUjIyby1sSmxUSnlwUU1MVkN1R194ZnRvN0IxRWI3QVIwQmo1VGNiUm9zU2xTUkluWVRSN2tuendWblFTUVN4cHJrekdPMzhmSnc0REJXR3ctLXpaZDV2WW1pb3dHQ3NTRTh0RFBJSjJBWFNhWlkzZnkzc3VFWW5BTHNmTjVWT3h6U0lLcVQxelVNaHpteDg5OA?oc=5" target="_blank" rel="noopener">[Bloomberg] Ford CEO, Trump Officials Discussed China-US Carmaking JVs</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">能源</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>金融政策转向可负担性主题，市场叙事生变</div>
+                <div class="topic-title-en">Financial Policy Shifts to Affordability Theme, Altering Market Narratives</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    市场焦点从AI转向'可负担性'，反映通胀压力和消费者购买力担忧，比特币需进一步回调才具吸引力，显示加密货币市场脆弱性。居民存款增速低于M2，'存款搬家'现象加剧，可能影响银行流动性并推高美债需求，能源和必选消费板块领涨预示防御性配置上升。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/bitcoin-needs-to-fall-another-20-before-its-actually-a-deal-30e1d6ff?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Why bitcoin needs to fall another 20% before it’s even worth a look</a>
+                    <a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFBNSGt2aWNGQ3hJUXhnZmx1b2FzeW9ubVE4aW1iQWdFUjM3b1ZqQTE4akFwbzY2TXpaaERKREpoc1pZaEM3NjYwN295Z2xPM05oZ0E?oc=5" target="_blank" rel="noopener">[华尔街见闻] “存款搬家”提速-居民存款增速与M2增速差值时隔7年半首次转负</a>
+                    <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE8tRUx4T0kwMkxaZk5Gc2R4bE9wMGpiTlE3dktnbG1rRjBuZlgtcm9RaGdlNjNsanJTV3drSGhJUFdndzNnTjd4OFRCel9CcUZtWS04?oc=5" target="_blank" rel="noopener">[华尔街见闻] 如何理解开年全球市场？“可负担性”才是2026 的总叙事：“主街”要赢一次，AI叙事巨变，日元是“关键”</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">消费</span>
+                    <span class="sector-tag">债券市场</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>公司融资与并购活跃，股东压力显现</div>
+                <div class="topic-title-en">Active Corporate Financing and M&A, with Shareholder Pressure Emerging</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    国防科技公司Anduril以600亿美元估值寻求新融资，显示资本对高增长科技领域的青睐，但Warner Bros股东对Paramount-Netflix竞标战失去耐心，反映媒体整合中的治理风险。伯克希尔对Kraft Heinz分拆的赞扬暗示传统行业重组以释放价值，投资者需关注并购带来的估值重估机会。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/big-warner-bros-shareholders-are-getting-restless-in-this-paramount-netflix-bidding-war-3491dab8?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Big Warner Bros. shareholders are losing patience with the Paramount-Netflix bidding war</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPRnRzanJzdlZZdWlvbEFtNjNZNHYtU25fWXNGVkdXMnNHblI5dDhONUpOVmZqTzNpNFhRelhKa3o5T1VUUVFDR0xmZHl3MTh2bTNpWVdWclIwYUI2UkxIS0pWX0xwcGE1X1pSdGFUQ2ZjamhGQ016NVduX3BULUQxXzcwZGpydV9abGJUMUxYcEZSVTJsQ2hHb0NWSVdiT3lTVmd2YzN0UHBJeUIxZFdPSWpR?oc=5" target="_blank" rel="noopener">[Bloomberg] Anduril in Talks for New Funding at $60B Valuation: Information</a>
+                    <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUFN5UFBHSkVGZnl6S2Y2S0ZPVlJZNXdhR1kwSzJBUHRQTlFCd0dfOFpGNGV2VUE3amh1YUgxRGRBTDBycXRvdnQzd3c3VXJWcTM4VnRwUGJIcV8yaUk1ZGVHNER0QzY3V2ZSeHhDWENucXlHZTZHSDBsdzJycWE1cnVfTDJjNVlocHh4Y05zbG1OeVNhc0U4OGFFZTdrckVQT2R4RHhYeEZmcHPSAbABQVVfeXFMTjFZd1BoZ3JKdHFRTWIyZllRRkNyOGRSOEVORXA0djBINHdRSGZuUVBpYmxyQkRXT1RsZUFmLW5NUFpjdFVlRGExUkJtUmhPeHhKRW5FalU5VmxkdnRpM2tpcDVHSXp0YXl4aVB4NWpMWG1QOFFuN0hSNzhfaW9qbmdlRkYycDhHNGxwb0YwT2tnaXo5TWdVQWgyUU5YcnlwSklROVE0R3BHRlh0MTEyZUQ?oc=5" target="_blank" rel="noopener">[CNBC Markets] Berkshire CEO Abel praises Kraft Heinz for turnaround on planned split</a>
+                    <span class="sector-tag">媒体娱乐</span>
+                    <span class="sector-tag">国防科技</span>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>监管收紧影响平台经济与政府运营</div>
+                <div class="topic-title-en">Tighter Regulations Impact Platform Economy and Government Operations</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    中国市场监管总局约谈阿里巴巴、抖音等平台企业，预示互联网监管持续强化，可能抑制科技巨头增长并加剧行业竞争。美国国土安全部因移民执法僵局关闭，影响ICE和TSA运营，增加政策不确定性，对旅行和物流板块构成短期压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1QQXFIRmx4YV9PNEc3SkRaU0dLQkZoblR3ZDFZRzR6SV9icktnWnZiQ19nemxMOVRFZ05IRTRCcXA3cXo5V0R1bDdLUWNjLWhpb09F?oc=5" target="_blank" rel="noopener">[华尔街见闻] 市场监管总局约谈阿里巴巴、抖音、百度、腾讯、京东、美团、淘宝闪购等平台企业</a>
+                    <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPZEtzMWFOUG9YSHlINXlpYjVPLV9HTFJhNlpxSGR1YnN2N2pUd3ZUZXd1Q3RvSE05TnlpcDZYSXVmM2hSdXNkSVhmWlpKV2lSVHN2RHFXQlBVWG4zN0lGekFsQzJNM1BGUXREWElzSzk4YnIwVUo3VGlzeFdlc2ZlbEtSZGZQRktIZnd0UFo1SHpnU0o2cXhFZHFvLS1GRHlrOEUzd1Jn?oc=5" target="_blank" rel="noopener">[Bloomberg] US Homeland Security Department Shuts Down Amid ICE Raid Impasse</a>
+                    <a href="https://news.google.com/rss/articles/CBMihANBVV95cUxOUE9YSEI2TGFSYXRuSnJpeXY2MUpQQXA2bkJVaWhBMENxRFJiVnlmcUt6bERSOVFqY3V0aXFpR0JRUEVRa2cwalFtcXlCOW9rZ2ZFQjBROG5nazBEQ0laMlZxbWJtYWR0bGpzTGNidDB4YXFCTzdhajRUMzQ3ekxZWTR3UVYwVkQ4ZWo4NXREdEZWaEl0eVRHS3BwY2tsR3ZPMkhzMUN0Z0QtM3FzZG01ZVF2Yk52RTlfOFZuZENfdVlxaGxLRlh4U24yRHg3OW5ScUdYcmlVb1BjSnhHeVRrQ0laYW92bndNZGlFVTY2Qm0taGZDd1FlNGh1OWJOQ05EemZackZzWGkxSEpBRTJpdXBlc1AwT1BNSklpaGpKVFAtUkoxT0g3cWpzNEJfNEo3c3F6LXhlX3JQQW5qamhvVkZBRF9aMGNpUmNQclY2Ny13eTFOeUdmOFlXSEZXdlJlb1B0U0U3ZzlGbXBkVF9QdzRpTlNtY3h1S1NGVTd6cDMyak5R?oc=5" target="_blank" rel="noopener">[WSJ] How a Homeland Security Shutdown Affects ICE and TSA</a>
+                    <span class="sector-tag">互联网平台</span>
+                    <span class="sector-tag">交通运输</span>
+                    <span class="sector-tag">政府服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>全球援助与债务风险上升，IMF放宽乌克兰贷款条件</div>
+                <div class="topic-title-en">Global Aid and Debt Risks Rise as IMF Eases Ukraine Loan Terms</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    国际货币基金组织放宽对乌克兰82亿美元贷款条件，提供财政灵活性以应对冲突冲击，但可能增加全球债务负担。美国私人股本在软件业的贷款敞口被指低估，类似次贷危机风险，警示金融体系脆弱性，投资者需监控信贷市场波动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNUEJTVUNzOXBTS3VMdG9HQ0dHaVlQeUs2RzM2ak42UGoxT2xra2w1WWNiSHEtbkJ5SE9qSE1WX2l2dHlJZXMyMlJ6NWhBaXFQZU13cDdxSGVrd2cxdHJGemZ3RDFzUS05OFdwLWZhbGhCcWRYRWhFMXk4UGo0TE9MNlBUR2ZPY0tSUWNvUEc2RUc0OXdNRmRWN2xXNF90N1cyNHc?oc=5" target="_blank" rel="noopener">[Reuters] Ukraine, IMF ease conditions on new $8.2 billion loan program</a>
+                    <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5YOU9lbWxPOFBrVDBRRzVuNVpyUnU2VmZWcEZaaGVJUFB6eG5Yckw3VWxuMU5TaE5WbG5UWWk0N0M2SFpXZTRVSU8wd0lXMEgweFZJ?oc=5" target="_blank" rel="noopener">[华尔街见闻] 新“次贷危机”？美国PE的“软件业贷款敞口”比财报显示的更大</a>
+                    <span class="sector-tag">国际援助</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">软件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>医药创新驱动投资机会，礼来囤积减肥药库存</div>
+                <div class="topic-title-en">Pharmaceutical Innovation Drives Investment Opportunities, Lilly Stockpiles Weight-Loss Drug</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    礼来公司为减肥药提前囤积15亿美元库存，显示对市场需求的高度信心，肥胖治疗领域创新正成为医药行业增长引擎。高盛推荐股票中包括医药股，反映投资者对健康保健板块的青睐，但需关注FDA审批进展和竞争加剧风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNSUw4Um9pMzN6Szd0WEhQRkJsOXpJUnJibnR0eXIzRlZsajN1QzBzbHhrdnlZRGNXV2pmLWVVcTBjYkJZY2FHVUhCcVRXQVVoSGl0Sm1RYVZ5a2NkTmhtalNRMUFhbWhFNW9sZHMtNl8xZC13dzdWZlFlV0JSeUFiNkM4LXdJNjZWSzhCSnhKZ2ZxMWhUUl9YWjdBZXh4RUR6Z0NLanNTNEdUd3cxVXgwUTdGTGRUTFphSThPdnYwZEJJZHpUMnZLOUVZWVY5MjJhb3l4cS1VQ19FMy1KMmc?oc=5" target="_blank" rel="noopener">[Reuters] Eli Lilly builds $1.5 billion stockpile of weight-loss pill ahead of FDA decision</a>
+                    <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOVkVEbVU4ZVBJdHdSMTJrdnpmRHVaOHItMlMwTUZvT002QmhOT2JRRk1wYTNJMzN3T1FRQWJ1NFZYZUQ2UEZFbjY4RGIzZWFOcHR5SWtWWTEyLVZTWE5aYVVIdk5aNWFLMnlzU3hmMVV2aDczekk5X2lCazVPQW9nWDY5QTk?oc=5" target="_blank" rel="noopener">[CNBC Markets] Goldman Sachs says these five stocks, including Nvidia, are too attractive to ignore</a>
+                    <span class="sector-tag">医药</span>
+                    <span class="sector-tag">健康保健</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>比特币需再跌20%才具投资价值</li>
+                <li>美国税收退款平均额升至2,290美元</li>
+                <li>中国居民存款增速与M2增速差值七年半来首次转负</li>
+                <li>礼来公司为减肥药囤积15亿美元库存</li>
+                <li>国防科技公司Anduril估值达600亿美元</li>
+                <li>国际货币基金组织向乌克兰提供82亿美元贷款</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
