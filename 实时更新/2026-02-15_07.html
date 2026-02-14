@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-15 07:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-15 07:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场地缘政治风险升温，美股技术面出现压力迹象，但AI投资热潮与部分企业积极动态提供结构性机会。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>地缘政治紧张局势升级，美欧关系与伊朗问题成焦点</div>
+                <div class="topic-title-en">Escalating Geopolitical Tensions: US-Europe Relations and Iran Issues in Focus</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国国务卿鲁比奥强调美欧利益交织，试图安抚盟友，但《经济学人》指出双方深层次矛盾依然存在。同时，美国军事准备对伊朗进行潜在长期行动，加拿大亦加大对伊制裁，中东紧张局势升级可能冲击全球能源供应与贸易路线。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/us-and-european-interests-are-intertwined-rubio-says.html" target="_blank" rel="noopener">[CNBC] U.S. and European interests are 'intertwined,' Secretary of State Rubio says</a>
+                    <a href="https://www.investing.com/news/world-news/exclusiveus-military-preparing-for-potentially-weekslong-iran-operations-4506989" target="_blank" rel="noopener">[Investing.com] Exclusive-US military preparing for potentially weeks-long Iran operations</a>
+                    <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPN0xUbTFxLVZPYW5ZT1pTSUY5NUUxUmE4LVQ3Q0taOTFTOWhJYk9zbXNPa2lvb3dfeFdjbmx5bU0tblJJZ0lRMnJiX2IzTFNnbnJjUGpoaGVpNW1DeUV2dzJFelZpVWhyS0prQ3VKcUdpU0pkWlJXT0pWTzRWbV9obTNFSUpqMnE0VlVrVEpaSG1jX2Y2ckVjSjhzbVE5UFI5WHRoajBB?oc=5" target="_blank" rel="noopener">[Economist] America offers Europe warmer words, but a deep chill remains</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">国际贸易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>美股技术面走弱，市场短期回调压力增大</div>
+                <div class="topic-title-en">Weakening Technicals in US Stocks Signal Increased Short-term Correction Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    标普500指数突破失败，形成看跌技术信号，道琼斯运输指数的强劲上涨被市场评论认为并非明确的牛市确认信号。多重因素导致上周市场大幅波动，显示投资者在高位情绪趋于谨慎，获利了结压力可能引发进一步调整。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/these-are-high-probability-options-trades-for-next-weeks-busy-earnings-crush-32b47d47?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] S&P 500’s failed breakouts signal a darkening technical cloud</a>
+                    <a href="https://www.marketwatch.com/story/what-wall-street-bulls-are-getting-wrong-about-the-dow-transports-steep-takeoff-549c6694?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The Dow transports’ steep takeoff isn’t the green light you’re told it is</a>
+                    <a href="https://www.cnbc.com/2026/02/14/here-are-3-factors-that-drove-the-big-swings-in-the-stock-market-last-week.html" target="_blank" rel="noopener">[CNBC] Here are 3 factors that drove the big swings in the stock market last week</a>
+                    <span class="sector-tag">证券</span>
+                    <span class="sector-tag">宽基指数</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>AI投资热潮持续，但泡沫担忧催生新衍生品</div>
+                <div class="topic-title-en">AI Investment Boom Continues, But Bubble Fears Spur New Derivatives</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    AI应用正深入传统行业，初创公司试图利用AI破解食品巨头的配方秘籍。亚马逊CEO计划投入2000亿美元用于AI以重振AWS增长，显示巨头押注长远。然而，市场对AI泡沫的担忧已催生新的金融衍生品，反映出投资者在狂热中寻求对冲风险的复杂心态。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOd1FYaTIwMTAxSnNoSEFJaVEybUF4WFVvZkgtZzlDQmp2NV9Va2VCNkJfUGhzY3pCZDk0RUJLT1I2U0FOMzRGS1hrQ3lqTHBaVEZxREYtSERIQjJqOGZRSmM5RDA1WVR4WjlVQUZEQnJ4OWRUNXVSd1BXUkRsLWFfSGtjUFFFSDBRMTN3VEpFRXpVUzV2blV4d0RzTHBwUE5Ba3NmRWx3UURhTG50aVE?oc=5" target="_blank" rel="noopener">[Bloomberg] AI Bubble Fears Are Creating New Derivatives</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5GR3RDdE5VaGVZdWdKMkY1WVd6a2NyNU1hS1ZVMVRNY2JscmI4T3lGN0xnTDgxTS1FUE1MU01sWFRmTXd6amV4aHJQbmNQY0xIelAzd19raGsxZnptaXAyb1dBMDNpZFZOMV9oREhKVHU?oc=5" target="_blank" rel="noopener">[FT] Amazon’s Andy Jassy bets on $200bn AI spending drive to revive AWS</a>
+                    <a href="https://www.cnbc.com/2026/02/14/big-food-ai-recipes.html" target="_blank" rel="noopener">[CNBC] AI startups want to crack open the recipe book in Big Food's test kitchens</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">金融科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>华尔街银行CEO薪酬重回2006年高位，引发关注</div>
+                <div class="topic-title-en">Wall Street Bank CEOs' Compensation Returns to 2006 Highs, Drawing Scrutiny</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    六大华尔街银行CEO 2025年总薪酬达到2.5亿美元，与2006年金融危机前水平相当。高额薪酬反映了银行业在波动市场中的强劲盈利能力，但也可能引发关于薪酬与长期风险承担是否匹配的争议，尤其是在市场前景不确定性增加的背景下。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQTWctaFNkWHg0dlJaRm9nQk9BZkxvWkRDSDdqTWNGZk8zNGN1RnQwZjdzblRNWGtOTzRwVXUzMUpqTlphWnRjSUJ4MVZxLXhTcEZKeWczUVBKbHU1RC1jX0d1NDYtYVhjcmVsSTM3OHJZLWt3ZDZ6N2xybDhGeFlsdS1Fblc4U2lnVVFRS21Dc2gtOGd0NWJwZmNrMkhPdmdqZWNsQ1ZKYjU4b0VnNUd5Tg?oc=5" target="_blank" rel="noopener">[Bloomberg] Wall Street Banks Are Paying Their CEOs Like It’s 2006 Again</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5YOVJEYnpGQmNzM3pQVW1MSEZQeVdpbEVTLV9vbmRpc2szMGM0ZkhJal9YTGF5ZFFjY2s4V3BMekRSeWQ0LUlqRmVfUzZyTUdNR0VLbXN5akEwQlFsM0ttNGRsSmExdmtqZnY3eWdpelI?oc=5" target="_blank" rel="noopener">[FT] Six Wall Street bank chiefs bring in combined pay of $250mn in 2025</a>
+                    <span class="sector-tag">银行</span>
+                    <span class="sector-tag">资产管理</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>中国春节提振奢侈品需求，但中美科技摩擦隐现</div>
+                <div class="topic-title-en">Chinese New Year Boosts Luxury Demand, But US-China Tech Frictions Loom</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    奢侈品牌借中国农历新年契机，试图赢回中国高端消费者，显示中国市场对全球奢侈品行业的支柱作用依然关键。然而，美国认定阿里巴巴和比亚迪与中国军方有关联，中美科技脱钩风险持续，可能对相关科技及制造业公司的全球运营和估值构成长期压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/lunar-new-year-luxury-china.html" target="_blank" rel="noopener">[CNBC] Lunar New Year gives luxury brands a chance to win back big spenders in China</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9tT0xESUdPMVR2Tk9ZdWlpRDJjUkR4eTQ0NGZkYzhha0kzbVJuOWdwSmtUR2R5ZW1ubjdPWXdWcUg3bEQ2emxldUFPWGprUUU0d2JfQ1JldTdJRFQxUFJncHdwUkgzeTlYSUZNUG5XWWo?oc=5" target="_blank" rel="noopener">[FT] US concludes Alibaba and BYD have links to Chinese military</a>
+                    <span class="sector-tag">奢侈品</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">新能源汽车</span>
+                    <span class="sector-tag">电子商务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>美国关键商品通胀压力显现，牛肉价格飙升</div>
+                <div class="topic-title-en">Key Commodity Inflation Pressure Emerges in US, Beef Prices Soar</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国牛群数量减少导致牛肉价格预计将上涨15%，这可能给本已放缓但仍具粘性的通胀数据带来新的上行压力。食品通胀的回升将影响消费者实际购买力，并可能推迟美联储的降息预期，对消费零售和利率敏感型行业构成挑战。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxQLW54Y2psRktVWE5ZTnhMT1pka1NfN3BIZUdjb1lUQXVFNGZHUkVSSG45RlprbDk0VkhXN25vLWZLN19URzR1N29CM2ZQMUdnYzlieFhEbG9yYmg3QWRHc19LMEVDUkVHWWg1TlVPajlfTlZkTTlBZE1BbjhpaHFOdUt6ZVQ4bV96c3NJRUNieEY5eXpZaXdMbXJTNV9UYTR2YkpYbV9ScUwtU2p0OXBfRU44RjZSbGxyTUN4VGxaNXY?oc=5" target="_blank" rel="noopener">[Bloomberg] America’s Vanishing Cattle Herd Drives 15% Price Hikes for Beef</a>
+                    <span class="sector-tag">农业</span>
+                    <span class="sector-tag">食品零售</span>
+                    <span class="sector-tag">餐饮</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>社会保障金危机迫近，个人退休规划重要性凸显</div>
+                <div class="topic-title-en">Social Security Crisis Looms, Highlighting Importance of Personal Retirement Planning</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    社会保障基金可能在未来6年内耗尽，时间点早于此前预期，这引发了公众对退休保障的广泛担忧。与此相呼应，大量媒体报道聚焦于个人财务规划、财富传承以及退休储蓄工具的选择，反映出在公共保障体系承压的背景下，个人需更早、更主动地承担养老责任。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/social-security-could-run-out-of-money-in-just-6-years-even-sooner-than-originally-feared-c28eb5a5?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Social Security could run out of money in just 6 years — even sooner than originally feared</a>
+                    <a href="https://www.marketwatch.com/story/good-news-were-living-longer-too-bad-most-of-us-cant-afford-it-66a86498?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Three things to consider to make your money last the rest of your life</a>
+                    <a href="https://news.google.com/rss/articles/CBMigwNBVV95cUxPdUJKSi1LcDdQcWJvZUY1YWJOVGluOGktVkZGZXcxS2hDc1N0V2tXbENvNkJMVjMtODJyZWI2dzhwTDV2LVdsMnNCd2U4WkdyaUx2Z2d5UmhQZlNUQ2V2dE0yRlVGVmVUWmx5bDBXcEswNlFJSHZ3bzVzWkhKYXdQbjVaUHRuaTJmM2JIbVpOcnVnOUJ6bUVUejE3Q3hKZmNjZHNaSlRwNHdzMGNsZzhrZ0tiNFltaUVFR0h0dGY0ZGFlWDJ1a09XaTc3RDM1RlZKTTA4UGNCcFRnckdlSF93VmRmak5lQ0xGaEstdGVkVHl1OFJ1ZGhhTlY4OUU0aDNaZDVZWk9vUmt2RUdGZ2hITmxCT0lGaEwzaVVwby1TaVhwbzFkOWttdzhqQTdkTEJMeEdyR01XNkxKbS1Xc1ZXSTExczMyRndDR1BkOUxsbDVUVWhNTG9RNEllczNGVnJhR1dLUHhYNTRGdE55SmlDUTc2azZtY1JmTzE3Znc4bHVPVVU?oc=5" target="_blank" rel="noopener">[Barrons] Adult Kids Are Getting Their Inheritances Sooner. How Parents Are Doing It.</a>
+                    <span class="sector-tag">保险</span>
+                    <span class="sector-tag">财富管理</span>
+                    <span class="sector-tag">养老产业</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>标普500指数突破失败技术面转弱</li>
+                <li>美国牛肉价格因牛群减少预计上涨15%</li>
+                <li>华尔街六大银行CEO 2025年总薪酬达2.5亿美元</li>
+                <li>社会保障基金或将在6年内耗尽</li>
+                <li>道琼斯运输指数大幅上涨但被指非牛市确认信号</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
