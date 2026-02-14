@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-15 00:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-15 00:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">地缘政治紧张局势与科技行业监管构成市场主要不确定性，但部分企业重组与细分领域估值修复带来结构性机会。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美伊紧张局势升级，军事行动预期推高避险资产需求</div>
+                <div class="topic-title-en">Escalating US-Iran Tensions and Military Preparations Boost Demand for Safe-Haven Assets</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    独家消息显示美军正为可能长达数周的伊朗行动做准备，叠加伊朗前国王之子呼吁美方军事干预。此等地缘政治风险急剧上升，短期内将显著提振原油、黄金及国防军工板块，但会压制全球风险偏好，增加股市波动性。对高度依赖中东能源供应的欧洲和亚洲经济体构成潜在冲击。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/world-news/exclusiveus-military-preparing-for-potentially-weekslong-iran-operations-4506989" target="_blank" rel="noopener">[Investing.com] Exclusive-US military preparing for potentially weeks-long Iran operations</a>
+                    <a href="https://www.investing.com/news/world-news/son-of-irans-last-shah-urges-us-military-intervention-in-iran-4507250" target="_blank" rel="noopener">[Investing.com] Son of Iran’s last shah urges US military intervention in Iran</a>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">石油天然气</span>
+                    <span class="sector-tag">贵金属</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>中美科技与贸易博弈加剧：AI监管与关税“黑客”</div>
+                <div class="topic-title-en">Intensifying US-China Tech and Trade Rivalry: AI Regulation and Tariff 'Hacking'</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    中国部署“国家队”投资者为AI股票热潮降温，显示当局在鼓励创新与控制金融风险间寻求平衡，可能抑制相关板块短期投机。同时，美媒指控中国通过投资美国公司规避关税，令美国纳税人买单，这为特朗普政府进一步收紧对华投资审查和贸易政策提供口实，加剧双边经贸不确定性，科技和制造业供应链面临扰动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMivgNBVV95cUxObkFocGxnSzRQOW5CbmZmYnBzcWdVWTRFajk5RF81T3dWdEt0YXBrT0VEby1jSExWT29aV1ZQbzYxZjdUTUh6c0NMNWNYcWRWZlhwdDNFV0RJVlQ3cjhlbmlzdGtvUF9iZVh3Si1KLW9kc09BN19NN25wbDlUWUhMT04za2dSNzRxTTBTcmRZT1ZPTXNncjc2MXg1LXNlNUpjNGNRT3BSUXJycEJtaEkzQmFETXZLT2hQVUN1dV82c2F3V3RNOUNqc0VDOGlLekhoVlptaE9CWEhsakFfaWQ5M3Rjelc3dkt2NlJxd0NFd0JXOFFZUnF5ODg4Z3N6VDFqdzRjcjJnRGdmMjFJdzlLVUNuckw4UHlFdlFLekVtT00wa1FrTm9QbjM1M3lGOVRmY215algyQUR6V0R6WTlER2hVMXlYX19sVThpdExtSllwSjhCVGxIeE1kbVJBeUhEZDhwNzNmODZDNFJyc2pCMlN0emFKZ2w1M3ljSG1IV1JRT2lPYzA3YnZWT0ZtN09FdXcxWkFKa04wWkt4cjFPUGhHM01XdFdndHhyall0UVdYRmpKeGhsTFp5djQxdw" target="_blank" rel="noopener">[WSJ] China Deploys a ‘National Team’ of Investors to Keep AI Stock Boom in Check</a>
+                    <a href="https://www.marketwatch.com/story/china-is-hacking-the-tariff-system-by-investing-in-u-s-firms-while-american-taxpayers-foot-the-bill-07f3eb97?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] China is hacking the tariff system by investing in U.S. firms — and American taxpayers foot the bill</a>
+                    <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxObFFiaWg0c1d2eWNQaV9MMmJNbFBDS2hINFVqZTlTMDVhMzVFVllwcHFWN1ZpMTdlMXdRQmdraGFTUkJCTkIzYUZTT1lob1N4T05xaTNPWjNIUVpZLWdzUldod2RLU1A1WmE2cHRJUTJJQ0VsTTktUXFoeG51dVlpQmIwMDZ3VUlLVV9mb2V2MFNFcUc3TUhVLTlyMEx2S1HSAaQBQVVfeXFMT0xHZVZCQnp6ak1WamxqWmlROUxua3BWSDJTb1l1U3JxQ2xQTUZZSXBLMEtVS1phYVhoNjJ5VlNmbnZWdE9FSVRhTXA4Sm5tSjJhdGM0LU1DM01SOFptQ2JLa2djTW9SVXdETFpWSTVuYkhrU04tUjRWcEN6YlBXRDVSellHTWo2LVRVbWVNd3hJLXhJa3NydEY1RG1HNGFVTXJGU3Q" target="_blank" rel="noopener">[CNBC Markets] It's been a big — but rocky — week for AI models from China. Here's what's happened</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">跨境投资</span>
+                    <span class="sector-tag">制造业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>AI与国防科技独角兽Anduril寻求高估值融资</div>
+                <div class="topic-title-en">AI and Defense Tech Unicorn Anduril Seeks New Funding at Lofty Valuation</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    AI驱动的国防科技公司Anduril正洽谈以600亿美元估值进行新一轮融资，此消息获路透社证实。这凸显在动荡地缘政治背景下，将人工智能应用于国防和安全领域的商业模式获得资本市场高度认可。高估值融资若成功，将提振整个国防科技及AI软硬件赛道，但也引发市场对估值泡沫的担忧。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPRnRzanJzdlZZdWlvbEFtNjNZNHYtU25fWXNGVkdXMnNHblI5dDhONUpOVmZqTzNpNFhRelhKa3o5T1VUUVFDR0xmZHl3MTh2bTNpWVdWclIwYUI2UkxIS0pWX0xwcGE1X1pSdGFUQ2ZjamhGQ016NVduX3BULUQxXzcwZGpydV9abGJUMUxYcEZSVTJsQ2hHb0NWSVdiT3lTVmd2YzN0UHBJeUIxZFdPSWpR" target="_blank" rel="noopener">[Bloomberg] Anduril in Talks for New Funding at $60B Valuation: Information</a>
+                    <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQYTllUTdVUlY2LU8tWGo4X01GR0lYX3pEVXJjbGI5RnUybjZNNFk4TnFLQWhhZElGQUxJN080ZnZoM0FqNHA2RkFQeWFiNE5tWlNxTktfdUd4RzRPZzlZc2dYNGd4eHU4UGJTN3lKRmUyM05fRFpnQkFEanJfQ183NkFnTGFZNzRfSDQ1dUVuUHlnYTBVLVowYVpfWmtwNnRSb1dFd3UyelJocG50OEsyTVIzcGZlR1YzZG14Qg" target="_blank" rel="noopener">[Reuters] Anduril aims for $8 billion fundraising, Bloomberg News reports</a>
+                    <span class="sector-tag">国防科技</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">风险投资</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>美欧跨大西洋关系进入调整与重塑期</div>
+                <div class="topic-title-en">Transatlantic Relations Enter a Period of Adjustment and Reshaping</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国务卿卢比奥强调美欧利益“交织”，同时敦促盟友“捍卫价值观”，而英国首相斯塔默则呼吁强化欧洲防务合作并与欧盟建立更紧密联系。这表明在后特朗普及英国脱欧背景下，西方联盟内部正在进行权力和责任的重塑。更紧密的防务合作有利于欧洲国防工业，但美欧在对华、对俄政策上的潜在分歧仍是市场长期风险点。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/us-and-european-interests-are-intertwined-rubio-says.html" target="_blank" rel="noopener">[CNBC] U.S. and European interests are 'intertwined,' Secretary of State Rubio says</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOTjZzYkZSaXhjNW0tOWZUcGV6d2sxTWFEaksyMmFIRU43Z1g3bDVROUx1MUJIUndHNjNlcWdMRmc2Y3JHMVJIam9wYm9ZTnFNMFJVYi02dlRweUdnNzFidHJKYlh2cE9Oc1hGUExUNUlkSFp2UzFib3N5OEM5VWhGcEkyU2VrOVB0YTZRbUJFdWdNZnA5dkRXVmd3dkhlTVgycmhBTERVSTEzdzQyTkZJcXk4ZWY" target="_blank" rel="noopener">[Bloomberg] Starmer Calls Time on Brexit Years and Vows Closer Ties With EU</a>
+                    <a href="https://www.investing.com/news/world-news/uk-pm-starmer-urges-closer-collaboration-with-europe-on-defence-4506968" target="_blank" rel="noopener">[Investing.com] UK’s Starmer calls for stronger ’hard power’ and European defence ties</a>
+                    <span class="sector-tag">国防工业</span>
+                    <span class="sector-tag">外交政策敏感型行业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>卡夫亨氏获巴菲特接班人盛赞，分拆计划彰显股东价值释放</div>
+                <div class="topic-title-en">Kraft Heinz Praised by Berkshire Successor, Split Plan Highlights Shareholder Value Unlocking</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    伯克希尔哈撒韦CEO阿贝尔公开赞扬卡夫亨氏的转型成果及其计划分拆部分业务的战略。这释放出明确信号：作为大股东的伯克希尔支持公司通过业务聚焦和优化结构来提升价值。此举可能引领一波大型食品消费品公司审视自身资产组合、通过分拆释放价值的潮流，对食品饮料板块估值产生积极影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/berkshire-ceo-abel-praises-kraft-heinz-for-turnaround-on-planned-split.html" target="_blank" rel="noopener">[CNBC] Berkshire CEO Abel praises Kraft Heinz for turnaround on planned split</a>
+                    <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUFN5UFBHSkVGZnl6S2Y2S0ZPVlJZNXdhR1kwSzJBUHRQTlFCd0dfOFpGNGV2VUE3amh1YUgxRGRBTDBycXRvdnQzd3c3VXJWcTM4VnRwUGJIcV8yaUk1ZGVHNER0QzY3V2ZSeHhDWENucXlHZTZHSDBsdzJycWE1cnVfTDJjNVlocHh4Y05zbG1OeVNhc0U4OGFFZTdrckVQT2R4RHhYeEZmcHPSAbABQVVfeXFMTjFZd1BoZ3JKdHFRTWIyZllRRkNyOGRSOEVORXA0djBINHdRSGZuUVBpYmxyQkRXT1RsZUFmLW5NUFpjdFVlRGExUkJtUmhPeHhKRW5FalU5VmxkdnRpM2tpcDVHSXp0YXl4aVB4NWpMWG1QOFFuN0hSNzhfaW9qbmdlRkYycDhHNGxwb0YwT2tnaXo5TWdVQWgyUU5YcnlwSklROVE0R3BHRlh0MTEyZUQ" target="_blank" rel="noopener">[CNBC Markets] Berkshire CEO Abel praises Kraft Heinz for turnaround on planned split</a>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>美国对古巴制裁加码，能源危机促其转向电动车</div>
+                <div class="topic-title-en">US Tightens Screws on Cuba, Fuel Crisis Accelerates Shift to Electric Vehicles</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普政府加码制裁导致古巴航空燃油耗尽，经济困境加深。与此同时，古巴民众被迫转向电动交通工具。这短期凸显了美国强硬外交政策对特定国家经济的破坏性影响，长期则可能意外催生古巴本土新能源交通工具市场，但对全球市场影响有限，更多是地缘政治风险的局部体现。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/cuba-fuel-shortage-trump-tariffs.html" target="_blank" rel="noopener">[CNBC] What's next for Cuba? Trump turns the screws as the island runs out of jet fuel</a>
+                    <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUmFyVkF1ZDVSWWNBSGJrTm1PUjNZZFZ6b2NpT3MtSEtqU3plWmtROC1mbnd5WUdHNGtGMS0xUThEb1lMTkgyZlQ5eWVLOFNpU1N5cTFTd1U4UDZuT0ZvOTA1MzBrVExpUkFZZlAtdTdlcDlCLWMxV0RWVDR6NjI1aHlxYXB5RXNfSXpIUXJoZkFyaWRHSGdCY2Z5dGxXRVRBMWpxQ25VUVpPUQ" target="_blank" rel="noopener">[Reuters] Cubans turn to electric vehicles as US tightens oil blockade</a>
+                    <span class="sector-tag">航空运输</span>
+                    <span class="sector-tag">能源贸易</span>
+                    <span class="sector-tag">电动车</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>房地产市场出现“年龄折价”，卖方年龄影响成交价格</div>
+                <div class="topic-title-en">Real Estate Market Shows 'Age Discount,' Seller's Age Impacts Transaction Price</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    研究显示房屋卖家从70岁起开始获得更低报价，且年龄越大折价越显著。这反映了市场对高龄卖家可能因健康、认知或紧迫性等原因处于弱势谈判地位的认知。此现象可能引发针对老年房主的金融服务需求，如代理销售、房产变现规划等，同时也提示房产估值模型需纳入卖方特征等非传统因素。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/home-sellers-start-getting-lower-prices-at-70-research-shows.html" target="_blank" rel="noopener">[CNBC] Home sellers start getting lower prices at 70, research shows — and the gap widens with age</a>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">金融服务</span>
+                    <span class="sector-tag">养老产业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>高盛看好包括英伟达在内的五只股票，芯片股估值引热议</div>
+                <div class="topic-title-en">Goldman Sachs Bullish on Five Stocks Including Nvidia; Chip Stock Valuation Debated</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    高盛列出包括英伟达在内的五只“不可忽视”的股票，与此同时市场对芯片股估值产生分歧。一方面，有观点认为部分“更安全”的芯片股今年已大幅上涨，追高需谨慎；另一方面，有分析指出内存芯片股（尤其海外标的）估值仍然便宜。这反映了AI算力需求驱动下，市场正在细分赛道中寻找性价比和确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOVkVEbVU4ZVBJdHdSMTJrdnpmRHVaOHItMlMwTUZvT002QmhOT2JRRk1wYTNJMzN3T1FRQWJ1NFZYZUQ2UEZFbjY4RGIzZWFOcHR5SWtWWTEyLVZTWE5aYVVIdk5aNWFLMnlzU3hmMVV2aDczekk5X2lCazVPQW9nWDY5QTk" target="_blank" rel="noopener">[CNBC Markets] Goldman Sachs says these five stocks, including Nvidia, are too attractive to ignore</a>
+                    <a href="https://www.marketwatch.com/story/these-safer-chip-stocks-have-boomed-this-year-is-it-too-late-to-buy-in-98a3e509?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] These ‘safer’ chip stocks have boomed this year. Is it too late to buy in?</a>
+                    <a href="https://www.marketwatch.com/story/memory-chip-stocks-are-still-quite-cheap-especially-if-you-look-overseas-4e2ce21c?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Memory-chip stocks are still quite cheap — especially if you look overseas</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">人工智能硬件</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>中国国家队介入为AI股降温</li>
+                <li>美国70岁以上房主售房面临折价</li>
+                <li>美国平均退税金额同比上涨10.9%</li>
+                <li>多家公司财报超预期但未能提振股价</li>
+                <li>IRA账户资产规模已超过401(k)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
