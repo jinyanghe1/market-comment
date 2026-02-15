@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-15 10:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-15 10:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">地缘政治紧张局势和股市技术面警告令市场情绪谨慎，但AI创新和消费板块提供部分投资机会。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>地缘政治紧张局势升级影响全球市场</div>
+                <div class="topic-title-en">Escalating Geopolitical Tensions Impact Global Markets</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国可能对伊朗进行军事行动，且中国被指扩大对俄战争援助，加剧了石油供应和贸易流动的不确定性。尽管美国国务卿Rubio强调欧美利益交织，但深层分歧仍存，导致市场波动风险上升。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/world-news/exclusiveus-military-preparing-for-potentially-weekslong-iran-operations-4506989" target="_blank" rel="noopener">[Investing.com] Exclusive-US military preparing for potentially weeks-long Iran operations</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPWEliaEY2XzlGWDJUSkp4WU9iX0tnZWlnWlY2M2F6c05Mcm5ETEt4em1JOFZMM2xEWjE1aTBkeTRZSWVTQTZBRE1GdmJWUHJRQXZxMjJMWl8tZFJTUzk2Z3l2RWFBeVk3Zm5WNTFMaENOTGxhazdFR3JQYzZ4VnFnS2tWb1BKbE5nM2lCczFHdnY5SXg1d1RpcDJDcTBaSnRQNXEtaGpGeU1MWm1Nc2tMaDN0S2s?oc=5" target="_blank" rel="noopener">[Bloomberg] China Expanding Aid for Russia’s War, Western Officials Say</a>
+                    <a href="https://www.cnbc.com/2026/02/14/us-and-european-interests-are-intertwined-rubio-says.html" target="_blank" rel="noopener">[CNBC] U.S. and European interests are 'intertwined,' Secretary of State Rubio says</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">国际贸易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>股市波动加剧与技术面警告</div>
+                <div class="topic-title-en">Increased Stock Market Volatility and Technical Warnings</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    上周股市大幅波动受地缘政治风险、利率预期和公司业绩等多重因素驱动。道琼斯运输指数的上涨被分析为并非市场积极信号，而标普500指数突破失败显示技术面乌云密布，暗示短期回调压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/here-are-3-factors-that-drove-the-big-swings-in-the-stock-market-last-week.html" target="_blank" rel="noopener">[CNBC] Here are 3 factors that drove the big swings in the stock market last week</a>
+                    <a href="https://www.marketwatch.com/story/what-wall-street-bulls-are-getting-wrong-about-the-dow-transports-steep-takeoff-549c6694?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The Dow transports’ steep takeoff isn’t the green light you’re told it is</a>
+                    <a href="https://www.marketwatch.com/story/these-are-high-probability-options-trades-for-next-weeks-busy-earnings-crush-32b47d47?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] S&P 500’s failed breakouts signal a darkening technical cloud</a>
+                    <span class="sector-tag">股市整体</span>
+                    <span class="sector-tag">运输</span>
+                    <span class="sector-tag">科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>AI投资热潮与泡沫担忧催生衍生品</div>
+                <div class="topic-title-en">AI Investment Boom and Bubble Fears Spur New Derivatives</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    AI初创公司正渗透食品行业，试图通过算法优化食谱，显示AI应用场景扩大。然而，AI泡沫担忧导致新型衍生品出现，反映出市场对估值风险的焦虑，投资者需警惕过度投机。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/big-food-ai-recipes.html" target="_blank" rel="noopener">[CNBC] AI startups want to crack open the recipe book in Big Food's test kitchens</a>
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOd1FYaTIwMTAxSnNoSEFJaVEybUF4WFVvZkgtZzlDQmp2NV9Va2VCNkJfUGhzY3pCZDk0RUJLT1I2U0FOMzRGS1hrQ3lqTHBaVEZxREYtSERIQjJqOGZRSmM5RDA1WVR4WjlVQUZEQnJ4OWRUNXVSd1BXUkRsLWFfSGtjUFFFSDBRMTN3VEpFRXpVUzV2blV4d0RzTHBwUE5Ba3NmRWx3UURhTG50aVE?oc=5" target="_blank" rel="noopener">[Bloomberg] AI Bubble Fears Are Creating New Derivatives</a>
+                    <a href="https://www.investing.com/news/press-releases/5-steps-to-build-a-preipo-portfolio-using-ipo-genies-ai-platform-4507263" target="_blank" rel="noopener">[Investing.com] 5 Steps to Build a Pre-IPO Portfolio Using IPO Genie’s AI Platform</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">金融衍生品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>关键企业动态影响特定板块</div>
+                <div class="topic-title-en">Key Corporate Developments Impact Specific Sectors</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    伯克希尔CEO赞扬卡夫亨氏扭亏为盈，提振消费品板块信心；美国认定阿里巴巴和比亚迪与军方有联系，可能加剧中概股监管风险；精酿啤酒商BrewDog寻求出售，反映行业整合趋势。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/berkshire-ceo-abel-praises-kraft-heinz-for-turnaround-on-planned-split.html" target="_blank" rel="noopener">[CNBC] Berkshire CEO Abel praises Kraft Heinz for turnaround on planned split</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9tT0xESUdPMVR2Tk9ZdWlpRDJjUkR4eTQ0NGZkYzhha0kzbVJuOWdwSmtUR2R5ZW1ubjdPWXdWcUg3bEQ2emxldUFPWGprUUU0d2JfQ1JldTdJRFQxUFJncHdwUkgzeTlYSUZNUG5XWWo?oc=5" target="_blank" rel="noopener">[Financial Times] US concludes Alibaba and BYD have links to Chinese military</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE0tOHpQRGFtcGpKUzk3RS1ZS0h3U3ZVLWN0emw3WjVtdE9WeDlJUkNlTWkwZHl2TThaR2ZpSGYtZEYtVGRnMU04VVU3dTNFQ3JpNUNYVTJLdlVZc05yMkVydDE2X2U1MVpMa2VzMm9TeW4?oc=5" target="_blank" rel="noopener">[Financial Times] Craft beermaker BrewDog puts itself up for sale</a>
+                    <span class="sector-tag">消费品</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">饮料</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>经济数据与政策警告凸显长期风险</div>
+                <div class="topic-title-en">Economic Data and Policy Warnings Highlight Long-Term Risks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    社会保障基金可能在未来六年耗尽，加剧退休储蓄压力；美国牛群减少推动牛肉价格上涨15%，预示消费通胀隐忧；研究显示70岁后房屋售价下降，反映房地产市场年龄歧视问题。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/social-security-could-run-out-of-money-in-just-6-years-even-sooner-than-originally-feared-c28eb5a5?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Social Security could run out of money in just 6 years — even sooner than originally feared</a>
+                    <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxQLW54Y2psRktVWE5ZTnhMT1pka1NfN3BIZUdjb1lUQXVFNGZHUkVSSG45FZprbDk0VkhXN25vLWZLN19URzR1N29CM2ZQMUdnYzlieFhEbG9yYmg3QWRHc19LMEVDUkVHWWg1TlVPajlfTlZkTTlBZE1BbjhpaHFOdUt6ZVQ4bV96c3NJRUNieEY5eXpZaXdMbXJTNV9UYTR2YkpYbV9ScUwtU2p0OXBfRU44RjZSbGxyTUN4VGxaNXY?oc=5" target="_blank" rel="noopener">[Bloomberg] America’s Vanishing Cattle Herd Drives 15% Price Hikes for Beef</a>
+                    <a href="https://www.cnbc.com/2026/02/14/home-sellers-start-getting-lower-prices-at-70-research-shows.html" target="_blank" rel="noopener">[CNBC] Home sellers start getting lower prices at 70, research shows — and the gap widens with age</a>
+                    <span class="sector-tag">保险</span>
+                    <span class="sector-tag">农业</span>
+                    <span class="sector-tag">房地产</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>中国奢侈品市场迎春节消费机遇</div>
+                <div class="topic-title-en">Lunar New Year Offers Opportunities for Luxury Brands in China</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    农历新年为奢侈品牌提供了赢回中国大额消费者的关键机会，显示中国消费者支出潜力依然强劲。然而，这一趋势取决于经济信心和地缘政治因素，品牌需创新营销以吸引回流。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/lunar-new-year-luxury-china.html" target="_blank" rel="noopener">[CNBC] Lunar New Year gives luxury brands a chance to win back big spenders in China</a>
+                    <span class="sector-tag">奢侈品</span>
+                    <span class="sector-tag">零售</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>社会保障基金可能6年内耗尽</li>
+                <li>牛肉价格因牛群减少上涨15%</li>
+                <li>70岁后房屋售价开始下降</li>
+                <li>道琼斯运输指数上涨但非积极信号</li>
+                <li>标普500指数突破失败技术面转弱</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
