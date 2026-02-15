@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-16 06:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-16 06:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场情绪谨慎，AI产业担忧、新政府政策不确定性以及宏观经济数据共同主导市场焦点。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI交易进入危险阶段，市场恐慌性抛售波及全行业</div>
+                <div class="topic-title-en">AI Trade Enters Dangerous Phase, Sparking Broad Market Sell-off</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    多篇文章指出，人工智能主题投资已进入“厄运循环”和“恐慌交易”阶段。投资者在会议电话中集中讨论AI风险，导致相关软件和硬件股票被广泛抛售，市场正在重新评估谁是真正的赢家。这表明前期涨幅巨大的AI板块面临剧烈的估值重估和资金流出压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPcW9VVS1JV29FazRmcHFhdFJJWU92eE5RQmJ5YjRhQVB5bE5NTS1ZSGxWWVdreUZLaFI5bHNYNlNGMkRBZXJFS0tfZFA3c1ZvaTB2bnp1TE9vWC0xdFNpd0hOUnJURGtxMEd3eTNrSkhhRGZWMThMYlpEc2FwOVBqWk5KMEsyZC15WFY2TmJDUkMyMkRWZkd0Y3hhYmFlalhyMzA1Q25FSG52LUcxN082QnU5cw" target="_blank" rel="noopener">[Bloomberg] A Stock Market Doom Loop Is Hitting Everything That Touches AI</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNVnpzVjFZcUJ2Q3Q3d1ZVWmpqMndUMzc5cVFONmplaXBxQi1tY25ST3BnNGNraWZDTTVUcHZlX3pRN3ZtN09IU2pMMFBKQ29wRTFTMkRmN0w0R3pFTFZtUVc5VmVWN3Jra0h3WFMxRXN5MVZJX3VFTHYtM3Y2Q0huT2x2WDhXUDRySTZoV2tMZ2lPRUdEeXd6R1FkLS1WblZLM1N4Ql91b2tTeHlfakk3SWR1QzU" target="_blank" rel="noopener">[Bloomberg] AI Risk Is Dominating Conference Calls as Investors Dump Stocks</a>
+                    <a href="https://www.cnbc.com/2026/02/15/jim-cramer-weighs-in-on-the-anthropic-fueled-software-stock-sell-off-.html" target="_blank" rel="noopener">[CNBC] The AI trade has entered a puzzling phase. Do we know who the winners are anymore?</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">通信服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>特朗普政府政策风险浮现，贸易与科技监管成焦点</div>
+                <div class="topic-title-en">Trump Administration Policy Risks Emerge, Focusing on Trade and Tech Regulation</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    前贸易顾问纳瓦罗暗示新政府可能迫使Meta等数据中心建设商“内化成本”，预示更严格的产业政策与监管。同时，财政部官员因内部分歧离职，凸显政策执行层面的不确定性。这些信号可能增加科技和制造业公司的合规成本与运营风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/navarro-trump-data-centers-affordability.html" target="_blank" rel="noopener">[CNBC] Trump trade adviser Navarro says administration may force data center builders like Meta to 'internalize' costs</a>
+                    <a href="https://www.investing.com/news/stock-market-news/treasury-official-hurley-set-to-leave-his-post-after-friction-with-bessent-bloomberg-news-reports-4507305" target="_blank" rel="noopener">[Investing.com / Bloomberg] Treasury official Hurley set to leave his post after friction with Bessent</a>
+                    <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPazhJdkw1cHBJaTFETkk1aUFnQ3U5RkV5MVJncTdONmxHY3JVNWJEY0JKWGtRcElwbnFXcFQwRlVQTWRxV3QwM3lmVlFQZXI3QjZaWFB3aHRHMEk0OGN0bllWdThLM1E1Z2dmSlNkcFdOTnJxQzVESTRsMlNiZW1EMzFyNl9TTV9kemJuY0pGeTdCMFhFa0hSanVrRE1XWm4wWDl2cG9uM05QVXMyYWhNVEgydG9pZw" target="_blank" rel="noopener">[The Economist] Donald Trump’s schemes to juice the economy</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">数据中心基础设施</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">金融监管</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>媒体巨头重启并购谈判，行业整合或将加速</div>
+                <div class="topic-title-en">Media Giants Resume Merger Talks, Industry Consolidation May Accelerate</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    华纳兄弟探索公司正考虑重新启动与派拉蒙全球的出售谈判。这表明在流媒体竞争白热化和内容成本高企的压力下，传统媒体巨头希望通过整合来增强竞争力、优化资产和削减成本。此举可能引发娱乐传媒行业新一轮的整合潮。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/warner-bros-weighs-reopening-sale-talks-with-paramount-bloomberg-news-reports-4507308" target="_blank" rel="noopener">[Investing.com / Bloomberg] Warner Bros weighs reopening sale talks with Paramount, Bloomberg News reports</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOSHlNSTV2cndLWUVwRFY2VW4tUEk4TkJEcy1vRTU2RDUwZnlUNFprVVBzY196cEgyMkhqZ09YSkVYQ2owUTNMZXlOSjBXUnVXSGktZUJsTHV0UjMwVkd3R1VPMFVzZERzdEdRdFBmQTFhOGd3eW9INlBZam81T3lad3hzYmY0RGpaa3RqcTY0Wi1zaGZSc2szQVpwS0tLLV9lMFRyQXBqY0NuV3BTQTY5VE5R" target="_blank" rel="noopener">[Bloomberg] Warner Bros. Weighs Reopening Sale Negotiations With Paramount</a>
+                    <span class="sector-tag">传媒娱乐</span>
+                    <span class="sector-tag">流媒体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>比特币暴跌但未现“加密寒冬”，ETF资金流出可控</div>
+                <div class="topic-title-en">Bitcoin Plunge Yet No ‘Crypto Winter’ in Sight, ETF Outflows Manageable</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    尽管比特币价格大幅下跌，但现货ETF的资金流出并未显示投资者出现恐慌性抛售，市场认为这并非新一轮“加密寒冬”的开始。这表明机构投资者通过ETF的参与可能使加密货币市场结构更加稳固，价格波动更多地由市场供需和宏观因素驱动，而非纯粹的投机泡沫破裂。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/bitcoin-price-crash-crypto-winter-investors-etf-flows.html" target="_blank" rel="noopener">[CNBC] In bitcoin price plummet, ETF flows are down but aren't signaling 'crypto winter' investor panic</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">资产管理</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>美国经济或实现软着陆，但市场态度谨慎</div>
+                <div class="topic-title-en">US Economy May Achieve Soft Landing, But Market Remains Cautious</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    有分析指出美国经济可能已经实现“软着陆”，即通胀受控的同时避免深度衰退。然而，市场参与者普遍不愿过早下定论，担心“一语成谶”。这种谨慎态度反映出市场对就业、消费韧性能否持续以及政策路径的怀疑，未来经济数据的表现将至关重要。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMihgNBVV95cUxQbTlBdTY2OVNPNkgzRTZtT0lVWG9Naks2YlV5QkJSTUdvem1Ta1ZKT2VTMDFEeFVHUkJFWnhVbXoxVXBFODBPdFNSc3Z5TmRMcFBVVEdmdVRidlZuZmhMUlA5b0lmUk5YMzE3RGt3bFN2SHF3ak92VEFGMHFlQU9zLTEwTUNlcFNiTWNiTjk0V2lvZ1JIc05VU3Rad0Nlb3V3QTJoZnRKY0tNcVVXbzRtNm51Nzh5Vm1GRENRaEVIbG5Oek1BMzR2NkRMN2lJTmR2djNtblRfbXRxeklkSVF5VVlLTXphV25RcXNCUVRINXdVWG9ueER4NkZ6UVE1TEpVN2ttaGZLYlktZUhncko3aXFaUG4tNEd4WnhncTFzaVdGV1RSRm1ORzBTMUpKZWNUanA4bFJZQURBZ01aaTF5bmV4NXV2ZHpnUnZQblBYbU9QQ1RDYnpwZVl4aUpPdGRzdERhTVo1V3VWS1g1WjN5U1pSTktJVXFma0FzTmY5UEVrUzJ2LVE" target="_blank" rel="noopener">[The Wall Street Journal] The Economy May Have Stuck the Soft Landing. Nobody Wants to Jinx It.</a>
+                    <span class="sector-tag">宏观经济</span>
+                    <span class="sector-tag">消费</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>酒店业免费早餐面临压力，凸显K型消费分化</div>
+                <div class="topic-title-en">Hotel Free Breakfast Under Pressure, Highlighting K-Shaped Consumer Spending</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    从凯悦到假日酒店，美国酒店业的免费早餐服务正因成本上升和消费者需求分化而面临削减压力。这反映了“K型”经济的现实：高端旅客可能不受影响，但中端和经济型旅客对价格更加敏感，迫使酒店业者进行策略调整以控制成本并迎合不同客群。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/hotel-free-breakfast-hyatt-holiday-inn-marriott-cost-cuts.html" target="_blank" rel="noopener">[CNBC] From Hyatt to Holiday Inn, America's free hotel breakfast is facing a K-shaped economic threat</a>
+                    <span class="sector-tag">酒店旅游</span>
+                    <span class="sector-tag">消费者服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>地缘政治风险持续，俄乌冲突与美欧关系受关注</div>
+                <div class="topic-title-en">Geopolitical Risks Persist, Ukraine War and US-Europe Relations in Focus</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    俄罗斯黑海地区设施遭无人机袭击，战事持续影响能源与航运。同时，美国国务卿卢比奥对欧洲的“温暖言辞”得到部分欢迎，但也引发谨慎反应，显示跨大西洋关系存在微妙变化。这些地缘政治不确定性将持续影响能源、国防和安全相关资产的价格。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOMWlUT1dpU251T09pVlRZY2RHQ2hUMkZPRVFQVmJ1MmZPakZLb2Fpa3FWVlhiekVSTm1tR1ZRNVZOTDdURTVUdE93bmlRX3ZzZFVNUHJhRlBtS2QyMHFJMXlRSU1fZzU2emJHT3ZSZE0zTnZZWElxQWNCMG9vV0lSYkQyY2JZR1RjUE5zdl9CT2U1b0dyLUJsT0JHVE4wcXpncVRHV0JfaVlrNmhvaTdQNTdTNW8" target="_blank" rel="noopener">[Bloomberg] Russian Port, Fuel Tanks Hit in Drone Attack on Black Sea Region</a>
+                    <a href="https://www.cnbc.com/2026/02/15/some-europeans-welcome-rubios-warm-words-others-remain-cautious.html" target="_blank" rel="noopener">[CNBC] Some European policymakers welcome U.S. Secretary of State Rubio's warm words, others remain cautious</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">航运</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>特斯拉与苹果生态整合推迟，汽车智能化进程遇阻</div>
+                <div class="topic-title-en">Tesla-Apple Ecosystem Integration Delayed, Hindering Automotive Intelligence Process</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特斯拉全面接入苹果CarPlay的功能因需等待iOS 26更广泛普及而受阻。这不仅影响特斯拉用户体验，也揭示了科技巨头与汽车制造商在生态融合上的步伐不一致和依赖风险。汽车智能化的进程仍受制于跨平台技术协同与用户基数的制约。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQY21LVVVscjZLQi1kS00wcXFJMTc4c2RXVFI3U0ppT0ViU0tLRm9BWVg1dUhDNW05WmFtTEhZWDhYRkkwWFlNRGo3Tm8waVp6MGhqekswTTlSTTQ3SUhvb2wtVkhVSHkxa2pHblFSVWVEbE9GMm5vNWFkWWFmaENVUDdWQ2dYZG8yaWRvYVdNYXdBV2RHVWZCX1dGR0hJaWtycy1vbllOT0Q0ZWJjQlBVNlVLdEczMXQ1RURwSkpadFlQSG44cGFrdThtcw" target="_blank" rel="noopener">[Bloomberg] Tesla CarPlay Held Back by Need for Wider Adoption of Apple’s iOS 26</a>
+                    <span class="sector-tag">新能源汽车</span>
+                    <span class="sector-tag">消费电子</span>
+                    <span class="sector-tag">车联网</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>本周将公布美国PCE物价指数，是美联储政策关键参考</li>
+                <li>比特币ETF资金流向显示机构未现恐慌</li>
+                <li>美国酒店业入住率与平均客房收入数据</li>
+                <li>AI相关上市公司财报电话会中的风险讨论热度</li>
+                <li>华纳兄弟与派拉蒙并购谈判进展</li>
+                <li>俄罗斯能源设施遇袭对油价及航运费率的影响</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
