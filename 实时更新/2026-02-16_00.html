@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-16 00:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-16 00:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">地缘政治风险与AI市场波动主导情绪，消费分化与能源供应问题加剧市场不确定性。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>地缘政治紧张局势加剧，能源与贸易受冲击</div>
+                <div class="topic-title-en">Geopolitical Tensions Escalate, Impacting Energy and Trade</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    乌克兰危机持续，俄罗斯能源设施遭袭以及中东局势不稳，导致能源价格波动并威胁全球供应链。欧洲对美国国务卿卢比奥的言论反应不一，可能影响跨大西洋合作，增加市场避险情绪。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/world-news/board-of-peace-members-have-pledged-more-than-5-billion-for-gaza-trump-says-4507299" target="_blank" rel="noopener">[Investing.com] Board of Peace members have pledged more than $5 billion for Gaza, Trump says</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOMWlUT1dpU251T09pVlRZY2RHQ2hUMkZPRVFQVmJ1MmZPakZLb2Fpa3FWVlhiekVSTm1tR1ZRNVZOTDdURTVUdE93bmlRX3ZzZFVNUHJhRlBtS2QyMHFJMXlRSU1fZzU2emJHT3ZSZE0zTnZZWElxQWNCMG9vV0lSYkQyY2JZR1RjUE5zdl9CT2U1b0dyLUJsT0JHVE4wcXpncVRHV0JfaVlrNmhvaTdQNTdTNW8?oc=5" target="_blank" rel="noopener">[Bloomberg] Russian Port, Fuel Tanks Hit in Drone Attack on Black Sea Region</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFA2WlNLSlZDREVKWVNhUUdwNm0yTktYb3BpWHJ4S2FwQmt5THEya3FqVEc5Y2F3eUtZSzA1c0EyaEZ3aEZZM1Y0RWJPZl9jenBrVUZmSk9BX0h3QUc4MTZTQXBVaTJZMEE4cXBEMVdLS1g?oc=5" target="_blank" rel="noopener">[FT] Ukraine’s survival still an ‘open question’, Kyiv mayor warns</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">大宗商品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>AI市场波动加剧，生产力提升与泡沫风险并存</div>
+                <div class="topic-title-en">AI Market Volatility Intensifies Amid Productivity Gains and Bubble Risks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    AI概念股经历大幅波动，投资者在生产率提升预期与估值泡沫担忧之间摇摆。中国国家队出手干预AI股过热，而美国企业财报电话会议中AI风险成为焦点，显示市场对AI投资趋于理性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/global-week-ahead-markets-brace-for-more-ai-noise-and-scare-trading.html" target="_blank" rel="noopener">[CNBC] Global week ahead: Markets brace for more AI noise and 'scare trading'</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNVnpzVjFZcUJ2Q3Q3d1ZVWmpqMndUMzc5cVFONmplaXBxQi1tY25ST3BnNGNraWZDTTVUcHZlX3pRN3ZtN09IU2pMMFBKQ29wRTFTMkRmN0w0R3pFTFZtUVc5VmVWN3Jra0h3WFMxRXN5MVZJX3VFTHYtM3Y2Q0huT2x2WDhXUDRySTZoV2tMZ2lPRUdEeXd6R1FkLS1WblZLM1N4Ql91b2tTeHlfakk3SWR1QzU?oc=5" target="_blank" rel="noopener">[Bloomberg] AI Risk Is Dominating Conference Calls as Investors Dump Stocks</a>
+                    <a href="https://news.google.com/rss/articles/CBMivgNBVV95cUxNTnNMSmI4a29yQ3kxZVBJVTlvbVZUdG9NcnZ3SnJPUE8tbWlsSDFHTEQ2OGlPUTIyUzFjZk9XZFlkRDQ3di1RSkFwb3MzTHBOLV9RYjJaelV2OU1VcWR0Q0ZyTF83NExhS2RBZjNDZEdTZXhuV2dJWmxRd0FGSjVmeTVnNjZ5Qk8wUlZuMnJTck9TNG1pOU82dEJobk1CYXVKSDRPMU1RTVJJT1dCcVZ0R2VpSlIwNFhBSlliX3lKajJ1cTRZQkZld1pjX3o4SXROQm5IcU5MOVFzeXZHcEFPX01OZ3l0Z3pRcGZWdWxpZnV3ZjZ3VE5zS1lYdjZpdkZOcWZ6ZFJ6YkVIZjJoTHhuTVZSMzRTMktfMTJ4NmFxUlJJendUeVlMZ0pPbTZqdWtkQmw1dkhpS3Z1anZVQVBtUTNtVFhUandKTlVKbWRpM3VxQV9oTEJKRHZqbTgxY1R6cmVxT0NGeVNwMU12dWYtS3RhSVBYb3dCWmZpc2xrQUg5czJ0R0tYdUk1S3ZaSVlSdFd1d0Y1ZXJYQWV5SzhSOXBsYWJVNTJBMkZLc2ZJMUpNREpjZVhnNVc0Z1lpUQ?oc=5" target="_blank" rel="noopener">[WSJ] China Deploys a ‘National Team’ of Investors to Keep AI Stock Boom in Check</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">AI</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>中国加大内需刺激与市场干预，以应对经济挑战</div>
+                <div class="topic-title-en">China Stimulates Domestic Demand and Intervenes in Markets to Address Economic Challenges</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    习近平强调超大规模市场优势以提振内需，高盛上调中国经常账户盈余预测，显示外部平衡改善。但国家队入场抑制AI股过热，且奢侈品零售商面临Z世代喜爱仿冒品的挑战，反映政策在促消费与防风险间寻求平衡。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOdF9DVmp6YkpmdFh5OHZXYlFVNW1iaWczLUpiWVRsS1hvcGZfTlhVSzVUNGRDMHRHRGpRbGY2WkFDaUd1bGd1bzl6TzF0WDRyYjBjaVEyWk53M0NDZG1WMDAzdU1IdVJCTkdpbTRJbjdhMWk0dlRPSHQzRnFpRFNuVi1UdW5TM2pOLXBjOWt6V2VRRjVCcU1kSjZkV3hfNFZDV2NNMFVlWmlqUDZzSURVZlpfOUVXdw?oc=5" target="_blank" rel="noopener">[Bloomberg] Xi Touts China’s Super-Large Market as Key to Boost Local Demand</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQaEp6Q0xJYmRqQ0x6R3dwTFpSNmhiR0pnWk1lOTd3NjFWcW5GUVVrU2tHRlZjQThaN0gwSEM1OVlPa0V3azRILTRidHN0bGdObUhMcEFKNWxqM2FBcEMwcGwzbWZrdHZIMS1tZjQ2MGZqTHZSNXVhTTRzVlJod3lfeEl1OFpTVUNXSHFUcFFPUV9hWDJvdjBQbldzSGV4cWNZWHRSNEQ3WjR3UlFFSjduZzBDTzVWUQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Goldman Upgrades Forecast for 2026 China Current-Account Surplus</a>
+                    <a href="https://news.google.com/rss/articles/CBMijANBVV95cUxQWnFoemJwT25xLUpiV1dBTEZCaVB2dkphNnZ3QkdNNk4yNUhNc1Y4d09lSWtGV0FwcWZYYkM5WVE2ak1NN3d6bGZxR1ctYXdiWEVpbnRsdHBkSDYtMzFla0ZJM2lEX18zN3UzRnVqNFNFSTVWUjZSTUFTaExVbEpucVg1VThrbmdfTGs5WGE4WFBBRjJIQ0hHT21HNjIyRG5xazkyT3NKV0x5RUpncnJ5SmdMZ0w5XzF2V1VkbC1jejBrZ2djY2NlZ0RxQ2pJVlRNRFhiTEduSy1KaW9sT0lSbTVFVXNWbVFkMDItY0VuSEI3bGF2OUR5bmkyT01RcXE0VUpqamEwS0dsbGpVc21vTDlhOS0wWno1SUNmMUNvZzU3dlllY185UlZTTXNHbERURnhxaVFCaWNiUUpqdEkxeXFaMHRRdXVCVnd3Yk9vTGhlNUxoeUFJamRKYk9OQndkdXdkS3NLWURsdGtOMHJJODF3Wm5wTVMzRVU3ZjBUMXl3R2J6VTJnTzZqQ1I?oc=5" target="_blank" rel="noopener">[Barron's] China’s Gen Zers Love Knockoffs. Luxury Retailers Regret Their Big Bet.</a>
+                    <span class="sector-tag">消费</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">零售</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>消费呈现K型分化，企业成本控制压力增大</div>
+                <div class="topic-title-en">Consumption Shows K-Shaped Divergence, Corporate Cost-Control Pressure Rises</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    酒店免费早餐等服务缩减反映中低收入群体压力，而NFL等娱乐消费强劲，显示消费分层。麦当劳价值营销策略见效，但关税带来的消费冲击尚未结束，企业面临成本上升与需求分化的挑战。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/hotel-free-breakfast-hyatt-holiday-inn-marriott-cost-cuts.html" target="_blank" rel="noopener">[CNBC] From Hyatt to Holiday Inn, America's free hotel breakfast is facing a K-shaped economic threat</a>
+                    <a href="https://www.cnbc.com/2026/02/15/nfl-just-had-record-breaking-season-next-year-will-be-bigger.html" target="_blank" rel="noopener">[CNBC] The NFL just wrapped a record-breaking season. Here’s why next year’s going to be even bigger</a>
+                    <a href="https://news.google.com/rss/articles/CBMikANBVV95cUxQa3FwRGMyb3Z0TkhKcUd4QTZQUmRsbElnZHZBbFEzQkozNmxRdDBOZ2NZS252aEU1bHNEMmZ2MnRzTnpCcm8xRzFNZF9zbW9kN3MzUGlaWUtGa3ZiX082WFI4dVZXTTVQaGJFaU5RT0hjeTg4QnhrMmhJLTIweGQ3SmFSQlJGZFBvQVFSazdSV2FIdWFzdEpBQWwtUnVFa3h0UmlFOXdtUDgtcktDanAybHBGMGdqbEY4dXdmeXlyZHdxNVJlZnVNdW1QZFQ5dWc1UmJzcUFMbG55aERPYndtSEtsMWwtS0pDb0xIRnVMaXItOE03bkhzMnJYNEo2WHJQTGNxV01peFZaRWdjbHhfY1k1VzdKVXdLcXozV0cwa2dNODBxUzZia3gyRVVNUV9LbkJtU2txcmVUcm8yUTlVRkkyUzhKTmwyUnpyeGJZQVZZU2xaVEJUYm90dmVmNU5xTGlKWVVTYjRCSTlObHpZNjFYU1hvbndBNDAtZjBfQnF2NVpKcGdRdlp5Rks4UHhR?oc=5" target="_blank" rel="noopener">[WSJ] McDonald’s Says Its Value Campaign Is Paying Off</a>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">餐饮</span>
+                    <span class="sector-tag">旅游</span>
+                    <span class="sector-tag">娱乐</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>能源市场面临供应中断与需求疲软双重压力</div>
+                <div class="topic-title-en">Energy Market Faces Dual Pressures of Supply Disruptions and Weak Demand</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    俄罗斯能源设施遇袭与乌克兰能源系统受损威胁供应，但暖冬预期打压天然气价格，导致波动加剧。浮动天然气工厂兴起可能改变能源贸易格局，地缘政治风险持续支撑油价。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMikgNBVV95cUxNV202RmQ3dkZJellZbTRtQzdLWUltUnBqRW5OYnVaMUFnX2R5NlhyQS1BMDFoRUpFUVhaaEhtcy1kNDFUU1ZMVEZvdlR5NkhHdFR5WFA1dkduQmNZYk11cjRNRzdEOWFpWXJtUGItZ0VJVkhHczhkMTlmdFBEby1TdWhhdjhCVlkyZjM5azhOeFZxaVFRUHlpaDZtUkxpcmNnc1ZUU1Q5S3RFR2ZHcHNEX3hNSU9Mb1BDQmRzazhjZHF6ZEFHNHdRRUJYcGMzdXNSQTg3NWdNM2tYLVlTX0JkNktKM19RN2lkTEVnQUt2enA4OUxGekk4OXc2Ym96eUVQN0xBckRtNnI0eVVNV1VwbVptSGxHS1dxMHVFWjdzQVhVWFE4VnV1eWVnVXZpZzNZSk0xSEpYdVYtcFQwRURYTkJ0My1BcEF3YUZnR2tQSktubDVyZmptRFBTT3ViU0dLdjMybG5QYlVIZ3BKU01yc0piTzVXeWdUVHM3cFBobF9hZGhzSkR0OWZYbHlZMmJEU0E?oc=5" target="_blank" rel="noopener">[WSJ] Potential for Mild Winter Ahead Sinks Natural Gas for Week</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE8wRHNfa1BEcElMZkRrcGNMUEdPMWUwRlY5MDdNMDJYYXZLOEpKTnFMVk42SXJ0eURtUndVV0RqTFJZQU5hYXZLakRiSi05MWRKZlRQdXZxRi0tbzJZbnpNcjVBX1ZMMmJCWTRBRUFNLTY?oc=5" target="_blank" rel="noopener">[FT] The rise of the floating gas factory</a>
+                    <a href="https://www.investing.com/news/commodities-news/druzhba-oil-supplies-subject-to-political-blackmail-by-kyiv-slovak-pm-says-4507295" target="_blank" rel="noopener">[Investing.com] Druzhba oil supplies subject to political blackmail by Kyiv, Slovak PM says</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">公用事业</span>
+                    <span class="sector-tag">大宗商品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>比特币价格暴跌，ETF资金流出但未现恐慌</div>
+                <div class="topic-title-en">Bitcoin Price Plummets, ETF Outflows But No Panic</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    比特币价格大幅下跌，ETF资金流入放缓，但分析师认为并未出现‘加密货币寒冬’的恐慌性抛售。市场调整可能为健康回调，长期投资者仍持观望态度。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/bitcoin-price-crash-crypto-winter-investors-etf-flows.html" target="_blank" rel="noopener">[CNBC] In bitcoin price plummet, ETF flows are down but aren't signaling 'crypto winter' investor panic</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">金融科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>企业财报季关注AI风险，高股息股受青睐</div>
+                <div class="topic-title-en">Earnings Season Focuses on AI Risks, Dividend Stocks Favored</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    华尔街分析师推荐高股息股票以获取稳定收益，反映市场避险情绪升温。企业财报电话会议中AI相关风险成为讨论焦点，科技股波动可能持续。中西部银行合并案等事件驱动个股波动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/top-wall-street-analysts-recommend-these-stocks-for-consistent-income.html" target="_blank" rel="noopener">[CNBC] Top Wall Street analysts recommend these dividend stocks for consistent income</a>
+                    <a href="https://www.investing.com/news/earnings/all-eyes-on-midwestone-earnings-as-nicolet-merger-looms-93CH-4507297" target="_blank" rel="noopener">[Investing.com] All eyes on MidWestOne earnings as Nicolet merger looms</a>
+                    <a href="https://news.google.com/rss/articles/CBMi6gJBVV95cUxPX1Voa0ZYbGJjb2R6dU9CT3NrRVNuSzc3V0RXN3B0N0EwclBmODhWbWxPc2QwNTk1NDZMT2dsNGxGV0tONGtWUDJCVkI2eVAyd1AxbzRsYldZZHRveThiX2FGQWltTWdzTnBsTGU5VUJuTlZybVkwYWlFc2VpZmo5b3BJbXNkUllHNG04ZVJxUmtZZkc0RGo4ekFvVkhCMHJDaFBRdVB1cmM4Y0hnM0E2bTlEYXRUZW9IdEZGcmU5TEc1WlFsUkNobHJYelJ5Ti1lZVVWdzdmb0YxTUhXa2FLNkVJSHBlRmNaTzV1S2M1NW5ERU5IVnVQaE1IQUNLdzBZdjhFODhCSFdaUlBYaksycDVRQzZOQUpCTV92MXpmeS13YlhBOS1vVkROLWRuMGtrejlsYXR2NS1zYjhJRjdzTk1SQzVrY2ZMdzhOd25xdE1ETHFJTkhGU080NGVZNjBXbTJpS05XTVNrQQ?oc=5" target="_blank" rel="noopener">[Barron's] AppLovin, Fastly, Micron, Cisco, QuantumScape, Novocure, AST SpaceMobile, and More Movers</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">工业</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>比特币价格暴跌，ETF资金流出放缓</li>
+                <li>高盛上调中国2026年经常账户盈余预测</li>
+                <li>美国天然气价格因暖冬预期下跌</li>
+                <li>中国国家队干预AI股票过热</li>
+                <li>麦当劳价值营销策略见效</li>
+                <li>乌克兰能源系统受损严重</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
