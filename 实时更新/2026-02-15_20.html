@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-15 20:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-15 20:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在人工智能突破、中国经济波动、地缘政治风险及电动汽车行业调整等多重因素影响下呈现混合情绪。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>人工智能技术趋势与市场反应</div>
+                <div class="topic-title-en">AI Technology Trends and Market Response</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    AI生产效率提升已显现，但投资者在AI恐慌后不愿逢低买入。中国部署'国家队'以控制AI股票泡沫，同时美国国防部与Anthropic就安全措施发生争议，表明AI领域虽具潜力，但面临监管和估值风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5FeVBIMk05YzBCeUdUX2I5X0ZmbUlidjNtalczTzkyNzAxTWJIMkZ0OXZIc2R6NkRUZmNKYUE3RjJfc2podW5kZDlYOEJrVGN0T0hnNnZpeUlCUkhBcUJ3Si1CS0RZeV9LRENzSGhFb04?oc=5" target="_blank" rel="noopener">[Financial Times] The AI productivity take-off is finally visible</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9RVnV2SXMzRl90S3NSVjhjOTdlcTRSOG9ySklhV0ZvelNrdkJ0NnJVcXJEbFhxN1ZEYThBY1ppbDRCZUxlSG9oak56UjRqZEVsVG1VSzdUaFNJdlgtZDNLaFJkSU5mSVZFTDRjQnU5QUE?oc=5" target="_blank" rel="noopener">[Financial Times] Investors reluctant to ‘buy the dip’ after AI scares</a>
+                    <a href="https://news.google.com/rss/articles/CBMivgNBVV95cUxNMThiN3N0cTcyNDFoa2s1MU9CZkt3VHBtTHpQVjI1Wmo1RFU5cXVXYUdiU2RORU5HSGMzRkhwZE5lUVV2M20xRkZMQnF6aFhpYnNxN1RoM0dlblhEdW5ZRXJ3N1hRcmNBMDdoQjR6Tkx6c2JkNU5FOG9QR1RFamNjVHJRVTJGNFdXU2V5YzNIY1pZZUlHa0xkdFE2VU9vR0RsYVB0U1QycVJ5a0VjNlRhUlRDNGtyc1ZsR0JLS0xQbGdFcXYwTmJ1OC16c2lqWWxNVF92RWlTZndqUWoyUzNLUmlFNDVwQzF5WHJoMHYwcS13Nk5nVDdMTk9rZWZrb0RjUTliZ0hDV2lVaXVJNjdMWGQ5N0lyNTFZTzl4RDdrb1JJb3NXdlZ5NkVCeVB5aEZDOGJtZGVKUEQ1WjlidlRfeFV5TkNLN0h1OHl2TEQxNTdUZkE1YWU4LXlWbzJ0bFpUdXVIZE5FX1BtN2k0cmdwb3hWSmhSZUtUZjdkQjNycjNLRHBtNXVsZ0t5dVR0RVh5eVB0MGhsd3FHaXdDd3hJZ25SblhVMGwtYzdFd20wMTM2bzM4VUJtZzNqdG9HQQ?oc=5" target="_blank" rel="noopener">[The Wall Street Journal] China Deploys a ‘National Team’ of Investors to Keep AI Stock Boom in Check</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">汽车</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>中国经济前景与市场波动</div>
+                <div class="topic-title-en">China Economic Outlook and Market Volatility</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    高盛上调2026年中国经常账户盈余预期，但股市牛市因业绩不及预期而动摇。习近平强调超大市场规模以提振内需，而Z世代对仿冒品的喜爱令奢侈品牌担忧，政策干预与消费趋势交织影响投资者信心。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQaEp6Q0xJYmRqQ0x6R3dwTFpSNmhiR0pnWk1lOTd3NjFWcW5GUVVrU2tHRlZjQThaN0gwSEM1OVlPa0V3azRILTRidHN0bGdObUhMcEFKNWxqM2FBcEMwcGwzbWZrdHZIMS1tZjQ2MGZqTHZSNXVhTTRzVlJod3lfeEl1OFpTVUNXSHFUcFFPUV9hWDJvdjBQbldzSGV4cWNZWHRSNEQ3WjR3UlFFSjduZzBDTzVWUQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Goldman Upgrades Forecast for 2026 China Current-Account Surplus</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNVUdMT1NSTVgyXzllRHY4RXU1c3VGVlBVLTBEY05zZVRocFE1OGFhbDFZb2RRaDl1ejBoMTNlUVpnYUFTMTFfemh6V2hhclFlTkFyZDZMY1Ixay1uZW5fN3N2SDBXTS1PTHloOW40YnVEYmtQN21YRFNndDdfTFZMeXhYc2xORU9Fck9pYkZfbDM4MWcySDZWbE42QlFpUThSZ2NtYnhCNWZFQTktZjdaaWNfUQ?oc=5" target="_blank" rel="noopener">[Bloomberg] China’s Stock Bull Run Falters With Earnings Set to Underwhelm</a>
+                    <a href="https://news.google.com/rss/articles/CBMijANBVV95cUxNNExxOHREWGI1WElTNGctWXJpemk2S3ljb3ZvSktBc0cyaW5vcWUxd25JYkxjUHZ1MUdyWjY5VmlQelN4bmhqVzVJRHRUd2JxQnVXNm14MkNPWFJaTndiNEgyc0JSYzZzS21PSHBHaHBFNmRiQzlqZ2NYeE04ZFZBZzFUdHRMWlZzWXZYZm42QzNWYzNzZ2FhRFRpOUVHY0xEWVV3aU51MkFyUlVUVVI1NllEZmRCTXBlOGhWcHRCV2IwZ2toM2tLUjRlcFpHeGxvRFVYcEU5Q3hIVzdFbk5uYUQ1YWNNZWtXWE1DLWlxaVA0ajVfeEc4dWdsdDRsNmxoelNjUVdLd25jTTRTZzJKRE1zcUNFd28wY0liRlNYaU5EWmpvcTBMSGU4U3RTc04ySkJoX2dmekZDSXNXeXVHTW9yd3RlTDUzTHZGb1VPQ2NTWlQ1RzRJb0NqY29NU2hyS3otdTc5LURFajI3WXViX0hORVBoQVJDdWl5V1ZDdVp0c1hlaC0zWFFRRm8?oc=5" target="_blank" rel="noopener">[Barron's] China’s Gen Zers Love Knockoffs. Luxury Retailers Regret Their Big Bet.</a>
+                    <span class="sector-tag">消费</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">奢侈品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>地缘政治紧张与能源市场影响</div>
+                <div class="topic-title-en">Geopolitical Tensions and Impact on Energy Markets</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    乌克兰生存仍存疑问，台湾加强防御，伊朗石油销售成为美中博弈焦点。这些地缘政治风险加剧能源市场不确定性，可能导致供应中断和价格上涨，同时巴西政治动荡和欧洲民粹主义崛起增加市场波动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFA2WlNLSlZDREVKWVNhUUdwNm0yTktYb3BpWHJ4S2FwQmt5THEya3FqVEc5Y2F3eUtZSzA1c0EyaEZ3aEZZM3Y0RWJPZl9jenBrVUZmSk9BX0h3QUc4MTZTQXBVaTJZMEE4cXBEMVdLS1g?oc=5" target="_blank" rel="noopener">[Financial Times] Ukraine’s survival still an ‘open question’, Kyiv mayor warns</a>
+                    <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMXA0UHl5X1VDSnhSRUFvdEFpWkNUelZfanRhX2RIa0RTcjlISXhyUjdYMWtvSGluZjNWSjJJWWdNZE9pdzV0RDFGeFpDTnlmM2pGcVhpVUdKVGt1ZEoxOWxlTzVJZ3hvWGw0b3o0X3lPdVZwa1pMNXV0cTZFOEYteGU4NkVCMzB5TWpDdHh3OW5RSHRhM3drdWtMNUNFamxCdjFleWRUMjZLcEpfVHFBQTRnS2ZqWGJZb2VzLXVBWjNLYW0yOHJjbg?oc=5" target="_blank" rel="noopener">[Reuters] Trump, Netanyahu agreed US should press Iran to cut oil sales to China, Axios reports</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5JeXNuOUJ0Um1QRm42TzVWZ1ZDakJqSXdHRXFWUmhvcE9KUmdFay1oeHFPMnFub3RINTAxeERNbFNia3RZZUJ4TXlCbkpCeEgyOXRuRWZBaTBpOEQ1Nnd3WDNHa3BSalZET2pmZWd2cGk?oc=5" target="_blank" rel="noopener">[Investing.com] Taiwan president vows to strengthen island’s defences in Lunar New Year message</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">保险</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>电动汽车市场调整与行业亏损</div>
+                <div class="topic-title-en">EV Market Adjustments and Industry Losses</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    电动汽车狂热结束，给汽车制造商带来650亿美元损失。卡车电气化进展缓慢，表明行业面临产能过剩和需求疲软。长期向电动车转型趋势不变，但短期盈利压力增大，投资者需谨慎评估。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1sZFRBTlR5UDVEVGE2MVNyRXpvWW9wRW5aYnVwdWpLc0h0TEFpaHhvR2szN25NTFo2clNTOUFZc3AyS0dRNW1fV01ZMzhkMzlCZXQydU5TOTVsTWxQaE5ld0RIZmh6c3oyVlVzUFVUTHE?oc=5" target="_blank" rel="noopener">[Financial Times] End of EV euphoria triggers $65bn hit for carmakers</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5JeXNuOUJ0Um1QRm42TzVWZ1ZDakJqSXdHRXFWUmhvcE9KUmdFay1oeHFPMnFub3RINTAxeERNbFNia3RZZUJ4TXlCbkpCeEgyOXRuRWZBaTBpOEQ1Nnd3WDNHa3BSalZET2pmZWd2cGk?oc=5" target="_blank" rel="noopener">[Investing.com] What is the current state of electrification in trucks</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">可再生能源</span>
+                    <span class="sector-tag">电池</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>金融监管与市场波动性</div>
+                <div class="topic-title-en">Financial Regulations and Market Volatility</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    印度限制向经纪商贷款，恐打击交易量；土耳其券商股价暴涨2400%后利润跃升，显示新兴市场波动剧烈。英国最低工资政策推高青年失业率，欧洲股息投资受关注，监管变化增加市场不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPNWNKQkVlWkhabzUzaFFfOVRXMTRtei1Zd2ttX0stcU04eU5qOFlXd0ZfUGJNSUxPV0RNajN0NEhkTThPRHFFbS1hR0F0OGhDTUpUejlvdHdrU1otWGlkem4zMkVNSDh3d1ViMFNIbWp1anFQaW9LMGxBVGlzcmhpal9MM3NqZFpyYkppWUlhZkxIaWRPU2NYWXRNbVJVSHhhMF9vamh1NUpiOTVtN0JEdGkzcmhVZw?oc=5" target="_blank" rel="noopener">[Bloomberg] India Curbs Loans Extended to Brokers in Blow to Trading Volumes</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNSFphWWFVVVJvUE9rTERIVkdCSWoxcEdEVW1yNXpLTWlhQ0RBdU5naVEzYmxwbjJ3ZUo5OU9kNUFxalNHSDNjY2ZIaDhhcGRILVFyTDV2UkpMTUNuSVdReW1udlBScHFwMW5PX2dsOW94T0xWcjIzd0JKaDRVMy1XdzMtd1VCYlVDVEZNZnB4T0VOa1R6OXV5NE85TU1XSE9pZlE3a1E2RzdBc1JrOC1ITGwtdw?oc=5" target="_blank" rel="noopener">[Bloomberg] Turkish Broker With 2,400% Stock Surge Reports Huge Profit Jump</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5JeXNuOUJ0Um1QRm42TzVWZ1ZDakJqSXdHRXFWUmhvcE9KUmdFay1oeHFPMnFub3RINTAxeERNbFNia3RZZUJ4TXlCbkpCeEhyOXRuRWZBaTBpOEQ1Nnd3WDNHa3BSalZET2pmZWd2cGk?oc=5" target="_blank" rel="noopener">[Investing.com] UK minimum wage is raising youth unemployment, Bank of England’s Mann says</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">银行</span>
+                    <span class="sector-tag">支付</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>消费者行为变化与零售业挑战</div>
+                <div class="topic-title-en">Consumer Behavior Changes and Retail Challenges</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    中国Z世代喜爱仿冒品，奢侈品牌面临bet失误；麦当劳价值营销见效，Uber扩张欧洲外卖市场。关税冲击持续，消费者承受价格上涨压力，零售业需适应价值导向和数字化趋势。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMijANBVV95cUxNNExxOHREWGI1WElTNGctWXJpemk2S3ljb3ZvSktBc0cyaW5vcWUxd25JYkxjUHZ1MUdyWjY5VmlQelN4bmhqVzVJRHRUd2JxQnVXNm14MkNPWFJaTndiNEgyc0JSYzZzS21PSHBHaHBFNmRiQzlqZ2NYeE04ZFZBZzFUdHRMWlZzWXZYZm42QzNWYzNzZ2FhRFRpOUVHY0xEWVV3aU51MkFyUlVUVVI1NllEZmRCTXBlOGhWcHRCV2IwZ2toM2tLUjRlcFpHeGxvRFVYcEU5Q3hIVzdFbk5uYUQ1YWNNZWtXWE1DLWlxaVA0ajVfeEc8dWdsdDRsNmxoelNjUVdLd25jTTRTZzJKRE1zcUNFd28wY0liRlNYaU5EWmpvcTBMSGU4U3RTc04ySkJoX2dmekZDSXNXeXVHTW9yd3RlTDUzTHZGb1VPQ2NTWlQ1RzRJb0NqY29NU2hyS3otdTc5LURFajI3WXViX0hORVBoQVJDdWl5V1ZDdVp0c1hlaC0zWFFRRm8?oc=5" target="_blank" rel="noopener">[Barron's] China’s Gen Zers Love Knockoffs. Luxury Retailers Regret Their Big Bet.</a>
+                    <a href="https://news.google.com/rss/articles/CBMikANBVV95cUxOejdYcV83dEt6SEZPN1l1RFgtTEFyMjZoRjBuUDZManF2UW90M3h2bXlOUkRkNWwwdUU1T2RLc3JOcEVqbHlOWndFcDhHY2pKbUJwdUJ0Mmp1Q0oxMTdPSWRHLTlnWi1maW1SaXVSbFhxemZpbk0ySHdkenZ4b2xWMFJOWmg3c1U2WEJzX3VSckFVdWREOFhNbWo1RldMem8xUUtrNXZuVWk2bXl1Q2hfRFBpMG1nekhWUDQ4WF9hOGFvbXZPTUZudTVUcFlyYk5VVGhnS3doM2p1X2JIbTd1NGwycjhqMnJEd0tlM1VaTVVlSWtDbUl2dXptdlBkOEMxYnRXd1h4cThpYWg4ZV9HVHg0eUdCRUU3TUQwX2NwODN0OUc5NXcySzc2UVBIWlVOaTBrQlQ1OHJmUlcwLVZxZ29jYzlxR05Pcm1ZWkNPNkdlY2dFekJYUkVCTlVISXNlYlRFMU55M09EbHRTMmhoRjFibzVfR2Fwbm9NTG56QWFCd3dheTF3Nlo0SWk4Z0J2?oc=5" target="_blank" rel="noopener">[The Wall Street Journal] McDonald’s Says Its Value Campaign Is Paying Off</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5hVGRQU2o0eTd6Qk8xaXlQa3k2QnBTODZWREd6VUJRVjVTa01DZTZDeWtVU1RNaUo3LTV1NjFUUUhGUFFyZFM0S0pLck83Y19KYkUwbDE0aWZDQWduNmpNeURQdDd1TktEUUVTM2ZKZGU?oc=5" target="_blank" rel="noopener">[Financial Times] Uber enters 7 new European markets in food delivery push</a>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">奢侈品</span>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">外卖服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>全球贸易与关税持续影响</div>
+                <div class="topic-title-en">Global Trade and Tariffs Ongoing Impact</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    关税对消费者的冲击尚未结束，美国可能施压伊朗减少对华石油销售。加拿大转向非美国防务制造商以创造就业，反映贸易保护主义抬头。这些因素令全球供应链承压，增加企业成本和消费者负担。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMi9ANBVV95cUxPbHY4NnUxRmhuV2tLRi1uei01dUtGNXRhc2tsQUEycUJtcFhyTnlzYTk2Rlg4Rzd0Q2RzSTF3TV9MMDhNMzEtbV9pUl81Tk4xdzFxUnVfcFFfZXVGNko1ak1LdUNLbWhnQWwtUVhYS1J4Q2ZWU3dVTTJUeFMyaFdjTGZoaUh1SVVpTzkyUVBDSXFkczdlSUlpYjZpR1B6cS00V3l4cFZMUjNxZVpEUWRoZHZQanE3R2pFS3RDVG85c1lmVXF1SWVQU2d3UG82TzYzUFpsM2d6dzNPWW95ZmxzUFpsU29NTlo5RkRjVFdlUkp5dnlPRGFQREVSdW9FSFZGYWNHVF9ENE9iYlhQRHFnVWxPYXA1eThfaFpvaDFZQkpsTG01RG1ONGU0ZWdMUDZpUWFTM3BPbkE4SFJDUGVrLWdPZmdoVm1wVDJKY2s5RHZOaG9aRnUxWmNheExIeFFPZkVXVkk3VlcyYVU2V3VQSGNkMXpPTy0tWEVFWE15TlJuRHZFYURPOHJmMWFKbFdRWVpXT1B5UW1JWkhMdjUwckFzdjUzWUtMcW1iR3QwM0VpbXpiYmh0VHNBdFhyWXZRVVdLV0tYazFELTdPYkNwN2dDTnN4cFJyY1c2UFF4RUY0UmQ4eE1CU3U5WlhLWmZGdWFCRA?oc=5" target="_blank" rel="noopener">[Barron's] The Consumer Shock From Tariffs Isn't Over. When Will Prices Peak?</a>
+                    <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMXA0UHl5X1VDSnhSRUFvdEFpWkNUelZfanRhX2RIa0RTcjlISXhyUjdYMWtvSGluZjNWSjJJWWdNZE9pdzV0RDFGeFpDTnlmM2pGcVhpVUdKVGt1ZEoxOWxlTzVJZ3hvWGw0b3o0X3lPdVZwa1pMNXV0cTZFOEYteGU4NkVCMzB5TWpDdHh3OW5RSHRhM3drdWtMNUNFamxCdjFleWRUMjZLcEpfVHFBQTRnS2ZqWGJZb2VzLXVBWjNLYW0yOHJjbg?oc=5" target="_blank" rel="noopener">[Reuters] Trump, Netanyahu agreed US should press Iran to cut oil sales to China, Axios reports</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBia3RMVjZ4ZlpIeFRBRy1WNV9EdmU2QXNrczdwcXpsMHhEalhGYzRXbUdxWWRhdFdwcmlBQTJUUVdmbWhCU0tvc25XVnpJNkVWMjlFR183MTl1Nk1SV3VfSWpKd0w0bEljM19DT3o4ZHc?oc=5" target="_blank" rel="noopener">[Financial Times] Ottawa’s shift away from US defence manufacturers aims to create 125,000 jobs</a>
+                    <span class="sector-tag">贸易</span>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>中国经常账户盈余预期上调（高盛）</li>
+                <li>电动汽车行业损失650亿美元</li>
+                <li>土耳其券商股价暴涨2400%</li>
+                <li>AI生产率提升可见</li>
+                <li>印度限制经纪商贷款影响交易量</li>
+                <li>英国最低工资导致青年失业率上升</li>
+                <li>麦当劳价值营销见效</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
