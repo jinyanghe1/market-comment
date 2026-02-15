@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-15 08:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-15 08:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场呈现谨慎情绪，地缘政治紧张与宏观经济不确定性交织，科技股泡沫担忧与通胀压力并存。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>地缘政治紧张局势加剧，美伊冲突风险与俄中关系牵动市场</div>
+                <div class="topic-title-en">Geopolitical Tensions Escalate: US-Iran Conflict Risk and China-Russia Relations Impact Markets</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国军方准备对伊朗进行可能长达数周的军事行动，同时特朗普与内塔尼亚胡同意向伊朗施压削减对华石油销售，加剧了中东紧张局势。加拿大宣布对伊朗实施新制裁并寻求政权更迭，而西方官员称中国正在扩大对俄罗斯战争的援助。这些地缘政治风险推高了能源价格波动风险，并可能扰乱全球供应链。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/world-news/exclusiveus-military-preparing-for-potentially-weekslong-iran-operations-4506989" target="_blank" rel="noopener">[Investing.com] Exclusive-US military preparing for potentially weeks-long Iran operations</a>
+                    <a href="https://www.investing.com/news/commodities-news/trump-netanyahu-agreed-us-should-press-iran-to-cut-oil-sales-to-china-axios-reports-4507265" target="_blank" rel="noopener">[Investing.com] Trump, Netanyahu agreed US should press Iran to cut oil sales to China, Axios reports</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPWEliaEY2XzlGWDJUSkp4WU9iX0tnZWlnWlY2M2F6c05Mcm5ETEt4em1JOFZMM2xEWjE1aTBkeTRZSWVTQTZBRE1GdmJWUHJRQXZxMjJMWl8tZFJTUzk2Z3l2RWFBeVk3Zm5WNTFMaENOTGxhazdFR3JQYzZ4VnFnS2tWb1BKbE5nM2lCczFHdnY5SXg1d1RpcDJDcTBaSnRQNXEtaGpGeU1MWm1Nc2tMaDN0S2s?oc=5" target="_blank" rel="noopener">[Bloomberg] China Expanding Aid for Russia’s War, Western Officials Say</a>
+                    <a href="https://www.investing.com/news/world-news/canada-wants-iran-government-change-increases-sanctions-4507260" target="_blank" rel="noopener">[Investing.com] Canada wants Iran government change, increases sanctions</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">全球航运</span>
+                    <span class="sector-tag">大宗商品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>AI泡沫担忧催生新型衍生品，华尔街银行高管薪酬激增</div>
+                <div class="topic-title-en">AI Bubble Fears Spark New Derivatives; Wall Street Bank CEO Pay Soars</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    市场对人工智能泡沫的担忧正在催生新的金融衍生品，以对冲科技股估值风险，这表明机构投资者对当前AI热潮的可持续性存疑。与此同时，华尔街银行正以2006年以来的水平支付CEO薪酬，反映出金融业在利率周期高位的盈利强劲，但也可能预示薪酬泡沫与风险偏好过度。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOd1FYaTIwMTAxSnNoSEFJaVEybUF4WFVvZkgtZzlDQmp2NV9Va2VCNkJfUGhzY3pCZDk0RUJLT1I2U0FOMzRGS1hrQ3lqTHBaVEZxREYtSERIQjJqOGZRSmM5RDA1WVR4WjlVQUZEQnJ4OWRUNXVSd1BXUkRsLWFfSGtjUFFFSDBRMTN3VEpFRXpVUzV2blV4d0RzTHBwUE5Ba3NmRWx3UURhTG50aVE?oc=5" target="_blank" rel="noopener">[Bloomberg] AI Bubble Fears Are Creating New Derivatives</a>
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQTWctaFNkWHg0dlJaRm9nQk9BZkxvWkRDSDdqTWNGZk8zNGN1RnQwZjdzblRNWGtOTzRwVXUzMUpqTlphWnRjSUJ4MVZxLXhTcEZKeWczUVBKbHU1RC1jX0d1NDYtYVhjcmVsSTM3OHJZLWt3ZDZ6N2xybDhGeFlsdS1Fblc4U2lnVVFRS21Dc2gtOGd0NWJwZmNrMkhPdmdqZWNsQ1ZKYjU4b0VnNUd5Tg?oc=5" target="_blank" rel="noopener">[Bloomberg] Wall Street Banks Are Paying Their CEOs Like It’s 2006 Again</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNSVQ5VUladlZKWUd5QXZiczFtbEc5RzZHQ2xKNHpNenlxQ3VSSzc0WjctQkVzaDhRSWNkSng5Q3hCU0FRVlQ3eS0tbTE5amVsS0Q4SjhfVjF5STQ1cGdUNHVvc0V5RXNQTVp3cnVtR1ZMZC1mcHZ6QUNQVXVMWjRpRVNNR3ZOQTFIekxDWW9vRU5sdGlxazlhdUFfR19LUFdydG1YSU0tMWhBcTZ5bjQwMnhKWQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Bankers’ Winter Getaway to Sunny Florida Is Upended By AI Chaos</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">金融服务</span>
+                    <span class="sector-tag">投资银行</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>美国社会保障体系濒临枯竭，退休财务危机凸显</div>
+                <div class="topic-title-en">US Social Security Nearing Insolvency, Highlighting Retirement Finance Crisis</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国社会保障信托基金可能在未来6年内耗尽资金，比此前预期更早，这将加剧即将退休人口的财务不确定性。与此相关的是一系列个人财务困境新闻，包括小企业主无法退休、房产税拖欠以及被迫转入 Roth 401(k) 等问题，反映出美国中老年群体普遍面临储蓄不足和退休规划危机。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/social-security-could-run-out-of-money-in-just-6-years-even-sooner-than-originally-feared-c28eb5a5?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Social Security could run out of money in just 6 years — even sooner than originally feared</a>
+                    <a href="https://www.marketwatch.com/story/i-feel-the-clock-ticking-my-wife-and-i-are-in-our-60s-and-employ-48-people-in-a-small-town-can-we-ever-retire-2399ba41?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] ‘I feel the clock ticking’: My wife and I are in our 60s — and employ 48 people in a small town. Can we ever retire?</a>
+                    <a href="https://www.marketwatch.com/story/im-being-forced-into-a-roth-401-k-is-there-anything-i-can-do-81a6848d?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] My employer is forcing me into a Roth 401(k). Is there anything I can do?</a>
+                    <a href="https://www.marketwatch.com/story/good-news-were-living-longer-too-bad-most-of-us-cant-afford-it-66a86498?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Three things to consider to make your money last the rest of your life</a>
+                    <span class="sector-tag">保险</span>
+                    <span class="sector-tag">资产管理</span>
+                    <span class="sector-tag">养老金融</span>
+                    <span class="sector-tag">房地产</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>欧美关系微妙调整，ECB扩大欧元安全网以提升全球地位</div>
+                <div class="topic-title-en">US-Europe Relations Undergo Subtle Adjustments; ECB Expands Euro Backstop to Boost Global Role</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国与欧洲盟友关系出现复杂信号，一方面美国承诺不放弃跨大西洋联盟，另一方面《经济学人》指出“深度寒意”依然存在。欧洲央行则采取实际行动，将欧元流动性支持机制全球化，以增强欧元在国际货币体系中的角色，这既是应对地缘政治风险的举措，也意在挑战美元霸权。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/economy-news/ecb-makes-euro-backstop-global-to-bolster-currencys-role-4507256" target="_blank" rel="noopener">[Investing.com] ECB makes euro backstop global to bolster currency’s role</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9Ka1EyQWg2V09UN1o0R1NnQ3dfQVR2Y2daMzlFNFdXSWRISndyZkxJY25CVktiTWpheTlCNmtYV0trbkVLT0ZGSS11Um9wUG5RdWp1bHlmcFd1WU14UENtMmFEM202dncxSUFnZFpESWQ?oc=5" target="_blank" rel="noopener">[Financial Times] Rubio tells Europe that US will not abandon transatlantic alliance</a>
+                    <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPN0xUbTFxLVZPYW5ZT1pTSUY5NUUxUmE4LVQ3Q0taOTFTOWhJYk9zbXNPa2lvb3dfeFdjbmx5bU0tblJJZ0lRMnJiX2IzTFNnbnJjUGpoaGVpNW1DeUV2dzJFelZpVWhyS0prQ3VKcUdpU0pkWlJXT0pWTzRWbV9obTNFSUpqMnE0VlVrVEpaSG1jX2Y2ckVjSjhzbVE5UFI5WHRoajBB?oc=5" target="_blank" rel="noopener">[The Economist] America offers Europe warmer words, but a deep chill remains</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOTjZzYkZSaXhjNW0tOWZUcGV6d2sxTWFEaksyMmFIRU43Z1g3bDVROUx1MUJIUndHNjNlcWdMRmc2Y3JHMVJIam9wYm9ZTnFNMFJVYi02dlRweUdnNzFidHJKYlh2cE9Oc1hGUExUNUlkSFp2UzFib3N5OEM5VWhGcEkyU2VrOVB0YTZRbUJFdWdNZnA5dkRXVmd3dkhlTVgycmhBTERVSTEzdzQyTkZJcXk4ZWY?oc=5" target="_blank" rel="noopener">[Bloomberg] UK Calls Time on Brexit Years and Vows Closer Ties With EU</a>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">外汇市场</span>
+                    <span class="sector-tag">跨国企业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>美国牛肉价格暴涨15%，通胀压力持续</div>
+                <div class="topic-title-en">US Beef Prices Surge 15%, Adding to Persistent Inflation Pressures</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国牛群数量减少导致牛肉价格飙升15%，这是食品通胀持续高企的最新迹象。结合此前报道的租金分期付款使用“先买后付”现象以及房产税拖欠问题，显示消费者在高物价环境下财务压力增大。食品与住房成本上涨可能延缓美联储降息步伐。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxQLW54Y2psRktVWE5ZTnhMT1pka1NfN3BIZUdjb1lUQXVFNGZHUkVSSG45RlprbDk0VkhXN25vLWZLN19URzR1N29CM2ZQMUdnYzlieFhEbG9yYmg3QWRHc19LMEVDUkVHWWg1TlVPajlfTlZkTTlBZE1BbjhpaHFOdUt6ZVQ4bV96c3NJRUNieEY5eXpZaXdMbXJTNV9UYTR2YkpYbV9ScUwtU2p0OXBfRU44RjZSbGxyTUN4VGxaNXY?oc=5" target="_blank" rel="noopener">[Bloomberg] America’s Vanishing Cattle Herd Drives 15% Price Hikes for Beef</a>
+                    <a href="https://www.marketwatch.com/story/tempted-to-use-buy-now-pay-later-to-split-your-rent-payments-watch-out-for-these-fees-8849433a?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Tempted to use buy-now-pay-later to split your rent payments? Watch out for these fees.</a>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">农业</span>
+                    <span class="sector-tag">消费品零售</span>
+                    <span class="sector-tag">房地产</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>美股技术面发出警告信号，道琼斯运输指数飙升被指不可靠</div>
+                <div class="topic-title-en">US Stock Market Technicals Flash Warning Signals; Dow Transports Surge Deemed Unreliable</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    标普500指数多次突破失败，技术面显示市场前景黯淡。尽管道琼斯运输指数大幅上涨，但分析认为这并非市场整体向好的可靠信号，可能只是特定板块的轮动。这些技术指标暗示市场上涨动能可能正在减弱，投资者需警惕回调风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/these-are-high-probability-options-trades-for-next-weeks-busy-earnings-crush-32b47d47?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] S&P 500’s failed breakouts signal a darkening technical cloud</a>
+                    <a href="https://www.marketwatch.com/story/what-wall-street-bulls-are-getting-wrong-about-the-dow-transports-steep-takeoff-549c6694?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The Dow transports’ steep takeoff isn’t the green light you’re told it is</a>
+                    <span class="sector-tag">交通运输</span>
+                    <span class="sector-tag">广义股市</span>
+                    <span class="sector-tag">技术分析相关ETF</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>中概股面临新挑战，美国认定阿里比亚迪与军方有关联</div>
+                <div class="topic-title-en">Chinese Stocks Face New Challenges as US Finds Alibaba, BYD Have Military Links</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国得出结论称阿里巴巴和比亚迪与中国军方有关联，这可能使这两家中国龙头公司面临额外的审查、投资限制或制裁风险。此消息正值中国扩大对俄援助的指控出现之际，地缘政治因素对在美上市中国公司及全球供应链的影响进一步加剧。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9tT0xESUdPMVR2Tk9ZdWlpRDJjUkR4eTQ0NGZkYzhha0kzbVJuOWdwSmtUR2R5ZW1ubjdPWXdWcUg3bEQ2emxldUFPWGprUUU0d2JfQ1JldTdJRFQxUFJncHdwUkgzeTlYSUZNUG5XWWo?oc=5" target="_blank" rel="noopener">[Financial Times] US concludes Alibaba and BYD have links to Chinese military</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQQWNaUUtyR3Q4UllRQ1dTbUN1Z1RLOWpGMjZ1U2ZHemdXcjVPenc4RGNVVzZGUnpMZHppSGNWanc4dlRhV3psd0dpY3ZqMDhSa2kwNGFBakprSnpYNjlmQnVkUmdpV0JWYmFOMlVKakJEOUNqRVJxVzlIT2w3QU1VX3VuMGdZVzNOQm5pUzdiUFdkNExwYUFxUHJ1bUUzbjQ3SzV0aEJrYzM3M3Z6d1ZacDNCaw?oc=5" target="_blank" rel="noopener">[Bloomberg] Peru’s Sovereignty Not at Risk With Chinese Port, Minister Says</a>
+                    <span class="sector-tag">中概股</span>
+                    <span class="sector-tag">电动汽车</span>
+                    <span class="sector-tag">电子商务</span>
+                    <span class="sector-tag">科技硬件</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国社会保障基金或于6年内耗尽</li>
+                <li>美国牛肉价格同比上涨15%</li>
+                <li>欧洲央行将欧元流动性支持机制全球化</li>
+                <li>标普500指数技术面出现突破失败信号</li>
+                <li>土耳其某券商股价飙升2400%后公布巨额利润增长</li>
+                <li>美国军方准备对伊朗进行数周军事行动</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
