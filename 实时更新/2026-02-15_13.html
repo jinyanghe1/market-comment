@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-15 13:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-15 13:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在经历上周波动后，关注地缘政治紧张和央行政策信号，AI热潮与公司重组提供部分支撑，但技术面和经济风险令情绪谨慎。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>地缘政治紧张加剧全球市场风险</div>
+                <div class="topic-title-en">Geopolitical Tensions Heighten Global Market Risks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国与欧洲关系表面缓和但深层分歧犹存，可能影响跨大西洋贸易和投资流向；同时美国施压伊朗削减对华石油出口，加之中国被指扩大对俄援助，地缘冲突升级将推高能源价格和避险需求，对全球供应链构成压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/us-and-european-interests-are-intertwined-rubio-says.html" target="_blank" rel="noopener">[CNBC] U.S. and European interests are 'intertwined,' Secretary of State Rubio says</a>
+                    <a href="https://www.investing.com/news/commodities-news/trump-netanyahu-agreed-us-should-press-iran-to-cut-oil-sales-to-china-axios-reports-4507265" target="_blank" rel="noopener">[Investing.com] Trump, Netanyahu agreed US should press Iran to cut oil sales to China, Axios reports</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPWEliaEY2XzlGWDJUSkp4WU9iX0tnZWlnWlY2M2F6c05Mcm5ETEt4em1JOFZMM2xEWjE1aTBkeTRZSWVTQTZBRE1GdmJWUHJRQXZxMjJMWl8tZFJTUzk2Z3l2RWFBeVk3Zm5WNTFMaENOTGxhazdFR3JQYzZ4VnFnS2tWb1BKbE5nM2lCczFHdnY5SXg1d1RpcDJDcTBaSnRQNXEtaGpGeU1MWm1Nc2tMaDN0S2s?oc=5" target="_blank" rel="noopener">[Bloomberg] China Expanding Aid to Russian War Effort, Western Officials Say</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">国际贸易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>AI投资热潮催生泡沫担忧与衍生品创新</div>
+                <div class="topic-title-en">AI Investment Boom Sparks Bubble Fears and Derivatives Innovation</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    AI初创公司积极渗透食品等传统行业，但市场对估值泡沫的担忧促使金融机构开发新型衍生品对冲风险；同时 Anthropic 计划IPO并新增董事会成员，显示资本持续涌入，但 Pentagon 威胁切断合作凸显监管和安全挑战，可能抑制短期增长。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOd1FYaTIwMTAxSnNoSEFJaVEybUF4WFVvZkgtZzlDQmp2NV9Va2VCNkJfUGhzY3pCZDk0RUJLT1I2U0FOMzRGS1hrQ3lqTHBaVEZxREYtSERIQjJqOGZRSmM5RDA1WVR4WjlVQUZEQnJ4OWRUNXVSd1BXUkRsLWFfSGtjUFFFSDBRMTN3VEpFRXpVUzV2blV4d0RzTHBwUE5Ba3NmRWx3UURhTG50aVE?oc=5" target="_blank" rel="noopener">[Bloomberg] AI Bubble Fears Are Creating New Derivatives</a>
+                    <a href="https://news.google.com/rss/articles/CBMi_gJBVV95cUxPa0pxMkFubnB5U2E0UTlFdjllaGNSajNiWHpiRFJDVi01VU41bW0wU1FyaHZJZ2NOTlFYSEdGSlpfZ0tVd0xjVXZZb0FqSVg4bHdfN09xZ3NCQkJmdEhxMWVvYnBzR1dCM2c0RGJQVmRPTVN0TmVfWWFZQ0pRanI1TVVDTGNtNHBzS2ZNRHZpd0laenEwSWRsU3YtVHdqdmlkWXBPbjVaVUlqNVZrQmJQLVpONjhnQnVLanVHMGJIdzJlenZfME5wazZxdG9wcWlmeDNHZnVrNlREMHg4al8zRk1WcTd1UWl2R3VEQ0RGQXZ4MDNlZFo1WTIzV1FLSHNzaXR2NE8yNXlmOVZ5ZS02d2hIcDUtNkJ3QW5xOGNycjc2eW5majlmdWRZTXRIbXpEa19ETUF3UDBJT0RrZHlfMGFMeEZKOHRmUk1nbGVYYUdTS3FlYjdlYVhwSUxGclVKMHdodkZLWHR0cjFxM0ZsUFVJTkowZFBxR1l0QnNB?oc=5" target="_blank" rel="noopener">[WSJ] Exclusive | Anthropic Adds New Board Member as It Eyes IPO</a>
+                    <a href="https://www.investing.com/news/stock-market-news/pentagon-threatens-to-cut-off-anthropic-in-ai-safeguards-dispute-axios-reports-4507269" target="_blank" rel="noopener">[Investing.com] Pentagon threatens to cut off Anthropic in AI safeguards dispute, Axios reports</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">金融衍生品</span>
+                    <span class="sector-tag">国防</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>央行政策信号影响利率与货币格局</div>
+                <div class="topic-title-en">Central Bank Policy Signals Impact Interest Rates and Currency Dynamics</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    ECB扩大欧元支持机制以提升其全球储备货币角色，可能吸引更多国际资本流入欧元资产；美联储官员称当前利率立场适当，暗示降息门槛较高，这将支撑美元并延长全球融资成本压力，对新兴市场构成挑战。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNXlsZUtKR2JrbUlwNEgtN1ozS25VSFNXeGxPSEdMNkY1Q2RrRkF5SWE5ZW9jdzRFaXBVOWVyUVh6N2hXbTN6d3lHbW8wbTZKSGJyeC1CMlAzbHhsaGdsZ3N5SktZcUNMZXBPTXJfYzVRWmRJS3BQNGI2aHN4RVJON19VRENkVFV0TGZHbVpYWFMyLVZsVWNtM3dvWEpfSVFMZUVkaTdWYTUwZw?oc=5" target="_blank" rel="noopener">[Reuters] ECB makes euro backstop global to bolster currency's role</a>
+                    <a href="https://news.google.com/rss/articles/CBMi0ANBVV95cUxOeTVIZGQ3WmVGZjJ0bWJaaTVlS0JYR0JFVVBsMUNsRjZwM3diOTBTUEV2VDgwNFlpdUFNaTlaRFRkbVlOdUVKWXFEQ1FmdFFHZU41RE9Cc3k5VjlYckwzc1JCMlRkMFRYbk5mOTk0RUJUd294SHF6dG8wUi1oN2d5MXdrMnp5dVFzVUcxZEpPWHRyZkszaUdTbXl3czM2YjNMbTZjbWZEODdhbnZLekFIRVdYek01R1NtZkVuWkRHbVRCN2x2YkFta1RoWURwX3lqU0lwbDh5M2dJYkdyRUJjNXZRM0YtNWNqTVgxLXhYOWU4c0o1cEZKazh4RFFPSklPck16UFA4U3hUVnpIbWhaMVFFdjB3UjlROEp1dU0wY1RMUWJnNjBkbnh2OHRIeDRudmV5Q3dOVDU4YjBtWFh2Yjd6cGhfWWVES0JKNUV5NGtHZWYxWkNlbjRrQ1Z1c2pSc1VZTDdnaHg2TDVhN3pKNjc0RUFsekM2MG5UMjJiZng1RDZ6am83aUdoUTBNQjllMmNNOEJ2cTJLNzRza3NzampsRDBNZEx6eWlFbWVmOUE3SHVLUjFlZUxlYUJWUzM0cmZpUGZXM1dTTlAxbElEYg?oc=5" target="_blank" rel="noopener">[WSJ] Fed’s Interest-Rate Stance Well-Positioned, Dallas Fed President Says</a>
+                    <span class="sector-tag">银行</span>
+                    <span class="sector-tag">外汇</span>
+                    <span class="sector-tag">债券市场</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>股市技术面显示调整压力加大</div>
+                <div class="topic-title-en">Stock Market Technicals Indicate Mounting Correction Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    上周股市波动受利率预期和地缘政治驱动，S&P 500未能突破关键阻力位，形成看跌技术形态；道琼斯运输指数大涨但可能反映短期投机而非经济健康，暗示市场情绪脆弱，短期回调风险上升，投资者需警惕防御性轮动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/here-are-3-factors-that-drove-the-big-swings-in-the-stock-market-last-week.html" target="_blank" rel="noopener">[CNBC] Here are 3 factors that drove the big swings in the stock market last week</a>
+                    <a href="https://www.marketwatch.com/story/these-are-high-probability-options-trades-for-next-weeks-busy-earnings-crush-32b47d47?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] S&P 500’s failed breakouts signal a darkening technical cloud</a>
+                    <a href="https://www.marketwatch.com/story/what-wall-street-bulls-are-getting-wrong-about-the-dow-transports-steep-takeoff-549c6694?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The Dow transports’ steep takeoff isn’t the green light you’re told it is</a>
+                    <span class="sector-tag">股票市场</span>
+                    <span class="sector-tag">运输</span>
+                    <span class="sector-tag">技术分析</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>公司并购与重组活动提振投资者信心</div>
+                <div class="topic-title-en">Corporate M&A and Restructuring Activities Boost Investor Confidence</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    伯克希尔哈撒韦CEO赞扬卡夫亨氏 turnaround 并支持其分拆计划，显示大型投资者认可重组价值；同时 BrewDog 寻求出售和印度 Manappuram 获准与 Bain Capital 合作，反映消费和金融行业整合加速，可能推高相关板块估值。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/14/berkshire-ceo-abel-praises-kraft-heinz-for-turnaround-on-planned-split.html" target="_blank" rel="noopener">[CNBC] Berkshire CEO Abel praises Kraft Heinz for turnaround on planned split</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE0tOHpQRGFtcGpKUzk3RS1ZS0h3U3ZVLWN0emw3WjVtdE9WeDlJUkNlTWkwZHl2TThaR2ZpSGYtZEYtVGRnMU04VVU3dTNFQ3JpNUNYVTJLdlVZc05yMkVydDE2X2U1MVpMa2VzMm9TeW4?oc=5" target="_blank" rel="noopener">[FT] Craft beermaker BrewDog puts itself up for sale</a>
+                    <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxQVHB1ZFlVeW5tMy0zTUoyNUZqREpBSGxKVkMwTUsxOTlkR0RILUdJaFVybVBqSWttQVY5VXA3WkRpNmVxVGdpRG1NbDh4QlYzUzNuMVR3RVpOMFA4aTFxUzBLN054SXo5aW9EXzdoYkh5RWtEMmZQeDFTc1U4eEFXV2I5VWp6TUZ6eXRGN3AySkFqYWZkbUpCWnRmQ0VVLU9UY3lDWFFDZVhWbW41ZFZ4R294QUczWlZxclhHem5DRQ?oc=5" target="_blank" rel="noopener">[Reuters] Indian lender Manappuram gets RBI nod for Bain Capital to take joint control</a>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>加密货币市场情绪回升带动XRP大涨</div>
+                <div class="topic-title-en">Cryptocurrency Market Sentiment Rebounds, Driving XRP Surge</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    XRP单日上涨10%，反映投资者对加密货币监管环境和采用进展信心增强；若市场风险偏好持续改善，可能吸引更多资金流入数字资产，但需关注后续监管动态和技术突破，波动性仍高。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/cryptocurrency-news/xrp-climbs-10-as-investors-gain-confidence-4507271" target="_blank" rel="noopener">[Investing.com] XRP Climbs 10% As Investors Gain Confidence</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">区块链</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>经济结构性风险浮现加剧长期担忧</div>
+                <div class="topic-title-en">Structural Economic Risks Emerge, Heightening Long-Term Concerns</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    社会安全保障资金可能6年内耗尽，早于预期，将加剧财政赤字压力并影响消费者信心；同时研究显示70岁以上房屋卖家获得更低价格，揭示年龄歧视对资产定价的影响，这些因素可能抑制消费和房地产投资。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/social-security-could-run-out-of-money-in-just-6-years-even-sooner-than-originally-feared-c28eb5a5?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Social Security could run out of money in just 6 years — even sooner than originally feared</a>
+                    <a href="https://www.cnbc.com/2026/02/14/home-sellers-start-getting-lower-prices-at-70-research-shows.html" target="_blank" rel="noopener">[CNBC] Home sellers start getting lower prices at 70, research shows — and the gap widens with age</a>
+                    <span class="sector-tag">保险</span>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">退休规划</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>XRP单日上涨10%</li>
+                <li>社会安全保障可能6年内耗尽</li>
+                <li>70岁以上房屋卖家价格低5-10%</li>
+                <li>ECB扩大欧元支持机制以提升全球角色</li>
+                <li>美联储利率立场维持适当</li>
+                <li>道琼斯运输指数近期大涨但信号存疑</li>
+                <li>AI衍生品创新应对泡沫风险</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
