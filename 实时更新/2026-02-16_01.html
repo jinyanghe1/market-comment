@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-16 01:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-16 01:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在AI狂热与地缘政治风险之间徘徊，经济软着陆预期与通胀压力并存，投资者情绪趋于谨慎。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI板块剧烈波动引发市场“末日循环”担忧</div>
+                <div class="topic-title-en">AI Stock Volatility Triggers Market 'Doom Loop' Fears</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    多篇报道指出，人工智能相关股票近期出现剧烈波动，形成一种“打地鼠”式的市场恐慌交易模式。投资者在追逐AI概念的同时，也在财报电话会议中频繁提及AI风险，导致资金从AI相关领域撤离。这种情绪传染可能引发更广泛的市场调整，尤其影响科技和半导体板块。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/global-week-ahead-markets-brace-for-more-ai-noise-and-scare-trading.html" target="_blank" rel="noopener">[CNBC] Global week ahead: Markets brace for more AI noise and 'scare trading'</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPcW9VVS1JV29FazRmcHFhdFJJWU92eE5RQmJ5YjRhQVB5bE5NTS1ZSGxWWVdreUZLaFI5bHNYNlNGMkRBZXJFS0tfZFA3c1ZvaTB2bnp1TE9vWC0xdFNpd0hOUnJURGtxMEd3eTNrSkhhRGZWMThMYlpEc2FwOVBqWk5KMEsyZC15WFY2TmJDUkMyMkRWZkd0Y3hhYmFlalhyMzA1Q25FSG52LUcxN082QnU5cw" target="_blank" rel="noopener">[Bloomberg] A Stock Market Doom Loop Is Hitting Everything That Touches AI</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNVnpzVjFZcUJ2Q3Q3d1ZVWmpqMndUMzc5cVFONmplaXBxQi1tY25ST3BnNGNraWZDTTVUcHZlX3pRN3ZtN09IU2pMMFBKQ29wRTFTMkRmN0w0R3pFTFZtUVc5VmVWN3Jra0h3WFMxRXN5MVZJX3VFTHYtM3Y2Q0huT2x2WDhXUDRySTZoV2tMZ2lPRUdEeXd6R1FkLS1WblZLM1N4Ql91b2tTeHlfakk3SWR1QzU" target="_blank" rel="noopener">[Bloomberg] AI Risk Is Dominating Conference Calls as Investors Dump Stocks</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">软件服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>地缘政治风险加剧：美欧关系、俄乌冲突与中东局势</div>
+                <div class="topic-title-en">Geopolitical Risks Intensify: US-Europe Relations, Russia-Ukraine Conflict, and Middle East Tensions</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国国务卿卢比奥访问中欧，试图加强与亲特朗普领导人的关系，但欧洲内部反应不一，部分政策制定者保持谨慎。与此同时，乌克兰生存问题仍存疑，俄罗斯黑海地区港口遇袭，战事持续。中东方面，以色列批准西岸土地登记引发巴勒斯坦强烈抗议，地缘紧张局势可能推高能源价格并扰乱供应链。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/some-europeans-welcome-rubios-warm-words-others-remain-cautious.html" target="_blank" rel="noopener">[CNBC] Some European policymakers welcome U.S. Secretary of State Rubio's warm words, others remain cautious</a>
+                    <a href="https://www.investing.com/news/world-news/rubio-to-visit-eastern-europe-bolster-ties-with-protrump-leaders-4507272" target="_blank" rel="noopener">[Investing.com] Rubio visits central Europe to bolster ties with pro-Trump leaders</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFA2WlNLSlZDREVKWVNhUUdwNm0yTktYb3BpWHJ4S2FwQmt5THEya3FqVEc5Y2F3eUtZSzA1c0EyaEZ3aEZZM1Y0RWJPZl9jenBrVUZmSk9BX0h3QUc4MTZTQXBVaTJZMEE4cXBEMVdLS1g" target="_blank" rel="noopener">[FT] Ukraine’s survival still an ‘open question’, Kyiv mayor warns</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOMWlUT1dpU251T09pVlRZY2RHQ2hUMkZPRVFQVmJ1MmZPakZLb2Fpa3FWVlhiekVSTm1tR1ZRNVZOTDdURTVUdE93bmlRX3ZzZFVNUHJhRlBtS2QyMHFJMXlRSU1fZzU2emJHT3ZSZE0zTnZZWElxQWNCMG9vV0lSYkQyY2JZR1RjUE5zdl9CT2U1b0dyLUJsT0JHVE4wcXpncVRHV0JfaVlrNmhvaTdQNTdTNW8" target="_blank" rel="noopener">[Bloomberg] Russian Port, Fuel Tanks Hit in Drone Attack on Black Sea Region</a>
+                    <a href="https://www.investing.com/news/world-news/israeli-cabinet-approves-west-bank-land-registration-palestinians-condemn-defacto-annexation-4507300" target="_blank" rel="noopener">[Investing.com] Israeli cabinet approves West Bank land registration, Palestinians condemn ’de-facto annexation’</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">大宗商品</span>
+                    <span class="sector-tag">交通运输</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>中国经济政策转向内需，高盛上调经常账户盈余预测</div>
+                <div class="topic-title-en">China Shifts Policy Focus to Domestic Demand; Goldman Upgrades Current-Account Surplus Forecast</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    中国领导人强调超大规模市场是提振本地需求的关键，政策重心转向刺激内需。与此同时，高盛上调了对2026年中国经常账户盈余的预测，反映出外部平衡可能强于预期。然而，中国Z世代对仿冒品的青睐正冲击奢侈品零售商的在华业务，显示消费结构发生变化。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOdF9DVmp6YkpmdFh5OHZXYlFVNW1iaWczLUpiWVRsS1hvcGZfTlhVSzVUNGRDMHRHRGpRbGY2WkFDaUd1bGd1bzl6TzF0WDRyYjBjaVEyWk53M0NDZG1WMDAzdU1IdVJCTkdpbTRJbjdhMWk0dlRPSHQzRnFpRFNuVi1UdW5TM2pOLXBjOWt6V2VRRjVCcU1kSjZkV3hfNFZDV2NNMFVlWmlqUDZzSURVZlpfOUVXdw" target="_blank" rel="noopener">[Bloomberg] Xi Touts China’s Super-Large Market as Key to Boost Local Demand</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQaEp6Q0xJYmRqQ0x6R3dwTFpSNmhiR0pnWk1lOTd3NjFWcW5GUVVrU2tHRlZjQThaN0gwSEM1OVlPa0V3azRILTRidHN0bGdObUhMcEFKNWxqM2FBcEMwcGwzbWZrdHZIMS1tZjQ2MGZqTHZSNXVhTTRzVlJod3lfeEl1OFpTVUNXSHFUcFFPUV9hWDJvdjBQbldzSGV4cWNZWHRSNEQ3WjR3UlFFSjduZzBDTzVWUQ" target="_blank" rel="noopener">[Bloomberg] Goldman Upgrades Forecast for 2026 China Current-Account Surplus</a>
+                    <a href="https://news.google.com/rss/articles/CBMijANBVV95cUxOdFFIa3hnMEt4b3pwSWVDX2N0YlFYaVBSWjBwalQ4TXhkbTMxTzEzUlF4dHZyREo2azJaVktaWFFfVG9SYWswZzRmOTZYQWZCQUdldUNRQmdIZDZaNXRYOG4xZHR3SUphek9BYURsVTRfQ0FlQ2pBWUZRdHQ0a0R4QnEza29XT09NY0V4LThyMG56UHFlcGpHbW5OcFpBUllZU3NNTE5yQ1hLNzVTTXdUNkxqV0tPeFk4SFBrVzNraDJEWFFtbmVyc2NGQmY4cXE1bnBlbDVaYlZtZTlpN0picmQtLXpOcDFRdkRja0lWU3F3VDFoNHdyQWhCQldEZjhxYWNqNnd2Sk9CcnNleERJbXRFcE1jSnl4cXVab2xzekRBb3MwSUZBb05KVWU0MlhVREJQdGg1ODczdUlYV05Vb2Y1RUJnYkVLWllSNnRpQTBHNHdtRWJMbWpsR0xNbm9VMjBRTzdKRUt1TE9Yem8wSGVYa01xYVVXLTJ1Q25ydTZIQ29lZWdDYU1DQ0M" target="_blank" rel="noopener">[Barron's] China’s Gen Zers Love Knockoffs. Luxury Retailers Regret Their Big Bet.</a>
+                    <span class="sector-tag">消费品零售</span>
+                    <span class="sector-tag">奢侈品</span>
+                    <span class="sector-tag">国内服务业</span>
+                    <span class="sector-tag">出口贸易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>加密货币市场暴跌但未现恐慌，比特币ETF资金流下降</div>
+                <div class="topic-title-en">Cryptocurrency Market Plummets Without Panic; Bitcoin ETF Flows Decline</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    比特币价格大幅下跌，相关ETF资金流入放缓，但市场并未出现类似“加密货币寒冬”的恐慌性抛售。这表明机构投资者可能更具弹性，或对长期前景保持信心。然而，持续的下跌仍可能对相关矿业、交易平台和金融科技公司造成压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/bitcoin-price-crash-crypto-winter-investors-etf-flows.html" target="_blank" rel="noopener">[CNBC] In bitcoin price plummet, ETF flows are down but aren't signaling 'crypto winter' investor panic</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">资产管理</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>电动车热潮消退，汽车制造商市值遭受重创</div>
+                <div class="topic-title-en">EV Euphoria Fades, Carmakers Suffer Massive Market Value Loss</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    电动车 euphoria 的终结已导致全球汽车制造商市值损失约650亿美元。这反映出市场对电动车短期增长预期进行重新定价，担忧需求放缓、竞争加剧和盈利能力。传统车企的电动化转型将面临更大财务压力，而供应链上的电池制造商也可能受到影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1sZFRBTlR5UDVEVGE2MVNyRXpvWW9wRW5aYnVwdWpLc0h0TEFpaHhvR2szN25NTFo2clNTOUFZc3AyS0dRNW1fV01ZMzhkMzlCZXQydU5TOTVsTWxQaE5ld0RIZmh6c3oyVlVzUFVUTHE" target="_blank" rel="noopener">[FT] End of EV euphoria triggers $65bn hit for carmakers</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">锂电池</span>
+                    <span class="sector-tag">新能源汽车供应链</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>消费趋势呈现K型分化：酒店业削减成本与麦当劳价值营销见效</div>
+                <div class="topic-title-en">K-Shaped Consumer Trends: Hotel Cost-Cutting vs. McDonald's Value Campaign Success</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国酒店业面临K型经济威胁，开始削减免费早餐等成本以应对不同消费群体的需求分化。与之相对，麦当劳的价值营销活动正在取得成效，显示在通胀环境下，消费者对性价比高的快餐需求强劲。这种分化预示着必需消费品和可选消费品的表现将截然不同。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/hotel-free-breakfast-hyatt-holiday-inn-marriott-cost-cuts.html" target="_blank" rel="noopener">[CNBC] From Hyatt to Holiday Inn, America's free hotel breakfast is facing a K-shaped economic threat</a>
+                    <a href="https://news.google.com/rss/articles/CBMikANBVV95cUxOaVMwMHoyamtBWklEX0ZfdUlkWU1IeUxXNERwUUtINXl1OTNWZlZILVVoYXN5VjB1TTVKczhwb1FMTk5VRjNfU2dvS1NDSzl2Sm5HYmFfOVVwSFM5NVFuSUpsZ1BnUUFmMUU0MHVVWm9uZ1JPVk9ZdkxxYUtmY1ZrdG4tT05wcGxabXlXVUx1M1JZWjJYZURwb0k0WHNEam50bFl3LUF2Ykg5VmdGWFo5MjRoOFFuQ2kzbUV4VVVxU1ZhUUc1WXFRcTVyMlIzb3luVGh3ZTFHcWdrYXJmdE1BajBaRVVMenhRRE9PUXpPX29ESFBmbmx2UjVxaThzMm1rdnlQZWtjYkFEQVBmUlZPVWJyS1pwbXE1YUdiLUFlQXJKRHVCYUN6Nk0yODAxS3k5ZXZGZkhVdTg1SGhMc1RwNEZDZHhnaXVCeFVmamJnN1A2TmI1cnJvakpieEpOUm9XLWtqel9iLURpcnRqa3JkRGRycXU5LW9XNDRJbHpsUldQMXBQejgtLVgxMUFaWmtu" target="_blank" rel="noopener">[WSJ] McDonald’s Says Its Value Campaign Is Paying Off</a>
+                    <span class="sector-tag">酒店餐饮</span>
+                    <span class="sector-tag">快餐零售</span>
+                    <span class="sector-tag">旅游休闲</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>华尔街分析师转向防御，推荐股息股寻求稳定收益</div>
+                <div class="topic-title-en">Wall Street Analysts Turn Defensive, Recommend Dividend Stocks for Stable Income</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    在市场波动加剧和AI板块风险上升的背景下，顶级华尔街分析师开始推荐能够提供持续收入的股息股票。这反映了投资策略从高增长转向价值与防御，寻求在经济不确定时期提供下行保护和稳定现金流。公用事业、必需消费品和部分金融股可能受益于这种资金轮动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/top-wall-street-analysts-recommend-these-stocks-for-consistent-income.html" target="_blank" rel="noopener">[CNBC] Top Wall Street analysts recommend these dividend stocks for consistent income</a>
+                    <span class="sector-tag">公用事业</span>
+                    <span class="sector-tag">必需消费品</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">高股息股票</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>关税冲击持续，消费者价格峰值何时出现存疑</div>
+                <div class="topic-title-en">Tariff Shock Persists, Uncertainty Over When Consumer Prices Will Peak</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    尽管部分关税已实施一段时间，但对消费者的冲击尚未结束，价格压力持续存在。分析指出，供应链重构和地缘政治因素可能使通胀更具粘性，市场需重新评估通胀路径和央行的政策反应。这对零售、制造业和依赖进口原材料的行业构成长期成本压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMi9ANBVV95cUxPSmU0WjdnT19HVV9HcFBCeGxZd3o4TklDOWdNX1FJT0plMXhIWFFZV3gzcGpGZVhOckZWT0pFdjV1UlBOeVJvN2Y1YzFJNFRYREZBakZYbVlXTElDUHJJVjEzVE5VVjRVN3p5QjNqU2FmTlEzblMtbHF1eFBxOVlQUTQ5SEVMd3dYNnk3UjZWSnVLVlAtZnBfRnBtblNubllkVDdiZE55U1lIUjRZRlp0Y3VTbEhKNldqVWw2YmhfU0F6SnFFQWJTR3NMd0p0MnpyYUpGbE50WnltRUh6Z1ZNUUgxR3NfYWY5UWE5U1lnS2FfOTFTWXY4aEM4YkZxd19tSnJUZTRHVGotNG9IZTB4QmVjMEh1bkdpUkNMV29GR2ZFRXZsSC1yLVBuUkZDbzEzeV9rQTZId3ZmZDc1Y1RRQmVqdzNGalgyZldCMjBEZzM0Ty12bEtEd25UOTdDNkhraGtCRjNXeVhXTXV2eWgwVElpLUtGcEZuVWJEZ28yRkRoZW5PbG42YVk2akhzc1VhamlVeHRDTjhIbDY3cmFzRW16V1dtaW9GckE0dldnbmxoTTFRRGNXWVNhZ2NDeWJTd0ZwTW5nY3ctNFFsVnlFU2xQSEVMUWhlZ3Y2SnJVWEM1UEtWTUdnM3ZWUXowSXdjaGxGTg" target="_blank" rel="noopener">[Barron's] The Consumer Shock From Tariffs Isn't Over. When Will Prices Peak?</a>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">物流运输</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>比特币价格暴跌，ETF资金流下降</li>
+                <li>电动车板块市值损失约650亿美元</li>
+                <li>高盛上调2026年中国经常账户盈余预测</li>
+                <li>潜在暖冬预期压低天然气价格</li>
+                <li>AI相关股票波动加剧，形成“末日循环”担忧</li>
+                <li>美国酒店业面临K型消费分化压力</li>
+                <li>华尔街分析师转向推荐股息股</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
