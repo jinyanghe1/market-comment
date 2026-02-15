@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-15 19:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-15 19:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场关注焦点分散，AI主题情绪波动，中国经济政策与地缘政治风险交织，投资者情绪趋于谨慎。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI市场情绪分化：泡沫担忧与生产力机遇并存</div>
+                <div class="topic-title-en">AI Market Sentiment Diverges: Bubble Fears vs. Productivity Opportunities</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    一方面，市场对AI泡沫的担忧催生了新型衍生品以对冲风险，且技术面显示S&P 500突破失败，投资者在‘恐慌交易’后不愿轻易‘抄底’。另一方面，有分析指出AI软件股的回调创造了买入机会，且AI带来的生产率提升已开始显现。市场对AI主题的情绪正从狂热转向更理性的分化。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/global-week-ahead-markets-brace-for-more-ai-noise-and-scare-trading.html" target="_blank" rel="noopener">[CNBC] Global week ahead: Markets brace for more AI noise and 'scare trading'</a>
+                    <a href="https://www.google.com/url?q=https://www.bloomberg.com/news/articles/...AI-Bubble-Fears..." target="_blank" rel="noopener">[Bloomberg] AI Bubble Fears Are Creating New Derivatives</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5FeVBIMk05YzBCeUdUX2I5X0ZmbUlidjNtalczTzkyNzAxTWJIMkZ0OXZIc2R6NkRUZmNKYUE3RjJfc2podW5kZDlYOEJrVGN0T0hnNnZpeUlCUkhBcUJ3Si1CS0RZeV9LRENzSGhFb04" target="_blank" rel="noopener">[Financial Times] The AI productivity take-off is finally visible</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9RVnV2SXMzRl90S3NSVjhjOTdlcTRSOG9ySklhV0ZvelNrdkJ0NnJVcXJEbFhxN1ZEYThBY1ppbDRCZUxlSG9oak56UjRqZEVsVG1VSzdUaFNJdlgtZDNLaFJkSU5mSVZFTDRjQnU5QUE" target="_blank" rel="noopener">[Financial Times] Investors reluctant to ‘buy the dip’ after AI scares</a>
+                    <a href="https://www.investing.com/news/stock-market-news/5-big-analyst-ai-moves-software-selloff-opens-buying-opportunities-4507261" target="_blank" rel="noopener">[Investing.com] 5 big analyst AI moves: Software selloff opens buying opportunities</a>
+                    <a href="https://www.marketwatch.com/story/these-are-high-probability-options-trades-for-next-weeks-busy-earnings-crush-32b47d47?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] S&P 500’s failed breakouts signal a darkening technical cloud</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">科技软件</span>
+                    <span class="sector-tag">半导体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>中国市场走向关键期：政策托市与基本面压力</div>
+                <div class="topic-title-en">China Market at a Critical Juncture: Policy Support vs. Fundamental Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    高盛上调中国经常账户盈余预测，显示外部平衡强劲。然而，股市牛市因盈利可能令人失望而动摇，凸显了基本面压力。同时，监管层部署‘国家队’试图为AI等热门板块降温，Barron's文章指出政策可能转向刺激消费。多空因素交织，市场方向取决于政策效力与盈利复苏的赛跑。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQaEp6Q0xJYmRqQ0x6R3dwTFpSNmhiR0pnWk1lOTd3NjFWcW5GUVVrU2tHRlZjQThaN0gwSEM1OVlPa0V3azRILTRidHN0bGdObUhMcEFKNWxqM2FBcEMwcGwzbWZrdHZIMS1tZjQ2MGZqTHZSNXVhTTRzVlJod3lfeEl1OFpTVUNXSHFUcFFPUV9hWDJvdjBQbldzSGV4cWNZWHRSNEQ3WjR3UlFFSjduZzBDTzVWUQ" target="_blank" rel="noopener">[Bloomberg] Goldman Upgrades Forecast for 2026 China Current-Account Surplus</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNVUdMT1NSTVgyXzllRHY4RXU1c3VGVlBVLTBEY05zZVRocFE1OGFhbDFZb2RRaDl1ejBoMTNlUVpnYUFTMTFfemh6V2hhclFlTkFyZDZMY1Ixay1uZW5fN3N2SDBXTS1PTHloOW40YnVEYmtQN21YRFNndDdfTFZMeXhYc2xORU9Fck9pYkZfbDM4MWcySDZWbE42QlFpUThSZ2NtYnhDNWZFQTktZjdaaWNfUQ" target="_blank" rel="noopener">[Bloomberg] China’s Stock Bull Run Falters With Earnings Set to Underwhelm</a>
+                    <a href="https://news.google.com/rss/articles/CBMivgNBVV95cUxNREVOQmNKZUNNc2g5aV96Q19JcG9wY2g4TXVoZFlUalFNaUROV1JZQ1ZDd3lCM1JPeWJibDEzdmpPdFB4SkxQZjhzc1pDX0ktS2FRLWpONEZWX0I1RkRudkhjUkY2MlMxQjBIMWlNMngzaV9kRFRNWDByelBmelVHVkNjbUcyNU94eEJZTHJ5QzF4clcyQmVtdHJ2OEZPZURYZ254NkxDaWQtYWsxekRONlhuaUlHLV85aHFMbzBSTmFRdm1VMmZXS2ZDTFB1QjVEc2s3QmhGZFlLYnRFaUpPeldxTzEwZ0lPY1NEenZfd3BfZG5vMjA5eWpLNk1kZ0I4WDNYX3dwcTF0d21mNTR1QmYtU0lHVGQ4bjNtTkY0eFMwSVBVd2Z1X0FhWm50bkFNRFp4cEtTZVFrUXZmVmlfTEJDc1VvRTBYLXNlWF9iVVc3QTlSRkJRcU1NRXFZOV9Gb1pGbmJCS0VnTXZfSlN2TGRaTkkwV1FPT1dvTTZTc1d2ZmVBWXBWUUhtLTFZbUN2aUlBS3JRdjVPbU9wQ1lxV1FWOWdSMGhBUXNvYXdycXlWbXpZYWw5R29mSHFfdw" target="_blank" rel="noopener">[WSJ] China Deploys a ‘National Team’ of Investors to Keep AI Stock Boom in Check</a>
+                    <a href="https://news.google.com/rss/articles/CBMiiANBVV95cUxOWHZ5bV80V0I0TnhkbGExZ2NWTEJBV1ZYeDZfSVhWdG9sZ015LV90QjRJa1IxVndadnlTS2FfWk1xNVVZenhBNDFCRVJ6U2Y4NjNzUlIxb3NaZjJjN29hcDlSZU5UUjdTRmR2VV9tUWtKdjVxT2NDYl9tZTROQUxnUDZLQ0ZHU2Nucm5Da3hJQ2JiMmMza1ItVzlBS3JFMUk3enV2R3M4a3d6TmpldHJEQ05la1FORi1YUnAtTFBMNHBtbWh6QzNncENBdU5oT3RfLTUwVWV1cXBHZElFZVlvUERHNWN3R0hOenhxNzdoTTJDcjEyeF9UTXZFMUY3Wi14QlptNGpWRU1WcmhlSTFKUXRlTHN2V1V2RzhkTDFLeERJYnBUajBuT1NRSTdPNVh1SVY2bDltdjlZdGMwQUdzY1c4QkstMHpqMzFWWUNOcEx2eHdrejFQd2VVLVAwWEVLS0MzQ25rRFFKdGlkNnVrY2Y5cHVBZ05aSm1vY1NDblRmejhuc1Jmag" target="_blank" rel="noopener">[Barrons] Beijing Could Focus on the Shopper in the Year of the Horse. How to Play It.</a>
+                    <span class="sector-tag">中国股市</span>
+                    <span class="sector-tag">消费</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>地缘政治风险升温：能源与国防成焦点</div>
+                <div class="topic-title-en">Geopolitical Risks Intensify: Energy and Defense in Focus</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    前总统Trump与以色列总理据称同意美国应施压伊朗削减对华石油销售，此举若实施将冲击全球能源供应与地缘平衡。同时，美议员Rubio访问东欧加强与亲Trump领导人关系，台湾总统新年讲话誓言加强防御。地缘紧张局势升级可能推高能源价格并刺激国防开支。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/commodities-news/trump-netanyahu-agreed-us-should-press-iran-to-cut-oil-sales-to-china-axios-reports-4507265" target="_blank" rel="noopener">[Investing.com] Trump, Netanyahu agreed US should press Iran to cut oil sales to China, Axios reports</a>
+                    <a href="https://www.investing.com/news/world-news/rubio-to-visit-eastern-europe-bolster-ties-with-protrump-leaders-4507272" target="_blank" rel="noopener">[Investing.com] Rubio to visit eastern Europe, bolster ties with pro-Trump leaders</a>
+                    <a href="https://www.investing.com/news/world-news/taiwan-president-vows-to-strengthen-islands-defences-in-lunar-new-year-message-4507277" target="_blank" rel="noopener">[Investing.com] Taiwan president vows to strengthen island’s defences in Lunar New Year message</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQdmp6cTRTSXZKekhEUVZvOWZxZ0lxRlZZRjg5R3FpVUt6VlBRNTNmWGlnVU9SQWtKekpKQ3o2elpmQ24zd1pJTEtUR2o5Qmh5T2hiYUZWNVBCTmFweVhHdHRlLWVWVktFUzRPME5TUjlHY25BZ2htTWY5c19FWkZ1Y18zVU5jMlh0NmVjS0lEZTAtSkdDQldsaXJFVEdEX0xreHFJMVdOZ3N0WW1uRnBmbV8zcm8" target="_blank" rel="noopener">[Bloomberg] US, Japan Commit to Deepening Ties as Tokyo Faces China Pressure</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">地缘敏感资产</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>电动汽车热潮退却，行业面临价值重估</div>
+                <div class="topic-title-en">EV Euphoria Fades, Industry Faces Revaluation</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    电动汽车狂热结束已导致全球汽车制造商市值损失高达650亿美元，标志着市场对电动汽车普及速度和盈利能力的预期进行实质性下调。同时，卡车电气化的现状也受到审视。这预示着整个电动交通产业链将进入一个增长放缓、竞争加剧、更注重实际盈利能力的阶段。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1sZFRBTlR5UDVEVGE2MVNyRXpvWW9wRW5aYnVwdWpLc0h0TEFpaHhvR2szN25NTFo2clNTOUFZc3AyS0dRNW1fV01ZMzhkMzlCZXQydU5TOTVsTWxQaE5ld0RIZmh6c3oyVlVzUFVUTHE" target="_blank" rel="noopener">[Financial Times] End of EV euphoria triggers $65bn hit for carmakers</a>
+                    <a href="https://www.investing.com/news/stock-market-news/what-is-the-current-state-of-electrification-in-trucks-4502728" target="_blank" rel="noopener">[Investing.com] What is the current state of electrification in trucks</a>
+                    <span class="sector-tag">电动汽车制造</span>
+                    <span class="sector-tag">锂电池</span>
+                    <span class="sector-tag">汽车零部件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>美国通胀降温与政策不确定性</div>
+                <div class="topic-title-en">U.S. Inflation Cools Amid Policy Uncertainty</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国1月通胀率放缓至2.4%，主要受汽油价格下跌推动，这为美联储提供了更多政策空间。然而，政治层面，加州州长Newsom恳求欧洲盟友将Trump视为‘暂时现象’，而国内DHS（国土安全部）已开始部分关闭，预示着潜在的政策僵局与不确定性，可能抵消通胀利好对市场的提振作用。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMijANBVV95cUxQMVMyZ2tDSGhZWGs4VktwNWc4YnRXU3BrXzdIb01ZZGl6c2hvNWo4cWJHQmgtdG1zOTRjWUVDdnNHc2NYdFFDcGtOQ21RazF1NlJ2dmxIZlV0SkNCMkExZ2NXOXFWS1kzVGJxZlhWczMyekV2d2lQOFF2czdPV1pZb2NrMS1aQlp1U2R0OFZHa2ppajBOWnJSc1ZVMDJsTmtWWWMtQlo5QjdjWUxLb2RhdFkzX2FuZENOS3VJblJ5MURDN0w0Q18wdWpvYWZFUHl0ZkF1R0tEUHRkWWY1RE9BWEs4YWxJZWhrT3VxNlBwT1c3Uk1iSUU0cVhITFZXWUZvZWJWYUFoWUdTRUh2U2dBeDA2ZkFLczVDVm0ydzlZQ2hKbjc4SVctQ2YwclhEVFRkeE9IQkFxREVGR1UyejZHQVpraW1IV2ZZeS1hRm84T2hKWGctMXJvSXVfNHpKdG5FWGlCdlhYRUFDdlY0cVJRdC1TLV9OaDBnc3EzSFFtby1MZGtaLU9rU21RY2Q" target="_blank" rel="noopener">[WSJ] Inflation Slowed to 2.4% in January, Helped by Lower Gasoline Prices</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOcGpRR2NrTjFiVTZUbFl3c1F0V2FKVmdkcHFwd2xWamNRNEVNRlNRcHN1ZGVRUEtiTlQwT1RSVjNGRm1YM1psSjNCMHFqS1JuNlc2LVIwenRtM3ZyOWxRdUlMc3RDbEJjeVMwckhCY1JzdmtTTjhPaThYTkNBampvQk5lVGY1X0ZDaUZyMkZ1eVJpV2hSR0tuUlc2TUllTTM2ZzlXMkRqT29WRm5ySnFuS3AtLWNPZw" target="_blank" rel="noopener">[Bloomberg] Newsom Pleads With US Allies in Europe to See Trump as Temporary</a>
+                    <a href="https://news.google.com/rss/articles/CBMihANBVV95cUxPVUZzSzAwdUNTQW1laWpsSWNkcTZEbVhVRU9oRmNMM0RWVE8yMF9yVTlyT3haTDhxTUNZYUVwbk9UbXRNdlYwdWk0cmRzVjdqYUlwRHI0X2lPVW13SS1WcVlZSnk2c2hUSmlYVlVkZkI4UW5TVjlESTF0OFhTbEVmTW84eWdYTUhFRVdKTFVTbkpEMjl4ZHg3RjU1SHdqY2pxaFI3LS11aHY1NTgxWE5RS1lHajU3WDJUTDNHakM3TUFPSzlaNlhyRzRVeWZIZmwxeGM3RF84cGItN1IyNDFPNFl5VG8wNnJKbzRqWlFjQkZpWmd6VmpuV2k4ckJSRGtoOW5rcXBWMDAtd3R1emVBU3hZenBhS1JvVW5XUzc3a3I5UGlzZUJSTGthUmI3dGpjelotQnFYeUpmNk9XS1lfODhTQjZVWlpBdS1yYm54SUR4ZFV4VlMweTRpZ3NlRkM5VUdSSGxHenR5YWJ6SDRMeGZtTzN0akR5bEdxTGhKSE5ob0Ix" target="_blank" rel="noopener">[Barrons] A DHS Shutdown Begins. Here’s What Could Be Impacted.</a>
+                    <span class="sector-tag">美国国债</span>
+                    <span class="sector-tag">零售消费</span>
+                    <span class="sector-tag">政府相关服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>全球流动性边际变化：印度限制与瑞士法郎走强</div>
+                <div class="topic-title-en">Marginal Changes in Global Liquidity: India Curbs and Strong Swiss Franc</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    印度限制向经纪人发放贷款，预计将打击交易量，这可能是新兴市场控制金融风险的最新举措。与此同时，瑞士法郎持续升值令瑞士出口企业感到恐慌，反映了欧洲市场的避险情绪和货币政策差异。这两件事虽局部，但共同指向全球资本流动环境正在发生细微但重要的变化。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPNWNKQkVlWkhabzUzaFFfOVRXMTRtei1Zd2ttX0stcU04eU5qOFlXd0ZfUGJNSUxPV0RNajN0NEhkTThPRHFFbS1hR0F0OGhDTUpUejlvdHdrU1otWGlkem4zMkVNSDh3d1ViMFNIbWp1anFQaW9LMGxBVGlzcmhpal9MM3NqZFpyYkppWUlhZkxIaWRPU2NYWXRNbVJVSHhhMF9vamh1NUpiOTVtN0JEdGkzcmhVZw" target="_blank" rel="noopener">[Bloomberg] India Curbs Loans Extended to Brokers in Blow to Trading Volumes</a>
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE8zUUNneFlOZjVzQ1NiLU9PWUdoZ0tWQkVPX0tPeFU3LTYzeFRuS0FaVkwzTjdsWi1fMWpieHhBalNLMTgyVTlhS1YtNkRWa0JiSUpIbEZHeVBMSW9YclRQaXE4VGEzN2VNenZHSEZyczk" target="_blank" rel="noopener">[Financial Times] Franc’s relentless rise alarms Swiss companies</a>
+                    <span class="sector-tag">印度金融</span>
+                    <span class="sector-tag">瑞士出口企业</span>
+                    <span class="sector-tag">外汇市场</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>企业盈利与特定板块动向</div>
+                <div class="topic-title-en">Corporate Earnings and Specific Sector Moves</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    NFL创下破纪录赛季并预示明年更旺，显示媒体娱乐消费韧性。麦当劳的价值营销策略见效，凸显在消费降级环境下的成功。PayPal、网络安全股等特定科技股的分析师观点活跃。同时，土耳其一家券商股价暴涨2400%后报告利润大幅跃升，警示新兴市场存在极端波动性机会与风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/nfl-just-had-record-breaking-season-next-year-will-be-bigger.html" target="_blank" rel="noopener">[CNBC] The NFL just wrapped a record-breaking season. Here’s why next year’s going to be even bigger</a>
+                    <a href="https://news.google.com/rss/articles/CBMikANBVV95cUxPQkpQWlFaRmNBbTZWM3dYR3Q0N2syX0NMdW5mdk9CaFVONzRqc2FIMTd0UGFwZU5HLTdUMWpEWEdBZnQ0Tl9pNC0zcXYtY25IVVQ5STlGTGVCWTEyenZGVlQtUXlHNmJocXhuWEJNLS01WEV2NllYYzNxd01lZGlXNGNDRndfZENiSUJ2V1MwNTktRUNwQXpHajdIS0FyblduYWVuckw2YlJIMmx1ZG9qQ0hBNnVlYWk2clpwdzY0VHNWblZLNXdvRGFwZmJRQXdscDdJNUVlTzJ0eXBTSF9WOWlrelpDejR5SGxpWDNaMlZRU0RqUldhd2Zid1I0M1lDNDA0TjRnMzAzV0xTbDc2MHlIYVRBSmVKSjFvbkdQWENSNkZ2QlZUOU4wZ2dSZ2ZSdzdaSUN5ZURvRWpKYlhNeU91T0tYaWtXa2psTG95eW9VeE9YSjdRWG1GNTJobmtHdlZFeUh0ODVMRGxTU1R0TFRBWVdWNGMxYzEtSlY4aTN6MmxPVVhYQ3kybl8zd3F0" target="_blank" rel="noopener">[WSJ] McDonald’s Says Its Value Campaign Is Paying Off</a>
+                    <a href="https://www.investing.com/news/stock-market-news/paypal-stock-can-it-regain-lost-share-or-has-the-ship-sailed-4497907" target="_blank" rel="noopener">[Investing.com] PayPal stock: can it regain lost share or has the ship sailed?</a>
+                    <a href="https://www.investing.com/news/stock-market-news/bernstein-says-this-stock-is-the-cheapest-cybersecurity-vendor-4505933" target="_blank" rel="noopener">[Investing.com] Bernstein says this stock is ’the cheapest cybersecurity vendor’</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNSFphWWFVVVJvUE9rTERIVkdCSWoxcEdEVW1yNXpLTWlhQ0RBdU5naVEzYmxwbjJ3ZUo5OU9kNUFxalNHSDNjY2ZIaDhhcGRILVFyTDV2UkpMTUNuSVdReW1udlBScHFwMW5PX2dsOW94T0xWcjIzd0JKaDRVMy1XdzMtd1VCYlVDVEZNZnB4T0VOa1R6OXV5NE85TU1XSE9pZlE3a1E2RzdBc1JrOC1ITGwtdw" target="_blank" rel="noopener">[Bloomberg] Turkish Broker With 2,400% Stock Surge Reports Huge Profit Jump</a>
+                    <span class="sector-tag">媒体娱乐</span>
+                    <span class="sector-tag">餐饮零售</span>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">网络安全</span>
+                    <span class="sector-tag">新兴市场券商</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国1月通胀率2.4%</li>
+                <li>高盛上调2026年中国经常账户盈余预测</li>
+                <li>电动汽车热潮退却致行业损失650亿美元</li>
+                <li>印度限制券商贷款</li>
+                <li>瑞士法郎持续走强</li>
+                <li>土耳其某券商股价年涨2400%</li>
+                <li>中国Z世代青睐仿制奢侈品</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
