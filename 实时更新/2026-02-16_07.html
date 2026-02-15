@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-16 07:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-16 07:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场情绪谨慎，关注美国潜在贸易政策、AI板块估值波动及地缘政治风险，同时消化一系列企业并购与宏观数据信号。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>特朗普政府拟推新政，或强制科技公司“内部化”数据中心成本</div>
+                <div class="topic-title-en">Potential New Trump Administration Policy May Force Tech Companies to 'Internalize' Data Center Costs</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    前贸易顾问纳瓦罗表示，特朗普政府可能出台政策，要求Meta等数据中心建设者“内部化”成本，这可能包括潜在的关税或监管措施。此举旨在重塑全球供应链并保护国内产业，若实施将直接增加大型科技公司的运营开支和资本支出，可能侵蚀其利润率，并影响云计算和AI基础设施的投资步伐。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/navarro-trump-data-centers-affordability.html" target="_blank" rel="noopener">[CNBC] Trump trade adviser Navarro says administration may force data center builders like Meta to 'internalize' costs</a>
+                    <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxQQ3BtYW4tNmVCYy12UWhPaGZwNUtDeFBXa3dDdjZWQVNrOXpWczVLRWZ2M2djZUZWNkdsYWJBc3JMWS00NGRTSzFYb0Jralp6TC1XZVgyYmpINTZ0amk3UWhpVUZsNzJyNzJJblJxNkoxd2o4cUp6Y0NUSHRWSDNxc0FwbXhxMlAySjgxLUk1NFRNNnBxRTRzRWcwLVE4N2htSGFN?oc=5" target="_blank" rel="noopener">[The Economist] Donald Trump’s schemes to juice the economy</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">数据中心基础设施</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>媒体行业整合加速：华纳兄弟探索或重启与派拉蒙的出售谈判</div>
+                <div class="topic-title-en">Media Industry Consolidation Accelerates: Warner Bros. Discovery May Reopen Sale Talks with Paramount</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    据彭博社报道，华纳兄弟探索公司正考虑重启与派拉蒙全球的出售谈判。这反映出在流媒体竞争白热化、内容成本高企的背景下，传统媒体巨头通过并购寻求规模效应和协同成本的迫切需求。若交易达成，将重塑娱乐行业格局，可能引发进一步的行业整合，但同时也会面临严格的反垄断审查。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/warner-bros-discovery-paramount-netflix.html" target="_blank" rel="noopener">[CNBC] Warner Bros. may reopen sale talks with Paramount following new deal terms, Bloomberg reports</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOSHlNSTV2cndLWUVwRFY2VW4tUEk4TkJEcy1vRTU2RDUwZnlUNFprVVBzY196cEgyMkhqZ09YSkVYQ2owUTNMZXlOSjBXUnVXSGktZUJsTHV0UjMwVkd3R1VPMFVzZERzdEdRdFBmQTFhOGd3eW9INlBZam81T3lad3hzYmY0RGpaa3RqcTY0Wi1zaGZSc2szQVpwS0tLLV9lMFRyQXBqY0NuV3BTQTY5VE5R?oc=5" target="_blank" rel="noopener">[Bloomberg] Warner Bros. Weighs Reopening Sale Negotiations With Paramount</a>
+                    <a href="https://www.investing.com/news/stock-market-news/warner-bros-weighs-reopening-sale-talks-with-paramount-bloomberg-news-reports-4507308" target="_blank" rel="noopener">[Investing.com] Warner Bros weighs reopening sale talks with Paramount, Bloomberg News reports</a>
+                    <span class="sector-tag">传媒娱乐</span>
+                    <span class="sector-tag">流媒体</span>
+                    <span class="sector-tag">电信</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>地缘政治风险升温：伊朗核协议僵局与俄乌冲突持续</div>
+                <div class="topic-title-en">Geopolitical Risks Escalate: Iran Nuclear Deal Deadlock and Ongoing Russia-Ukraine Conflict</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    以色列总理内塔尼亚胡强硬表态，要求任何美国与伊朗的协议必须拆除其核基础设施，而不仅仅是停止浓缩铀进程，这增加了核协议谈判的复杂性与破裂风险，可能推高能源价格波动。同时，俄罗斯黑海地区港口和燃料库遭无人机袭击，英国指出俄军损失正增加其对国外战斗人员的依赖，显示冲突长期化且存在升级风险，持续影响全球能源、粮食供应链及避险资产价格。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/commodities-news/netanyahu-deal-with-iran-must-dismantle-nuclear-infrastructure-not-just-stop-enrichment-process-4507303" target="_blank" rel="noopener">[Investing.com] Netanyahu says US deal with Iran must dismantle nuclear infrastructure</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPUUpvQVNVUW96Z2FMY3RjdXhBWG1HUEVnVm1CTWhxU2R3SVJRdV91aW4zUTBFd0VuX3l3dHRNUG42YTBrbkJPeUhaMG9VQ0hLYXBPbEN1Zm9udFFWcUQ0SUxJdHVFZy1taEw4NDFMZzBIb0FRQ1pyOElNNzJCNFh1Q3FwVXFMT3B3b1ZUU1pVYkdJNURMNFdsMGdUdTJMQW5iMlVZTE9PRHBKczJmM3VpX0t3?oc=5" target="_blank" rel="noopener">[Bloomberg] Russia’s Losses Boosting Reliance on Foreign Fighters, UK Says</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOMWlUT1dpU251T09pVlRZY2RHQ2hUMkZPRVFQVmJ1MmZPakZLb2Fpa3FWVlhiekVSTm1tR1ZRNVZOTDdURTVUdE93bmlRX3ZzZFVNUHJhRlBtS2QyMHFJMXlRSU1fZzU2emJHT3ZSZE0zTnZZWElxQWNCMG9vV0lSYkQyY2JZR1RjUE5zdl9CT2U1b0dyLUJsT0JHVE4wcXpncVRHV0JfaVlrNmhvaTdQNTdTNW8?oc=5" target="_blank" rel="noopener">[Bloomberg] Russian Port, Fuel Tanks Hit in Drone Attack on Black Sea Region</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">农业</span>
+                    <span class="sector-tag">贵金属</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>比特币价格暴跌但ETF资金未现恐慌，加密市场面临新税务合规挑战</div>
+                <div class="topic-title-en">Bitcoin Price Plummets but ETF Flows Show No Panic; Crypto Market Faces New Tax Compliance Challenges</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    比特币价格近期大幅下跌，但CNBC分析指出，ETF资金流入虽放缓但并未出现“加密寒冬”式的恐慌性流出，表明机构投资者可能将其视作逢低布局机会，市场结构相较于以往周期更为稳固。然而，MarketWatch警告投资者需正确填写新的加密货币税表，否则可能多缴税款，这凸显了监管框架逐步完善带来的合规成本，可能影响散户参与热情。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/bitcoin-price-crash-crypto-winter-investors-etf-flows.html" target="_blank" rel="noopener">[CNBC] In bitcoin price plummet, ETF flows are down but aren't signaling 'crypto winter' investor panic</a>
+                    <a href="https://www.marketwatch.com/story/crypto-investors-who-dont-fill-out-this-new-tax-form-the-right-way-could-overpay-on-their-taxes-4ccc7727?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Crypto investors who don’t fill out this new tax form the right way could overpay on their taxes</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">资产管理</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>AI概念股遭遇“厄运循环”，市场担忧估值过高与风险集中</div>
+                <div class="topic-title-en">AI Stocks Hit by 'Doom Loop' as Market Fears Overvaluation and Concentrated Risks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    彭博社报道称，一场“股市厄运循环”正在冲击所有与AI相关的领域，AI风险主导了财报电话会议，导致投资者抛售相关股票。这反映了市场在AI投资热潮后，开始审视其实际盈利路径、巨额资本支出以及对宏观利率的敏感性。短期内，AI板块可能面临持续的估值修正压力，并波及其他科技成长股。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPcW9VVS1JV29FazRmcHFhdFJJWU92eE5RQmJ5YjRhQVB5bE5NTS1ZSGxWWVdreUZLaFI5bHNYNlNGMkRBZXJFS0tfZFA3c1ZvaTB2bnp1TE9vWC0xdFNpd0hOUnJURGtxMEd3eTNrSkhhRGZWMThMYlpEc2FwOVBqWk5KMEsyZC15WFY2TmJDUkMyMkRWZkd0Y3hhYmFlalhyMzA1Q25FSG52LUcxN082QnU5cw?oc=5" target="_blank" rel="noopener">[Bloomberg] A Stock Market Doom Loop Is Hitting Everything That Touches AI</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNVnpzVjFZcUJ2Q3Q3d1ZVWmpqMndUMzc5cVFONmplaXBxQi1tY25ST3BnNGNraWZDTTVUcHZlX3pRN3ZtN09IU2pMMFBKQ29wRTFTMkRmN0w0R3pFTFZtUVc5VmVWN3Jra0h3WFMxRXN5MVZJX3VFTHYtM3Y2Q0huT2x2WDhXUDRySTZoV2tMZ2lPRUdEeXd6R1FkLS1WblZLM1N4Ql91b2tTeHlfakk3SWR1QzU?oc=5" target="_blank" rel="noopener">[Bloomberg] AI Risk Is Dominating Conference Calls as Investors Dump Stocks</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">科技成长股</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>宏观经济压力显现：住房危机、租金分化与酒店业削减成本</div>
+                <div class="topic-title-en">Macroeconomic Pressures Emerge: Housing Crisis, Diverging Rents, and Hotel Cost-Cutting</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    多重迹象显示经济压力点正在扩散。《华尔街日报》报道国会计划解决住房危机，而MarketWatch指出全美部分地区租金终于开始下降，但缓解程度不均。CNBC则揭示从凯悦到假日酒店，免费早餐正面临“K型”经济威胁，酒店业通过削减此类福利来应对成本压力。这些现象共同指向消费者实际购买力承压和生活成本敏感度上升，可能影响消费 discretionary支出和相关服务业公司的利润率。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMingNBVV95cUxQWmkyVlZaRldUNDViSTk0NGoyallvSWlrSXdacmgwSTRQYVJGRFYwaGxSa3o2bkJqSXBWSjdtQ21rQ2gxaXlaYlFnSTVuNUprdWNUNnRVamR2UWdMU2xNcjE1NmNVUTUxTm1MbWxtdGN1emxxdmh2QkNfN1U4dmVyYmQ1YzhfRlRtR3NYZU9pc3JKcndFNVd1blk4VnNaVzQzNGU4czE3bC00ZFVPN2hDSjF1cnJKYUoza3BwbEowQ0xRbTh3WTFSXzVFNkt4NVVFMHd0Tk5YT0N6M2tuUkVGVGVtRmdTczc2MjBsMHQtd2haaTJTXzZJQ2pRLU1icXluTkJJVmhJM2x4bHdv?oc=5" target="_blank" rel="noopener">[The Wall Street Journal] How Congress Plans to Take On the Housing Crisis</a>
+                    <a href="https://www.marketwatch.com/story/rents-are-finally-falling-in-some-parts-of-the-country-heres-who-is-actually-feeling-the-relief-08d1a6dd?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Rents are finally falling in some parts of the country. Here’s who is actually feeling the relief.</a>
+                    <a href="https://www.cnbc.com/2026/02/15/hotel-free-breakfast-hyatt-holiday-inn-marriott-cost-cuts.html" target="_blank" rel="noopener">[CNBC] From Hyatt to Holiday Inn, America's free hotel breakfast is facing a K-shaped economic threat</a>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">消费者服务</span>
+                    <span class="sector-tag">酒店旅游</span>
+                    <span class="sector-tag">零售</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>中国市场动态：习近平强调超大规模市场优势以提振内需</div>
+                <div class="topic-title-en">China Market Dynamics: Xi Touts Super-Large Market Advantage to Boost Domestic Demand</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    中国国家主席习近平强调中国的超大规模市场是提振本地需求的关键。这一表态旨在稳定市场信心，明确将内需作为经济增长的核心驱动力。结合《经济学人》关于中国富豪涌入迪拜以及印度污染成为经济障碍的报道，凸显了亚洲区域内资本流动和结构性挑战。对于投资者而言，需关注中国消费刺激政策的具体落地效果，以及其在亚太区域经济中的拉动作用。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOdF9DVmp6YkpmdFh5OHZXYlFVNW1iaWczLUpiWVRsS1hvcGZfTlhVSzVUNGRDMHRHRGpRbGY2WkFDaUd1bGd1bzl6TzF0WDRyYjBjaVEyWk53M0NDZG1WMDAzdU1IdVJCTkdpbTRJbjdhMWk0dlRPSHQzRnFpRFNuVi1UdW5TM2pOLXBjOWt6V2VRRjVCcU1kSjZkV3hfNFZDV2NNMFVlWmlqUDZzSURVZlpfOUVXdw?oc=5" target="_blank" rel="noopener">[Bloomberg] Xi Touts China’s Super-Large Market as Key to Boost Local Demand</a>
+                    <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE16dzNkZVlHZFJDR1lFLUZsSVU5X1JMVm00MGxTVjBjdm9NYUZ0d1RlMi11MjlmUUxYMmVPYzN4cUVPZ3RBODBKQjFnbkNKakRqNm9OeXlOLVpQQi1oQU9fak5TRXZuWEZ6M1ZMVFUtQ1FsbTVIOERJ?oc=5" target="_blank" rel="noopener">[The Economist] Dubai’s crazy rich Chinese</a>
+                    <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxPRUowdlhWc2g2aURDbmhvdlZIbF8zbVk1bEFKdXRuRTViamZodWJfUkEtakhnYzNhLS1ZbTRWUHpoNDlCeFE2RWNlbjRKNHczZnpjM19TLTNwaDdzTEIxaDZWRWhLNmxwZnRUTDFNZFRpa3JlRWFpY3RDYXctTC1JZ2xfOThMMmw4bkVKM2JtM2V1WkI3RVgw?oc=5" target="_blank" rel="noopener">[The Economist] India’s pollution is becoming an economic roadblock</a>
+                    <span class="sector-tag">中国消费</span>
+                    <span class="sector-tag">奢侈品</span>
+                    <span class="sector-tag">旅游</span>
+                    <span class="sector-tag">基础设施建设</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>全球市场前瞻：关注PCE通胀数据与“恐慌交易”风险</div>
+                <div class="topic-title-en">Global Market Outlook: Focus on PCE Inflation Data and Risks of 'Scare Trading'</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    CNBC报道称，全球市场即将迎来的一周将警惕更多的AI噪音和“恐慌交易”。巴伦周刊也指出PCE通胀数据、沃尔玛等公司财报是本周关注重点。这表明在AI板块波动和地缘政治不确定性背景下，市场情绪脆弱，即将公布的核心通胀数据将成为评估美联储政策路径和决定市场方向的关键催化剂，可能引发剧烈波动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/global-week-ahead-markets-brace-for-more-ai-noise-and-scare-trading.html" target="_blank" rel="noopener">[CNBC] Global week ahead: Markets brace for more AI noise and 'scare trading'</a>
+                    <a href="https://news.google.com/rss/articles/CBMioANBVV95cUxNNjB6T2pTejBETzQyZ2RlTzVFYlc3czU4bkVpc2d5S01GQ3ZHOXpTdVRuQ09ZVW40VGtHZjBfV19aNTZNa2J3aXRqeEpqWm5FZ0drMEQ0cWpwbFBzWHM4Z3ZGX2p5eVlGZ1gtOVY5TmdtbXhSUnJyOE5MbWRFdGlWX1IxRW5wZEZtbDVXM3pYZlEzaDFwSjN5SThKbnJVeThwaldLRjNTUnZtUVBaMFhoZ1c2LURBbWJrS01lY2xEYzF0WVJOTWlyQTJDNGp6cHhzTGtYQUJ3Y29lQUhBUmxKR2d5bmJZRkI0NlJZbTRvS0oyVXF5ZWpoQWJMOU03OTE3Q3cwaERoUEVjcXl5N1lGOURfcWhRdzRCenZCaTRCaE5uMXZucF9IN0dVZGVFSWRTdDJrNkUxM1pXd0xkS3FhYVNlRmwzMzgxOHpUMWdaSzFCSTV3V040OWFxUjZ6eHdGblBZZ1d6ckxndlZZQi1GWXpXMFIxTHo0NmI4Vk9UVXFYaUZEa05LOXl0ZnAxYkVlWUFZSnIyUVRFTVM0WkRDaw?oc=5" target="_blank" rel="noopener">[Barron's] PCE, Walmart, Palo Alto, Analog Devices, Deere, and More to Watch This Week</a>
+                    <span class="sector-tag">整体股市</span>
+                    <span class="sector-tag">债券市场</span>
+                    <span class="sector-tag">消费必需品</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国PCE通胀数据</li>
+                <li>沃尔玛等零售巨头财报</li>
+                <li>华纳兄弟与派拉蒙潜在交易进展</li>
+                <li>比特币ETF资金流动数据</li>
+                <li>美国酒店业运营成本与定价策略变化</li>
+                <li>中国提振内需政策细节</li>
+                <li>俄乌冲突与伊朗核协议相关地缘政治进展</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
