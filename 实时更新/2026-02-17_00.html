@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-17 00:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-17 00:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场聚焦中美AI领域激烈竞争与全球地缘政治风险，投资者在关键宏观数据公布前维持谨慎情绪。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>全球AI竞赛白热化：字节跳动遇阻，阿里巴巴升级，OpenAI扩军</div>
+                <div class="topic-title-en">Global AI Race Intensifies: ByteDance Faces Hurdles, Alibaba Upgrades, OpenAI Expands</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    字节跳动旗下AI视频应用因迪士尼法律威胁而主动设限，突显生成式AI在版权和内容安全上面临的监管与法律风险，可能短期抑制其全球扩张速度。与此同时，阿里巴巴发布重大AI模型升级，旨在与即将发布的DeepSeek等国内竞品抗衡，中国科技公司在AI基础模型领域正加速追赶，可能重塑全球AI供应链和竞争格局。OpenAI吸纳OpenClaw创始人，显示头部企业正通过人才争夺巩固技术壁垒。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c93wq6xqgy1o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] ByteDance to curb AI video app after Disney legal threat</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOT2JYVTVSMGZMdEZJN2dLVjA5U29mSWtmRGdFRVBLeFYyM21jcnZORVpfUUxxYnA3SXZUTkFybEdVZlB0aWlqVU5IdzhNamJCRGpzMVNWeTFFVi1xd3pfdUZQYThXSlhhUXRNVENySlJ2bk1qVDRBWjlNSXFlRmUxaE83R245VjZKMjZPSndfSFp6TDB4MC0ydEp0b2NJcHc4MlFra212X01vRzZWT05JTmNDNmdhdw?oc=5" target="_blank" rel="noopener">[Bloomberg] Alibaba Unveils Major AI Model Upgrade Ahead of DeepSeek Release</a>
+                    <a href="https://www.cnbc.com/2026/02/15/openclaw-creator-peter-steinberger-joining-openai-altman-says.html" target="_blank" rel="noopener">[CNBC] OpenClaw creator Peter Steinberger joining OpenAI, Altman says</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">传媒娱乐</span>
+                    <span class="sector-tag">软件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>地缘政治紧张局势加剧：特朗普外交政策与欧盟对华关税前景</div>
+                <div class="topic-title-en">Geopolitical Tensions Escalate: Trump's Foreign Policy and EU-China Tariff Prospects</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普拟议访问委内瑞拉并推行其石油计划，若成行可能扰乱现有国际能源制裁体系，为全球原油供应带来新的不确定性，利好部分独立石油交易商但增加市场波动。美国国务卿卢比奥公开支持匈牙利总理欧尔班，意在影响欧盟内部政治，可能削弱欧盟在对华政策等问题上的统一立场，增加欧洲资产的政治风险溢价。同时，欧盟酝酿对华加征关税，将进一步冲击全球贸易链条。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4gjx1j1nkjo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Trump eyes Venezuela visit – but obstacles to his oil plan remain</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNQ250SHMydTRJQmFJUWlDZzR0Z01XUHY0SmhoQjRLbGFudGxLd0VoV0dIU3BNNWRfUzhhVWF4U2dYTGF5X2I0aXFTeldiMUVKc05McENxTWVyMGFCS1F2MU5NTHN2NHdhY1Y1RnFXb2pvd1FxZTNlZDFmS1o3T1BCR01ob3ZHQ1VyUEtmTHpibk9ESTdaZXljZTNXSllnRmkzbktRa3l3Rl9VTV9fa1VkRmVPekJzUQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Rubio Pledges US Support for Orban Ahead of Hungary’s Vote</a>
+                    <a href="https://www.cnbc.com/2026/02/15/some-europeans-welcome-rubios-warm-words-others-remain-cautious.html" target="_blank" rel="noopener">[CNBC] Some European policymakers welcome U.S. Secretary of State Rubio's warm words, others remain cautious</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">欧洲股市</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>AI颠覆性冲击：多数软件公司生存堪忧，市场面临深度洗牌</div>
+                <div class="topic-title-en">AI Disruptive Impact: Survival of Most Software Firms in Question, Market Faces Reshuffle</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    有顶尖基金认为，AI的普及将导致仅有少数软件公司能够生存，绝大多数传统软件企业面临被整合或淘汰的风险。这一观点与市场近期对“AI失败者”的抛售相呼应，德意志银行指出其下跌种子早在2022年就已埋下。这预示着一场深刻的行业结构性变革，投资者需要重新评估软件板块的估值逻辑，从关注增长转向关注其在AI生态中的不可替代性和盈利能力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQTi1INlhzN3VBbW5CdWNCZ3ZQa1RTaHdDeHBvbGYzQ0l3ZVdkNTR3X2lvWDUybTlDQ0ZUU0JDdU54Nzhnc1VXd0QxOGJXc1RLQnItMEdhWW9Ha2VxUXhFS0wzMWV4WGJSaVI4SnhscXl5VnQ2eHdWTmpiVDFqQUdBNU1oVzNJN1JxY09mX0ZlZ2lWcUs4V3pQZmVpbFZLY182U2F4cVJMTFJRaUdNbnhpUFJn?oc=5" target="_blank" rel="noopener">[Bloomberg] Fund Beating 99% of Peers Sees Few Software Firms Surviving AI</a>
+                    <a href="https://www.marketwatch.com/story/the-seeds-of-the-dramatic-sell-off-in-ai-losers-were-planted-as-far-back-as-2022-says-deutsche-bank-f144f47b?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The seeds of the dramatic selloff in AI losers were planted as far back as 2022, says Deutsche Bank</a>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">信息技术服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>全球航运业整合加速，能源运输格局生变</div>
+                <div class="topic-title-en">Global Shipping Industry Consolidation Accelerates, Energy Transport Landscape Shifts</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    赫伯罗特拟以高溢价收购以色列同行，表明航运业正通过并购提升规模效应和定价权，以应对红海危机等不确定性和潜在需求变化，行业集中度提升可能利好头部公司。与此同时，市场出现对超级油轮的巨大赌注，反映交易商预期未来原油运输需求旺盛或运距拉长，这可能与地缘政治动荡导致的贸易路线改变有关，直接影响原油运输成本和国际油价结构。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/shipping-industry-set-to-consolidate-as-hapag-lloyd-to-buy-israeli-firm-for-58-premium-35839cf0?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Shipping industry set to consolidate as Hapag-Lloyd to buy Israeli firm for 58% premium</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQMUNscTFsOEh6VFVIby01UHZDdEVrUVhaNGV2V0k0UnBKTUNzLVU5c3pQZm11clhTSUhTZDBxUjBYdjJNZ0VxbUk5cTFlZkh6dkVOeWlfUlowdWhMWXFVRUU4eFpWVUhMLW5Vb211ODlaQmRsbHJ6bHNJMVJ2Y1BOSlRYbXctUFh3Z2VoV1JiNEMwckNjNWhXVmMtT3R0dXpuN1FnaHhGZEp3MVY5akkxOHR6eFE?oc=5" target="_blank" rel="noopener">[Bloomberg] A Huge Bet on Supertankers Reverberates Through the Oil Market</a>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">物流</span>
+                    <span class="sector-tag">能源</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>美国大选后政策转向：能源、监管与贸易前景不明</div>
+                <div class="topic-title-en">Post-Election US Policy Shift: Uncertainty Looms Over Energy, Regulation, and Trade</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普政府据称考虑对AI公司Anthropic处以重罚，显示其可能对科技巨头采取更强硬的监管立场，增加行业政策风险。古巴因美国封锁加深导致的能源危机而暂停标志性活动，暗示美古关系可能再度紧张。国内方面，学生贷款减免政策窗口期将结束，可能影响部分家庭的消费能力。这些迹象表明，新政府的政策重心正在调整，可能从宽松转向更注重产业竞争和国家安全，对科技、能源、消费等多个领域产生深远影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/hegseth-reportedly-considering-severe-penalty-on-anthropic-as-negotiations-stall-16dae92f?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Hegseth reportedly considering severe penalty on Anthropic as negotiations stall</a>
+                    <a href="https://www.cnbc.com/2026/02/16/cuba-cigars-fuel-shortage-energy-crisis-trump.html" target="_blank" rel="noopener">[CNBC] Cuba suspends annual cigar festival as U.S. oil blockade deepens energy crisis</a>
+                    <a href="https://www.cnbc.com/2026/02/16/student-loan-parent-plus-forgiveness.html" target="_blank" rel="noopener">[CNBC] Parents with student loans have a short window to secure affordable repayment and forgiveness</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">金融服务</span>
+                    <span class="sector-tag">消费</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>中国科技冲击波持续，AI与半导体领域引关注</div>
+                <div class="topic-title-en">China's Tech Shockwave Continues, AI and Semiconductor Sectors in Focus</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    CNBC报道指出中国的科技冲击正在威胁美国的AI垄断地位且“刚刚开始”，这强化了市场对中美科技长期脱钩和竞争的预期。阿里巴巴升级AI模型，叠加中国新年期间一系列AI产品发布，显示国内AI应用层创新活跃。这将推动全球对AI算力（特别是高性能芯片）的需求，但同时也会加剧供应链安全担忧，可能促使欧美加大本土半导体制造和AI研发的投资与保护力度。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/16/chinas-tech-shock-ai-monopoly-us.html" target="_blank" rel="noopener">[CNBC] China's tech shock threatens the U.S. AI monopoly and is 'just getting started'</a>
+                    <a href="https://www.marketwatch.com/story/these-might-be-the-winners-from-the-latest-round-of-chinese-new-year-ai-launches-06779445?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] These might be the winners from the latest round of Chinese new year AI launches</a>
+                    <a href="https://news.google.com/rss/articles/CBMiiANBVV95cUxORU1rUFp0eXgxT2w4OGhFdGg4a3k2a1c1bDFzUl9DZEZHUVUwUVc1a3p2MGxQa3NtTEFtcHZLbzZFTmNCVDJPd2RmdWlXMzJtSGhhVVZYTXg1SHZFODBWUHB2eF93ekRWS0g2WWxpaWR1VE5sMlktWGxIaFRXU1hRYXNpSFZ5SlBSZFZ3RnQtZ0QyUmU3RW1SV3FwdXZGSkwxQUY2VWVmUFJEcmJmWFItMEhBNXpsRUhOdk9jb0ZDY3poLW44MkRCcldvWkZyVURKcjMyRk9MeF9ZVzN5VzdQRWR0XzRrTS1SMGxMZWE4dXR5SUt2TnFpZGliWE94VTRLOVQ4aXhBcDFIY2dmY0k3c3p2RURqM2lPVjFXRXhrR216TkczU3dYOVhGLU1RY0xUUVBscTRUOEdlc2NvOXo0S3lob3l3MjV4TUNJLXlVcFFxdXhuWlpvcVYxYlZYcDRSdGxhZ0U4SHQxdDdHVnktU3RWS2FIbS1vRkVNNm1hLUJVc2xMcXVBcw?oc=5" target="_blank" rel="noopener">[Barrons] Alibaba Upgrades AI Model. What It Means for the Software Stocks Selloff and China Fears.</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">科技硬件</span>
+                    <span class="sector-tag">软件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>央行政策与货币动态：瑞典转向欧元，美联储降息预期受关注</div>
+                <div class="topic-title-en">Central Bank Policies and Currency Dynamics: Sweden Warms to Euro, Fed Rate Cut Expectations in Focus</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    在特朗普“新世界秩序”带来的地缘压力下，瑞典加入欧元区的呼声和可能性增加，这被视为增强欧盟内部凝聚力的举措，若成真将提振欧元资产信心，但可能伴随短期政治博弈。市场关注UBS关于美联储年内仍有两次降息的预期，以及即将公布的PCE通胀数据，这将决定全球无风险利率的走向和风险资产的估值锚。花旗警告AI颠覆将导致更动荡的牛市，提醒投资者在乐观中保持对波动的警惕。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWEtJZ1pONkdRQVpWNHVNdXdRZUlkZDRCeXpISU1xMUNnSUd0QVhNMDM3U0d2NGJlVXhhMmJLZUhQR2lja3MzcFVlR2gxVUtpTmNuel9tX21TZkI0MUgwNlBZM1puRnZXQmhpaWZ6bWZ6QmRnMGF0WFBzS3RtbmVWQTRpTWNHSkVKUUNiRzZ4bDJuV0Y1Wms5M0huejc0Y2d6ZnFfa001NENKdWhrSnpsQ2hQOW1pMVpRTV9V?oc=5" target="_blank" rel="noopener">[Bloomberg] Trump’s New World Order Is Pushing Sweden to Warm Up to the Euro</a>
+                    <a href="https://www.investing.com/news/economy-news/heres-why-ubs-now-expects-two-fed-rate-cuts-later-this-year-4507616" target="_blank" rel="noopener">[Investing.com] Here’s why UBS now expects two Fed rate cuts later this year</a>
+                    <a href="https://www.investing.com/news/stock-market-news/citi-sees-a-more-volatile-bull-market-amid-ai-disruption-fears-4507674" target="_blank" rel="noopener">[Investing.com] Citi sees a more volatile bull market amid AI disruption fears</a>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">外汇市场</span>
+                    <span class="sector-tag">债券市场</span>
+                    <span class="sector-tag">泛欧股市</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国核心PCE通胀数据及美联储会议纪要即将公布</li>
+                <li>美国大选后新政府的政策执行路径</li>
+                <li>中美在AI、半导体及贸易领域的博弈进展</li>
+                <li>美国页岩油产量转折点的确认信号</li>
+                <li>沙特对华原油销售价格与量的变化</li>
+                <li>伊朗核谈判进展对原油供应的影响</li>
+                <li>主要AI领军企业（如阿里巴巴、字节跳动、OpenAI）的财报与产品发布</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
