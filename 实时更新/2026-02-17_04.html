@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-17 04:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-17 04:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场关注焦点集中于全球AI技术竞争与监管动态，同时地缘政治不确定性及美股相对疲软表现加剧投资者谨慎情绪。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>全球AI竞争白热化：中国公司升级模型，美国面临挑战与监管冲突</div>
+                <div class="topic-title-en">Global AI Race Heats Up: Chinese Firms Upgrade Models, U.S. Faces Challenges and Regulatory Clash</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    阿里巴巴宣布对其AI模型进行重大升级，以应对即将发布的DeepSeek，突显中国在AI领域的追赶势头，可能重塑全球软件及芯片供应链格局。与此同时，字节跳动旗下AI视频应用因迪士尼法律威胁而计划增加保障措施，而OpenAI则招揽OpenClaw创始人以增强实力，显示出行业在快速创新与版权监管之间的紧张关系。这预示着AI领域的投资将更加集中于技术领先且能妥善处理合规风险的巨头。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOT2JYVTVSMGZMdEZJN2dLVjA5U29mSWtmRGdFRVBLeFYyM21jcnZORVpfUUxxYnA3SXZUTkFybEdVZlB0aWlqVU5IdzhNamJCRGpzMVNWeTFFVi1xd3pfdUZQYThXSlhhUXRNVENySlJ2bk1qVDRBWjlNSXFlRmUxaE83R245VjZKMjZPSndfSFp6TDB4MC0ydEp0b29JcHc4MlFra212X01vRzZWT05JTmNDNmdhdw" target="_blank" rel="noopener">[Bloomberg] Alibaba Unveils Major AI Model Upgrade Ahead of DeepSeek Release</a>
+                    <a href="https://www.bbc.com/news/articles/c93wq6xqgy1o" target="_blank" rel="noopener">[BBC Business] ByteDance to curb AI video app after Disney legal threat</a>
+                    <a href="https://www.cnbc.com/2026/02/15/openclaw-creator-peter-steinberger-joining-openai-altman-says.html" target="_blank" rel="noopener">[CNBC] OpenClaw creator Peter Steinberger joining OpenAI, Altman says</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">互联网</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>地缘政治风险升温：特朗普的委内瑞拉石油计划与中东局势影响油价</div>
+                <div class="topic-title-en">Geopolitical Risks Escalate: Trump's Venezuela Oil Plan and Middle East Tensions Impact Oil Prices</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    前总统特朗普计划访问委内瑞拉并推动其石油计划，但面临重大障碍，此举可能长远改变全球能源供应格局，增加市场不确定性。同时，美国与伊朗即将进行的核谈判以及中东地区持续的紧张局势，直接导致原油价格上涨。地缘政治博弈成为短期内油价波动的主要驱动因素，投资者需警惕供应中断风险及由此引发的通胀压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4gjx1j1nkjo" target="_blank" rel="noopener">[BBC Business] Trump eyes Venezuela visit – but obstacles to his oil plan remain</a>
+                    <a href="https://www.investing.com/news/commodities-news/oil-drifts-ahead-of-usiran-nuclear-talks-4507335" target="_blank" rel="noopener">[Investing.com] Oil prices rise 1% ahead of US-Iran nuclear talks</a>
+                    <a href="https://www.marketwatch.com/story/the-shale-boom-that-made-the-u-s-the-worlds-top-oil-producer-is-nearing-a-crucial-turning-point-a7bf72f8" target="_blank" rel="noopener">[MarketWatch] The shale boom that made the U.S. the world’s top oil producer is nearing a crucial turning point</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">油气开采</span>
+                    <span class="sector-tag">航运</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>美股表现疲软，国际股市吸引力相对上升</div>
+                <div class="topic-title-en">Weak U.S. Stock Performance, Rising Attractiveness of International Equities</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    巴伦周刊报道指出美国股市正被外国竞争对手超越，这促使部分投资者效仿巴菲特，将目光转向国际市场的价值机会。与此同时，有分析认为尽管普遍受追捧的股票通常表现不佳，但苹果公司是个例外，这反映出市场对高质量、具备强大生态护城河公司的持续青睐。这种分化意味着选股策略变得尤为重要，资金可能从估值较高的宽基美股流向其他区域或特定板块。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMilgNBVV95cUxPOTFRQW5rMzFEbnVCeEYyd2NDMXJNYWZEZWhYU3RNdUxJSjkwVDVYSEhCUlVPQjRBLVJxSXozUWxGc1pYbFlRYUxZTW9xVjdXenl2UkxrMnFlN05TU1lwRGtWaVhsY3d4UTctMGd2d2dwTW16M0Q4cHJxcHZwd3UySFMya3VlWENhM3dvMnN5SVVJbjBXVGFOb3EyUGVGenAxdG1xMGpkbV83MGQ2TkxSZzVudUpQSHAzM09ONHFycVlyUHZFaDVYeFY0S3pyaG1SRVE4bDVIR281Qy13SGM4dkJaZmEzWFpLZnRxZkJrVTFOYzhFZTN0dmNObFpIdVZhS0ktakh2dms4X19oWFItNEtFWGZjMTY4Z2dMYmlEOUl3TXZDanhYaEFyTFYtRDFYR0lfdVNfNzZobDBfeUtrdEhzVXpwOU1LY1BJLXVSa0lNWk8zOVlJZkNFazY4VmxLZDR2alNjZW94RU9EOWEtVFYxem1qRWwtUzdMT3BLdTZDWk13aWtpdWhCQjVHS3NXSWtqSGJB" target="_blank" rel="noopener">[Barrons] U.S. Stocks Are Being Trounced by Foreign Rivals. Play It Like Buffett and 5 More Things to Know Today.</a>
+                    <a href="https://www.marketwatch.com/story/buying-stocks-everyone-admires-is-a-recipe-for-underperformance-but-apple-breaks-the-rule-26de6e2f" target="_blank" rel="noopener">[MarketWatch] Buying stocks everyone admires is a recipe for underperformance — but Apple breaks the rule</a>
+                    <span class="sector-tag">美股大盘</span>
+                    <span class="sector-tag">国际股市</span>
+                    <span class="sector-tag">科技股</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>行业整合加速：航运业巨擘Hapag-Lloyd拟高溢价收购</div>
+                <div class="topic-title-en">Industry Consolidation Accelerates: Shipping Giant Hapag-Lloyd Plans High-Premium Acquisition</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    赫伯罗特（Hapag-Lloyd）计划以58%的溢价收购一家以色列航运公司，标志着全球航运业新一轮整合浪潮的开始。在运力过剩和运价波动的背景下，行业巨头通过并购扩大规模、优化网络以增强竞争力，这可能改善行业整体的盈利能力和定价权。投资者应关注物流及海运板块的后续并购活动，龙头公司的市场份额和成本优势有望进一步扩大。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/shipping-industry-set-to-consolidate-as-hapag-lloyd-to-buy-israeli-firm-for-58-premium-35839cf0" target="_blank" rel="noopener">[MarketWatch] Shipping industry set to consolidate as Hapag-Lloyd to buy Israeli firm for 58% premium</a>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">物流</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>美国劳动力市场隐忧：长期失业问题日益结构化</div>
+                <div class="topic-title-en">U.S. Labor Market Concerns: Long-Term Unemployment Becoming Structural</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    CNBC报道指出，长期失业在当今就业市场中正成为一种“常态”，这对消费信心和经济内生增长动力构成潜在威胁。尽管总体失业率可能保持低位，但部分群体脱离劳动力市场的时间延长，反映出技能错配或经济转型中的深层矛盾。此趋势可能抑制消费支出增长，并增加财政在社会福利方面的压力，影响相关消费类及服务业公司的业绩前景。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/16/long-term-unemployment-becoming-a-status-quo-in-todays-job-market.html" target="_blank" rel="noopener">[CNBC] Long-term unemployment is becoming 'a status quo' in today's job market: It's a 'mental war,' job seeker says</a>
+                    <span class="sector-tag">消费品零售</span>
+                    <span class="sector-tag">非必需消费品</span>
+                    <span class="sector-tag">人力资源服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>央行政策与金融市场：美联储讲话与银行资本新规引关注</div>
+                <div class="topic-title-en">Central Bank Policies and Financial Markets: Fed Speeches and New Bank Capital Rules in Focus</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    市场将密切关注美联储官员的讲话，以获取未来利率路径的线索。同时，根据巴塞尔协议新规，美国银行可能面临新的抵押贷款资本要求，这或将提高银行的运营成本，影响其 mortgage业务利润率和股东回报。这两大因素共同作用，可能加剧金融板块的波动性，投资者需重新评估银行股的盈利模型和估值水平。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/adp-employment-ny-manufacturing-and-fed-speakers-headline-tuesdays-docket-93CH-4507761" target="_blank" rel="noopener">[Investing.com] ADP employment, NY manufacturing and Fed speakers headline Tuesday’s docket</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQLVZuRlBWNlU4NW5qQW5VbFpReFk3WmhoRVhmal9mY3ptVVFqbS1rS3hpY2hVWjJDc2FNVTVBYlBiNWtHYV93R2djMU5pVml6aHd1QVh3bHM0YU1IQkp4T0ZkNlJpbkpySjB1MXJyeThFLWxUcExkeTlmelNob1hpODVtQXg0QnpDSkZUUW8yYXBycnpWVk1vSk9zV3lBNzV2OVU5ZHBnS1pENm1Zbl9HenJpSVo" target="_blank" rel="noopener">[Bloomberg] US Banks to See New Mortgage Capital Requirements in Basel Plan</a>
+                    <span class="sector-tag">银行</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>黄金市场出现异动：期权交易员押注金价大幅反弹</div>
+                <div class="topic-title-en">Gold Market Anomaly: Options Traders Bet on Significant Rebound Despite Correction</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    在金价经历回调后，期权交易员反而加大了对金价大幅上涨的看涨押注，这通常被视为一种逆向信号。这背后可能反映了市场对潜在地缘政治风险、通胀反复或美元走弱的深度担忧。若这些“长线赌注”方向正确，可能意味着黄金作为避险资产和通胀对冲工具的需求将再次被点燃，推动金价突破当前盘整区间。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPTTFtYXZvYXNYcjNfUHU5OW8zazB1ZHJySHNuaEpmdC0yamE1V0h4dDRjRU1NQWJQWlFER0lzZlRQMWJIVTgzdFlsUDlEeTVBYjdUYTZoVEdOdExQSmtQbU53TkotTC0yWjIxX1YtazZQU1hEQ3RSbFo1eVduRG1WdXNyY3ZLMFdYWUcwWW5KajZMTzkxRWk3Y2EwM1BtVWN0SUNvTk9pWlB0NjdacXNBRVNQUlE" target="_blank" rel="noopener">[Bloomberg] Gold Options Traders Boost Long-Shot Bets Even After Correction</a>
+                    <span class="sector-tag">黄金</span>
+                    <span class="sector-tag">贵金属</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>AI监管与军事应用引发道德与商业博弈</div>
+                <div class="topic-title-en">AI Regulation and Military Applications Spark Ethical and Commercial Game</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    Anthropic与美国国防部的谈判因AI用于监控和武器开发的议题而陷入停滞，凸显了尖端AI技术商业化和军事化应用之间的巨大伦理与政策鸿沟。与此同时，中国科技的冲击被指威胁美国AI垄断地位。这预示着未来AI巨头的发展不仅取决于技术实力，更将受制于地缘政治和国内监管框架，投资者在评估AI公司时需将政策风险溢价纳入考量。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPWURnT2Y1Mk44ZUxZeDFpSmEyZE1mcXJYYjQwYUNqb2hZZVQyR3pFelp4RzRBY0dTRjR5eldhWFVRWGszMHVrRkVRWGdwOXN5ZGxLVjVaTVNRUzMwN1hVME9hd3BfenBHWmZ1bktxekM4cXRPSDRnVzI5N1lvRmZIbmpOSHRHN3dlR280dlU2SFAybkNOb2swa1VRM0s0VEFJN1c5OGdVd0VOcVdTN29Z" target="_blank" rel="noopener">[Bloomberg] Anthropic’s Pentagon Talks Snag on AI for Surveillance, Weapons</a>
+                    <a href="https://www.cnbc.com/2026/02/16/chinas-tech-shock-ai-monopoly-us.html" target="_blank" rel="noopener">[CNBC] China's tech shock threatens the U.S. AI monopoly and is 'just getting started'</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">网络安全</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>原油价格因地缘风险上涨1%</li>
+                <li>美国股市表现落后于国际竞争对手</li>
+                <li>赫伯罗特拟以58%溢价收购以色列航运公司</li>
+                <li>长期失业问题成为美国劳动力市场结构性问题</li>
+                <li>黄金期权市场出现反向看涨押注</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
