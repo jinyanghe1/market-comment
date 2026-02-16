@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-16 12:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-16 12:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场聚焦AI科技发展与企业并购，亚洲经济数据疲软与地缘政治风险引发谨慎情绪。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI人才争夺与芯片需求激增，科技资本活跃</div>
+                <div class="topic-title-en">AI Talent War and Chip Demand Surge Fuel Tech Investment Boom</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    OpenAI招募OpenClaw创始人Peter Steinberger，显示AI代理竞争加剧；Blackstone领投6亿美元给AI公司Neysa，反映资本持续涌入。AI对内存的狂热需求正加剧芯片短缺危机，可能推动半导体板块业绩增长。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/openclaw-creator-peter-steinberger-joining-openai-altman-says.html" target="_blank" rel="noopener">[CNBC] OpenClaw creator Peter Steinberger joining OpenAI, Altman Says</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNNm9sQk9jTXp4dHcwalZsMFRtTDFrVDJuZHhiT0QyeGJ4M05GeElvTmpWT1M4Zl9oaHI2UUZZaXlTcnhrSHg3SnE2N1dNTXdYeWN4cng2aXh6V2VsOFFjVlpuNjZKeDdOV1dyVTl4WUZ5U1hKQXBzRkFfMmF4RTFRYWhGWmVPQlZKREZCNUMwZlNRTUp0MV9NazZyRjl4YUQ0UEhmb3FHWEd3QzlXNmZFVXVB" target="_blank" rel="noopener">[Bloomberg] Rampant AI Demand for Memory Is Fueling a Growing Chip Crisis</a>
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNNDNId3g2UjF1bGdsdHJzRUUtUzlCaVJiYXZTTlhIUlBNY0pzcFl6cXJLYzBRbFhBMDJPaEtfODlrMDVYNmNnZUZSNXM2emNKOHVkNk0yYUZKdkFaQXhCV25iM2Fud3A5SVg4cjQ1U3Y4VDBIS0oycDJndVZ3bklPcnpVWnhZdFhhNU9HNkJsR0JUeWpxSTlxZExEMXJLLVlodnppNmd2RUdtNTY3SlE" target="_blank" rel="noopener">[Bloomberg] Blackstone to Lead $600 Million Investment in AI Firm Neysa</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">人工智能</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>媒体行业整合加速，华纳兄弟或重启与派拉蒙谈判</div>
+                <div class="topic-title-en">Media Consolidation Accelerates as Warner Bros. Weighs Reopening Talks with Paramount</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    华纳兄弟探索公司可能在新条款下重启与派拉蒙的销售谈判，若达成将重塑流媒体竞争格局。这一并购反映了传统媒体应对数字转型的压力，可能提升行业集中度，但面临监管审查风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/warner-bros-discovery-paramount-netflix.html" target="_blank" rel="noopener">[CNBC] Warner Bros. may reopen sale talks with Paramount following new deal terms, Bloomberg reports</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOSHlNSTV2cndLWUVwRFY2VW4tUEk4TkJEcy1vRTU2RDUwZnlUNFprVVBzY196cEgyMkhqZ09YSkVYQ2owUTNMZXlOSjBXUnVXSGktZUJsTHV0UjMwVkd3R1VPMFVzZERzdEdRdFBmQTFhOGd3eW9INlBZam81T3lad3hzYmY0RGpaa3RqcTY0Wi1zaGZSc2szQVpwS0tLLV9lMFRyQXBqY0NuV3BTQTY5VE5R" target="_blank" rel="noopener">[Bloomberg] Warner Bros. Weighs Reopening Sale Negotiations With Paramount</a>
+                    <span class="sector-tag">媒体</span>
+                    <span class="sector-tag">娱乐</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>日本经济避免技术性衰退但增长疲软，央行政策受关注</div>
+                <div class="topic-title-en">Japan Avoids Technical Recession but Growth Remains Weak, BOJ Policy in Focus</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    日本第四季度GDP反弹至正增长，但远低于预期，反映消费和资本支出乏力。首相高市早苗与央行行长植田和男将举行会晤，市场预期可能出台进一步财政刺激或维持宽松货币政策。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/16/japan-fourth-quarter-gdp-reverses-into-growth-but-misses-expectations-as-rebound-underwhelms.html" target="_blank" rel="noopener">[CNBC] Japan's economy avoids technical recession, but fourth-quarter rebound misses expectations</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxONkY0N0xfWGk2ckJTbThsa2VGNTNqTUJpSERuTnpTSEZyeXV0bGc0ZFNzR3lFbDhTSExLeF8zMl9ZWXlhbHlNQ25wSEd5R0otVWFkY2FFTHA4dEtOTXdoRnc0aXhaeDFoTHlOQjJ3RHlhd2FaOGlDMnFETEx4VjVZZ295S3liNDI3WVdLT1M5bkZYQzU5TUJtam5GMU5kV2EtRmpyNDFEWXNRLWxUaFR5NWtrQQ" target="_blank" rel="noopener">[Bloomberg] Japan’s Economy Ekes Out Anemic Growth as Takaichi Eyes Spending</a>
+                    <span class="sector-tag">日本经济</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">消费</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>欧洲寻求国防自主以减少对美国依赖，国防板块受益</div>
+                <div class="topic-title-en">Europe Aims for Defense Autonomy to Reduce US Reliance, Boosting Defense Sector</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    特朗普政府对格陵兰的推动促使欧洲加速战略自主，计划减少对美国国防的依赖。这可能增加欧盟成员国的国防开支，利好欧洲国防承包商，并推动相关产业链发展。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/world-news/analysiseurope-aims-to-rely-less-on-us-defence-after-trumps-greenland-push-4507301" target="_blank" rel="noopener">[Investing.com] ANALYSIS-Europe aims to rely less on US defence after Trump’s Greenland push</a>
+                    <a href="https://www.cnbc.com/2026/02/15/some-europeans-welcome-rubios-warm-words-others-remain-cautious.html" target="_blank" rel="noopener">[CNBC] Some European policymakers welcome U.S. Secretary of State Rubio's warm words, others remain cautious</a>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">欧洲股市</span>
+                    <span class="sector-tag">工业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>黄金价格从5000美元高位回落，获利了结压力显现</div>
+                <div class="topic-title-en">Gold Retreats from $5,000 Per Ounce as Traders Lock in Gains</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    金价在突破每盎司5000美元后出现调整，主要因交易员获利了结。尽管地缘政治风险支撑长期避险需求，但短期技术性回调可能持续，影响大宗商品市场情绪。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxONHIzV1I2MFhIN3lOUk5xZk1aTzJneTBjRmx3Y1luTjhrZU1sQWE0UkMwazZkTmFXamNFTnJOQlJwZUhVY21iX0Rhd0o0MUZfSGlJUGpJN1pYTUVMUVVqc0Z5eVNvTW9qVVVtcFNicUpGRUIxNmcxUWZzVEJlWGtuc3kxRkR2UEdUTS1qMEV4bzFwY3ktV0VQRFlPa2xPSXRPTDY5eFlsbXkzNWg3LVRF" target="_blank" rel="noopener">[Bloomberg] Gold Retreats as Traders Lock In Gains Above $5,000 an Ounce</a>
+                    <a href="https://news.google.com/rss/articles/CBMipwNBVV95cUxQOWlPQTVaMzJjUGRTXzhSUk1mNVhkU3NmQTZOcXBlamxCa01Tb2tHcGoyOW10VGVQcElwYldRUldTYW5TS1AzV0tYdmdMc09CSFhRWDJZME05NXlHLXRXUWE5cTU2TUdfYVpFUzU0Z2RFcHotdUJCTXRqbFNkQU0yaTdibUNlQWRQcVJJRV84LXJVemJLMk1kT0NaUU9mc3cxRkpCcGh6OG5OZDM4M1BvYWo1UHQwbTdNNzNYb2MtMjEwQ05DbklROU5ScWdFRU1sWVZscVJVYXBKZnliNjI1YTM0WmVWZnlySEhUdzJ3Sm56bkFJZDl3QnB3bndUNEF5ZC03NVZoWWgxVkVVdnllMENwYlkwcnVYWGlndXE2WVVsdGJJWDRHZFFOaDRYRHAtanp4cjhSYmhJMkd6dzU4SklqUktvUEUteXBKX2ZGdEZQZXBkVUlXWk5iT3dXN3ZRMU5ROE9JNzJaMWVmUklpQ1Z2SmY1X25uUk5LMVYyN0VRVDY4aUxIUDRGMWtaRWZmSGZyWVloQ2lCdUxmTDlTYXJ6UW1RaE0" target="_blank" rel="noopener">[WSJ] Gold Falls on Possible Position Adjustments</a>
+                    <span class="sector-tag">黄金</span>
+                    <span class="sector-tag">大宗商品</span>
+                    <span class="sector-tag">贵金属</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>比特币ETF资金流放缓但未现恐慌，加密货币市场情绪稳定</div>
+                <div class="topic-title-en">Bitcoin ETF Flows Slow But No Panic, Crypto Market Sentiment Steady</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    比特币价格暴跌期间，ETF资金流出规模有限，表明投资者并未陷入恐慌性抛售。这反映出机构投资者对加密货币的长期信心仍存，市场可能避免‘加密货币寒冬’的极端场景。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/bitcoin-price-crash-crypto-winter-investors-etf-flows.html" target="_blank" rel="noopener">[CNBC] In bitcoin price plummet, ETF flows are down but aren't signaling 'crypto winter' investor panic</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">区块链</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>加州汽油短缺转向进口，美伊核谈判影响石油供应预期</div>
+                <div class="topic-title-en">California Gasoline Shortage Turns to Imports, US-Iran Nuclear Talks Affect Oil Supply Outlook</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    加州汽油短缺迫使从巴哈马进口燃料，凸显美国炼油能力与供应链瓶颈。同时，美伊核谈判重启在即，可能缓解中东紧张局势并增加全球原油供应，但谈判不确定性仍支撑油价波动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPMVdPblRmMHdhZ19JclY2R1Nac1l6WnA0c09lYzVwZGZmLWs1Y1QtVERNNFdBWTBrWGthOEJkc1FNMFFhRGRKYW9IeDFxVHhJUElzUThaU1ZwVzVjcGxOUmp2MDEwMlMybDJMcjBfdmtXbk80ajVqdUJLakZyYlRUc09YQTg1dm5UX1hiVmVXM2QydGxfTXlxcU9xMXdwSGk5dzl3VnNSdm5hZElfQXRpZ0ZBUUc" target="_blank" rel="noopener">[Bloomberg] Gasoline-Starved California Is Turning to Fuel From the Bahamas</a>
+                    <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxOYmVtRjJWUXJxaVFsQjQ5M3pkM2VNdjlfX0xiVEE3OVdoTE8ybUZDN0otbk4wU3RHTWxSSFB3Q05JVkZEUkppX2E4REFpWVpiT0RYcGlqR2FEb2lSQ2RRU2xVdy1MNHl1dXo3bFgzWGFua0JZS0U1aEFMZnVVVHVNNm1xR0luN1BsQ0U0X1hISkYtQ0Zh" target="_blank" rel="noopener">[Reuters] Oil drifts ahead of US-Iran nuclear talks</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">石油天然气</span>
+                    <span class="sector-tag">运输</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>日本第四季度GDP反弹但不及预期</li>
+                <li>黄金价格突破每盎司5000美元后回落</li>
+                <li>比特币ETF资金流放缓</li>
+                <li>加州汽油短缺加剧</li>
+                <li>美国CPI数据提振市场情绪</li>
+                <li>欧洲国防开支计划增加</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
