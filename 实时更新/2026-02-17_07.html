@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-17 07:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-17 07:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在人工智能创新、企业财报与地缘政治紧张中呈现震荡格局。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>人工智能监管与竞争加剧</div>
+                <div class="topic-title-en">AI Regulation and Intensifying Competition</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    字节跳动因迪士尼法律威胁而限制AI视频应用，凸显版权问题对AI发展的制约；中国AI技术冲击美国垄断，阿里巴巴升级模型，全球AI竞赛白热化；印度AI峰会聚集科技CEO，显示新兴市场重要性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c93wq6xqgy1o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] ByteDance to curb AI video app after Disney legal threat</a>
+                    <a href="https://www.cnbc.com/2026/02/16/chinas-tech-shock-ai-monopoly-us.html" target="_blank" rel="noopener">[CNBC] China's tech shock threatens the U.S. AI monopoly and is 'just getting started'</a>
+                    <a href="https://news.google.com/rss/articles/CBMiiANBVV95cUxOcVFCU2phZHF3c19EcnZuUjZ6SmJLaUsxUmdza0E0MU45VmdIM2ZFNmI1VjJwSlhPZi03N1RqbXFSNExkUXFNa0FDcVZZMGVWd0QtX2JLUVBrN2xWYlQxZ0FFcENaamVpYXFHMXNXVkFYZmtwYm9hak5faVllUkpKQlV3VHNaeGF1UE9UbDBUZEtWd1drZWROdlNwSlJvRzAzak9xdVF5SExKYXgxUGJFV3ViRi1Yc2NYdU9PTmRBRFBqWWtxdklTSjJNNi1OS2lUb0RsTHIyZ1JKS1RkdFE0dzFVYWtYZ1lTSzdBNE4yYW4tVDdpaDVMN1lUV2J3eUNnS1hfVXllMWdrTVlHS01lTnFlZkhJWDNia2VBTHhhMnhISW9wMkRhNGl1aHdOSjYwelBzTXRmWHpkYW5BRTVQZlBuTTM3eS1NME5fQmRpdmRwMmEyUzJ3b2VoR2hHVUlIZXF4eDZLVVE0akZCX0FqenBURzZYSmdpSW1xT1BXbjlVN2luWHZXbg?oc=5" target="_blank" rel="noopener">[Barron's] Alibaba Upgrades AI Model. What It Means for the Software Stocks Selloff and China Fears.</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">传媒</span>
+                    <span class="sector-tag">人工智能</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>企业财报与并购活动活跃</div>
+                <div class="topic-title-en">Corporate Earnings and M&A Activity</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    必和必拓上半年利润跃升22%超预期，反映大宗商品价格走强；赫伯罗特以58%溢价收购以色列公司，预示航运业整合加速；苹果计划3月4日发布新品，挑战YouTube和Spotify，推动科技股动态。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/bhp-groups-firsthalf-profit-jumps-22-on-higher-commodity-prices-4507785" target="_blank" rel="noopener">[Investing.com] BHP Group’s first-half profit jumps 22%, topping estimates</a>
+                    <a href="https://www.marketwatch.com/story/shipping-industry-set-to-consolidate-as-hapag-lloyd-to-buy-israeli-firm-for-58-premium-35839cf0?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Shipping industry set to consolidate as Hapag-Lloyd to buy Israeli firm for 58% premium</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOOElBSUlKSEVZaU8zZmU0U19saUpTXzhudDYyUFItYnJkX09COGc3Ym85RHFnSWVIMEVqWTBOXzZvZGhQd0VmUHA1eTd1NHc5OEJKT0QyNmRKcFFSNkhTMnh1N2RrSTV5ak43aDk1R3lrRE1yTDVtdTNlZkNCY1JKQjRkNm1WcElNN2U1WXJXcVlXdUZOOVl2dmxkN2lfeXY1YWx4UEdsclF5QmhSeWxQSndaMA?oc=5" target="_blank" rel="noopener">[Bloomberg] Apple to Hold Product Launch on March 4 With Mac Updates Coming</a>
+                    <span class="sector-tag">矿业</span>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>全球经济指标与市场表现分化</div>
+                <div class="topic-title-en">Diverging Global Economic Indicators and Market Performance</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    俄罗斯股市上涨而墨西哥、哥伦比亚股市下跌，显示地区经济差异；美国长期失业成为常态，反映劳动力市场结构性问题；欧元区财长推动欧元更大角色，可能影响全球货币格局。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/russia-stocks-higher-at-close-of-trade-moex-russia-index-up-019-4507777" target="_blank" rel="noopener">[Investing.com] Russia stocks higher at close of trade; MOEX Russia Index up 0.19%</a>
+                    <a href="https://www.investing.com/news/stock-market-news/mexico-stocks-lower-at-close-of-trade-spbmv-ipc-down-013-4507782" target="_blank" rel="noopener">[Investing.com] Mexico stocks lower at close of trade; S&P/BMV IPC down 0.13%</a>
+                    <a href="https://www.cnbc.com/2026/02/16/long-term-unemployment-becoming-a-status-quo-in-todays-job-market.html" target="_blank" rel="noopener">[CNBC] Long-term unemployment is becoming 'a status quo' in today's job market: It's a 'mental war,' job seeker says</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPdE9mdVVKN05jOUFLbXVlcmFHSkdtcVpBclAyWW5MdElqMk12bUlXLXIxX0dDTmRXTGpqa1hmeG5ISl9kSHJwMlV2THdkNEVRNkkzeHhNUWpfN0xLY0RLbGRValNFZlRtbGpmVDRFYXZfejdKdi11TnRxY0otQTB6ZmF6VkRiVm1hdHFkYUEzU09ZMW1JVjF3Z2dkd2c4akt0cWRXVmlGS3N1bjBOMEtUeXRFcG82Zw?oc=5" target="_blank" rel="noopener">[Bloomberg] Euro-Area Finance Chiefs Push for Bigger Role of Single Currency</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">全球市场</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>地缘政治紧张与石油市场波动</div>
+                <div class="topic-title-en">Geopolitical Tensions and Oil Market Volatility</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普考虑访问委内瑞拉但石油计划面临障碍，可能影响全球原油供应；美国页岩油繁荣面临转折点，预示能源格局变化；卢比奥承诺支持匈牙利欧尔班，影响美欧关系。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4gjx1j1nkjo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] Trump eyes Venezuela visit – but obstacles to his oil plan remain</a>
+                    <a href="https://www.marketwatch.com/story/the-shale-boom-that-made-the-u-s-the-worlds-top-oil-producer-is-nearing-a-crucial-turning-point-a7bf72f8?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The shale boom that made the U.S. the world’s top oil producer is nearing a crucial turning point</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNQ250SHMydTRJQmFJUWlDZzR0Z01XUHY0SmhoQjRLbGFudGxLd0VoV0dIU3BNNWRfUzhhVWF4U2dYTGF5X2I0aXFTeldiMUVKc05McENxTWVyMGFCS1F2MU5NTHN2NHdhY1Y1RnFXb2pvd1FxZTNlZDFmS1o3T1BCR01ob3ZHQ1VyUEtmTHpibk9ESTdaZXljZTNXSllnRmkzbktRa3l3Rl9VTV9fa1VkRmVPekJzUQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Rubio Pledges US Support for Orban Ahead of Hungary’s Vote</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">地缘政治</span>
+                    <span class="sector-tag">外交</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>金融监管与股息策略调整</div>
+                <div class="topic-title-en">Financial Regulations and Dividend Strategy Adjustments</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国银行面临巴塞尔计划下的新抵押资本要求，可能影响信贷市场；欧洲股息投资受关注，反映投资者寻求收益；国库葡萄酒暂停股息，显示企业财务压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQLVZuRlBWNlU4NW5qQW5VbFpReFk3WmhoRVhmal9mY3ptVVFqbS1rS3hpY2hVWjJDc2FNVTVBYlBiNWtHYV93R2djMU5pVml6aHd1QVh3bHM0YU1IQkp4T0ZkNlJpbkpySjB1MXJyeThFLWxUcExkeTlmelNob1hpODVtQXg0QnpDSkZUUW8yYXBycnpWVk1vSk9zV3lBNzV2OVU5ZHBnS1pENm1Zbl9HenJpSVo?oc=5" target="_blank" rel="noopener">[Bloomberg] US Banks to See New Mortgage Capital Requirements in Basel Plan</a>
+                    <a href="https://news.google.com/rss/articles/CBMiggNBVV95cUxQeFBzc1V0dU00MlRzaFRWenlYOXNfLVJjX1V2eXpoMTRVNGlRUThkME1EZFFNdTJIYXhYQVA1YmtfSGNsQjJiWWg1RUJKcW5wLU9KQWsyREw3VDRzQmV3MVJxMjVfZDBiOVlySUR4RXpQWDZINFh5X1Zqa3c0QXloM1JrdUkwVlczUTAwcXFHbGZiTVk3Y0xtY2tNSEFpMXRZZGtXeDVBREpjTkdDT0pRQlBWWmZtckRDSlR5U3M0dy1CNUxFWkZDWGVNVnJZWXFZV0xSVTFXcnVNeFlFNUtMMEtjZGZRLVBMdXh0V2U3YTlZUXhibC13QUVvdW12YWZQdi1ST2R2S0lJSkduX1c5akdIWVRYZ015dlFQMExYWEc4eDFNOURmdUZBUHpFNjdCNW85VFJ5WVd6cXREaWFwS2tMbFMyN2k5c0Y1WDBodWJWRDNPSjYtSDVoVHJfaWFaZXRydDlETnpHRHZMM3JqSWF1WW1YNGpQaklCcnFSTDhudw?oc=5" target="_blank" rel="noopener">[Barron's] Looking for Dividends? Consider Europe.</a>
+                    <a href="https://www.investing.com/news/stock-market-news/treasury-wine-pauses-dividend-after-large-writedown-on-us-business-4507788" target="_blank" rel="noopener">[Investing.com] Treasury Wine pauses dividend after large writedown on US business</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">投资</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>加密货币与科技股动态</div>
+                <div class="topic-title-en">Cryptocurrency and Tech Stock Dynamics</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    比特币、以太坊等加密货币下跌，本周可能对加密市场产生重大影响；苹果股票打破常规表现优异，但科技股整体受AI恐惧与经济数据对抗，市场情绪分化。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMijgNBVV95cUxQdTBQNzNCRmY1VG5sZDMyMVdpU0w0RFZlN0JJTmxWSGdfNU53MTBSdmQtOW54UHlQNGhSYnBHb0xTZjlHQXJCTVF1R19iUldBdWw5Q1N4ajVVNHdpemxNZHE3aUc1bDJ5T211djd0Z3NXUTZHc0RJdWVDZkxvXy04NlhVdGdEMHRwY0U2bVBqMVhCckpZWXRiLThNSzhudkRVLTZpZ0JHOGtUZTVveERhdzZ4blhKNWpuT3NMZ1ZOdWZtblNFMjlnV0FRTDNmSFdXWG80V3BDSF9wOVhSNE9VYTFQVVZsMEl5aDJiZEtiY1R6b3ptMFRHVkdHTEZCSkNNN1ZFWjhoY0twdHhoN0JqS2ZKY0Z0WkNlYndCYmQxd0VtSllIazZzSDN6RWlqYVFCUENmMHJRLVpNaExkOGVWdDFpUlJzMXVIcGF1UGl3SkhKZmZDZXZySVY0bkhzaml6T0NBQWFNTTBCQXBhVmt3Mkh0dkU3VFJSbGR2NG9FWmdBOWJib0R6akdZMXRkdw?oc=5" target="_blank" rel="noopener">[Barron's] Bitcoin, Ethereum, XRP Drop. This Could Have a Big Impact on Crypto This Week.</a>
+                    <a href="https://www.marketwatch.com/story/buying-stocks-everyone-admires-is-a-recipe-for-underperformance-but-apple-breaks-the-rule-26de6e2f?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Buying stocks everyone admires is a recipe for underperformance — but Apple breaks the rule</a>
+                    <a href="https://news.google.com/rss/articles/CBMiiwNBVV95cUxOV05FbTM1NEV2bnN6Ql9hcmNmSzcwYXllb1VISDA0Uk1GTDRmcVBBMURfbTVGb3d5Vk9mTzhvUWJXMlFGOFVpZWg4clVlMnNXT1FtVEliSG03WWNnRl9ZUkV6TWpIWnBsQWFaVHpGTE52bTZtOTltZ1dCUGxOZ3Y4ZVNackpEZURibFFaSm5zVFFMNGUwUm9xVWpJRC14TFpiZTcycFZJTXJ3aWJMc1BPeEVrR1NFVFRCYUEyaUJMTms1VkhvWHNjd0VfbndRRXVDdEM2M2c1RzhGUnFjZlVCd3hfOFk2NkN4S1E0UlE1TDRCLU4xOG0tNk1mYlh1bWluekFZTEpXaERJWWlFNGE2R1lkeW5tc2FxUl9NQVBSLVE2QUdPbC0xYTRsNE9Ub01ObDhKdHZYbzZ5d2t3Q1B5U242YVNaaWlacWxkTnlyYW9uUjZLalNpLTVfLUpZdHFpZnlNczhFMUtQUWk5Tml2dnFPSHVKSjRkSE1QbHo1VFUxMHNGTEFZRDZvaw?oc=5" target="_blank" rel="noopener">[Barron's] It’s Economic Data Vs. AI Fears for Stocks This Week. There’s Only One Winner.</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">科技股</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>必和必拓上半年利润增长22%</li>
+                <li>俄罗斯MOEX指数上涨0.19%</li>
+                <li>墨西哥IPC指数下跌0.13%</li>
+                <li>美国长期失业率成为常态</li>
+                <li>赫伯罗特以58%溢价收购以色列公司</li>
+                <li>比特币、以太坊价格下跌</li>
+                <li>欧元区财长推动欧元更大角色</li>
+                <li>美国页岩油繁荣面临转折点</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
