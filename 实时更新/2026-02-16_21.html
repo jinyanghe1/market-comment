@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-16 21:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-16 21:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">全球市场呈现分化格局，AI技术竞争与地缘政治风险交织，日本经济数据疲软而亚洲部分市场受资金青睐。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>中美AI技术竞争加剧，行业面临洗牌</div>
+                <div class="topic-title-en">Intensifying US-China AI Tech Competition and Industry Reshuffle</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    中国AI企业（如字节跳动、阿里巴巴、MiniMax）在技术升级和资本市场表现活跃，对美国AI垄断地位构成冲击。同时，全球资本（如黑石）持续加码AI投资，但行业监管风险（如版权问题、Pentagon清单）与市场淘汰压力（多数软件企业或难存活）并存，预示着行业将进入激烈竞争和整合阶段。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/16/chinas-tech-shock-ai-monopoly-us.html" target="_blank" rel="noopener">[CNBC] China's tech shock threatens the U.S. AI monopoly and is 'just getting started'</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOT2JYVTVSMGZMdEZJN2dLVjA5U29mSWtmRGdFRVBLeFYyM21jcnZORVpfUUxxYnA3SXZUTkFybEdVZlB0aWlqVU5IdzhNamJCRGpzMVNWeTFFVi1xd3pfdUZQYThXSlhhUXRNVENySlJ2bk1qVDRBWjlNSXFlRmUxaE83R245VjZKMjZPSndfSFp6TDB4MC0ydEp0b2NJcHc4MlFra212X01vRzZWT05JTmNDNmdhdw?oc=5" target="_blank" rel="noopener">[Bloomberg] Alibaba Unveils Major AI Model Upgrade Ahead of DeepSeek Release</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQTi1INlhzN3VBbW5CdWNCZ3ZQa1RTaHdDeHBvbGYzQ0l3ZVdkNTR3X2lvWDUybTlDQ0ZUU0JDdU54Nzhnc1VXd0QxOGJXc1RLQnItMEdhWW9Ha2VxUXhFS0wzMWV4WGJSaVI4SnhscXl5VnQ2eHdWTmpiVDFqQUdBNU1oVzNJN1JxY09mX0ZlZ2lWcUs4V3pQZmVpbFZLY182U2F4cVJMTFJRaUdNbnhpUFJn?oc=5" target="_blank" rel="noopener">[Bloomberg] Fund Beating 99% of Peers Sees Few Software Firms Surviving AI</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOOG1UUHROMklDLUhSUkFLMFdKX0hUc3kxT3M5NTBNcWlIam13OXNENjBRaEF1Z2Y5SkNuRVlVSlBRM3o2ek9EdnRHaWNGYTc2MUxPaU8yTkJtb3p4NkxKei1oY2JERzlaZ29NMXN3Nk14SW01TUhsQ0RSUHNoX2JFQTl2aFMtbVhMaGZaMmV4WmRUb0VKU1lRYm1vcll5TlJUMWJEYUtFd1U5dWYybDBLRWgtMEU?oc=5" target="_blank" rel="noopener">[Bloomberg] Alibaba Leads Tech Slide After Pentagon Briefly Shows Blacklist</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">媒体娱乐</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>地缘政治紧张影响全球贸易与货币格局</div>
+                <div class="topic-title-en">Geopolitical Tensions Impact Global Trade and Currency Landscape</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普政府潜在的委内瑞拉石油计划和对古巴的封锁加剧了能源市场不确定性。同时，欧洲对美国新政府态度分化，瑞典因政治压力考虑加入欧元区，反映出全球地缘政治格局变动正深刻影响贸易路线、能源供应和货币联盟的向心力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4gjx1j1nkjo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[CNBC] Trump eyes Venezuela visit – but obstacles to his oil plan remain</a>
+                    <a href="https://www.cnbc.com/2026/02/16/cuba-cigars-fuel-shortage-energy-crisis-trump.html" target="_blank" rel="noopener">[CNBC] Cuba suspends annual cigar festival as U.S. oil blockade deepens energy crisis</a>
+                    <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWEtJZ1pONkdRQVpWNHVNdXdRZUlkZDRCeXpISU1xMUNnSUd0QVhNMDM3U0d2NGJlVXhhMmJLZUhQR2lja3MzcFVlR2gxVUtpTmNuel9tX21TZkI0MUgwNlBZM1puRnZXQmhpaWZ6bWZ6QmRnMGF0WFBzS3RtbmVWQTRpTWNHSkVKUUNiRzZ4bDJuV0Y1Wms5M0huejc0Y2d6ZnFfa001NENKdWhrSnpsQ2hQOW1pMVpRTV9V?oc=5" target="_blank" rel="noopener">[Bloomberg] Trump’s New World Order Is Pushing Sweden to Warm Up to the Euro</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">外汇</span>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">国防军工</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>日本经济复苏乏力，货币政策前景承压</div>
+                <div class="topic-title-en">Japan's Faltering Economic Recovery Puts Pressure on Monetary Policy</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    日本第四季度GDP虽避免技术性衰退，但增长反弹力度不及预期，显示内需疲软。此数据对首相高市早苗构成早期考验，同时市场对财政状况的担忧导致国债收益率曲线陡峭化，为日本央行退出超宽松货币政策的路径增添了复杂性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/16/japan-fourth-quarter-gdp-reverses-into-growth-but-misses-expectations-as-rebound-underwhelms.html" target="_blank" rel="noopener">[CNBC] Japan's economy avoids technical recession, but fourth-quarter rebound misses expectations</a>
+                    <a href="https://www.investing.com/news/economy-news/japans-economy-barely-grew-in-q4-misses-forecasts-4507323" target="_blank" rel="noopener">[Investing.com] Japan’s fragile Q4 economic recovery poses early test for Takaichi</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNcG9PRVNrY3FsZk05LXliNVFFVDBGZm82TkdxX2lLUmZpODVxMlA0alp4bllPLUx3OVhBaVB0aEJ2LUtaUXV5SVpuZUVibldzeXVrbGFCLUQxNHFubkU0MVpEclZnQnktVER1clZXVXZsV0t3dldPSEZGSDg0Tm9yQXRhU29sTURsUlJ5NC1yWVZ2Y2huN2VRaHFxUU1UdjNkM1BISWpqODlpQm5iSlA3LU5ySHM?oc=5" target="_blank" rel="noopener">[Bloomberg] Japan Yield Curve Twist-Steepens on Fiscal Concerns, BOJ Outlook</a>
+                    <span class="sector-tag">日本股市</span>
+                    <span class="sector-tag">政府债券</span>
+                    <span class="sector-tag">日元汇率</span>
+                    <span class="sector-tag">消费零售</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>资金大幅流入亚洲股市，结构性机会受关注</div>
+                <div class="topic-title-en">Significant Capital Inflows into Asian Equities, Structural Opportunities in Focus</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    高盛报告指出对冲基金正以创纪录规模买入亚洲股票，认为部分亚洲市场（如印度）仍有上涨空间。这反映出在全球宏观不确定性背景下，资金正寻求增长确定性更高的区域市场，AI发展、供应链重构和本土消费升级是吸引资本的关键主题。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/these-asian-markets-have-been-bangers-this-year-heres-why-they-have-further-to-rally-says-goldman-sachs-3467c694?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] These Asian markets have been ‘bangers’ this year. Here’s why they have further to rally, says Goldman Sachs</a>
+                    <a href="https://www.investing.com/news/stock-market-news/hedge-funds-buy-a-record-amount-of-asia-equities-says-goldman-4507628" target="_blank" rel="noopener">[Investing.com] Hedge funds buy a record amount of Asia equities, says Goldman</a>
+                    <a href="https://www.cnbc.com/2026/02/16/india-ai-impact-summit-tech-ceos-new-delhi.html" target="_blank" rel="noopener">[CNBC] Altman and Pichai among tech CEOs heading to India for major AI summit in a key market</a>
+                    <span class="sector-tag">亚洲股市</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">消费</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>AI芯片需求爆发性增长，引发供应链危机</div>
+                <div class="topic-title-en">Explosive Growth in AI Chip Demand Triggers Supply Chain Crisis</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    AI应用对内存（DRAM/HBM）的旺盛需求正加剧全球芯片供应短缺危机。这一结构性矛盾短期内难以解决，预示着半导体设备、高端芯片制造和存储器相关企业的资本开支将持续高企，产业链上游企业将直接受益，但下游成本压力增大。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxNNm9sQk9jTXp4dHcwalZsMFRtTDFrVDJuZHhiT0QyeGJ4M05GeElvTmpWT1M4Zl9oaHI2UUZZaXlTcnhrSHg3SnE2N1dNTXdYeWN4cng2aXh6V2VsOFFjVlpuNjZKeDdOV1dyVTl4WUZ5U1hKQXBzRkFfMmF4RTFRYWhGWmVPQlZKREZCNUMwZlNRTUp0MV9NazZyRjl4YUQ0UEhmb3FHWEd3QzlXNmZFVXVB?oc=5" target="_blank" rel="noopener">[Bloomberg] Rampant AI Demand for Memory Is Fueling a Growing Chip Crisis</a>
+                    <a href="https://www.cnbc.com/2026/02/15/navarro-trump-data-centers-affordability.html" target="_blank" rel="noopener">[CNBC] Trump trade adviser Navarro says administration may force data center builders like Meta to 'internalize' costs</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">存储器</span>
+                    <span class="sector-tag">云计算基础设施</span>
+                    <span class="sector-tag">电子产品制造</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>欧洲投资吸引力上升，但政治风险犹存</div>
+                <div class="topic-title-en">European Investment Appeal Rises, But Political Risks Persist</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    部分基金经理开始将资金从美国转向欧洲，寻求更高股息和估值优势。然而，欧洲内部政治风险（如法国极右翼势力对ECB行长继任的潜在影响）和地缘冲突的溢出效应，为欧洲市场的复苏前景蒙上了阴影，投资需精选板块和标的。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/the-great-rotation-why-this-fund-manager-is-pivoting-from-the-u-s-toward-europe-e63bb005?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The great rotation: Why this fund manager is pivoting from the U.S. toward Europe</a>
+                    <a href="https://news.google.com/rss/articles/CBMiggNBVV95cUxPSTJXWlpkaUJnQlFYLWlldmZBRXRtTEFPS09tcV85aWJIMGRia1ZFT0FjV21YNlJLdW03eWZ6WXBvODdTVFhoRHZqbENOOWo1VFN5ZURXa3VTakVkRlhjLUpsSHc4NVlMNy1kOTdwaFRseXRoUTd4Q3NhRnIzY1l5R3lNSzVDdU1weTVDZ1F4bzdTaW85LS1aN1FEM0pZVlpDZ1U2Z2s4ZnM4b2N2U24wcDVkUXFlclM5MUVvUF84TzZJYU93c2FBWEZwVmE1ekNsRzVSbWpuRkFRTEFrc2VSY2VHb0xoZk5jRXFWMXpKcmpLX1lHdHhiWldvUk5MUVRobWdMaXJDamRXam5rcHNZRFBkVnNmOHpJNFN5UXhJWXlVNmtnTExTbjNHSTAtYTRvbnAxd05OVTE0NE5CeUpmMXlpZzhucjNWNmdxRWlFNGwwYWMtZDlHT0Z1ejlBXzl3bXl3YWNhQndheTFJbHVLc01yOWJXWEd5dVpNbmlwaUVuQQ?oc=5" target="_blank" rel="noopener">[Barron's] Looking for Dividends? Consider Europe.</a>
+                    <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQelFNVUFVWktvNjhUU1ZDeFpvOVlrOUhzT1FJYTV4LWJicW0yd1NNSEZzZjhsbEJFXzQtazZBczV6eTZvaW9SeklQRU95WndNdS1tUVNFeFpqdExJa3YxU3VIZm5nMXZJU1NkZXc3R3RRSG5zZnpLNjZLSWVyMHl6TXM1dmowb2xRcjJyNERueWRiVTlsajJtdkZqWkI0Q2ZXMEVSS3dTYVg0Zkg5dHkw?oc=5" target="_blank" rel="noopener">[Bloomberg] Le Pen’s Shadow Is Falling on ECB Job Succession to Lagarde</a>
+                    <span class="sector-tag">欧洲股市</span>
+                    <span class="sector-tag">银行</span>
+                    <span class="sector-tag">公用事业</span>
+                    <span class="sector-tag">必需消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>企业盈利韧性支撑市场，但AI颠覆性担忧未消</div>
+                <div class="topic-title-en">Corporate Earnings Resilience Supports Market, But AI Disruption Concerns Linger</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    高盛指出当前企业盈利表现强劲，部分抵消了市场对AI造成长期行业颠覆的担忧。这表明在AI主题炒作之外，传统企业的基本面和成本控制能力仍是股价的重要稳定器。然而，德意志银行警告称，AI领域失败者的股价大跌其根源可追溯至更早的过度投机。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/current-earnings-strength-comes-despite-ai-disruption-fears-goldman-sachs-says-4507627" target="_blank" rel="noopener">[Investing.com] Current earnings strength comes despite AI disruption fears, Goldman Sachs says</a>
+                    <a href="https://www.marketwatch.com/story/the-seeds-of-the-dramatic-sell-off-in-ai-losers-were-planted-as-far-back-as-2022-says-deutsche-bank-f144f47b?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The seeds of the dramatic sell-off in AI losers were planted as far back as 2022, says Deutsche Bank</a>
+                    <span class="sector-tag">整体股市</span>
+                    <span class="sector-tag">传统行业龙头</span>
+                    <span class="sector-tag">科技股</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>日本第四季度GDP增长不及预期</li>
+                <li>对冲基金创纪录买入亚洲股票</li>
+                <li>沙特对华石油销量因降价而上升</li>
+                <li>美国Pentagon短暂列出涉军企业名单引发市场波动</li>
+                <li>MiniMax股价单日大涨25%</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
