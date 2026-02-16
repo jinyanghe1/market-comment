@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-17 01:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-17 01:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场关注人工智能竞争、企业财报及地缘政治风险，科技股波动加剧。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>人工智能竞争加剧，中美科技巨头布局升级</div>
+                <div class="topic-title-en">AI Competition Intensifies as Tech Giants Ramp Up Efforts</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    字节跳动因迪士尼法律威胁限制AI视频应用，显示版权问题对AI发展的制约。阿里巴巴升级AI模型，旨在与DeepSeek等竞争，中国科技冲击威胁美国AI垄断地位，可能重塑全球科技格局。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c93wq6xqgy1o" target="_blank" rel="noopener">[BBC] ByteDance to curb AI video app after Disney legal threat</a>
+                    <a href="https://www.cnbc.com/2026/02/16/chinas-tech-shock-ai-monopoly-us.html" target="_blank" rel="noopener">[CNBC] China's tech shock threatens the U.S. AI monopoly and is 'just getting started'</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOT2JYVTVSMGZMdEZJN2dLVjA5U29mSWtmRGdFRVBLeFYyM21jcnZORVpfUUxxYnA3SXZUTkFybEdVZlB0aWlqVU5IdzhNamJCRGpzMVNWeTFFVi1xd3pfdUZQYThXSlhhUXRNVENySlJ2bk1qVDRBWjlNSXFlRmUxaE83R245VjZKMjZPSndfSFp6TDB4MC0ydEp0b2NJcHc4MlFra212X01vRzZWT05JTmNDNmdhdw" target="_blank" rel="noopener">[Bloomberg] Alibaba Unveils Major AI Model Upgrade Ahead of DeepSeek Release</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">娱乐</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>企业财报季面临压力，多个行业盈利受考验</div>
+                <div class="topic-title-en">Corporate Earnings Season Under Pressure as Multiple Sectors Face Profit Tests</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    Sunoco在整合Parkland时盈利受考验，Builders FirstSource需应对行业下滑对利润率的影响，Allegion和Watsco等公司也面临市场逆风，显示企业盈利环境挑战重重。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/earnings/sunoco-faces-earnings-test-as-parkland-integration-looms-93CH-4507710" target="_blank" rel="noopener">[Investing.com] Sunoco faces earnings test as Parkland integration looms</a>
+                    <a href="https://www.investing.com/news/earnings/builders-firstsource-earnings-up-next-can-margins-weather-downturn-93CH-4507709" target="_blank" rel="noopener">[Investing.com] Builders FirstSource earnings up next: Can margins weather downturn?</a>
+                    <a href="https://www.investing.com/news/earnings/watsco-faces-earnings-test-as-hvac-distributor-navigates-headwinds-93CH-4507707" target="_blank" rel="noopener">[Investing.com] Watsco faces earnings test as HVAC distributor navigates headwinds</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">建材</span>
+                    <span class="sector-tag">工业</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>地缘政治风险升温，贸易关系紧张影响市场</div>
+                <div class="topic-title-en">Geopolitical Risks Escalate as Trade Tensions Impact Markets</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普计划访问委内瑞拉但石油计划障碍重重，可能影响全球油价。加拿大任命新任对美贸易谈判代表，俄罗斯经济陷入困境，加剧全球不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4gjx1j1nkjo" target="_blank" rel="noopener">[BBC] Trump eyes Venezuela visit – but obstacles to his oil plan remain</a>
+                    <a href="https://www.investing.com/news/economy-news/canada-announces-new-chief-trade-negotiator-to-the-united-states-4507711" target="_blank" rel="noopener">[Investing.com] Canada announces new chief trade negotiator to the United States</a>
+                    <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNMzhGNG8wd2ZZN2FRTGlIOWpZcmF6N3NSWFp4RXE1RFJ5ay03eldtMUNOVTB4QkNfNGRjR3JQN2d2UzNjWTV4aHFQdmRyTEs3MVBnWnlLUTAxU3Ntb1lrQzJETV8zYmp4NnR4ODZuT3hKZEg4aUcxcnI2d0pFMkdKQWhBZ18zN1ZWam1TclZrcnA5aTFnRUVYbQ" target="_blank" rel="noopener">[Economist] Russia’s economy has entered the death zone</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">国际贸易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>全球市场表现分化，投资者情绪谨慎</div>
+                <div class="topic-title-en">Global Market Performance Diverges as Investor Sentiment Turns Cautious</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国股市表现落后于外国竞争对手，巴菲特式投资策略受关注。欧洲股息收益吸引投资者，但市场情绪因经济担忧而谨慎，波兰股市小幅上涨。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMilgNBVV95cUxQVklCN2UwOGt1dXJkWldsaUtkdHJnTWlndXU1TWx6djM9bVFDYnJiNUJOcEhnbmswQnRyTml1MFVjYURSRG45dmJNdmpnXzMzcTRNQnF3dHJISldhQmtJVlctdTRibGIxNU9CeVh4ZFNrZkVCanZyWTE5VjN0djhOSm5pZS1jdGpxeXJ5N24yZGt4VVc1b2JVNnFtSkRPUlRWVXphSnlGMjVlRXMyQ1NVTUlBb1BpV3pmWmVDZUlzNEtuSUtycloxSGJDVmQ0ckRzOUJlOU1JVmlhMHNZdUFCUGtKdFU4cGtsZG5lS1VJaU8zdVBBSG1UdDZZcmpYMWREbkRiQ2pMaFhLTkZOWWRzSlY1c0VFT05sdUZhRjMyNGwzR0wwMGNnbDNzN3Z5WkVJRlJNZk9ZQjhCY3lwRzl5Rk5Ec0pkSHdvYW5GUnZZS0ZxamhLbWIzRUtoVXZMU3NOR3R3N0xzbFpCd25aMktJODR0c1ZNN1pXbWU3ekYyZXppVThENDFqQlhVeWd4UXplSUs3WHB3" target="_blank" rel="noopener">[Barrons] U.S. Stocks Are Being Trounced by Foreign Rivals. Play It Like Buffett and 5 More Things to Know Today.</a>
+                    <a href="https://news.google.com/rss/articles/CBMiggNBVV95cUxQUkxsWmUxMDYtWlFIaU1fZ0pJYU9lVU5BRDJxbEY3YW0tRzlRaUtUTkdEMDFSM1RkZDRtMUh2bF9XX1hyYktCRDZVMW4tQlNZWndzVEZ2ZmtEcFlFbmppQXU2UnJ6X3ktZllNM3U3OVoyX2ZuTEZrc3hNZmJrUDdxZ3hSeVlja2J0MjZnTmVXQkUxVTgzUjF3OWY4UDJqVTJ1M2RwRHhfQmU2LXk5dFV6bFE5UEdjaUpTNl9UcGx1aUY4N1pheEZuaHlseVdYZkpsSi1kamRwN3ZPXzVybUt3S1B2LUs2SDJzY09seWtkVFBrRV9QZVBRTXBrRXpkTTJHS1JwSm9wRGlaWUFXU1pkUEd5WUxETDlSN1pERUg3RDFQODctaldkdktyc211NXFMSW9zS0xGLWxtcm5yTjhaaEtEMTJ6MktZU0JkcURQbkdDaHo3RGZzZXdsVHF4STRCelpPZFMyR0dUem45X3FDMXdTZ1JHaVVUMTNqS1FLMEowUQ" target="_blank" rel="noopener">[Barrons] Looking for Dividends? Consider Europe.</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">全球股市</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>航运业整合加速，石油市场面临转折</div>
+                <div class="topic-title-en">Shipping Industry Consolidation Accelerates as Oil Market Faces Turning Point</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    赫伯罗特以58%溢价收购以色列公司，航运业集中度提升，可能影响运费和供应链。对超级油轮的巨额赌注震荡石油市场，美国页岩油繁荣接近关键转折点，影响全球供应。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/shipping-industry-set-to-consolidate-as-hapag-lloyd-to-buy-israeli-firm-for-58-premium-35839cf0" target="_blank" rel="noopener">[MarketWatch] Shipping industry set to consolidate as Hapag-Lloyd to buy Israeli firm for 58% premium</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQMUNscTFsOEh6VFVIby01UHZDdEVrUVhaNGV2V0k0UnBKTUNzLVU5c3pQZm11clhTSUhTZDBxUjBYdjJNZ0VxbUk5cTFlZkh6dkVOeWlfUlowdWhMWXFVRUU4eFpWVUhMLW5Vb211ODlaQmRsbHJ6bHNJMVJ2Y1BOSlRYbXctUFh3Z2VoV1JiNEMwckNjNWhXVmMtT3R0dXpuN1FnaHhGZEp3MVY5akkxOHR6eFE" target="_blank" rel="noopener">[Bloomberg] A Huge Bet on Supertankers Reverberates Through the Oil Market</a>
+                    <a href="https://www.marketwatch.com/story/the-shale-boom-that-made-the-u-s-the-worlds-top-oil-producer-is-nearing-a-crucial-turning-point-a7bf72f8" target="_blank" rel="noopener">[MarketWatch] The shale boom that made the U.S. the world’s top oil producer is nearing a crucial turning point</a>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">石油</span>
+                    <span class="sector-tag">能源</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>劳动力市场问题凸显，员工权益受关注</div>
+                <div class="topic-title-en">Labor Market Issues Highlighted as Employee Rights Come Under Focus</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    长期失业成为就业市场常态，影响消费者信心和支出。劳埃德银行在薪酬谈判中使用员工数据引发担忧，Brewdog员工对出售计划感到不安，显示企业内部矛盾可能影响运营。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/16/long-term-unemployment-becoming-a-status-quo-in-todays-job-market.html" target="_blank" rel="noopener">[CNBC] Long-term unemployment is becoming 'a status quo' in today's job market: It's a 'mental war,' job seeker says</a>
+                    <a href="https://www.bbc.com/news/articles/c5yqv1v9x92o" target="_blank" rel="noopener">[BBC] Lloyds boss accepts concern over use of staff data in pay talks</a>
+                    <a href="https://www.bbc.com/news/articles/c627eyzmmg8o" target="_blank" rel="noopener">[BBC] Brewdog staff 'upset and concerned' by sale plans</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">消费品</span>
+                    <span class="sector-tag">物流</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>法律与监管行动加剧，企业合规风险上升</div>
+                <div class="topic-title-en">Legal and Regulatory Actions Intensify as Corporate Compliance Risks Rise</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    床上用品公司因泰勒·斯威夫特上诉放弃商标，显示知识产权保护加强。瑞穗证券涉嫌内幕交易被调查，五角大楼考虑与Anthropic切断关系，监管压力增加企业合规成本。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/crm87109l3wo" target="_blank" rel="noopener">[BBC] Bedding firm backs down on 'Swift Home' trademark after Taylor Swift appeal</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOMTg3WGgwekotcjVJUlJrdVQ5bHJKamp1QkM1UDhGVVg5akNNckVfSi03TkFYV2JRbENPUTFFUGJneGF3RDE5Ylk3YTVFX0ZoQmF5N1lnNDY5VkZ3cFJ1UDIxQkRSa2haZ1Y2U0lVMHhRUXhQT2dVcTJQb3gwUUJXNVNISE1zSkllT3lyN2JtUFQ3M2Y1VDJtOGM5NE05ZDduOFUwdkkwLTAtakwtR0g0TUZrQQ" target="_blank" rel="noopener">[Bloomberg] Mizuho Securities Reportedly Faces Probe for Insider Trading</a>
+                    <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPWURnT2Y1Mk44ZUxZeDFpSmEyZE1mcXJYYjQ0YUNqb2hZZVQyR3pFelp4RzRBY0dTRjR5eldhWFVRWGszMHVrRkVRWGdwOXN5ZGxLVjVaTVNRUzMwN1hVME9hd3BfenBHWmZ1bktxekM4cXRPSDRnVzI5N1lvRmZIbmpOSHRHN3dlR280dlU2SFAybkNOb2swa1VRM0s0VEFJN1c5OGdVd0VOcVdTN29Z" target="_blank" rel="noopener">[Bloomberg] Pentagon Is Close to Cutting Ties With Anthropic, Report Says</a>
+                    <span class="sector-tag">法律</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">科技</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>字节跳动限制AI视频应用以应对迪士尼法律威胁</li>
+                <li>阿里巴巴升级AI模型，与DeepSeek竞争</li>
+                <li>赫伯罗特以58%溢价收购以色列公司，航运业整合</li>
+                <li>长期失业成为就业市场常态</li>
+                <li>美国页岩油繁荣接近关键转折点</li>
+                <li>瑞穗证券因涉嫌内幕交易被调查</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
