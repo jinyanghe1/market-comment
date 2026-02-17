@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-17 15:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-17 15:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">全球市场在科技股抛售、地缘政治风险与AI监管的多重因素影响下表现震荡，投资者情绪趋于谨慎。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>科技股抛售持续，市场担忧AI泡沫风险</div>
+                <div class="topic-title-en">Tech Stock Selloff Continues Amid AI Bubble Concerns</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    受AI概念股估值过高、监管趋严及地缘政治紧张影响，科技股出现广泛抛售，纳斯达克期货下跌。分析指出此次AI驱动的抛售与新冠疫情初期的市场调整有相似之处，投资者正在重新评估科技股的风险溢价。市场对AI商业化前景和监管风险（如英国对AI聊天机器人加强监管）的担忧加剧了波动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/u-s-stock-futures-flat-as-investors-digest-ongoing-tech-selloff-over-holiday-weekend-765f3c5c?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] U.S. stock futures slump as investors digest ongoing tech selloff</a>
+                    <a href="https://news.google.com/rss/articles/CBMi-AJBVV95cUxNaHFrWlNlVWl4YWVhZjFSV2xzcWNmQlItanFTZDIweEkzYnJZSmNXUzl4MEpyekRzNVM5bkM0YkpGOVF1cmlza2RNSGtwalM0ZGNaMVJlTWQ1Sm9jV0prMUZraXlwMUZVSVpjT1hidnVQd2VpbGhBUHhERGo5WDZTR0NsOWlaeXJUSWJzZ0duTEgxNFZyUmF1N0hQSEVFS2FESFpmd1c4NXZFYzhieHRYM3ZGNDRTbmVfOHY2RXF1VzdzT1dMeVZOUXZqWlFKU2FEazZhQndCZGRhQklEanEwOUlqRGF6U3Z1ODI4eWRGdlR1V2pZZl9LTmxvaWJmUjRyaEJQdkNoZ3ZMVkRRT3FwVXh0VTNPeW5ROWNRZnpNU3QxeldBUmF6MWZ5Ym5mQllHeVc4OXhZTmlpU0xIRDlabkFSb3dkNmhLOS10SE1uYVRzZTVESE9zOTJjZ3JsSFFITGtmS0VvM0lMMEJYc2VhdnhIeTZWOGst?oc=5" target="_blank" rel="noopener">[Barron's] The AI Selloff Has Covid Parallels, Say Analysts. These Sectors Can Survive.</a>
+                    <a href="https://www.investing.com/news/stock-market-news/analysisluxury-stocks-volatility-highlights-ai-jitters-hedge-fund-positioning-4507860" target="_blank" rel="noopener">[Investing.com] Analysis-Luxury stocks’ volatility highlights AI jitters, hedge fund positioning</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">软件服务</span>
+                    <span class="sector-tag">人工智能</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>全球AI监管收紧，产业发展面临新挑战</div>
+                <div class="topic-title-en">Global AI Regulation Tightens, Posing New Challenges for Industry Development</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    英国宣布加强对AI聊天机器人保护儿童的监管，爱尔兰对X平台的Grok AI图像展开调查，显示全球AI监管环境正迅速收紧。与此同时，印度举办全球AI安全峰会，科技巨头讨论AI安全治理，但监管与创新的平衡仍是难题。监管风险增加可能减缓AI应用落地速度并增加企业合规成本。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/16/ai-chatbot-firms-face-stricter-regulation-protect-children-uk.html" target="_blank" rel="noopener">[CNBC] AI chatbot firms face stricter regulation in online safety laws protecting children in the UK</a>
+                    <a href="https://news.google.com/rss/articles/CBMiowNBVV95cUxQeU0wRnpmeS1IYm1neG5mVnJId2MyZk5LVFo3YkpPUHY3ZDdCWjI5akxXOUtjcGFWcW9rb3J0R0dZclZkOWVtM0tiOVBUM3M2TUZSTDZtRnAwdGE3bzhhcFp6U082aExaZThCTU9Jd0Z2QWZFQ3pnMTVybTdLNXRtX25RUlhJaTJpTUtxUUlPcGRIa0Jtend2dDVjY1FKTnd4M0VKeDN2Q09aSzFVVHlhcFUyNEdUVUxfSkcybENNUklHSXZYZnctakdCWS0zUktSbFFjanVXRnFrZnlFN2JRNUxQRlEzTTAtQ3BmUkszM2dYajQ3Sk4tRUw4ZmF5UFNxc1hhT2lBVWgyZmJlYU1KRWdGOVFWWE02SFo4bXlyblItMGpDcUs0M0t5ZzhTU3dZaWdQdk5uWTdERXgxVFhhdHhQelpqc0JoaXNmRGcydVJUUTFPSzJPNUNpeThsMTZVVHhqZnpQbGZfTGpIU3ZyeldnSXNBV1Z1SnFQSVp5ajcyeUdjSFpyVHNsalA5UlEweG0xZWw1SzN4WHlDRjB0aTVrOA?oc=5" target="_blank" rel="noopener">[WSJ] Irish Data Watchdog Opens Inquiry Into X Over Grok AI Images</a>
+                    <a href="https://www.investing.com/news/stock-market-news/from-openai-to-google-india-hosts-global-ai-summit-4507461" target="_blank" rel="noopener">[Investing.com] From OpenAI to Google, India hosts global AI summit</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">互联网</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">科技监管</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>地缘政治紧张加剧，市场关注美伊谈判与台海局势</div>
+                <div class="topic-title-en">Geopolitical Tensions Escalate, Markets Focus on US-Iran Talks and Taiwan Strait Situation</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    亚洲市场因美伊核谈判前的不确定性表现谨慎，同时特朗普表示将就是否对台军售做出决定，加剧了中美关系紧张。地缘政治风险上升可能影响全球供应链、能源价格和风险资产偏好，促使投资者转向避险资产。伊朗危机也被视为特朗普政府的外交机会，可能影响中东地缘格局。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/asia-markets-cautious-ahead-of-usiran-nuclear-talks-4507891" target="_blank" rel="noopener">[Investing.com] Asia markets cautious ahead of US-Iran nuclear talks</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOTnpaOWN4NVIyT3FzV1d3UkVTcDc3MXV0blNVSzVnUERZWVJXWXJBNkxwQjFMcnRkYmNrT3V4Y2tRbmZ6eHZXSUpDT3FjVGFnbTdvZlN6UEE1OUNwLW1GRU93NFZzM1JfWVZLcGQ2dVB2OTVjOTZBYXItYUZjVmc2R045NUFPck1uTVE1M0szcnJ3R21xX1J3dmZNd294N2F6M1hVUHNhUDdldVFhd3YxZnFn?oc=5" target="_blank" rel="noopener">[Bloomberg] Trump Says He’ll Soon Make Decision on Weapon Sales to Taiwan</a>
+                    <a href="https://news.google.com/rss/articles/CBMi_wJBVV95cUxOVWZGbUFSS3JvVFB3cXYwLTJ6UVY0YmNtQVJaOEJtSlh5ZkxMaXJRc2JvcTk3dWVkVE1zV1NIRjQyNzJDSXF3OEpkTzhvQjlxa2FvLWg4bjVxeEt1b2lkOFBQc1NFR2d4Z2JYSFl3V2E4aDVWSFM4bVpXSFVjdkUxTzNobVkzS0o2SWllN2xOT0d5aVRsX1BxOXp4dzVEdG0tbE9ENExwZjQ0NXZJak1DUVVfRC1rTGxKcGNPSG52di1fVjV1ZkdBbzMxaU1lRnE2Z3RBSVg4ak9VdW5Dc21VZUJhNkxza2kzYkp5T0g0Y3dqalJsLXZRMHk2SmxHcE5lR3IxR1dscUVXaTRXbEFNY1UwY1BVN0NQOG5mWF9rU3g4UFBHZFJXWE5nTlFtUVZFN0ZNdE5PSUxfLTlYbllRQ2xQMExlakd4Mi14cVhYek53Y0VnMHZwdHRINUtWLXlBakh6OGhaQUtqbktfTTRhNTUybHIxdTlURDAtalkwSQ?oc=5" target="_blank" rel="noopener">[WSJ] Opinion | Iran’s Crisis Is Trump’s Sweet Spot</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">全球供应链</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>航运业掀起并购潮，行业集中度提升</div>
+                <div class="topic-title-en">Shipping Industry Sees M&A Wave, Concentration Increases</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    赫伯罗特以58%的溢价收购以色列竞争对手ZIM，交易价值达42亿美元，标志着航运业整合加速。行业并购旨在提升规模效应、优化航线网络并应对运力过剩挑战，可能改善行业定价能力和盈利能力。这笔交易也反映了地缘政治变化下航运公司的战略调整。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/shipping-industry-set-to-consolidate-as-hapag-lloyd-to-buy-israeli-firm-for-58-premium-35839cf0?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Shipping industry set to consolidate as Hapag-Lloyd to buy Israeli firm for 58% premium</a>
+                    <a href="https://news.google.com/rss/articles/CBMiwwNBVV95cUxQMjA2ejRSWDRHLTFhQkRDM1ZzOTVvcS1XVFIzOHdNTXpDOXBqWTltVDN5T3JqaFBQUmJkMWUxcHBOWG1WcjFKT0MzSlBMM1F0dExsM2FLb3NLeVBscExlSGo4Z3RnOGdiR1huTGVSQTBmRkMtOXJNck12LVBjMUZKczdFMlU0cGNuSHhwZUdZNFlPRnJhcU0yWjdDRjFVOEE0NGpPMHViTkZSVml6MEpNYVI1al9STUFFUF9aT18wRGwxamFyUjFaZ3FDbDkwZVlnZG1hdDBJX3l1Tno5anhNYlRvcGhPMDVnQWFacTljZkhoeTVBQTh5a3YyOE54SV9JaXdQRENQNVFWbTk1TGx1eW84Vlp1aFpVUFd1Y3MxSFRhMXNqcXJ0WXNfUzlPVFhxbHdOUV8zemxwUE5TZFZFaGFJUnJlb1MwTnNGOHJ1WFVBY3BkNDBhb3QtTUZkSElpQnpFMVZMdVBpNkZYc2FDeDQ1eWJwczh6eUlObXFIZmxmVm9PdlFZUTRtUnJhOVVnZ2ZrT255Y0trRHUwblRwaTVRUUMzZW1NaTRvd0YweDJvN0laOHpHcm05NzhmVEpGa3dR?oc=5" target="_blank" rel="noopener">[WSJ] Hapag-Lloyd to Buy Israeli Rival Zim for $4.2 Billion</a>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">物流</span>
+                    <span class="sector-tag">港口</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>消费行业面临成本压力，企业调整经营策略</div>
+                <div class="topic-title-en">Consumer Industry Faces Cost Pressure, Companies Adjust Business Strategies</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国酒店业免费早餐服务因成本上升面临削减压力，反映了通胀对服务业的影响。同时，雀巢、达能等婴儿配方奶粉公司因污染问题遭法国调查，可能面临法律风险和品牌声誉损害。这些事件显示消费板块正面临成本端和监管端的双重挑战，企业不得不调整产品策略以维持利润率。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/hotel-free-breakfast-hyatt-holiday-inn-marriott-cost-cuts.html" target="_blank" rel="noopener">[CNBC] From Hyatt to Holiday Inn, America's free hotel breakfast is facing a K-shaped economic threat</a>
+                    <a href="https://www.cnbc.com/2026/02/16/baby-formula-nestle-danone-probe-aptamil-sma.html" target="_blank" rel="noopener">[CNBC] French prosecutors are investigating companies like Nestle and Danone over contaminated baby formula. Here's the latest</a>
+                    <a href="https://www.bbc.com/news/articles/cd9g28yzy0no?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Six of Sarah Ferguson's companies winding down</a>
+                    <span class="sector-tag">酒店旅游</span>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">消费品</span>
+                    <span class="sector-tag">零售</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>中国AI竞赛升级，阿里巴巴推出新一代AI代理</div>
+                <div class="topic-title-en">China's AI Race Escalates as Alibaba Launches New Generation AI Agents</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    阿里巴巴发布Qwen3.5模型，标志着中国AI竞赛从基础大模型转向AI代理（Agents）的竞争。这显示中国科技公司正加速AI应用层创新，试图在商业化落地方面取得优势。中美AI技术竞争持续，但中国公司面临国内监管和国际市场准入的双重挑战。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/17/china-alibaba-qwen-ai-agent-latest-model.html" target="_blank" rel="noopener">[CNBC] Alibaba unveils Qwen3.5 as China’s chatbot race shifts to AI agents</a>
+                    <a href="https://www.bbc.com/news/articles/c5y4zl0w062o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Reddit's human content wins amid the AI flood</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">互联网</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">云计算</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>欧美市场财报季聚焦，企业盈利分化明显</div>
+                <div class="topic-title-en">European and US Earnings Season in Focus, Corporate Profitability Diverges</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    欧洲市场因企业财报表现不一而预计低开，矿业巨头BHP受益于铜价上涨但受中国铁矿石需求拖累，DKSH在货币逆风中仍实现利润增长。投资者正仔细评估企业盈利质量，高利率环境和经济增长放缓对不同行业的影响差异显著。财报季表现将决定市场短期方向。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/17/european-markets-stoxx-600-ftse-dax-cac-miner-earnings-data.html" target="_blank" rel="noopener">[CNBC] European markets set to open lower as earnings remain in focus</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQTk05QkJIVDh4N0lseTBLaDVPcUE0VFF4b3FENDhqMHkyNTdEYkxYUmkzenZReTJ4c0tGeGt1YmtkbXh4QzdMN1hIYXpUNEJrNUFtbTBoaElyMU40QTFTZlVjc2oxUUxDV0lIc3ROdzVjOEtZeXp2dWRzVzF5YVhaMHZuaGduc1NkZzVfZnVLQm5IaHNpYTdqSV9PbmdxYXdBUUVNR2lSZDlES0hiSkdQOXBhNGlrdw?oc=5" target="_blank" rel="noopener">[Bloomberg] BHP’s Bumper Copper Profits Offset China Drag on Iron Ore</a>
+                    <a href="https://www.investing.com/news/earnings/dksh-posts-higher-underlying-profit-in-2025-despite-currency-headwinds-4507900" target="_blank" rel="noopener">[Investing.com] DKSH posts higher underlying profit in 2025 despite currency headwinds</a>
+                    <span class="sector-tag">矿业</span>
+                    <span class="sector-tag">工业</span>
+                    <span class="sector-tag">消费品</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>私募股权追捧印度IPL，新兴市场投资机会显现</div>
+                <div class="topic-title-en">Private Equity Chases Indian IPL, Emerging Market Investment Opportunities Emerge</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    全球私募股权公司对印度板球超级联赛（IPL）表现出浓厚兴趣，反映出印度消费市场和体育产业的巨大潜力。这标志资金持续流入新兴市场高增长领域，尽管全球利率环境较高。印度作为增长最快的经济体之一，正吸引更多国际资本关注其消费、科技和娱乐板块。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/analysisglobal-private-equity-firms-bowled-over-by-indian-cricket-league-ipl-4507899" target="_blank" rel="noopener">[Investing.com] Analysis-Global private equity firms bowled over by Indian cricket league IPL</a>
+                    <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxOeWR4SUhSeTVYSGJLSWh5N3NtdWx2cHlqbHQ4VE9mdXBxd001ZllOYXhueEl4RDljSmRmNlpQNGZ2ZEhFVzJ2NnRHSHdxTlk5djl1VGZQbzhFb214eXF2V1VjNGpkY0o5Tl9HSzZ6SXZaUVlGU2xNOVhHdTFENzJkc2hqb1pzT0V2NW5wSWkwRUR3TTl0WHk2X0FvYmxNZlVzQmdQSGhUdw?oc=5" target="_blank" rel="noopener">[Economist] Why American allies are flocking to see Xi Jinping in Beijing</a>
+                    <span class="sector-tag">体育娱乐</span>
+                    <span class="sector-tag">消费</span>
+                    <span class="sector-tag">媒体</span>
+                    <span class="sector-tag">私募股权</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>纳斯达克期货下跌</li>
+                <li>比特币价格稳于68,000美元</li>
+                <li>欧洲股市预计低开</li>
+                <li>日本5年期国债需求减弱</li>
+                <li>BHP铜利润增长但受铁矿石拖累</li>
+                <li>赫伯罗特以42亿美元收购ZIM</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
