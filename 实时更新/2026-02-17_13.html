@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-17 13:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-17 13:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场关注AI技术竞赛与监管担忧引发的科技股抛售，同时地缘政治不确定性和经济数据影响投资者情绪。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI发展与市场波动</div>
+                <div class="topic-title-en">AI Development and Market Volatility</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    AI技术竞赛加剧，特别是在中美之间，但监管担忧和安全问题引发科技股抛售，印度IT股受重创。投资者需关注AI公司的盈利能力和监管风险，这可能导致市场分化。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cr5l6gnen72o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] The tech bros might show more humility in Delhi – but will they make AI any safer?</a>
+                    <a href="https://www.cnbc.com/2026/02/17/china-alibaba-qwen-ai-agent-latest-model.html" target="_blank" rel="noopener">[CNBC] Alibaba unveils Qwen3.5 as China’s chatbot race shifts to AI agents</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOc2ducUdJWWtPVG5jZUFzSFFfZGg4Y3hnMjJPaEFjSDR6WlpqVG1pa3JMRjhfRmJUam5fbnBGTUFyZ0ZNUjNRUmZibTI1SXJJdjVISmtMbkxPMWhUR3VCV0FOSk9iT0V2S0V2SVZ2amhFV25zWm9ocU1aRWxoQndvNGlXZU1FRVQ4TnBSc3ZyR1pIbkdQRm1wYWhrLVl0cU1FU0wyWHdZVEFTQUVBNVFqcFFxcE8?oc=5" target="_blank" rel="noopener">[Bloomberg] AI Scare’s $56 Billion Hit Tests Resilience of India’s IT Stocks</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">半导体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>股市情绪与技术股抛售</div>
+                <div class="topic-title-en">Market Sentiment and Tech Selloff</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国股指期货下跌，纳斯达克受科技股拖累，AI恐惧与经济数据博弈影响市场方向。分析师指出此次抛售与新冠时期有相似之处，投资者应警惕高估值科技股的回调风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/u-s-stock-futures-flat-as-investors-digest-ongoing-tech-selloff-over-holiday-weekend-765f3c5c?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] U.S. stock futures slump as investors digest ongoing tech selloff</a>
+                    <a href="https://news.google.com/rss/articles/CBMikwNBVV95cUxObFlYeVhZeTBmVndock9vYmUyLXRHVmtkRGtIWFlkejJPSkxaeUVia2VCbnh3X2dHVHNVR1d6ckdzSzFQXzYwZTVSSGtrMVVMU2dnS1hXVWYzXzhhUWhEOGVZQkJwNjhiVm5hUHBTaHVOWUFvUldFT29pazk0aGJxcUNOTy1CS3dLNmlCTGhjQ3Bab1lJcUxDX1RxOWZucTBWR0J2R3VCS3FueWJhbWprRm9rZDB0MWtpWmE4WXowWTFKQkVUOUV2NmFabEpZNmZGcVZWRTVZYWRmNHdpejBHZkVHQ1lfTFV2NHJFZlBJRXQ0MzYtVU9MTlRicmFmS2g1ZUJjWjA5eEpBUlBmWXVWbUt2UERrNnlyWXVMbFdmSF8xUnFlV2NWUTNsLWxrc1U3dld0aFUxX2Q5SWRRZzh2b3FFZnZIalRPZWdNaGk1RDkxaGdUTmhkSzZMTUJWV2NhVUNTTG0tQnRjSVU1dlZCeGxIcDNpcTlUMUpsUHNFWlBaekdyMzVLVGU1UGFON2kwZVFz?oc=5" target="_blank" rel="noopener">[WSJ] Nasdaq Futures Fall Ahead of Busy Week</a>
+                    <a href="https://news.google.com/rss/articles/CBMi-AJBVV95cUxNalFBaDFvV1doaDRENHZDaVhPaGFUWHZ3bm1xQUwxOE5sRGpoc0p4Z1kyYVZWRjFOV2doeTQyZTdpT28xLVMwRWZXV2pRMzd6VEJxM0pGbmY5STNvTk5naWQ5NmdGLXBJM3NRRHpHUlFHVXhMaWtzVTJ1LWtWbS1KR0MyZnhrXzA0TlhmMXBLNFVyQk9VdmRGbnFVS3FPMmxjYjZGNEprT2Fxd2VuZThscTcyNEFnOUdUaC1wdTlsSFRBem1BR3QtWjJ0SGJXbzAxb0wzUXlLdXdSekZNN001WVV4MDZlazd1aWo0MUhoOUt0SU9RcWxvTFBwWGl3cmgxbXRMY0ZFUV95bTVyWkFPUmFxMUFrY3FzSjR3eUlja1B1Q1d3dnBBUVZtQWpUZmduRmxwdXNhNEMzTXdHc0I1aGZ3S1JDZGdOMVp5Uzk5a18xeGJ0LUhpazhnQmZYMzZYeW1BNXJxQTZ1blRQMUhqa0JwaFZWcDNw?oc=5" target="_blank" rel="noopener">[Barrons] The AI Selloff Has Covid Parallels, Say Analysts. These Sectors Can Survive.</a>
+                    <span class="sector-tag">科技股</span>
+                    <span class="sector-tag">大盘指数</span>
+                    <span class="sector-tag">ETF</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>并购与激进投资者活动</div>
+                <div class="topic-title-en">M&A and Activist Investor Activity</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    航运业整合加速，Hapag-Lloyd以高溢价收购以色列公司，显示行业集中度提升；医疗设备领域Danaher收购Masimo，激进投资者Elliott入股挪威邮轮，可能推动运营改善和股价上涨。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/shipping-industry-set-to-consolidate-as-hapag-lloyd-to-buy-israeli-firm-for-58-premium-35839cf0?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Shipping industry set to consolidate as Hapag-Lloyd to buy Israeli firm for 58% premium</a>
+                    <a href="https://www.investing.com/news/stock-market-news/danaher-nears-10-bln-deal-to-buy-med-tech-firm-masimo-ft-4507856" target="_blank" rel="noopener">[Investing.com] Danaher nears $10 bln deal to buy med tech firm Masimo- FT</a>
+                    <a href="https://news.google.com/rss/articles/CBMiqgNBVV95cUxQOV9uQXdWUUNlc01fdnBJamZIeXQ0aWJHX3RnMk1DSmFWLVlfa2RJOG1kWTlDcWdWZTdYUWc4R21USlNhMjE4WXQwb2Z4Zm5wRFdLczlhM21HM1VoeXVNR0xGYUV6OU9DdWF3NndOUzZISlFpaDVhY0xiNUZBMmd3SFlUc095MHBGejlJeWhmNTNnRHJFbVRRQlZmeFhZXzhDUmkxNnhjNVozOXVmWnlneEFzZWNZVDBSYlBFTktTMkprMG0zZm1lMFBjTk1URTE4OEc4M09DVDdGellkSGxiRTdxS2h5WGZ5QmVZdVc3M2JHbDQyaUJ4RnJ5Y1BGT3JPZEJEc0VwRDVsc1ZRc3g5bmRsT0M0R3RWR3JYVjEtbTNycVcwSFMxNTFLMEVoM1ZraV9FNFRMQXhJS1d5dzQ1SnpjMmxzVVpVRWNLMkhuQ09mcm1kOFFxR09hSENqcnNPOE1zMEt1U05UU2NwZ1Z3YlNOZ1pxczZ6UnpEM0sxT2JibEZiZ25HeENUZjJDRll2SlE2SmlNeHpLT1psbk5FRmNqc2czQXlTNVE?oc=5" target="_blank" rel="noopener">[WSJ] Exclusive | Activist Elliott Builds Big Stake in Norwegian Cruise Line</a>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">医疗设备</span>
+                    <span class="sector-tag">旅游邮轮</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>地缘政治与政策不确定性</div>
+                <div class="topic-title-en">Geopolitical and Policy Uncertainty</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普在台湾武器销售和伊朗谈判上的立场增加地缘政治风险，可能影响国防和能源板块；同时，全球税收政策变化对高收入者和企业有影响，加剧市场不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOTnpaOWN4NVIyT3FzV1d3UkVTcDc3MXV0blNVSzVnUERZWVJXWXJBNkxwQjFMcnRkYmNrT3V4Y2tRbmZ6eHZXSUpDT3FjVGFnbTdvZlN6UEE1OUNwLW1GRU93NFZzM1JfWVZLcGQ2dVB2OTVjOTZBYXItYUZjVmc2R045NUFPck1uTVE1M0szcnJ3R21xX1J3dmZNd294N2F6M1hVUHNhUDdldVFhd3YxZnFn?oc=5" target="_blank" rel="noopener">[Bloomberg] Trump Says He’ll Soon Make Decision on Weapon Sales to Taiwan</a>
+                    <a href="https://www.investing.com/news/world-news/trump-says-he-will-be-involved-indirectly-in-iran-talks-4507816" target="_blank" rel="noopener">[Investing.com] Trump says he will be involved indirectly in Iran talks</a>
+                    <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNcjZmeFBCbUlBeTh2SnQyRWZmNFRrb21LNnN6M1U4cy1STXctRnFyanc1Ukt0SFhPXzJaZmFXaG9nTmlrNi1jSzh1NlBGbERld2FOYUktS1JXRHFGeVNsdEl0ZHpXdjQzbDlDUGlTN3U0QnprcWJkeGNzYzJpUTd1ZzZ2YnhZTzhpQlpycEV2eW1fcUFMZG1tdFBQbndWRHFBQkE?oc=5" target="_blank" rel="noopener">[The Economist] How governments are increasingly soaking the rich</a>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国际贸易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>经济数据与劳动力市场</div>
+                <div class="topic-title-en">Economic Data and Labor Market</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    长期失业率上升成为新常态，反映劳动力市场结构性矛盾，可能抑制消费增长；经济数据与AI恐惧的较量将决定市场短期走向，投资者需关注就业和通胀指标。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/16/long-term-unemployment-becoming-a-status-quo-in-todays-job-market.html" target="_blank" rel="noopener">[CNBC] Long-term unemployment is becoming 'a status quo' in today's job market: It's a 'mental war,' job seeker says</a>
+                    <a href="https://news.google.com/rss/articles/CBMiiwNBVV95cUxNY0hZSTR5S3N2T2JJbkltaWM0amIyTENobEVzazJxcTNyZTI0aWxETXlVSW5GOVM2ZkVOa3d2YTZOM3NhWTlEODBxdi1oZF9sLXVFODM1V2pVQ291dEpfUi1jT3BzeDZoNUZQTXMteXBEcVBKVEo2Y09SMGVva1IyMmJNdWJEN0Y0ZElXeVdJcUJldTlSZTRWY1pyRnd3OEl1U0lhc0M0NXE1MmVfN0l5Mi1GZjY3SmQ2SnVneS1VVW1aREk1TF92TVlSUENSSU5LNGd1REM5MmVMYkZPWjBja3ZnTkZrS25OTmxfc19pS0FyeUxoaXJJM2VGS3AtYUFPbktOaGdWbnVXNGFvb0d5NktDdVdrMTM1eHhFZHVDVldHNHY0RUZHc21Pc1poUmVYZDA0a2xaUEJSalRvb0I5MWVSeHNJSy1WengtLWxiOHJ2blFPR3NxeDlOWlZ2R1o5XzdOSU1DSEtXT2JJaW9ydHNkdzU3YXhucEVlVUdLUTQtczM3Sk5xT3lnVQ?oc=5" target="_blank" rel="noopener">[Barrons] It’s Economic Data Vs. AI Fears for Stocks This Week. There’s Only One Winner.</a>
+                    <span class="sector-tag">消费</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">劳动力市场</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>科技巨头战略调整</div>
+                <div class="topic-title-en">Tech Giants' Strategic Shifts</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    苹果进军视频播客与YouTube和Spotify竞争，显示内容生态扩张；SpaceX参与国防无人机竞赛，拓展商业边界。这些举动可能重塑行业格局，带来增长机会但加剧竞争。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/16/apple-takes-on-youtube-and-spotify-with-new-video-podcasting-push.html" target="_blank" rel="noopener">[CNBC] Apple takes on YouTube and Spotify with new video podcasting push</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQRzRJZzJDcUhIVnhsS0FMTHd3Rzg1N0lhbkR6eW5fMHhJeWR5UUlXTnVMS1BuU1E5blJSTUVycUJHUXYtWjM1aE5VQWJsbVRCRGNOS2taVzlzeVp2WUZBdEJXa0U1YUVrdVJ2Q2tzMnZKa3FUMEMwd3BUMGxhVzUzalJUVlZlTWMwbTJjT1UwQkcyVUVrUThZd2ZhU0IwbzlESmpHVHRYdnRlVE1ZWUYtREJMcVU?oc=5" target="_blank" rel="noopener">[Bloomberg] SpaceX to Compete in Pentagon Contest for Autonomous Drone Tech</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOOElBSUlKSEVZaU8zZmU0U19saUpTXzhudDYyUFItYnJkX09COGc3Ym85RHFnSWVIMEVqWTBOXzZvZGhQd0VmUHA1eTd1NHc5OEJKT0QyNmRKcFFSNkhTMnh1N2RrSTV5ak43aDk1R3lrRE1yTDVtdTNlZkNCY1JKQjRkNm1WcElNN2U1WXJXcVlXdUZOOVl2dmxkN2lfeXY1YWx4UEdsclF5QmhSeWxQSndaMA?oc=5" target="_blank" rel="noopener">[Bloomberg] Apple to Hold Product Launch on March 4 With Mac Updates Coming</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">娱乐</span>
+                    <span class="sector-tag">国防航天</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国纳斯达克期货下跌</li>
+                <li>长期失业率成为新常态</li>
+                <li>对冲基金大幅买入亚洲股票</li>
+                <li>AI恐慌导致印度IT股市值蒸发560亿美元</li>
+                <li>航运公司Hapag-Lloyd以58%溢价收购以色列公司</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
