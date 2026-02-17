@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-17 20:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-17 20:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在AI抛售与经济放缓担忧中震荡，但全球AI巨额投资与激进投资者活跃显示结构性机会。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI科技股抛售引发市场回调</div>
+                <div class="topic-title-en">AI Tech Stock Selloff Triggers Market Correction</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    瑞银下调美国科技股评级，分析师警告AI估值泡沫类似互联网泡沫时期；市场恐慌导致纳斯达克指数期货下跌，投资者担忧高增长科技股面临盈利压力。此轮抛售可能蔓延至全球科技板块，引发更广泛的市场调整。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/the-math-is-getting-challenging-economic-realities-start-to-bite-as-ubs-downgrades-u-s-tech-stocks-e40a2adb?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The math is getting challenging: economic realities start to bite as UBS downgrades U.S. tech stocks</a>
+                    <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxOMmFQZFpZRzFRSTR1MDFPT2VFeGlLOUZoaHRTb0pYa1pPZmVGQVY0YUNFeHpOUmZEZjk1RG5aLUlZbWpPRG1pOVJSb2ROLURBWC1Nc3V4TjlKWnpqeU4zaXFlSXhTaWlaNGV1ZEpPQVg1VTFZWWxObEllY2xKZzFTaWJYVmRDNjBkNGYzMmxWM1RYcE00?oc=5" target="_blank" rel="noopener">[Bloomberg] The AI Panic Ignores Something Important — the Evidence</a>
+                    <a href="https://news.google.com/rss/articles/CBMi-AJBVV95cUxQSEZTQlU4dXczVDM1LWZDNzBxakJQTGRVZnBGOVZxTVZlTERXVGFzQ2h1cmQ3aVZkanVCaFJRVXMzam1rcFNCZ0JoNVdFZVczVmlEbG9qbnVEclppNHhBQkNOWm1HRUhHNnBzUmcwaFZmVmpzRU5jUjJDUzJTRXZlR2JzN1JpcU9DNXJQR0tfNllGM054Ykk5aFRsZXlnWEhuRVNrb05TS3ZBUU9kMFFiaUJYTURPXzZoLVR5NFB3aUctaW52bUoySUtZUnM5bVlRV0dYY3lKM0VBcUgwajF4Ql9vV2dWZ1NkeUNXZkw5UTlzUjliNThXSlRva0FreW5Lc0JsRkd1ejYzQVVJckJqYVVMTFlwdHNiSjg0ZEFOdnI4bDZrallJaTZ1eURGS25YVWxOX0RpWk5OU1QzNmF2czlPNHdSNDN4QkVKVWJnSUFuSTRSTXhFTExRT1A2S3RTek5lOTNKcHgwR1ZRSjZfWkpCX2Y5cUlo?oc=5" target="_blank" rel="noopener">[Barron's] The AI Selloff Has Covid Parallels, Say Analysts. These Sectors Can Survive.</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">人工智能</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>全球AI投资热潮加剧竞争</div>
+                <div class="topic-title-en">Global AI Investment Boom Intensifies Competition</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    印度阿达尼集团宣布未来十年投资1000亿美元建设AI数据中心，阿里巴巴推出Qwen3.5模型转向AI代理；同时中国AI初创公司Moonshot寻求100亿美元估值。这表明全球AI军备竞赛白热化，但大规模投资可能引发产能过剩和估值泡沫风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/17/india-adani-ai-data-centers-investment.html" target="_blank" rel="noopener">[CNBC] India's Adani to invest $100 billion in AI data centers over the next decade</a>
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQRTZSdjVIcVNyWTRJLXRrTjFXT0tBTlUxYWJHMW1sa0tTVlhEbzQ0LW9lM3FVLVVmSkNCcFcxa1ZDSTRxQWJwNkJuUi1CUU5UT213SWptUzA0bHBRRlREb2xicHhCVDhES09aVHI2R0J4WW9tbjQzZmRoV1VnR0NPWWNfSVFnYThpMFh3OHRQb2FXVmJhQXotQThIdkhScEc0UkdMV3Z1a3NWeDBPNmlzaw?oc=5" target="_blank" rel="noopener">[Bloomberg] Adani Plans to Invest $100 Billion in AI-Ready Data Centers</a>
+                    <a href="https://news.google.com/rss/articles/CBMiqgNBVV95cUxNMTdxTEF3bS1MUDBxaHZ3UlRNWGpDRTNUbGd0MXhKZUMtWlZXV0NtOGoxeU5LR1VtVWQ5ZTBGRHhwdG9kNkU2MldpOC1IS2VLSnpwdXRLZERuUndrLUl5Unl1b0V2aUNFUlpvdjFnU2Zoa2hTYVlablVDT0ZUVDdDUnF2LV9ZOC1oMThPLVZENW5ubVo3UVVWbTJ6WHBKSUNxSjFGMzVoSzV3UEJZNUJzOVFXNEdPYWh4MHZLYklYUTlNR0lteU5YcG9VZEZkQmR3ckgtaEVuVjMta18xYWthSTBSd1VWY2l5eUt4cGxCLTVqQ3p2d2N4R2NTajF5aFNTQ0FqOEZIYW40QXZFS2ZfZ2pGeXJiYlB6ZVBWT3htVFFBX1NLREJBX3B6TUdYbGpIZTRRRlVSNHZHRVB5SXFKSG1DYXpPR2JZaXlkTjR4RlhQdzhVUlpqUE1EbXAzTFpJeVJGTEpFSWNpQ1hDR0taTXNoQlNfVXQ1LVNyLU93aDBjV0t6R0pOcjk2WVJhcTNmTFB6NjRVaEtkRWlqdHZZUVJBTmxCV1diQ2c?oc=5" target="_blank" rel="noopener">[WSJ] Infosys, Anthropic Partner on AI for Telecom, Finance, Manufacturing</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">数据中心</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">半导体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>经济数据疲软预示衰退风险</div>
+                <div class="topic-title-en">Weak Economic Data Signals Recession Risks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    英国失业率升至近五年高位，美国国债收益率下降反映避险需求，同时通用磨坊下调盈利预测显示消费者支出承压。这些数据表明全球经济增长动能减弱，可能引发市场对衰退的担忧，影响央行政策路径。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c1l7pedyzjeo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] UK unemployment hits highest rate for nearly five years</a>
+                    <a href="https://www.cnbc.com/2026/02/17/us-treasury-yields-investors-look-ahead-to-more-delayed-data.html" target="_blank" rel="noopener">[CNBC] Treasury yields move lower as investors look ahead to more delayed data</a>
+                    <a href="https://www.investing.com/news/stock-market-news/general-mills-cuts-annual-sales-and-profit-forecast-4508282" target="_blank" rel="noopener">[Investing.com] General Mills cuts annual sales and profit forecast</a>
+                    <span class="sector-tag">整体经济</span>
+                    <span class="sector-tag">消费必需品</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>金价跌破5000美元避险情绪降温</div>
+                <div class="topic-title-en">Gold Price Falls Below $5,000 as Safe-Haven Demand Cools</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    金价在清淡交易中跌破每盎司5000美元，部分受中国假期影响；这可能反映市场对美联储降息预期增强或避险需求暂时下降。但长期通胀压力和地缘政治风险仍可能支撑金价，投资者需关注后续经济数据。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/gold-prices-tumble-below-5-000-as-china-holidays-dent-support-d093e677?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Gold prices tumble below $5,000 as China holidays dent support</a>
+                    <a href="https://news.google.com/rss/articles/CBMixANBVV95cUxOTnRvZU9OQ3NzdGsteWFDTXBiUGgwOGRnLVBzNWpZekx2QWJydXp4WXgyR3hITFdUYmdYb21yX2ZHU2lDZ1M3OGhYOWVPcU9kOUYwZDUxN1NOOEk1ZU8tdDAzV1lQcnFhS2stZXhsRUVYSjVCdUdtVnVtb3JmbGhydUowV2JlV3c3LUR1WmhEb0QxUnZTZElXNHFsLXRfWjZfUERuRFd1bV9VNUxIUXdxbFpLem9NVlNXQ0ZCSm5zcWZxZ1ozRUNtRGpVNHl6OHdvSktTdUVYOG5ROWt5aFRFRG10VGNuUFlpbFBHN1RqcEFKWm9Fb0EwdDFXNEU5NGptNGJHTU94NEh0Z09PZnlabU02YWZ0UUc0VGlqVTlvZDFqNzc0S1h5bmRRUkFzRmcwZlpvdXczQ1BQUGNvaVNvTDctZVp5dTBaenMzQkNLXzB6dGNMWWJCYTBZLTBtQ3N4NjNlXzd6aklkUV9HTm9ROUZ1ZnlOZThXbzhKck5mVmpsRlJVM0h3VjVieWFKcG9yMDQ0U0Fwei12aDZRU3RVU1V6anMzc0pYemFKdDdzTE1RSHcwdFRsYTdKMktXNHdLMVo1NA?oc=5" target="_blank" rel="noopener">[WSJ] Gold Falls Below $5,000 in Thin Trade</a>
+                    <span class="sector-tag">黄金</span>
+                    <span class="sector-tag">大宗商品</span>
+                    <span class="sector-tag">矿业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>激进投资者推动企业治理变革</div>
+                <div class="topic-title-en">Activist Investors Drive Corporate Governance Changes</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    激进基金Elliott建仓挪威邮轮，Starboard持有Tripadvisor 9%股份并推动改革；显示股东积极主义在旅游和科技板块升温，可能通过战略调整提升公司价值，但短期带来股价波动和不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiqgNBVV95cUxNT2hXZEdTSWlMaHZtVndJUHFGX01VQUNNbndTai1sWUY0MXBsaElYTzhnVExfb0tGMU9mSmlKOE1jZW1rTXZ6Z2E0MkxHbVVQNlo4YnZydE8xUHA2Y3hwOHJYR0NsU19UWHpSVUtXZzdlMlJsMGJVQm5Ld2FBZEEzTzFWczlmWDdNRzZCQUdQWlhQOU81U192UjkyUnVZRXR4VW5kZGRMaWZxcmRpUTQwU0xOWlhVMVRrR0RnZno0ZGZwTElPQlpHRGRJUGYwUF9iTFRYZnkwZFdONkxFT2JhS0M1bU1pYzZlczdTSS1MdmlyZlZiVGxTUktCQ2g5Ul9SMWttT1ctR01BLXUzeUJxa0JQU0piVW1CR2JkazFMOUtKM2h0OXZMeTB6TWtFT0FLWC1Db0c5cFR3QzFyVTZUVndKdFNiWmhsWmg3RFZMbkVZdEN2ejlJT3RVLTd6am10ME05RWMtQ3RZT0cxRHV3b3d4cWdsTlVoWjFDVmFtZGdZZU45WUI2WjRsTXhDVHRuRzYybzM1ajZiMGg2UGZBZ3lub0F1a2tjS3c?oc=5" target="_blank" rel="noopener">[WSJ] Activist Elliott Builds Big Stake in Norwegian Cruise Line</a>
+                    <a href="https://news.google.com/rss/articles/CBMikANBVV95cUxPWThUVVV4UFlueVYwUlhMeHBSOXA4UEZBOTNQQTBHU0pYNzdET241bXlTUlBDZ2xqbGRGRE1pQl9SR1FMbWRVQ3h6d1N3THlaR1RiZkxmMm40RUZ1TllnM0hYcTdyeHJPelNhVFlvX3BxOUVKUVBfLTd3SWFlX1FhdGU4emtiaW5wdUFiM1I5VW9uVlBFNk44X1pCRXdtM1JIczdjbVhucl9yNjFuQmdXWnhDTUd1SjR0OWlwQU5QZHBmOThCMXZvNTBqczQ0TGhfVlF1Tm5RMVN6WWZQdjlmN3d6NWRELXROeG5uTDh5Qi1tU0dtTFNBTjlNaGJoNFVKV29HMFM2RnpwaVB2S0lDN2JiQVA2X0EzeTFFRzZvWktLYy1td1Y3WjlWQUhrNEVhTWUtMTBGRWVwWTdvdHExSEFjbUhaOWhPMmdiQ094MzJFLURhQ1VlQV9MVncxVTd2bjZmYlBuenA5c3JLLU5QTklQRk9IRTd4bi1IWWNDY090eEhMVUdyV0R0aDVlVWM5?oc=5" target="_blank" rel="noopener">[Barron's] Tripadvisor Activist Starboard Pushes for Radical Shake-Up Having Built 9% Stake</a>
+                    <span class="sector-tag">邮轮</span>
+                    <span class="sector-tag">旅游</span>
+                    <span class="sector-tag">科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>消费股盈利预警反映经济压力</div>
+                <div class="topic-title-en">Consumer Stock Profit Warnings Reflect Economic Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    通用磨坊下调年度销售和利润预测，表明通胀和消费者支出疲软正在侵蚀企业盈利；这可能预示消费板块面临挑战，投资者需警惕更多公司发布盈利预警，影响市场对经济韧性的信心。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/general-mills-cuts-annual-sales-and-profit-forecast-4508282" target="_blank" rel="noopener">[Investing.com] General Mills cuts annual sales and profit forecast</a>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">消费必需品</span>
+                    <span class="sector-tag">零售</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>英国失业率升至近五年高位</li>
+                <li>阿达尼集团计划投资1000亿美元建设AI数据中心</li>
+                <li>金价跌破每盎司5000美元</li>
+                <li>美国国债收益率下降</li>
+                <li>通用磨坊下调年度销售与利润预测</li>
+                <li>AI恐慌致印度IT股市值蒸发560亿美元</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
