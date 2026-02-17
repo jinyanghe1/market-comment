@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-17 12:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-17 12:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">全球市场在AI技术抛售、地缘政治紧张和经济数据博弈中呈现谨慎情绪，科技股承压而资源股表现相对稳健。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI技术抛售加剧，全球科技股承压</div>
+                <div class="topic-title-en">AI Tech Selloff Intensifies, Global Tech Stocks Under Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    人工智能领域的担忧导致科技股广泛抛售，尤其影响美国和中国科技巨头。阿里巴巴发布新一代AI模型试图保持竞争力，但市场对AI泡沫的恐惧持续，印度IT股因AI恐慌遭受重创，显示全球科技板块的脆弱性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/17/china-alibaba-qwen-ai-agent-latest-model.html" target="_blank" rel="noopener">[CNBC] Alibaba unveils Qwen3.5 as China’s chatbot race shifts to AI agents</a>
+                    <a href="https://www.marketwatch.com/story/u-s-stock-futures-flat-as-investors-digest-ongoing-tech-selloff-over-holiday-weekend-765f3c5c?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] U.S. stock futures slump as investors digest ongoing tech selloff</a>
+                    <a href="https://news.google.com/rss/articles/CBMi-AJBVV95cUxNWUtWbUwzVUp6a05kRUItSkdVYUtGN09CT3oweEgwWnJsYTlqZDdPemtDTVl3VFItZlZHbTNvV200bUNzcVBnZkZoaVIxV3FXSnY1VVVPeUxuMHp5SkVPTVpoOF9tZ3lXVjJ2ZDdraC1hWVBKd1BKN3d5S1JpWEhyVEJ6U0F0eldMM3k1LWZHdVhnMWVoUHNNMjg5SVptbEpWVTdtUmJsUGg4Zl9ZYlIyY2ZQYlR1VHhDdE1MbzVXXzN2MlBZRWVpdUl5Wll1WVVYT250dXdCM3N3QTdJRjViTVhvdHlfb2FSMzdEZm05X0FUdUpRMXg3ZzRJSjhyeGNkMW5HeDd0Z0d2QmtSNkRxSG9jNl82TnFIcjZCRGphRHFsVkdtYVF5RlFrdG1VWEtpR1Yta045a2xTajNFN0Z0LTc0OGMyTWNxOGluSG9CNlhxOFlKZ0lVUXZIUGdfTHAxM1oyQ3RoV3ZVX2lHTm5paERZSmo3RFRX?oc=5" target="_blank" rel="noopener">[Barron's] The AI Selloff Has Covid Parallels, Say Analysts. These Sectors Can Survive.</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOc2ducUdJWWtPVG5jZUFzSFFfZGg4Y3hnMjJPaEFjSDR6WlpqVG1pa3JMRjhfRmJUam5fbnBGTUFyZ0ZNUjNRUmZibTI1SXJJdjVISmtMbkxPMWhUR3VCV0FOSk9iT0V2S0V2SVZ2amhFV25zWm9ocU1aRWxoQndvNGlXZU1FRVQ4TnBSc3ZyR1pIbkdQRm1wYWhrLVl0cU1FU0wyWHdZVEFTQUVBNVFqcFFxcE8?oc=5" target="_blank" rel="noopener">[Bloomberg] AI Scare’s $56 Billion Hit Tests Resilience of India’s IT Stocks</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">软件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>市场情绪谨慎，经济数据与AI恐慌博弈</div>
+                <div class="topic-title-en">Cautious Market Sentiment as Economic Data Battles AI Fears</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    本周市场关注经济数据与AI抛售压力的对抗，科技股暴跌引发避险情绪。高盛报告显示对冲基金大举买入亚洲股票，表明区域市场可能被低估，但投资者在通胀数据和就业报告前保持谨慎，市场波动性增加。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/16/here-are-the-3-big-things-were-watching-in-the-stock-market-this-week.html" target="_blank" rel="noopener">[CNBC] Here are the 3 big things we're watching in the stock market this week</a>
+                    <a href="https://www.marketwatch.com/story/u-s-stock-futures-flat-as-investors-digest-ongoing-tech-selloff-over-holiday-weekend-765f3c5c?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] U.S. stock futures slump as investors digest ongoing tech selloff</a>
+                    <a href="https://news.google.com/rss/articles/CBMiiwNBVV95cUxPY2xzU0dpbE5rZkJtM0sxdFNvek1qRVBvcXE4ZnJsVlhpa24wc1htdlFpMlFad0dubVhBUGNSemNPQmZ0QjlyazdOSXM5WjlpWnhzT3c3R2xRR0NmU0doZzN0V290UlhQSFV3cjJmMlJQTTFQSFhSY2s4dFg2Q2F1ZnJsaWNxT0Y5YU5EQ0tTN0ZGT2dqVWFXUE1Ja1c5RkhSS0tVMnZzZmdGUWxhYjAyZW5FRkNZcjB4Y3dzbGtOaS1LUkMxOHBkR1R4WTFUUXpXYnBQdWxkUElpZktYcjYyLWhRY0tXOXpZTXppOGMwb0tLLVlQWm01V2VZeE9RMjh0UTQ3ajBWUTlIQ2tPZFZTNjBOZmlpZHBhMGFkVGRacXhDV3pNQ2VKenZIVUxTQ1ZwUEZIUjZpZXkxdkRHVlFCbno5cUFXbXlhQ0ZLMGZOU01CVkVYSzg1V0xMUmVOUVFZNmJIZGdFMWUzLTRFTlRfZ3FOU1VOYTNHU2dULWZEWTQ1WTBwWE1hT1E1TQ?oc=5" target="_blank" rel="noopener">[Barron's] It’s Economic Data Vs. AI Fears for Stocks This Week. There’s Only One Winner.</a>
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOZ2ZzVlFQaE5uPC1qLWliWkZoODA4RkVCcmtqT3Q4Q3VzTWduMkw3bkwxQ09GdXB0SW5RSkhfTThpck5NMEFETnhTYUFLRVk3dFYySWxySWtPY1FFV09nR2I0ZUJsYkxHdVNjQTktb2YyNXdlV2NUMlJZV0FNUXZ4Vy1FVFdwTjctdy1GdU9rLUNyb1lyQ3ZCbi1UdFlRRVhnZXBZaFJURlhBbjJ6c1E?oc=5" target="_blank" rel="noopener">[Bloomberg] Hedge Funds Buy Most Asian Stocks in a Decade, Goldman Says</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">全球股市</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>地缘政治紧张升级，美国政策不确定性增加</div>
+                <div class="topic-title-en">Geopolitical Tensions Escalate, US Policy Uncertainty Rises</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普政府对台湾军售表态加剧中美关系紧张，影响科技和国防板块。美国与伊朗核谈判间接参与带来原油价格波动，而国内政治斗争如基础设施资金争议可能延缓经济刺激计划，增加市场不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/trump-says-he-will-be-indirectly-involved-in-iran-nuclear-talks-in-geneva-93CH-4507848" target="_blank" rel="noopener">[Investing.com] Trump says he will be indirectly involved in Iran nuclear talks in Geneva</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOTnpaOWN4NVIyT3FzV1d3UkVTcDc3MXV0blNVSzVnUERZWVJXWXJBNkxwQjFMcnRkYmNrT3V4Y2tRbmZ6eHZXSUpDT3FjVGFnbTdvZlN6UEE1OUNwLW1GRU93NFZzM1JfWVZLcGQ2dVB2OTVjOTZBYXItYUZjVmc2R045NUFPck1uTVE1M0szcnJ3R21xX1J3dmZNd294N2F6M1hVUHNhUDdldVFhd3YxZnFn?oc=5" target="_blank" rel="noopener">[Bloomberg] Trump Says He’ll Soon Make Decision on Weapon Sales to Taiwan</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQOWhodDhrQTR0M2RIZ2p1ZnE2NDJEbmhuSmtITlM2NXNjODJTeHRnUG1DRkZiZExjZXFjNl9ybzdHd2YyRF85T0lVemhfRERzeW1lSmFYMjZYV1ZHTlhJYXd6NF9WVHdZTWd0SFNHTC1xLTNsRXdYYjRaWVpIVWNnUjU1QS1FVEs3YlJxU3ZVcm5VM3pTS0Fnc25qLVZYU3NQNFV1aUFXZF9MbWlCU19ka0kwZw?oc=5" target="_blank" rel="noopener">[Bloomberg] Trump Says Government Won’t Pay for NJ-NY Tunnel ‘Cost Overruns’</a>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">基础设施</span>
+                    <span class="sector-tag">外交贸易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>企业财报喜忧参半，资源股表现亮眼</div>
+                <div class="topic-title-en">Corporate Earnings Mixed, Resource Stocks Shine</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Otter Tail和Armada Hflr Pr财报不及预期，但Sonoco Products业绩超预期显示制造业分化。必和必拓铜利润强劲，部分抵消中国铁矿石需求疲软，反映全球资源需求结构性变化，投资者关注原材料板块的避险价值。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/earnings/otter-tail-earnings-missed-by-006-revenue-fell-short-of-estimates-4507845" target="_blank" rel="noopener">[Investing.com] Otter Tail earnings missed by $0.06, revenue fell short of estimates</a>
+                    <a href="https://www.investing.com/news/earnings/sonoco-products-earnings-beat-by-006-revenue-was-in-line-with-estimates-4507843" target="_blank" rel="noopener">[Investing.com] Sonoco Products earnings beat by $0.06, revenue was in line with estimates</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQTk05QkJIVDh4N0lseTBLaDVPcUE0VFF4b3FENDhqMHkyNTdEYkxYUmkzenZReTJ4c0tGeGt1YmtkbXh4QzdMN1hIYXpUNEJrNUFtbTBoaElyMU40QTFTZlVjc2oxUUxDV0lIc3ROdzVjOEtZeXp2dWRzVzF5YVhaMHZuaGduc1NkZzVfZnVLQm5IaHNpYTdqSV9PbmdxYXdBUUVNR2lSZDlES0hiSkdQOXBhNGlrdw?oc=5" target="_blank" rel="noopener">[Bloomberg] BHP’s Bumper Copper Profits Offset China Drag on Iron Ore</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">材料</span>
+                    <span class="sector-tag">工业</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>行业整合加速，激进投资者活跃</div>
+                <div class="topic-title-en">Industry Consolidation Accelerates, Activist Investors Active</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    航运巨头赫伯罗特以高溢价收购以色列公司，预示航运业进一步整合，提升运营效率。Elliott管理公司入股挪威邮轮，可能推动管理层变革和股价提升，显示资本在寻找低估资产和结构性机会。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/shipping-industry-set-to-consolidate-as-hapag-lloyd-to-buy-israeli-firm-for-58-premium-35839cf0?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Shipping industry set to consolidate as Hapag-Lloyd to buy Israeli firm for 58% premium</a>
+                    <a href="https://www.investing.com/news/stock-market-news/elliott-builds-over-10-stake-in-norwegian-cruise-line-wsj-4507847" target="_blank" rel="noopener">[Investing.com] Elliott builds over 10% stake in Norwegian Cruise Line- WSJ</a>
+                    <a href="https://news.google.com/rss/articles/CBMiqgNBVV95cUxQbkV1ZUpvSFg2SzUwdHBlXy0tT2NQNXFLYkd1d1UzVHBtSlVtMk81cGpkOXI0dTBDN0p5LVhlbFJhczAxQkJQTUZralBweW1KRkljT0tndnE2bmFHOHZISGRBdFdsb29VQ2FsSGFDSFphd04zY0piTk4wbjdmSGFpTU03UHNqalZELUJpenJDSzcyWDNHNFBHQXp2eHpNN2plLTlWcFZxYnhtZlc4T3g4NzYyTVFOZW5OQUVJTlFGODhaQmNDazVkem16VEpqSXZaZ3FZd1VtTHJVMy1Zb1FWR0ZqZVJvQXJyUzNXbHg2VDY5dElYaEZRZ296NXRpWnAtTzNDVk56MDZiQlRXc2V4UFFSUG1mdGtGczA2OG1HSnh4dXNzai03TDgwNktXNWUzYk51c3l6bTAwM00yVzFNNkpSTVc5RUcwaFpqT3hXUWxabXE2SnNWOFBOa1VzZUd2RTh0ZDk1dzZmTW8xSDdzQVA3NXd4OWwwOXR4bTdsN0xhMHphV2wxZU5CSXBTSlNEUUJ5YThZamltdVFIWDc1UXEzWEhZQk5QOWc?oc=5" target="_blank" rel="noopener">[WSJ] Exclusive | Activist Elliott Builds Big Stake in Norwegian Cruise Line</a>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">旅游休闲</span>
+                    <span class="sector-tag">并购交易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>劳动力市场疲软，消费者债务压力增大</div>
+                <div class="topic-title-en">Labor Market Weakness, Consumer Debt Pressures Mount</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    长期失业成为新常态，影响消费信心和经济增长潜力。父母学生贷款还款期限紧迫，加重家庭财务负担，可能抑制零售支出。政府加强对富人征税虽有助于财富再分配，但可能抑制私人投资和创业活力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/16/long-term-unemployment-becoming-a-status-quo-in-todays-job-market.html" target="_blank" rel="noopener">[CNBC] Long-term unemployment is becoming 'a status quo' in today's job market: It's a 'mental war,' job seeker says</a>
+                    <a href="https://www.cnbc.com/2026/02/16/student-loan-parent-plus-forgiveness.html" target="_blank" rel="noopener">[CNBC] Parents with student loans have a short window to secure affordable repayment and forgiveness</a>
+                    <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNcjZmeFBCbUlBeTh2SnQyRWZmNFRrb21LNnN6M1U4cy1STXctRnFyanc1Ukt0SFhPXzJaZmFXaG9nTmlrNi1jSzh1NlBGbERld2FOYUktS1JXRHFGeVNsdEl0ZHpXdjQzbDlDUGlTN3U0QnprcWJkeGNzYzJpUTd1ZzZ2YnhZTzhpQlpycEV2eW1fcUFMZG1tdFBQbndWRHFBQkE?oc=5" target="_blank" rel="noopener">[Economist] How governments are increasingly soaking the rich</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">消费零售</span>
+                    <span class="sector-tag">教育</span>
+                    <span class="sector-tag">房地产</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国科技股期货下跌，反映AI抛售压力</li>
+                <li>阿里巴巴发布Qwen3.5 AI模型，加入中国AI竞赛</li>
+                <li>对冲基金大量买入亚洲股票，创十年新高</li>
+                <li>长期失业率成为劳动力市场常态</li>
+                <li>必和必拓铜利润强劲，抵消铁矿石需求疲软</li>
+                <li>赫伯罗特以58%溢价收购以色列公司，航运业整合加速</li>
+                <li>特朗普考虑对台军售，地缘政治风险上升</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
