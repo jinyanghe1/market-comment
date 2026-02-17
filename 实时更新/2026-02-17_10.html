@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-17 10:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-17 10:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在 AI 技术担忧与地缘政治不确定性中谨慎交易，科技股抛售压力持续，投资者关注经济数据与货币政策。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI 技术发展与监管挑战</div>
+                <div class="topic-title-en">AI Development and Regulatory Challenges</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    AI 技术快速发展，但面临监管和法律挑战，如字节跳动因迪士尼威胁而限制 AI 视频应用，显示知识产权问题可能制约创新。中国在 AI 领域的进步威胁美国垄断，可能引发贸易和技术竞争，监管收紧或影响科技股估值，投资者需关注政策风险与长期增长潜力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c93wq6xqgy1o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] ByteDance to curb AI video app after Disney legal threat</a>
+                    <a href="https://www.cnbc.com/2026/02/16/chinas-tech-shock-ai-monopoly-us.html" target="_blank" rel="noopener">[CNBC] China's tech shock threatens the U.S. AI monopoly and is 'just getting started'</a>
+                    <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPWURnT2Y1Mk44ZUxZeDFpSmEyZE1mcXJYYjQwYUNqb2hZZVQyR3pFelp4RzRBY0dTRjR5eldhWFVRWGszMHVrRkVRWGdwOXN5ZGxLVjVaTVNRUzMwN1hVME9hd3BfenBHWmZ1bktxekM4cXRPSDRnVzI5N1lvRmZIbmpOSHRHN3dlR280dlU2SFAybkNOb2swa1VRM0s0VEFJN1c5OGdVd0VOcVdTN29Z?oc=5" target="_blank" rel="noopener">[Bloomberg] Anthropic’s Pentagon Talks Snag on AI for Surveillance, Weapons</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">媒体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>科技股抛售与市场情绪</div>
+                <div class="topic-title-en">Tech Stock Selloff and Market Sentiment</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    科技股近期抛售，源于对 AI 泡沫和经济数据的担忧，与新冠疫情时期的波动有相似之处，显示市场情绪谨慎。亚洲股市开局疲软，美元持稳，反映风险偏好下降，投资者在消化美联储政策与业绩报告，科技板块短期可能承压，但分化中或现买入机会。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/u-s-stock-futures-flat-as-investors-digest-ongoing-tech-selloff-over-holiday-weekend-765f3c5c?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] U.S. stock futures flat as investors digest ongoing tech selloff</a>
+                    <a href="https://news.google.com/rss/articles/CBMi-AJBVV95cUxPVzRtN2g5WV9XRkFxTUhtSllXRGJnWGtkQ25INVdKaTlpMzRtdDBfc1hYN3dwVGZKbTdjYml5eWFTZU1DTzhvdGhMTnZ3cDJtVTBfanJqRl9vczVmVFhxWk9PR0xHeThmWi00MVV5azFVaEFoZG1iOWJPNW5COTZJNmdvakhnRFBsWlM0VXZQakYydEJRaTRvLTR5QlItX2tyU1JSWGhvUnBXRXN4TlZvLXZCR3JhWEZmeWlWbUppVmRQYnBkSE51bjdqTWZJajcyVXdZemkxeHdjQURGQWF5M3N2Tlc2TGFfNGdsVGptdnVJNmRlU1ZwZFNwWVRKMVh1TU84eERNdFhOcmI0Q3VpbldRZlU0SlBtQm9LQ3NiVURJeUo0QkppMkdXMllwQU9Fc1lzU3U4Tm10bll4bU9jU3hiUTlEUGJrY2xZUGZKV3hKSEp6d2JxcEltdmpzRTduS2lVdEY1NHhDTUhvYWdYWWVCSU5kdXlY?oc=5" target="_blank" rel="noopener">[Barrons] The AI Selloff Has Covid Parallels, Say Analysts. These Sectors Can Survive.</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNNGNMd19mVHpma1pEcHRyeUw3VTdQcktsaG04RGRfSFVNUHdTV3FsajNEMUlhbHQ1VXhqOXJBNTdiOG9uS0xlS0lEYlBwZko5QXVoc1h5TDZBdXV0UnlXMXBUWXdYaXY5dDV5TWpzcVpEazZVSm5tdjBjcVNnWVFCeUNxajlGT2EyamFwd2c4bm53NHhyMV91dS1JUFRjMFdRT3BTMlNudmFFa0lRSW9NbFBoVQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Asian Stocks Set for Muted Start in Holiday Trade: Markets Wrap</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">股票市场</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>地缘政治与经济不确定性</div>
+                <div class="topic-title-en">Geopolitical and Economic Uncertainties</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    俄罗斯经济陷入困境可能扰动全球能源供应，美国与伊朗谈判及特朗普政策言论增加地缘政治风险，欧元区推动单一货币更大角色显示货币体系变革。这些因素加剧市场波动，影响投资者信心，避险资产或受青睐，但需警惕突发事件对供应链和通胀的冲击。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNMzhGNG8wd2ZZN2FRTGlIOWpZcmF6N3NSWFp4RXE1RFJ5ay03eldtMUNOVTB4QkNfNGRjR3JQN2d2UzNjWTV4aHFQdmRyTEs3MVBnWnlLUTAxU3Ntb1lrQzJETV8zYmp4NnR4ODZuT3hKZEg4aUcxcnI2d0pFMkdKQWhBZ18zN1ZWam1TclZrcnA5aTFnRUVYbQ?oc=5" target="_blank" rel="noopener">[Economist] Russia’s economy has entered the death zone</a>
+                    <a href="https://www.investing.com/news/world-news/trump-says-he-will-be-involved-indirectly-in-iran-talks-4507816" target="_blank" rel="noopener">[Investing.com] Trump says he will be involved indirectly in Iran talks</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPdE9mdVVKN05jOUFLbXVlcmFHSkdtcVpBclAyWW5MdElqMk12bUlXLXIxX0dDTmRXTGpqa1hmeG5ISl9kSHJwMlV2THdkNEVRNkkzeHhNUWlfN0xLY0RLbGRValNFZlRtbGpmVDRFYXZfejdKdi11TnRxY0otQTB6ZmF6VkRiVm1hdHFkYUEzU09ZMW1JVjF3Z2dkd2c4akt0cWRXVmlGS3N1bjBOMEtUeXRFcG82Zw?oc=5" target="_blank" rel="noopener">[Bloomberg] Euro-Area Finance Chiefs Push for Bigger Role of Single Currency</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">地缘政治</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>行业整合与公司动态</div>
+                <div class="topic-title-en">Industry Consolidation and Company Developments</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    航运业整合如 Hapag-Lloyd 收购以色列公司，显示行业集中度提升，可能改善运价但增加垄断风险。BHP 利润超预期，铜需求受 AI 驱动，凸显大宗商品与科技关联。苹果进军视频播客挑战现有媒体格局，公司特定事件驱动板块表现，投资者应关注并购和 innovation 带来的 alpha 机会。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/shipping-industry-set-to-consolidate-as-hapag-lloyd-to-buy-israeli-firm-for-58-premium-35839cf0?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Shipping industry set to consolidate as Hapag-Lloyd to buy Israeli firm for 58% premium</a>
+                    <a href="https://www.investing.com/news/stock-market-news/bhp-groups-firsthalf-profit-jumps-22-on-higher-commodity-prices-4507785" target="_blank" rel="noopener">[Investing.com] BHP profit beats forecasts as copper tops iron ore earnings on AI-driven demand</a>
+                    <a href="https://www.cnbc.com/2026/02/16/apple-takes-on-youtube-and-spotify-with-new-video-podcasting-push.html" target="_blank" rel="noopener">[CNBC] Apple takes on YouTube and Spotify with new video podcasting push</a>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">矿业</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">媒体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>货币政策与数据展望</div>
+                <div class="topic-title-en">Monetary Policy and Data Outlook</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美元在清淡交易中持稳，市场等待美联储会议纪要和美国 GDP 数据，货币政策路径成为焦点。长期失业成为就业市场新常态，可能抑制消费和经济复苏，而银行抵押贷款资本要求变化影响金融板块盈利。经济数据与 AI 恐惧的博弈将决定市场方向，投资者需权衡增长与通胀风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/economy-news/dollar-holds-gains-in-thin-trading-as-markets-await-fed-minutes-us-gdp-4507836" target="_blank" rel="noopener">[Investing.com] Dollar holds gains in thin trading as markets await Fed minutes, US GDP</a>
+                    <a href="https://www.cnbc.com/2026/02/16/long-term-unemployment-becoming-a-status-quo-in-todays-job-market.html" target="_blank" rel="noopener">[CNBC] Long-term unemployment is becoming 'a status quo' in today's job market: It's a 'mental war,' job seeker says</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQLVZuRlBWNlU4NW5qQW5VbFpReFk3WmhoRVhmal9mY3ptVVFqbS1rS3hpY2hVWjJDc2FNVTVBYlBiNWtHYV93R2djMU5pVml6aHd1QVh3bHM0YU1IQkp4T0ZkNlJpbkpySjB1MXJyeThFLWxUcExkeTlmelNob1hpODVtQXg0QnpDSkZUUW8yYXBycnpWVk1vSk9zV3lBNzV2OVU5ZHBnS1pENm1Zbl9HenJpSVo?oc=5" target="_blank" rel="noopener">[Bloomberg] US Banks to See New Mortgage Capital Requirements in Basel Plan</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">宏观经济</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美联储会议纪要</li>
+                <li>美国 GDP 数据</li>
+                <li>BHP 利润超预期</li>
+                <li>美元持稳</li>
+                <li>亚洲股市疲软</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
