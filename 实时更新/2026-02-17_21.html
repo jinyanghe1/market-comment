@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-17 21:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-17 21:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在AI投资热潮与宏观经济担忧中呈现分化，地缘政治风险与避险情绪升温。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI巨额投资与市场恐慌并存</div>
+                <div class="topic-title-en">Massive AI Investments Amid Market Panic</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    阿达尼计划投资1000亿美元于AI数据中心，阿里巴巴推出Qwen3.5，显示全球AI竞赛加剧。然而，市场对AI颠覆性担忧导致美股期货下跌，分析师将AI抛售与疫情时期相比，建议关注能生存的板块，凸显泡沫风险与长期增长潜力并存。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/17/india-adani-ai-data-centers-investment.html" target="_blank" rel="noopener">[CNBC] India's Adani to invest $100 billion in AI data centers over the next decade</a>
+                    <a href="https://www.investing.com/news/economy-news/us-stock-futures-slip-on-persistent-ai-disruption-fears-4508244" target="_blank" rel="noopener">[Investing.com] US stock index futures slip as AI disruption fears linger</a>
+                    <a href="https://news.google.com/rss/articles/CBMi-AJBVV95cUxPMHhINDU2RF81RTYyZ3NvaHJ0WjNyUzdKeDQ0NXRlSEttajdwcXotMGJmUFVSRW1hc0I0M3Z3TlN0XzBMNjRlOTBJMklNX2gtbzVGUlJUQlVkcktjNWtQQlEzSTZpNThudHR2bncwRDg2RHRTdnduRXNWUWxSd3FIa202enNlSHFqdDhaQXVhOVNTVUJiYTBSRXBaeS05bnBhY0hxamc5X09wbTBFajJER2V5WWlFb0pzU0tScmxERU5NcW80Zm5jamFuTmJjYkdha0dWQmNUZEJWRXNYNjZuczNhOHp3emRjaEM4WE83elZfUkxXZENNdWRxNmc1RmRtOVlXRjhQNHUtU2lycXNKYUFmbm5McEZiczBmM214Q09nNUlfVkxkVmNRV2lLX3A2NnlMeE55bElPeHJZNUdEcnFNRVBDWGpONTZ5TEN4dUtOQnJ2dGhsU2FHSUxHMzVtMzI1b1hzQlV3UC05cXpfbkhXNkhvTEg0?oc=5" target="_blank" rel="noopener">[Barron's] The AI Selloff Has Covid Parallels, Say Analysts. These Sectors Can Survive.</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">数据中心</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>宏观经济疲软强化央行宽松预期</div>
+                <div class="topic-title-en">Macroeconomic Weakness Boosts Expectations for Central Bank Easing</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    英国失业率升至五年新高，为英国央行降息铺平道路；美国国债收益率下降，反映投资者对延迟经济数据的担忧。UBS下调美国科技股评级，资本支出过度投资担忧加剧，显示经济现实开始侵蚀市场乐观情绪，可能引发全球宽松周期。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c1l7pedyzjeo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] UK unemployment hits highest rate for nearly five years</a>
+                    <a href="https://www.cnbc.com/2026/02/17/us-treasury-yields-investors-look-ahead-to-more-delayed-data.html" target="_blank" rel="noopener">[CNBC] Treasury yields move lower as investors look ahead to more delayed data</a>
+                    <a href="https://www.marketwatch.com/story/the-math-is-getting-challenging-economic-realities-start-to-bite-as-ubs-downgrades-u-s-tech-stocks-e40a2adb?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The math is getting challenging: economic realities start to bite as UBS downgrades U.S. tech stocks</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">债券市场</span>
+                    <span class="sector-tag">科技股</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>企业并购与激进投资者活跃推动股价</div>
+                <div class="topic-title-en">Corporate M&A and Activist Investors Drive Stock Prices</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    华纳兄弟与派拉蒙重启交易谈判，Hapag-Lloyd以58%溢价收购以色列公司，显示媒体和航运业整合加速。激进投资者Elliott入股挪威邮轮，Starboard推动Tripadvisor改革，凸显股东行动主义对公司战略和估值的直接影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/17/netflix-wbd-waiver-deal-talks-paramount-skydance.html" target="_blank" rel="noopener">[CNBC] Netflix grants Warner Bros. Discovery 7-day waiver to reopen deal talks with Paramount Skydance</a>
+                    <a href="https://www.marketwatch.com/story/shipping-industry-set-to-consolidate-as-hapag-lloyd-to-buy-israeli-firm-for-58-premium-35839cf0?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Shipping industry set to consolidate as Hapag-Lloyd to buy Israeli firm for 58% premium</a>
+                    <a href="https://news.google.com/rss/articles/CBMiqgNBVV95cUxOUEpZcXUzN2cwYnpCcEEzRERkQ0tQcmR3UFpaRDBHSk9jdlZkSGh5bjlkaXFQbmp1eVcteUxtYjFrOHhRSDdVRkhTRmppR082YVhyTE9BaVhuZ0RUX2g5bnNpY2dUYjVHLV8zYUZJNHF5RDBsSV9zSU5LZkdRVElfWHRFclJoc3dlb0VybjlyNGM2V0FHblI3aHVCMk9QRG04UWRJclpzVXl1emxnQk8yXzNuaW1uNk5MWFpqMGZlQ1RYd0pGLU1qRDc0M0dsNlhHMG1QbzM4UGtlemtVRUdVUkRjaUNYQXFJZUZrcENMQWxiQU54V1pJVTdRTUN3XzZTdG43RWtnQ2EwYnQxMkw5NkNfOTJxaFY5Nndub0RJWm80RlJxMGRVWHVUc1NVZ3Nma0NsTTFQWG5YdFZOUU9kRXhFT3ZoZG56Zm9zaHRfN0owdXdwM1N4Rkl6X1B0bXd4UVRjUWpXNEVNUTdob2tnOGhuaDgxOHpGaHgxZnQ0aGczckthR2JRamZRT1NpUk1zbFdNeVRHV0FBZFlZTENrakhlWGRLX3JFSGc?oc=5" target="_blank" rel="noopener">[WSJ] Exclusive | Activist Elliott Builds Big Stake in Norwegian Cruise Line</a>
+                    <span class="sector-tag">媒体</span>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">旅游</span>
+                    <span class="sector-tag">医疗设备</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>地缘政治紧张影响能源价格与国防交易</div>
+                <div class="topic-title-en">Geopolitical Tensions Affect Energy Prices and Defense Deals</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    特朗普推动和平协议可能导致油价下跌，但普京被指无意真正和平。Macron推动印度战机交易，台湾武器销售决定临近，伊朗对特朗普采取双重策略，这些因素增加全球不确定性，影响能源和国防板块。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/commodities-news/trumps-push-for-peace-deals-could-lead-to-lower-oil-prices--citi-4508338" target="_blank" rel="noopener">[Investing.com] Trump’s push for peace deals could lead to lower oil prices - Citi</a>
+                    <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQRVdmTmNaRy1PZEZjdXNiVVNUTDYxWFpQVFZCclRtZUFkRnczTHU1YjI2VVBVRzNieDE3Und4Y0llLVBTaTVhUlFtWTNKRUJONHh0bjFkTlVaTnhyOWFKSU5PSzFra1dRdHJRcU9xZDRtckJQdkFXMmxFZ0FVOGR4NC1JREtENkt3X205QUVMQmVSYnBkOUNaYVQ5WTFkWkU5amhwbmUxT2pabFYxUUphallSVHFMUDg?oc=5" target="_blank" rel="noopener">[Bloomberg] Putin Doesn't Want Peace. He Wants More Time</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOWlhZVnBrVi1maWdWbk5yVGxwMk95dWlFZUJRMWxQUFdxd05TWVc0cjFZbDNQVERwZjJxd2NyVkI0Y3FJekVFRHlveWZtczBNVlFwUFRyb3RKWDMwRGhTZG1IdGNiclZPZGt1MzN3Sl9ORXhkMjZ5R0M2RDE5VEVBaFpoM1JvOUtQSTFMbnlZaHRCbkpsUzFUMzVwTnoxSmhVdk1xNkJuZEZPbDVnMk9ydFJn?oc=5" target="_blank" rel="noopener">[Bloomberg] Macron Pushes for Fighter Jet Deal on High-Profile India Trip</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">航空</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>避险情绪升温推动黄金需求</div>
+                <div class="topic-title-en">Safe-Haven Sentiment Boosts Gold Demand</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    摩根士丹利指出硬资产交易并非偶然，iShares实物黄金ETC增持证券，美国银行调查显示基金经理预计金价峰值达6200美元，反映市场对通胀和地缘政治风险的避险需求，黄金作为传统避险资产吸引力上升。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/why-the-halo-trade-boosting-hard-assets-is-no-fluke-according-to-morgan-stanley-068a35de?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Why the ‘HALO’ trade boosting hard assets is no fluke, according to Morgan Stanley</a>
+                    <a href="https://www.investing.com/news/company-news/ishares-physical-gold-etc-adds-119000-securities-in-new-tranche-93CH-4508608" target="_blank" rel="noopener">[Investing.com] iShares Physical Gold ETC adds 119,000 securities in new tranche</a>
+                    <a href="https://news.google.com/rss/articles/CBMixANBVV95cUxQVUZTN2loNmYwRmdCU3NidXFlWjZYUUdlTFdra0FVSG10OTBIakpCYmdMbWhORTFTSUJmV1dpT284RXRYVTdweExGZW85YUw3ZFFWZ1prblFaN1htWFV6dW9JWk9UcmE0RzZ6QklTLVpydl9RVHJOMzJybFVTN0lBU0JiNEhjZXpqUFBHXy0tUkJheW5FWFhqR3pqcXBsX25qQUpBVUh0bUFQV2pSUy1zRmNPTVR0MWFGXzBYU1RoSXE1VzVGMTlaVWVoOHNWbTVNZWZNYnFrbEtfWjRwNVlfajRwWGp6SURCTVlZejlUNEJwMkpnMUd0eG5jN2dqU3BIYzEyRVg1YlVWMTdQSEVoVnVKRnh5SVlCb0otYU9SYXh5c1RVc09NUkppaC12RWxwNkxZR3hOemFObFRVa2xqMTEyRUZXczVGUGhYWjd3SWo4WUI4R1UwZnI5STVQRElxR09DUWhTMDdnZVdsMnlnN0E4UjJWNTFyc0w4LWRjMjNTTzg5NmNhNWFtNFhucFppZUk1VjdUYnNKS1V6T1hvaXVQTmJaMDk3cFpSaFV2QU5GeVJiaVhOQ1NjT05JanNGYW12OQ?oc=5" target="_blank" rel="noopener">[WSJ] Investors Expect Gold to Peak at $6,200: BofA Fund Manager Survey</a>
+                    <span class="sector-tag">黄金</span>
+                    <span class="sector-tag">大宗商品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>社交媒体AI内容竞争与监管收紧</div>
+                <div class="topic-title-en">Social Media AI Content Competition and Regulatory Tightening</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Reddit强调人类内容对抗AI洪水，Snap推出创作者订阅以多元化收入，印度讨论基于年龄的社交媒体限制，显示社交平台在AI时代的内容策略面临挑战，同时全球监管趋严可能影响用户增长和广告收入。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c5y4zl0w062o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Reddit's human content wins amid the AI flood</a>
+                    <a href="https://www.cnbc.com/2026/02/17/snap-to-launch-creator-subscriptions-in-push-to-diversify-revenue-.html" target="_blank" rel="noopener">[CNBC] Snap to launch creator subscriptions in push to diversify revenue</a>
+                    <a href="https://www.cnbc.com/2026/02/17/india-age-based-social-media-curbs.html" target="_blank" rel="noopener">[CNBC] India discussing age-based restrictions with social media firms, top minister says</a>
+                    <span class="sector-tag">社交媒体</span>
+                    <span class="sector-tag">网络广告</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>英国失业率创五年新高</li>
+                <li>阿达尼计划投资1000亿美元于AI数据中心</li>
+                <li>黄金价格预期峰值6200美元</li>
+                <li>美国国债收益率下降</li>
+                <li>Hapag-Lloyd以58%溢价收购以色列公司</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
