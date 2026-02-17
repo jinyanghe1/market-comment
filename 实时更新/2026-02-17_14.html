@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-17 14:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-17 14:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">全球市场关注美联储政策预期、铜价因AI需求飙升以及航运业大型并购，同时地缘政治与科技监管为市场增添不确定性。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI需求驱动铜业格局改变，必和必拓利润结构发生历史性转变</div>
+                <div class="topic-title-en">AI Demand Reshapes Copper Industry Landscape; BHP's Profit Structure Sees Historic Shift</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    必和必拓财报显示，受AI数据中心建设及能源转型驱动，其铜业务利润首次超越传统支柱铁矿石，成为最大利润来源。这标志着全球大宗商品需求核心正从传统基建转向科技与绿色能源，铜的战略地位空前提升，相关矿业公司估值逻辑面临重估。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNV2VDaXdaU1V0andZclBhRHF6STdGa3VabUZJZGQ2QUVyOVRIQWxrZ3AyaHRuLXp6RWFqTW4zdGpiZDlQeGZZSHEtRzdpcldoazNjWmtiRUppdmdJaHgtQ0w2MnBOZ2RmNmE2cldBMllCaV9QZUY3MlpCS280NEVZUU1aeFZadVhFazloWV9tUlRpbzd6?oc=5" target="_blank" rel="noopener">[Reuters] BHP profit beats forecasts as copper tops iron ore earnings on AI-driven demand</a>
+                    <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5STzVGUTliYkx2VFpXMU5kODgwWkZ0SXhNZEloajhGcU1FeHBaaXJ2ZFJqNjhPWk0zRkdGMDNmdXZWWW1rU01lQWlsR2R6QXlNV044?oc=5" target="_blank" rel="noopener">[华尔街见闻] 必和必拓利润飙升30%，铜业务首次超越铁矿石成最大利润来源</a>
+                    <span class="sector-tag">有色金属</span>
+                    <span class="sector-tag">矿业</span>
+                    <span class="sector-tag">科技硬件</span>
+                    <span class="sector-tag">新能源</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>美联储拟放宽银行监管以刺激抵押贷款，市场关注金融条件变化</div>
+                <div class="topic-title-en">Fed Set to Loosen Bank Rules to Boost Mortgage Lending; Markets Watch Financial Conditions</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    美联储计划放松对大型银行的资本和流动性要求，旨在鼓励其增加住房抵押贷款。此举若落地，将实质性改善银行业盈利能力并刺激房地产市场，但同时也可能引发对金融体系长期稳健性的担忧。市场将据此评估美国信贷周期的走向和金融股的估值修复空间。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBxMWRwdWFOZTFWUlAyODFXTnJRT1FCLVlKQXY1eUNrc2ZaNF9Sam1Hc0R6VFZ5WWs3cFBUNEtjVjNsOVRiV1k2a2FVcU82ZnNPZXRFUGp0ck9VbjdPS1NjYXFrVlFobk9LeVBkZEpfSVc?oc=5" target="_blank" rel="noopener">[Financial Times] Federal Reserve set to loosen US bank rules in attempt to boost mortgage lending</a>
+                    <span class="sector-tag">银行</span>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>航运业现巨型并购：赫伯罗特拟42亿美元收购以星航运</div>
+                <div class="topic-title-en">Mega Merger in Shipping: Hapag-Lloyd to Buy Israeli Rival Zim for $4.2 Billion</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    全球第五大集装箱航运公司赫伯罗特宣布收购以星航运，交易金额达42亿美元。此举将重塑全球航运业竞争格局，特别是在红海危机持续的背景下，行业集中度提升可能增强头部企业的定价权，但也可能引发主要贸易路线上反垄断审查。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiwwNBVV95cUxNNG1aeDJodmd2WldabXVoWnFvVl9BNkNfVEZJYWlOY18wMXktZ2hzaS1vZjhrcGVCT09lUTBNakZmTnNVV2dPbUxLN1J5eXFvZ3l1aElONU1zcS1EbjRnOTU1dmhPa2ZyZmRVSW9uWm1HdDUyNC1ZNEVRTURTXzdOQWxDQ3BCTUpFTjJ0M0hxcVJhTDRZeXJPTHJFNDVKajY2WDVJYjhvdHhESHN3dGZ2WHdBOUc5SERlMGNZSUgyOTJBYlhCU3hUd3V4MTNQOXVHTEd6QUcxVEdic1ljM1dNOGxqUEpfVHB0a2pZNWgzc0dFc2ozcjZfamFsSWJUUkxQby1od3dTbUdqVGdoSEtOZmpSdm81NW9BOHFIYUtOS2RiSUhPZlpudlhuWFlxTkxtZGVRZWRHTk0yUW9HVzJSU1FtejIxbUllRWl1aHpadnlVaGVkaUMxY19rVVllcF9KTnRwbFQtRDdyVHViTTl4OHVlLVJwLVZsZ1BTbDhUWXlSUU1KY2J6N1N0NFRWb3hiMlgyLXRVaURnRWd0eWtIYXZUdmxuMVRPQzRXSUM3aGdHdnRUcFViUXRNZG1uYThVZUxz?oc=5" target="_blank" rel="noopener">[WSJ] Hapag-Lloyd to Buy Israeli Rival Zim for $4.2 Billion</a>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">物流</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>AI主题出现分化：印度提供低成本路径，军事应用引担忧，软件股抛售现机遇</div>
+                <div class="topic-title-en">AI Theme Diverges: India Offers Low-Cost Path, Military Use Raises Concerns, Software Sell-off Creates Opportunities</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    AI领域出现多重信号：印度提出“节俭型AI”战略为发展中国家提供借鉴；美国防部因AI军事应用分歧考虑与Anthropic切断关系，凸显监管伦理风险；同时，因AI炒作退潮导致的软件股暴跌被花旗视为买入机会。这表明AI投资需从概念转向务实，关注成本控制、合规性及估值合理的标的。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMirwNBVV95cUxNMmZhY1pCak5TREhIRjE2MzJ1aWdGVG1sN2haaFdKUVRiMU92VmFVdVdXMDMyMUhZRWg4bS0tMFpwbUN6UUUtdHhlLTZqaEVIeXB1RUVfZE5CODJ6RVp5OThNNVQ3Vm51eGctOHZ3amVnSkpUNkRCTkxZMUV5cC0tNGRrR1NENVdVV1RldksyZXFDUTNDVDI0LTlVSXRhUnV4TURyaHE2Z0VKVl9HeFZ2ZkRJWlF6d0lJQlNFbjFOSExMSU05S3R0UUwwYnZkZ1F3ZjRQMnlILU5HczhTQlBuV3NqQ2dyd25lYVR1bmtQT3kzYWg3Z19qR0I0MXVyVUN1U3owR3Z4RVZVVWxmYW9NNlF6R2FENHp5SGtNVWg2VEZBeW9CTk1JQ3JvZlpVMndFX3o3aGpiN0dpWThQN0VFb2U5b2NyMlE0SG9BY3J6VHNkX3Z3Z0N4NXM3U1I3cTl5UGxpRHllN2hUYTFUYXRmSjJRX1ZIdml0dGdVZEZyV1Z6LTd4U1hma0ZxYjRGTFVlcGlQM0RrU28ySFVqX1h1Znk4UWtsOTR0XzhzTU9HOA?oc=5" target="_blank" rel="noopener">[WSJ] With a Frugal AI Strategy, India Offers Blueprint for Developing World</a>
+                    <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTFBaejdLZXM1VjRfVzJzaGhMOFFLY3ZjN0xsZ01KdmgyaHN2RmYzajBTQWRickJyS2xLSndWVDhSYlBGcHNKSTJwN0dMcVpYd0t6RlQw?oc=5" target="_blank" rel="noopener">[华尔街见闻] 报道：AI军事用途存分歧，美国国防部接近与Anthropic切断关系</a>
+                    <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdkhCZmJKRGc1Q0hKMGdYV1Z1NmplWnFFTWR2clYxY19nOF9PVzUzSmR4UWpEMG1NUU5GZlczWGxVYTZIdlNTb1JYNFI0UV94SktjclJsdTZMN1dzM0NxenFjWmtCdXR1UTNtYklJcWNWeGc5NThhZk9jN2dNYUh0Y056eW5DemdPOV9zMk9sT1ByMEtkNnBtVzVBeUY4QW1QLTBMMzZhanY?oc=5" target="_blank" rel="noopener">[CNBC] AI fears are hitting software stocks the hardest. Citi sees a buying opportunity in many names</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">新兴市场科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>机构大规模对冲美元头寸，亚洲市场获对冲基金青睐</div>
+                <div class="topic-title-en">Institutions Massively Hedge Dollar Positions; Asian Markets Favored by Hedge Funds</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    受美联储降息预期及美国财政赤字担忧影响，机构正以十年来最激进的速度对冲美元多头风险，看空情绪浓厚。与此同时，对冲基金以十年来最快速度抄底亚洲市场，显示资金正在重新配置，从估值高企的美股转向更具增长潜力的亚洲资产，人民币及亚洲货币或面临升值压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NYWxlZTZaMThfYjNiaXRnZzdyWklNVFNFVzNUbWMxTkFuMXd0aVhKWXFzbWtxWFZaR2psaFMwR2lFNWZGUGNsUkQ4c3BzajFVN2Qw?oc=5" target="_blank" rel="noopener">[华尔街见闻] 十年来最看空美元！机构蜂拥对冲美元头寸</a>
+                    <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9UeEl0dlRucmhiMGtpUTEyVjJLZlVoM0lnYzJOWUJtMS1yMmRMUHVVWUpBRnU1SVA5c0RicmFFUzlFQ1Vla2g0d0QwUlhpN3NLc2Y0?oc=5" target="_blank" rel="noopener">[华尔街见闻] 高盛：对冲基金正以十年来最快的速度抄底亚洲市场</a>
+                    <span class="sector-tag">外汇</span>
+                    <span class="sector-tag">亚洲股市</span>
+                    <span class="sector-tag">跨境资本流动</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>地缘政治风险升温：特朗普警告伊朗，市场关注油价波动</div>
+                <div class="topic-title-en">Geopolitical Risks Escalate: Trump Warns Iran, Markets Watch Oil Price Volatility</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    前总统特朗普就伊朗危机发表强硬言论，同时批评加州与英国的能源合作协议。地缘政治紧张局势，特别是中东风险，可能再次推高国际油价，为全球通胀前景带来不确定性，并影响能源股和通胀挂钩资产的走势。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMi_wJBVV95cUxNLTBMUXIxMnY1VXdLM00teGZ1VXo3aXVHU3FjUERpUVB3MU8tdVRxaGpaUjlpejdzM1lZQWtic2ZXdnhZWnluWWItYUxicnYyWll0T2V3N0pnZzR2WDZyZmNERnMwV3ZNQk54TVQtMWRSTktWNmVZYXl3YVpnSkw0dEpNMUhDeVRnWDBRRk5KbUhsMVhwclBROWVLVmI0VG93Sm1vX3VDUko0M25SR3ptV2ZTRjFrVkFBc2REMEtxc21haUpiWDFCUWJRVDNqNWU4VVpZRVhhR3pxOXhDNm9oaWdaRWEta0pfRktRMGQ3NHJKN201dXJSbnd4RTJFU1B1dE9LRUEySmQ4RUttZ2dGNThXUlhUTVUxMTItREhzOTZSNWlIbU1lRW4xWmF1R2JaMThPUXc1azBITW55VzJrZldDWkFxeU4yUHZqRlJzbWQ2Q1VJY2tjMlVWXzJrY2V1UFlGTnpnbU5SUU9CS0hDTDFxSVFsdDlVM0xTUVZiSQ?oc=5" target="_blank" rel="noopener">[WSJ] Opinion | Iran’s Crisis Is Trump’s Sweet Spot</a>
+                    <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxObGJTNFBRVEF0eGpycFNTRFhWZWNuMlIweTB1azA0OVJxX0VxSXE4SWVKcHBHQlRHRm5wNWx3UjFCVktneUNVamFLLWVEYnRoLUk4WmNadWRRbG1GcndRc2g5ekN5RUpkRlE5RmJCd09mVTM3UUpSRUdjVUxQSHZOMHFsb0JnOE9vVTBQTTJpNEM3QndwS0ZUZVJlX0FCR0RyVXZhYmVZQUl2X3NaX1NyWjhrYlM5S1RuUlhSSUtNRWs?oc=5" target="_blank" rel="noopener">[Reuters] Trump slams energy deal between California and Britain, Politico reports</a>
+                    <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxPMXFkSGFteVJQdFUtX2pFdGpYRGc4QXFTbGpXeEdxMjNlc1JLUks2Q3Z6ZElMUzhpNVhMQmU3eTJ0Q1NhNjhSb1FuaExWZTZaR0pvbER4WVVOUDl6cXAydWNPQkdlLWNxZm9KbEFHenZsNnZxajdVcXZCTXBHUmpiRDIxR0hkYUZjS1laUzAxUnppSWxJc0tXbjZfdV9NVENUeEpORGR1aXg4bGFpRGxMSDgwOGw5d0NxMHFQUFNsSWo1a1JXN09MTm85M094a1htNXVHZEZVMkpfTUR2NHppVHM3QQ?oc=5" target="_blank" rel="noopener">[Google Business] Oil in spotlight as Trump's Iran warning rattles sleepy markets</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防安全</span>
+                    <span class="sector-tag">大宗商品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>科技监管收紧：欧盟强化电动汽车本地化要求，爱尔兰调查X平台AI图像</div>
+                <div class="topic-title-en">Tech Regulation Tightens: EU Strengthens EV Localization Requirements, Ireland Investigates X's AI Images</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    欧盟拟规定电动汽车需有70%部件产自欧盟方可获得国家补贴，这是保护主义政策的延续，将迫使全球汽车制造商调整供应链，利好欧盟本土制造商但增加成本。同时，爱尔兰监管机构对X平台Grok AI生成的图像展开调查，表明全球对AI生成内容的监管正在迅速落地，科技公司合规成本上升。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9ocWU5LWFHUllwajA0X0RxTHRPR0UzblltT2J6MUVBNDVHQ0doU2tYME9aeXFfOFQ1M29hNG1rZzJrbTBqVlh3V1oyUzhDRlgycWRlTjQzREwyYlpiT3dRaWJnRVR5cHdwQUtIWmd3Vjg?oc=5" target="_blank" rel="noopener">[Financial Times] EVs must be 70% made in the EU to qualify for state support, Brussels says</a>
+                    <a href="https://news.google.com/rss/articles/CBMiowNBVV95cUxPV21fNGxRVWJ5QzctSEZ0dVM5Tm5CTWxqMHFpcmJjNTBxWm4tRGRDRUV0d0RqczlMRnlrQi1Mam1ZdGN6M0ZnUU1QRE5KbzRuRTJVbVNSQjhZcHBmSjF5V2RLMkZYLVRxandFcHRzUXFiVUxUTzJrM29WWERGZzFuVkZuZ0VjVjNQMG4wNWJBR0JMaGhnVHRtLVFzSlduUEd6Y1JhZ0lHcjJ0ZE4zeE9uM3l4N01taC05QkdWbTFRbVh1N2VzSDI0cVhvd3RMV1FQUENGUnlXNnJBdHkxcWwzZFJhMWJKN2NLOU91QkJwZHBSNHhmc2xtWXpxRHp6UWRqdHYzMXNFLURnTWRFRWV0QkdBajNwVTVFNjVHWkFVdUxDVi15Y1dqSy1iMHlZSXpUQXp2X3dGWnJWM3ZuUUM1RUNERllCQkVwSkIyY1laSHl4ckdmRWFheXlRZFdYakQ4U0UzOE9kS21WZkFQTnE2dnJBSVhFaUNud0prTFdXeW9WQUVwM05Qb2QzSlRmLXlpNEszNEVHVWlCQldPS0pQSkpLUQ?oc=5" target="_blank" rel="noopener">[WSJ] Irish Data Watchdog Opens Inquiry Into X Over Grok AI Images</a>
+                    <span class="sector-tag">新能源汽车</span>
+                    <span class="sector-tag">科技平台</span>
+                    <span class="sector-tag">合规与法律</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>必和必拓铜业务利润首次超越铁矿石，成为公司最大利润来源</li>
+                <li>美联储计划放松银行资本规则以刺激抵押贷款</li>
+                <li>赫伯罗特以42亿美元收购以星航运</li>
+                <li>对冲基金正以十年来最快速度抄底亚洲市场</li>
+                <li>机构对美元头寸进行十年来最激进的看空对冲</li>
+                <li>欧盟拟要求电动汽车70%部件本地生产方可获补贴</li>
+                <li>AI炒作退潮导致软件股暴跌，花旗认为出现买入机会</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
