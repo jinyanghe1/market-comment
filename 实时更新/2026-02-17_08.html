@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-17 08:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-17 08:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">全球市场呈现谨慎情绪，科技股抛售压力持续，但AI领域竞争加剧与地缘政治因素交织影响投资格局。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>AI领域竞争白热化：阿里巴巴升级模型与字节跳动面临法律挑战</div>
+                <div class="topic-title-en">Intensifying AI Competition: Alibaba Upgrades Model and ByteDance Faces Legal Challenges</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    阿里巴巴发布重大AI模型升级，旨在与DeepSeek等竞争对手抗衡，显示中国科技企业在AI领域的持续投入。同时，字节跳动因迪士尼法律威胁而限制AI视频应用，凸显知识产权风险对AI发展的制约。这些进展可能加剧全球AI竞赛，但也带来监管不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOT2JYVTVSMGZMdEZJN2dLVjA5U29mSWtmRGdFRVBLeFYyM21jcnZORVpfUUxxYnA3SXZUTkFybEdVZlB0aWlqVU5IdzhNamJCRGpzMVNWeTFFVi1xd3pfdUZQYThXSlhhUXRNVENySlJ2bk1qVDRBWjlNSXFlRmUxaE83R245VjZKMjZPSndfSFp6TDB4MC0ydEp0b2NJcHc4MlFra212X01vRzZWT05JTmNDNmdhdw?oc=5" target="_blank" rel="noopener">[Bloomberg] Alibaba Unveils Major AI Model Upgrade Ahead of DeepSeek Release</a>
+                    <a href="https://www.bbc.com/news/articles/c93wq6xqgy1o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] ByteDance to curb AI video app after Disney legal threat</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">软件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>科技股抛售压力持续，市场关注经济数据与AI担忧的博弈</div>
+                <div class="topic-title-en">Tech Selloff Persists as Market Weighs Economic Data vs. AI Concerns</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国股指期货小幅上涨，但科技股抛售压力仍在持续，反映投资者对AI估值泡沫的担忧。巴伦周刊分析指出，经济数据与AI恐惧之间的博弈将成为本周市场关键，而苹果作为例外表现突出。这种分化可能预示着科技板块内部的结构性调整。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/u-s-stock-futures-flat-as-investors-digest-ongoing-tech-selloff-over-holiday-weekend-765f3c5c?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] U.S. stock futures inch higher as investors digest ongoing tech selloff</a>
+                    <a href="https://news.google.com/rss/articles/CBMiiwNBVV95cUxOVFBDbm9VdUs1UDJmbVZST2lIZTY3UUp2aF9CSk1LaTZENE9ZT20wZy1YRkgwd3RRcDAydFpkcUcyLUxxTzNIVlJXSWhvY3BGWGduVVFEMFpIb3hXdU1zTUx1OFktN1pJR0t2T0pEWkphbThibGlsZWpudTM4SWlTRGVRQ0VEMUdETk11d2o0VXpDclF0eUdBZUxTV3BFRzBLNXlPVUFkZUZfdmdVNXItY20xNjk1Y3BmR3J3T0FYVm5oclNkc29DXzhkMkxsQXVhal9aNm9UYmJmYzBNazUyQlVRY252dlVoaDMydHRrTS10NFVyRTlGSnBDejBZMmRJdDhvTFJlNGs5Y19zWmhsWVgwR3A3WHNqUEJHeTVPVnJiMjVkcl9VdjJfenNlaFVHaWFEQUxjNmx2UURyZVhpdHBIUDZMbmk1a2I3MDc0UzFRWk96NGZPb0VCV1F4WGVUVlVYLS13blFsT1RzYlM1MURXSUV6Ujkxa3hXbmgxUVlCZGxsanRYcGU3aw?oc=5" target="_blank" rel="noopener">[Barron's] It’s Economic Data Vs. AI Fears for Stocks This Week. There’s Only One Winner.</a>
+                    <span class="sector-tag">科技股</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">软件服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>航运业整合加速：赫伯罗特以58%溢价收购以色列公司</div>
+                <div class="topic-title-en">Shipping Industry Consolidation Accelerates: Hapag-Lloyd Buys Israeli Firm at 58% Premium</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    赫伯罗特以58%的溢价收购以色列公司，标志着航运业整合进入新阶段。此次收购可能引发行业进一步并购，特别是在地缘政治紧张和供应链重组背景下。高溢价显示行业龙头对市场份额的争夺加剧，投资者需关注整合后的协同效应和运价走势。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/shipping-industry-set-to-consolidate-as-hapag-lloyd-to-buy-israeli-firm-for-58-premium-35839cf0?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Shipping industry set to consolidate as Hapag-Lloyd to buy Israeli firm for 58% premium</a>
+                    <span class="sector-tag">航运</span>
+                    <span class="sector-tag">物流</span>
+                    <span class="sector-tag">国际贸易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>地缘政治风险升温：特朗普考虑访问委内瑞拉，以色列批准西岸土地登记</div>
+                <div class="topic-title-en">Geopolitical Risks Escalate: Trump Eyes Venezuela Visit, Israel Approves West Bank Land Registration</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普考虑访问委内瑞拉，但石油计划面临障碍，可能影响全球能源市场格局。同时，以色列内阁批准西岸土地登记，引发巴勒斯坦强烈谴责，可能加剧中东紧张局势。这些地缘政治动态将增加市场不确定性，特别是对能源和避险资产的影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4gjx1j1nkjo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Trump eyes Venezuela visit – but obstacles to his oil plan remain</a>
+                    <a href="https://www.investing.com/news/world-news/israeli-cabinet-approves-west-bank-land-registration-palestinians-condemn-defacto-annexation-4507300" target="_blank" rel="noopener">[Investing.com] Israeli cabinet approves West Bank land registration, Palestinians condemn ’de-facto annexation’</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">贵金属</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>企业财报分化：必和必拓创纪录新高，部分公司业绩承压</div>
+                <div class="topic-title-en">Corporate Earnings Diverge: BHP Hits Record High While Some Companies Face Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    必和必拓因铜价上涨推动上半年利润飙升，股价创历史新高，反映大宗商品周期对资源股的支撑。然而，Reliance Worldwide等公司财报后股价下跌，显示不同行业面临差异化挑战。这种分化要求投资者更精细地筛选个股，关注行业基本面和商品价格走势。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/bhp-shares-hit-record-high-as-h1-profit-surges-on-copper-boost-4507803" target="_blank" rel="noopener">[Investing.com] BHP shares hit record high as H1 profit surges on copper boost</a>
+                    <a href="https://www.investing.com/news/transcripts/earnings-call-transcript-reliance-worldwide-sees-stock-dip-after-h1-earnings-93CH-4507800" target="_blank" rel="noopener">[Investing.com] Earnings call transcript: Reliance Worldwide sees stock dip after H1 earnings</a>
+                    <span class="sector-tag">矿业</span>
+                    <span class="sector-tag">原材料</span>
+                    <span class="sector-tag">工业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>金融监管收紧：美国银行面临新抵押贷款资本要求</div>
+                <div class="topic-title-en">Financial Regulation Tightens: US Banks Face New Mortgage Capital Requirements</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    根据巴塞尔计划，美国银行将面临新的抵押贷款资本要求，这可能增加银行运营成本并影响信贷投放。此举是监管机构对房地产风险的最新回应，可能抑制抵押贷款增长，但对金融体系长期稳定性有积极作用。投资者需关注银行净息差和资本充足率变化。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQLVZuRlBWNlU4NW5qQW5VbFpReFk3WmhoRVhmal9mY3ptVVFqbS1rS3hpY2hVWjJDc2FNVTVBYlBiNWtHYV93R2djMU5pVml6aHd1QVh3bHM0YU1IQkp4T0ZkNlJpbkpySjB1MXJyeThFLWxUcExkeTlmelNob1hpODVtQXg0QnpDSkZUUW8yYXBycnpWVk1vSk9zV3lBNzV2OVU5ZHBnS1pENm1Zbl9HenJpSVo?oc=5" target="_blank" rel="noopener">[Bloomberg] US Banks to See New Mortgage Capital Requirements in Basel Plan</a>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">房地产金融</span>
+                    <span class="sector-tag">保险</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>加密货币下跌：比特币、以太坊、瑞波币均出现下滑</div>
+                <div class="topic-title-en">Cryptocurrency Decline: Bitcoin, Ethereum, XRP All Drop</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    主要加密货币普遍下跌，反映市场风险偏好下降和监管不确定性。巴伦周刊指出，本周可能有关键事件对加密市场产生重大影响。这种下跌可能促使投资者重新评估加密资产在投资组合中的配置，并关注监管动态和技术发展。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMijgNBVV95cUxOTTlOT3FoRjdYcVZpYUNKYi1Eb2tMVzdmVXN0b1pFQk9NVURrQmQwa3dmenVRUGI1Qkp1X2F5VWJZVEY4YzFKeUVWeVNYQmNUbDQ2d1JEWFVleEZQblByVHhuc3JmZk5haXd4YVZQVko3amo3ei1xdy12Z1BJc0o1Y1JyN1JsX2xSbXBfUGRtWXRsRXlhdDlGTEdNSWJ2THhGdnFqMnBSZUt6dXNZbC1TSnRUZjlpZzM1MUNCOVV1M012M1U2T2FqNEpVd0ZPUzA2d3huNG4zeF8yLUFpbnBqR29DdjhZb0JFV01rQ3pQZlZQMXRwdWRHbjhRNFhjY0lXbDRCMnFJMzJBZDJPRWloT1Z1b2lQVkhvVEJVZ3R2MktyODF3S2dBMGNEd3B6OEZYbXdBMXBtdjVDdzZTa1lnYWVYY1BzZEFSZy1wRm5WQkl0d0VxTjNNZnk2ZWFlZE8zcEdkMGMxWmlTMFFaYzBHaGN2aTlmRTkxUFZlczkzRkJtVXhFNEN6YWZJOVNBQQ?oc=5" target="_blank" rel="noopener">[Barron's] Bitcoin, Ethereum, XRP Drop. This Could Have a Big Impact on Crypto This Week.</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">区块链</span>
+                    <span class="sector-tag">金融科技</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>对冲基金大举买入亚洲股票，创十年新高</div>
+                <div class="topic-title-en">Hedge Funds Buy Asian Stocks at Decade-High Pace, Goldman Reports</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    高盛报告显示，对冲基金正以十年来最快速度买入亚洲股票，反映机构投资者对亚洲市场估值吸引力和增长前景的认可。这种资金流向可能支撑亚洲股市表现，特别是科技和消费板块，但也需关注资金快速流动带来的波动风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOZ2ZzVlFQaE5uUC1qLWliWkZoODA4RkVCcmtqT3Q4Q3VzTWduMkw3bkwxQ09GdXB0SW5RSkhfTThpck5NMEFETnhTYUFLRVk3dFYySWxySWtPY1FFV09nR2I0ZUJsYkxHdVNjQTktb2YyNXdlV2NUMlJZV0FNUXZ4Vy1FVFdwTjctdy1GdU9rLUNyb1lyQ3ZCbi1UdFlRRVhnZXBZaFJURlhBbjJ6c1E?oc=5" target="_blank" rel="noopener">[Bloomberg] Hedge Funds Buy Most Asian Stocks in a Decade, Goldman Says</a>
+                    <span class="sector-tag">亚洲股市</span>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">消费</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>科技股抛售压力持续，但苹果表现例外</li>
+                <li>对冲基金以十年最快速度买入亚洲股票</li>
+                <li>必和必拓因铜价上涨创股价历史新高</li>
+                <li>赫伯罗特以58%溢价收购以色列航运公司</li>
+                <li>美国银行将面临新抵押贷款资本要求</li>
+                <li>主要加密货币普遍下跌</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
