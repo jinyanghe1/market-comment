@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-17 17:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-17 17:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场情绪谨慎，英国疲软就业数据与科技股持续抛售引发担忧，但AI领域巨额投资构成市场主要亮点。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>英国失业率飙升至近五年高位，英镑承压</div>
+                <div class="topic-title-en">UK Unemployment Hits Highest Rate in Nearly Five Years, Pound Under Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    英国失业率升至近五年高位，远超市场预期，是经济疲软的关键信号。这一数据不仅直接导致英镑汇率下跌，更可能迫使英国央行重新评估其紧缩政策路径，为提前降息打开大门。投资者需警惕其对英国股市及依赖英国市场的欧洲公司盈利前景的负面影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c1l7pedyzjeo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] UK unemployment hits highest rate for nearly five years</a>
+                    <a href="https://www.cnbc.com/2026/02/17/european-markets-stoxx-600-ftse-dax-cac-miner-earnings-data.html" target="_blank" rel="noopener">[CNBC] Sterling falls as UK unemployment hits highest rate in five years</a>
+                    <span class="sector-tag">外汇</span>
+                    <span class="sector-tag">英国金融</span>
+                    <span class="sector-tag">英国消费</span>
+                    <span class="sector-tag">欧洲市场</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>美国科技股抛售潮持续，市场情绪转向谨慎</div>
+                <div class="topic-title-en">Ongoing Tech Selloff in US Markets, Sentiment Turns Cautious</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国股指期货下跌，反映出市场对科技股持续抛售的担忧正在加剧。在假期后交易清淡的背景下，此轮调整可能源于对前期过高估值的修正以及对未来盈利增长可持续性的疑虑。投资者正在重新评估科技板块的风险敞口，资金可能流向更具防御性或估值合理的领域。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/u-s-stock-futures-flat-as-investors-digest-ongoing-tech-selloff-over-holiday-weekend-765f3c5c?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] U.S. stock futures slump as investors digest ongoing tech selloff</a>
+                    <a href="https://www.cnbc.com/2026/02/16/here-are-the-3-big-things-were-watching-in-the-stock-market-this-week.html" target="_blank" rel="noopener">[CNBC] Here are the 3 big things we're watching in the stock market this week</a>
+                    <span class="sector-tag">科技股</span>
+                    <span class="sector-tag">成长股</span>
+                    <span class="sector-tag">美国股市</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>AI军备竞赛升级：Adani千亿投资数据中心，阿里巴巴发布新模型</div>
+                <div class="topic-title-en">AI Arms Race Intensifies: Adani's $100B Data Center Bet, Alibaba Unveils New Model</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    印度巨头Adani宣布未来十年投资1000亿美元于AI数据中心，表明基础设施资本正以前所未有的规模涌入AI赛道，利好上游的半导体、电力和基建公司。同时，阿里巴巴推出Qwen3.5，标志着中国AI竞争重点从基础模型转向“智能体”应用层。这加剧了全球AI生态的竞争，但也凸显了算力需求的长期确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/17/india-adani-ai-data-centers-investment.html" target="_blank" rel="noopener">[CNBC] India's Adani to invest $100 billion in AI data centers over the next decade</a>
+                    <a href="https://www.cnbc.com/2026/02/17/china-alibaba-qwen-ai-agent-latest-model.html" target="_blank" rel="noopener">[CNBC] Alibaba unveils Qwen3.5 as China’s chatbot race shifts to AI agents</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">数据中心</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">中国科技股</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>美债收益率回落，市场聚焦经济数据与地缘风险</div>
+                <div class="topic-title-en">US Treasury Yields Retreat as Markets Focus on Data and Geopolitics</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国国债收益率走低，反映出在科技股动荡和地缘政治不确定性增加的背景下，避险情绪有所升温。投资者正在等待更多延迟发布的经济数据，以判断经济软着陆的可能性。收益率的回落短期可能缓解高增长科技股的估值压力，但也可能预示着市场对经济前景的担忧加深。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/17/us-treasury-yields-investors-look-ahead-to-more-delayed-data.html" target="_blank" rel="noopener">[CNBC] Treasury yields move lower as investors look ahead to more delayed data</a>
+                    <a href="https://www.investing.com/news/stock-market-news/european-shares-steady-as-geopolitical-uncertainty-dominates-mood-4507989" target="_blank" rel="noopener">[Investing.com] European shares steady as geopolitical uncertainty dominates mood</a>
+                    <span class="sector-tag">债券市场</span>
+                    <span class="sector-tag">利率敏感型板块（如公用事业、房地产）</span>
+                    <span class="sector-tag">成长股</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>地缘政治紧张局势升温，影响能源与商品市场</div>
+                <div class="topic-title-en">Escalating Geopolitical Tensions Impact Energy and Commodity Markets</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    俄罗斯就扣押船只问题警告西方，美国与伊朗即将在日内瓦举行会谈，这些事件增加了地缘政治的不确定性。油价和金价在假日清淡交易中波动，表明市场正在消化相关风险。任何谈判的破裂或意外升级都可能迅速推高避险资产和能源价格，增加全球供应链成本。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/commodities-news/putin-ally-warns-european-powers-overseizure-of-russian-vessels-4507925" target="_blank" rel="noopener">[Investing.com] Kremlin aide warns West over seizure of Russian vessels</a>
+                    <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxNRnd6cXFWVGhBangyaEFaRklIaExrdmJNYlhBcWpwb0lzYTNKZGJnYWdURzRrZ0V0TDNmV21NZzkxZ00wS1B3TjI5TXVXS00wT1VkNTV6WElxX0pTUXl4YzR3ejBIbXE5cjAxVW5OZEZ3cXhQaGswc0FkdkNfUUpiUEZfY19KWUYzV1BOeFRPVC1JdVJlYTM1TWZUQ1FXQQ?oc=5" target="_blank" rel="noopener">[Bloomberg.com] Oil Dips in Holiday Trade With Focus on Iran-US Talks in Geneva</a>
+                    <a href="https://news.google.com/rss/articles/CBMixANBVV95cUxNUjlDWUdRZm5YTll0MGlfYzFoSVA3eVRyV3Z6c3BfUDJHWE12ZC1rOFJKWVFEVWZITEdHdVE4T1FmZmNQQU1JejNsRHBoNUF0RWd1LWlUMmdiRjQ5aU5feEpDTkU3M3lRbG16a0dadWlaUFA1RldGZkVnOXZvRGZueU5iM0FjajBaaDc1YTFHUkFPQ2dVZ1BCd3BnYXhRbDZwNjVzMjdnc1lCR2dHUkY5d2otLWhYYThVa05FeUlHWV9wd281ekI5b2V5ZlYwSWVkOUNJTTdaUDRJaXJyRFlUVVp6LXRvSUNUMjJHMy1KX2h3RmI2VFBRY1FVNlJuTGxWVGh4SllSZ0dCTnNCS1dPVTZPY0NpcTdSSVFGZDVlNVR0QWthRlY5QURROXpiSGs2U3REWHJsN3YzeUs4TU5EX0FjcnVNMzNpbVpqc0NOOFMtRkRRVEtsZl9GVjkxYU1ESVVOOGt4UWJ0emluSlZWcm51UVF3czJrRlNQLUNHazZaZWdMaGx4WGlsT3h0dVRNckJIZEhWeUc5YjRXLUtRWGRQVkJ0X0owR0kzclRVR2liMnAzdVNHdlc2bDhzX3hzSXRzdQ?oc=5" target="_blank" rel="noopener">[WSJ] Gold Falls on Possible Position Adjustments Before U.S.-Iran Talks</a>
+                    <span class="sector-tag">能源（石油）</span>
+                    <span class="sector-tag">黄金/避险资产</span>
+                    <span class="sector-tag">航运</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>公司动态：维权资金瞄准挪威邮轮，ITM Power上调营收指引</div>
+                <div class="topic-title-en">Corporate Actions: Elliott Targets Norwegian Cruise Line, ITM Power Lifts Guidance</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    知名维权投资者Elliott建仓挪威邮轮，可能推动公司进行战略调整或提升股东回报，对邮轮及休闲旅游板块构成事件性催化。同时，英国氢能公司ITM Power因上调FY26营收预期而股价上涨，反映出清洁能源技术公司在获得清晰订单路径后，市场情绪可能快速逆转，值得关注其行业传导效应。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiqgNBVV95cUxQclZ1dVdGckp0bW4wZFRFLVdZQ0lfa1NreEFzRE41bUVybXN4NjhvYXJxQm52YllDTVhBcU11elh1S1lwbWdhQjEtczl4UkpVOVNEQ3JIVThzVzRuTDFXV1BPb3ZESzRtc0VQQXpJNTRneG5xSUJuNmtQOG9IYTJJYjN1c2pIanBqLTlIelBGZUhKS3VGZmJTdnRnaTJnZ2lnekdydDlVM1I5NVhEYThsU0pzUzlWclZjRmRhY1ROVU42Mzg2QlNsSGZZMTdQd0g1NkhGYUdRZ18wU2hQZm9yN0JfSVBpWE1QTUxzSjMzd1RWMGpmeUluYlhrRjZveHFnLXpITkZKckJBNlNpMXd1dm9WamsxTEpxdl8xVVVmcXFRRWdiVTVBd1V6NUVaX3J6OXFVUkFfbU9IR1o3U2gxcHliaEZnSGpwZTd1cUpKdDdMRXNKWXplR3U2WF9GOXJLX3RBU1gzTmllVGlvTWxFSnc4cTg0Nm1QUHNFWjU5Tm1zV3EwV0Z1Q2VkSEVLZ0l5QTlkZHFUOTkybTZpTGtnOE9qcDJsdVJxekE?oc=5" target="_blank" rel="noopener">[WSJ] Exclusive | Activist Elliott Builds Big Stake in Norwegian Cruise Line</a>
+                    <a href="https://www.investing.com/news/earnings/itm-power-lifts-revenue-guidance-for-fy26-stock-gains-4-4508023" target="_blank" rel="noopener">[Investing.com] ITM Power lifts revenue guidance for FY26; stock gains 4%</a>
+                    <span class="sector-tag">邮轮/旅游业</span>
+                    <span class="sector-tag">维权投资标的</span>
+                    <span class="sector-tag">氢能/清洁技术</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>黄金价格跌破关键位，中国假期削弱实物需求</div>
+                <div class="topic-title-en">Gold Prices Tumble Below Key Level, China Holiday Weakens Physical Demand</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    黄金价格跌破5000美元关键心理价位，主要因中国农历新年假期导致主要消费国的实物买盘支持减弱。这表明在缺乏重大地缘冲击或美元大幅走弱的情况下，金价对短期流动性变化非常敏感。长期看，央行购金和避险需求仍构成支撑，但短期技术性抛压可能持续。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/gold-prices-tumble-below-5-000-as-china-holidays-dent-support-d093e677?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Gold prices tumble below $5,000 as China holidays dent support</a>
+                    <span class="sector-tag">黄金</span>
+                    <span class="sector-tag">贵金属矿业</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>英国失业率升至近五年高位</li>
+                <li>英镑汇率因经济数据疲软下跌</li>
+                <li>美国科技股持续抛售，股指期货下跌</li>
+                <li>美国10年期国债收益率走低</li>
+                <li>黄金价格跌破5000美元/盎司</li>
+                <li>Adani宣布千亿美元AI数据中心投资计划</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
