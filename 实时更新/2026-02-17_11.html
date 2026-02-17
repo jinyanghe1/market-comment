@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-17 11:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-17 11:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在科技股抛售、地缘政治风险及关键经济数据公布前呈现谨慎情绪，AI发展竞争与宏观经济不确定性成为焦点。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>全球AI竞赛加剧，中国技术冲击撼动美国主导地位</div>
+                <div class="topic-title-en">Intensifying Global AI Race: China's Tech Shock Challenges US Monopoly</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    中国AI技术发展引发市场对全球格局重塑的担忧，可能动摇美国在人工智能领域的垄断优势。与此同时，AI板块出现广泛抛售，有分析认为其与疫情期间的科技股泡沫破裂有相似之处，显示市场对估值过高的担忧。 Anthropic与五角大楼关于AI用于监视和武器的谈判陷入僵局，突显了AI治理与商业化的潜在冲突。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/16/chinas-tech-shock-ai-monopoly-us.html" target="_blank" rel="noopener">[CNBC] China's tech shock threatens the U.S. AI monopoly and is 'just getting started'</a>
+                    <a href="https://news.google.com/rss/articles/CBMi-AJBVV95cUxOZThoX1FLUHBhYURNX3NrTGFqTVhYcHB2R1dEOWdoV0drTThvcFBvaHdxWU9sQU13VV81V3FibjRPV3l2c1c5TWh0ZXc0TmxfMjBTeUFkSmU1c1ptMmdkMG45ZnJYdkpRM21Ia0pZYkN0cFl6eTBhMThaSEFWUHdINXNJOF9SRzZOYy1obnNhS2dFWnFqSzR5RTBTMzFxRG1fMlh1azlxZGRLdkNLUkNYaHZWUTM2cGFNeHZscUI5Vk5lSUdOSFVfdF9fdk9JeS03MUU0ajd3VklkakpubmJKWlVXdW02MU9vX2Fjd3V6cjlvV2RnTUhGMkxJVlRidHZHZHBkVXBPc0x6dHpFWFliMVF4WVNFTFJZUDg5Y09IOHNfbTV0QzdvZ0ptNkkxUURKcTU3c2VMVGtkcWhlczMzVDdHNi14d2xfNVByNUtKb1Y2Yzhwd0JkblV5c2ZDTkJaLUVDQ3VHNW5oemN3d1UtVDhaRE1seGtN?oc=5" target="_blank" rel="noopener">[MarketWatch] The AI Selloff Has Covid Parallels, Say Analysts. These Sectors Can Survive.</a>
+                    <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPWURnT2Y1Mk44ZUxZeDFpSmEyZE1mcXJYYjQwYUNqb2hZZVQyR3pFelp4RzRBY0dTRjR5eldhWFVRWGszMHVrRkVRWGdwOXN5ZGxLVjVaTVNRUzMwN1hVME9hd3BfenBHWmZ1bktxekM4cXRPSDRnVzI5N1lvRmZIbmpOSHRHN3dlR280dlU2SFAybkNOb2swa1VRM0s0VEFJN1c5OGdVd0VOcVdTN29Z?oc=5" target="_blank" rel="noopener">[Bloomberg] Anthropic’s Pentagon Talks Snag on AI for Surveillance, Weapons</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">科技股</span>
+                    <span class="sector-tag">网络安全</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>科技巨头战略调整：苹果进军视频播客，阿里升级AI模型</div>
+                <div class="topic-title-en">Tech Giants' Strategic Shifts: Apple Pushes Video Podcasting, Alibaba Upgrades AI Model</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    苹果公司正通过推动视频播客业务直接挑战YouTube和Spotify，意在巩固其内容生态并开辟新收入流，可能加剧流媒体行业竞争。另一方面，阿里巴巴升级AI模型的消息，被视为在科技股抛售和担忧中国市场的背景下，对中国科技股情绪的一个潜在积极信号。 Reddit关于‘人类内容’价值的讨论，也反映了市场在AI浪潮中对独特、真实性内容资产的重新评估。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/16/apple-takes-on-youtube-and-spotify-with-new-video-podcasting-push.html" target="_blank" rel="noopener">[CNBC] Apple takes on YouTube and Spotify with new video podcasting push</a>
+                    <a href="https://news.google.com/rss/articles/CBMiiANBVV95cUxQR3lHZ2xCMklBSmo1UzI2aFBvQXRGM3owZlo4UnNwNzczTkprVnJZMmE0TjVuQmowVjlyUnotWHlDRHprUHgyaG9kcWZVeUlJb3MydE5DbHJGd2JSN1ZrMVNneVRxUlNPUDEzWUI2d2FVSm5SUmhza0I5Z0hNN1g4TTY3RzJPZlR1LUFQem5ZS2ZfMUg3TXJPZVdxc0NpeWJnZXhiS3JOQ082UkxPcnNTaHBPZjhNOTdVTzlwX1BvU3J1SFFRN1lLV0JDY2hPQUpwMU5fVTZVbG9JWkhnN2dmbTRkcFUxd2hEV3JIbWhCSXVfWmFWWGVPNGZncWtEWVhzR0hXZEtFSTh3alNaTVYtcktDNnZHWGl5X01KMktFdTVrUkhYRGdBSjdWWEFxWDcxMjRrT3h3cTlzZHh2NURia2c2RjhjSWtsMS1TTVFYQnlnZTFHSDBEblJFb0t6Y0RDeVZUVTAtZ3FzamtqS3VrYm5XUnpoQ1ViZWVlNUs1al96NTJrcS11Rg?oc=5" target="_blank" rel="noopener">[Barrons] Alibaba Upgrades AI Model. What It Means for the Software Stocks Selloff and China Fears.</a>
+                    <a href="https://www.bbc.com/news/articles/c5y4zl0w062o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Reddit's human content wins amid the AI flood</a>
+                    <span class="sector-tag">消费科技</span>
+                    <span class="sector-tag">流媒体</span>
+                    <span class="sector-tag">互联网</span>
+                    <span class="sector-tag">软件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>地缘政治与经济风险升温，影响能源、国防与供应链</div>
+                <div class="topic-title-en">Escalating Geopolitical and Economic Risks Impact Energy, Defense, and Supply Chains</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国前总统特朗普表示将间接参与伊朗核谈判，以及即将决定对台军售，加剧了地缘政治不确定性，可能影响全球能源供应安全和国防板块。同时，关于俄罗斯经济陷入‘死亡区’的分析，以及航运业整合（赫伯罗特高价收购以色列公司）的消息，凸显了全球供应链面临的结构性变化和地区风险。智利车厘子在中国市场销售不及预期，也反映了全球贸易中供需错配的问题。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/trump-says-he-will-be-indirectly-involved-in-iran-nuclear-talks-in-geneva-93CH-4507848" target="_blank" rel="noopener">[Investing.com] Trump says he will be indirectly involved in Iran nuclear talks in Geneva</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOTnpaOWN4NVIyT3FzV1d3UkVTcDc3MXV0blNVSzVnUERZWVJXWXJBNkxwQjFMcnRkYmNrT3V4Y2tRbmZ6eHZXSUpDT3FjVGFnbTdvZlN6UEE1OUNwLW1GRU93NFZzM1JfWVZLcGQ2dVB2OTVjOTZBYXItYUZjVmc2R045NUFPck1uTVE1M0szcnJ3R21xX1J3dmZNd294N2F6M1hVUHNhUDdldVFhd3YxZnFn?oc=5" target="_blank" rel="noopener">[Bloomberg] Trump Says He’ll Soon Make Decision on Weapon Sales to Taiwan</a>
+                    <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNMzhGNG8wd2ZZN2FRTGlIOWpZcmF6N3NSWFp4RXE1RFJ5ay03eldtMUNOVTB4QkNfNGRjR3JQN2d2UzNjWTV4aHFQdmRyTEs3MVBnWnlLUTAxU3Ntb1lrQzJETV8zYmp4NnR4ODZuT3hKZEg4aUcxcnI2d0pFMkdKQWhBZ18zN1ZWam1TclZrcnA5aTFnRUVYbQ?oc=5" target="_blank" rel="noopener">[Economist] Russia’s economy has entered the death zone</a>
+                    <a href="https://www.marketwatch.com/story/shipping-industry-set-to-consolidate-as-hapag-lloyd-to-buy-israeli-firm-for-58-premium-35839cf0?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Shipping industry set to consolidate as Hapag-Lloyd to buy Israeli firm for 58% premium</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQWTJnakdRUHJUSGJ5R3U0TnViOURGenV1QXRNM0FIUGV6YmhhamdXQzBRUlJuRTEwX3F1N1h1NFlrY0xTM2dhUF9zOFZVNlFlX25UMDVKTUV3blhiZzVIZ2pSVVl2cUgwVjZmTFhkbHhsSkpXWlU1LS1KSVkycUg0cXZOeklwcHhfVnprSXBPN2EyYVBjQ1dGNmV6MUZUQUFPazVKRlJrWmdHNmdwbFR2SXhuX1Y?oc=5" target="_blank" rel="noopener">[Bloomberg] Chile Cherry Sales to China Disappoint on Oversupply, Demand Lag</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">航运物流</span>
+                    <span class="sector-tag">农业贸易</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>金融监管与行业动态：银行面临新资本要求，对冲基金涌入亚洲</div>
+                <div class="topic-title-en">Financial Regulation and Industry Trends: New Capital Rules for Banks, Hedge Funds Flock to Asia</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国银行业将根据巴塞尔协议面临新的抵押贷款资本要求，这可能增加运营成本并影响盈利能力，尤其是对抵押贷款业务敞口大的银行。另一方面，高盛报告显示对冲基金正以十年来最快速度买入亚洲股票，表明机构资金看好该地区增长潜力或估值吸引力。此外，劳埃德银行因在薪酬谈判中使用员工数据引发争议，以及高盛计划放弃董事会候选人的多元化因素，反映了金融业内部治理与社会责任议题持续受到关注。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQLVZuRlBWNlU4NW5qQW5VbFpReFk3WmhoRVhmal9mY3ptVVFqbS1rS3hpY2hVWjJDc2FNVTVBYlBiNWtHYV93R2djMU5pVml6aHd1QVh3bHM0YU1IQkp4T0ZkNlJpbkpySjB1MXJyeThFLWxUcExkeTlmelNob1hpODVtQXg0QnpDSkZUUW8yYXBycnpWVk1vSk9zV3lBNzV2OVU5ZHBnS1pENm1Zbl9HenJpSVo?oc=5" target="_blank" rel="noopener">[Bloomberg] US Banks to See New Mortgage Capital Requirements in Basel Plan</a>
+                    <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOZ2ZzVlFQaE5uUC1qLWliWkZoODA4RkVCcmtqT3Q4Q3VzTWduMkw3bkwxQ09GdXB0SW5RSkhfTThpck5NMEFETnhTYUFLRVk3dFYySWxySWtPY1FFV09nR2I0ZUJsYkxHdVNjQTktb2YyNXdlV2NUMlJZV0FNUXZ4Vy1FVFdwTjctdy1GdU9rLUNyb1lyQ3ZCbi1UdFlRRVhnZXBZaFJURlhBbjJ6c1E?oc=5" target="_blank" rel="noopener">[Bloomberg] Hedge Funds Buy Most Asian Stocks in a Decade, Goldman Says</a>
+                    <a href="https://www.bbc.com/news/articles/c5yqv1v9x92o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Lloyds boss accepts concern over use of staff data in pay talks</a>
+                    <a href="https://www.investing.com/news/stock-market-news/goldman-sachs-plans-to-drop-diversity-factors-from-board-candidate-criteria-wsj-reports-4507846" target="_blank" rel="noopener">[Investing.com] Goldman Sachs plans to drop diversity factors from board candidate criteria, WSJ reports</a>
+                    <span class="sector-tag">银行</span>
+                    <span class="sector-tag">金融服务</span>
+                    <span class="sector-tag">对冲基金</span>
+                    <span class="sector-tag">房地产金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>劳动力市场结构性困境与个人财务压力凸显</div>
+                <div class="topic-title-en">Structural Labor Market Challenges and Mounting Personal Financial Pressures</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    长期失业问题正在成为美国就业市场的新常态，反映了经济复苏的结构性不平衡和技能错配，可能抑制消费信心和增长潜力。同时，背负学生贷款的家长面临获得可负担还款和减免的短暂窗口期，这加剧了家庭财务压力。这些微观层面的困境与宏观经济数据形成对照，是评估消费者韧性和未来支出趋势的关键变量。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/16/long-term-unemployment-becoming-a-status-quo-in-todays-job-market.html" target="_blank" rel="noopener">[CNBC] Long-term unemployment is becoming 'a status quo' in today's job market: It's a 'mental war,' job seeker says</a>
+                    <a href="https://www.cnbc.com/2026/02/16/student-loan-parent-plus-forgiveness.html" target="_blank" rel="noopener">[CNBC] Parents with student loans have a short window to secure affordable repayment and forgiveness</a>
+                    <span class="sector-tag">非必需消费品</span>
+                    <span class="sector-tag">金融服务业</span>
+                    <span class="sector-tag">教育服务</span>
+                    <span class="sector-tag">零售</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>大宗商品与企业盈利分化：黄金、铜受捧，部分企业财报不及预期</div>
+                <div class="topic-title-en">Divergence in Commodities and Corporate Earnings: Gold & Copper in Focus, Some Earnings Miss</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    尽管金价经历回调，但期权交易员仍在增加看涨押注，显示市场对避险资产和通胀对冲工具的长期需求。必和必拓的铜业务利润丰厚，部分抵消了中国需求疲软对铁矿石的拖累，突显了能源转型背景下铜的战略价值。然而，Otter Tail等公司的盈利未达预期，提醒投资者在宏观不确定性中，个股基本面表现存在显著差异。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPTTFtYXZvYXNYcjNfUHU5OW8zazB1ZHJySHNuaEpmdC0yamE1V0h4dDRjRU1NQWJQWlFER0lzZlRQMWJIVTgzdFlsUDlEeTVBYjdUYTZoVEdOdExQSmtQbU53TkotTC0yWjIxX1YtazZQU1hEQ3RSbFo1eVduRG1WdXNyY3ZLMFdYWUcwWW5KajZMTzkxRWk3Y2EwM1BtVWN0SUNvTk9pWlB0NjdacXNBRVNQUlE?oc=5" target="_blank" rel="noopener">[Bloomberg] Gold Options Traders Boost Long-Shot Bets Even After Correction</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQTk05QkJIVDh4N0lseTBLaDVPcUE0VFF4b3FENDhqMHkyNTdEYkxYUmkzenZReTJ4c0tGeGt1YmtkbXh4QzdMN1hIYXpUNEJrNUFtbTBoaElyMU40QTFTZlVjc2oxUUxDV0lIc3ROdzVjOEtZeXp2dWRzVzF5YVhaMHZuaGduc1NkZzVfZnVLQm5IaHNpYTdqSV9PbmdxYXdBUUVNR2lSZDlES0hiSkdQOXBhNGlrdw?oc=5" target="_blank" rel="noopener">[Bloomberg] BHP’s Bumper Copper Profits Offset China Drag on Iron Ore</a>
+                    <a href="https://www.investing.com/news/earnings/otter-tail-earnings-missed-by-006-revenue-fell-short-of-estimates-4507845" target="_blank" rel="noopener">[Investing.com] Otter Tail earnings missed by $0.06, revenue fell short of estimates</a>
+                    <span class="sector-tag">贵金属</span>
+                    <span class="sector-tag">工业金属与采矿</span>
+                    <span class="sector-tag">公用事业</span>
+                    <span class="sector-tag">原材料</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>消费与旅游行业面临压力：酒店削减成本，邮轮股获激进投资者关注</div>
+                <div class="topic-title-en">Consumer and Travel Sectors Under Pressure: Hotel Cost Cuts, Cruise Lines Draw Activists</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    从凯悦到假日酒店，美国免费酒店早餐正面临“K型经济”威胁，高端与低端酒店采取不同策略削减成本，反映了行业在通胀和需求变化下的盈利压力。与此同时，激进投资者Elliott Management在挪威邮轮控股建立了超过10%的股份，这可能预示着该行业将面临重组、运营改善或战略调整的压力，为陷入困境的旅游休闲板块带来变数。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/15/hotel-free-breakfast-hyatt-holiday-inn-marriott-cost-cuts.html" target="_blank" rel="noopener">[CNBC] From Hyatt to Holiday Inn, America's free hotel breakfast is facing a K-shaped economic threat</a>
+                    <a href="https://www.investing.com/news/stock-market-news/elliott-builds-over-10-stake-in-norwegian-cruise-line-wsj-4507847" target="_blank" rel="noopener">[Investing.com] Elliott builds over 10% stake in Norwegian Cruise Line- WSJ</a>
+                    <span class="sector-tag">酒店餐饮</span>
+                    <span class="sector-tag">邮轮与旅游服务</span>
+                    <span class="sector-tag">航空与休闲</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国长期失业率状况</li>
+                <li>美联储会议纪要即将公布</li>
+                <li>关键经济数据（如PPI、零售销售）本周发布</li>
+                <li>多家公司（如Otter Tail, Sonoco）最新财报</li>
+                <li>黄金期权市场持仓变化</li>
+                <li>亚洲股市资金流入数据</li>
+                <li>美国新屋抵押贷款资本要求草案</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
