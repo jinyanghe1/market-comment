@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-19 01:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-19 01:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场呈现谨慎乐观情绪，科技股在AI利好带动下反弹，但地缘政治紧张与经济数据喜忧参半共同作用，限制了整体风险偏好。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>英伟达获Meta大单提振AI板块，行业竞争格局生变</div>
+                <div class="topic-title-en">Nvidia Wins Meta Deal, Boosts AI Sector and Alters Competitive Landscape</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    英伟达击败博通赢得Meta的AI芯片大单，此举不仅直接推动其股价上涨，更巩固了其在AI算力领域的领导地位。该交易可能预示着大型科技公司在自研芯片与采购第三方芯片间的策略权衡正在发生变化，对博通等竞争对手构成压力，并可能重塑AI基础设施供应链的投资逻辑。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMikANBVV95cUxPMzJWaFBqeEVvZlNLdThOSTlNWU16VVRaU185RVlfeVBXb0hFalB1MVJrSzhIaGFwMUw1WlFvdXEyc1I0WTZIQ0MxNnZUSVN4ejI5Mkkwd2hzUTNPcFJkZGlsU3pReC05ckRQMnJGRF8ybGNWY1hDeS1oVk1NenpHUHFXc3NFb3VWSHVhTWtHa0dNRGQyb0FQdzQxVE8wQmh3RURTRWZYLWtIaWowdHU2OVZnNFBLdVhZSFVJaFE0Wk93dTdZc2lsR0VSMVZoMUZHUlVOS3JJY2tSWUVMZzNuU0lNbDJtWng3Q1d6ZGRCQ3UtRDRULTltT1pxUzBITkFSa0ZESS1hUGo5QmpabThaMjBabUtTMkhiWEl1N244YjNIYVBob1Q2X0dtdzItOGZWM1FHNDNyQXFVOWR3d09fbDRFaXRSS2FJRV9vcjhzVjdOM1JuOTVVamRDdC12amxCUHRja2hZempaNnVuSDNtcl93OWFYSWNMS3kxVGZIMWNXeVhyV2FKalNNSG9fbDRC?oc=5" target="_blank" rel="noopener">[Barron's] Nvidia Stock Rises After It Wins Meta Deal. Rival Broadcom’s Shares Slide.</a>
+                    <a href="https://www.cnbc.com/2026/02/18/palo-alto-stock-cybersecurity-ai-earnings.html" target="_blank" rel="noopener">[CNBC] Palo Alto shares sink 8%, CEO defends cybersecurity's position as AI hits software stocks</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">人工智能</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>美伊紧张局势升级，国际油价应声大涨</div>
+                <div class="topic-title-en">U.S.-Iran Tensions Escalate, Oil Prices Surge</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国官员称伊朗无视关键要求，并表示军事打击已在考虑之中，导致油价单日飙升3%。这一地缘政治风险显著增加了能源市场的不确定性，可能推高全球通胀预期，并对航空运输等下游行业成本构成直接压力。投资者需警惕事件升级对风险资产的整体冲击。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/18/oil-prices-today-iran-trump-nuclear-talks.html" target="_blank" rel="noopener">[CNBC] Oil jumps 3% after Vance says Iran ignored key U.S. demand, military strikes on the table</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPdHZpVEtzcmNUSnBZM0RsYUNEbEF3NXhFU2gxSGJzWnJ2WUUxWFFHd09EVUMtWW1GVXB0OGIybktITGhMS3FIaXJMV3RuM1VoeEh2WFJ6dUsxR3Fndll5QzVkd2d6ZUhGNFBvWkJJSm1SVkpDRm11TjVnVEpOSWlJNy1RVFBKc3Jya0IzQjFJeWtHd3ptdjJkOU5DaDFad1NwaWJaa0VHYUlQM2dyN2xxRks4RQ?oc=5" target="_blank" rel="noopener">[Bloomberg] Russia Cuts Oil Drilling as Money Dries Up, With Output at Risk</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">航空运输</span>
+                    <span class="sector-tag">大宗商品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>美国经济数据分化：通胀降温与“失业繁荣”并存</div>
+                <div class="topic-title-en">Diverging US Economic Data: Cooling Inflation Amid 'Jobless Boom'</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    燃料和机票价格下降带动通胀下行，为货币政策提供宽松空间；同时住房开工数跃升至五个月高点，显示房地产市场韧性。然而，GDP增长与民众感受脱节的“失业繁荣”或“繁荣衰退”现象引发关注，表明经济扩张的普惠性不足，可能影响长期消费信心和政治经济环境。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c5yg04jg1n5o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Lower fuel prices and airfares help drive inflation down</a>
+                    <a href="https://www.marketwatch.com/story/housing-starts-jump-to-highest-level-in-five-months-showing-surprising-momentum-into-the-new-year-79b407cb?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Housing starts jump to highest level in five months, showing momentum going into the new year</a>
+                    <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVndFWlNYaGg1QXF1cnIwUElGMWpWMXFGSkhTcWF0NEFQbXhQbzRQaDQ1TEFKYUtsdUR6cEFBbUVCckVhZ3JHX1QxM29rY2ZSQ0xSdmEwWTJKa0l3QWdVRGJGbWtiT3RnVzVjN216cGJaSHZQTXdyRUYyQ2Y1LVBpMkl0MTVfY2tpYVoyaU5VMjlHaFp4RGk0SXdGeGNzS0RHVWIwb2ZWY2E?oc=5" target="_blank" rel="noopener">[Bloomberg] Unprecedented ‘Jobless Boom’ Tests Limits of US Economic Expansion</a>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">消费零售</span>
+                    <span class="sector-tag">交通运输</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>Moderna流感mRNA疫苗获FDA重新审查，生物技术板块受关注</div>
+                <div class="topic-title-en">FDA Agrees to Review Moderna's mRNA Flu Vaccine in a Reversal</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    FDA在Moderna做出让步后，同意审查其mRNA流感疫苗申请。这一政策转变不仅对Moderna自身产品管线至关重要，也为整个mRNA技术平台在传统疫苗领域的拓展打开了新的想象空间，可能刺激生物技术板块的投资情绪，并引发对疫苗市场竞争格局的重新评估。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/18/fda-agrees-to-review-modernas-flu-shot-application-after-refusal.html" target="_blank" rel="noopener">[CNBC] FDA agrees to review Moderna’s mRNA flu vaccine application in a reversal</a>
+                    <a href="https://www.marketwatch.com/story/moderna-got-the-fda-to-change-its-mind-and-review-its-flu-vaccine-after-some-concessions-04c3f38e?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Moderna got the FDA to change its mind and review its flu vaccine after some concessions</a>
+                    <span class="sector-tag">生物技术</span>
+                    <span class="sector-tag">制药</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>前白宫顾问抨击纽约联储关税研究，凸显政策不确定性</div>
+                <div class="topic-title-en">Former White House Advisor Attacks NY Fed Tariff Study, Highlighting Policy Uncertainty</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    前特朗普经济顾问哈塞特严厉批评纽约联储关于关税成本由美国人承担的研究，并要求惩戒相关作者。这场公开争论远超学术范畴，反映了关税政策及其经济影响评估的高度政治化。这为未来的贸易政策走向增添了不确定性，可能影响跨国企业的供应链布局和投资决策。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/18/hassett-says-authors-of-new-york-fed-tariff-study-should-be-disciplined-worst-paper-ive-ever-seen.html" target="_blank" rel="noopener">[CNBC] Hassett says authors of New York Fed tariff study should be disciplined: 'Worst paper I've ever seen'</a>
+                    <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMzE3NnN3eEVTdGhrN3hpT0dWTnlBY0JPaGRURVFSaWNmZTdIWHMxbmlad21GVnNHNFR5T0dHdmpuUVJDeWZfUUp5MW42MGJBTUlfc203QXZrbGhldXQyZGVac1BsSW4yMDRlODNmaUY5dnRKSTQyRXZac0lKdEcxMUZCRGlVdU1lZHVwclQwREtWLUctRDRvbG5FMWd3c0NDa0VIdlV1dlVWVEc4NXJ0TkJvMF9HMzVDbGxDZUNXcjNUdw?oc=5" target="_blank" rel="noopener">[Bloomberg] Hassett Attacks NY Fed for Study on Tariffs Hurting US Companies</a>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">宏观经济</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>传闻拉加德考虑提前离任，欧洲央行领导层面临变数</div>
+                <div class="topic-title-en">Rumors Lagarde Considering Early Exit, ECB Leadership Faces Uncertainty</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    彭博社报道称欧洲央行行长拉加德正考虑提前离任。若消息属实，将引发市场对欧元区未来货币政策连续性和风格的担忧。在欧元区经济复苏仍不均衡的背景下，央行领导层的潜在更迭可能增加汇市和债市的波动性，并影响全球主要央行间的政策协调。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUzk1RWF6SW81aFhjWUsyMWJudEViQzdzTWhhNkw0OW1Uc2FyYk9YcVZNekF3ams3ZUpqTnhNRWFLVHNESE9mOWtodzV2T1l6NkQtN0RHeng4VEZjNHJjNWRuNkQ4aV9iUl9qUDJ6UEdCbUFOTDY1QnA5UzBjalZIQTB2OEpkdWlqT3BNZkxxMjZncWFibUZIWFVvelpTWmRBTWpXOTJWRW5kOE9UdG1xVUFsVl9JbzN3c21z?oc=5" target="_blank" rel="noopener">[Bloomberg] Lagarde Reported to Consider Early Exit</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">外汇</span>
+                    <span class="sector-tag">固定收益</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>科技巨头面临多重监管与社会压力</div>
+                <div class="topic-title-en">Tech Giants Face Multiple Regulatory and Social Pressures</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    Meta CEO扎克伯格因社交媒体成瘾问题出庭作证，同时微软总裁对中国的AI补贴表示担忧。这些事件交织在一起，凸显全球科技巨头正同时面临内容安全、用户隐私、市场竞争及地缘科技竞争等多维度的压力。持续的审查可能增加运营成本，并影响其长期增长故事和估值模型。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c5y42znjnjvo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Zuckerberg to testify in social media addiction trial</a>
+                    <a href="https://www.cnbc.com/2026/02/18/microsoft-president-brad-smith-chinese-ai-subsidies.html" target="_blank" rel="noopener">[CNBC] Microsoft’s Brad Smith says U.S. tech should ‘worry a little’ about Chinese firms' government subsidies</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">社交媒体</span>
+                    <span class="sector-tag">互联网</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>油价单日大涨3%</li>
+                <li>美国住房开工数创五个月新高</li>
+                <li>通胀因燃料及机票价格下跌而放缓</li>
+                <li>纳斯达克指数反弹超1%</li>
+                <li>抵押贷款利率降至一个月低点</li>
+                <li>英国国防巨头BAE系统录得创纪录销售</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
