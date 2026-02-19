@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-19 18:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-19 18:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在利率路径分歧、地缘政治风险与科技股反弹等多重因素交织下呈现谨慎情绪，投资者关注企业财报与政策动向。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美联储内部分歧加剧，加息可能性重回视野</div>
+                <div class="topic-title-en">Fed Minutes Show Split, Rate Hikes Back on Table</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美联储最新会议纪要显示官员对未来利率路径存在显著分歧，部分成员认为若通胀粘性或经济过热，不排除进一步加息的可能。这为市场预期带来了新的不确定性，可能抑制风险资产的估值，并导致债券市场波动加剧。投资者需密切关注后续经济数据与联储官员表态。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/18/fed-minutes-january-2026.html" target="_blank" rel="noopener">[CNBC] Fed officials split on where interest rates should go, minutes say</a>
+                    <a href="https://news.google.com/rss/articles/CBMikwNBVV95cUxQVUNlVllja0N2dWRENU5aWWZfV1dSQWlxaF8wbUluU1lhMGdTd1hweGdKUUk5MG0tT3pvYmxpMFhGdVlybkxJR1ROY2t0OVIyREdTbVctY0NhVkNUYjNscUE4MDBxSzcxSHZXRExwRE5qWnhobWs2UGoyZkRkaG5rTTMzOUhfdmNibzZ5QjVWZUFQRzRveEs1WXVFX1ozeHdBRG5MZGNMVWpaNVZZVDdIUUowRjlTTjF2NVFxamtnLWZCWjhuRUxwa2g3enJNbVNIYmticW1FUjJpZU13LUVfSzJkV0FlTk1famZwdmFKTnhkS3pSb0M5dFVGVkxLZ1JrRGthUHpGZHJNVjlDYWMyNG1JWkxVeHVnX2FMTDk0eHRFcUpDdThiamJaVXlLeWtxZHZrSS1ReFZrS0t4TVRuOUpKVGVFTnBEV0c5N3U1dVFHUjcyWk9sdzhfMGhRa3F3RDZQTWFONDhBcjA2NUtlWUdlUzViOG9kZXkzZVVVb1ItbkVmRVhGQU92Q1pOdU9kUGdJ?oc=5" target="_blank" rel="noopener">[Barrons] Fed Minutes Show Split—and Rate Hikes Are Back on the Table</a>
+                    <a href="https://www.investing.com/news/economy-news/japan-may-see-upheaval-of-funds-when-boj-hikes-rates-to-1-economist-says-4512850" target="_blank" rel="noopener">[Investing.com] Japan may see upheaval of funds when BOJ hikes rates to 1%, economist says</a>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">债券市场</span>
+                    <span class="sector-tag">科技股（估值敏感型）</span>
+                    <span class="sector-tag">房地产</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>美伊紧张局势升级，油价风险溢价攀升</div>
+                <div class="topic-title-en">U.S.-Iran Tensions Escalate, Raising Oil Price Risk Premium</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    随着美伊关系紧张加剧，且俄罗斯与伊朗举行联合军演，市场对中东原油供应可能中断的担忧上升，推动油价基准测试每桶70美元的关键心理位。地缘政治风险溢价重新计入油价，若局势进一步升级，可能引发能源成本驱动的通胀预期升温，利好能源板块但挤压非能源企业的利润率。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/trump-us-iran-nuclear-talks-oil-prices-russia.html" target="_blank" rel="noopener">[CNBC] U.S. says Tehran would be ‘very wise’ to make a deal as Russia, Iran hold naval drills</a>
+                    <a href="https://www.marketwatch.com/story/what-oil-hitting-70-a-barrel-would-signal-about-iran-and-u-s-tensions-cc026155?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] What oil hitting $70 a barrel would signal about rising U.S.-Iran tensions</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">航空运输（成本压力）</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>AI领军企业财报与监管动态牵引科技股情绪</div>
+                <div class="topic-title-en">AI Leader Earnings & Regulatory Dynamics Drive Tech Sentiment</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    一方面，OpenAI CEO高度评价中国AI进展，Nvidia赢得Meta重要订单（挤压Broadcom份额），Palantir获分析师看涨评级，表明AI基础设施和应用层龙头公司基本面依然强劲。另一方面，Meta面临重大诉讼，英国即将出台针对科技平台的严苛内容审查法，凸显行业监管压力持续。科技股在基本面与监管夹击下表现分化。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/openai-sam-altman-india-ai-summit.html" target="_blank" rel="noopener">[CNBC] Chinese tech companies progress 'remarkable,' OpenAI's Altman tells CNBC</a>
+                    <a href="https://www.cnbc.com/2026/02/19/trump-us-iran-nuclear-talks-oil-prices-russia.html" target="_blank" rel="noopener">[CNBC] Zuckerberg defends Meta in landmark social media addiction trial</a>
+                    <a href="https://news.google.com/rss/articles/CBMilwNBVV95cUxPQWlQdV9HX2NSd3Izb0FidzJScHpCNmdXMkFyUTNkMUlhbHdxb1pZNHRHZlVQUEdpMkJZemszM1BmcVgzVGRYR0ZrT0xYS002dlljQm5uanRCMjVXWU1uQUVfZ0xDZ2R6VjU0ZmhiV2JBc29uMkRZX0xaeHVXelJEdi1CWVFKVjhOTXRaS2tqUTB3LVpRLWVsenE1aTJHbnZRQU05a0JhMGp5ZGFGZngwdEU2dTlXeWs5bDNqOHlUM1dXOHIzTzYtbGFNVFlXNWp4MHlnZ0xjWkdDdVZmYkMyS0FwNUhsU1FjOEdEaDctcU1hYzJLLWNJNTZQWUwxaXR3MFNsdE5XMmFJVkxFVXBQQ2VhU012cDdOMXBEZG15emhqSnFtMEVqNG9Wc2lsZUVZR0tVY2tQdFlIX3RaYW1maUtQR1J0QkhvT0RvclZSemJaYUMzLXN1YTRiUG5hams4cGVlQ056UjZZNTFZZGZ1QWtQQlNKY0I0V21sNnh1OFhCcEp5c1hSVkozOTFEcFFOYS1uOVp1SQ?oc=5" target="_blank" rel="noopener">[Barrons] Nvidia Wins Meta Deal. Its Gain Is Broadcom’s Loss.</a>
+                    <a href="https://news.google.com/rss/articles/CBMiiANBVV95cUxQNTRKUVpXeFFETjdMb1dOOGFFMmwzd1pEazRiRkdrQUx1TVQ1NVdJZHBObnhoTHZQM3oyNk55UTdXa3NDU1ktX2Q1WHNzUy1OZjl5a19mMHU3bmdnODhXeFRrQWY1WWMtUWJ0WC1OSk1RVHhXSFpvanpJaEpFc3pQVWhWMmhIMnhWQVRudjZ2MjlKb0tEbkVDd0YyVVhrSGZZV0tCNUlVTTJZNEIzdlVPYndEY2s5d1c2Uml5Z1oxQVY2ck1SSk1fc0lXTTQ1S3RXUHhsbVk0aVlCR21yQmpzTTN6Q1hVT1g1VHBqdVBoRFJDNktvTk5fZVZ4aWoyWGZ4RWlxT3otNmprWGJnQ0NJbUd4YVN1TDZ1X0VxRlk4RFdMY3pDLXlWVExZWWd2VmZmZEVtQ3BXS05IajkwZl9EOG91djk2WGw5VG1WUmhRbVd0ZG1KY2dYSThOSERxVEtzWmx0U01WanJhRHV3enFXZHR0RTNweUQzQTQ2NTNhazNrQ1BUQUwzcQ?oc=5" target="_blank" rel="noopener">[Barrons] Palantir Stock Upgraded to Buy. AI Heavyweight Is ‘In a Category of One.’</a>
+                    <a href="https://www.bbc.com/news/articles/cz6ed1549yvo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Tech firms will have 48 hours to remove abusive images under new law</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">社交媒体</span>
+                    <span class="sector-tag">软件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>关键企业财报喜忧参半，引发个股剧烈波动</div>
+                <div class="topic-title-en">Key Corporate Earnings Mixed, Triggering Volatility in Individual Stocks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    财报季持续，各行业龙头表现分化：Airbus因交付指引保守股价大跌，拖累欧洲市场；Nestle计划剥离冰淇淋业务并实现超预期销售增长；Carvana和DoorDash因盈利指引疲软股价下挫；而Figma、Garmin则因业绩超预期或积极信号股价大涨。这表明市场对业绩质量及未来展望的审查极为严格，任何不及预期的信号都可能被放大。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/airbus-earnings-fy-q4-boeing-deliveries-a320-airbus-2026-boeing-recovery.html" target="_blank" rel="noopener">[CNBC] Airbus falls 5% after targeting only 870 deliveries this year as Boeing competition tightens</a>
+                    <a href="https://www.cnbc.com/2026/02/19/nestle-q4-earnings-sales-ice-cream.html" target="_blank" rel="noopener">[CNBC] Nestle plans sale of ice cream business as fourth-quarter sales growth beats estimates</a>
+                    <a href="https://www.marketwatch.com/story/doordash-users-want-more-complex-deliveries-and-thats-hitting-profits-60fa6b2d?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] DoorDash users want more complex deliveries, and that’s hitting profits</a>
+                    <a href="https://www.investing.com/news/earnings/carvana-shares-tumble-after-fourth-quarter-adjusted-ebitda-miss-4512201" target="_blank" rel="noopener">[Investing.com] Carvana shares tumble as fourth-quarter earnings miss estimates</a>
+                    <a href="https://www.marketwatch.com/story/figmas-stock-soars-as-ai-earnings-momentum-helps-ease-investors-doubts-9f31e005?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Figma’s stock soars as AI earnings momentum helps ease investors’ doubts</a>
+                    <a href="https://news.google.com/rss/articles/CBMi_gJBVV95cUxNQ3ZrTUFxRlB5bzFMTDNlbW5wbWtKMTZSUVZ0YkdYa0tteGc4ZmhqaVBkaUlpZ1BXZzFqOUxDcGhwVGVlUDhyOWNtbktGYXZQc1Iwc2xPUFd6TmJCWm1tS0RNc2d1X2d1aHRTQzFsdndiamkwSlVHQW1YSlVvZXRTRUtCVVllbjRub0lZcWQ2MHdkSl9KTTNPTF9GbjY5MG5yc1dVM0RRaGVTbk1NdVFmWVAtREo1QXFkVXY5SDdGMy1hQS1CVFp4eG1IM3B2cW9hOWpBbEZBQnRmcG1lcU40bk1ES0p2TlNycnV2aXVyVVdRYzFIcENmZ1BMZENnRlhJUnlKcnU1NHFrTFFCZUpJc1VXY09VZ2NWZEhYQlRkZnQ5ZDU3dmpiRXVaaGNhMGllVS1nUm9mZkFoeWRFdEozdF9GcEFOTkVVTEFWWnNXdGcyQ2lzV2g2VE1waXNUT3djUnJSTWhoMHJ1RjFRZ2JRelVfeGV1UGtxOWZKeVZB?oc=5" target="_blank" rel="noopener">[Barrons] Garmin Stock Is Surging. There’s More to Its Move Than Solid Earnings.</a>
+                    <span class="sector-tag">航空航天</span>
+                    <span class="sector-tag">食品饮料</span>
+                    <span class="sector-tag">汽车零售</span>
+                    <span class="sector-tag">餐饮外卖</span>
+                    <span class="sector-tag">软件</span>
+                    <span class="sector-tag">消费电子</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>行业转型与贸易压力并存，企业战略调整应对</div>
+                <div class="topic-title-en">Industry Transformation Meets Trade Pressure, Forcing Strategic Shifts</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    多个行业面临结构性挑战：汽车行业加速向电动车转型，雷诺考虑在西班牙生产下一代紧凑型EV；玩具行业则因美国关税政策利润受损，寻求法律途径解决；英国天然气公司因暖冬导致利润下降，凸显能源需求受天气影响。这些动态迫使企业进行战略重组（如Etsy剥离非核心资产Depop给eBay以聚焦主业）、寻求供应链多元化或进行法律游说，投资者需评估企业适应变化的能力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/renault-considers-building-nextgen-compact-evs-in-spain-93CH-4512846" target="_blank" rel="noopener">[Investing.com] Renault considers building next-gen compact EVs in Spain</a>
+                    <a href="https://www.bbc.com/news/articles/c87515x9p0zo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] 'We're still on edge': Toy firms look to US Supreme Court as tariffs hit profits</a>
+                    <a href="https://www.bbc.com/news/articles/cz7g9ge2lr2o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Warmer winter hits profits at British Gas owner</a>
+                    <a href="https://www.marketwatch.com/story/etsy-is-selling-depop-to-ebay-at-a-markdown-in-latest-move-to-focus-on-basics-both-stocks-are-rallying-d866740d?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Etsy is selling Depop to eBay at a markdown, in latest move to focus on basics. Both stocks are rallying.</a>
+                    <span class="sector-tag">汽车制造</span>
+                    <span class="sector-tag">玩具</span>
+                    <span class="sector-tag">公用事业（能源）</span>
+                    <span class="sector-tag">电子商务</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美联储会议纪要显示内部分歧，加息选项未排除</li>
+                <li>布伦特原油价格测试70美元/桶关键阻力位</li>
+                <li>Airbus 2026年交付目标定为仅870架，低于市场预期</li>
+                <li>Nestle Q4销售额超预期，并计划剥离冰淇淋业务</li>
+                <li>日本央行若加息至1%可能引发大规模资金流动</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
