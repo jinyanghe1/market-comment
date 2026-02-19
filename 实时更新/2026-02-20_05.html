@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-20 05:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-20 05:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">地缘政治紧张与贸易赤字拖累市场情绪，但科技巨头表现强劲，整体市场趋于谨慎。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美伊紧张局势升级推高油价</div>
+                <div class="topic-title-en">U.S.-Iran Tensions Escalate, Pushing Oil Prices Higher</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普政府设定对伊朗攻击的最后期限，导致油价上涨。地缘政治风险增加可能引发能源市场波动，并影响全球供应链，投资者需关注能源股和避险资产配置。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/trump-to-decide-whether-to-attack-iran-in-next-10-days-oil-prices-jump.html" target="_blank" rel="noopener">[CNBC] Trump to decide whether to attack Iran in next 10 days — oil prices rise</a>
+                    <a href="https://www.investing.com/news/commodities-news/russia-warns-of-escalating-iran-tensions-amid-us-military-build-up-4513617" target="_blank" rel="noopener">[Investing.com] Trump warns Iran of ’bad things’ if no deal made, appears to set deadline of 10-15 days</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防</span>
+                    <span class="sector-tag">航空</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>美国贸易赤字创新高，关税政策效果有限</div>
+                <div class="topic-title-en">U.S. Trade Deficit Hits Record High Despite Tariffs</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    2025年美国贸易赤字达9010亿美元，显示关税未能显著缩小逆差。这可能加剧贸易保护主义压力，影响全球贸易流动，企业需应对潜在的新关税风险和市场不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c4ge4yxwnlno?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] US trade deficit hits fresh high despite Trump's tariffs</a>
+                    <a href="https://www.cnbc.com/2026/02/19/us-trade-deficit-totaled-901-billion-in-2025-despite-trumps-tariffs.html" target="_blank" rel="noopener">[CNBC] U.S. trade deficit totaled $901 billion in 2025, barely budging despite Trump's tariffs</a>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">零售业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>科技巨头竞争白热化，AI安全监管受关注</div>
+                <div class="topic-title-en">Tech Giants Intensify Competition, AI Safety Regulation in Focus</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    亚马逊营收首次超越沃尔玛，微软股票相对Alphabet出现折价，显示科技行业格局变化。同时，OpenAI与Anthropic的竞争及英国AI安全监管角色凸显AI领域投资机会与监管风险，推动行业创新与整合。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/amazon-revenue-passes-walmart-earnings-reports.html" target="_blank" rel="noopener">[CNBC] Amazon surpasses Walmart in annual revenue for first time, as both chase AI-fueled growth</a>
+                    <a href="https://www.marketwatch.com/story/microsofts-stock-is-trading-at-a-rare-discount-to-alphabets-as-the-magnificent-seven-reshuffle-intensifies-9c897c65?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Microsoft’s stock is trading at a rare discount to Alphabet’s, as the ‘Magnificent Seven’ reshuffle intensifies</a>
+                    <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbk4yVW5IcUFfUEdGTF9kS0x6ekNUOVBtZllfcmNfQk9XMDZZVnlocVZMS01MSVNSMnE3ekxRUU5BX3VDQVlLbVdMQTYwZzM1SDZZWjY1Mkc3Tkg1MlNnYTJsOHVnQnM0dUdaTHVKWUs1QkF3QlZFN3E2eXBzaFhCd1d2RFZydTN6UldlT2FOMjY2RHlkcXRxcG5jVVAzRm9VRnBsVjFGUzBHNEk?oc=5" target="_blank" rel="noopener">[The Economist] Britain is the closest the world has to an AI safety inspector</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">电子商务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>关税持续施压零售与制造业利润</div>
+                <div class="topic-title-en">Tariffs Continue to Pressure Profits in Retail and Manufacturing</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    玩具和家具零售商因关税面临利润下滑，最高法院裁决可能无法提供即时救济。这凸显了贸易政策对消费行业的影响，企业需寻求供应链多元化以缓解成本压力，投资者应警惕相关板块风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c87515x9p0zo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] 'We're still on edge': Toy firms look to US Supreme Court as tariffs hit profits</a>
+                    <a href="https://www.cnbc.com/2026/02/19/supreme-court-tariffs-furniture-retailers-threat.html" target="_blank" rel="noopener">[CNBC] Small furniture retailers face existential tariff threat, regardless of Supreme Court ruling</a>
+                    <span class="sector-tag">零售业</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">玩具业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>劳动力市场激励减弱，或影响消费支出</div>
+                <div class="topic-title-en">Labor Market Incentives Dim, Potentially Impacting Consumer Spending</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    后‘大辞职’时代，员工换工作激励下降，可能导致工资增长放缓和消费谨慎。这对零售和服务业构成挑战，投资者应关注就业数据和消费趋势，以评估经济韧性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/life-after-the-great-resignation-incentives-are-dimming-for-workers-to-change-jobs.html" target="_blank" rel="noopener">[CNBC] Life after the Great Resignation: Incentives are dimming for workers to change jobs</a>
+                    <span class="sector-tag">消费</span>
+                    <span class="sector-tag">零售业</span>
+                    <span class="sector-tag">服务业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>美元走强至近一个月高位，多重因素驱动</div>
+                <div class="topic-title-en">U.S. Dollar Strengthens to Near One-Month High, Driven by Multiple Factors</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美元走强不仅受伊朗紧张局势推动，还因美国经济成长超预期和美联储政策预期。这可能影响出口企业和新兴市场债务，但有利美元资产，投资者需调整汇率风险敞口。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/heres-whats-driving-the-u-s-dollar-to-its-strongest-position-in-almost-a-month-and-its-not-just-iran-tensions-f43ad39c?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Here’s what’s driving the U.S. dollar to its strongest position in almost a month — and it’s not just Iran tensions</a>
+                    <span class="sector-tag">外汇市场</span>
+                    <span class="sector-tag">出口企业</span>
+                    <span class="sector-tag">金融</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>并购活动活跃，eBay收购Depop拓展二手市场</div>
+                <div class="topic-title-en">Active M&A: eBay Acquires Depop to Expand Second-Hand Market</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    eBay以12亿美元收购二手时尚平台Depop，瞄准Z世代消费趋势。这反映了二手经济快速增长，可能推动零售行业转型，但整合风险需关注。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cx240kme2k8o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Etsy sells second-hand fashion app Depop to eBay for $1.2bn</a>
+                    <a href="https://news.google.com/rss/articles/CBMiigNBVV95cUxPUmtDX1VHUngtN0JjZjE3ZUtmQll5VUlRbmp6LVdJcjh6a25jNEUyMm83OG1SR0luWnNRbmdyTUs5NkQ4MU5nLUdlNGhhSDdwMTE4NlVpUFNCRkNySXdmVHpMUENTV1VDYlNvWjRxNEpXaG9xc2xkY3VOeFM4WGRoaGJyd01mY0VsQzdFbzNxd2YwNXNpMl93OTJlem1uYlhsbm91LUZWZU01WWpQSjRXb3NRWXp1d3VvMk5FQWVfZU5hbURWc0tkMmxLSDBIb2Q4d3BTOXV0TVduVkF5aGFhS0c0bU9OZ0VQQnVBMFExZFhGalVWTGU1bEJRZnQ0OERxWjZvYVprREY2VzlvRWFpNFBIaFNxOENJVXVpc2JsXzl3a3JNa213WnNmSXlhMVJLZWd6eG1ZWUp6WDJhbmV3Mk00ZWQ2VFdpYzJzNlg5eHZobU1RY0VzZy1aTFZsTHF6b1Q0OFE3bERnNGZ4cGpJbWRPTUdEUmZjaXA4ZG9HZGtZZTZSdmRhOFN3?oc=5" target="_blank" rel="noopener">[Barrons] eBay to Buy Depop, the Used Clothing Site Favored by Gen Z, for $1.2 Billion</a>
+                    <span class="sector-tag">电子商务</span>
+                    <span class="sector-tag">零售业</span>
+                    <span class="sector-tag">二手市场</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国2025年贸易赤字达9010亿美元</li>
+                <li>亚马逊年度营收首次超越沃尔玛</li>
+                <li>特朗普设定对伊朗攻击决策期限，油价上涨</li>
+                <li>美元指数升至近一个月高位</li>
+                <li>劳动力市场换工作激励下降</li>
+                <li>eBay以12亿美元收购二手时尚平台Depop</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
