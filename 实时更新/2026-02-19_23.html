@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-19 23:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-19 23:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场在贸易赤字扩大与地缘政治紧张中波动，但AI投资与就业数据提供支撑。</p>
+            <span class="sentiment" style="background:#3498db;">&#9670; 市场情绪: 分化</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美国贸易赤字持续扩大，关税政策效果有限</div>
+                <div class="topic-title-en">U.S. Trade Deficit Widens Despite Tariffs</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    尽管特朗普政府实施关税，2025年美国贸易赤字仍达9010亿美元，进口创纪录新高。这表明关税未能有效缩小赤字，可能加剧通胀压力并扰乱全球供应链，中小企业持续承担成本负担。投资者需关注贸易政策变动对制造业和零售业的影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/us-trade-deficit-totaled-901-billion-in-2025-despite-trumps-tariffs.html" target="_blank" rel="noopener">[CNBC] U.S. trade deficit totaled $901 billion in 2025 despite Trump's tariffs</a>
+                    <a href="https://www.marketwatch.com/story/u-s-trade-deficit-might-be-tariff-proof-imports-jump-to-record-high-in-2025-a518d1bc?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] U.S. trade deficit might be tariff proof — imports jump to record high in 2025</a>
+                    <a href="https://www.marketwatch.com/story/why-americas-small-businesses-still-pay-even-if-the-supreme-court-strikes-down-trumps-tariffs-5c0bb1d6?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Why America’s small businesses still pay even if the Supreme Court strikes down Trump’s tariffs</a>
+                    <a href="https://www.bbc.com/news/articles/c87515x9p0zo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] We're still on edge: Toy firms look to US Supreme Court as tariffs hit profits</a>
+                    <span class="sector-tag">贸易</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">零售业</span>
+                    <span class="sector-tag">物流</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>Walmart盈利指引谨慎，Amazon销售额超越成全球最大</div>
+                <div class="topic-title-en">Walmart's Cautious Profit Outlook as Amazon Dethrones in Sales</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Walmart第四季度业绩增长但盈利指引低于预期，股价下跌，反映贸易和劳动力成本担忧；同时，Amazon销售额超越Walmart成为全球最大公司，显示电商主导地位巩固。传统零售商面临线上竞争和成本压力，需加速数字化转型，投资者应关注零售业分化趋势。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/walmart-wmt-q4-2026-earnings.html" target="_blank" rel="noopener">[CNBC] Walmart reports strong holiday growth, but earnings outlook falls short of estimates</a>
+                    <a href="https://www.marketwatch.com/story/walmarts-stock-falls-as-the-outlook-for-future-profits-wasnt-good-enough-10d2c334?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Walmart’s stock falls as the profit outlook wasn’t good enough</a>
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQQWR1ajVXYnYtSWpPV3l6T1lFcEpINm95akVvQVdfaXcxRFRkNFZXU0VqajZFMHZqbVdBc1ZabGVPU2xDeWFoSkxGN0t1SlNuaDdNUVpRa2xJSjNLcVA0Y3AtV2h4YWinuVmtIc1R6OWw3OG01RFp4b0l3RGQ4T0pPS291c0h3a2VNcmhrZC1uZlVQeTNzb2lOTnR3c1ZlbWxMWTR2em1odjVxT1c4XzVNbw?oc=5" target="_blank" rel="noopener">[Bloomberg] Amazon Dethrones Walmart as World’s Biggest Company by Sales</a>
+                    <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPV1dobXdTUGw5QWZ4R29kaTR2WFh3QXEwOUJadkpRQzE2TWRlMXZJUkJoMXR1UHV4Qmhodl94NTl0YVhRbVNuOXh2dkhqdG9SVzYwdnNKSGw4OUZaRHI0VXlvLVRBRkFpbHlDVGk5cVp1ekRWcTdIUnQ0R2tNRXVOMWRyU09LZDZtS2JiOGlpVkwwWG5iTjJWNVlJbExTYzVYOFMtZnV2dW5yT1E1eFBpOUtvRGR5UG8?oc=5" target="_blank" rel="noopener">[Bloomberg] Walmart Offers Cautious Profit Guide on Trade, Labor Worries</a>
+                    <span class="sector-tag">零售业</span>
+                    <span class="sector-tag">电子商务</span>
+                    <span class="sector-tag">消费品</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>伊朗核谈判窗口缩小，地缘政治风险推高油价</div>
+                <div class="topic-title-en">Iran Nuclear Diplomacy Window Closing, Geopolitical Risks Boost Oil</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    联合国核监管机构警告伊朗外交窗口正在关闭，美国与伊朗紧张关系升级，俄罗斯批评美国对古巴石油封锁。这些地缘政治因素加剧能源市场不确定性，可能推高油价并影响全球通胀，投资者需防范能源板块波动和供应链中断风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/trump-us-iran-nuclear-talks-oil-prices-russia.html" target="_blank" rel="noopener">[CNBC] U.S. says Tehran would be ‘very wise’ to make a deal as Russia, Iran hold naval drills</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQZ2Z1Wlp1X1RfOUdqN1ZRTEgzU203UGdUemJXRlQ0bmRpTDlFcDF6Y1ROMFFlTE5FSWlkcGVlNXl2SmZUMkgwR3dWYXpubHoyVDlzZExDOC12c1ZJOU5MNXp4SExnby1lLWo1MG9MRV9MNHpXdW5NSl9WdDJlTnprX2Q0aUVYTE5WWUtkdDREOHZJdXdxQ0UzSDJITGlkc0FfS2NZVkZqNXVCNHlPWFNLeDRmazM?oc=5" target="_blank" rel="noopener">[Bloomberg] Iran’s Window For Diplomacy Is Closing, UN Nuclear Watchdog Says</a>
+                    <a href="https://news.google.com/rss/articles/CBMi-wJBVV95cUxNT2hWX21fVjlmRnljZ2ZYTkVjTkNtTTlBRC11S3prYWQwWVF4cEZFdTNBd3F4eVh2Y3l5bVNINmxVSFRPb3pORHFSc2tlQTZ3OWJOR0xrbDB6SnNtM1haVXpjMTI3blBNMVVzN1FiWXJTSUV2OGM4YXEwQ3AtQ0NaaEN1TXVIRXJPMGVJSHpKdEFSYXN1VTI3UUVYeHZUSnRZTXluY2Z3cllodjJNYk1MZm1nOW40RzNQeTlUdkZTR0ppa19vdzFEcWMxakg4cGU5RjhtVGtWRDdNRjgwS1FxWHkzWHU1ZDh3T2dmMGpkY2NrMkRmaWY4OElNcUQwOEhlTHZjQk1qVjlwQ0hwak4yX2xVdG9nb0NJUjZvQzRLcWNfTVRMNjlnZW5vakJZTEdmMGd6Y2tUS0stM1gzeUgtc3lLc3JDU3ViU08xLU5uT0dBTlBCekgwek1OUTBXUEU4RTBHTmVyWnJvTkxsYmxwMkMxdFVBUVN0NTBB?oc=5" target="_blank" rel="noopener">[Barrons] Dow Falls. Oil in Focus Amid U.S-Iran Fears.</a>
+                    <a href="https://www.cnbc.com/2026/02/19/cuba-fuel-crisis-havana-russia-putin-us-trump.html" target="_blank" rel="noopener">[CNBC] Russia's Putin slams U.S. oil blockade on Cuba: 'We do not accept anything like this'</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">航空</span>
+                    <span class="sector-tag">交通运输</span>
+                    <span class="sector-tag">化工</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>AI投资热潮席卷全球，科技巨头加大基础设施投入</div>
+                <div class="topic-title-en">AI Investment Boom as Tech Giants Ramp Up Infrastructure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    印度AI峰会上，Reliance宣布投资1100亿美元于AI基础设施，OpenAI与Tata合作建设数据中心，显示AI竞争白热化。这波投资热潮将驱动云计算和半导体需求，但科技公司也面临监管挑战，如Meta的社交媒体成瘾审判，投资者需平衡增长潜力与法规风险。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOVk1fSHpIWlpnMTlEZFB4ZnJlbDdOZ2NMZkhYNF9UVnNJOEo1OU1EOHBkQ2FkbVlma2xEQjhjb3pUUzJ4WjdFLUNlVC1PMnc2ZnpiMFRvY1FlNC00eG1KdHpPWWZTalBHX2Y2WW9SM0w2ai1jQzZnTmdhR2lZdkhwckl3cUg2ZTR3NzY5WE9RRkhVUWppX0E2aS05SVJmaHY0X1JCLTltLXFwV1ZYMW9GSw?oc=5" target="_blank" rel="noopener">[Bloomberg] India AI Summit: Ambani’s Reliance to Invest $110 Billion in AI Infrastructure</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPZzc2ZERiVThveF9HOWEwaHNnV3RiVXhCU0tYT2p3UkI1U0Z3WG9OMlMzUUZBckNuLTc5S3luYzgya3ltN29KSlVIcFZ0T2RWRURYWGZHTTFqVnFkR1c0MHF2QXhjWTNVZ3lDb1dUbmRlUFZZS1djSDljMXpsQldxWF9TR0JHWE5vc2lFbVBEYjZnbXp5NjVtY214VVhWZC1QMnBmVE1DUy1ieHp6LUR3MERFVnBLdw?oc=5" target="_blank" rel="noopener">[Bloomberg] OpenAI to Partner With Tata for AI Data Center Buildout in India</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOdmhNU2JYbXFDY3N4MUFXZ1NZUUxEYndDTUVWSFFKZDJVeGF3SElhZ0FSZzNrYm5nM1ZGcHVBZm05bGc0WkVBbVBpSTdqd3lna1J4QkM5c2FMQ3NLMXBEQ3N6UkJnLWFQZ2ZjTk9yQnlEWG5mU0Eyd0lYenhsUGZkVy1wQjZoWGlHRGtyTHlINE4yV2JGcnQ3WU10OC1KVzhRT0dXQm5YSDV1QzhSd3hORGNUYw?oc=5" target="_blank" rel="noopener">[Bloomberg] Altman vs. Amodei: AI Rivals Refuse to Hold Hands at Modi Summit</a>
+                    <a href="https://www.bbc.com/news/articles/c5y42znjnjvo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Zuckerberg defends Meta in landmark social media addiction trial</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">半导体</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>加密货币市场危机加深，监管压力增大</div>
+                <div class="topic-title-en">Crypto Crisis Deepens Amid Regulatory Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    比特币、以太坊等主要加密货币价格暴跌，市场危机加剧，同时参议员沃伦警告美联储和财政部不得救助加密亿万富翁，凸显监管压力升级。这可能导致市场流动性进一步收紧，投资者应警惕高波动性和法规不确定性对金融科技行业的冲击。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMihwNBVV95cUxPbzlSMHZGOURtclBhVVQ2VDVJNWhWSmQySTNsWTk1bVJUdzkxVE1qN1lDTzRzdXV3c1RvUnoyWURSYW5GOXVTM0VSdzIyOEwyM2xDMXM1ejdGVW03dnptVHFocVRpWEVaaDdmTm1salJxWGZnbTF3RTIwa3d5WGVCZU1OM0hVTVZ2b0FaVW5Jb3IyMjA5VTZBNGZoUVlGUW9iQzg2eEJvYk1DbFlDX2RCdU4yaExES3NXMV9kVi04WVNKa0lAbVgwY056ZE8yS2hYclVJRnI1OHI2X0s2ZFFJOFBlVkVIMklsbVE0Nl9Yb1l6WHhzUG8xcVBkSElfNm5YNHdyc1pHZy1WRGFRT2pvRUdpMmNkVTFnbVVHRzVpU2FielRXSEtJOHJIbzV5RnBBbDk3eUJpNFhKU2JibnRULXBoSjhqbWxMby1PdTB1Vkw4ZTJPbDJ6b0RyNjBwREJ6dzR3OXBWNzVPWW5wWEVmWVhfU3h2Z1ZmYmh2SEhqdUs1Tl9UaW9F?oc=5" target="_blank" rel="noopener">[Barrons] Bitcoin, Ethereum, XRP Fall as Crypto Crisis Deepens. Why It Could Get Even Worse.</a>
+                    <a href="https://www.cnbc.com/2026/02/18/warren-fed-treasury-crypto-billionaires-bailout-trump.html" target="_blank" rel="noopener">[CNBC] Sen. Warren tells Fed and Treasury: No bailout for crypto billionaires</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">区块链</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>初请失业金人数降至年内最低，劳动力市场稳定</div>
+                <div class="topic-title-en">Jobless Claims Fall to Lowest Level, Signaling Stable Labor Market</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    美国初请失业金人数降至年内最低水平，表明劳动力市场保持稳定，支撑消费者支出和经济韧性。这缓解了对经济衰退的担忧，但Walmart等公司警告劳动力成本压力，显示工资通胀可能持续，投资者需关注就业数据对美联储政策的影响。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.marketwatch.com/story/jobless-claims-fall-to-lowest-level-of-the-year-signaling-a-more-stable-labor-market-8c619fef?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Jobless claims fall to lowest level of the year, signaling a more stable labor market</a>
+                    <a href="https://www.cnbc.com/2026/02/19/walmart-wmt-q4-2026-earnings.html" target="_blank" rel="noopener">[CNBC] Walmart reports strong holiday growth, but earnings outlook falls short of estimates</a>
+                    <span class="sector-tag">所有行业</span>
+                    <span class="sector-tag">消费</span>
+                    <span class="sector-tag">服务业</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国2025年贸易赤字达9010亿美元</li>
+                <li>Walmart第四季度盈利指引低于预期</li>
+                <li>初请失业金人数降至年内最低水平</li>
+                <li>Amazon销售额超越Walmart成为全球最大公司</li>
+                <li>Reliance计划投资1100亿美元于AI基础设施</li>
+                <li>加密货币市场持续下跌</li>
+                <li>美国进口额创历史新高</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
