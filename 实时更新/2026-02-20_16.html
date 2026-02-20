@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-20 16:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-20 16:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">地缘政治紧张与AI投资热潮交织，私人信贷市场现预警信号，主要经济体数据分化，市场情绪趋于谨慎。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美伊军事冲突风险骤升，油价应声上涨</div>
+                <div class="topic-title-en">Risk of US-Iran Military Conflict Surges, Oil Prices Rise</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普总统据报将在未来10天内决定是否对伊朗发动军事打击，引发市场对中东石油供应中断的严重担忧。地缘政治风险溢价推动油价跳涨，并可能加剧全球通胀压力与货币政策的不确定性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/trump-to-decide-whether-to-attack-iran-in-next-10-days-oil-prices-jump.html" target="_blank" rel="noopener">[CNBC] Trump to decide whether to attack Iran in next 10 days — oil prices rise</a>
+                    <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNNWQzMUpILUtVd1VsS2cwREdpNklZLTNNMVBtSXJwZElBbHNDWHhDMEk3N3lRZ3VnN19YWEh0VXRIeXZ4S2FkUmdCQU01V0NiSmo5U2oyZUFxLVVSUHpFNVdzdEc3VmxXQnpnV01kOXlHdmhKd3JVSWFjdVhhMmNRLVBfWDJpdjliT2U4ZHNoOTlHX08ycHJaSnBkVkhvMFo5eWdlYXhZdU84X3Zl?oc=5" target="_blank" rel="noopener">[The Economist] The moment of reckoning between America and Iran</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">航空运输</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>AI军备竞赛白热化：英伟达或向OpenAI投资300亿美元</div>
+                <div class="topic-title-en">AI Arms Race Intensifies: Nvidia in Talks to Invest $30 Billion in OpenAI</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    英伟达正洽谈向OpenAI进行高达300亿美元的巨额投资，此举将重塑AI算力与资本联盟格局，巩固其AI基础设施霸主地位。同时，中国AI应用引发好莱坞恐慌，以及美中在AI领域的战略竞争进一步凸显该行业的战略价值与投资热度。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/nvidia-is-in-talks-to-invest-up-to-30-billion-in-openai-source-says.html" target="_blank" rel="noopener">[CNBC] Nvidia is in talks to invest up to $30 billion in OpenAI, source says</a>
+                    <a href="https://www.bbc.com/news/articles/ckg1dl410q9o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] The Chinese AI app sending Hollywood into a panic</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNdURzN0c0RnBMSmV6eHB3NERXZUVlbDR1VFREZG0ySWxuNlhYX1hmdE9ZN2hOa2puME16SFdrLWdfSmhYbENBNmJTRnJuVkFtMDVkTlJ4azNhSlc5Ui1WNl8tb0V5SkNJakpjVnRVTndQbWZpZmNiX2w4TDZDeEVQUnJCUGR0SEo4b2k4aHh4SjhFS2RmaVlRdmJEMVlxR1VYRUVwYVJFU05kVDVTY1B4UEpKcw?oc=5" target="_blank" rel="noopener">[Bloomberg] US Plans Peace Corps Revamp to Gain Edge in AI Over China</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">软件服务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>私人信贷泡沫预警：Blue Owl限制赎回引市场恐慌</div>
+                <div class="topic-title-en">Private Credit Bubble Warning: Blue Owl's Redemption Curbs Spark Market Fears</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    Blue Owl Capital对其私人信贷基金实施赎回限制，被市场视为行业流动性压力的“煤矿中的金丝雀”。此举加剧了市场对规模庞大的私人信贷市场可能出现连锁违约和估值崩塌的担忧，若危机扩散可能冲击更广泛的金融体系。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/canary-in-the-coal-mine-blue-owl-liquidity-curbs-fuel-fears-private-credit-bubble-.html" target="_blank" rel="noopener">[CNBC] 'Canary in the coal mine': Blue Owl liquidity curbs fuel fears about private credit bubble</a>
+                    <a href="https://news.google.com/rss/articles/CBMilgNBVV95cUxPZnRLaktEaDB2SkVTT3Z4X25NLUFlRXlTX2VLdnZMY1NjQmIzc21yeDJ5VkVBeE4zRmZqeWVXYlh2U2tqU3Q1c1hhVlQ1RTBUU0FvRUhmWkhSX1RLbm4wWEUyR1lSb2daTExpTFN1YUNkLXJueFdNOHlHQ2hvbGhKcWoyR1ZVdFFZSnhITkhlZlZTSkVrS193RGlLX1F1S0c0RDBWTEVkYkludmRpNFZvSzIwZEh1N0tabVhwVVp0cllVMkNuTlZBM0JkUGhlcDQ5YlNZTlJES3p5bS1Ud1lRa1paUTh3SU9MQnZpTnRiWHFjbGVxSWFIdUd3ZTg3S2NOeFk0VXVFcXlVT3NUdTJONzVlVnVUUk1pcllpeHZVUUNmS2Q0ZmNnMjFBc1ppRjF2Mkp5NkRjTHBJSHFZS2g5RVZONkNYWEJVRWE3bURweThhd2dBYWkxV0NfQV8xSkVZVjhST0gxR1gxd0EzbkJMRXhBamNMa1lNcFBHUEtFZFZZNHFfandTQzY8SmhKQUF2bXJRbmlR?oc=5" target="_blank" rel="noopener">[Barron's] Blue Owl Move to Curb Redemptions at Private-Credit Fund Hits Alt Manager Stocks</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOYWJCMFJSS2pQelFvVVptSl8zTHl3T0k1eTQtMDh2VWs3M1lzdnpiUGhFTng3MWNKRENOdE54aWx4ZUo5YXdIbFcwdXRaN2h2dnJsTm1yN292cEZ0UHRlUkZEY28tbE85ZTJpV2VNa19BaEdiNm9rSHc0VnZOMjdoVVBZVTdlWXJacEtEY3R6ak9MZEFaLXVLeWJqMGtpT0U1VTMybVpGSkU2MzJBa1NyT3ln?oc=5" target="_blank" rel="noopener">[Bloomberg] Blue Owl Sold Private Loans to Pension Giants and Own Insurer</a>
+                    <span class="sector-tag">另类投资</span>
+                    <span class="sector-tag">资产管理</span>
+                    <span class="sector-tag">银行业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>零售业格局生变：亚马逊营收首超沃尔玛</div>
+                <div class="topic-title-en">Retail Landscape Shifts: Amazon Revenue Surpasses Walmart for First Time</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    亚马逊年度营收首次超越传统零售巨头沃尔玛，标志着以电商和云服务驱动的新零售模式取得决定性胜利。两家巨头均在追逐AI驱动的增长，未来竞争将聚焦于物流效率、AI应用与全渠道整合能力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/amazon-revenue-passes-walmart-earnings-reports.html" target="_blank" rel="noopener">[CNBC] Amazon surpasses Walmart in annual revenue for first time, as both chase AI-fueled growth</a>
+                    <span class="sector-tag">电子商务</span>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">云计算</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>日本核心通胀跌破2%目标，央行政策路径承压</div>
+                <div class="topic-title-en">Japan's Core Inflation Falls Below 2% Target, Pressuring BOJ Policy Path</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    日本1月核心通胀率自2022年3月以来首次跌破央行2%的目标，显示其国内需求疲软与通缩风险再度浮现。这使日本央行退出超宽松货币政策的计划变得复杂，可能推迟加息步伐，进而影响全球资本流向与日元汇率。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/japan-core-inflation-january-boj-target-gdp-growth.html" target="_blank" rel="noopener">[CNBC] Japan inflation falls below BOJ's 2% target for first time since March 2022</a>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">保险</span>
+                    <span class="sector-tag">日元资产</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>波音再遭重击：Starliner失败与空客财报拖累</div>
+                <div class="topic-title-en">Boeing Hit Again: Starliner Failure and Airbus Earnings Weigh</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    NASA局长称波音Starliner失败是其历史上最严重的失败之一，严重打击市场对其航天业务的信心。同时，空客令人失望的财报加剧了市场对航空制造业整体需求的担忧，导致波音股价面临双重压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cm2x3nlxg9jo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Nasa boss says Boeing Starliner failure one of worst in its history</a>
+                    <a href="https://news.google.com/rss/articles/CBMihwNBVV95cUxOUTI0STZzUHhxdkJsVWRfLVBHSk43RmlFdEQtbkVGSURjNzNEenJpVjVNUVdwY1A1TWVOZDc3ZC14MHNOdlYxLUdRX3cwTHBVLWN6aUZKNFR6WU90TXF2V3RXYlVjVWVXUjhlRk01OXdlMlJxSW91cXl4TXdzQm9qRlZyM3FVNUgyWHhVVmhQQnI5NFFfZElpdmlrNlVxdDRTaGdYeXpGUUdIWVc3RWxVOFExbmpKLXZUb3V4QVk5SHcxTURraXVCUXByU2VrS3I1ZF9nYkpGOTBIZUNKeTVISWRLZ2V6eTBvYUc3RlFwWHR5clZjZy1KbnIxWUlLWTBrZWVDV3BWSE44VzZjLV94ek1HbW9QeFdsR040WWFXMjRXUDBrdEQ4Q2NlRnNmano1Wm03cnFUWmc4N1cycjFKSlBzRkVrZTYwYko2RlZjak9SaXZPOFk5RDkwTXBIM0twb0J1dUsydlZzY1A4cUEweW9uX082aHRiaE13cExRXzYyRTQzU1JZ?oc=5" target="_blank" rel="noopener">[Barron's] Why Airbus Earnings Were Bad News for Boeing Stock</a>
+                    <span class="sector-tag">航空航天</span>
+                    <span class="sector-tag">国防制造</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>谷歌前工程师涉窃密送往伊朗，科技安全风险凸显</div>
+                <div class="topic-title-en">Ex-Google Engineers Charged with Stealing Secrets for Iran, Highlighting Tech Security Risks</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    三名前谷歌工程师被控窃取手机处理器等核心技术并送往伊朗，此事暴露了美国高科技公司在全球技术竞争与地缘政治中的核心资产安全风险。预计将促使企业加大内部安防投入，并可能引发更严格的科技出口管制。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/three-engineers-charged-stealing-google-trade-secrets-data-iran-soc-snapdragon.html" target="_blank" rel="noopener">[CNBC] Three Silicon Valley engineers charged with stealing Google trade secrets and sending data to Iran</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPMFFIWHMzMmo4a1ItWGNtU09JSlZuXzdwVko1Rm1sVXlqeHVldmNpYmY2Qmw5TlRVV1YtR19HMHdYNEVOSEhib3BMOUF3cVB3akFDNHJlNVBzQkpYbWd3aHczVlJ1V2RJVi1YYWI5RnNxY2xDa09zbUlLN2l3RmZDM0xwVmQ5bmYzQWkyOUdnSEpnMFNzNTk5SjBQWGNaS2JweXF5cE1NM29XNUJZZUZPY09ocw?oc=5" target="_blank" rel="noopener">[Bloomberg] Ex-Google Engineers Charged With Stealing Phone Processor Tech</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">网络安全</span>
+                    <span class="sector-tag">科技硬件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>加密货币危机加深，主流币种剧烈波动</div>
+                <div class="topic-title-en">Cryptocurrency Crisis Deepens, Major Coins Experience Volatility</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    比特币、以太坊等主流加密货币在监管压力、技术挑战与市场流动性担忧中持续波动。Barron's警告危机可能进一步恶化，反映出投资者对加密货币作为风险资产的信心减弱，可能引发更广泛的去杠杆。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMihwNBVV95cUxNMjQ1OHpUanNvbE1xWUUzb29mNmNPTUNJX2NtTk9VdHoyYU5hSEZfVFk2OEVkME5hNGt3dkpLWERlSk4zVlFESTZ6SWVTQXJsTUFmLWV6aGw2dGNOVEx4T25OT1RSS1VqUWxWNVVobTJkeG9kb1p4YUltM1Y4aWN3d0ZVRnBLYUU4R3Q3bk54aUxGYmtuYXFZNzM3LTUwYW9oclp3VEUxLVE4OVAxa2VWT3FUWHoweHpmZVZ0RkVQVENwVnYyQXpPWVhlWDBvWXN0ZUdHX1Nhcy1YMW9qeXhteUVnU1lMblNNajlEYjR2aWwwUHRvUFdfdGJxT3BOVzlaY2dJTktFV25VMjBMTEYyakdrem1oM1hwOEt0dExrdUFXSnViVld0bllyMENuVGRFWm1ZSlZXa01aaVNWMzVMajl3LW9qSXd1d2RyQk5qTjROazU0dmJaMlYwdWxtQ1MwNDFjS1BiR3otQjJvS3d1bGxITF9kTTBPMjkyV1lqVjVmUmdTRmJz?oc=5" target="_blank" rel="noopener">[Barron's] Bitcoin, Ethereum, XRP Waffle as Crypto Crisis Deepens. Why It Could Get Worse.</a>
+                    <span class="sector-tag">加密货币</span>
+                    <span class="sector-tag">区块链</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国贸易逆差创新高</li>
+                <li>日本核心通胀率跌破2%</li>
+                <li>亚马逊营收首次超越沃尔玛</li>
+                <li>Blue Owl限制私人信贷基金赎回</li>
+                <li>美伊紧张局势推高油价</li>
+                <li>韩国Kospi指数连续创新高</li>
+                <li>英国政府财政状况好于预期</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
