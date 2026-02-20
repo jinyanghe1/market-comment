@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-21 00:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-21 00:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场聚焦美国最高法院否决特朗普关税政策、疲软GDP与粘性通胀数据，以及中东紧张局势对油价的潜在冲击，总体情绪在不确定性中偏谨慎。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美国最高法院推翻特朗普全球关税，或引发巨额退款潮</div>
+                <div class="topic-title-en">Supreme Court Strikes Down Trump's Global Tariffs, Potential Massive Refunds Loom</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国最高法院裁决否决了特朗普时期实施的广泛全球关税，这标志着其标志性贸易政策的重大挫折。此裁决不仅削弱了总统单方面施加关税的权力，未来美国可能需向进口商退还超过1750亿美元的税款，这将显著改善依赖进口原料的制造业和零售业成本结构，但对部分受保护的本土产业构成压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cn8146l0n55o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Supreme Court strikes down Trump's sweeping global tariffs</a>
+                    <a href="https://www.cnbc.com/2026/02/20/supreme-court-trump-tariffs-us-refunds.html" target="_blank" rel="noopener">[CNBC] Trump tariffs: U.S. could owe more than $175 billion in refunds after Supreme Court ruling, estimate says</a>
+                    <a href="https://www.marketwatch.com/story/supreme-court-rejects-trumps-tariffs-heres-what-the-president-could-try-to-use-instead-c09ec3fa?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Supreme Court rejects Trump’s tariffs. Here’s what the president could try to use instead.</a>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">零售业</span>
+                    <span class="sector-tag">物流</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>美国四季度GDP增长大幅放缓至1.4%，核心通胀维持在3%</div>
+                <div class="topic-title-en">US Q4 GDP Growth Slows Sharply to 1.4%, Core Inflation Holds at 3%</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国第四季度GDP年化季率仅为1.4%，远低于预期，显示经济动能显著减弱。同时，美联储青睐的核心PCE通胀指标仍顽固维持在3%，形成“增长放缓+通胀粘性”的棘手组合。这令美联储的货币政策路径陷入两难，市场对降息的预期可能推迟，加剧了经济硬着陆的担忧。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/pce-inflation-december-2025.html" target="_blank" rel="noopener">[CNBC] Fourth-quarter U.S. GDP up just 1.4%, badly missing estimate; inflation firms at 3%</a>
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQckd1MFZNOTVvRW5WSHU0Q0l2V0EybVR1NURBVEpXdmptaEY3S1FHREhLdUN4VmRzTGJDT3ZUaGlOSEpGeDJfbWk5ZllYUWR3RjBYT1Y1S2ZBLW40bkF3MzRfOVlqN2FEWHF0SVdqZVpJMFpuYUlNcF9nR3hNWENVazBLNHNtR1M1cUdBb2poXzZnc0lVazN4a3N6cmhXVlgxZWo5X05kVXlIbjR6VnJvbQ?oc=5" target="_blank" rel="noopener">[Bloomberg] US GDP Rose at Slower-Than-Forecast Pace of 1.4% Last Quarter</a>
+                    <a href="https://news.google.com/rss/articles/CBMi-wJBVV95cUxOVUlzcDNKWkhRQ0s3azJZYWF0cXpEZ0VHa3ZPNkJZb1ZTY2luMU5ZMFJRSkl5NDctcE1xLWU3bU1NMG1SaDV3NC1YMWYySFJWRllvd3hQVmRSV0RZSjhkSFA4QkM4Qml4bkstMlRyT0JQQ0RLVWs0R1RaVXBGT0Rnb0JyZUdYOHM5YkM5WF9VbWx2S2NMbTVSLTZ0OVNMcG92RE1hZ29vZ3A0UVlvRDNKVmJmcTc1b1Rad3NYbXhTY0oyREhjNXpYTkNyeGhWWlQtbXNQdkVNNjc4bHNpR0ctTzlaR3hzUE9CVjVDNkJlZ2t5VkZfWlFGLWxlYk43ZGRRVmZUSlE2MzR1WnN3N3JESFlwcFNoSm5IbTFtMkxEczFlWFNHaXBhaXFvRUw2SHhrTHhyeVZZX2pMc0t5ZENOaWdLcGxueVVMUVl1Zk1nNUxpSksxRG1iY2VNaVoxU1RRc3ZUM0kzOUJQZzktM0FZbDNQX3gxeVprQTBn?oc=5" target="_blank" rel="noopener">[Barrons] The Fed’s Preferred Inflation Gauge Comes In as Expected, at 3%</a>
+                    <span class="sector-tag">宏观经济</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">消费</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>特朗普考虑对伊朗军事打击，地缘政治风险推高油价预期</div>
+                <div class="topic-title-en">Trump Considers Military Strike Against Iran, Geopolitical Risks Boost Oil Price Outlook</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    特朗普总统表示正考虑对伊朗进行有限军事打击，此举将急剧升级中东紧张局势。市场担忧霍尔木兹海峡航运安全，潜在的供应中断风险为油价提供了强力支撑。能源板块可能受直接提振，但全球增长前景和航空运输业将面临新的成本压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/trump-says-hes-considering-limited-military-strike-against-iran.html" target="_blank" rel="noopener">[CNBC] Trump says he's considering limited military strike against Iran</a>
+                    <a href="https://www.cnbc.com/2026/02/20/trump-could-attack-iran-in-days-whats-at-stake-for-the-oil-market.html" target="_blank" rel="noopener">[CNBC] Trump could attack Iran in days — what's at stake for the oil market</a>
+                    <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxONEl3eG12SXgzMDd2VVNCSVhCNkswNi1iZVIxdEJNa0N5X1FqN1hYWmFUWVpKU2xoejJLUzY3NEtBa3p6NnVoNjlUamhzR1pObE5ZS2YwYkZ4bnJJU0NuVXlOUFlTM1dWUXBjVUgyOFFKdHNVcUg3alltZG1BM2RqUmFxcHByTWwtbE55SzY5VXg1YWYzQkltdXVUand0WmJmeV9TM1BJMV9nQTFhaFhvZEVRQ29kZw?oc=5" target="_blank" rel="noopener">[Bloomberg] Trump Iran Ultimatum Sets Up Attacks Following IAEA Meeting</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">航空运输</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">全球供应链</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>鲍威尔寻求“特朗普防护”，美联储独立性面临考验</div>
+                <div class="topic-title-en">Powell Seeks to 'Trump-Proof' the Fed as Its Independence Faces Test</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美联储主席鲍威尔正采取行动，试图在特朗普总统可能施加的政治压力下保持央行政策的独立性。市场密切关注美联储能否在增长放缓和通胀顽固的背景下维持其信誉和政策的连续性。任何关于美联储独立性受损的迹象都可能引发长期利率和美元汇率的剧烈波动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPSjN1ZmxSaTR2RFBwRlNUUWZKY1pRQlJXbHVDcUw1Y1M3V3lSMzVxRjlzbHJrSU9FeXMzWXJaSlQta0ZsN29lVXRYbjc1N0NWRDBtZ0hmOE5od1FRUWl0UmcxYmZjcnVhUWlHcHhIUDR4WGRhQjNIMGphVnlZbXFDV2U1eTVEQVJIQWxPMU1Ma0dPbjdvRFQxSzJlMmVibURyTm5vc3pTTUdldGJMcVV1RzNDNFJ4Q0NKQ3BhTTMxUzZ4dw?oc=5" target="_blank" rel="noopener">[Bloomberg] How Jerome Powell Is Trump-Proofing the Fed</a>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">外汇市场</span>
+                    <span class="sector-tag">债券市场</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>私人信贷泡沫预警浮现，Blue Owl流动性限制引发市场担忧</div>
+                <div class="topic-title-en">Warning Signs Flash for Private Credit Bubble as Blue Owl Imposes Liquidity Curbs</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    知名私人信贷资产管理公司Blue Owl对旗下基金实施流动性限制，此举被市场视为私人信贷市场出现过热风险的“煤矿中的金丝雀”。在利率高企和经济放缓的背景下，企业偿债压力增大，私人信贷市场的资产质量恶化风险正在上升，可能波及更广泛的金融体系。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/canary-in-the-coal-mine-blue-owl-liquidity-curbs-fuel-fears-private-credit-bubble-.html" target="_blank" rel="noopener">[CNBC] 'Canary in the coal mine': Blue Owl liquidity curbs fuel fears about private credit bubble</a>
+                    <span class="sector-tag">私人信贷</span>
+                    <span class="sector-tag">资产管理</span>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">企业债务</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>大型科技公司面临儿童安全与隐私的严峻质询</div>
+                <div class="topic-title-en">Big Tech Firms Face Serious Scrutiny Over Child Safety and Privacy</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    Meta和苹果等科技巨头因儿童安全和隐私保护问题面临来自监管机构和公众的严厉质询。这预示着科技行业可能迎来新一轮、更严格的合规审查与监管压力，尤其是在数据保护和使用方面。相关公司可能面临更高的合规成本甚至法律风险，但也可能催生新的网络安全解决方案需求。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/meta-apple-child-safety-zuckerberg-cook.html" target="_blank" rel="noopener">[CNBC] Meta and Apple face serious questions about child safety and privacy</a>
+                    <a href="https://www.bbc.com/news/articles/cdr2gm4y4ygo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Starmer 'appeasing' big tech firms, says online safety campaigner</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">社交媒体</span>
+                    <span class="sector-tag">网络安全</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>特斯拉Autopilot致命事故败诉，自动驾驶面临法律与监管双重压力</div>
+                <div class="topic-title-en">Tesla Loses Autopilot Fatal Crash Case, Faces Mounting Legal and Regulatory Pressure</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国法官维持了对特斯拉Autopilot系统致命事故的2.43亿美元赔偿判决，这对特斯拉及其自动驾驶技术推广构成重大法律挫折。此案强化了公众和监管机构对自动驾驶安全性的质疑，可能加速相关立法和监管框架的出台，增加所有自动驾驶研发企业的合规成本和技术验证压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.investing.com/news/stock-market-news/us-judge-upholds-243-million-verdict-against-tesla-over-fatal-autopilot-crash-4516484" target="_blank" rel="noopener">[Investing.com] US judge upholds $243 million verdict against Tesla over fatal Autopilot crash</a>
+                    <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQNm41YWdwbUc5MnR4NzdMNEtOU0xIMjhiaFdhbmcwVFZ4VFZhLVhjSV9XYzNUQ3FLdk1nbXoxVVUzMlJuMVc2aEZpNWZ1aUVHM3J4RnMycjZVeXhSSFJCNlJhcXFxRlA3RC1yd25tQm5fYmthMFdnUTNybDd1MTNkdEN3MlF3ejlyYUNaWWVVRmstcW0yNlpXMmhB?oc=5" target="_blank" rel="noopener">[Bloomberg] Tesla Canceled the Car of the Century</a>
+                    <span class="sector-tag">电动汽车</span>
+                    <span class="sector-tag">自动驾驶技术</span>
+                    <span class="sector-tag">汽车保险</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>品牌加速拥抱亚马逊物流网络，零售渠道格局持续演变</div>
+                <div class="topic-title-en">Brands Accelerate Embrace of Amazon's Logistics Network, Reshaping Retail Channel Landscape</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    Bath & Body Works等知名品牌开始通过亚马逊销售并利用其物流网络，这凸显了第三方品牌对亚马逊基础设施依赖度的加深。这一趋势巩固了亚马逊在电商生态中的主导地位，同时给传统零售渠道和独立物流服务商带来持续竞争压力。零售行业的胜负关键日益转向供应链效率和全渠道整合能力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/bath-body-works-amazon-brands-embrace-logistics-network.html" target="_blank" rel="noopener">[CNBC] Bath & Body Works starts selling on Amazon as more brands embrace its logistics network</a>
+                    <span class="sector-tag">电子商务</span>
+                    <span class="sector-tag">物流</span>
+                    <span class="sector-tag">零售</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国四季度GDP增速1.4%</li>
+                <li>美国核心PCE通胀率3%</li>
+                <li>特朗普关税潜在退款超1750亿美元</li>
+                <li>Blue Owl私人信贷基金流动性受限</li>
+                <li>特斯拉Autopilot事故赔偿2.43亿美元</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
