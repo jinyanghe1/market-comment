@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-20 15:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-20 15:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">地缘政治紧张与AI投资热潮交织，市场情绪谨慎，关注私人信贷风险与通胀数据。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美伊紧张局势升级引发油价飙升与市场避险</div>
+                <div class="topic-title-en">Escalating US-Iran tensions trigger oil price surge and market risk-off</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普政府将在未来10天内决定是否对伊朗采取军事行动，地缘政治风险急剧升温，推动油价上涨并加剧市场波动。此举可能引发更广泛的地区冲突，扰乱全球能源供应，并对航空、运输及高风险资产构成压力，投资者正转向黄金等避险资产。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/trump-to-decide-whether-to-attack-iran-in-next-10-days-oil-prices-jump.html" target="_blank" rel="noopener">[CNBC] Trump to decide whether to attack Iran in next 10 days — oil prices rise</a>
+                    <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNNWQzMUpILUtVd1VsS2cwREdpNklZLTNNMVBtSXJwZElBbHNDWHhDMEk3N3lRZ3VnN19YWEh0VXRIeXZ4S2FkUmdCQU01V0NiSmo5U2oyZUFxLVVSUHpFNVdzdEc3VmxXQnpnV01kOXlHdmhKd3JVSWFjdVhhMmNRLVBfWDJpdjliT2U4ZHNoOTlHX08ycHJaSnBkVkhvMFo5eWdlYXhZdU84X3Zl?oc=5" target="_blank" rel="noopener">[The Economist] The moment of reckoning between America and Iran</a>
+                    <a href="https://www.cnbc.com/2026/02/20/asia-markets-live-japan-nikkei225-inflation-iran-tensions.html" target="_blank" rel="noopener">[CNBC] South Korea's Kospi hits fresh record high amid regional declines as U.S.-Iran tensions take hold</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">航空运输</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">贵金属</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>AI军备竞赛白热化：英伟达巨额投资OpenAI，中国AI应用引发好莱坞恐慌</div>
+                <div class="topic-title-en">AI arms race intensifies: Nvidia's huge investment in OpenAI, Chinese AI app sparks Hollywood panic</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    英伟达正洽谈向OpenAI投资高达300亿美元，这将是AI领域最大单笔投资之一，凸显硬件巨头与领先AI公司深度绑定以巩固生态优势。同时，中国AI应用在全球娱乐市场的影响力上升，引发好莱坞对内容创作和行业主导权的担忧，预示着全球AI竞争已从技术研发扩展到应用与标准制定层面。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/nvidia-is-in-talks-to-invest-up-to-30-billion-in-openai-source-says.html" target="_blank" rel="noopener">[CNBC] Nvidia is in talks to invest up to $30 billion in OpenAI, source says</a>
+                    <a href="https://www.bbc.com/news/articles/ckg1dl410q9o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] The Chinese AI app sending Hollywood into a panic</a>
+                    <a href="https://www.cnbc.com/2026/02/19/openai-sam-altman-anthropic-dario-amodei-india-ai-summit.html" target="_blank" rel="noopener">[CNBC] OpenAI and Anthropic’s rivalry on display as CEOs avoid holding hands at AI summit</a>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">软件服务</span>
+                    <span class="sector-tag">娱乐传媒</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>私人信贷市场现裂痕：Blue Owl限制赎回引发对信贷泡沫的担忧</div>
+                <div class="topic-title-en">Cracks in private credit market: Blue Owl redemption curbs fuel fears of credit bubble</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    Blue Owl Capital旗下私人信贷基金限制投资者赎回，被视作市场压力的‘煤矿中的金丝雀’，引发市场对私人信贷领域流动性错配和估值风险的广泛担忧。随着高利率环境持续，更多非流动性资产可能面临赎回压力，这可能波及养老金、保险公司等大型机构投资者，并对整个另类资产管理行业构成考验。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/canary-in-the-coal-mine-blue-owl-liquidity-curbs-fuel-fuels-fears-private-credit-bubble-.html" target="_blank" rel="noopener">[CNBC] 'Canary in the coal mine': Blue Owl liquidity curbs fuel fears about private credit bubble</a>
+                    <a href="https://news.google.com/rss/articles/CBMilgNBVV95cUxOU1FZUG9lT0RsSUJYa0FuNENGSlNhVnBoNUsyV0c3aUU4QVNIREtpMi13azNsaE10ME5mMkhEazB4c1dia0MzUU5QLUczTEtpVFhRXzFJLUJhcFNKblA0c3VMaVRDelh4VmxYRl9KMUdNdUVrcjNCUU01dng0aHkybmlwdXFHQlFBVjFVVEJDVy03OE5jWnpUdFRfSDMwQ0g2cm5PbnU1SVhqRTBRaS1MQTJtUmZuTWxBT0toczNLTTJ1bFFNdGRLb0VnTTVvZi1vcWc5T3l4SU1QSzlqSFRvV2R1RThtN2N1bkxvSDc5bGVad2c1WEwtcUhPN3JlZkVyQzBkYU1BS1RWOHladkVCaGdrYlplVTJROHJsY2dvdUNucExtSVpOaS1qSHJrVWtMWGZZUzhtZ1Y2VC1NV29qTF9NUlhPUnlQOUtuWFJlaE9rN3BlXzJpZ0ZaLU5EQWV3RHBKVVB2VW1RcTFzVDZKWWc1TEdoc3B2YkVBbjN6eVA1dVFhTVlYS3NZdUxkRDZXQkMzWl93?oc=5" target="_blank" rel="noopener">[Barron's] Blue Owl Move to Curb Redemptions at Private-Credit Fund Hits Alt Manager Stocks</a>
+                    <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOYWJCMFJSS2pQelFvVVptSl8zTHl3T0k1eTQtMDh2VWs3M1lzdnpiUGhFTng3MWNKRENOdE54aWx4ZUo5YXdIbFcwdXRaN2h2dnJsTm1yN292cEZ0UHRlUkZEY28tbE85ZTJpV2VNa19BaEdiNm9rSHc0VnZOMjdoVVBZVTdlWXJacEtEY3R6ak9MZEFaLXVLeWJqMGtpT0U1VTMybVpGSkU2MzJBa1NyT3ln?oc=5" target="_blank" rel="noopener">[Bloomberg] Blue Owl Sold Private Loans to Pension Giants and Own Insurer</a>
+                    <span class="sector-tag">私人信贷</span>
+                    <span class="sector-tag">资产管理</span>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">保险</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>科技巨头动态分化：亚马逊营收首超沃尔玛，谷歌陷技术盗窃案</div>
+                <div class="topic-title-en">Tech giants diverge: Amazon revenue surpasses Walmart for first time, Google embroiled in trade secret theft case</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    亚马逊年度营收首次超越沃尔玛，标志着电商与实体零售力量对比的历史性转变，双方均在AI驱动增长领域加大投资。与此同时，三名前谷歌工程师被控窃取芯片技术机密并输送至伊朗，这凸显了科技领域知识产权保护的地缘政治风险，可能加剧对技术出口和人才流动的监管。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/amazon-revenue-passes-walmart-earnings-reports.html" target="_blank" rel="noopener">[CNBC] Amazon surpasses Walmart in annual revenue for first time, as both chase AI-fueled growth</a>
+                    <a href="https://www.cnbc.com/2026/02/20/three-engineers-charged-stealing-google-trade-secrets-data-iran-soc-snapdragon.html" target="_blank" rel="noopener">[CNBC] Three Silicon Valley engineers charged with stealing Google trade secrets and sending data to Iran</a>
+                    <a href="https://www.bbc.com/news/articles/c8jxevd8mdyo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] Microsoft error sees confidential emails exposed to AI tool Copilot</a>
+                    <span class="sector-tag">电子商务</span>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">网络安全</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>全球贸易与通胀数据分化：日本通胀跌破目标，美国贸易赤字创新高</div>
+                <div class="topic-title-en">Diverging global trade and inflation data: Japan inflation falls below target, US trade deficit hits record</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    日本核心通胀自2022年3月以来首次跌破央行2%的目标，这可能使日本央行在退出超宽松货币政策时更加谨慎，影响全球资本流向。与此同时，尽管有关税措施，美国贸易赤字仍创历史新高，显示结构性逆差压力未解，美元强势与内需旺盛持续吸引进口，这对全球贸易平衡和美元长期地位构成疑问。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/japan-core-inflation-january-boj-target-gdp-growth.html" target="_blank" rel="noopener">[CNBC] Japan inflation falls below BOJ's 2% target for first time since March 2022</a>
+                    <a href="https://www.bbc.com/news/articles/c4ge4yxwnlno?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] US trade deficit hits fresh high despite Trump's tariffs</a>
+                    <a href="https://www.bbc.com/news/articles/cgk2d7yxm2zo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] US and Indonesia finalise deal to cut tariffs to 19%</a>
+                    <span class="sector-tag">银行业</span>
+                    <span class="sector-tag">进出口贸易</span>
+                    <span class="sector-tag">消费品</span>
+                    <span class="sector-tag">货币市场</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>航空航天业遭遇挫折：波音Starliner失败被列为NASA最严重事故之一</div>
+                <div class="topic-title-en">Aerospace sector faces setbacks: Boeing Starliner failure labeled one of NASA's worst incidents</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    NASA局长将波音Starliner的失败称为其历史上最严重的事故之一，这不仅使波音在商业航天竞赛中进一步落后于SpaceX，也可能引发对其系统安全性和项目管理能力的更严格审查。空客财报的负面消息也拖累波音股价，凸显整个航空航天供应链面临的成本压力和交付挑战。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cm2x3nlxg9jo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] Nasa boss says Boeing Starliner failure one of worst in its history</a>
+                    <a href="https://news.google.com/rss/articles/CBMihwNBVV95cUxNWnNpaHJDQzQ1d2JDQ3RKYkVmRUtpOXVHZnZqYXo1MnNBTHJrQjFyQm9tMEx1YkdDWUFqRWpvekNZVTlfR0pGNUE1VmpucDVmREdEeUZXRWh2bDFsQVRyNFZXTDBJZHpVVDJYTFdoa1g3b2hBR2xNZHhOX1gxdGJtRVNoRTlFQXF6YkNyY3FqTDdkTmY3VmtsOHAwWjdsN25YZHlZQTJnTG80d3FCNVlyVU5EOXZQOW5YR3dNb0hlbUhBX2lGWEVCamVMRnlnbXZ0c0xnbmNBUkFLR0RvTGZLSDB4cGIwdGVyaEdtY0htcWFTV0JocnNnY2JPRHVob3ROUmdLaHdBTXNlM3BKampPdEdheU8yZ3dkcGoxNmZBY2diOEYtYTlwODR6SlA1dkg5OHRVdTlJaWJuNjJwbU0wSXMzX3NmLWthV3BvWEI0Z3hUQlo1bEk5NmhIMkFjc0JiRWt5VjEyME01MTZ3U2RfU05vMTNHeURMZktXM080SHozQUxlRW5z?oc=5" target="_blank" rel="noopener">[Barron's] Why Airbus Earnings Were Bad News for Boeing Stock</a>
+                    <span class="sector-tag">航空航天</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">高端制造</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>消费与零售行业亮点与隐忧：Live Nation销售强劲，Wayfair扩张引盈利担忧</div>
+                <div class="topic-title-en">Consumer and retail sector highlights and concerns: Live Nation's strong sales, Wayfair's expansion sparks profit worries</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    尽管面临垄断诉讼，Live Nation凭借BTS和Harry Styles等巨星演唱会推动门票销售强劲，显示体验式消费需求依然旺盛。然而，Wayfair因扩张计划可能导致利润受损而股价大跌，反映出在家居零售领域，市场对增长投入与短期盈利能力的平衡极为敏感。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cgqgvxz27z7o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] Live Nation sees strong ticket sales as monopoly lawsuit looms</a>
+                    <a href="https://www.marketwatch.com/story/people-still-want-to-see-bts-and-harry-styles-concerts-lifting-live-nations-sales-eee12233?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] People still want to see BTS and Harry Styles concerts, lifting Live Nation’s sales</a>
+                    <a href="https://www.marketwatch.com/story/wayfairs-stock-sinks-as-investors-worry-expansion-plans-will-hurt-profits-6c362879?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] Wayfair’s stock sinks, as investors worry expansion plans will hurt profits</a>
+                    <span class="sector-tag">娱乐演出</span>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">电子商务</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>日本1月核心通胀率降至2%以下，为2022年3月以来首次</li>
+                <li>美国贸易赤字创历史新高</li>
+                <li>亚马逊年度营收首次超越沃尔玛</li>
+                <li>英伟达据悉正洽谈向OpenAI投资高达300亿美元</li>
+                <li>Blue Owl旗下私人信贷基金限制投资者赎回</li>
+                <li>韩国Kospi指数连续第二日创历史新高，但亚太市场多数下跌</li>
+                <li>黄金白银价格飙升，奥运奖牌价值创现代奥运史新高</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
