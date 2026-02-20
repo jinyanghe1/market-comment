@@ -1,5 +1,14 @@
 [
     {
+        "file": "Optical_Chip_Deep_Dive.html",
+        "title": "光芯片深度调研",
+        "subtitle": "从硅光集成到共封装光学：AI算力瓶颈催生万亿光子赛道",
+        "date": "2026-02-20",
+        "readTime": "90分钟",
+        "excerpt": "全球硅光芯片市场规模2025年达31.1亿美元，CAGR 29.5%。AI数据中心的光互联需求爆发，800G光模块量产、1.6T光模块2026年起量、CPO共封装光学即将颠覆产业格局。中际旭创净利百亿、新易盛增长231%、源杰科技100G EML突破在即。十二章深度研报，覆盖三大技术路线、产业链全景、全球竞争格局、六大重点公司分析、四条投资主线与十二大核心风险。",
+        "tags": ["Optical Chip", "Silicon Photonics", "CPO", "AI Infrastructure", "Semiconductor", "Investment Research"]
+    },
+    {
         "file": "China_Hidden_Debt_Risk.html",
         "title": "隐债暗礁",
         "subtitle": "城投+地产+拖欠款三重口径：中国地方隐性债务风险分布全景",
