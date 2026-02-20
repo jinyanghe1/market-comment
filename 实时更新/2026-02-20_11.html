@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-20 11:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-20 11:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">市场受美伊紧张局势、AI投资热潮和贸易赤字影响，整体情绪谨慎。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>美伊紧张局势推高油价</div>
+                <div class="topic-title-en">U.S.-Iran Tensions Drive Oil Prices Higher</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美伊潜在冲突风险加剧，导致油价上涨，提振能源股，但引发全球市场避险情绪。地缘政治不确定性可能持续影响大宗商品和股市波动，投资者需关注能源板块机会及风险资产调整。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/trump-to-decide-whether-to-attack-iran-in-next-10-days-oil-prices-jump.html" target="_blank" rel="noopener">[CNBC] Trump to decide whether to attack Iran in next 10 days — oil prices rise</a>
+                    <a href="https://news.google.com/rss/articles/CBMilANBVV95cUxPVUxleHJTWUJxYVp4bENYNXpNTzlSOWNpd0I1QU5JUUlld3R1akRxSDVQSExKUW9COS0wX1NKMV9CcE43WmNqSi1qTFZ4OUdoQjZyU2YxZzVqUnQ4Rzg1cVpZOFgweV9TZjl6ekhNQV92VGRzQmhwa0tJV0NPRThQSVV1eXpmTDVRTFBTZmhfQjAzNkZNaHFkTDBEM0ZFbVYwUExQM016RVNpM2FlOTRaa28zUUxyWmk3eE5PZEZqd1ZHVGlYbVoyMXVOTFdqeTdSSTZUSXYxNmhzanJZSGhkczlxYzU0Um52ckQtdC1qVHdESWt2WFh5b1BSbHI1WVFUTlhhZ281aXczSU9TdER6QTJmTjdOTVRSM1gtUDNrV0VlbkMyRFFSOERGUERWalRxbHJQcF91UmNhRFRCX1BFUkY0X1N4ZkNHTEpfUkk3dTFxQjNJNzNwTHM1TDMwcUNNd3JPTXctMThQMmc3R1dnaUU5OE9ZZ1hzNWM5MExuVGE3XzVEUk12YlVqU1o4MXhwMHZZSg" target="_blank" rel="noopener">[Barrons] Oil Price Rises Amid U.S.-Iran Tension. These Stocks Are Gaining.</a>
+                    <a href="https://www.investing.com/news/commodities-news/gold-prices-muted-amid-usiran-tensions-fed-caution-set-for-weekly-loss-4515095" target="_blank" rel="noopener">[Investing.com] Gold prices muted amid US-Iran tensions, Fed caution; set for weekly loss</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">大宗商品</span>
+                    <span class="sector-tag">航空</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>AI巨头投资竞争白热化</div>
+                <div class="topic-title-en">AI Giants' Investment Competition Intensifies</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    英伟达考虑向OpenAI投资高达300亿美元，显示AI领域资本密集度加剧，可能推动技术突破和行业整合。中国AI应用引发好莱坞恐慌，OpenAI与Anthropic竞争公开化，预示全球AI赛道将加速分化，投资者应关注芯片和软件龙头。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/nvidia-is-in-talks-to-invest-up-to-30-billion-in-openai-source-says.html" target="_blank" rel="noopener">[CNBC] Nvidia is in talks to invest up to $30 billion in OpenAI, source says</a>
+                    <a href="https://www.bbc.com/news/articles/ckg1dl410q9o" target="_blank" rel="noopener">[BBC] The Chinese AI app sending Hollywood into a panic</a>
+                    <a href="https://www.cnbc.com/2026/02/19/openai-sam-altman-anthropic-dario-amodei-india-ai-summit.html" target="_blank" rel="noopener">[CNBC] OpenAI and Anthropic’s rivalry on display as CEOs avoid holding hands at AI summit</a>
+                    <span class="sector-tag">科技</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">娱乐</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>美国贸易赤字创新高，关税政策效果有限</div>
+                <div class="topic-title-en">U.S. Trade Deficit Hits Record High, Tariff Policies Limited Effect</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    尽管特朗普实施关税，美国贸易赤字仍达9010亿美元，显示单边贸易措施难以扭转结构性赤字，可能加剧全球经济不确定性。美印尼关税协议虽缓解部分压力，但整体贸易失衡持续，影响制造业和零售业利润。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/us-trade-deficit-totaled-901-billion-in-2025-despite-trumps-tariffs.html" target="_blank" rel="noopener">[CNBC] U.S. trade deficit totaled $901 billion in 2025, barely budging despite Trump's tariffs</a>
+                    <a href="https://www.bbc.com/news/articles/cgk2d7yxm2zo" target="_blank" rel="noopener">[BBC] US and Indonesia sign deal to cut tariffs to 19%</a>
+                    <a href="https://www.bbc.com/news/articles/c4ge4yxwnlno?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC] US trade deficit hits fresh high despite Trump's tariffs</a>
+                    <span class="sector-tag">贸易</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">零售</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>企业财报分化，消费与电商表现突出</div>
+                <div class="topic-title-en">Corporate Earnings Diverge, Consumer and E-commerce Stand Out</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    亚马逊营收首次超越沃尔玛，显示电商增长动力强劲，AI驱动成关键；Live Nation票务销售强劲，但面临反垄断诉讼，娱乐消费韧性凸显。Wayfair和Carvana股价下跌，反映投资者对扩张计划和盈利的担忧，零售板块需精选个股。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/amazon-revenue-passes-walmart-earnings-reports.html" target="_blank" rel="noopener">[CNBC] Amazon surpasses Walmart in annual revenue for first time, as both chase AI-fueled growth</a>
+                    <a href="https://www.bbc.com/news/articles/cgqgvxz27z7o" target="_blank" rel="noopener">[BBC] Live Nation sees strong ticket sales as monopoly lawsuit looms</a>
+                    <a href="https://www.marketwatch.com/story/wayfairs-stock-sinks-as-investors-worry-expansion-plans-will-hurt-profits-6c362879" target="_blank" rel="noopener">[MarketWatch] Wayfair’s stock sinks, as investors worry expansion plans will hurt profits</a>
+                    <a href="https://news.google.com/rss/articles/CBMi_wJBVV95cUxPZG9BbmhXUTVVSXpxUFprdFFXN1VjXzEzTmRfU2p3U1owcktNeUZXMzRMNTFpWFVMOG5QX1E2dkNKbElDaFV2RXJYYnI1bFlELWRoQ2ZkRlloS3M2bVpxSE8wQ0d0VmpjQnFjcUdCZEZwQVY2WXFjVXFWMVZYN1kwX1JCY0dOcTA2ZGd5bFpkb1VXWC12YW1FR3prTWhsOGFKREMyZXVlU2xGQkxCSjlyMTdscG1RaWVEajExMmtPM3pnLUpQSkFPcHlXUHRKZF9VSWlscExvQ3FFMzRWV0gtUFRscmVvREZ2OGp4azZ6U2NsaHhBRDhkM25KR0IyYVhla1l2YnV5SjNKczJ3OTd6QzFkbW5LYUFZNWNMWE1WTklVemt2cWFtaVZPMnZsZ0ZlUVczeGMyQ0VvOTdiZnlvMERuTTRhYzJ6ZW1IQ21kaVVPXzFRMGh2Vmx5WTdqN0pObm9BSkctUXU0b3Zzb2UtWDVpUkdGUkhEcHJVNnB4aw" target="_blank" rel="noopener">[Barrons] Carvana Stock Drops as Earnings Disappoint</a>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">电商</span>
+                    <span class="sector-tag">娱乐</span>
+                    <span class="sector-tag">家居</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>市场情绪谨慎，央行政策受关注</div>
+                <div class="topic-title-en">Market Sentiment Cautious, Central Bank Policies in Focus</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    亚太市场普遍下跌，追踪华尔街跌幅，受美伊紧张局势影响，风险偏好下降。日本通胀降至央行目标以下，可能推迟货币政策正常化；美联储或加息在即，投资者担忧利率风险，债券市场承压。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/asia-markets-live-japan-nikkei225-inflation-iran-tensions.html" target="_blank" rel="noopener">[CNBC] Asia-Pacific markets mostly fall, tracking Wall Street losses, as U.S.-Iran tensions take hold</a>
+                    <a href="https://www.cnbc.com/2026/02/20/japan-core-inflation-january-boj-target-gdp-growth.html" target="_blank" rel="noopener">[CNBC] Japan inflation falls below BOJ's 2% target for first time since March 2022</a>
+                    <a href="https://www.marketwatch.com/story/why-the-fed-could-deliver-one-final-sting-to-your-portfolio-before-powells-exit-in-may-de2e8f28" target="_blank" rel="noopener">[MarketWatch] Why your portfolio may face one last rate-hike surprise before May</a>
+                    <span class="sector-tag">金融市场</span>
+                    <span class="sector-tag">银行</span>
+                    <span class="sector-tag">债券</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>劳动力市场降温，工会取得胜利</div>
+                <div class="topic-title-en">Labor Market Cools, Unions Score Wins</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    “大辞职”后员工换工作激励减弱，显示劳动力市场可能放缓，工资增长压力减轻，对企业利润有利。大众工人批准首个UAW合同，标志南方劳工胜利，可能推高汽车行业成本，影响制造商盈利。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/19/life-after-the-great-resignation-incentives-are-dimming-for-workers-to-change-jobs.html" target="_blank" rel="noopener">[CNBC] Life after the 'great resignation': Incentives are dimming for workers to change jobs</a>
+                    <a href="https://www.investing.com/news/stock-market-news/volkswagen-workers-ratify-first-uaw-contract-marks-win-for-labor-in-the-south-4515101" target="_blank" rel="noopener">[Investing.com] Volkswagen workers ratify first UAW contract, marks win for labor in the South</a>
+                    <span class="sector-tag">汽车</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">就业</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>油价因美伊紧张局势上涨</li>
+                <li>美国2025年贸易赤字9010亿美元</li>
+                <li>亚马逊营收首次超过沃尔玛</li>
+                <li>日本核心通胀率降至2%以下</li>
+                <li>英伟达可能投资OpenAI 300亿美元</li>
+                <li>Live Nation票务销售强劲</li>
+                <li>大众工人批准UAW合同</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
