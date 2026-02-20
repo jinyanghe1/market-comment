@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-21 03:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-21 03:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">美国最高法院否决特朗普关税政策引发市场震荡，叠加经济数据疲软与地缘政治风险，市场情绪呈现复杂格局。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>最高法院否决特朗普全球关税，贸易秩序面临重构</div>
+                <div class="topic-title-en">Supreme Court Strikes Down Trump's Global Tariffs, Trade Order in Flux</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    美国最高法院裁定特朗普时期的广泛关税政策违宪，此举直接推翻了其标志性的经济政策。裁决可能引发高达1750亿美元的关税退款，短期内将利好依赖全球供应链的零售、电商及制造业，但长期可能引发贸易政策的不确定性，因为特朗普已誓言采取“更强有力”的措施。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cn8146l0n55o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Supreme Court strikes down Trump's sweeping global tariffs</a>
+                    <a href="https://www.cnbc.com/2026/02/20/supreme-court-trump-tariffs-ruling.html" target="_blank" rel="noopener">[CNBC] Supreme Court strikes down Trump tariffs, rebuking president's signature economic policy</a>
+                    <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQY3lOaWhjQW0tTmNiR0RBTVg1d29CYmlMVjJHLWl3QkhHSnl0TEZ4VUxHa0dldDNDbExHNlZ6Z08wUWUtRzlNYnVzbU1idjJ1WWhHSzFRX196QktLbkNGVmc1QXBrU3lqMjROZmJrLWZlbFlXTTdfWjE1b1JEZlYtSE1NRG1YWWRPaXRN?oc=5" target="_blank" rel="noopener">[Bloomberg] Supreme Court Strikes Down Trump Tariffs: Live News on Ruling, Market Reaction</a>
+                    <span class="sector-tag">零售业</span>
+                    <span class="sector-tag">电子商务</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">进出口贸易</span>
+                    <span class="sector-tag">物流</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>美国第四季度GDP增速大幅放缓至1.4%，经济动能减弱</div>
+                <div class="topic-title-en">U.S. Q4 GDP Growth Slows Sharply to 1.4%, Economic Momentum Fades</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国第四季度GDP年化增长率仅为1.4%，远低于预期，显示经济在经历动荡一年后显著放缓。与此同时，PCE通胀率仍维持在3%的粘性水平，构成“滞胀”担忧。疲软的数据可能限制美联储的政策空间，并对企业盈利前景构成压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/pce-inflation-december-2025.html" target="_blank" rel="noopener">[CNBC] Fourth-quarter U.S. GDP up just 1.4%, badly missing estimate; inflation firms at 3%</a>
+                    <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQckd1MFZNOTVvRW5WSHU0Q0l2V0EybVR1NURBVEpXdmptaEY3S1FHREhLdUN4VmRzTGJDT3ZUaGlOSEpGeDJfbWk5ZllYUWR3RjBYT1Y1S2ZBLW40bkF3MzRfOVlqN2FEWHF0SVdqZVpJMFpuYUlNcF9nR3hNWENVazBLNHNtR1M1cUdBb2poXzZnc0lVazN4a3N6cmhXVlgxZWo5X05kVXlIbjR6VnJvbQ?oc=5" target="_blank" rel="noopener">[Bloomberg] US GDP Rose at Slower-Than-Forecast Pace of 1.4% Last Quarter</a>
+                    <span class="sector-tag">周期性消费</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">工业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>特朗普考虑对伊朗进行军事打击，原油供应风险升温</div>
+                <div class="topic-title-en">Trump Considers Military Strike Against Iran, Oil Supply Risks Escalate</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普总统表示正考虑对伊朗实施有限的军事打击，此举将大幅提升中东地缘政治风险。市场担忧霍尔木兹海峡的航运安全，可能引发原油供应中断并推动油价飙升，为全球通胀和经济增长带来新的不确定性。能源和国防板块可能因此出现波动。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/trump-says-hes-considering-limited-military-strike-against-iran.html" target="_blank" rel="noopener">[CNBC] Trump says he's considering limited military strike against Iran</a>
+                    <a href="https://www.cnbc.com/2026/02/20/trump-could-attack-iran-in-days-whats-at-stake-for-the-oil-market.html" target="_blank" rel="noopener">[CNBC] Trump could attack Iran in days — what's at stake for the oil market</a>
+                    <span class="sector-tag">能源</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">航空运输</span>
+                    <span class="sector-tag">海运</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>关税退款引发巨额资金流动与行业博弈</div>
+                <div class="topic-title-en">Tariff Refunds Trigger Massive Capital Flows and Industry Struggles</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    最高法院裁决可能迫使美国政府退还约1750亿美元已征收的关税，但退款流程复杂，分销商和零售商可能无法顺利获得退款，而进口商将成为主要受益者。这将显著改善部分企业的现金流，但也可能引发法律纠纷和供应链利益的重新分配。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/supreme-court-trump-tariffs-us-refunds.html" target="_blank" rel="noopener">[CNBC] Supreme Court Trump tariffs ruling could put U.S. on hook for $175 billion in refunds, estimate says</a>
+                    <a href="https://www.investing.com/news/stock-market-news/distributors-retailers-risk-missing-out-on-trump-tariff-refunds-4516921" target="_blank" rel="noopener">[Investing.com] Distributors, retailers risk missing out on Trump tariff refunds</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNWTRmRy1YZTd2d29TZ3pVV0pvQkJDZzBpZnJPZWUxUHBWZTFJRUpOTzJxVE5nTWlXOEJ1YzlQRkZMbE41OGRtNXg4cF8tUzdObmdPNVFtbDdnMk5pWmZuTU1NUGhtTmp2T0tqa3dka0dWRVNLdHN0Wl9NS3RiM3lGQi1VeGpOa09RZG1rbnBQbl9rYVVqWGZFbktpY01mX0hqVTBVQm1Cam50LURzUlI2TWJmeUs?oc=5" target="_blank" rel="noopener">[Bloomberg] Tariff Ruling Kicks Off Messy Fight Over $170 Billion in Refunds</a>
+                    <span class="sector-tag">进口贸易</span>
+                    <span class="sector-tag">零售业</span>
+                    <span class="sector-tag">法律服务业</span>
+                    <span class="sector-tag">特定制造业（如家具）</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>消费者面临负担能力危机，零售数据与贷款拖欠率揭示压力</div>
+                <div class="topic-title-en">Consumer Affordability Crisis Emerges as Retail Data and Loan Delinquencies Reveal Stress</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    尽管英国1月零售因运动补剂购买而激增，但美国消费者对住房等重大支出感到难以负担，情绪低落。同时，学生贷款拖欠率跃升至近25%，显示消费者财务压力巨大。这可能预示着未来消费支出，尤其是耐用品和非必需消费品支出将趋于疲软。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c78x7jwjg4no?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] New Year's sport supplement buying adds to January retail sales surge</a>
+                    <a href="https://www.marketwatch.com/story/the-biggest-purchase-in-life-now-seems-unaffordable-and-thats-putting-consumers-in-a-sour-mood-30d0ba3e?mod=mw_rss_topstories" target="_blank" rel="noopener">[MarketWatch] The biggest purchase in life now seems unaffordable — and that’s putting consumers in a sour mood</a>
+                    <a href="https://www.cnbc.com/2026/02/20/student-loan-delinquency.html" target="_blank" rel="noopener">[CNBC] Student loan delinquency rate jumps to nearly 25% in Trump's second term, analysis finds</a>
+                    <span class="sector-tag">非必需消费品</span>
+                    <span class="sector-tag">汽车</span>
+                    <span class="sector-tag">房地产</span>
+                    <span class="sector-tag">教育服务业</span>
+                    <span class="sector-tag">银行业</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>市场对关税裁决作出即时反应，电商与特定行业股票波动剧烈</div>
+                <div class="topic-title-en">Market Reacts Instantly to Tariff Ruling, E-commerce and Specific Sector Stocks Experience Volatility</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    关税裁决公布后，亚马逊、Etsy等电商平台股价应声上涨，因其跨境贸易成本有望降低。然而，部分行业如小型家具零售商仍面临其他关税威胁，生存压力未完全解除。市场资金正快速重新配置，从受关税保护的行业流向全球贸易受益者。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/supreme-court-decision-amazon-etsy-stocks-tariffs-trump.html" target="_blank" rel="noopener">[CNBC] Amazon, Etsy, other e-commerce stocks pop after Supreme Court rules against Trump's tariffs</a>
+                    <a href="https://www.cnbc.com/2026/02/19/supreme-court-tariffs-furniture-retailers-threat.html" target="_blank" rel="noopener">[CNBC] Small furniture retailers face existential tariff threat, despite Supreme Court ruling</a>
+                    <span class="sector-tag">电子商务</span>
+                    <span class="sector-tag">科技（平台型）</span>
+                    <span class="sector-tag">家具零售</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>英国财政盈余创新高，国防合作强化</div>
+                <div class="topic-title-en">UK Hits Record January Fiscal Surplus, Strengthens Defense Cooperation</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    英国政府因税收增加实现创纪录的1月财政盈余，这为政府提供了更大的财政空间，可能利好国债市场。同时，英国与四个欧盟盟友达成无人机防御计划，标志着脱欧后安全合作深化，可能提振国防相关产业。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c93w4egd3gzo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] Higher tax helped UK government reach record January surplus</a>
+                    <a href="https://www.bbc.com/news/articles/c875jj3y475o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">[BBC Business] UK agrees drone defence plan with four EU allies</a>
+                    <span class="sector-tag">英国国债</span>
+                    <span class="sector-tag">国防工业</span>
+                    <span class="sector-tag">航空航天</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国第四季度GDP年化增长率：1.4%</li>
+                <li>美国PCE通胀率：3%</li>
+                <li>潜在关税退款总额：约1750亿美元</li>
+                <li>美国学生贷款拖欠率：近25%</li>
+                <li>英国1月财政盈余：创历史记录</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
