@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时更新 - 2026-02-21 11:00</title>
+    <style>
+        :root {
+            --wp-primary: #1e1e1e;
+            --wp-accent: #c0392b;
+            --wp-link: #0073aa;
+            --wp-bg: #f9f9f9;
+            --wp-card-bg: #ffffff;
+            --wp-text: #333333;
+            --wp-text-light: #757575;
+            --wp-border: #e2e4e7;
+            --wp-gold: #d4a843;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: var(--wp-text);
+            background: var(--wp-bg);
+            line-height: 1.7;
+        }
+        a { color: var(--wp-link); text-decoration: none; }
+        a:hover { color: #005177; }
+        .header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+        .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+        .header p { font-size: 13px; opacity: 0.7; }
+        .container { max-width: 800px; margin: 24px auto; padding: 0 20px; }
+        .back-link { display: inline-block; margin-bottom: 20px; font-size: 13px; font-weight: 600; }
+        .card {
+            background: var(--wp-card-bg);
+            border: 1px solid var(--wp-border);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card-header {
+            background: var(--wp-primary);
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card-body { padding: 20px; }
+        .sentiment {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 3px;
+            color: #fff;
+        }
+        .topic {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--wp-border);
+        }
+        .topic:last-child { border-bottom: none; }
+        .topic-rank {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: var(--wp-accent);
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .topic-title { font-size: 16px; font-weight: 700; color: var(--wp-primary); margin-bottom: 8px; }
+        .topic-title-en { font-size: 13px; color: var(--wp-text-light); margin-bottom: 8px; }
+        .topic-analysis { font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+        .topic-meta { font-size: 12px; color: var(--wp-text-light); }
+        .topic-meta a { margin-right: 8px; }
+        .impact-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 2px;
+            color: #fff;
+            margin-right: 6px;
+        }
+        .sector-tag {
+            display: inline-block;
+            font-size: 11px;
+            background: #f0f2f5;
+            color: var(--wp-text-light);
+            padding: 2px 8px;
+            border-radius: 2px;
+            margin-right: 4px;
+            margin-top: 4px;
+        }
+        .data-points li { padding: 6px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+        .data-points li:last-child { border-bottom: none; }
+        .footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 12px;
+            color: var(--wp-text-light);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>财经新闻实时更新</h1>
+    <p>2026-02-21 11:00</p>
+</div>
+<div class="container">
+    <a href="../index.html" class="back-link">&larr; 返回首页</a>
+
+    <!-- Summary -->
+    <div class="card">
+        <div class="card-header">市场概况</div>
+        <div class="card-body">
+            <p style="margin-bottom:12px;">美国最高法院驳回特朗普的关税计划后，其迅速宣布新的10%全球关税，叠加美国第四季度GDP数据疲软，为全球贸易前景与市场情绪蒙上不确定性。</p>
+            <span class="sentiment" style="background:#f39c12;">&#9679; 市场情绪: 谨慎</span>
+        </div>
+    </div>
+
+    <!-- Hot Topics -->
+    <div class="card">
+        <div class="card-header">热点新闻分析</div>
+        <div class="card-body">
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">1</span>特朗普关税政策遭遇司法挫折后转向，全球贸易不确定性加剧</div>
+                <div class="topic-title-en">Trump Pivots to New Global Tariff After Supreme Court Setback, Heightening Trade Uncertainty</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国最高法院裁定否决了特朗普此前提出的全球进口关税计划，构成其贸易议程的重大法律挫折。然而，特朗普随即宣布了一项新的10%的全球关税，此举旨在绕过司法限制，但引发了对其法律依据和执行效果的广泛质疑。这标志着全球贸易秩序正进入一个规则模糊、高度波动的时期，企业将面临持续的政策风险和成本压力。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/cn8146l0n55o" target="_blank" rel="noopener">[BBC Business] Trump brings in new 10% tariff as Supreme Court rejects his global import taxes</a>
+                    <a href="https://www.cnbc.com/2026/02/20/trump-global-trade-tariff-supreme-court.html" target="_blank" rel="noopener">[CNBC] Trump announces new 10% global tariff after raging over Supreme Court loss</a>
+                    <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQM1YtT1ExVHliSkNCdno0QjE1YWtuZEhRLXM2SlZZTTVyNl9pckMxSXNPdmM5UXU5eHVwTVNZU1JHbTRHYmJPdmVTd2xUTTlxYmtLaDNKV3ltNXBXSmZDU09iN0NLazgxN3llTjQzQXYwa19rRzRzMFN6c0VUSm5ZRExZeXFTNk1wa3ZLaGRoTnRvLXlxbkFGemJHZ0VnTXNwYlhNYm81WjhWVmdxSGo1LUZfQVlBV2pMQllLV1RHamFCOHBz" target="_blank" rel="noopener">[Economist] Donald Trump answers a Supreme Court rebuke with new tariff threats</a>
+                    <span class="sector-tag">国际贸易</span>
+                    <span class="sector-tag">制造业</span>
+                    <span class="sector-tag">零售业</span>
+                    <span class="sector-tag">科技（硬件）</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">2</span>美国经济增速显著放缓，滞胀风险隐现</div>
+                <div class="topic-title-en">US Economic Growth Slows Sharply Amid Firming Inflation</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    美国第四季度GDP年化增长率仅为1.4%，远低于市场预期，显示经济动能急剧减弱。与此同时，个人消费支出(PCE)物价指数显示通胀率仍稳固在3%的水平。疲软的增长与顽固的通胀并存，使美联储的货币政策陷入两难，市场对未来利率路径的预期可能变得更加复杂，加剧了股市和债市的波动性。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/pce-inflation-december-2025.html" target="_blank" rel="noopener">[CNBC] Fourth-quarter U.S. GDP up just 1.4%, badly missing estimate; inflation firms at 3%</a>
+                    <a href="https://www.bbc.com/news/articles/c0rj5lly78xo" target="_blank" rel="noopener">[BBC Business] US economy slows in final months after turbulent year</a>
+                    <span class="sector-tag">宏观经济</span>
+                    <span class="sector-tag">金融</span>
+                    <span class="sector-tag">周期性消费</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">3</span>OpenAI大幅上调长期计算支出预期，AI军备竞赛升温</div>
+                <div class="topic-title-en">OpenAI Resets Spending Expectations to $600B by 2030, Signaling Escalating AI Arms Race</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    OpenAI向投资者更新目标，计划到2030年将计算资源支出提升至约6000亿美元，这一数字远超市场此前预期。这不仅凸显了生成式AI模型训练对算力的巨大渴求，也预示着未来几年AI基础设施（芯片、数据中心、能源）领域的资本开支将维持爆炸性增长。相关产业链公司的营收前景和估值逻辑可能被重估。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/openai-resets-spend-expectations-targets-around-600-billion-by-2030.html" target="_blank" rel="noopener">[CNBC] OpenAI resets spending expectations, tells investors compute target is around $600 billion by 2030</a>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">半导体</span>
+                    <span class="sector-tag">云计算</span>
+                    <span class="sector-tag">数据中心</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">4</span>地缘政治风险升级：特朗普考虑对伊朗进行有限军事打击</div>
+                <div class="topic-title-en">Geopolitical Risk Escalates: Trump Considers Limited Military Strike Against Iran</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    特朗普表示正在考虑对伊朗实施有限军事打击，此举旨在迫使伊朗重返核协议谈判桌。然而，分析人士警告这可能引发中东地区更广泛的冲突，导致局势升级并反噬美国利益。地缘政治紧张局势的加剧将直接推高国际油价，并扰动全球能源市场与供应链安全。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/trump-says-hes-considering-limited-military-strike-against-iran.html" target="_blank" rel="noopener">[CNBC] Trump says he's considering limited military strike against Iran</a>
+                    <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxONVhxR0VlVXBSa3VMMTZJSF9HMU5xeDF6MmxDcGRpbW5NemNQR29JTUpjMHg3UWFhMkVhNEV4cjdINnN3V1B4b0ppdkFZcER5TlI1Sm80Tkl5c3JKVlZJdlAyMDdQeXFIWlJuWDBocEx2X2J5eUpHSFdsTTY0Vzc1NnVyNGpWeGxvTGxtbVp5S2tHaFBSOTV2SVVsNGstZDRSVDZRMXJHQjF2aVdTenBnUE9Mcw" target="_blank" rel="noopener">[Bloomberg] Trump’s Threatened Strikes to Compel Iran Deal Risk Backfiring</a>
+                    <span class="sector-tag">能源（石油与天然气）</span>
+                    <span class="sector-tag">国防军工</span>
+                    <span class="sector-tag">航运</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">5</span>微软游戏业务领导层更迭，AI高管接管Xbox</div>
+                <div class="topic-title-en">Microsoft Gaming Leadership Shake-up: AI Executive Takes Over Xbox</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    微软游戏业务负责人菲尔·斯宾塞退休，由公司内部AI业务高管阿莎·夏尔马接任。这一人事变动强烈暗示微软正加速将人工智能深度整合进其游戏软硬件生态与内容创作流程。长期来看，这可能重塑游戏开发模式、玩家体验以及云游戏服务的竞争力，是微软“AI+内容”战略的关键一步。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/microsoft-gaming-chief-phil-spencer-retires-asha-sharma-replacing.html" target="_blank" rel="noopener">[CNBC] Microsoft Xbox chief Phil Spencer retires, replaced by AI executive Asha Sharma</a>
+                    <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxQamo4RFczbVNfQ29tMjdDSUMxRzR2cHJyV3ZQVFlmQzdZR2kwMFhyVFpsUWQxdUVqNURYLTk1ZHZkdFNJcldzbGxSZ094ckR0VjFPVFZjUFZaLTVEUHdDdVB4M0hhYW1YZVk3Um1weUtiazVqZGduUmRZRDlfMkNqUTZhMEFIVjN2NnAwTmhFdVk4LWc2dmkzNTJGc1MtY1BVZ1B2M21NQ1VFN3M4VXFMRHoyOHM" target="_blank" rel="noopener">[Bloomberg] Microsoft Names Sharma to Lead Xbox, Recommits to Console</a>
+                    <span class="sector-tag">游戏</span>
+                    <span class="sector-tag">人工智能</span>
+                    <span class="sector-tag">软件</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">6</span>UK Economy Presents Mixed Picture: Record Fiscal Surplus Amid Trade Risks</div>
+                <div class="topic-title-en"></div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#999;">中性</span>
+                    受益于高税收，英国政府录得创纪录的1月财政盈余，短期改善了公共财政状况。然而，美国新关税政策给高度依赖对美贸易的英国企业带来了巨大不确定性。同时，英国与欧盟四国达成新的无人机防御协议，显示出在国防领域的跨区域合作趋势。这些因素共同描绘了英国经济机遇与外部风险交织的局面。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.bbc.com/news/articles/c93w4egd3gzo" target="_blank" rel="noopener">[BBC Business] Higher tax helped UK government reach record January surplus</a>
+                    <a href="https://www.bbc.com/news/articles/cj983wrngyvo" target="_blank" rel="noopener">[BBC Business] Uncertainty for UK firms after US tariff ruling, experts say</a>
+                    <a href="https://www.bbc.com/news/articles/c875jj3y475o" target="_blank" rel="noopener">[BBC Business] UK agrees drone defence plan with four EU allies</a>
+                    <span class="sector-tag">英国公共财政</span>
+                    <span class="sector-tag">英国出口企业</span>
+                    <span class="sector-tag">国防安全</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">7</span>零售与消费市场展现韧性，健康支出成新热点</div>
+                <div class="topic-title-en">Resilience in Retail and Consumer Market, Health Spending Emerges as New Trend</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#e74c3c;">利好</span>
+                    尽管面临经济放缓和关税不确定性，零售业仍展现出韧性。美国零售行业将最高法院驳回旧关税视为短期利好，而英国则因新年运动补充剂购买推动1月零售销售激增。同时，高端健身房品牌提出“健康即新奢侈品”概念，反映了后疫情时代消费者对健康和体验性支出的持续偏好，相关赛道增长潜力可观。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/supreme-court-trump-tariff-decision-retail-industry-reacts.html" target="_blank" rel="noopener">[CNBC] Retail industry says Trump tariff reversal is a win, even as uncertainty remains</a>
+                    <a href="https://www.bbc.com/news/articles/c78x7jwjg4no" target="_blank" rel="noopener">[BBC Business] New Year's sport supplement buying adds to January retail sales surge</a>
+                    <a href="https://www.cnbc.com/2026/02/20/equinox-optimize-membership-waiting-list.html" target="_blank" rel="noopener">[CNBC] Equinox chairman says 'health is the new luxury' as wellness spending soars</a>
+                    <span class="sector-tag">零售</span>
+                    <span class="sector-tag">体育用品</span>
+                    <span class="sector-tag">健康与保健</span>
+                    <span class="sector-tag">食品饮料</span>
+                </div>
+            </div>
+            <div class="topic">
+                <div class="topic-title"><span class="topic-rank">8</span>私募信贷市场再现波动，软件贷款引发流动性担忧</div>
+                <div class="topic-title-en">Private Credit Market Sees Fresh Volatility as Software Lending Raises Liquidity Concerns</div>
+                <div class="topic-analysis">
+                    <span class="impact-tag" style="background:#27ae60;">利空</span>
+                    Blue Owl Capital的软件贷款业务引发了市场对私募信贷领域流动性的新一轮担忧。由于相关贷款缺乏流动性，且在当前高利率环境下投资者对回报和风险更为敏感，此类资产的定价和潜在违约风险受到密切关注。这反映出在融资环境趋紧的背景下，非公开市场的信用风险正在重新定价，可能波及依赖此类融资的科技初创企业。
+                </div>
+                <div class="topic-meta">
+                    <a href="https://www.cnbc.com/2026/02/20/blue-owl-software-lending-private-credit-concerns.html" target="_blank" rel="noopener">[CNBC] Illiquid loans, investor demands: Blue Owl's software lending triggers another quake in private credit</a>
+                    <span class="sector-tag">私募信贷</span>
+                    <span class="sector-tag">金融科技</span>
+                    <span class="sector-tag">软件行业</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Key Data Points -->
+    <div class="card">
+        <div class="card-header">关键数据</div>
+        <div class="card-body">
+            <ul class="data-points" style="list-style:none;">
+                <li>美国第四季度GDP增长率：1.4%</li>
+                <li>美国核心PCE通胀率：3%</li>
+                <li>OpenAI 2030年计算支出目标：约6000亿美元</li>
+                <li>特朗普新关税税率：10%（全球）</li>
+                <li>英国政府1月财政盈余：创纪录水平</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    &copy; 2026 资本市场研究 | 数据来源: FT, CNN, Bloomberg, SCMP, Washington Post
+</div>
+</body>
+</html>
